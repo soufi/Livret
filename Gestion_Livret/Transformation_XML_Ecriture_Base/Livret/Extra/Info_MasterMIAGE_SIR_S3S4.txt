@@ -1,0 +1,19 @@
+Master MIAGE : M2 spécialité SIR
+# SEMESTRE 3
+|Architectures applicatives réparties  |4|4|20||20|10
+|Extraction de connaissances dans les BD |4|4|20||20|10
+|Gestion de projet et qualité|4|4|20||20|10
+|Gestion des ressources humaines|2|2|10||20|
+|Anglais professionnel|3|3|||24|
+|Projet industriel|3|3|10|||
+|Sécurité et protocoles|4|4|20||20|
+|Réseaux et infrastructures de production|4|4|10|||30
+|Création d’entreprise|2|2|20||10|
+# SEMESTRE 4
+|Web Services et interopérabilité|3|3|15||15|10
+|Management des SI|3|3|30||10|
+|Stratégie commerciale autour de l’Internet|3|3|20||10|
+|Projet industriel|3|3|10|||
+|Stage professionnel (6 mois)|12|12||||
+|Fouille de données et de textes |3|3|15||15|10
+|Sécurité des Réseaux|3|3|20|||15

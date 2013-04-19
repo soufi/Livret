@@ -1,0 +1,48 @@
+\documentclass[10pt, a5paper]{report}
+
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}% encodage utf8
+\usepackage[francais]{babel}% texte français
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[final]{pdfpages}
+
+% % % Personnalisation diverses % % %
+\sloppy
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{pageDeGarde-livret}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\begin{document}
+
+
+%---------------------- % % % Personnalisation des couleurs % % % ----------- BLEU --------
+\definecolor{couleurFonce}{RGB}{0,92,133} % Couleur du Code APOGEE
+\definecolor{couleurClaire}{RGB}{100,151,186} % Couleur du fond de la bande
+\definecolor{couleurTexte}{RGB}{255,255,255} % Couleur du texte de la bande
+%------------------------------------------------------------------------------------------
+
+\section*{ Licence Informatique : L1 / Semestre 1 - parcours Maths-Informatique }
+
+\arrayrulecolor{couleurFonce}% Couleur des lignes séparatrices du tableau
+\renewcommand{\arraystretch}{1.2}% Coeff appliqué à la hauteur des cellules
+%\rowcolors[\hline]{ligneDébut}{couleurPaire}{couleurImpaire}% Alternance de couleur (need package xcolor)
+\begin{tabular}{c|m{6cm}|cm{1cm}|cm{1cm}|cm{1cm}|cm{1cm}|}
+\cline{2-6}
+
+&
+\cellcolor{couleurFonce} \color{white}\bfseries Intitul\'e & \cellcolor{couleurFonce} \color{white}\bfseries ECTS & \cellcolor{couleurFonce} \color{white}\bfseries CM & \cellcolor{couleurFonce} \color{white}\bfseries TD & \cellcolor{couleurFonce} \color{white}\bfseries TP\\ \cline{2-6}
+
+ & \color{black} \mbox{}  & \color{black}  & \color{black}  & \color{black}  & \color{black}  \\ \cline{2-6}
+\hline \multirow{10}{*}{\rotatebox{90}{\color{couleurFonce}\bfseries  SEMESTRE 1}}
+ & \color{black} \mbox{Algorithmique} \mbox{et} \mbox{programmation} \mbox{1}  & \color{black} 6 & \color{black} 45 & \color{black}  & \color{black} 15 \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Atelier} \mbox{de} \mbox{l'informaticien} \mbox{1}  & \cellcolor{couleurClaire} \color{couleurTexte} 3 & \cellcolor{couleurClaire} \color{couleurTexte} 24 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Introduction} \mbox{au} \mbox{raisonnement} \mbox{mathématiques}  & \color{black} 6 & \color{black} 60 & \color{black}  & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Suites} \mbox{et} \mbox{fonctions} \mbox{réelles}  & \cellcolor{couleurClaire} \color{couleurTexte} 6 & \cellcolor{couleurClaire} \color{couleurTexte} 60 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Arithmétique}  & \color{black} 3 & \color{black} 24 & \color{black}  & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Anglais} \mbox{1}  & \cellcolor{couleurClaire} \color{couleurTexte} 3 & \cellcolor{couleurClaire} \color{couleurTexte} 24 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Préparation} \mbox{au} \mbox{C2I}  & \color{black} 3 & \color{black}  & \color{black} 24 & \color{black}  \\ \cline{2-6}
+\hline
+\end{tabular}
+\end{document}

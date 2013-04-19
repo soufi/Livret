@@ -1,0 +1,16 @@
+Master Informatique : M2 spécialité VIP
+#SEMESTRE 3
+UE 31 |Informatique ambiante|10|10|61|||64|20|3
+UE 32|Imagerie opérationnelle|10|10|74|51|32||3
+UE 33 |Management opérationnel|4|4|16|24|32|16|20|3
+UE 34|Simulation et stratégie d'entreprises|3|3||24|40||20|3
+UE 35|Initiation à la Recherche |7|7|||||3
+UE 36|Projet |3|3|||||3
+#SEMESTRE 4
+UE 41 |Programmation multi-cœurs|3|3|20|15|40||3
+UE 42 |Visualisation avancée|3|3|20|15|40||3
+UE 43|Fouille d'images|3|3|20|15|40||3
+UE 44 |Préparation au stage Recherche|6|6|4||||3
+UE 45|Projet|6|6|||||3
+UE 46 obligatoire|Anglais|3|3||24|24||3
+UE 47 obligatoire|Stage|12|12|||40||3

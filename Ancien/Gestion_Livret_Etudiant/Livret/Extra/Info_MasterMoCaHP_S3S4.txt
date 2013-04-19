@@ -1,0 +1,20 @@
+Master Informatique : M2 spécialité MoCaHP
+#SEMESTRE 3
+UE 31 obligatoire|Anglais - Communication|2|2||24|20||3
+UE 32 obligatoire|Simulation de stratégie d'entreprise |2|2||24|||3
+UE 33 |Automates cellulaires et réseaux d'interactions|2|2|10|10|40||3
+UE 34 |Modélisation, calcul scientifique, outils numériques|6|6|27|27|40||3
+UE 35 |Pratiques des contraintes|4|4|20|15|40||3
+UE 36 |Processus aléatoires, modélisation et simulations|4|4|20|20|40||3
+UE 37 |Sécurité et protocoles|4|4|20|20|40||3
+UE 38 |Projet 1|6|6|||||3
+UE 39  (remplace 7 ECTS au choix parmi  UE 33 à 38)|Initiation à la recherche|7|7|57||||3
+#SEMESTRE 4
+UE 40 obligatoire|Programmation multi-coeurs |3|3|20|15|40||4
+UE 41 obligatoire|Recherche opérationnelle|3|3|10|20|40||4
+UE 42 obligatoire|Visualisation avancée |3|3|20|15|40||4
+UE 43 obligatoire|Aide à la décision et Data-mining|3|3|18|18|40||4
+UE 44 |Interventions d'industriels|1|1|80||||4
+UE 45|Projet 2 |5|5|||||4
+UE 46|Préparation au stage recherche|6|6|||||4
+UE 47 obligatoire|Stage|12|12|||||4

@@ -1,0 +1,53 @@
+#!/bin/bash
+
+## Afficher le jeu de couleurs
+case $1 in
+  *Licence*INFO*) cat Extra/couleurLicenceINFO.tex;;
+  *Licence*MIAGE*) cat Extra/couleurLicenceMIAGE.tex;;
+  *Master*INFO*) cat Extra/couleurMasterINFO.tex;;
+  *Master*MIAGE*) cat Extra/couleurMasterMIAGE.tex;;
+  *Master*CCI*) cat Extra/couleurMasterCCI.tex;;
+  *Master*INIS*) cat Extra/couleurMasterINIS.tex;;
+  *Master*VIP*) cat Extra/couleurMasterVIP.tex;;
+  *Master*MoCaHP*) cat Extra/couleurMasterMoCaHP.tex;;
+esac
+
+# Afficher le titre de la section (1ère ligne du fichier)
+# echo "\\subsection*{" $(head -n 1 $1) "}"
+
+# Afficher le préambule du tableau
+cat << EOF
+
+\arrayrulecolor{couleurFonce}% Couleur des lignes séparatrices du tableau
+\renewcommand{\arraystretch}{1.2}% Coeff appliqué à la hauteur des cellules
+%\rowcolors[\hline]{ligneDébut}{couleurPaire}{couleurImpaire}% Alternance de couleur (need package xcolor)
+\begin{tabular}{c|m{6cm}|cm{1cm}|cm{1cm}|cm{1cm}|cm{1cm}|}
+\cline{2-6}
+
+&
+\cellcolor{couleurFonce} \color{white}\bfseries Intitul\'e & \cellcolor{couleurFonce} \color{white}\bfseries ECTS & \cellcolor{couleurFonce} \color{white}\bfseries CM & \cellcolor{couleurFonce} \color{white}\bfseries TD & \cellcolor{couleurFonce} \color{white}\bfseries TP\\\\ \cline{2-6}
+
+EOF
+
+awk -F '|' '
+function mots(M) {
+  split(M,T," ")
+  Resultat = "\\mbox{" T[1] "} "; delete T[1]
+  for (i in T) {
+    Resultat = Resultat "\\mbox{" T[i] "} "
+  }
+  return Resultat
+}
+/^#/ {print "\\hline \\multirow{6}{*}{\\rotatebox{90}{\\color{couleurFonce}\\bfseries " substr($0,2) "}}" }
+(! /^#/) && (! /^-/) && (NR % 2 != 0) && NR > 1 { print " & \\color{black} " mots($2) " & \\color{black} " $4 " & \\color{black} " $5 " & \\color{black} " $6 " & \\color{black} " $8 " \\\\ \\cline{2-6}" }
+(! /^#/) && (! /^-/) && (NR % 2 == 0) && NR > 1 { print " & \\cellcolor{couleurClaire} \\color{couleurTexte} " mots($2) " & \\cellcolor{couleurClaire} \\color{couleurTexte} " $4 \
+                                              " & \\cellcolor{couleurClaire} \\color{couleurTexte} " $5 " & \\cellcolor{couleurClaire} \\color{couleurTexte} " $6 \
+                                              " & \\cellcolor{couleurClaire} \\color{couleurTexte} " $8 " \\\\ \\cline{2-6}" }
+' $1
+
+
+cat << EOF
+\hline
+\end{tabular}
+EOF
+

@@ -1,0 +1,37 @@
+
+%---------------------- % % % Personnalisation des couleurs % % % ---------- MARRON -------
+\definecolor{couleurFonce}{RGB}{110,45,12} % Couleur du Code APOGEE
+\definecolor{couleurClaire}{RGB}{200,100,50} % Couleur du fond de la bande
+\definecolor{couleurTexte}{RGB}{255,255,255} % Couleur du texte de la bande
+%------------------------------------------------------------------------------------------
+
+\arrayrulecolor{couleurFonce}% Couleur des lignes séparatrices du tableau
+\renewcommand{\arraystretch}{1.2}% Coeff appliqué à la hauteur des cellules
+%\rowcolors[\hline]{ligneDébut}{couleurPaire}{couleurImpaire}% Alternance de couleur (need package xcolor)
+\begin{tabular}{c|m{6cm}|cm{1cm}|cm{1cm}|cm{1cm}|cm{1cm}|}
+\cline{2-6}
+
+&
+\cellcolor{couleurFonce} \color{white}\bfseries Intitul\'e & \cellcolor{couleurFonce} \color{white}\bfseries ECTS & \cellcolor{couleurFonce} \color{white}\bfseries CM & \cellcolor{couleurFonce} \color{white}\bfseries TD & \cellcolor{couleurFonce} \color{white}\bfseries TP\\ \cline{2-6}
+
+\hline \multirow{6}{*}{\rotatebox{90}{\color{couleurFonce}\bfseries SEMESTRE 1}}
+ & \color{black} \mbox{Système} \mbox{d’exploitation} \mbox{embarqué}  & \color{black} 4 & \color{black} 16 & \color{black} 20 & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Développement} \mbox{d’applications} \mbox{nomades}  & \cellcolor{couleurClaire} \color{couleurTexte} 4 & \cellcolor{couleurClaire} \color{couleurTexte} 16 & \cellcolor{couleurClaire} \color{couleurTexte} 20 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Programmation} \mbox{par} \mbox{contraintes} \mbox{logique} \mbox{et}  & \color{black} 4 & \color{black} 16 & \color{black} 20 & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Modélisation} \mbox{de} \mbox{systèmes} \mbox{concurrents} \mbox{et} \mbox{vérification}  & \cellcolor{couleurClaire} \color{couleurTexte} 4 & \cellcolor{couleurClaire} \color{couleurTexte} 16 & \cellcolor{couleurClaire} \color{couleurTexte} 20 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Interface} \mbox{homme} \mbox{machine}  & \color{black} 4 & \color{black} 18 & \color{black} 24 & \color{black} 6 \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Programmation} \mbox{parallèle}  & \cellcolor{couleurClaire} \color{couleurTexte} 4 & \cellcolor{couleurClaire} \color{couleurTexte} 16 & \cellcolor{couleurClaire} \color{couleurTexte} 20 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Modélisation,} \mbox{algorithmes} \mbox{graphes} \mbox{et}  & \color{black} 4 & \color{black} 16 & \color{black} 20 & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Anglais}  & \cellcolor{couleurClaire} \color{couleurTexte} 2 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte} 24 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+\hline \multirow{6}{*}{\rotatebox{90}{\color{couleurFonce}\bfseries SEMESTRE 2}}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Intelligence} \mbox{artificielle}  & \cellcolor{couleurClaire} \color{couleurTexte} 4 & \cellcolor{couleurClaire} \color{couleurTexte} 16 & \cellcolor{couleurClaire} \color{couleurTexte} 20 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Réseaux} \mbox{et} \mbox{mobilité} \mbox{:} \mbox{protocoles}  & \color{black} 4 & \color{black} 18 & \color{black} 12 & \color{black} 12 \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Algorithmique} \mbox{répartie}  & \cellcolor{couleurClaire} \color{couleurTexte} 4 & \cellcolor{couleurClaire} \color{couleurTexte} 16 & \cellcolor{couleurClaire} \color{couleurTexte} 20 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Calculabilité} \mbox{et} \mbox{complexité}  & \color{black} 4 & \color{black} 16 & \color{black} 20 & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Travaux} \mbox{de} \mbox{recherche} \mbox{et} \mbox{Technique} \mbox{de} \mbox{communication} \mbox{d’études} \mbox{et}  & \cellcolor{couleurClaire} \color{couleurTexte} 4 & \cellcolor{couleurClaire} \color{couleurTexte} 12 & \cellcolor{couleurClaire} \color{couleurTexte} 24 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Anglais}  & \color{black} 2 & \color{black}  & \color{black} 24 & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Outils} \mbox{de} \mbox{données} \mbox{pour} \mbox{l’exploration}  & \cellcolor{couleurClaire} \color{couleurTexte} 4 & \cellcolor{couleurClaire} \color{couleurTexte} 16 & \cellcolor{couleurClaire} \color{couleurTexte} 20 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Compilation}  & \color{black} 4 & \color{black} 16 & \color{black} 20 & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Programmation} \mbox{graphique}  & \cellcolor{couleurClaire} \color{couleurTexte} 4 & \cellcolor{couleurClaire} \color{couleurTexte} 16 & \cellcolor{couleurClaire} \color{couleurTexte} 20 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+\hline
+\end{tabular}

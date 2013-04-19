@@ -1,0 +1,810 @@
+
+
+Semestre 1 Spécialité INIS, SSL, VIP
+
+UE 11 – Système d'exploitation embarqué
+Contenu : 
+Ce cours porte sur l'étude des concepts des systèmes d'exploitation au travers du noyau linux (à la base de nombreux systèmes mobile, en particulier d'Android). Un sous-ensemble du noyau linux servira de base à la mise en oeuvre de différents concepts comme la pagination, la segmentation, le multi-tâches, les systèmes de fichiers,...
+L'accent sera mis sur l'utilisation d'un noyau linux dans le cadre de la gestion de systèmes nomades. Des réalisations pratiques impliquant des matériels embarqués seront proposées.
+Pré-requis : 
+Objectifs : 
+    - Connaissance des principes des systèmes d'exploitation
+    - Maîtrise des subtilités du noyau linux pour le développement d'applications
+    - Capacité à modifier un noyau linux pour des applications spécifiques
+    - Capacité à adapter le noyau linux à une plateforme nomade donnée
+
+Langue de l’enseignement : Français/Anglais
+
+UE 12 – Développement d'applications nomades
+Contenu : 
+Le cours "Systèmes nomades" débute par une présentation de l'informatique nomade, de son évolution et de ses enjeux, ainsi que des différents domaines d'applications concernés. Les architectures des systèmes nomades sont ensuite détaillées pour mieux appréhender leurs possibilités mais également leurs limitations (puissance, mémoire, autonomie). Les particularités du développement sur systèmes nomades, notamment les langages, simulateurs et environnements de développement, sont finalement abordés.
+Pré-requis : 
+Programmation C, C++ ou Java. Notion d'architecture des ordinateurs.
+Objectifs : 
+Le premier objectif de ce cours est de fournir aux étudiants une culture autour de l'informatique nomade : domaines d'applications concernés, enjeux, spécificités, possibilités offertes mais également limitations.
+Ce cours vise ensuite à apporter aux étudiants une expérience du développement sur différents systèmes nomades afin qu'ils puissent les exploiter le plus efficacement possible.
+Langue de l’enseignement : Français / Anglais
+
+UE 13 – Modélisation, graphes et algorithmes
+Contenu : 
+L'enseignement aborde à la fois des aspects algorithmiques d'optimisation combinatoire avec des techniques de résolution polynomiale (flots et réseaux de transport, problèmes de postier chinois...), d'approximation (voyageur de commerce...) et  heuristiques pour des problèmes difficiles comme la coloration ou le stable maximum) et des aspects de modélisation des réseaux d'interconnexion et de problèmes d'algorithmique distribuée.
+Pré-requis : 
+Algorithmique élémentaire sur les graphes, programmation linéaire
+Objectifs : 
+Modélisation et résolution des problèmes d'optimisation sur les graphes
+Langue de l’enseignement : Français / Anglais
+
+UE 14 – Modélisation et vérification de systèmes concurrents
+Contenu : 
+Ce module introduit le concept de logiques appliquées au contexte de la vérification de systèmes concurrents. Des formules logiques permettent de modéliser les propriétés attendues par un système. Ce système est décrit sous forme de système  d’états/transitions. Le model-checking est une technique permettant de vérifier si une propriété est satisfaite ou non sur un système donné. Dans le cas négatif, une trace du comportement non-souhaité du système est retournée par cette technique. Pour mieux comprendre cette application des logiques, ce module débute par une étude des logiques monadiques du 2nd ordre sur les mots finis et infinis. Ce cadre constitue les fondements de la technique de Model-Checking. La transformation d’une formule en automate de mots finis ou automate de mots infinis est étudiée en profondeur. Ainsi, savoir si une formule f est satisfaite sur un langage L revient à calculer l’automate de la négation de f puis calculer l’intersection avec le langage L. Une intersection vide signifie que la négation de f n’est pas satisfaite, et donc que f est satisfaite. D’une intersection non vide, nous en déduisons que la formule n’est pas satisfaite et de l’intersection, nous pouvons extraire un mot témoin. Une fois les fondements théoriques établis, les logiques temporelles usuelles LTL et CTL sont étudiées. Dans le cadre de LTL, l’outil de vérification SPIN mènera les étudiants à modéliser les systèmes sous forme de procéssus et les propriétés attendues de ce système sous forme de formules logiques.
+Pré-requis : 
+Notions élémentaires en logique, théorie des langages 
+Objectifs : 
+Maîtriser et comprendre une technique de vérification, modéliser en logique les propriétés attendues d’un système 
+Langue de l’enseignement : Français / Anglais
+
+UE 15 – Programmation parallèle
+Contenu : 
+Extrêmement importants dans la plupart des domaines scientifiques, le calcul scientifique et la simulation numérique ont également pris une grande place dans des applications technologiques. Ils sont utilisés pour concevoir, optimiser et réduire les risques de développement dans tous les domaines de l’activité économique (simulations de phénomènes physiques, biologiques, économiques... , maquettes numériques). Ce module aborde les bases de la programmation parallèle de machines à mémoire répartie :
+- Architectures parallèles
+- Algorithmique parallèle
+- Programmation parallèle impérative par passage de messages
+- Programmation répartie modulaire et politiques de synchronisation fines
+Pré-requis : 
+Programmation impérative, utilisation d'un système unix, outils de développements
+Objectifs : 
+Compétences pour la programmation d'applications pour supercalculateurs à mémoire répartie. Ce module est un pré-requis pour les modules de M2 "Programmation multi-coeurs" et "Visualisation avancée". 
+Langue de l’enseignement : Français / Anglais
+
+UE 16 – Programmation en logique et par contraintes
+Contenu : 
+a) La programmation en logique avec Prolog : 
+- point de vue déclaratif
+- résolution SLD, sémantiques opérationnelle et déclarative
+- structure des listes, coupure, négation
+- prédicats d'ordre supérieur, méta-programmation
+b) Notion de contraintes et de solveurs de contraintes : études de contraintes de domaines finis, de domaine booléen. 
+Pré-requis : 
+Logiques mathématiques
+Objectifs : 
+L'utilisation des langages de Prolog et des solveurs de contraintes intégrés.
+Capacité de programmer pour résoudre des problèmes par une approche déclarative en utilisant la logique du premier ordre.
+Langue de l’enseignement : Français/Anglais
+
+UE 17 – Interface homme machine
+Contenu : 
+Principes de la programmation événementielle, le modèle MVC
+Définition et programmation des interfaces graphiques en client « lourd »
+Illustration et mise en oeuvre avec le langage Java/SWING
+Architectures des interfaces Web (JSP/servlets…), le modèle MVC 2
+Utilisation des frameworks Javascript / Exemple de GWT (Google Web Toolkit)
+Les interfaces des terminaux portables / Exemple d’Android
+Pré-requis :
+Programmation Java, maîtrise de la programmation orientée objet 
+Objectifs : 
+Compréhension des architectures Modèle Vue Contrôleur.
+Maîtriser le développement et la maintenance d’IHM pour les architectures clients légers et clients lourds.
+Langue de l’enseignement : Français / Anglais
+
+UE 18 – Anglais
+Contenu : 
+Études des techniques de présentation orale : amélioration de la prononciation, organisation du discours, guidage de l'auditoire, élaboration d'aides visuelles …
+Pré-requis : 
+Anglais non professionnel
+Objectifs : 
+S'exprimer couramment et efficacement dans le domaine de la spécialité. 
+Langue de l’enseignement : Anglais
+
+Semestre 2 Spécialité INIS, SSL, VIP
+
+UE 21 – Intelligence artificielle
+Contenu : 
+- Introduction à l'Intelligence Artificielle
+- Résolution de problèmes : modélisation d'un problème, algorithmes de recherche non informés (largeur, profondeur, ...) et informés (meilleur d'abord, A*, ...) 
+- Modélisation des connaissances et inférence : représentations logiques et représentations de connaissances incertaines
+Pré-requis : 
+Programmation en logique 
+Objectifs : 
+Dans ce module, sont abordées des techniques fondamentales pour la résolution de problèmes complexes, fondées soit sur la modélisation  du problème par un graphe d'états, soit sur la représentation des connaissances sous-jacentes. On peut citer comme domaines d'application les problèmes d'aide à la décision, mais aussi par exemple la  constitution de mémoires d'entreprises. 
+Langue de l’enseignement : Français / Anglais
+
+UE 22 – Réseaux : protocoles et mobilité
+Contenu : 
+- Spécification de protocoles (à l'aide des automates d'états finis étendus)
+- Etude détaillée des protocoles : TCP, DHCP et NAT
+- Les réseaux mobiles : Etude du protocole 802.11 (wifi), éléments de sécurité dans les réseaux sans fils (WEP, WPA, ...), autres protocoles sans fils (Bluetooth, WiMax, GPRS, ...), mobilité
+Pré-requis : 
+Protocole IP, routage (programme du module "réseaux 1" de licence 3)
+Objectifs : 
+Comprendre et réaliser des spécifications de protocoles réseaux. Installer, configurer et sécuriser un réseau local hétérogène (avec du filaire et du WiFi) ouvert sur Internet 
+Langue de l’enseignement : Français / Anglais
+
+UE 23 – Algorithmique répartie
+Contenu : 
+Ce module vise à sensibiliser les étudiants aux problèmes particuliers qui se posent lorsque les processus participant à une application s’exécutent sur des sites distants. Le modèle de répartition auquel nous nous intéressons ici est celui de la communication par message. Les solutions existantes à différents problèmes classiques dans ce contexte seront présentées : gestion du temps, réalisation de l’exclusion mutuelle, détection de la terminaison de l’application, etc. Il aborde les thèmes suivants communication entre site (algorithme de parcours), causalité en l'absence d'horloge globale, mécanismes d’horloges logiques, calcul d'état global, élection, terminaison.
+Pré-requis : 
+Programmation parallèle
+Objectifs : 
+Sensibiliser les étudiants aux problèmes posés par la programmation d'applications réparties. 
+Langue de l’enseignement : Français / Anglais
+
+
+UE 24 – Programmation graphique
+Contenu :
+Partie I : pipeline graphique et introduction à OpenGL. La synthèse d'images et la visualisation sont des domaines importants en informatique qui s'appuient sur leur propre paradigme de développement. Dans cette première partie, ce module présentera le pipeline graphique afin de connaître le fonctionnement d'une carte graphique simple. Ensuite, la programmation 3D sera traitée à partir d'OpenGL qui reste un standard de la programmation graphique.
+
+Partie II : Introduction au traitement numérique des images. Les étudiants informaticiens ne sont pas familiers de méthodes mathématiques nécessaires au traitement numérique des images. Il s'agira ici de leur faire une introduction aux techniques d'analyse d'images et aux techniques de filtrage.
+Pré-requis : 
+Langage de programmation (C, C++)
+Objectifs : 
+Compétences pour la programmation d'applications 3D.
+Langue de l’enseignement : Français/Anglais
+
+
+UE 25 – Outils pour l'exploration de données
+Contenu : 
+- Notions élémentaires de probabilités : variables aléatoires, loi, espérance, variance, probabilité conditionnelle
+- Statistiques descriptives :  
+ *Indicateurs de tendance centrale, de dispersion et de forme (médiane, quantiles, moyenne, mode, variance et écart-type), tableau de contingence,
+  *contrôle de la qualité des données (valeurs aberrantes, données manquantes, etc)
+  *coefficient de corrélation, matrice de corrélation 
+  *introduction à l'estimation de paramètres
+- Analyse de données : Analyse en composantes principales, analyse des correspondances, analyse discriminante
+Pré-requis : 
+Objectifs : 
+Etre capable d'effectuer tous les traitements simples sur un jeu de données.
+Etre capable de produire une étude descriptive et d'en interpréter les résultats.
+Connaître les principes de l'analyse et visualisation du nuage d'individus/de variables, interpréter les résultats 
+Langue de l’enseignement : Français / Anglais
+
+
+UE 26 – Calculabilité et complexité
+Contenu : 
+Définition d'un problème, représentation des données et des résultats. Approche mécanique du calcul, Machine de Turing. Approche inductive, fonction primitive et mu récursives. Équivalence entre les deux modèles et plus généralement Thèse de Church-Turing. Problème indécidables et semi-décidables. Problème de la halte. Réduction entre problèmes.
+
+Calcul d'une machine sur une entrée, notion de ressource et de coût (temps ou espace) d'une exécution. Complexité d'un algorithme. Difficulté de comparer les algorithmes, approche asymptotique. Notion de complexité d'un programme. Class de complexité P. Définition de NP par certificat et non déterministe. Réduction polynomiale entre problèmes. Question P=NP.
+Pré-requis :
+Complexité des algorithmes
+Théorie des langages 
+Objectifs : 
+Comprendre la relative indifférence des problèmes par rapport à une machine comme un langage de programmation. Connaître les limites -en terme de problème et non d'algorithme- de ce que l'on peut calculer dans l'absolu (calculabilité) comme dans la pratique (complexité).
+Langue de l’enseignement : Français / Anglais
+
+
+UE 27 – Travaux d'études et de recherche 
+Contenu : 
+Cette UE est articulée autour de trois axes :
+- génie logiciel: analyse des besoins et élaboration du cahier des charges, conception et implémentation, test, réalisation d'une documentation et d'une distribution portable, travail en équipe. 
+- pratique scientifique : recherche et analyse de l'existant, justifications, critiques du travail réalisé, assimilation de nouveaux concepts dans la discipline ou transdisciplinaires.
+- recherche documentaire : Manipulation des bases de données et des catalogues disponibles au service commun de la documentation.
+Pré-requis : 
+Programmation impérative, Programmation fonctionnelle, Programmation par objets
+Objectifs : 
+Mise en pratique de principes et de techniques étudiés dans les unités d'enseignement, acquisition d'une expérience de génie logiciel, application d'une pratique scientifique 
+Langue de l’enseignement : Français / Anglais
+
+UE 28 – Technique de communication
+Contenu : 
+Apprentissage des principales techniques de communication liées à la gestion de projet : technique de réunion, gestion des relations entre personnes, conduite de projet.
+Pré-requis : 
+Objectifs : 
+Comprendre  l’importance des relations humaines dans un projet. Apprendre à maîtriser les problèmes humains dans un projet.
+Langue de l’enseignement : Français / Anglais
+
+Semestre 3 – Spécialité INIS
+
+UE 31 – Sécurité des applications nomades
+Contenu : 
+Ce cours porte sur la sécurité des applications J2ME (Java 2 Mobile Edition) et se décompose en deux parties. La première partie traite des problèmes liés à la configuration de la politique de sécurité de la machine virtuelle (security manager, chargeur de classe, contrôle  d'accès, signature de classes, ...) et des bonnes pratiques de programmation. Plusieurs aspects du langage Java (héritage, modificateurs,   sérialisation, JNI...) pouvant avoir un impact sur la sécurité des  applications seront étudiés. En particulier, l'accent sera mis, au travers d'une étude de la spécification du langage, sur les pratiques de développement Java conduisant à la production d'un code robuste. La seconde partie du cours portera sur le code exécuté par la machine virtuelle et la spécification de cette dernière. En particulier, les mécanismes de vérification de bytecode mis en oeuvre par la machine virtuelle (principalement basés sur la sureté du typage) et les techniques d'analyse sous-jacentes seront étudiés. Finalement, ces techniques d'analyse seront généralisées afin de permettre leur application à des propriétés de sécurité plus précises.
+Pré-requis : 
+Développement d'application nomades.
+Programmation Java.
+Objectifs : 
+Capacité à configurer correctement une machine virtuelle Java en fonction d'une politique de sécurité donnée.
+Maîtrise des subtilités du langage Java ayant un impact sur la sécurité des applications.
+Connaissance des propriétés de sureté du code assurées par les machines virtuelle Java et des techniques d'analyse sous-jacentes.
+Application de ces techniques à des propriétés de sécurité spécifiques.
+Langue de l’enseignement : Français / Anglais
+
+UE 32 – Systèmes d'informations géographiques nomades
+Contenu : 
+Apprentissage des principaux systèmes de géo-localisation utilisés dans l’informatique nomade. Etude des principes et des outils des systèmes d’informations géographiques (SIG). Analyse des architectures matérielles  et logicielles des SIG nomades
+Pré-requis : 
+Module de M1 : Système d’exploitation embarqué, développement d’applications nomades, réseaux : protocoles et mobilité.
+Objectifs : 
+Développer des applications nomades basées sur la géo-localisation et utilisant des SIG.
+Langue de l’enseignement : Français / Anglais
+
+UE 33 – Pratique des contraintes
+Contenu : 
+Le module "Pratique des contraintes" en M2 s'inscrit dans une démarche déclarative et descriptive pour modéliser et résoudre des problèmes combinatoires complexes et professionellement pertinents.  On y montre l'application des contraintes dans un éventail de problèmes réels, en mettant l'accent sur la pratique de la modélisation et l'utilisation des outils.  Il s'inscrit dans la continuité du module PLC de M1 qui présente le paradigme de la programmation logique et offre une introduction aux contraintes.
+Pré-requis : 
+Programmation en logique et par contraintes
+Objectifs : 
+Modélisation et résolution de problèmes par approche déclarative.
+Langue de l’enseignement : Français / Anglais
+
+UE 35 – Extraction de connaissances dans les bases de données
+Contenu : 
+- Les différents types d'apprentissage et les différentes tâches 
+- Classification supervisée : arbre de décision, modèles probabilistes, machines à vecteur support, noyaux
+- Evaluation des modèles
+- Classification non supervisée : par partitionnement, hiérarchique, conceptuelle
+- Recherche de règles d'association
+Pré-requis : Outils d'exploration de données, Intelligence Artificielle
+Objectifs : 
+- Utilisation d'outils : Weka, RapidMiner
+- Définir le problème d'apprentissage : modèle à acquérir, données nécessaires, techniques applicables
+- Appliquer des techniques d'apprentissage 
+Langue de l’enseignement : Français / Anglais
+
+UE 36 – Sécurité des communications
+Contenu : 
+Ce module introduit et familiarise les étudiants avec des notions de sécurité relatives aux communications. Après un survol historique de la compétition perpétuelle entre cryptographie et cryptanalyse, avec comme point clé la seconde guerre mondiale et le système Enigma, les standards actuels de chiffrements symétriques et asymétriques sont étudiés en profondeur. Les technologies actuelles permettent des communications synchrones sur des distances de plusieurs centaines ou milliers de kilomètres. De plus ces communications peuvent contenir des informations confidentielles et peuvent également nécessiter une authentification des personnes en communication (communication entre un tiers et un centre de paiement par exemple). Des protocoles de sécurité sont développés afin de garantir les propriétés mentionnées précédemment. Ce module présente les mécanismes d'authentification, de confidentialité et d'intégrité de données et ainsi que quelques protocoles comme Kerberos. Enfin, le dernier point traité dans ce module démontre que des algorithmes de chiffrement parfaits ne suffisent pas pour garantir la sécurité d'un protocole de communication. Les étudiants sont invités à manipuler un outil de simulation et de vérification de protocoles de sécurité afin de détecter d'éventuelles failles logiques de conception.
+Pré-requis : 
+Notions de Mathématiques discrètes, réseaux.
+Objectifs : 
+Comprendre en profondeur les mécanismes garantissant la sécurité des systèmes et réseaux en thème de confidentialité, d'authentification et de disponibilité. Modéliser un protocole à partir d'une spécification textuelle et manipuler un outil de simulation et de vérification
+Langue de l’enseignement : Français / Anglais
+
+UE 37 – Projet 1
+Contenu : 
+Réalisation d'une application en rapport avec les UE du semestre.
+Pré-requis : 
+Maîtrise des techniques de développement de logiciels.
+Objectifs : 
+Mise en pratique des principes et techniques étudiés dans les unités d'enseignement.
+Langue de l’enseignement : Français / Anglais
+
+
+UE 38 – Initiation à la recherche 
+Contenu : 
+Initiation au stage recherche :
+- introduction d'outils pour aborder un stage de recherche en laboratoire
+- présentation du cycle de tutoriaux, des thématiques, des possibilités de poursuites en thèse et plus largement du milieu de la recherche académique ou industrielle
+- présentation des projets académiques proposés au semestre 4
+
+Cycle de tutoriaux :
+- 2 tutoriaux longs (d'une durée totale de 9h; soit 2 fois 3 séances de 1h30) seront axés sur une thématique préalablement choisie et pour laquelle un renforcement est sollicité par le laboratoire.
+- 20 tutoriaux courts (de 1h30 chacun) articulés autour de thématiques telles que la résolution par contraintes, l'apprentissage, extraction de connaissances, le parallélisme, la réalité virtuelle, la sécurité et sûreté des logiciels, les modèles de calculs, l'algorithmique et la théorie des graphes, ...
+
+Ces tutoriaux se voudront à la fois introductifs et concrets, mais ils apporteront également des connaissances pointues sur des domaines maîtrisés par les intervenants.
+Pré-requis : 
+Avoir une connaissance générale de l'informatique. 
+Objectifs : 
+L'objectif est d'initier l'étudiant à une démarche scientifique et de le familiariser à un travail de recherche bibliographique. Les tutoriaux ont pour objectif d'appréhender quelques thématiques de recherche et d'introduire des techniques récentes ou fondamentales.
+Langue de l’enseignement : Français / Anglais
+
+UE 39 – Simulation de stratégie d'entreprise
+Contenu : 
+Les étudiants sont mis en situation de gérer une entreprise à travaers des décisions d'ordre commercial, financier et de production. Ces entreprises sont en concurrence sur le marché, et sont en mesure d'évaluer régulièrement leurs résultats à l'aide des documents financiers et d'études de positionnement. Ainsi cette situation de gestion d'entreprise est l'occasion d'appliquer les principaux concepts en statégies et marketing, et d'élaborer des tableaux de bord afin de guider les étudiants dans leurs décisions et d'en mesurer les impacts financier.
+Pré-requis :
+aucun 
+Objectifs :
+Connaissance du monde de l'entreprise. 
+Langue de l’enseignement : Français / Anglais
+
+Semestre 4 – Spécialité INIS
+UE 41 – Développement Avancé d'Applications Nomades
+Contenu : 
+Ce module présente les nouvelles ressources embarquées dans les téléphones "nouvelle génération" menant à de nouveaux types d'applications communément appelées "applications de réalité augmentée". Le spectre d'applications imaginables est alors conséquents, cependant elles doivent respecter un cadre légal. Ainsi, ce cours rappelle également la législation régissant ce type d'applications.
+1. Présentation des ressources matérielles : Wifi, Bluetooth, capteurs, accéléromètres
+2. Description des différentes API selon le support
+3. Interactions avec des services WEB
+4. Cas d'étude : un exemple de développement d'une application "réalité augmentée"
+5. Publication des applications
+Pré-requis : 
+Développement d'applications nomades (S2), Sécurité des applications nomades (S3), SIG nomade (S3).
+Objectifs : 
+Fournir à l'étudiant les connaissances matérielles embarquées dans les téléphones "nouvelle génération". Familiariser l'étudiant à la programmation d'application de réalité augmentée. Avoir connaissance du cadre légal régissant ce type d'applications
+Langue de l’enseignement : Français / Anglais
+
+
+UE 42 – Visualisation avancée
+Contenu : 
+La complexité sémantique et la massivité des données issues de mesures scientifiques, de simulations numériques ou d'immenses bases de données disponibles sur le réseau, rendent indispensable le recours à la médiation visuelle pour en permettre une appréhension la plus riche possible.  La mise en oeuvre de  techniques de visualisation élaborées conduit à utiliser des architectures parallèles et distribués pour faire face à la complexité des traitements numériques en amont ou propre au rendu visuel. Cette puissance de traitement peut être mise en oeuvre pour simplifier le rendu afin de l'adapter à un rendu nomade, mais elle  peut aussi adapter les données en post-traitement pour que celles-ci soient analysées via un vaste environnement de Réalité Virtuelle multi-écrans plus ou moins distant sur le réseau. Nous présentons dans ce cours  les fondements du pipeline graphique parallèle, les différentes techniques de rendu scientifique, les moyens d'adapter le rendu nomade aux gros volumes de données complexes et enfin nous abordons la visualisation scientifique utilisant les techniques avancées de Réalité Virtuelle au service de la performance.
+Pré-requis : 
+Module Calcul intensif. Module programmation graphique. Notions en Réseaux. Architecture des systèmes
+Objectifs : 
+Comprendre différentes techniques de visualisation d'information scientifique.
+Comprendre le fonctionnement d'une application graphique nomade.
+Aborder sur des exemples les principes des applications  de visualisation scientifique portants sur des données massives de type geo-scientifique ou biologie moléculaire.
+Langue de l’enseignement : Français / Anglais
+
+UE 43 – Réseaux, sécurité et nomadisme
+Contenu : 
+1) Protocoles et sécurité
+- Les attaques réseau
+- Les méthodes de protection (inetd, tcpwrappers, arp)
+- Protection des accès distants (PKI, SSO)
+- Switch
+- VLAN
+- Routeurs
+- Pare-feux, pare-feux applicatifs, proxy
+- IPSec, VPN
+- SSL, TLS, SSH 
+- NIDS
+2) Mobilité dans les réseaux sans fil de type 802.xx
+- Réseaux mobiles et protocoles IP (IPV6, HMIP, LERS, SIP)
+- Réseaux mobiles adhoc (par exemple MANET)
+- Réseaux mobiles de type NEMO (Network Mobility) 
+3) Mobilité dans les réseaux téléphoniques
+- Générations de mobiles (GSM, GPRS, 3G, 3G+, UMTS)
+4) Sécurité des réseaux sans fils
+- Sécurité des réseaux GSM (Authentification et chiffrement, Sécurité des cartes SIM, Interception d'appel, Sécurité des services de DATA (SMS, MMS))
+- Intégrité, confidentialité et disponibilité des données sur les réseaux sans fil (Filtrage des adresses MAC, WEP / WPA / WPA2, AAA : Radius, Portail Captif, VPN)
+Pré-requis : 
+- Réseau (modèle OSI, programmation)
+- Notions de cryptographie
+Objectifs : 
+- Découvrir les différents types de réseaux sans fils (IP, GSM, ...)
+- Connaître les spécificités des réseaux IP sans fils
+- Connaître les protocoles de sécurité classiques
+- Être capable de sécuriser une architecture réseau pour des applications nomades
+Langue de l’enseignement : Français / Anglais
+
+UE 44 – Fouille de données et de textes
+Contenu : 
+Cet enseignement permet d'une part, d'introduire des techniques importantes, principalement statistiques et bayésiennes, non présentées dans le module Extraction de Connaissances dans les BD, d'autre part, d'élargir la problématique à des types de données complexes comme les données textuelles.
+1. Algorithme de fouille de données (approfondissement)
+- apprentissage statistique (réseaux de neurones, machines à vecteur support, ...)
+- apprentissage bayésien
+2. Extraction de Connaissances à partir de textes 
+- Préparation des données
+- Documents structurés (XML, ...)
+- Classification de documents
+Pré-requis : 
+Outils pour l'exploration de données, Extraction de Connaissances dans les Données
+Objectifs : 
+Compléter les connaissances acquises en fouille de données et acquérir de nouvelles compétences sur la fouile de données textuelles. Les données textes ont pris une importance croissante avec le développement d'Internet qui permet de récupérer rapidement des masses de documents. Il est important d'avoir des outils permettant de traiter les documents, que ce soit pour la classification, la recherche d'informations, la structuration de connaissances sur un domaine, le web sémantique, ... 
+Langue de l’enseignement : Français / Anglais
+
+UE 45 – Web services et interopérabilité
+Contenu : 
+Ce module permet de comprendre l'intérêt et les technologies sous-jacentes mises en œuvre dans les architectures de type Services Web (SOAP, WSDL, HTTP, XML...). Le cours magistral présente les technologies et les outils (libres et commerciaux) et les séances de travaux dirigés sur machines permettent de mettre en pratique les notions présentées en développant deux SI sous java J2EE et Microsoft .NET qui interopèrent à l'aide d'une architecture orientée service.
+Pré-requis : 
+Objectifs : 
+Comprendre l'architecture et les technologies sous-jacentes des Services Web, pour permettre l'interopérabilité entre des systèmes d'information hétérogènes
+Langue de l’enseignement : Français / Anglais
+
+
+UE 46 – Projet 2
+Contenu : 
+Réalisation d'une application en rapport avec les UE du semestre. 
+Pré-requis : 
+Maîtrise des techniques de développement de logiciels
+Objectifs : 
+Mise en pratique de principes et de techniques étudiés dans les unités d'enseignement. 
+Langue de l’enseignement : Français / Anglais
+
+UE 47 – Préparation au stage de recherche 
+Contenu : 
+Réalisation d'un état de l'art ou/et d'une expérimentation dans un domaine précis de l'informatique. 
+Pré-requis : 
+Initiation à la recherche
+Objectifs : 
+Savoir réaliser un état de l'art dans un domaine spécialisé de la recherche en informatique et être à même d'amorcer une démarche scientifique.
+Langue de l’enseignement : Français / Anglais
+
+
+UE 48 – Anglais
+Contenu : 
+Étude des technique de présentation orale : amélioration de la prononciation, organisation du discours, guidage de l'auditoire, élaboration d'aides visuelles.
+Pré-requis : 
+Anglais non professionnel
+Objectifs : 
+Négociation des contrats
+Langue de l’enseignement : Français / Anglais
+
+UE 49 – Stage
+Contenu : 
+Un stage en entreprise à temps complet de 4 à 6 mois.
+ou
+Un stage de recherche  à  temps complet de 4 à 6 mois dans un laboratoire au sein d'une équipe de recherche confronte l'étudiant au monde de la recherche et lui permet à  la fois d'approfondir et d'individualiser la formation de base. Bien qu'il soit conseillé de faire le stage en laboratoire de recherche, le stage peut se dérouler  dans un service de recherche et développement d'une entreprise. La recherche du stage est à l'initiative de l'étudiant. Cependant, le sujet doit être validé par les responsables de la formation. Le stage fait l'objet d'une convention engageant le laboratoire, l'université et l'étudiant. 
+Pré-requis : 
+Objectifs : 
+Langue de l’enseignement : Français / Anglais
+
+Semestre 3 – Spécialité SSL
+
+UE 31 – Sécurité des applications nomades
+Voir S3 INIS
+UE 32 – Test du logiciel
+Contenu : 
+Le test reste la principale méthode de validation des logiciels aujourd'hui. Ce cours commencera par une introduction aux techniques de test, présentera la place du test dans un processus de développement, les notions de couverture et de critères de sélection de test, montrera en détail différentes méthodes de test fonctionnel et de test structurel et permettra de mettre en pratique ces connaissances dans des outils de génération automatiques de test.
+Pré-requis : 
+Module de M1 : Modélisation et vérification de systèmes concurrents
+Objectifs : 
+    - Connaissances des fondements du test du logiciel
+    - Capacité à utiliser ces connaissances pour le développement sûre de logiciel.
+Langue de l’enseignement : Français / Anglais
+UE 33 – Sécurité des systèmes d’exploitation
+Contenu : 
+1) Concepts de base sur l'administration Unix / Windows
+- Boot loader et procédure de boot matériel
+- Les démons et le lancement de services
+- Les comptes utilisateurs
+- Le noyau : fonctionnement, modules, configuration et compilation
+- Les différents types de fichiers
+2) Modèles de sécurité
+- Contrôle d'accès MAC, RBAC, MLS, BLP
+- Propriétés de sécurité
+- Séparation de privilèges
+3) Sécurité d'un système Linux
+- Sécurité système : authentification, autorisation, single sign on (LDAP, Kerberos)
+- Débordements de tampon (buffer overflows)
+- Surveillance système : Logs, HIDS, Forensics 
+- Contrôle d'accès (SELinux, GRSecurity, ...)
+- Chiffrement de données
+4) Sécurité des systèmes Windows NT
+- Principes généraux de sécurité de Windows NT
+- Active directory
+- Mécanismes de sécurité niveau système
+- Sécurité client/serveur de Windows NT
+- Nouveautés dans Windows 7
+5) Systèmes de détection d'intrusion
+- Principes généraux : Introduction aux IDS
+- Exploitation des IDS
+Pré-requis : 
+- Notions de C et programmation shell
+- Notions d'architecture des ordinateurs
+Objectifs : 
+- Connaître les grands principes de fonctionnement d'un système d'exploitation
+- Connaître les différents mécanismes permettant de sécuriser un système d'exploitation
+- Acquérir la capacité à administrer un système type UNIX/Windows
+- Acquérir la capacité à sécuriser et maintenir la sécurité d'un système d'exploitation
+- Acquérir la capacité à analyser et rétablir un système compromis
+Langue de l’enseignement : Français / Anglais
+UE 34 – Architectures Applicatives réparties
+Voir S3 INIS
+UE 35 – Sécurité et protocoles
+Voir S3 INIS
+UE 36 – Extraction de connaissances dans les BD
+Voir S3 INIS
+UE 37 – Projet
+Voir S3 INIS
+UE 38 – Initiation à la recherche
+Voir S3 INIS
+UE 39 – Simulation de stratégie d’entreprise
+Voir S3 INIS
+
+Semestre 4 – Spécialité SSL
+UE 41 – Analyse statique
+Contenu : 
+La vérification de propriétés dynamiques des programmes, comme par exemple l'absence d'accès à des pointeurs nuls, est un problème généralement indécidable.  L'interprétation abstraite dont traite ce cours fournit un cadre formel et des outils permettant de déterminer des approximations décidables de ces propriétés pour lesquelles il est possible de dériver des systèmes de type, de vérification et d'analyse statique. Ce cours introduit les connaissances nécessaires à la mise oeuvre des techniques d'interprétation abstraite (théorie des ordres, théorie des points fixes, connexions de Galois,...). Des exemples concrets d'utilisation de ces techniques seront étudiés et des outils d'analyse statique existants (Frama-C, Astree) seront présentés.
+Pré-requis : 
+Sécurité des Applications Nomades
+Objectifs : 
+    - Connaissances des fondements de l'analyse statique de programmes
+    - Capacité à utiliser ces connaissances pour le développement d'outils de sûreté et de sécurité.
+Langue de l’enseignement : Français / Anglais
+
+
+UE 42 – Qualité et certification
+Contenu : 
+1) Qualité logiciel
+- Présentation de la Qualité, historique, bases de la démarche, définitions, coûts, gains, processus
+- Présentation des normes et référentiels Qualité (ISO 9001, CMM, ISO SPICE), assurance qualité logiciel
+- Plan d'assurance de la qualité logicielle
+- Qualité produit, ISO 9126, métrologie (qualimétrie logicielle), gestion de configuration, gestion des changements
+- Qualité dans la relation client/fournisseur, MOA/MOE, sous-traitants, tableaux de bord
+2) Certification
+- Systèmes de management du Sysème d'information
+- ISO 27000, 2700x et méthode d'audit (EBIOS, MEHARI, OCTAVE, ITIL, COBIT)
+- Certifications (audit et organismes)
+Pré-requis : 
+- Architecture des systèmes d'information 
+- Programmation orientée objet
+- Génie logiciel
+Objectifs : 
+- Connaître les différents référentiels qualité
+- Connaître les différentes techniques d'audit
+- Savoir mettre en oeuvre une méthode de certification
+Langue de l’enseignement : Français / Anglais
+UE 43 – Réseaux, Sécurité, Nomadisme
+Voir S4 INIS
+UE 44 – Web Services et interopérabilité
+Voir S4 INIS
+UE 45 – Projet 2
+Voir S4 INIS
+UE 46 – Préparation au stage recherche
+Voir S4 INIS
+UE 47 – Anglais
+Voir S4 INIS
+UE 48 – Stage
+Voir S4 INIS
+Semestre 3 – Spécialité VIP
+
+UE 31 – Génie logiciel
+Contenu : 
+1.	Compléments de programmation : programmation événementielle, DLL, sérialisation, threads, aide intégrée, déploiement.
+2.	Concepts supplémentaires de programmation : Technologie COM. Interfaçage d’applications avec des bases de données.
+3.	Qualité industrielle : Impératifs de qualité, normes de qualité, qualité de processus, qualité des produits, exigence qualité, gestion de configuration, modèles de maturité.
+4.	Technologies Web : Programmation XML / Web.
+5.	UML : présentation d’UML. 
+6.	Gestion de bases de données : Modélisation, tables, SQL, SQL server, Interfaces d’accés (PHP, ASP, ACCESS), Etude de cas.
+Pré-requis : 
+Bases de données et Programmation orientée objet
+Objectifs : 
+Ce module complète et finalise la formation des étudiants dans différents secteurs du logiciel, grâce entre autre aux interventions de professionnels du milieu industriel.
+ Il s'agit de donner aux étudiants une formation générale sur la qualité en traitant les domaines suivants : la qualité du logiciel, les normes et les organismes de normalisation, UML, le Cycle de vie, la qualité de produit, la qualité de processus, la gestion de projet fiabilité, les procédures et vecteurs de tests, la gestion de configuration et de déploiement et la gestion des bases de données.
+Langue de l’enseignement : Français / Anglais
+
+UE 32 – Informatique temps réel
+Contenu : 
+1.	Les concepts temps réel : le multi-tâche, la notion de processus, les appels système, les communications (synchronisation par sémaphores, synchronisation par événements, communication par boîtes aux lettres), la répartition des processus, le temps partagé.
+2.	Les spécificités temps réel.
+3.	Présentation des architectures parallèles : analyse des besoins (évaluation des architectures). exemple du traitement d’images, classification des architectures (architectures SISD, MISD, SIMD et MIMD), problèmes de classification, mémoire et communication : architectures à mémoire partagée et architectures à mémoire distribuée, parallélisme algorithmique (algorithmique répartie, parallélisme de données et parallélisme de flux).
+4.	Applications Java embarquées sur carte à puce.
+Pré-requis : 
+Programmation parallèle
+Objectifs : 
+Ce module présentent les différentes méthodes mises en œuvre pour aboutir à des systèmes informatisés répondant aux contraintes temporelles imposées par l’application.
+Il traite également 
+la mise en œuvre matérielle d’architectures parallèles dédiées à des applications de traitement d’image.
+l'étude logicielle des adéquations algorithme-architecture.
+l'étude des systèmes d’exploitation temps réel pour des applications avec contraintes sévères.
+les solutions partagées par Java embarqué.
+Langue de l’enseignement : Français / Anglais
+
+UE 33 – Systèmes électroniques communicants
+Contenu : 
+1.	Les systèmes communicants. Les OS pour l'embarqué. Présentation OS linux..  
+2.	Modèles de l'ISO, modèle IEEE, description des couches, protocoles et services. 
+3.	Constitution physique des réseaux.
+4.	Outils d'analyses matérielle et réseaux. 
+5.	TCP/IP embarqué : contraintes de mise en œuvre, état de l'art des solutions industrielles.
+6.	Bus et réseaux industriels et automobile.
+7.	Contrôle-Commande, voix, données, images : Exemple CAMERA IP  motorisée  et transmission d'alarmes.
+8.	Travaux dirigés : protocoles d'applications (SMTP, FTP, NFS,...), mise en œuvre OS embarqué, étiquettes RFID, VOIP, streaming audio et vidéo.
+Pré-requis : 
+Réseaux
+Objectifs : 
+Il s'agit dans ce module d'aborder, d'un point de vue théorique et expérimental, les systèmes électroniques communicants.
+Ces notions seront appliquées au fonctionnement de systèmes complexes mettant en œuvre du logiciel, du matériel et des piles protocolaires pour le fonctionnement en réseau filaire et non filaire.
+Ce module permettra de comprendre les contraintes industrielles de chaque segment de marché des systèmes communicants (automobile, grand public, instrumentation-mesure,...).
+Langue de l’enseignement : Français / Anglais
+
+UE 34 – Visionique
+Contenu : 
+1.	Compléments logiciels : Extraction de primitives, mise en correspondance, contours et surfaces actives.
+2.	Métrologie par vision : Étalonnage d'une chaîne de mesure.
+3.	Signaux Vidéo.
+4.	Conception d'un capteur d'image : Technologie des capteurs CCD et mise en œuvre (horloges, conditionnement du signal,...). Intensificateurs.
+5.	Perception 3D : Capteurs actifs (télémètres, triangulation active, interférométrie holographique). Capteurs passifs (stéréovision, vision dynamique monoculaire, mise en correspondance). Analyse de données 3D.
+6.	Normes et compression d'images : TCD, JPEG, MPEG, TV numérique. Imagerie médicale et norme DICOM.
+7.	Vision Industrielle : Marché de la vision, solutions matérielles, adéquation algorithme/architecture, méthodologie de développement d'une application, présentation d'applications, acteurs du marché de la vision industrielle, le métier de l'ingénieur en vision.
+Pré-requis : 
+Programmation graphique (Traitement numérique)
+Objectifs : 
+Ce module, orienté vers la vision industrielle et ses applications, notamment en productique, est destiné à donner aux élèves un panorama du marché aussi bien en termes de besoins et contraintes qu'en termes de solutions, matérielles et logicielles.
+Langue de l’enseignement : Français / Anglais
+
+UE 35 – Filtrage et codage
+Contenu : 
+1.	Synthèse de filtres en virgule fixe (gestion de la dynamique et des troncatures)
+2.	Mise en œuvre de filtres multicadences (filtres polyphases, décimation, interpolation, filtres CIC, banc de filtres polyphases)
+3.	Ondelettes
+4.	Introduction au filtrage adaptatif (LMS et Kalman)
+5.	Passage en revue exhaustif des normes et des techniques de codage en image
+6.	Codage du signal de parole.
+Pré-requis : 
+Programmation graphique et traitement numérique
+Objectifs : 
+Optimisation de l'implantation de filtres numériques (gestion de la dynamique de calcul et des troncatures, exploitation des possibilités de multicadence et d'adaptation, ondelettes)
+Application aux techniques de codage de l'image et de la parole.
+Langue de l’enseignement : Français / Anglais
+UE 36 – Simulation de stratégie d’entreprise
+Voir S3 INIS
+UE 37 – Initiation à la recherche
+Voir S3 INIS
+UE 38 – Projet
+Voir S3 INIS
+
+Semestre 4 – Spécialité VIP
+
+UE 41 – Programmation multi-coeurs
+Contenu : 
+Ce cours porte sur l'exploitation des différents niveaux de parallélisme présents dans la quasi-totalité des architectures actuelles. Ces niveaux (multi-coeurs, unités vectorielles et cartes graphiques) seront d'abord présentés, en particulier, les problématiques de programmation liées aux spécificités de ces architectures seront étudiés (hyperthreading, pipeline, cache, modèle mémoire, alignement).
+Après une introduction aux structures de données adaptées au parallélisme en mémoire partagée, la programmation de ces architectures sera étudiée au travers d'exemples touchant au calcul scientifique et au traitement d'images. La programmation des processeurs multi-coeurs reposera sur l'utilisation des Pthreads, d'OpenMP, d'Intel TBB et sur une présentation du concept de transaction. La programmation de cartes graphiques reposera sur l'utilisation de CUDA et les jeux d'instructions SSE et Altivec seront utilisés pour la programmation des unités vectorielles intégrées dans les processeurs. Une vision plus
+haut-niveau sera donnée au travers de la librairie OpenCL. Finalement, l'accent sera mis sur la combinaison de ces différents niveaux de parallélisme, la mesure des performances et l'adéquation
+entre problèmes et choix d'architectures/algorithmes adaptés.
+Pré-requis : 
+Programmation impérative
+Architecture des ordinateurs
+Objectifs : 
+Capacité à exploiter correctement et efficacement les différents niveau de parallèlisme présents dans les architectures actuelles.
+Capacité à choisir une architecture en fonction d'un problème donné.
+Capacité à utiliser ces compétences dans les domaines du calcul scientifique et du traitement d'images.
+Langue de l’enseignement : Français
+
+UE 42 – Visualisation avancée
+Contenu : 
+La complexité sémantique et la massivité des données issues de mesures scientifiques, de simulations numériques ou d'immenses bases de données disponibles sur le réseau, rendent indispensable le recours à la médiation visuelle pour en permettre une appréhension la plus riche possible.  La mise en oeuvre de  techniques de visualisation élaborées conduit à utiliser des architectures parallèles et distribués pour faire face à la complexité des traitements numériques en amont ou propre au rendu visuel. Cette puissance de traitement peut être mise en oeuvre pour simplifier le rendu afin de l'adapter à un rendu nomade, mais elle  peut aussi adapter les données en post-traitement pour que celles-ci soient analysées via un vaste environnement de Réalité Virtuelle multi-écrans plus ou moins distant sur le réseau.
+Nous présentons dans ce cours  les fondements du pipeline graphique parallèle, les différentes techniques de rendu scientifique, les moyens d'adapter le rendu nomade aux gros volumes de données complexes et enfin nous abordons la visualisation scientifique utilisant les techniques avancée de Réalité Virtuelle au service de la performance.
+Pré-requis : 
+Module Calcul intensif, Module programmation graphique. Notions en Réseaux.Architecture des systèmes
+Objectifs : 
+Comprendre différentes techniques de visualisation d'information scientifique. Comprendre le fonctionnement d'une application graphique nomade. Aborder sur des exemples les principes des applications  de visualisation scientifique portants sur des données massives de type geo-scientifique ou biologie moléculaire.
+Langue de l’enseignement : Français / Anglais
+
+UE 43 – Fouille d'images
+Contenu : 
+Ce module explore les différentes techniques et compétences nécessaires à la fouille d'images, depuis la description synthétique des images jusqu'aux techniques d'apprentissage automatique.
+La description synthétique des images consiste à extraire un nombre restreint de descripteurs numériques, représentatifs du contenu de l'image, la décrivant sur un plan local ou global (orientations ou couleurs dominantes, texture...). Nous étudierons ou rappellerons différentes méthodes d'extraction de descripteurs, tels que les histogrammes, les matrices de cooccurence ou encore les ondelettes. Nous verrons également comment extraire les points d'intérêt au sein des images.
+Par ailleurs, nous présenterons différentes facettes de l'apprentissage automatique, d'abord de manière générale, puis dans le cadre de leur application aux images.
+Nous aborderons la notion de distance ou similarité, nous montrerons comment elle peut s'appliquer pour des recherches locales (images similaires, classification par plus proche voisin...) ou globale (structuration de l'espace des images, clustering...).
+Nous étudierons l'impact de connaissances a priori sur l'efficacité des méthodes (approches non supervisées, supervisées, semi-supervisées).
+Pré-requis : 
+Objectifs : 
+Apporter à l'étudiant une double compétence dans les techniques d'apprentissage en général et dans leur application aux images en particulier.
+Langue de l’enseignement : Français / Anglais
+UE 44 – Préparation au stage recherche
+Voir S4 INIS
+UE 45 – Projet 2
+Voir S4 INIS
+
+UE 46 – Anglais
+Voir S4 INIS
+UE 47 – Stage
+Voir S4 INIS
+ 
+
+Semestre 1 – Spécialité MoCaHP
+UE 11 – Mise à niveau en informatique
+Contenu
+- programmation impérative en C : constructions de base du langage C
+- programmation impérative en C : gestion de la mémoire
+- programmation impérative en C : pratique avec gcc, make et gdb
+- analyse des algorithmes : complexités asymptotiques, tris, strassen
+- introduction à la programmation en C++
+Pré-requis
+Notions de programmation impérative et objet en Java
+Objectifs 
+Les étudiants devront savoir écrire des programmes C qui manipulent des pointeurs, en particulier pour utiliser MPI dans le module « Programmation parallèle » et avoir les bases pour analyser la complexité d'algorithmes séquentiels pour pouvoir dans le même module analyser des algorithmes parallèles.
+
+UE 12 – Système et réseaux
+Contenu
+Architecture de systèmes d'exploitation
+Utilisation d'Unix
+Administration Unix et windows
+Architecture des réseaux : structure en couches, protocoles, services
+Réseaux locaux sous UDP-TCP/IP, Ethernet
+Protocoles de routage : RIP, OSPF, BGP
+Principaux protocoles Internet : DNS (annuaire de noms de domaines) SMTP (mail), FTP (transfert de fichiers), HTTP (web) ...
+Pré-requis
+Module de remise à niveau
+Objectifs 
+Utilisation et administration de systèmes d'exploitation
+Principes et pratique des réseaux locaux informatiques
+
+UE 13 – Anglais
+Voir S1 INIS, SSL, VIP
+
+UE 14 – EDP signal et filtrage
+Contenu
+Filtres-systèmes.
+Analyse spectrale des signaux analogiques.
+Analyse spectrale des signaux numériques ( TFD, FFT).
+Spectrogramme.
+Echantillonnage – Théorème de Shannon – Analyse temps-fréquence.
+Transformation  de Laplace – Transformée en z.
+Filtres idéaux –réels – Fonctions de transfert – Filtres différentiels.
+Filtres à réponse impulsionnelle finie  (RIF).
+Application au signal sonore.
+Méthodes des EDP.
+Mise en œuvre numérique (Scilab).
+
+UE 15 – Génie logiciel pour le calcul haute performance
+Contenu
+- Introduction au génie logiciel
+- Tests unitaires, de programmes séquentiels, de programmes parallèles
+- Débogage de programmes séquentiels, parallèles
+- Profilage pour les performances de programmes séquentiels, parallèles
+Pré-requis
+Programmation impérative
+Objectifs 
+A l'issue de cette UE les étudiants devront être capables de participer à un développement logiciel rigoureux dans le cadre spécifique d'applications de calcul haute performance.
+
+UE 16 – Modélisation, graphes et algorithmes
+Voir S1 INIS, SSL, VIP
+
+UE 17 – Programmation parallèle
+Voir S1 INIS, SSL, VIP
+
+UE 18 – Langages de scripts
+Contenu
+Les applications de calcul scientifique et de simulations font très souvent appel à des bibliothèques ou même des applications complètes qui sont réutilisées. Dans ce contexte l'interfaçage pour manier plusieurs bibliothèques ou applications peut s'écrire à l'aide de langages de scripts. Certains langages peuvent même être utilisés comme langages de prototypage rapide d'applications de calcul haute performance, ou comme langage de développement rapide avec des performances acceptables pour des programmes ne devant s'exécuter qu'une seule fois ou peu de fois. Cette UE présentera un tel langage de scripts et pour ces utilisations.
+Pré-requis
+Programmation impérative et objet
+Objectifs 
+A l'issue de cette UE les étudiants devront être capables de prendre en main rapidement de nouveaux langages de scripts et devront être opérationnels dans l'utilisation du langage présenté dans l'UE pour le prototypage d'applications de calcul haute performance. 
+
+Semestre 2 – Spécialité MoCaHP
+UE 21 – Algorithmique répartie
+Voir S2 INIS, SSL, VIP
+UE 22 – Analyse de données et méthodes de simulation
+Contenu
+Rappels sur l'Analyse en Composantes Principales (ACP); Analyse Factorielle des Correspondances (AFC). Analyse des Correspondances Multiples (ACM), méthodes de Classification (hiérarchique et non hiérarchique), Analyse Discriminante. Applications à des jeux de données exemples (sous SAS et R).
+Méthodes de simulation: Simulation de variables aléatoires iid; méthodes d'inversion, acceptation-rejet, polaire. 
+Méthodes de Monte-Carlo; usage de la Loi des grands Nombres et du Théorème de Limite Centrale;  calcul d'intégrales, réduction de variance; simulation de systèmes complexes.
+
+
+UE 23 – Calculabilité et complexité
+Voir S2 INIS, SSL, VIP
+UE 24 – EDP, modélisation physique, simulations, méthodes variationnelles
+Contenu
+Modélisation : de  la description des phénomènes aux équations qui les régissent (Equations de bilan, adimensionnement,...). Exemples simples (masse-ressort etc...)
+Calcul des variations, équations d'Euler-Lagrange. Equations d'ordre 2 de la mécanique.
+Équations linéaires : introduction aux méthodes variationnelles, éléments finis.
+Equations non linéaires, Hamilton-Jacobi, systèmes hyperboliques de lois de conservation, équations cinétiques. Méthodes numériques spécifiques.
+UE 25 – Programmation graphique
+Voir S2 INIS, SSL, VIP
+UE 26 – Travaux d’étude de de recherche
+Voir S2 INIS, SSL, VIP
+UE 27 – Stage (8 semaines minimum)
+
+Semestre 3 – Spécialité MoCaHP
+UE 31 – Anglais- communication
+Voir S3 INIS
+UE 32 – Simulation de stratégie d’entreprise
+Voir S3 INIS
+UE 33 – Automates cellulaires et réseaux d’interactions
+Contenu
+Ce module s'intéresse à deux modèles en eux même et non comme outils de modélisation. Le but est de comprendre les fonctionnement des modèles, leur propriétés et leurs limites.
+Pré-requis
+Aucun
+Objectifs 
+Meilleure compréhension des modèles utilisés.
+UE 34 – Modélisation, calcul scientifique, outils numériques
+Contenu
+Méthodes de résolution d'équations. Recherche de zéros. Mise en oeuvre numérique.
+Intégration numérique et méthodes de quadrature (rectangle, Heun, Simpson, etc). Calculs d'erreurs. Mise en oeuvre numérique.
+Résolution numérique de systèmes différentiels (méthodes explicites, implicites, à un pas, multipas). Calculs d'erreurs. Méthodes prédictives. Mise en oeuvre numérique.
+Discrétisation d'équations aux dérivées partielles venant de la physique (par exemple équation de la chaleur, élasticité) par différences finies et éléments finis. Mise en oeuvre numérique.
+Programmation des méthodes en Scilab, Matlab, et/ou C++.
+UE 35 – Pratique des contraintes
+Voir S3 INIS
+UE 36 – Processus aléatoires, modélisation et simulations
+Contenu
+Processus de comptage, de Poisson, de renouvellement.
+Files d'attente, réseaux de files d'attente.
+Méthodes de Monte-Carlo, simulation de v.a., calcul d'intégrales, réduction de variance, simulation par chaînes de Markov à espace d'états discrets ou continus, algorithme de Metropolis, applications (MCMC).
+
+UE 37 – Programmation multi-coeurs
+Voir S4 VIP
+UE 38 – Recherche opérationnelle, graphes, programmation dynamique
+Contenu
+Optimisation discrète 
+Programmation linéaire (continue); Formulations canoniques; Structure de l'ensemble admissible; Existence de solutions et conditions d'optimalité
+Dualité (théorie et théorèmes) 
+Algorithme du simplexe (Dantzig); Algorithmes dual et primal-dual; Généralisation (gradient réduit) 
+Autres méthodes
+Fonctions barrières et méthodes de points intérieurs; Complexité et comparaison formelle avec la méthode du simplexe; Cas des problèmes de grande taille; 
+Techniques de décomposition (généralités); Méthodes de Dantzig-Wolf, Benders, Spingarn (inverse partiel); Méthode de génération de colonnes  
+Programmation linéaire en nombres entiers
+Exemples de problèmes; Méthodes de coupes (Gomory); Séparation et Evaluation; Algorithmes approchés.
+Théorie des graphes et Recherche opérationnelle
+Généralités, Connexité, Orientation, Flots et tensions; Problème du plus court chemin, flots simples sans contraintes; Flots et multiflots (transport , télécommunications);  Problèmes d'Ordonnancement; Problèmes d'Affectation
+UE 39 – Visualisation de données
+Voir S4 INIS
+UE 40 – Data mining
+Contenu
+On abordera les différentes tâches classiques que sont l’apprentissage supervisé et non supervisé (classification non supervisée et recherche de règles d’association) au travers différentes méthodes et différents modèles de représentation.
+Apprentissage : Historique. Arbres et Forêts de décision : CART, RandomForest, Bagging, Boosting
+Aspects statistiques. Représentations graphiques (réseaux bayésiens et modèles de Markov). SVM Réseaux de neurones. Classification non supervisée.
+Fouille de données : Correspondance et treillis de Galois. Ensembles fermés, maximaux, fréquents.
+Algorithmes ‘A priori’ et variantes, Spade, CloseSpan. Flots de données.
+Mini projet 
+Pré-requis :
+Module analyse de Données
+UE 41 – Projet
+Voir S4 INIS
+UE 42 – Interventions d’industriels
+UE 43 – Initiation à la recherche
+Voir S4 INIS
+Semestre 4 – Spécialité MoCaHP
+UE 41 – Stage
+Voir S4 INIS
+
+

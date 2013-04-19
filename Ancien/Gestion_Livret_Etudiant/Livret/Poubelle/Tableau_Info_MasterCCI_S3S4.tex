@@ -1,0 +1,33 @@
+%---------------------- % % % Personnalisation des couleurs % % % ----------- ROUGE --------
+\definecolor{couleurFonce}{RGB}{160,0,10} % Couleur du Code APOGEE
+\definecolor{couleurClaire}{RGB}{225,135,140} % Couleur du fond de la bande
+\definecolor{couleurTexte}{RGB}{255,255,255} % Couleur du texte de la bande
+%------------------------------------------------------------------------------------------
+
+\arrayrulecolor{couleurFonce}% Couleur des lignes séparatrices du tableau
+\renewcommand{\arraystretch}{1.2}% Coeff appliqué à la hauteur des cellules
+%\rowcolors[\hline]{ligneDébut}{couleurPaire}{couleurImpaire}% Alternance de couleur (need package xcolor)
+\begin{tabular}{c|m{6cm}|cm{1cm}|cm{1cm}|cm{1cm}|cm{1cm}|}
+\cline{2-6}
+
+&
+\cellcolor{couleurFonce} \color{white}\bfseries Intitul\'e & \cellcolor{couleurFonce} \color{white}\bfseries ECTS & \cellcolor{couleurFonce} \color{white}\bfseries CM & \cellcolor{couleurFonce} \color{white}\bfseries TD & \cellcolor{couleurFonce} \color{white}\bfseries TP\\ \cline{2-6}
+
+\hline \multirow{6}{*}{\rotatebox{90}{\color{couleurFonce}\bfseries SEMESTRE 3}}
+ & \color{black} \mbox{Initiation}  & \color{black} 0 & \color{black} 8 & \color{black}  & \color{black} 8 \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Algorithmique}  & \cellcolor{couleurClaire} \color{couleurTexte} 3 & \cellcolor{couleurClaire} \color{couleurTexte} 15 & \cellcolor{couleurClaire} \color{couleurTexte} 15 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Bases} \mbox{de} \mbox{données}  & \color{black} 6 & \color{black} 20 & \color{black} 25 & \color{black} 25 \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Systèmes}  & \cellcolor{couleurClaire} \color{couleurTexte} 3 & \cellcolor{couleurClaire} \color{couleurTexte} 10 & \cellcolor{couleurClaire} \color{couleurTexte} 10 & \cellcolor{couleurClaire} \color{couleurTexte} 15 \\ \cline{2-6}
+ & \color{black} \mbox{Réseaux}  & \color{black} 3 & \color{black} 10 & \color{black} 10 & \color{black} 15 \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Programmation} \mbox{objet} \mbox{1}  & \cellcolor{couleurClaire} \color{couleurTexte} 6 & \cellcolor{couleurClaire} \color{couleurTexte} 20 & \cellcolor{couleurClaire} \color{couleurTexte} 25 & \cellcolor{couleurClaire} \color{couleurTexte} 25 \\ \cline{2-6}
+ & \color{black} \mbox{Projet} \mbox{1}  & \color{black} 3 & \color{black}  & \color{black}  & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Simulation} \mbox{d'entreprise} \mbox{de} \mbox{gestion}  & \cellcolor{couleurClaire} \color{couleurTexte} 3 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte} 24 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Anglais}  & \color{black} 3 & \color{black}  & \color{black} 20 & \color{black}  \\ \cline{2-6}
+\hline \multirow{6}{*}{\rotatebox{90}{\color{couleurFonce}\bfseries SEMESTRE 4}}
+ & \color{black} \mbox{Applications} \mbox{internet}  & \color{black} 5 & \color{black} 20 & \color{black} 24 & \color{black} 24 \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Génie} \mbox{logiciel}  & \cellcolor{couleurClaire} \color{couleurTexte} 5 & \cellcolor{couleurClaire} \color{couleurTexte} 20 & \cellcolor{couleurClaire} \color{couleurTexte} 24 & \cellcolor{couleurClaire} \color{couleurTexte} 24 \\ \cline{2-6}
+ & \color{black} \mbox{Programmation} \mbox{objet} \mbox{2}  & \color{black} 5 & \color{black} 20 & \color{black} 24 & \color{black} 24 \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Projet} \mbox{2}  & \cellcolor{couleurClaire} \color{couleurTexte} 5 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Stage}  & \color{black} 10 & \color{black} 10 & \color{black}  & \color{black}  \\ \cline{2-6}
+\hline
+\end{tabular}

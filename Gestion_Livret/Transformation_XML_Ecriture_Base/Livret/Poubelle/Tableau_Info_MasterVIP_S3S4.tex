@@ -1,0 +1,32 @@
+%---------------------- % % % Personnalisation des couleurs % % % ---------- GRIS -------
+\definecolor{couleurFonce}{RGB}{110,110,110} % Couleur du Code APOGEE
+\definecolor{couleurClaire}{RGB}{205,205,205} % Couleur du fond de la bande
+\definecolor{couleurTexte}{RGB}{255,255,255} % Couleur du texte de la bande
+%------------------------------------------------------------------------------------------
+
+\arrayrulecolor{couleurFonce}% Couleur des lignes séparatrices du tableau
+\renewcommand{\arraystretch}{1.2}% Coeff appliqué à la hauteur des cellules
+%\rowcolors[\hline]{ligneDébut}{couleurPaire}{couleurImpaire}% Alternance de couleur (need package xcolor)
+\begin{tabular}{c|m{6cm}|cm{1cm}|cm{1cm}|cm{1cm}|cm{1cm}|}
+\cline{2-6}
+
+&
+\cellcolor{couleurFonce} \color{white}\bfseries Intitul\'e & \cellcolor{couleurFonce} \color{white}\bfseries ECTS & \cellcolor{couleurFonce} \color{white}\bfseries CM & \cellcolor{couleurFonce} \color{white}\bfseries TD & \cellcolor{couleurFonce} \color{white}\bfseries TP\\ \cline{2-6}
+
+\hline \multirow{6}{*}{\rotatebox{90}{\color{couleurFonce}\bfseries SEMESTRE 3}}
+ & \color{black} \mbox{Informatique} \mbox{ambiante}  & \color{black} 10 & \color{black} 61 & \color{black}  & \color{black} 64 \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Imagerie} \mbox{opérationnelle}  & \cellcolor{couleurClaire} \color{couleurTexte} 10 & \cellcolor{couleurClaire} \color{couleurTexte} 74 & \cellcolor{couleurClaire} \color{couleurTexte} 51 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Management} \mbox{opérationnel}  & \color{black} 4 & \color{black} 16 & \color{black} 24 & \color{black} 16 \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Simulation} \mbox{d'entreprises} \mbox{et} \mbox{stratégie}  & \cellcolor{couleurClaire} \color{couleurTexte} 3 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte} 24 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Initiation} \mbox{Recherche} \mbox{à} \mbox{la}  & \color{black} 7 & \color{black}  & \color{black}  & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Projet}  & \cellcolor{couleurClaire} \color{couleurTexte} 3 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+\hline \multirow{6}{*}{\rotatebox{90}{\color{couleurFonce}\bfseries SEMESTRE 4}}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Programmation} \mbox{multi-cœurs}  & \cellcolor{couleurClaire} \color{couleurTexte} 3 & \cellcolor{couleurClaire} \color{couleurTexte} 20 & \cellcolor{couleurClaire} \color{couleurTexte} 15 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Visualisation} \mbox{avancée}  & \color{black} 3 & \color{black} 20 & \color{black} 15 & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Fouille} \mbox{d'images}  & \cellcolor{couleurClaire} \color{couleurTexte} 3 & \cellcolor{couleurClaire} \color{couleurTexte} 20 & \cellcolor{couleurClaire} \color{couleurTexte} 15 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Préparation} \mbox{Recherche} \mbox{au} \mbox{stage}  & \color{black} 6 & \color{black} 4 & \color{black}  & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Projet}  & \cellcolor{couleurClaire} \color{couleurTexte} 6 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Anglais}  & \color{black} 3 & \color{black}  & \color{black} 24 & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Stage}  & \cellcolor{couleurClaire} \color{couleurTexte} 12 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+\hline
+\end{tabular}

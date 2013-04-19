@@ -1,0 +1,802 @@
+Annexe n° 1
+Description des enseignements 
+Nom de la formation : Master mention MIAGE
+
+Semestre 1 : 
+
+UE 11 : Analyse de données
+Contenu :
+Principales méthodes d'analyse de données:
+- Statistiques descriptives usuelles (rappels)
+- Analyse en Composantes Principales (ACP)
+- Analyse Factorielle des Correspondances (AFC)
+- Analyse des Correspondances Multiples (ACM)
+- Méthodes de Classification (hiérarchique et non hiérarchique)
+Travaux Dirigés:
+- Apprentissage de SAS
+- Recueil, nettoyage, recodage, mise en forme des données
+- Applications des méthodes vues en cours à des jeux de données exemples.
+Pré-requis :
+Notions d'algèbre linéaire.
+Objectifs :
+Savoir analyser et synthétiser un jeu de données par des techniques statistiques descriptives ou multivariées usuelles. Savoir manipuler les procédures d'analyse statistique du logiciel SAS.
+Langue de l’enseignement : Français
+
+UE 12 : Types abstraits de données
+Contenu :
+Génie logiciel :
+distinction spécification/implémentation,
+indépendance de l'application par rapport à l'implémentation,
+multiplicité des implémentations, raffinements successifs,
+    	modularité, réutilisabilité.
+Présentation d’un formalisme pour les spécifications de types abstraits algébriques :
+profils, préconditions, axiomes,
+propriétés : spécifications suffisantes, spécifications complètes.
+notion de modèle; le cas particulier du modèle des termes de la sigma-algèbre.
+Mise en œuvre en Ada :
+types abstraits, fonctions de classe,
+implémentations génériques, classe des implémentations,    
+  	sigma-modèle, optimisation du modèle.
+Catalogue de structures : piles, files, liste, tables, arbres ...
+Pré-requis :
+	Pratique des structures de données, notion de règle de réécriture, algèbres de termes.
+Connaissance d'Ada 2005 (généricité, programmation par classe).
+Objectifs :
+Développer les capacités d'abstraction et de généralisation et connaître les raisonnements par récurrence et induction.
+Langue de l’enseignement : Français
+
+UE 13 : Complexité des algorithmes
+Contenu :
+Notions de complexité.
+Coût en temps et en espace, dans le pire des cas et en moyenne.
+Problèmes d’optimalité.
+Mesure empirique, test de performance.
+Coût du passage à l'échelle.
+Calcul formel de la complexité (et temps) : itératif et récursif.
+De nombreux exemples illustrent le cours, parmi lesquels on peut citer :
+algorithmes de recherche, algorithmes de tri (Quick-sort, Heap-sort, tri radix...), 
+algorithmes sur les graphes (composantes connexes, chemin minimal...).
+Pré-requis :
+	Algorithmique et programmation.
+Objectifs :
+Être capable de prédire si un algorithme devrait ou non aboutir à un programme ayant un temps de calcul / un besoin en espace raisonnable.
+Être capable d'estimer les ressources nécessaires quand le volume de données à traiter augmente.
+Langue de l’enseignement : Français
+
+UE 14 : Langages formels et automates
+Contenu :
+1- Généralités
+Vocabulaire, mots, langages.
+Grammaires, dérivations.
+Différents types de grammaires et de langages.
+Généralités sur les reconnaisseurs.
+2- Les langages réguliers
+Expressions régulières.
+Grammaires linéaires à droite.
+Automates finis non-déterministes et déterministes.
+Algorithmes de déterminisation et de minimisation.
+Algorithmes de passages entre expressions régulières, grammaires linéaires à droite et
+automates finis.
+3- Les langages indépendants du contexte
+Grammaires indépendantes du contexte.
+Automates à pile.
+Rapports entre grammaires indépendantes du contexte et automates à pile.
+4- Etude de l'analyse descendante LL.
+Pré-requis :
+Notion de théorie des ensembles.
+Objectifs :
+Savoir définir formellement des langages, comprendre le fonctionnement des automates d'états finis et des automates à pile et leur utilisation dans la reconnaissance de mots.
+Langue de l’enseignement : Français
+
+UE 15 : Ingénierie des systèmes d’information
+Contenu :
+Introduction aux systèmes décisionnel – datawarehouse
+Rappels de modélisation de données
+Modélisation des systèmes d’information
+Outil d’intégration de données (suite ETL Talend*)
+Outil de gestion de base de données (SGBD Access/Dbase)
+Sensibilisation aux performances de bases de données (Optimisation des requêtes, Tables d’agrégats)
+Outil de restitution de données (suite Business Objects)
+Travaux dirigés :
+Création et modélisation d’une base de données Access/Dbase
+Création d’un projet Business Objects (Création d’univers  et de rapports dédiés)
+Projet encadré de création d'un datawarehouse.
+Pré-requis :
+	Savoir modéliser et créer une base de données, avoir de solides connaissances SQL.
+Objectifs :
+Apprendre à planifier, concevoir et mettre en place un projet de système d’information décisionnel.
+Savoir modéliser un système décisionnel.
+Etre capable d’optimiser l’exécution de rapports.
+Langue de l’enseignement : Français
+
+UE 16 : Interfaces Homme-Machine 
+Contenu :
+Principes de la programmation événementielle, le modèle MVC.
+Définition et programmation des interfaces graphiques en client « lourd ».
+Illustration et mise en oeuvre avec le langage Java/SWING.
+Architectures des interfaces Web (JSP/servlets…), le modèle MVC 2.
+Utilisation des frameworks Javascript / Exemple de GWT (Google Web Toolkit).
+Les interfaces des terminaux portables / Exemple d’Android.
+Pré-requis :
+	Programmation Java, maîtrise de la programmation orientée objet.
+Objectifs :
+	Compréhension des architectures Modèle Vue Contrôleur.
+Maîtriser le développement et la maintenance d’IHM pour les architectures clients légers et clients lourds.
+Langue de l’enseignement : Français
+
+UE 17 : Gestion de production
+Contenu :
+• Les composantes d'un système de gestion de production
+• Elaboration du plan directeur de production
+• Gestion des données techniques (nomenclatures, gammes)
+• Calcul des besoins et des charges
+• Gestion des stocks et des ordres, ordonnancement et suivi d'atelier, atelier flexible.
+• La réduction des stocks, la méthode KANBAN, le juste à temps.
+• Liaisons avec les autres fonctions et les autres processus.
+• Gestion de la chaîne logistique.
+• Sous-système d'information et de décision pour la gestion de production. Choix d'informatisation.
+• Aperçu sur les progiciels de gestion de la production. Intégration dans un ERP.
+Pré-requis :
+Objectifs :
+Langue de l’enseignement : Français
+
+UE 18 : Projet professionnel personnel
+Contenu :
+Réflexion sur le projet professionnel : trouver le bon compromis entre l'imaginaire et le réalisme.
+- Pourquoi définir un projet professionnel / Les enjeux
+- Construire son projet en fonction de ses motivations et de ses compétences
+- Les questions à se poser
+- Travail sur les "savoirs"
+- Savoir faire : les 8 familles de compétences attendus par les employeurs
+- Travail sur les savoirs être et la personnalité: le langage des couleurs - les ancrages de carrières - les sources de motivation et les priorités attendus de la vie professionnelle - les valeurs. 
+ Pré-requis :
+ Objectifs :
+- Rédiger son projet professionnel à court et moyen termes : quel type d'activité, d'entreprise, quelle structure, rémunération, lieu de travail...
+- Faire ressortir les atouts de sa candidature pour de prochains entretiens de recrutement : savoir / savoir faire / savoir être.
+- Première approche des attentes des recruteurs : l'importance de la maîtrise de son projet pour se montrer convaincant.
+Autres compétences: Communication orale - persuasion - esprit de synthèse - sens des réalités - initiative - créativité - enthousiasme - management de projet - planification - confiance en soi.
+Langue de l’enseignement : Français
+
+UE 19 : Projet informatique
+Contenu :
+Réalisation d'un projet sur un thème transversal à la formation, à partir d'un énoncé informel, dans un cadre collaboratif par groupe de quatre étudiants tirés au sort.
+Déroulement en deux phases :
+- Rédaction commune au groupe d'une spécification algébrique à partir de l'énoncé et validation de cette spécification,
+- Réalisation d'au moins deux implémentations de la structure de données utilisables indifféremment par l'application.
+Application sous trois formes :
+- une version console,
+- une version graphique,
+- une version répartie,
+ces trois versions partageant le même cœur.
+Pré-requis :
+Spécification algébrique de structures de données, méthodes d'implémentations (ADA 2005), interface graphique (GtkADA), programmation Répartie, notions de complexité.
+Objectifs :
+	Mise en œuvre de la décomposition spécification/implémentation ;
+Organisation d’un travail collaboratif sur cette base ;
+Acquisition d'un outil d'interface graphique par auto-apprentissage ;
+Introduction à l'utilisation répartie d'une structure de donnée (architecture client-serveur).
+Langue de l’enseignement : Français
+
+UE 110 : Anglais
+Contenu :
+Affiner la compréhension de documents (écrits et audiovisuels) plus complexes, renforcer les stratégies de lectures, pratiquer l’expression écrite, notamment savoir rédiger une synthèse.
+Travail de la compréhension orale et écrite de documents professionnels. 
+Supports :
+Documents sonores, vidéos d’intérêt scientifique (technologies informatiques) ;
+Documents écrits s’entraîner à la lecture rapide ;
+Rattrapage et approfondissement en autonomie semi-guidée labo multimédia. 
+Pré-requis :
+	Avoir suivi l’UE Anglais 6 (module du L3S6) ou environ 500 heures de formation équivalente.
+Objectifs :
+Maîtriser les compétences nécessaires pour valider un niveau B2.
+Langue de l’enseignement : Anglais.
+
+Semestre 2 : 
+
+UE 21 : Système et répartition
+Contenu :
+Désignation de l'information
+Allocation mémoire
+Mécanismes d'exécution
+Gestion des activités parallèles
+Sémaphores
+Moniteurs
+Gestion de ressources
+Processus et threads
+Systèmes de fichiers
+Synchronisation de systèmes distribués
+Sécurité
+Pré-requis :
+	Notion d’architecture des ordinateurs.
+Objectifs :
+Etudier les mécanismes internes des systèmes d'exploitation et la synchonisation des processus répartis.
+Langue de l’enseignement : Français
+
+UE 22 : Réseaux : protocoles et mobilité
+Contenu :
+Spécification de protocoles (à l'aide des automates d'états finis étendus)
+ - Étude détaillée des protocoles : TCP, DHCP et NAT
+ - Les réseaux mobiles et mobilité
+Étude du protocole 802.11 (wifi), éléments de sécurité dans les réseaux sans fils 
+(WEP, WPA, ...), autres protocoles sans fils (Bluetooth, WiMax, GPRS, ...). 
+Pré-requis :
+	Protocole IP, Protocoles de routage.
+Objectifs :
+Être capable d'installer et configurer un réseau hétérogène (filaire et sans fil). 
+Savoir spécifier des protocoles nouveaux.
+Langue de l’enseignement : Français
+
+UE 23 : Ingénierie des connaissances
+Contenu :
+Histoire de l'intelligence artificielle et de l'ingénierie des connaissances, modélisation et représentation des connaissances via la logique (propositionnelle et du premier ordre) ou des langages formels, formalisation du raisonnement (chaînages avant et arrière, méthode des tableaux), formats du web sémantique et langages associés (notation 3, RDF, OWL, SPARQL...), ontologies et inférences dans le web sémantique.
+Pré-requis :
+Objectifs :
+L'objectif de ce cours est d'initier les étudiants à la modélisation des connaissances dans un cadre formel, permettant des inférences et des raisonnements. Les formats et les données du web sémantiques permettent d'illustrer ces notions dans un cadre réaliste, qui oblige à tenir compte du vocabulaire normalisé déjà existant (sous la forme d'ontologies).
+Langue de l’enseignement : Français
+
+UE 24 : Méthodes avancées de conception
+Contenu :
+Principes de conception modulaire et évolutive des logiciels
+Motifs de conception - "Design Patterns"
+Mise en oeuvre en Java
+Programmation orientée aspect
+Méthodes agiles de développement
+Illustration par SCRUM.
+Pré-requis :
+	Programmation Java avancée.
+Objectifs :
+Maîtriser la complexité des dépendances lors d'un développement orienté objet d'envergure.
+Appliquer des méthodologies agiles de gestion de projet.
+Langue de l’enseignement : Français
+
+UE 25 : Tests et qualité du logiciel
+Contenu :
+Ce module s'inscrit dans le cadre de la qualité du logiciel. En particulier, il focalise sur  différents outils et méthodes permettant de mesurer la qualité de développement du logiciel. La qualité du développement est scindée en deux catégories : qualité dite “syntaxique” et qualité dite “sémantique”. Pour la première catégorie, différents outils/plugins comme PMD et Checkstyle sont introduits, expliqués en détail et enfin mis en pratique sur des cas d'étude. Pour la seconde, la qualité est mesurée à partir de tests. Les différents niveaux de tests définis par l'ISTQB (International Software Testing Qualifications Board) seront étudiés (tests unitaires, tests d'intégration, tests fonctionnels et tests de d'acceptation) puis mis en pratique sur des cas concrets. 
+Pré-requis :
+	Programmation Java, notions sur l'environnement de développement Eclipse.
+Objectifs :
+Manipuler des outils assurant une cohérence de style de programmation, rédiger des spécifications de tests fonctionnels à partir d'un cahier des charges, manipuler les différents niveaux de tests.
+Langue de l’enseignement : Français
+
+UE 26 : Analyse financière
+Contenu :
+Initiation à l'analyse financière comprenant la lecture d'un bilan, d'un compte de résultats, de la trésorerie (notion de cash-flow) et se terminant par la présentation d'un tableau de flux financiers, permettant ensuite une ouverture ultérieure sur la gestion financière.
+Stratégie d’entreprise et stratégie financière.
+Les concepts fondamentaux : fonds de roulement, besoin en fonds de roulement, trésorerie.
+Les instruments d’analyse de la situation financière : examen des documents comptables, recherche d’indicateurs : ratios, soldes intermédiaires, scores, tableau de financement.
+Les outils d’une approche dynamique : le fonds de roulement normatif, les choix en matière d’investissement, l’incidence du risque, les modes de financement.
+La gestion de la trésorerie.
+Conclusion : le diagnostic financier.
+Pré-requis : 
+Notions de comptabilité générale.
+Objectifs :
+Etre capable de réaliser une analyse de la santé financière d'une entreprise commerciale, grâce à la lecture d’un bilan (équilibre), d'un compte de résultats (croissance, rentabilité) et du cash-flow (capacité d'autofinancement et solvabilité).
+
+Langue de l’enseignement : Français
+
+UE 27 : Simulation et jeu d’entreprise
+Contenu :
+Simulation du fonctionnement d’une entreprise en fonction des données internes et externes ainsi que des décisions prises par les gestionnaires.
+Pré-requis : Comptabilité
+Objectifs :
+Langue de l’enseignement : Français
+
+UE 28 : Techniques de communication professionnelle
+Contenu :
+1- Les entretiens d’embauche et le rapport de stage :
+Les différents types d’entretien.
+Les simulations avec autoscopie.
+2- La conduite de réunion :
+Intervenir en réunion, s’affirmer ; animer la réunion, aboutir.
+Apprendre à analyser les attitudes et les signes verbaux et non verbaux.
+3- La gestion du temps : quels outils permettent de mieux gérer son temps.
+Pré-requis :
+Objectifs :
+Langue de l’enseignement : Français
+
+UE 29 : Projet informatique
+Contenu :
+Etude et développement d'un système d'information distribué.
+Pré-requis :
+	Notions de réseaux et compréhension des algorithmes distribués.
+Objectifs :
+Maîtriser l’analyse et la mise en œuvre d'un système d'information réparti.
+Langue de l’enseignement : Français
+
+UE 210 : Anglais
+Contenu :
+Entraînement aux techniques de communication orale : Présentation powerpoint (présentation du stage en entreprise)
+Prise de parole en situation : réunion, négociation
+Poursuite du travail sur des sujets de société en vue de la validation du CLES 2.
+Supports :
+Documents écrits et sonores.
+Pré-requis :
+	Avoir suivi les UE d’Anglais du semestre 6 de la licence et du semestre 1 du Master, ou environ 500 heures de formation équivalente.
+Objectifs :
+Savoir faire une présentation orale
+Maîtriser les compétences nécessaires pour valider un niveau B2.
+Langue de l’enseignement : Anglais
+
+Semestre 3 : spécialité SIR
+
+UE 31 : Architectures applicatives réparties
+Contenu :
+Ce module se compose de deux parties complémentaires, portant sur les aspects théoriques et pratiques des systèmes d'information répartis:
+Dans l'optique d'une approche fondée sur la pratique, le module aborde dans un premier temps les outils disponibles, autour du langage Java et de la plateforme Java Enterprise Edition (JavaEE) :
+• Communication répartie par invocation distante (RMI) et messagerie (JMS).
+• Persistance d'objets (utilisation de différents frameworks, dont hibernate)
+• Concept de bean métier (EJB)
+• Intégration des différents types d'EJB, interfaçage avec la couche présentation.
+. Bases de l'administration du serveur d'applications
+Lorsque les aspects pratiques ont été manipulés, l'étudiant est amené à les mettre en perspective et à rationaliser leur mise en œuvre, par l'étude des aspects “théoriques” suivants :
+• Typologie des SI et exemples significatifs
+• UML et processus de développement unifié (rappels)
+• Patron de conception (« Design Patterns »)
+• Concept de transaction répartie
+Pré-requis :
+Compétences en bases de données, programmation java, conception d'applications web (servlets/JSP, modèle MVC2).
+Objectifs :
+Fournir à l'étudiant les outils nécessaires à l'analyse, la mise en place et l'exploitation de systèmes d'informations répartis. Apporter une solide formation sur la répartition des données et des traitements dans un Système d'Information (SI), suivant deux axes : outils avancés pour la modélisation et la gestion des SI (UML, design patterns, etc.) et SI distribués contemporains (architectures multi-tiers, plateformes applicatives). 
+Langue de l’enseignement : Français
+
+UE 32 : Extraction de connaissances dans les BD
+Contenu :
+- Les différents types d'apprentissage et les différentes tâches 
+- Classification supervisée : arbre de décision, modèles probabilistes, machines à vecteur support, noyaux
+- Evaluation des modèles
+- Classification non supervisée : par partitionnement, hiérarchique, conceptuelle
+- Recherche de règles d'association
+Savoir-faire: 
+- Utilisation d'outils : Weka, RapidMiner
+- Définir le problème d'apprentissage : modèle à acquérir, données nécessaires, techniques applicables
+- Appliquer des techniques d'apprentissage. 
+Etudes de cas guidés par des applications.
+Pré-requis :
+	UE Intelligence Artificielle - UE Analyse de données.
+Objectifs :
+Acquérir les notions de base permettant de résoudre un problème d’Extraction de Connaissances dans les Bases de Données : modélisation de la tâche à effectuer, préparation des données, choix des outils. Le Data Mining est devenu une discipline fondamentale, justifiée par le développement de grandes bases de données, la nécessité de constituer des mémoires d'entreprises et le besoin d'outils intelligents pour exploiter les flux d'information sur le web.
+Langue de l’enseignement : Français
+
+UE 33 : Sécurité et protocoles
+Contenu :
+Ce module introduit et familiarise les étudiants avec des notions de sécurité relatives aux communications. 
+Après un survol historique de la compétition perpétuelle entre cryptographie et cryptanalyse, avec comme point clé la seconde guerre mondiale et le système Enigma, les standards actuels de chiffrements symétriques et asymétriques sont étudiés en profondeur. Les technologies actuelles permettent des communications synchrones sur des distances de plusieurs centaines ou milliers de kilomètres. De plus ces communications peuvent contenir des informations confidentielles et peuvent également nécessiter une authentification des personnes en communication (communication entre un tiers et un centre de paiement par exemple). Des protocoles de sécurité sont développés afin de garantir les propriétés mentionnées précédemment. 
+Ce module présente les mécanismes d'authentification, de confidentialité et d'intégrité de données et ainsi que quelques protocoles comme Kerberos. Enfin, le dernier point traité dans ce module démontre que des algorithmes de chiffrement parfaits ne suffisent pas pour garantir la sécurité d'un protocole de communication. Les étudiants sont invités à manipuler un outil de simulation et de vérification de protocoles de sécurité afin de détecter d'éventuelles failles logiques de conception. 
+Pré-requis :
+	Notions de mathématiques discrètes, réseaux.
+Objectifs :
+Comprendre en profondeur les mécanismes garantissant la sécurité des systèmes et réseaux en termes de confidentialité, d'authentification et de disponibilité. Modéliser un protocole à partir d'une spécification textuelle et manipuler un outil de simulation et de vérification.
+Langue de l’enseignement : Français
+
+UE 34 : Réseaux et infrastructures de production
+Contenu :
+Ce cours explore les différentes architectures que l'on peut mettre en œuvre dans le cadre d'une informatique Client/Serveur. Il fait l'inventaire de la plupart des problèmes rencontrés et décrit les technologies (Applicatives, Systèmes et Réseaux) qui composent les infrastructures et qui permettent le déploiement harmonieux et la gestion efficace d'un système d'information moderne.
+Réseaux de communication :
+· réseaux locaux : architectures, techniques d'accès protocoles de réseau, protocoles de transport
+· interconnexion de réseaux hétérogènes
+· administration des réseaux
+· conférences
+Applications réparties :
+· programmation des applications réparties
+· protocoles d'applications
+· spécification formelle et validation de protocoles
+· allocation de ressource, synchronisation
+· les systèmes transactionnels
+· techniques internet.
+Pré-requis : Modules Réseaux du Master 1.
+Objectifs :
+Maîtriser l'installation, le déploiement et la maintenance d'un SI.
+Langue de l’enseignement : Français
+
+UE 35 : Gestion de projet et qualité
+Contenu :
+Thèmes abordés :
+- Les étapes d’un projet
+- Les livrables de la conduite de projet
+- Les rôles et responsabilités des acteurs (client, décideurs, maîtrise d’ouvrage, maîtrise
+d’oeuvre, assurance qualité)
+- Le travail en équipe
+- Méthodes de prévision et d’estimation des charges et de délais
+- Tests
+- Normalisation ISO / maturité CMM
+- La gestion des risques
+- La gestion des évolutions
+- Le plan de communication
+- Les outils du chef de projet.
+Pré-requis :
+Objectifs :
+Etudier la conduite de projet et la mise en place d'un système qualité.
+Langue de l’enseignement : Français
+
+UE 36 : Gestion des ressources humaines
+Contenu :
+Appréhender la gestion des ressources humaines dans le cadre de l'entreprise.
+Thèmes étudiés :
+- Introduction à la gestion des ressources humaines
+- La DRH en entreprise
+- Le management des hommes et des équipes
+- Evaluation des postes
+- Le recrutement
+- Réforme de la formation professionnelle.
+Pré-requis :
+Objectifs :
+Appréhender la gestion des ressources humaines dans le cadre de l'entreprise.
+Langue de l’enseignement : Français
+
+UE 37 : Création d’entreprise
+Contenu :
+Présentation complète du cadre économique, juridique, financier et commercial des deux modalités de la création d'entreprise, la création "ex nihilo" et la "reprise" d'une entreprise dans le cadre d'une transmission.
+Pré-requis :
+Objectifs :
+Etre capable de réaliser un dossier économique de création d'une entreprise afin de se familiariser avec la présentation dynamique d'un projet à des investisseurs potentiels.
+Langue de l’enseignement : Français
+
+UE 38 : Anglais professionnel
+Contenu :
+Travailler la langue écrite et orale afin de perfectionner ses capacités à communiquer en milieu professionnel. Suivi interactif et personnalisé du projet industriel. 
+Suivi de projet industriel : 
+-l’étudiant produit plusieurs devoirs pour lequel il reçoit une correction individuelle.
+-Présentation orale
+-Devoir écrit (compréhension et synthèse)
+Poursuite du travail sur le CV, la lettre de motivation et l’entretien.
+Supports :
+Publications les sciences et technologies informatiques, documents sonores,  centre de ressources multimedia.
+Pré-requis :
+	Avoir suivi les modules d’anglais de Master 1 ou 550 heures de formation équivalente.
+Objectifs :
+Se rapprocher des compétences demandées au niveau C1 ; possibilité de valider le CLES 3. 
+L’étudiant comprend des textes longs dans sa discipline, rend compte oralement et par écrit de documents professionnels, s’exprime dans une langue claire et structurée sur des sujets complexes à caractère social et académique.
+Langue de l’enseignement : Anglais
+
+UE 39 : Projet industriel
+Contenu :
+Ce projet met en œuvre les connaissances acquises au cours du semestre par le biais de l’étude et de la réalisation d'une application J2EE ou de la réalisation d'un projet d'architecture applicative répartie dont le sujet est défini en collaboration avec un partenaire industriel.
+Pré-requis :
+Objectifs :
+Maîtriser les aspects fonctionnels et techniques de la mise en œuvre  d'un système
+d'information réparti.
+Langue de l’enseignement : Français 
+Semestre 4 : spécialité SIR
+
+UE 41 : Web services et Interopérabilité
+Contenu :
+Ce module permet de comprendre les technologies et les architectures sous-jacentes mises en œuvre dans les architectures de type SOA :
+Implementation des Services Web (SOAP, WSDL, UDDI...) ;
+Exemple de mise en œuvre en Java et .NET ;
+Interopérabilité entre SI hétérogènes ;
+Intégration d’application - Utilisation de bus ESB. 
+Pré-requis : 
+	Maîtrise des architectures distribuées, JEE/.NET
+Objectifs :
+Comprendre les architectures orientées services et les technologies sous-jacentes.
+Concevoir une architecture d’intégration de SI hétérogènes.
+Langue de l’enseignement : Français
+
+UE 42 : Fouille de données et de textes
+Contenu :
+Cet enseignement permet, d'une part, d'approfondir certaines techniques présentées dans le module Extraction de Connaissances dans les BD, d'autre part, d'élargir la problématique à des types de données complexes comme les données spatiales ou textuelles.
+1. Algorithme de fouille de données (approfondissement)
+· apprentissage statistique et analyse de données
+· apprentissage symbolique (induction, reformulation, ...)
+2. Extraction de Connaissances à partir de textes.
+Pré-requis :
+	UE Extraction de connaissances dans les bases de données.
+Objectifs :
+Langue de l’enseignement : Français
+
+UE 43 : Sécurité des réseaux
+Contenu :
+L'enseignement est assuré par plusieurs intervenants extérieurs qui abordent des thèmes comme : les réseaux ATM, le protocole IPv6, les réseaux mobiles, la protection des réseaux contre le piratage, les ACL, les architectures réseaux sécurisées, les infrastructures à clés publiques, la sécurité dans les réseaux de télécommunications, dans les réseaux mobiles (GSM, UMTS, ...), les services à cartes (télécarte, carte bancaire, télévision à péage, ...), les protocoles IPSEC/IKE, les failles de sécurité, l'analyse de risques, les alertes, les remontées d'alarmes, la détection d'intrusions, les techniques de piratage, les firewalls.
+Pré-requis : 
+Objectifs :
+Langue de l’enseignement : Français
+
+UE 44 : Management des SI
+Contenu :
+Plusieurs intervenants professionnels du domaine abordent différentes thématiques liées au
+management du SI dans l'entreprise :
+- Dimensionner et aligner le système d'information (SI) - système d'information informatisé (SII) au sein des processus - organisation du Métier (MOA - AMOA) et Informatique (MOE) avec la stratégie de l'Entreprise en environnement sous contraintes ;
+
+- Pilotage du SI SII par horizon (stratégique - tactique - opérationnel) et contrainte (Valeur - Coût) ;
+- Intégration et évolution du SII au sein du SI - SII existant.
+
+La gestion des services de production informatique.
+Modèles, normes et standards existants (ITIL, ISO 17799 / 27002, ISO 20000, COBIT, CMMI).
+TD portant sur les aspects méthodologiques de la mise en production d’une application informatique.
+Pré-requis :
+	Ingénierie des SI  - gestion de projets et qualité - analyse financière.
+Objectifs :
+-Identifier les tendances, les évolutions, connaître les méthodes, tableaux de bords et indicateurs permettant au décideur de piloter le SI (mesurer l'atteinte des objectifs et analyser les écarts en termes de qualité, supervision, sécurité, dimensionnement).
+Dimensionner - préparer - suivre - contrôler - optimiser le SI, SII.
+-donner un aperçu des enjeux et des métiers de la production informatique et présenter les principaux processus de gestion du service informatique et les grand référentiels et normes reconnus sur le marché, représentant les “bonnes pratiques” d’une DSI nécessaire pour assurer la conformité aux multiples exigences actuelles.
+Langue de l’enseignement : Français
+
+UE 45 : Stratégie commerciale autour de l’Internet
+Contenu :
+Pilotage stratégique de l’entreprise, avec Internet comme outil de pouvoir :
+Les différents types d’environnement concurrentiels
+Analyse de l’entreprise et évaluation de l’impact d’Internet
+Choisir la bonne stratégie
+Web design et audit de sites.
+Pré-requis :
+Objectifs :
+Maîtriser les aspects stratégiques et marketing pour l'utilisation d'Internet.
+Langue de l’enseignement : Français
+
+UE 46 : Projet industriel
+Contenu :
+Ce projet permet de synthétiser toutes les connaissances acquises au cours de l'année par le biais de l’étude et de la réalisation d'une intégration d'applications dans un contexte hétérogène. Le sujet de ce projet est défini en collaboration avec un partenaire industriel.
+Pré-requis :
+Objectifs :
+Maîtriser tous les aspects (logiciels, matériels, sécurité, …) de la mise en œuvre d'un système
+d'information réparti et hétérogène.
+Langue de l’enseignement : Français
+
+UE 47 : Stage professionnel (6 mois)
+Contenu :
+Stage professionnel en entreprise de 6 mois.
+Pré-requis :
+Objectifs :
+Finaliser son projet professionnel et préparer son recrutement via le stage.
+Langue de l’enseignement : Français
+
+Semestre 3 : spécialité SIMSA
+
+UE 31 : Architectures applicatives réparties
+Contenu :
+Ce module se compose de deux parties complémentaires, portant sur les aspects théoriques et pratiques des systèmes d'information répartis:
+Dans l'optique d'une approche fondée sur la pratique, le module aborde dans un premier temps les outils disponibles, autour du langage Java et de la plateforme Java Enterprise Edition (JavaEE) :
+• Communication répartie par invocation distante (RMI) et messagerie (JMS).
+• Persistance d'objets (utilisation de différents frameworks, dont hibernate)
+• Concept de bean métier (EJB)
+• Intégration des différents types d'EJB, interfaçage avec la couche présentation.
+. Bases de l'administration du serveur d'applications
+Lorsque les aspects pratiques ont été manipulés, l'étudiant est amené à les mettre en perspective et à rationaliser leur mise en œuvre, par l'étude des aspects “théoriques” suivants :
+• Typologie des SI et exemples significatifs
+• UML et processus de développement unifié (rappels)
+• Patron de conception (« Design Patterns »)
+• Concept de transaction répartie
+Pré-requis :
+Compétences en bases de données, programmation java, conception d'applications web (servlets/JSP, modèle MVC2).
+Objectifs :
+Fournir à l'étudiant les outils nécessaires à l'analyse, la mise en place et l'exploitation de systèmes d'informations répartis. Apporter une solide formation sur la répartition des données et des traitements dans un Système d'Information (SI), suivant deux axes : outils avancés pour la modélisation et la gestion des SI (UML, design patterns, etc.) et SI distribués contemporains (architectures multi-tiers, plateformes applicatives). 
+Langue de l’enseignement : Français
+
+UE 32 : Extraction de connaissances dans les BD
+Contenu :
+- Les différents types d'apprentissage et les différentes tâches 
+- Classification supervisée : arbre de décision, modèles probabilistes, machines à vecteur support, noyaux
+- Evaluation des modèles
+- Classification non supervisée : par partitionnement, hiérarchique, conceptuelle
+- Recherche de règles d'association
+Savoir-faire: 
+- Utilisation d'outils : Weka, RapidMiner
+- Définir le problème d'apprentissage : modèle à acquérir, données nécessaires, techniques applicables
+- Appliquer des techniques d'apprentissage. 
+Etudes de cas guidés par des applications.
+Pré-requis :
+	Intelligence Artificielle - Analyse de données.
+Objectifs :
+Acquérir les notions de base permettant de résoudre un problème d’Extraction de Connaissances dans les Bases de Données : modélisation de la tâche à effectuer, préparation des données, choix des outils. Le Data Mining est devenu une discipline fondamentale, justifiée par le développement de grandes bases de données, la nécessité de constituer des mémoires d'entreprises et le besoin d'outils intelligents pour exploiter les flux d'information sur le web.
+Langue de l’enseignement : Français
+
+
+UE 33 : SI des métiers du social et de l’assurance
+Contenu :
+- Structure juridique des entreprises.
+- Description des métiers.
+- Aspects réglementaires et juridiques.
+- Organismes tiers en présence.
+- Intersections et points communs.
+- Circuit de vente.
+- Cartographie générale par métier.
+- Perspectives des métiers.
+- Métiers ouverts associés à ces formations.
+- Les apports d’une démarche ISO9001 face à la complexité des métiers du social et de l’Assurance.
+- La CNIL, un organisme incontournable pour traiter de l’Assurance.
+- La dimension internationale dans un SI Assurances.
+- Un SI Assurances dans un SI Bancaire : les particularités de la banque Assurance.
+Pré-requis :
+Objectifs :
+Avoir une culture générale des métiers des entreprises du secteur de la Retraite, de l’Assurance et de la Prévoyance, et connaitre la cartographie des différents SI du domaine.
+Etre sensibilisé à la règlementation du stockage des données à caractère personnel.
+Appréhender le contexte international dans les projets informatiques Assurances et dans la gestion des SI Assurances. Connaître la banque Assurance.
+Langue de l’enseignement : Français
+
+UE 34 : SI de la retraite
+Contenu :
+1. Particularités du référentiel des métiers de la retraite.
+2. Le régime général de la Sécurité Sociale et  les régimes complémentaires.
+3. La gestion des adhésions des entreprises.
+4. Les déclarations nominatives.
+5. L’appel des cotisations, le recouvrement et la gestion comptable.
+6. Le calcul des droits cotisés et non cotisés : constiution de la carrière.
+7. La gestion des allocataires jusqu’à l’extinction des droits.
+Pré-requis :
+Objectifs :
+Maîtriser le fonctionnement des processus liés aux régimes de Retraite (régime général Sécurité Sociale et régimes complémentaires ARRCO et AGIRC) et les grandes entités existantes dans un SI Retraite.
+Langue de l’enseignement : Français
+
+UE 35 : SI de l’Assurance
+Contenu :
+Ce module se compose de deux parties complémentaires, couvrant les domaines d’activité de l’assurance que sont la branche IARD et la branche Vie. La partie Vie est ensuite scindée en deux parties : une partie compréhension du métier et une partie SI d’une société d’assurance Vie.
+1. DOMAINE IARD :  Particularités du référentiel,  catalogue de produit, gestion du réseau et des intervenants commerciaux, contrat, cotisations et recouvrement, sinistres, circuit des encaissements / décaissements, rémunération des apporteurs (Agents, Courtiers, Salariés), résultats techniques.
+2. DOMAINE VIE : 
+-  Généralités sur le contrat d’assurance Vie : ses caractéristiques et ses diverses catégories
+- L’assurance Vie en quelques chiffres
+- Les divers frais : théorie, modes de calcul et illustration par exemples
+- La vie du contrat : sa formation, le paiement des primes, l’affectation des primes, l’avance, les rachats, le règlement des prestations
+-  La tarification du contrat : prime pure, frais, taxes ; tables de mortalité
+-  La constitution des provisions mathématiques
+- Histoire de l’Assurance Vie
+- Construction des SI d’une société d’assurance Vie
+- Le régime fiscal du contrat : impôts sur les revenus et droits de transmission
+- Les assurances collectives : tout ce qui diffère du contrat individuel ; les contrats d’épargne retraite et de prévoyance complémentaire ; les contrats à titre privé ou professionnel ; les contrats homme-clé et les contrats emprunteur.
+Pré-requis :
+Objectifs :
+Maîtriser les SI et le fonctionnement des processus liés à un contrat IARD (Incendie – Automobile – Risques Divers) et à un contrat d'assurance vie.
+Langue de l’enseignement : Français
+
+UE 36 : Gestion de projet et qualité
+Contenu :
+Thèmes abordés :
+- Les étapes d’un projet
+- Les livrables de la conduite de projet
+- Les rôles et responsabilités des acteurs (client, décideurs, maîtrise d’ouvrage, maîtrise
+d’oeuvre, assurance qualité)
+- Le travail en équipe
+- Méthodes de prévision et d’estimation des charges et de délais
+- Tests
+- Normalisation ISO / maturité CMM
+- La gestion des risques
+- La gestion des évolutions
+- Le plan de communication
+- Les outils du chef de projet
+Pré-requis :
+Objectifs :
+Etudier la conduite de projet et la mise en place d'un système qualité.
+Langue de l’enseignement : Français
+
+UE 37 : Gestion des ressources humaines
+Contenu :
+Appréhender la gestion des ressources humaines dans le cadre de l'entreprise.
+Thèmes étudiés :
+- Introduction à la gestion des ressources humaines
+- La DRH en entreprise
+- Le management des hommes et des équipes
+- Evaluation des postes
+- Le recrutement
+- Réforme de la formation professionnelle
+Pré-requis :
+Objectifs :
+Appréhender la gestion des ressources humaines dans le cadre de l'entreprise
+Langue de l’enseignement : Français
+
+UE 38 : Anglais professionnel
+Contenu :
+Travailler la langue écrite et orale afin de perfectionner ses capacités à communiquer en milieu professionnel. Suivi interactif et personnalisé du projet industriel. 
+Suivi de projet industriel : 
+-l’étudiant produit plusieurs devoirs pour lequel il reçoit une correction individuelle.
+-Présentation orale
+-Devoir écrit (compréhension et synthèse)
+Poursuite du travail sur le CV, la lettre de motivation et l’entretien.
+Supports :
+Publications les sciences et technologies informatiques, documents sonores,  centre de ressources multimedia.
+Pré-requis :
+	Avoir suivi les modules d’anglais de Master 1 ou 550 heures de formation équivalente.
+Objectifs :
+Se rapprocher des compétences demandées au niveau C1 ; possibilité de valider le CLES 3. 
+L’étudiant comprend des textes longs dans sa discipline, rend compte oralement et par écrit de documents professionnels, s’exprime dans une langue claire et structurée sur des sujets complexes à caractère social et académique.
+Langue de l’enseignement : Anglais
+
+UE 39 : Projet industriel
+Contenu :
+Ce projet met en œuvre les connaissances acquises au cours du semestre par le biais de l’étude et de la réalisation d'une application J2EE ou de la réalisation d'un projet d'architecture applicative répartie dont le sujet est défini en collaboration avec un partenaire industriel.
+Pré-requis :
+Objectifs :
+Maîtriser les aspects fonctionnels et techniques de la mise en oeuvre d'un système
+d'information réparti.
+Langue de l’enseignement : Français
+Semestre 4 : spécialité SIMSA
+
+UE 41 : Web services et Interopérabilité
+Contenu :
+Ce module permet de comprendre les technologies et les architectures sous-jacentes mises en œuvre dans les architectures de type SOA :
+Implementation des Services Web (SOAP, WSDL, UDDI...) ;
+Exemple de mise en œuvre en Java et .NET ;
+Interopérabilité entre SI hétérogènes ;
+Intégration d’application - Utilisation de bus ESB. 
+Pré-requis : 
+	Maîtrise des architectures distribuées, JEE/.NET
+Objectifs :
+Comprendre les architectures orientées services et les technologies sous-jacentes.
+Concevoir une architecture d’intégration de SI hétérogènes.
+Langue de l’enseignement : Français
+
+UE 42 : Intégration de SI
+Contenu :
+Architecture d'Entreprise :
+    	Principes, Gouvernance, la Stratégie (métier) de l'entreprise
+    	Capacités (organisation, acteurs, ...)
+    	Architecture fonctionnelle, architecture du système d'information
+    	Analyse de l'environnement courant et collecte de l'information
+Architecture applicative, Modèle fonctionnel, 
+Entrepôts de données, Placement des données et fonctions, 
+   	Architecture technique, Analyse des gaps et planification des transitions.
+TD : Définition d'une stratégie d'évolution ou de transformation, analyse des capacités puis proposition d'architecture fonctionnelle et d'adaptation organisationnelle.
+Architecture de solutions :
+Introduction à la notion d'Architecture de solutions.
+Les besoins et contraintes, diagramme d’architecture général
+Les aspects fonctionnels, les unités de déploiement, les aspects opérationnels
+Architecture Reference and Architecture Patterns
+Les contraintes et qualités d'une Architecture (performance/capacité/disponibilité/...)
+Documentation.
+Migration de données.
+Pré-requis :
+Objectifs : 
+Introduction à la notion d'architecture et aux disciplines du rôle d'architecte. La partie  “Architecture de solutions” a pour objectif  de donner un aperçu  des concepts utilisés lors de la réalisation d'une Architecture.
+Langue de l’enseignement : Français
+
+UE 43 : SI de l'assurance de personnes
+Contenu :
+	- Assurance de personnes :
+1. Particularités du référentiel
+2. Le régime général Maladie 
+3. Catalogue de produits 
+4. Contrat 
+5. Cotisations 
+6. Sinistres
+7. Résultats techniques.
+Pré-requis :
+Objectifs :
+Maîtriser les spécifités des SI et du fonctionnement des processus liés à un contrat Prévoyance Lourde, à un contrat Santé et à un contrat Epargne, dans le cadre de contrats individuels ou de contrats collectifs.
+Langue de l’enseignement : Français
+
+
+UE 44 : Management des SI
+Contenu :
+Plusieurs intervenants professionnels du domaine abordent différentes thématiques liées au
+management du SI dans l'entreprise :
+- Dimensionner et aligner le système d'information (SI) - système d'information informatisé (SII) au sein des processus - organisation du Métier (MOA - AMOA) et Informatique (MOE) avec la stratégie de l'Entreprise en environnement sous contraintes ;
+- Pilotage du SI SII par horizon (stratégique - tactique - opérationnel) et contrainte (Valeur - Coût) ;
+- Intégration et évolution du SII au sein du SI - SII existant.
+
+La gestion des services de production informatique.
+Modèles, normes et standards existants (ITIL, ISO 17799 / 27002, ISO 20000, COBIT, CMMI).
+TD portant sur les aspects méthodologiques de la mise en production d’une application informatique.
+Pré-requis :
+	Ingénierie des SI  - gestion de projets et qualité - analyse financière.
+Objectifs :
+-Identifier les tendances, les évolutions, connaître les méthodes, tableaux de bords et indicateurs permettant au décideur de piloter le SI (mesurer l'atteinte des objectifs et analyser les écarts en termes de qualité, supervision, sécurité, dimensionnement).
+Dimensionner - préparer - suivre - contrôler - optimiser le SI, SII.
+-donner un aperçu des enjeux et des métiers de la production informatique et présenter les principaux processus de gestion du service informatique et les grand référentiels et normes reconnus sur le marché, représentant les “bonnes pratiques” d’une DSI nécessaire pour assurer la conformité aux multiples exigences actuelles.
+Langue de l’enseignement : Français
+
+UE 45 : Stratégie commerciale autour de l’Internet
+Contenu :
+Pilotage stratégique de l’entreprise, avec Internet comme outil de pouvoir :
+Les différents types d’environnement concurrentiels ;
+Analyse de l’entreprise et évaluation de l’impact d’Internet ;
+Choisir la bonne stratégie ;
+Web design et audit de sites.
+Pré-requis :
+Objectifs :
+Maîtriser les aspects stratégiques et marketing pour l'utilisation d'Internet.
+Langue de l’enseignement : Français
+
+UE 46 : Projet industriel
+Contenu :
+Ce projet permet de synthétiser toutes les connaissances acquises au cours de l'année par le biais de l’étude et de la réalisation d'une intégration d'applications dans un contexte hétérogène. Le sujet de ce projet est défini en collaboration avec un partenaire industriel.
+Pré-requis :
+Objectifs :
+Maîtriser tous les aspects (logiciels, matériels, sécurité, …) de la mise en œuvre  d'un système
+d'information réparti et hétérogène.
+Langue de l’enseignement : Français
+
+UE 47 : Stage professionnel (6 mois)
+Contenu :
+Stage professionnel en entreprise de 6 mois.
+Pré-requis :
+Objectifs :
+Finaliser son projet professionnel et préparer son recrutement via le stage.
+Langue de l’enseignement : Français

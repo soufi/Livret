@@ -1,0 +1,28 @@
+\documentclass[10pt, a5paper]{report}
+
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}% encodage utf8
+\usepackage[francais]{babel}% texte français
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[final]{pdfpages}
+
+% Définir les couleur du document
+\input{Extra/couleurMasterCCI}
+
+% % % Personnalisation diverses % % %
+\sloppy
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{pageDeGarde-livret}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\begin{document}
+
+\pageDeGarde[nomFormation={Master CCI},objetDocument={Compétences Complémentaires en Informatique},typeDocument={Livret de l'étudiant}, anneeUniversitaire={2012-2013}]
+
+\includepdf[fitpaper,pages=-]{Preambule_Info_MasterINFO.pdf}
+
+\includepdf[fitpaper,pages=-]{Detail_Info_m2_CCI.pdf}
+
+\end{document}

@@ -1,0 +1,63 @@
+\documentclass[a5paper,10pt]{report}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[top=27mm, head=27mm, bottom=20mm, foot=20mm, left=1mm, offset=0mm, textwidth=146mm]{geometry}
+\usepackage{lmodern}
+\usepackage{setspace}
+\usepackage{tikz}
+\usepackage[explicit]{titlesec}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{xcolor}
+
+% % % Personnalisation des couleurs % % %
+\definecolor{couleurFonce}{RGB}{0,92,133}
+\definecolor{couleurClaire}{RGB}{100,151,186}
+\definecolor{couleurTexte}{RGB}{255,255,255}
+
+\fancyhead{}
+\fancyfoot{}
+\usetikzlibrary{arrows,calc}
+
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[L]{
+    \begin{tikzpicture}[xshift=-1mm, remember picture, overlay]
+      %A grid can be useful when defining coordinates
+%     \draw[step=1mm, gray, thin] (0,0) grid (9,5); 
+%     \draw[step=5mm, black] (0,0) grid (9,5); 
+      \path
+      coordinate (start) at (0,4)
+      coordinate (c1) at +(5,3)
+      coordinate (c2) at +(6.5,1)
+      coordinate (c3) at +(7.5,0)
+      coordinate (slut) at (0,0);
+      \draw[thick,fill=couleurClaire,draw=couleurClaire] (start) .. controls (c1) and (c2) .. (c3);
+      \draw[thick,fill=couleurClaire,draw=couleurClaire] (c3) -- (slut) -- (start);
+      \draw[thick,fill=couleurClaire,draw=couleurClaire] (start) -- (c3);
+      \node at (2,1.25) {
+      \includegraphics[scale=0.7]{img/logo_uo.png}
+      };
+    \end{tikzpicture}
+}
+
+\fancyfoot[R]{
+  \begin{tikzpicture}[remember picture, overlay]
+    \node at (-2,1) {
+      \includegraphics[scale=.5]{img/logo_UFR_Sciences.png}
+      };
+  \end{tikzpicture}
+}
+\fancyhead[L]{
+  \begin{tikzpicture}[remember picture, overlay]
+    \node at (2.5,0.7) {
+      \includegraphics[scale=0.4]{img/logo_DPT_Info.png}
+      };
+  \end{tikzpicture}}
+\fancyhead[R]{}
+
+\begin{document}
+\input{pageDeGarde.tex}
+test
+\end{document}

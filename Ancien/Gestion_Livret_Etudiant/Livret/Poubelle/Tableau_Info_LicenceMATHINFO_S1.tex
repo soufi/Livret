@@ -1,0 +1,27 @@
+
+%---------------------- % % % Personnalisation des couleurs % % % ----------- BLEU --------
+\definecolor{couleurFonce}{RGB}{0,92,133} % Couleur du Code APOGEE
+\definecolor{couleurClaire}{RGB}{100,151,186} % Couleur du fond de la bande
+\definecolor{couleurTexte}{RGB}{255,255,255} % Couleur du texte de la bande
+%------------------------------------------------------------------------------------------
+
+
+\arrayrulecolor{couleurFonce}% Couleur des lignes séparatrices du tableau
+\renewcommand{\arraystretch}{1.2}% Coeff appliqué à la hauteur des cellules
+%\rowcolors[\hline]{ligneDébut}{couleurPaire}{couleurImpaire}% Alternance de couleur (need package xcolor)
+\begin{tabular}{c|m{6cm}|cm{1cm}|cm{1cm}|cm{1cm}|cm{1cm}|}
+\cline{2-6}
+
+&
+\cellcolor{couleurFonce} \color{white}\bfseries Intitul\'e & \cellcolor{couleurFonce} \color{white}\bfseries ECTS & \cellcolor{couleurFonce} \color{white}\bfseries CM & \cellcolor{couleurFonce} \color{white}\bfseries TD & \cellcolor{couleurFonce} \color{white}\bfseries TP\\ \cline{2-6}
+
+\hline \multirow{6}{*}{\rotatebox{90}{\color{couleurFonce}\bfseries  SEMESTRE 1}}
+ & \color{black} \mbox{Algorithmique} \mbox{1} \mbox{et} \mbox{programmation}  & \color{black} 6 & \color{black} 45 & \color{black}  & \color{black} 15 \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Atelier} \mbox{1} \mbox{de} \mbox{l'informaticien}  & \cellcolor{couleurClaire} \color{couleurTexte} 3 & \cellcolor{couleurClaire} \color{couleurTexte} 24 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Introduction} \mbox{mathématiques} \mbox{au} \mbox{raisonnement}  & \color{black} 6 & \color{black} 60 & \color{black}  & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Suites} \mbox{réelles} \mbox{et} \mbox{fonctions}  & \cellcolor{couleurClaire} \color{couleurTexte} 6 & \cellcolor{couleurClaire} \color{couleurTexte} 60 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Arithmétique}  & \color{black} 3 & \color{black} 24 & \color{black}  & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Anglais} \mbox{1}  & \cellcolor{couleurClaire} \color{couleurTexte} 3 & \cellcolor{couleurClaire} \color{couleurTexte} 24 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Préparation} \mbox{au} \mbox{C2I}  & \color{black} 3 & \color{black}  & \color{black} 24 & \color{black}  \\ \cline{2-6}
+\hline
+\end{tabular}

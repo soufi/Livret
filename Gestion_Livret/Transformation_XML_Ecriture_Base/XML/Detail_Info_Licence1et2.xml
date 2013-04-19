@@ -1,0 +1,1572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livret>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 11" codeue="2" cours="" td="" tp="15" ctd="45" total="60" semestre="Semestre 1" coeff="6" ects="6">
+<titre>Algorithmique et programmation 1</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Alexandre TESSIER</nomPremierResp>
+
+<emailPremierResp>Alexandre.TESSIER@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Algorithmique élémentaire\,: expressions, variables, instructions, séquences, conditionnelles, boucles, tableaux, preuves, invariants, traduction dans un langage de programmation orienté objets.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Maîtriser les concepts élémentaires de l\'algorithmique et être capable de les traduire dans un langages de programmation orienté objets. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 12" codeue="3" cours="" td="" tp="" ctd="24" total="24" semestre="Semestre 1" coeff="3" ects="3">
+<titre>Atelier de l\'informaticien 1</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Pierre RETY</nomPremierResp>
+
+<emailPremierResp>Pierre.RETY@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Présenter le système sous l\'angle de l\'utilisateur. Configuration de l\'environnement de travail de l\'informaticien 
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Être autonome dans la manipulation du système. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 13" codeue="4" cours="" td="" tp="" ctd="60" total="60" semestre="Semestre 1" coeff="6" ects="6">
+<titre>Introduction au raisonnement mathématiques</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>François JAMES</nomPremierResp>
+
+<emailPremierResp>Francois.JAMES@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Logique naïve et manipulations ensemblistes. Injections, surjections. Structure d\'ordre, cas des réels, majorant, minorant, notion de borne supérieure. Approximations des réels : Q et D. Suites monotones et suites adjacentes. Structure vectorielle de R2 et R3. Sous-espaces vectoriels. Applications linéaires et matrices. Systèmes linéaires. Produit scalaire, produit vectoriel, produit mixte. 
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Savoir mettre en \oe uvre un raisonnement mathématique de base. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 14" codeue="1" cours="" td="" tp="" ctd="60" total="60" semestre="Semestre 1" coeff="6" ects="6">
+<titre>Suites et fonctions réelles</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Jean-Philippe ANKER</nomPremierResp>
+
+<emailPremierResp>Jean-Philippe.ANKER@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Nombres complexes. Suites et fonctions. Fonctions usuelles. Continuité. Dérivabilité. Convexité. Étude de fonctions. 
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Savoir mettre en \oe uvre un raisonnement mathématique de base. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 15" codeue="1" cours="" td="" tp="" ctd="24" total="24" semestre="Semestre 1" coeff="3" ects="3">
+<titre>Arithmétique</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Patrick MAHEUX</nomPremierResp>
+
+<emailPremierResp>Patrick.MAHEUX@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Divisibilité, théorèmes de Bézout et Gauss, décomposition en facteurs premiers. Exemples de structures : anneaux, corps. Congruences, structure de Z/nZ. Aperçu de ces notions dans le cadre de l\'anneau des fonctions polynômes.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Grâce aux exemples d\'arithmétiques élémentaires, découvrir l\'importance de quelques structures algébriques. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 16" codeue="1" cours="" td="25" tp="" ctd="" total="25" semestre="Semestre 1" coeff="3" ects="3">
+<titre>Anglais 1</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>Contrôle continu</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>Contrôle terminal</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Murielle PASQUET</nomPremierResp>
+
+<emailPremierResp>Murielle.PASQUET@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d’expression orale et écrite à partir de documents authentiques simples et/ou courts centrés sur le monde
+universitaire anglo-saxon.
+</descriptionLongue>
+
+<textePrerequis>
+Niveau anglais baccalauréat LV1 ou LV2 ou équivalent.
+</textePrerequis>
+
+<objectifs>
+	- Etre à même de préparer un projet de séjour d’études universitaires en pays anglophone dans une langue écrite et orale simple et suffisamment claire. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 17" codeue="1" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 1" coeff="3" ects="3">
+<titre>Préparation au C2I</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Laure KAHLEM</nomPremierResp>
+
+<emailPremierResp>Laure.KAHLEM@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+S\'approprier son environnement de travail. Sécuriser son espace de travail local et distant. Pérenniser ses données.
+Intégrer les règlementations concernant l\'utilisation des ressources numériques et les règles de bon usage du numérique. Maîtriser son identité numérique.
+Maîtriser les fonctionnalités nécessaires à l\'élaboration et la structuration de documents complexes. Traiter des données chiffrées à l\'aide d\'un tableur.
+Organiser la recherche d\'informations numériques.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Développer les compétences de base nécessaires à l\'usage des Technologies de l\'Information et de la Communication. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 21" codeue="1" cours="" td="" tp="" ctd="60" total="60" semestre="Semestre 2" coeff="6" ects="6">
+<titre>Algorithmique et programmation 2</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Wadoud BOUSDIRA</nomPremierResp>
+
+<emailPremierResp>Wadoud.BOUSDIRA@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Algorithmique élémentaire\,: récursivité, objets, structures de données chaînées (listes, files, piles), notions élémentaires (allocation dynamique, chaînage des données), traduction dans un langage de programmation orienté objets.
+</descriptionLongue>
+
+<textePrerequis>
+UE Algorithmique et programmation 1
+</textePrerequis>
+
+<objectifs>
+	- Assimiler la programmation récursive d\'une part et d\'autre part, la définition et l\'utilisation de structures de données récursives. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 22" codeue="1" cours="" td="" tp="" ctd="50" total="50" semestre="Semestre 2" coeff="6" ects="6">
+<titre>Outils mathématiques pour l\'informatique</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Pierre RETY</nomPremierResp>
+
+<emailPremierResp>Pierre.RETY@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Logique des propositions et des prédicats. Étude des procédés de base des démonstrations mathématiques, sur des notions ensemblistes. Relations binaires, fermeture transitive, relations d\'équivalences, relations d\'ordre partiel. Récurrence forte sur la longueur des mots d\'un langage. Algèbre de Boole. Circuits. 
+</descriptionLongue>
+
+<textePrerequis>
+Les notions ensemblistes
+</textePrerequis>
+
+<objectifs>
+	- Comprendre et savoir écrire des démonstrations de mathématiques sur les ensembles et les relations binaires.
+	- Comprendre les relations d\'équivalences et les relations d\'ordre partiel.
+	- Être initié aux récurrences non-élémentaires, afin de pouvoir travailler sur l\'induction en 2ème année
+	- Être initié aux circuits booléens.
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 23" codeue="1" cours="" td="" tp="" ctd="24" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Modélisation</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Frédéric LOULERGUE</nomPremierResp>
+
+<emailPremierResp>Frédéric.LOULERGUE@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Présentation simplifiée de techniques de modélisation et de leur mise en \oe uvre. 
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Première approche des principes de modélisation des problèmes informatique. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 24" codeue="1" cours="" td="" tp="24" ctd="" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Projet informatique 1</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>Rapport et soutenance de projet</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Wadoud BOUSDIRA</nomPremierResp>
+
+<emailPremierResp>Wadoud.BOUSDIRA@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Mise en \oe uvre des concepts vus dans les module d\'algorithmique 1 et 2. 
+</descriptionLongue>
+
+<textePrerequis>
+UE Algorithmique et programmation 1
+</textePrerequis>
+
+<objectifs>
+	- Renforcer ses compétences et sa compréhension des principes d\'algorithmique et de programmation. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 25" codeue="1" cours="" td="" tp="" ctd="60" total="60" semestre="Semestre 2" coeff="6" ects="6">
+<titre>Mathématiques</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Prénom NOM</nomPremierResp>
+
+<emailPremierResp>Prenom.NOM@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Algèbre linéaire en dimension finie : Espaces et sous espaces vectoriels, bases, dimension, applications linéaires et matrices, théorème du rang. Systèmes linéaires. Diagonalisation. Fonctions réciproques et fonctions classiques. 
+</descriptionLongue>
+
+<textePrerequis>
+mathématiques de premier semestre ou équivalent
+</textePrerequis>
+
+<objectifs>
+	- Utiliser l\'algèbre linéaire générale, étude locale des fonctions 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 26" codeue="1" cours="" td="25" tp="" ctd="" total="25" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Anglais 2</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Murielle PASQUET</nomPremierResp>
+
+<emailPremierResp>Murielle.PASQUET@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d’expression orale et écrite à partir de documents authentiques simples et/ou courts centrés sur le monde universitaire anglo-saxon.
+</descriptionLongue>
+
+<textePrerequis>
+Avoir suivi l\'unité "Anglais 1" ou un volume d\'heures de formation équivalente.
+</textePrerequis>
+
+<objectifs>
+	- Comprendre et s’exprimer de manière plus autonome dans des situations de séjour d’études universitaires en pays anglophone (niveau européen\,: B1).
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 27" codeue="1" cours="" td="22" tp="" ctd="" total="22" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Unité Libre</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Scolarité des Sciences</nomPremierResp>
+
+<emailPremierResp></emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+L\'unité Libre est à choisir, en début du semestre, parmi la centaine d\'enseignements dédiés à cet usage et offerts par toutes
+les composantes de l\'université (Sciences, Droit-Economie-Gestion, Sport).\\
+Voici quelques exemples d\'unités Libres\,:
+	  - Sport.
+	  - Droit de l\'informatique.
+	  - Problèmes économiques contemporains.
+	  - Histoire du cinéma, histoire des arts.
+	  - Enseigner : posture et identité professionnelles.
+	  - Lecture critique du réchauffement climatique.
+	  - Maîtriser son expression ; les enjeux de la communication orale : le corps, l\'espace, la voix.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs>
+	- Comprendre comment ce qu\'on apprend dans le cadre d\'un diplôme déjà très spécialisé s\'insère dans le large champ des connaissances
+	 et des savoirs auxquels on sera confronté dans son expérience professionnelle ou personnelle.
+</objectifs>
+
+<ressources>La page du site de l\'université dédiée aux unités Libres: http://www.univ-orleans.fr/scolarite/inscriptions/?page=2</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 28" codeue="1" cours="" td="" tp="" ctd="12" total="12" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Projet personnel et professionnel</titre>
+
+<MethodeEval>Contrôle continue et terminal</MethodeEval>
+
+<modalitesCCSemestreUn>Rapport et soutenance</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>Pas de 2nde session</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Wadoud BOUSDIRA</nomPremierResp>
+
+<emailPremierResp>Wadoud.BOUSDIRA@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire.</descriptionCourte>
+
+<descriptionLongue>
+Explorer un métier, une fonction, un secteur d\'activité.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Choisir ses options en licence, envisager une poursuite d\'études en cours de licence et après la licence, et construire son projet professionnel. 
+	- Se confronter avec le milieu professionnel au travers d\'entretiens. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 31" codeue="1" cours="24" td="36" tp="" ctd="" total="60" semestre="Semestre 3" coeff="6" ects="6">
+<titre>Algorithmique et programmation 3 (programmation orientée objet)</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Frédéric MOAL</nomPremierResp>
+
+<emailPremierResp>Frédéric.MOAL@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Présentation de l\'approche objet (valeurs + message), bases de conception/analyse objet. Notions de classes, méthodes, attributs, encapsulation, héritage (simple), interface, classe internes, exceptions... Mise en \oe uvre des interfaces graphiques et de la programmation événementielle.
+</descriptionLongue>
+
+<textePrerequis>
+Programmation impérative, algorithmes et structures de données (algorithmique et programmation 1 et 2).
+</textePrerequis>
+
+<objectifs>
+	- Maîtrise des bases de la conception et de la programmation objet. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 32" codeue="1" cours="12" td="" tp="24" ctd="" total="36" semestre="Semestre 3" coeff="5" ects="5">
+<titre>Bases de données et Internet</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Khalil DJELLOUL</nomPremierResp>
+
+<emailPremierResp>Khalil.DJELLOUL@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Architecture LAMP (Linux, Apache, MySQL, PHP). Modélisation d\'une base de donnée\,: modélisation conceptuelle (entité-association) \,; modélisation logique (relationnelle). Manipulation de données avec SQL. Structuration de pages web statiques et dynamiques. Réalisation d\'une application web dynamique (type PHP / MySQL). 
+</descriptionLongue>
+
+<textePrerequis>
+Maîtrise des bases de l\'algorithmique et de la programmation (pour la réalisation de 
+l\'application web).
+</textePrerequis>
+
+<objectifs>
+	- Être à même de concevoir et réaliser une application web dynamique utilisant une base de données relationnelles. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 33" codeue="1" cours="12" td="" tp="24" ctd="" total="36" semestre="Semestre 3" coeff="4" ects="4">
+<titre>Atelier de l\'informaticien 2</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>AbdelAli ED-DBALI</nomPremierResp>
+
+<emailPremierResp>AbdelAli.ED-DBALI@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire.</descriptionCourte>
+
+<descriptionLongue>
+Présenter les outils nécessaires pour une utilisation approfondie du système dans le but d\'automatiser le processus de développement (shell, makefile, gestion de versions, etc).
+</descriptionLongue>
+
+<textePrerequis>
+Modules Algorithmique et programmation, Environnement Informatique.
+</textePrerequis>
+
+<objectifs>
+	- Automatiser la gestion du développement. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°19 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 34" codeue="1" cours="12" td="12" tp="6" ctd="" total="30" semestre="Semestre 3" coeff="4" ects="4">
+<titre>Architecture des ordinateurs</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Sophie ROBERT</nomPremierResp>
+
+<emailPremierResp>Sophie.ROBERT @univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Étude du fonctionnement bas niveau d\'un ordinateur (couche matérielle). La représentation de l\'information (représentation binaire, standard IEEE 754). Les circuits séquentiels. La hiérarchie mémoire (mémoire RAM, adressage et réalisation à partir des bascules, cas particulier de la mémoire cache). L\'Unité centrale de traitement et son chemin de données. 
+</descriptionLongue>
+
+<textePrerequis>
+L\'algèbre de Boole et les circuits logiques.
+</textePrerequis>
+
+<objectifs>
+	- Compréhension des principes de base du fonctionnement d\'un ordinateur. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°20 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 35" codeue="1" cours="" td="" tp="" ctd="48" total="48" semestre="Semestre 3" coeff="5" ects="5">
+<titre>Applications de l\'algèbre</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Philippe GRILLOT</nomPremierResp>
+
+<emailPremierResp>Philippe.GRILLOT@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+	- Espaces vectoriels; bases; espaces supplémentaires; équations cartésiennes; applications linéaires; matrices d\'applications linéaires ( réelles et complexes); trace et déterminant d\'endomorphismes; calcul d\'inverses ( méthode du pivot de Gauss - méthode des cofacteurs); polynômes caractéristiques; valeurs propres ; vecteurs propres; diagonalisation; Théorème de Hamilton-Cayley; sous-espaces caractéristiques; lemme des noyaux.
+	- Application : interpolation; résolution de systèmes linéaires, étude de suites récurrentes, résolution de systèmes différentiels, résolution d\'équations différentielles linéaires d\'ordre supérieur, exponentielle de matrices, trigonalisation. 
+</descriptionLongue>
+
+<textePrerequis>
+niveau bac nécessaire, modules de première année souhaitables.
+</textePrerequis>
+
+<objectifs>
+	- Maîtrise des éléments d\'algèbre étudiés. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°21 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 36" codeue="1" cours="" td="25" tp="" ctd="" total="25" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Anglais 3</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Michèle CIMOLINO</nomPremierResp>
+
+<emailPremierResp>Michele.CIMOLINO@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d’expression à partir de documents authentiques simples et/ou courts portant sur des innovations technologiques, des découvertes et avancées scientifiques.
+</descriptionLongue>
+
+<textePrerequis>
+Avoir suivi les unités Anglais 1 et 2 ou un volume d\'heures de formation équivalente
+</textePrerequis>
+
+<objectifs>
+	- Découvrir les bases de l’anglais scientifique et les utiliser à l’écrit et à l’oral. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°22 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 37" codeue="1" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Unité Libre</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Scolarité des Sciences</nomPremierResp>
+
+<emailPremierResp></emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+L\'unité Libre est à choisir, en début du semestre, parmi la centaine d\'enseignements dédiés à cet usage et offerts par toutes
+les composantes de l\'université (Sciences, Droit-Economie-Gestion, Sport).\\
+Voici quelques exemples d\'unités Libres\,:
+	  - Sport.
+	  - Droit de l\'informatique.
+	  - Problèmes économiques contemporains.
+	  - Histoire du cinéma, histoire des arts.
+	  - Enseigner : posture et identité professionnelles.
+	  - Lecture critique du réchauffement climatique.
+	  - Maîtriser son expression ; les enjeux de la communication orale : le corps, l\'espace, la voix.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs>
+	- Comprendre comment ce qu\'on apprend dans le cadre d\'un diplôme déjà très spécialisé s\'insère dans le large champ des connaissances
+	 et des savoirs auxquels on sera confronté dans son expérience professionnelle ou personnelle.
+</objectifs>
+
+<ressources>La page du site de l\'université dédiée aux unités Libres: http://www.univ-orleans.fr/scolarite/inscriptions/?page=2</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°23 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 41" codeue="1" cours="24" td="36" tp="" ctd="" total="60" semestre="Semestre 4" coeff="6" ects="6">
+<titre>Programmation fonctionnelle</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Frédéric DABROWSKI</nomPremierResp>
+
+<emailPremierResp>Frederic.DABROWSKI@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire.\\Les langages de programmation fonctionnelle fortement typés conçus dans les années 80 sont utilisés dansl\'enseignement depuis le milieu des années 90 et se diffusent de plus en plus dans l\'industrie.Ils sont particulièrement appréciés par la productivité et la sûreté des programmes qu\'ils apportent. </descriptionCourte>
+
+<descriptionLongue>
+Présentation générale du langage fonctionnel utilisé. Expressions, valeurs et types de base Définitions locales, liaisons et environnements.
+Expressions et valeurs fonctionnelles à une variable. Définitions globales, entrées-sorties, compilation en ligne de commande.
+Fonctions d\'ordre supérieur. Filtrage, tuples. Polymorphisme et inférence de type. Fonctions récursives. Listes. Types composés\,:
+type enregistrement, type somme (polymorphes &amp; récursifs). Structures de données et algorithmes\,: tris, arbres binaires, arbres
+binaires de recherche, arbres équilibrés.
+</descriptionLongue>
+
+<textePrerequis>
+Mathématiques élémentaires dont preuve par récurrence. Utilisation élémentaire d\'un environnement Unix.
+</textePrerequis>
+
+<objectifs>
+	- Prise en main d\'un des langages de programmation fonctionnelle et des notions de programmation associée.
+	- Développement d\'une application autonome complète.
+</objectifs>
+
+<ressources>Ressource</ressources>
+
+<biblio>Bibli</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°24 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 42" codeue="1" cours="24" td="36" tp="" ctd="" total="50" semestre="Semestre 4" coeff="6" ects="6">
+<titre>Algorithmique et combinatoire des structures discrètes</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Mathieu LIEDLOFF</nomPremierResp>
+
+<emailPremierResp>Mathieu.LIEDLOFF@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire.</descriptionCourte>
+
+<descriptionLongue>
+Dénombrement. Relation d\'ordre partiel : calcul de la fermeture transitive, tri topologique. Graphes : parcours, plus court chemin, arbres recouvrants de poids minimum, flot. 
+</descriptionLongue>
+
+<textePrerequis>
+algorithmique et programmation élémentaires
+</textePrerequis>
+
+<objectifs>
+	- Modélisation et résolution de problèmes à l\'aide de structures discrètes. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°25 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 43" codeue="1" cours="" td="" tp="" ctd="48" total="48" semestre="Semestre 4" coeff="5" ects="5">
+<titre>Probabilités</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Jean-Baptiste GOUÉRÉ</nomPremierResp>
+
+<emailPremierResp>Jean-Baptiste.GOUERE@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Espace de probabilités et modélisation de phénomènes aléatoires. Probabilités conditionnelles; indépendance; probabilités composées; formule de Bayes. Variables aléatoires discrètes et continues; fonction de répartition et loi de probabilité. Moment:espérance, variance, écart-type. Couple de variables aléatoires, loi jointe, lois marginales. Indépendance. Loi des grands nombres , théorème de la limite centrée, tables. 
+</descriptionLongue>
+
+<textePrerequis>
+mathématiques niveau bac
+</textePrerequis>
+
+<objectifs>
+	- (savoirs et compétences acquis)\,: 
+	- maîtriser les bases du calcul des probabilités 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°26 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 44" codeue="1" cours="12" td="" tp="24" ctd="" total="36" semestre="Semestre 4" coeff="5" ects="5">
+<titre>Projet informatique 2 (Conception et projet)</titre>
+
+<methodeEval>Réalisation d\'une application.</methodeEval>
+
+<modalitesCCSemestreUn>Rapport et soutenance de projet</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>Pas de 2nde session</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Jean Michel COUVREUR</nomPremierResp>
+
+<emailPremierResp>Jean-Michel.COUVREUR@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Éléments de gestion de projet et de modélisation. Réalisation d\'un projet suivi par petits groupes. 
+</descriptionLongue>
+
+<textePrerequis>
+Cours d\'algorithmique et de programmation des semestres précédents.
+</textePrerequis>
+
+<objectifs>
+	- Avoir acquis une première expérience du travail de groupe et de l\'organisation d\'un projet. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°27 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 45" codeue="1" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 4" coeff="3" ects="3">
+<titre>Anglais 4</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Michèle CIMOLINO</nomPremierResp>
+
+<emailPremierResp>Michele.CIMOLINO@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d’expression à partir de documents authentiques simples et/ou courts portant sur des innovations technologiques, des découvertes et avancées scientifiques. 
+</descriptionLongue>
+
+<textePrerequis>
+Avoir suivi l\'unité "Anglais 3" ou un volume d\'heures de formation équivalente.
+</textePrerequis>
+
+<objectifs>
+	- Analyser dans une langue simple et cohérente les rapports entre science et société à l’écrit et à l’oral (niveau européen\,: B1+).
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°28 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 46.A" codeue="1" cours="" td="" tp="" ctd="30" total="30" semestre="Semestre 4" coeff="5" ects="5">
+<titre>Bases du système comptable</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Gilles LE FLOHIC</nomPremierResp>
+
+<emailPremierResp>Gilles.LE-FLOHIC@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Choisir cette unité ou l\'unité UE 46.B (Programmation impérative).</descriptionCourte>
+
+<descriptionLongue>
+Le plan comptable général, La notion de flux : Le compte \,; Principe de la partie double. Les documents comptables \,:
+Le journal \,; Le compte de résultat \,; Le bilan.
+La facturation. Le règlement des créances et des dettes \,: Banque, caisse ou CCP \,; Les effets de commerce. 
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Compréhension des bases du système comptable. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°29 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 46.B" codeue="1" cours="12" td="20" tp="" ctd="" total="32" semestre="Semestre 4" coeff="5" ects="5">
+<titre>Programmation impérative</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Matthieu EXBRAYAT</nomPremierResp>
+
+<emailPremierResp>Matthieu.EXBRAYAT@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Choisir cette unité ou l\'unité UE 46.A (Bases du système comptable).</descriptionCourte>
+
+<descriptionLongue>
+Apprentissage d\'un langage impératif avec gestion explicite de la mémoire. Gestion de la mémoire\,: allocation dynamique, pointeurs génériques et typage, données multidimentionnelles, gestion automatique. Modularisation des programmes\,: des principes de modularité à l\'objets génériques vers le polymorphisme. Mécanismes de contrôle avancés\,: sauts non locaux, exceptions, application à la gestion des erreurs d\'exécution. 
+</descriptionLongue>
+
+<textePrerequis>
+Initiation la programmation, programmation objets
+</textePrerequis>
+
+<objectifs>
+	- Connaître en profondeur un langage impératif. 
+	- Maîtriser les questions de gestion de mémoire.
+	- Programmer des concepts avancés de programmation à partir d\'un langage impératif. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+</livret>

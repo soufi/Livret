@@ -1,0 +1,21 @@
+Master Informatique : M1 spécialité MoCaHP
+#SEMESTRE 1
+UE 11 choix d'un enseignement parmi 2|Mise à niveau informatique (Pour les titulaires d'une licence de mathématiques)|1|1|10||40|15|20|1
+UE 11 choix d'un enseignement parmi 2|Mise à niveau mathématique (Pour les titulaires d'une licence d'informatique)|1|1|10|15|40||1
+UE 12 choix d'un enseignement parmi 2|Système et réseaux (Pour les titulaires d'une licence de mathématiques)|6|6|20|20|40|30|20|1
+UE 12 choix d'un enseignement parmi 2|Mathématiques (Pour les titulaires d'une licence d'informatique)|6|6|35|35|40||1
+UE 13 obligatoire|Anglais|2|2||24|20||1
+UE 14 obligatoire|Signal, filtrage, EDP (Théorie et pratique)|7|7|30|30|40||1
+UE 15 obligatoire|Génie logiciel pour le calcul haute performance|4|4|16|20|40||1
+UE 16 obligatoire|Modélisation, graphes et algorithmes|4|4|16|20|40||1
+UE 17 obligatoire|Programmation parallèle|4|4|16|20|40||1
+UE 18 obligatoire|Langages de scripts|2|2|10|10|40||1
+#SEMESTRE 2
+UE 21 obligatoire|Algorithmique répartie|4|4|16|20|40||2
+UE 22 obligatoire|Analyse de données et méthodes de simulation|5|5|30|30|40||2
+UE 23 obligatoire|Calculabilité et complexité|4|4|16|20|40||2
+UE 24 obligatoire|EDP, modélisation, analyse et simulations numériques|5|5|30|30|40||2
+UE 25 obligatoire|Programmation graphique|2|2|8|10|40||2
+UE 26 obligatoire|Travaux d'étude et de recherche et techniques de communication|4|4|10|24|||2
+UE 27 obligatoire|Anglais|2|2||24|20||2
+UE 28 obligatoire|Stage (8 semaines minimum) |4|4|||||2

@@ -1,0 +1,101 @@
+# SEMESTRE 1
+UE 11 obligatoire|Algorithmique et programmation 1|6|6|45||30|15|15|Semestre 1
+UE 12 obligatoire|Environnement informatique 1|3|3|24||30|||Semestre 1
+UE 13 obligatoire|Introduction au raisonnement mathématiques|6|6|60||30|||Semestre 1
+UE 14 obligatoire|Suites et fonctions réelles|6|6|60||30|||Semestre 1
+UE 15 obligatoire|Arithmétique|3|3|24||30|||Semestre 1
+UE 16 obligatoire|Anglais 1|3|3|25||30|||Semestre 1
+UE 17 obligatoire|Unité d'ouverture|3|3||-22||||Semestre 1
+TOTAL S1||30|30|237|0||15|
+# SEMESTRE 2
+UE 21 obligatoire|Algorithmique et programmation 2|6|6|60||30|||Semestre 2
+UE 22 obligatoire|Outils mathématiques pour l'informatique|6|6|50||30|||Semestre 2
+UE 23 obligatoire|Modélisation|3|3|24||30|||Semestre 2
+UE 24 obligatoire|Projet informatique|3|3||||24|15|Semestre 2
+UE 25 obligatoire|Mathématiques|6|6|60||30|||Semestre 2
+UE 26 obligatoire|Anglais 2|3|3|25||30|||Semestre 2
+UE 27 obligatoire|Préparation au C2I|3|3||-22||||Semestre 2
+TOTAL S2||30|30|218|0||24|
+# SEMESTRE 3
+UE 31 obligatoire|Algorithmique et programmation 3 (programmation orientée objet)|5|5|20|40|30|||Semestre 3
+UE 32 obligatoire|Bases de données et Internet|4|4|10|||40CTP|20|Semestre 3
+UE 33 obligatoire|Environnement informatique 2 (Atelier de l’informaticien)|4|4||||40CTP|20|Semestre 3
+UE 34 obligatoire|Architecture des ordinateurs|4|4|8|16|30|6|20|Semestre 3
+UE 35 obligatoire|Application de l'algèbre|5|5||50CTD|30|||Semestre 3
+UE 36 obligatoire|Anglais 3|3|3||25CTD|30|||Semestre 3
+UE 37 obligatoire|Unité d'ouverture|3|3||-22||||Semestre 3
+UE 38 obligatoire|Projet personnel et professionnel|2|2|12||30|||Semestre 3
+TOTAL S3||30|30|50|131||86|
+# SEMESTRE 4
+UE 41 obligatoire|Programmation fonctionnelle|6|6|20|40|30||
+UE 42 obligatoire|Algorithmique et combinatoire des structures discrètes|6|6|20|30|30|||Semestre 4
+UE 42 obligatoire|Projet informatique 2 (Conception et projet)|5|5|10|||30|20|Semestre 4
+UE 43 obligatoire|Probabilités|5|5||40CTD||30||Semestre 4
+UE 44 obligatoire|Anglais 4|3|3||25CTD|30|||Semestre 4
+UE 45.A choix entre UE 45.A ou UE 45.B|Bases du système comptable|5|5||30CTD|30|||Semestre 4
+UE 45.B choix entre UE 45.A ou UE 45.B|Programmation impérative|5|5|10|20||||Semestre 4
+TOTAL S4||30|30|50/60|135/125||60|
+# SEMESTRE 5 – parcours informatique
+UE 51 obligatoire|Mise à niveau informatique - PRL|0|0||||35|24|Semestre 5
+UE 52 obligatoire|Programmation avancée et structures dynamiques|5|5|18|30|40|||Semestre 5
+UE 53 obligatoire|Réseaux|4|4|16|12|40|12|24|Semestre 5
+UE 54 obligatoire|Analyse des algorithmes|5|5|16|24|40|||Semestre 5
+UE 55 obligatoire|Programmation linéaire|4|4|14|20|40|4|24|Semestre 5
+UE 56 obligatoire |Logique|3|3|12|18|40|||Semestre 5
+UE 57 obligatoire |Systèmes d’information|3|3|12|12|40|6|24|Semestre 5
+UE 58 obligatoire |Anglais 5|3|3||25|30|||Semestre 5
+UE 59 obligatoire |Ouverture|3|3||-22||||Semestre 5
+TOTAL S4||30|30|88|141||57|
+# SEMESTRE 5 – parcours MIAGE
+UE 51 obligatoire – PRL|Mise à niveau Informatique |0|0||||35|24|Semestre 5
+UE 52 obligatoire|Programmation avancée et structures dynamiques|4|4|18|30|40|||Semestre 5
+UE 53  obligatoire|Réseaux|4|4|16|12|40|12|24|Semestre 5
+UE 54 obligatoire|Analyse et conception des SI|4|4|22|20|40|6|24|Semestre 5
+UE 55 obligatoire|Statistiques|3|3|6||40|24|24|Semestre 5
+UE 56 obligatoire|Recherche Opérationnelle|3|3|16|24|40|||Semestre 5
+UE 57 obligatoire|Gestion comptable|3|3|35||40|||Semestre 5
+UE 58 obligatoire|Anglais et techniques de communication|4|4||48|30|||Semestre 5
+UE 59 obligatoire|Projet informatique|3|3||6||||Semestre 5
+UE 510 obligatoire|Projet personnel et professionnel|2|2|10|10|30|||Semestre 5
+TOTAL S5||30|30|123|140||77|
+# SEMESTRE 5 – parcours E-MIAGE (FOAD)
+UE 51 obligatoire|Programmation mathématique et optimisation - B105|4|4||||||Semestre 5
+UE 52  obligatoire|Bases de données relationnelles - B210|4|4||||||Semestre 5
+UE 53 obligatoire|Programmation orientée objet - B211|4|4||||||Semestre 5
+UE 54 obligatoire|Bases des télécommunications - B222|4|4||||||Semestre 5
+UE 55 obligatoire|Méthodes systémiques d'analyse et de conception - B302|4|4||||||Semestre 5
+UE 56 obligatoire|Projet de conception - B304|3|3||||||Semestre 5
+UE 57 obligatoire|Marketing - B405|4|4||||||Semestre 5
+UE 58.A choix entre UE 58.A ou UE 58.B|Analyse numérique B109|3|3||||||Semestre 5
+UE 58.B choix entre UE 58.A ou UE 58.B|Théorie des graphes et combinatoire B104|3|3||||||Semestre 5
+TOTAL S5||30|30|||||
+# SEMESTRE 6 – parcours informatique
+UE 61 obligatoire – PRL|Renforcement POO|0|0||||12|24|Semestre 6
+UE 62 obligatoire|Génie Logiciel|5|5|12|20|40|4|24|Semestre 6
+UE 63 obligatoire|Bases de données|4|4|12|20|40|8|24|Semestre 6
+UE 64 obligatoire|Théorie des langages|4|4|14|26|40|||Semestre 6
+UE 65 obligatoire|Projet informatique 3|6|6|6|||||Semestre 6
+UE 66 obligatoire|Anglais 6|3|3||25|30|||Semestre 6
+UE 69 obligatoire|Stage ou projet fin d'études|8|8||||||Semestre 6
+TOTAL S6||30|30|44|91||24|
+# SEMESTRE 6 – parcours MIAGE
+UE 61 obligatoire – PRL|Renforcement POO Java|0|0||||12|24|Semestre 6
+UE 62 obligatoire|Génie Logiciel|4|4|12|20|40|4|24|Semestre 6
+UE 63 obligatoire|Bases de données|4|4|12|20|40|8|24|Semestre 6
+UE 64 obligatoire|Programmation des SI|4|4|20|||20|24|Semestre 6
+UE 65 obligatoire|Environnement économique de l'entreprise|3|3|24|||||Semestre 6
+UE 66 obligatoire|Droit|3|3|24|||||Semestre 6
+UE 67 obligatoire|Anglais|3|3||24|30|||Semestre 6
+UE 68 obligatoire|Projet informatique|3|3||||||Semestre 6
+UE 69 obligatoire|Stage ou projet fin d'études|6|6||||||Semestre 6
+TOTAL S6||30|30|92|64||44|
+# SEMESTRE 6 – parcours E-MIAGE (FOAD)
+UE 61 obligatoire|Systèmes informatiques - B208|3|3||||||Semestre 6
+UE 62 obligatoire|Automates et langages – B209|3|3||||||Semestre 6
+UE 63 obligatoire|Gestion de projet – B303|3|3||||||Semestre 6
+UE 64 obligatoire|Projet de programmation – B213|3|3||||||Semestre 6
+UE 65 obligatoire|Gestion de production – B407|3|3||||||Semestre 6
+UE 66 obligatoire|Communication en entreprise – B503|3|3||||||Semestre 6
+UE 67 obligatoire|Anglais – B504|3|3||||||Semestre 6
+UE 68 obligatoire|Professionnalisation – B602|9|9||||||Semestre 6
+TOTAL S6||30|30|||||

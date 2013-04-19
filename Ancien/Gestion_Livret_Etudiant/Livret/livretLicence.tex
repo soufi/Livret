@@ -1,0 +1,32 @@
+\documentclass[10pt, a5paper]{report}
+
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}% encodage utf8
+\usepackage[francais]{babel}% texte français
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[final]{pdfpages}
+
+% Définir les couleur du document
+\input{Extra/couleurMasterCCI}
+
+% % % Personnalisation diverses % % %
+\sloppy
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{pageDeGarde-livret}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\begin{document}
+
+\pageDeGarde[nomFormation={Formations du département d'informatique},objetDocument={},typeDocument={Livret de l'étudiant}, anneeUniversitaire={2012-2013}]
+
+\includepdf[fitpaper,pages=-]{Preambule_Info_Licence.pdf}
+
+\includepdf[fitpaper,pages=-]{Detail_Info_Licence1et2.pdf}
+
+\includepdf[fitpaper,pages=-]{Detail_Info_Licence3_INFO.pdf}
+
+\includepdf[fitpaper,pages=-]{Detail_Info_Licence3_MIAGE.pdf}
+
+\end{document}

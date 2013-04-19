@@ -1,0 +1,1 @@
+<module codeApogee="UE 11" codeue="2" cours="" td="" tp="15" ctd="45" total="60" semestre="Semestre 1" coeff="6" ects="6">

@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livret>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 51" codeue="1" cours="" td="" tp="12" ctd="20" total="32" semestre="Semestre 5" coeff="0" ects="0">
+<titre>Mise à niveau Informatique</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Catherine JULIÉ-BONNET</nomPremierResp>
+
+<emailPremierResp>Catherine.JULIE-BONNET@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité qui s\'intègre dans le PRL (Plan Réussite en Licence).\\Obligatoire pour certains étudiants.</descriptionCourte>
+
+<descriptionLongue>
+Rappels sur l\'algorithmique et la programmation, les systèmes d\'exploitation, les outils de 
+développement. 
+</descriptionLongue>
+
+<textePrerequis>
+Niveau bac + 2 en informatique ou équivalent
+</textePrerequis>
+
+<objectifs>
+	- Remise à niveau essentiellement destinée aux étudiants intégrant la Licence au semestre 5, afin de leur assurer les bases nécessaires pour suivre de manière satisfaisante les enseignements de troisième année.
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 52" codeue="1" cours="20" td="30" tp="" ctd="" total="50" semestre="Semestre 5" coeff="4" ects="4">
+<titre>Programmation avancée et structures dynamiques</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Jean-Jacques LACRAMPE</nomPremierResp>
+
+<emailPremierResp>Jean-Jacques.LACRAMPE@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Introduction au langage ADA. Types non contraints et pointeurs.
+Unités de compilation, modularité, généricité.
+Tâches, rendez-vous, type protégés, répartition.
+Types étiquetés, programmation orientée objet, programmation par classe, héritage, héritage multiple. Interfaçage : autres langages, interface graphique, serveur web,... 
+</descriptionLongue>
+
+<textePrerequis>
+Maîtrise de l\'algorithmique de base (y compris les techniques d\'assertion et d\'invariant) et des structures statiques. Connaissance des principes de gestion mémoire, de la notion d\'état, de l\'affectation. Expérience des entrées sorties (non-)bufferisées. 
+</textePrerequis>
+
+<objectifs>
+	- Acquérir et combiner plusieurs méthodes de programmation au sein d\'un même langage. Intégrer la notion d\'abstraction des données et des traitements. 
+	- Comprendre l\'intérêt du typage fort et de l\'induction de types. Arbitrer entre des solutions statiques et dynamiques. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 53" codeue="1" cours="18" td="12" tp="12" ctd="" total="42" semestre="Semestre 5" coeff="4" ects="4">
+<titre>Réseaux</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Abdelali ED-DBALI</nomPremierResp>
+
+<emailPremierResp>Abdelali.ED-DBALI@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Architecture des réseaux\,: structure en couches, protocoles, services. Réseaux locaux sous UDP-TCP/IP, Ethernet. Protocoles de routage\,: RIP, OSPF, BGP. Principaux protocoles Internet\,: DNS (annuaire de noms de domaines). SMTP (mail), FTP (transfert de fichiers), HTTP (web),... 
+</descriptionLongue>
+
+<textePrerequis>
+Algorithmique (modules de L1 et L2).
+</textePrerequis>
+
+<objectifs>
+	- Principes et pratique des réseaux locaux informatiques.
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 54" codeue="1" cours="20" td="20" tp="10" ctd="" total="50" semestre="Semestre 5" coeff="4" ects="4">
+<titre>Analyse et conception des SI</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Raymond RAKOTOZAFY</nomPremierResp>
+
+<emailPremierResp>Raymond.RAKOTOZAFY@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Contribution d\'une méthode d\'analyse et de conception, Merise en l\'occurrence, au sein des activités de l\'ingénierie des systèmes d\'information. Les principes généraux de la méthode. Le cycle d\'abstraction : raisonnements de modélisation et formalismes associés. Schémas des flux ; Modèle conceptuel des données (MCD) ; Modèle conceptuel des traitements (MCT) et modèle organisationnel des traitements (MOT). Le cycle de vie : la démarche. Étude préalable : Analyse de l\'existant et Conception du futur système ; Étude détaillée du futur système. 
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Transformer les besoins et attentes des utilisateurs d\'un système d\'information en spécifications formalisées d\'une future application informatique.
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 55" codeue="1" cours="" td="" tp="30" ctd="" total="30" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Statistiques</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Sophie JACQUOT</nomPremierResp>
+
+<emailPremierResp>Sophie.JACQUOT@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Statistique descriptive: cas uni et bidimensionnel. Statistique inférentielle\,: Démarche d\'échantillonnage: distribution d\'échantillonnage de la moyenne et de la variance dans le cas du tirage aléatoire.\,; Estimation paramètrique: qualités d\'une estimateur ponctuel, estimateur du maximum de vraisemblance, intervalle de confiance. Test: principes généraux des tests statistiques, tests de conformité, test d\'homogénéité, tests d\'ajustement, tests d\'indépendance. Étude des séries chronologiques: méthodes de filtrages (moyenne mobile, lissage exponentiel). Toutes les notions vues en cours sont illustrées en TP avec les logiciels R et XLSTAT. 
+</descriptionLongue>
+
+<textePrerequis>
+Notions de probabilités.
+</textePrerequis>
+
+<objectifs>
+	- Le but du cours est de savoir mener une étude statistique sur des données avec un objectif précis. 
+	- Présentation synthétique des données, puis énoncé d\'hypothèses probabilistes et enfin validation de ces hypothèses, et enfin exploitation des résultats. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 56" codeue="1" cours="16" td="24" tp="" ctd="" total="40" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Recherche Opérationnelle</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Prénom NOM</nomPremierResp>
+
+<emailPremierResp>Prenom.NOM@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Recherche opérationnelle sur les graphes : ordonnancement, flots. Programmation linéaire : méthode du simplex, dualité. 
+</descriptionLongue>
+
+<textePrerequis>
+algorithmique élémentaire sur les graphes
+</textePrerequis>
+
+<objectifs>
+	- Introduction à la recherche opérationnelle (modélisation et résolution).
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 57" codeue="1" cours="30" td="" tp="" ctd="" total="30" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Gestion comptable</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Gilles LE FLOHIC</nomPremierResp>
+
+<emailPremierResp>Gilles.LE-FLOHIC@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Introduction\,: De la comptabilité générale à la comptabilité analytique. La détermination des coûts :
+la méthode des coûts complets (Analyse des charges. Répartition des charges indirectes, enchaînements des calculs. Le coût de production.
+Le coût de revient. La notion de résultat analytique d\'exploitation. Rapprochement avec la comptabilité générale. Critiques.)
+Les méthodes des coûts partiels (Le coût variable ; le seuil de rentabilité. La méthode du coût indirect.
+La méthode de l\'imputation rationnelle des charges fixes. Le coût marginal. ) Remise en cause des modèles traditionnels (La méthode ABC.).
+</descriptionLongue>
+
+<textePrerequis>
+Les notions de base en comptabilité financière, charges, bilan et compte de résultat.
+</textePrerequis>
+
+<objectifs>
+	- être capable de déterminer un coût. Réfléchir à la notion de prix, aux outils d\'aide à la décision.
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 58" codeue="1" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 5" coeff="2" ects="2">
+<titre>Anglais</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Marie-Françoise TASSARD</nomPremierResp>
+
+<emailPremierResp>Marie-Françoise.TASSARD@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+	 - Restituer, échanger des informations, produire des énoncés corrects à l\'oral comme à l\'écrit.
+	 - Travail personnel : Exercices d\'application à la fin de chaque unité et remise d\'un devoir au cours du semestre (CV).
+	 - Travail individuel de remise à niveau en centre ressource multimédia si nécessaire.
+</descriptionLongue>
+
+<textePrerequis>
+Avoir suivi avec succès les enseignements des semestres précédents.
+</textePrerequis>
+
+<objectifs>
+	- Comprendre et s\'exprimer dans une langue simple et correcte à l\'oral comme à l\'écrit afin d\'acquérir une autonomie suffisante dans le milieu professionnel
+	- Aide à la rédaction de CV et lettres de motivation dans le cadre de la recherche de stage.
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 59" codeue="1" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 5" coeff="2" ects="2">
+<titre>Techniques de communication</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Alfred HITCHCOCK</nomPremierResp>
+
+<emailPremierResp>Alfred.HITCHCOCK@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+	 - Prise de parole devant un groupe : constituer et présenter un dossier avec documents.
+	 - Travail de groupe et créativité : s\'initier aux méthodes de l\'invention pour innover dans un travail de groupe.
+	 - Communication et programmation neurolinguistique (PLN) : se connaître, connaître autrui pour mieux communiquer.
+	 - La recherche d\'emploi : le C.V., la lettre de motivation.
+	 - Les écrits professionnels :
+		    - La lettre : lisibilité et créativité. La note de service : concision et précision.
+		    - Le journal d\'entreprise : accroche et information.
+		    - Le compte-rendu : recherche de l\'objectivité.
+		    - Le rapport : aide à la prise de décision. 
+</descriptionLongue>
+
+<textePrerequis>
+Savoir adapter un langage aux situations professionnelles.
+</textePrerequis>
+
+<objectifs>
+	- Savoir animer une réunion, connaître la communication orale professionnelle et rédiger des écrits professionnels en entreprise. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 60" codeue="1" cours="" td="6" tp="" ctd="" total="6" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Projet informatique</titre>
+
+<MethodeEval>Contrôle continue et terminal</MethodeEval>
+
+<modalitesCCSemestreUn>Rapport et soutenance de projet</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>Pas de 2nde session</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Raymond RAKOTOZAFY</nomPremierResp>
+
+<emailPremierResp>Raymond.RAKOTOZAFY@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Projet de fin d\'études, faisant intervenir différentes connaissances et compétences acquises lors de l\'ensemble de la formation en licence.
+</descriptionLongue>
+
+<textePrerequis>
+Niveau de connaissance et de compétence de fin d\'année de licence (L3), en particulier dans les domaines de l\'analyse, de la modélisation et de la programmation.
+Le langage de programmation souhaité pour le projet devra être connu ou maîtrisé dans un délai très court.
+De plus il est obligatoire de s\'impliquer dans un groupe de travail et de posséder un minimum de qualités dans la communication.
+</textePrerequis>
+
+<objectifs>
+	- Au sein d\'un groupe, apprendre à organiser la réalisation complète d\'un projet, depuis l\'analyse jusqu\'aux tests de validation en utilisant des outils collaboratifs. 
+	- Percevoir les différentes compétences nécessaires au sein d\'un groupe de travail Se préparer au métier de chef de projet. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 60.1" codeue="1" cours="12" td="12" tp="" ctd="" total="20" semestre="Semestre 5" coeff="2" ects="2">
+<titre>Projet personnel et professionnel</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>Production d\'un rapport</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>Production d\'un rapport</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Catherine JULIÉ-BONNET</nomPremierResp>
+
+<emailPremierResp>Catherine.JULIE-BONNE@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Préparation à la recherche de stage en entreprise. Techniques de communication dans le cadre professionnel, comportement et respect des règles de l\'entreprise et de la convention de stage.
+Rédaction du rapport de stage et préparation d\'un exposé oral.
+Présentation des différents types d\'emplois / métiers accessibles à l\'issue de la formation et des parcours de formation adéquats.
+Étude d\'un projet professionnel personnel. 
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Se préparer au stage en entreprise, sur les plans législatif, comportemental et en terme de techniques de communication professionnelle. 
+	- Connaître les différents types d\'emplois accessibles aux diplômés, les parcours de formation possibles, et commencer à cibler son propre projet professionnel et personnel.
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 61" codeue="1" cours="" td="" tp="12" ctd="" total="12" semestre="Semestre 6" coeff="0" ects="0">
+<titre>Renforcement POO Java</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Frédéric MOAL</nomPremierResp>
+
+<emailPremierResp>Frederic.MOAL@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité qui s\'intègre dans le PRL (Plan Réussite en Licence).\\Obligatoire pour certains étudiants.</descriptionCourte>
+
+<descriptionLongue>
+Programmation orientée objet. Gestion de la mémoire. 
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	  - Assainir les lacunes encore présentes en programmation.
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 62" codeue="1" cours="12" td="20" tp="8" ctd="" total="40" semestre="Semestre 6" coeff="4" ects="4">
+<titre>Génie Logiciel</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Laure KAHLEM</nomPremierResp>
+
+<emailPremierResp>Laure.KAHLEM@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Généralités, cycle de vie d\'un logiciel, méthodes d\'analyse et de conception, méthodes objet, langage UML, méthodes de tests. 
+</descriptionLongue>
+
+<textePrerequis>
+notions de modélisation et de système d\'information
+</textePrerequis>
+
+<objectifs>
+	- Acquérir une connaissance des outils et des techniques de spécification tels que les réseaux de Petri. 
+	- Maîtriser un langage dédié au génie logiciel, UML. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 63" codeue="1" cours="12" td="20" tp="8" ctd="" total="40" semestre="Semestre 6" coeff="4" ects="4">
+<titre>Bases de données</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Raymond RAKOTOZAFY</nomPremierResp>
+
+<emailPremierResp>Raymond.RAKOTOZAFY@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Algèbre relationnelle. SQL : Langage d\'Interrogation des Données. Dépendances fonctionnelles et Formes normales. SQL : Langage de Définition des Données. Mise en \oe uvre des contraintes d\'intégrité avec Oracle 
+</descriptionLongue>
+
+<textePrerequis>
+UE : Bases des données (L2).
+</textePrerequis>
+
+<objectifs>
+	- Créer des bases de données relationnelles d\'une bonne forme normale. 
+	- Mettre en \oe uvre des contraintes d\'intégrité au sein de bases de données relationnelles. 
+	- Interroger des bases de données relationnelles. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 64" codeue="1" cours="20" td="" tp="20" ctd="" total="40" semestre="Semestre 6" coeff="4" ects="4">
+<titre>Programmation des SI</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Raymond RAKOTOZAFY</nomPremierResp>
+
+<emailPremierResp>Raymond.RAKOTOZAFY@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Contribution d\'une méthode de conception, Merise en l\'occurrence, au sein des activités de développement des systèmes d\'information. Architectures logicielles. Le cycle de vie, la démarche \,: Étude technique du futur système ; Production du logiciel et Déploiement. Le cycle d\'abstraction, raisonnements de modélisation et formalismes associés \,: Modèle logique des données (MLD)\,; Modèle physique des données (MPD) et modèle physique des traitements (MPT). Mise en \oe uvre d\'architecture logicielle en Développement Web. Mise en \oe uvre d\'activités de développement avec Oracle. 
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- notion de modélisation, bases de données (niveau L2/L3) 
+	- Transformer des spécifications formalisées en une application informatique. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 65" codeue="1" cours="24" td="" tp="" ctd="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Environnement économique de l\'entreprise</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Gilles LE FLOHIC</nomPremierResp>
+
+<emailPremierResp>Gilles.LE-FLOHIC@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Les agents économiques et leurs fonctions. Keynes et les classiques : introduction a la macroéconomie. Le modèle is-lm. Emploi et chômage. Inflation et désinflation. État et politique économique. 
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Le cours vise à donner aux étudiants une information sur les thèmes essentiels de l\'économie contemporaine (chômage, inflation, politiques économiques,...) et à leur permettre d\'appréhender les principaux modes de raisonnement nécessaires à la compréhension de l\'environnement économique. 
+	- Pour ce faire, un retour théorique est opéré sur chaque thème, à partir d\'un regard sur l\'actualité conjoncturelle. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 66" codeue="1" cours="24" td="" tp="" ctd="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Droit</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Jean-Philippe CHALLINE</nomPremierResp>
+
+<emailPremierResp>Jean-Philippe.CHALLINE@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire.</descriptionCourte>
+
+<descriptionLongue>
+Régime de protection juridique des logiciels et des produits informatiques. Droits de l\'auteur et de l\'utilisateur du logiciel. Fraude informatique. Loi informatique et Libertés. Contrats. 
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	  - Connaissance des droits et obligations de l\'utilisateur de produits informatiques, de l\'utilisateur d\'Internet et des mécanismes des contrats.
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 67" codeue="1" cours="" td="25" tp="" ctd="" total="25" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Anglais</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Marie-Françoise TASSARD</nomPremierResp>
+
+<emailPremierResp>Marie-Françoise.TASSARD@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire.</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d’expression à partir de documents authentiques longs et/ou complexes portant sur des innovations technologiques, des découvertes et avancées scientifiques.
+</descriptionLongue>
+
+<textePrerequis>
+Avoir suivi l\'unité "Anglais 5" ou un volume d\'heures de formation équivalente.
+</textePrerequis>
+
+<objectifs>
+	- Comprendre l’information exprimée dans des messages complexes sur le domaine des Sciences et Technologies et s’exprimer sur ce même domaine à l’oral avec un degré suffisant de spontanéité et de fluidité (niveau européen\,: B2). 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°19 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 68" codeue="1" cours="" td="" tp="" ctd="" total="" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Projet informatique</titre>
+
+<MethodeEval>Contrôle continue et terminal</MethodeEval>
+
+<modalitesCCSemestreUn>Rapport et soutenance de projet</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>Pas de 2nde session</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Raymond RAKOTOZAFY</nomPremierResp>
+
+<emailPremierResp>Raymond.RAKOTOZAFY@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Réalisation d\'une application mettant en \oe uvre l\'analyse réalisée lors du projet de conception des SI. 
+</descriptionLongue>
+
+<textePrerequis>
+Unité "Programmation des systèmes d\'information".
+</textePrerequis>
+
+<objectifs>
+	- Transformer des spécifications formalisées en une application informatique. 
+	- Rédiger des dossiers techniques : Dossier des Spécifications techniques, Dossier de programmation, Manuel Utilisateur.
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°20 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 69" codeue="1" cours="" td="" tp="" ctd="" total="0" semestre="Semestre 6" coeff="6" ects="6">
+<titre>Stage ou projet fin d\'études</titre>
+
+<MethodeEval>Contrôle continue et terminal</MethodeEval>
+
+<modalitesCCSemestreUn>Rapport et soutenance de stage ou de projet</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>Pas de 2nde session</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Frédéric MOAL</nomPremierResp>
+
+<emailPremierResp>Frederic.MOAL@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Stage d\'au moins trois mois consécutifs dans une entreprise ou projet de fin d\'étude, suivi par un enseignant et donnant lieu à la rédaction d\'un mémoire puis d\'une soutenance de stage en présence d\'un jury mixte d\'enseignants et de responsables de l\'entreprise. 
+</descriptionLongue>
+
+<textePrerequis>
+Compétences acquises au cours de la licence.
+</textePrerequis>
+
+<objectifs>
+	- Capacité à participer et mener à bien un projet au sein d\'une entreprise. 
+	- Connaissance 
+	du monde professionnel.  
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+</livret>

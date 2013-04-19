@@ -1,0 +1,408 @@
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Algorithmique et programmation 1','','UE 11');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Algorithmique et programmation 1','UE 11','0','0','15','45','6','6','
+  Français
+','
+	- Maîtriser les concepts élémentaires de l\'algorithmique et être capable de les traduire dans un langages de programmation orienté objets. 
+','
+Algorithmique élémentaire\,: expressions, variables, instructions, séquences, conditionnelles, boucles, tableaux, preuves, invariants, traduction dans un langage de programmation orienté objets.
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','2');
+Alexandre TESSIER
+Alexandre.TESSIER@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Atelier de l\'informaticien 1','','UE 12');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Atelier de l\'informaticien 1','UE 12','0','0','0','24','3','3','
+  Français
+','
+	- Être autonome dans la manipulation du système. 
+','
+Présenter le système sous l\'angle de l\'utilisateur. Configuration de l\'environnement de travail de l\'informaticien 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','3');
+Pierre RETY
+Pierre.RETY@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Introduction au raisonnement mathématiques','','UE 13');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Introduction au raisonnement mathématiques','UE 13','0','0','0','60','6','6','
+  Français
+','
+	- Savoir mettre en \oe uvre un raisonnement mathématique de base. 
+','
+Logique naïve et manipulations ensemblistes. Injections, surjections. Structure d\'ordre, cas des réels, majorant, minorant, notion de borne supérieure. Approximations des réels : Q et D. Suites monotones et suites adjacentes. Structure vectorielle de R2 et R3. Sous-espaces vectoriels. Applications linéaires et matrices. Systèmes linéaires. Produit scalaire, produit vectoriel, produit mixte. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','4');
+François JAMES
+Francois.JAMES@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Suites et fonctions réelles','','UE 14');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Suites et fonctions réelles','UE 14','0','0','0','60','6','6','
+  Français
+','
+	- Savoir mettre en \oe uvre un raisonnement mathématique de base. 
+','
+Nombres complexes. Suites et fonctions. Fonctions usuelles. Continuité. Dérivabilité. Convexité. Étude de fonctions. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','1');
+Jean-Philippe ANKER
+Jean-Philippe.ANKER@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Arithmétique','','UE 15');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Arithmétique','UE 15','0','0','0','24','3','3','
+  Français
+','
+	- Grâce aux exemples d\'arithmétiques élémentaires, découvrir l\'importance de quelques structures algébriques. 
+','
+Divisibilité, théorèmes de Bézout et Gauss, décomposition en facteurs premiers. Exemples de structures : anneaux, corps. Congruences, structure de Z/nZ. Aperçu de ces notions dans le cadre de l\'anneau des fonctions polynômes.
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','1');
+Patrick MAHEUX
+Patrick.MAHEUX@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Anglais 1','','UE 16');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Anglais 1','UE 16','0','25','0','0','3','3','
+  Français
+','
+	- Etre à même de préparer un projet de séjour d’études universitaires en pays anglophone dans une langue écrite et orale simple et suffisamment claire. 
+','
+Travail de compréhension et d’expression orale et écrite à partir de documents authentiques simples et/ou courts centrés sur le monde
+universitaire anglo-saxon.
+','Contrôle continue et terminal','Contrôle continu','Contrôle terminal','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Niveau anglais baccalauréat LV1 ou LV2 ou équivalent.
+','1');
+Murielle PASQUET
+Murielle.PASQUET@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Préparation au C2I','','UE 17');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Préparation au C2I','UE 17','0','24','0','0','3','3','
+  Français
+','
+	- Développer les compétences de base nécessaires à l\'usage des Technologies de l\'Information et de la Communication. 
+','
+S\'approprier son environnement de travail. Sécuriser son espace de travail local et distant. Pérenniser ses données.
+Intégrer les règlementations concernant l\'utilisation des ressources numériques et les règles de bon usage du numérique. Maîtriser son identité numérique.
+Maîtriser les fonctionnalités nécessaires à l\'élaboration et la structuration de documents complexes. Traiter des données chiffrées à l\'aide d\'un tableur.
+Organiser la recherche d\'informations numériques.
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','1');
+Laure KAHLEM
+Laure.KAHLEM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Algorithmique et programmation 2','','UE 21');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Algorithmique et programmation 2','UE 21','0','0','0','60','6','6','
+  Français
+','
+	- Assimiler la programmation récursive d\'une part et d\'autre part, la définition et l\'utilisation de structures de données récursives. 
+','
+Algorithmique élémentaire\,: récursivité, objets, structures de données chaînées (listes, files, piles), notions élémentaires (allocation dynamique, chaînage des données), traduction dans un langage de programmation orienté objets.
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+UE Algorithmique et programmation 1
+','1');
+Wadoud BOUSDIRA
+Wadoud.BOUSDIRA@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Outils mathématiques pour l\'informatique','','UE 22');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Outils mathématiques pour l\'informatique','UE 22','0','0','0','50','6','6','
+  Français
+','
+	- Comprendre et savoir écrire des démonstrations de mathématiques sur les ensembles et les relations binaires.
+	- Comprendre les relations d\'équivalences et les relations d\'ordre partiel.
+	- Être initié aux récurrences non-élémentaires, afin de pouvoir travailler sur l\'induction en 2ème année
+	- Être initié aux circuits booléens.
+','
+Logique des propositions et des prédicats. Étude des procédés de base des démonstrations mathématiques, sur des notions ensemblistes. Relations binaires, fermeture transitive, relations d\'équivalences, relations d\'ordre partiel. Récurrence forte sur la longueur des mots d\'un langage. Algèbre de Boole. Circuits. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Les notions ensemblistes
+','1');
+Pierre RETY
+Pierre.RETY@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Modélisation','','UE 23');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Modélisation','UE 23','0','0','0','24','3','3','
+  Français
+','
+	- Première approche des principes de modélisation des problèmes informatique. 
+','
+Présentation simplifiée de techniques de modélisation et de leur mise en \oe uvre. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','1');
+Frédéric LOULERGUE
+Frédéric.LOULERGUE@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Projet informatique 1','','UE 24');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Projet informatique 1','UE 24','0','0','24','0','3','3','
+  Français
+','
+	- Renforcer ses compétences et sa compréhension des principes d\'algorithmique et de programmation. 
+','
+Mise en \oe uvre des concepts vus dans les module d\'algorithmique 1 et 2. 
+','Contrôle continue et terminal','Rapport et soutenance de projet','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+UE Algorithmique et programmation 1
+','1');
+Wadoud BOUSDIRA
+Wadoud.BOUSDIRA@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Mathématiques','','UE 25');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Mathématiques','UE 25','0','0','0','60','6','6','
+  Français
+','
+	- Utiliser l\'algèbre linéaire générale, étude locale des fonctions 
+','
+Algèbre linéaire en dimension finie : Espaces et sous espaces vectoriels, bases, dimension, applications linéaires et matrices, théorème du rang. Systèmes linéaires. Diagonalisation. Fonctions réciproques et fonctions classiques. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+mathématiques de premier semestre ou équivalent
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Anglais 2','','UE 26');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Anglais 2','UE 26','0','25','0','0','3','3','
+  Français
+','
+	- Comprendre et s’exprimer de manière plus autonome dans des situations de séjour d’études universitaires en pays anglophone (niveau européen\,: B1).
+','
+Travail de compréhension et d’expression orale et écrite à partir de documents authentiques simples et/ou courts centrés sur le monde universitaire anglo-saxon.
+','Contrôle continue et terminal','CC','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Avoir suivi l\'unité "Anglais 1" ou un volume d\'heures de formation équivalente.
+','1');
+Murielle PASQUET
+Murielle.PASQUET@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Unité Libre','','UE 27');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Unité Libre','UE 27','0','22','0','0','3','3','
+  Français
+','
+	- Comprendre comment ce qu\'on apprend dans le cadre d\'un diplôme déjà très spécialisé s\'insère dans le large champ des connaissances
+	 et des savoirs auxquels on sera confronté dans son expérience professionnelle ou personnelle.
+','
+L\'unité Libre est à choisir, en début du semestre, parmi la centaine d\'enseignements dédiés à cet usage et offerts par toutes
+les composantes de l\'université (Sciences, Droit-Economie-Gestion, Sport).\\
+Voici quelques exemples d\'unités Libres\,:
+	  - Sport.
+	  - Droit de l\'informatique.
+	  - Problèmes économiques contemporains.
+	  - Histoire du cinéma, histoire des arts.
+	  - Enseigner : posture et identité professionnelles.
+	  - Lecture critique du réchauffement climatique.
+	  - Maîtriser son expression ; les enjeux de la communication orale : le corps, l\'espace, la voix.
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','La page du site de l\'université dédiée aux unités Libres: http://www.univ-orleans.fr/scolarite/inscriptions/?page=2','Biblio','0','
+
+','1');
+Scolarité des Sciences
+
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Projet personnel et professionnel','','UE 28');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Projet personnel et professionnel','UE 28','0','0','0','12','3','3','
+  Français
+','
+	- Choisir ses options en licence, envisager une poursuite d\'études en cours de licence et après la licence, et construire son projet professionnel. 
+	- Se confronter avec le milieu professionnel au travers d\'entretiens. 
+','
+Explorer un métier, une fonction, un secteur d\'activité.
+','','Rapport et soutenance','Pas de 2nde session','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','1');
+Wadoud BOUSDIRA
+Wadoud.BOUSDIRA@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Algorithmique et programmation 3 (programmation orientée objet)','','UE 31');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Algorithmique et programmation 3 (programmation orientée objet)','UE 31','6','36','0','0','6','6','
+  Français
+','
+	- Maîtrise des bases de la conception et de la programmation objet. 
+','
+Présentation de l\'approche objet (valeurs + message), bases de conception/analyse objet. Notions de classes, méthodes, attributs, encapsulation, héritage (simple), interface, classe internes, exceptions... Mise en \oe uvre des interfaces graphiques et de la programmation événementielle.
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Programmation impérative, algorithmes et structures de données (algorithmique et programmation 1 et 2).
+','1');
+Frédéric MOAL
+Frédéric.MOAL@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Bases de données et Internet','','UE 32');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Bases de données et Internet','UE 32','5','0','24','0','5','5','
+  Français
+','
+	- Être à même de concevoir et réaliser une application web dynamique utilisant une base de données relationnelles. 
+','
+Architecture LAMP (Linux, Apache, MySQL, PHP). Modélisation d\'une base de donnée\,: modélisation conceptuelle (entité-association) \,; modélisation logique (relationnelle). Manipulation de données avec SQL. Structuration de pages web statiques et dynamiques. Réalisation d\'une application web dynamique (type PHP / MySQL). 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Maîtrise des bases de l\'algorithmique et de la programmation (pour la réalisation de 
+l\'application web).
+','1');
+Khalil DJELLOUL
+Khalil.DJELLOUL@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Atelier de l\'informaticien 2','','UE 33');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Atelier de l\'informaticien 2','UE 33','4','0','24','0','4','4','
+  Français
+','
+	- Automatiser la gestion du développement. 
+','
+Présenter les outils nécessaires pour une utilisation approfondie du système dans le but d\'automatiser le processus de développement (shell, makefile, gestion de versions, etc).
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Modules Algorithmique et programmation, Environnement Informatique.
+','1');
+AbdelAli ED-DBALI
+AbdelAli.ED-DBALI@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Architecture des ordinateurs','','UE 34');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Architecture des ordinateurs','UE 34','4','12','6','0','4','4','
+  Français
+','
+	- Compréhension des principes de base du fonctionnement d\'un ordinateur. 
+','
+Étude du fonctionnement bas niveau d\'un ordinateur (couche matérielle). La représentation de l\'information (représentation binaire, standard IEEE 754). Les circuits séquentiels. La hiérarchie mémoire (mémoire RAM, adressage et réalisation à partir des bascules, cas particulier de la mémoire cache). L\'Unité centrale de traitement et son chemin de données. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+L\'algèbre de Boole et les circuits logiques.
+','1');
+Sophie ROBERT
+Sophie.ROBERT @univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Applications de l\'algèbre','','UE 35');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Applications de l\'algèbre','UE 35','0','0','0','48','5','5','
+  Français
+','
+	- Maîtrise des éléments d\'algèbre étudiés. 
+','
+	- Espaces vectoriels; bases; espaces supplémentaires; équations cartésiennes; applications linéaires; matrices d\'applications linéaires ( réelles et complexes); trace et déterminant d\'endomorphismes; calcul d\'inverses ( méthode du pivot de Gauss - méthode des cofacteurs); polynômes caractéristiques; valeurs propres ; vecteurs propres; diagonalisation; Théorème de Hamilton-Cayley; sous-espaces caractéristiques; lemme des noyaux.
+	- Application : interpolation; résolution de systèmes linéaires, étude de suites récurrentes, résolution de systèmes différentiels, résolution d\'équations différentielles linéaires d\'ordre supérieur, exponentielle de matrices, trigonalisation. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+niveau bac nécessaire, modules de première année souhaitables.
+','1');
+Philippe GRILLOT
+Philippe.GRILLOT@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Anglais 3','','UE 36');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Anglais 3','UE 36','0','25','0','0','3','3','
+  Français
+','
+	- Découvrir les bases de l’anglais scientifique et les utiliser à l’écrit et à l’oral. 
+','
+Travail de compréhension et d’expression à partir de documents authentiques simples et/ou courts portant sur des innovations technologiques, des découvertes et avancées scientifiques.
+','Contrôle continue et terminal','CC','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Avoir suivi les unités Anglais 1 et 2 ou un volume d\'heures de formation équivalente
+','1');
+Michèle CIMOLINO
+Michele.CIMOLINO@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Unité Libre','','UE 37');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Unité Libre','UE 37','0','24','0','0','3','3','
+  Français
+','
+	- Comprendre comment ce qu\'on apprend dans le cadre d\'un diplôme déjà très spécialisé s\'insère dans le large champ des connaissances
+	 et des savoirs auxquels on sera confronté dans son expérience professionnelle ou personnelle.
+','
+L\'unité Libre est à choisir, en début du semestre, parmi la centaine d\'enseignements dédiés à cet usage et offerts par toutes
+les composantes de l\'université (Sciences, Droit-Economie-Gestion, Sport).\\
+Voici quelques exemples d\'unités Libres\,:
+	  - Sport.
+	  - Droit de l\'informatique.
+	  - Problèmes économiques contemporains.
+	  - Histoire du cinéma, histoire des arts.
+	  - Enseigner : posture et identité professionnelles.
+	  - Lecture critique du réchauffement climatique.
+	  - Maîtriser son expression ; les enjeux de la communication orale : le corps, l\'espace, la voix.
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','La page du site de l\'université dédiée aux unités Libres: http://www.univ-orleans.fr/scolarite/inscriptions/?page=2','Biblio','0','
+
+','1');
+Scolarité des Sciences
+
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Programmation fonctionnelle','','UE 41');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Programmation fonctionnelle','UE 41','6','36','0','0','6','6','
+  Français
+','
+	- Prise en main d\'un des langages de programmation fonctionnelle et des notions de programmation associée.
+	- Développement d\'une application autonome complète.
+','
+Présentation générale du langage fonctionnel utilisé. Expressions, valeurs et types de base Définitions locales, liaisons et environnements.
+Expressions et valeurs fonctionnelles à une variable. Définitions globales, entrées-sorties, compilation en ligne de commande.
+Fonctions d\'ordre supérieur. Filtrage, tuples. Polymorphisme et inférence de type. Fonctions récursives. Listes. Types composés\,:
+type enregistrement, type somme (polymorphes & récursifs). Structures de données et algorithmes\,: tris, arbres binaires, arbres
+binaires de recherche, arbres équilibrés.
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressource','Bibli','0','
+Mathématiques élémentaires dont preuve par récurrence. Utilisation élémentaire d\'un environnement Unix.
+','1');
+Frédéric DABROWSKI
+Frederic.DABROWSKI@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Algorithmique et combinatoire des structures discrètes','','UE 42');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Algorithmique et combinatoire des structures discrètes','UE 42','6','36','0','0','6','6','
+  Français
+','
+	- Modélisation et résolution de problèmes à l\'aide de structures discrètes. 
+','
+Dénombrement. Relation d\'ordre partiel : calcul de la fermeture transitive, tri topologique. Graphes : parcours, plus court chemin, arbres recouvrants de poids minimum, flot. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+algorithmique et programmation élémentaires
+','1');
+Mathieu LIEDLOFF
+Mathieu.LIEDLOFF@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Probabilités','','UE 43');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Probabilités','UE 43','0','0','0','48','5','5','
+  Français
+','
+	- (savoirs et compétences acquis)\,: 
+	- maîtriser les bases du calcul des probabilités 
+','
+Espace de probabilités et modélisation de phénomènes aléatoires. Probabilités conditionnelles; indépendance; probabilités composées; formule de Bayes. Variables aléatoires discrètes et continues; fonction de répartition et loi de probabilité. Moment:espérance, variance, écart-type. Couple de variables aléatoires, loi jointe, lois marginales. Indépendance. Loi des grands nombres , théorème de la limite centrée, tables. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+mathématiques niveau bac
+','1');
+Jean-Baptiste GOUÉRÉ
+Jean-Baptiste.GOUERE@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Projet informatique 2 (Conception et projet)','','UE 44');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Projet informatique 2 (Conception et projet)','UE 44','5','0','24','0','5','5','
+  Français
+','
+	- Avoir acquis une première expérience du travail de groupe et de l\'organisation d\'un projet. 
+','
+Éléments de gestion de projet et de modélisation. Réalisation d\'un projet suivi par petits groupes. 
+','Réalisation d\'une application.','Rapport et soutenance de projet','Pas de 2nde session','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Cours d\'algorithmique et de programmation des semestres précédents.
+','1');
+Jean Michel COUVREUR
+Jean-Michel.COUVREUR@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Anglais 4','','UE 45');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Anglais 4','UE 45','0','24','0','0','3','3','
+  Français
+','
+	- Analyser dans une langue simple et cohérente les rapports entre science et société à l’écrit et à l’oral (niveau européen\,: B1+).
+','
+Travail de compréhension et d’expression à partir de documents authentiques simples et/ou courts portant sur des innovations technologiques, des découvertes et avancées scientifiques. 
+','Contrôle continue et terminal','CC','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Avoir suivi l\'unité "Anglais 3" ou un volume d\'heures de formation équivalente.
+','1');
+Michèle CIMOLINO
+Michele.CIMOLINO@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Bases du système comptable','','UE 46.A');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Bases du système comptable','UE 46.A','0','0','0','30','5','5','
+  Français
+','
+	- Compréhension des bases du système comptable. 
+','
+Le plan comptable général, La notion de flux : Le compte \,; Principe de la partie double. Les documents comptables \,:
+Le journal \,; Le compte de résultat \,; Le bilan.
+La facturation. Le règlement des créances et des dettes \,: Banque, caisse ou CCP \,; Les effets de commerce. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','1');
+Gilles LE FLOHIC
+Gilles.LE-FLOHIC@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Programmation impérative','','UE 46.B');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence1et2'),'Programmation impérative','UE 46.B','5','20','0','0','5','5','
+  Français
+','
+	- Connaître en profondeur un langage impératif. 
+	- Maîtriser les questions de gestion de mémoire.
+	- Programmer des concepts avancés de programmation à partir d\'un langage impératif. 
+','
+Apprentissage d\'un langage impératif avec gestion explicite de la mémoire. Gestion de la mémoire\,: allocation dynamique, pointeurs génériques et typage, données multidimentionnelles, gestion automatique. Modularisation des programmes\,: des principes de modularité à l\'objets génériques vers le polymorphisme. Mécanismes de contrôle avancés\,: sauts non locaux, exceptions, application à la gestion des erreurs d\'exécution. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Initiation la programmation, programmation objets
+','1');
+Matthieu EXBRAYAT
+Matthieu.EXBRAYAT@univ-orleans.fr

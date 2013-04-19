@@ -1,0 +1,58 @@
+
+<module codeApogee="UE 52" cours="20" td="30" tp="" ctd="" total="50" coeffs="4" ects="4" semestre="5"> 
+<titre>Programmation avancée et structures dynamiques</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSessionUn>CC et CT</modalitesCCSessionUn>
+
+<modalitesCCSessionDeux>CT</modalitesCCSessionDeux>
+
+<calculNFSessionUne>$\frac{(CC+2*CT)}{3}$</calculNFSessionUne>
+
+<calculNFSessionDeux>CT</calculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Jean-Jacques LACRAMPE</nomPremierResp>
+
+<emailPremierResp>Jean-Jacques.LACRAMPE@univ-orleans.fr</emailPremierResp> 
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>UE 50</prerequis>
+  <prerequis>UE xx</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire.</descriptionCourte>
+
+<descriptionLongue>
+Introduction au langage ADA. Types non contraints et pointeurs.
+Unités de compilation, modularité, généricité.
+Tâches, rendez-vous, type protégés, répartition.
+Types étiquetés, programmation orientée objet, programmation par classe, héritage, héritage multiple. Interfaçage : autres langages, interface graphique, serveur web,... 
+</descriptionLongue>
+
+<textePreriquis>Maîtrise de l'algorithmique de base (y compris les techniques d'assertion et d'invariant) et des structures statiques. Connaissance des principes de gestion mémoire, de la notion d'état, de l'affectation. Expérience des entrées sorties (non-)bufferisées.
+</textePreriquis>
+
+<objectifs>
+- Acquérir et combiner plusieurs méthodes de programmation au sein d'un même langage. Intégrer la notion d'abstraction des données et des traitements. 
+- Comprendre l'intérêt du typage fort et de l'induction de types. Arbitrer entre des solutions statiques et dynamiques. 
+</objectifs>
+
+<ressources>
+Ressources
+</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+

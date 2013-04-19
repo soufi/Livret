@@ -1,0 +1,10 @@
+Licence Informatique : L1 / Semestre 2
+# SEMESTRE 2
+UE 21 obligatoire|Algorithmique et programmation 2|6|6|60||30|||Semestre 2
+UE 22 obligatoire|Outils mathématiques pour l'informatique|4|4|48||30|||Semestre 2
+UE 23 obligatoire|Modélisation|3|3|24||30|||Semestre 2
+UE 24 obligatoire|Projet informatique 1|3|3|||||24|Semestre 2
+UE 25 obligatoire|Mathématiques|5|5|60||30|||Semestre 2
+UE 26 obligatoire|Anglais 2|3|3|24||30|||Semestre 2
+UE 27 obligatoire|Unité d'ouverture|3|3||24||||Semestre 2
+UE 28 obligatoire|Projet personnel et professionnel|3|3|12|||||Semestre 2

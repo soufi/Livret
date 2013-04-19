@@ -1,0 +1,68 @@
+cat << EOF
+\documentclass[10pt, a5paper]{report}
+
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}% encodage utf8
+\usepackage[francais]{babel}% texte français
+\usepackage{modules-livret}% style du livret
+
+% % % Personnalisation des couleurs % % %
+\definecolor{couleurFonce}{RGB}{0,92,133} % Couleur du Code APOGEE
+\definecolor{couleurClaire}{RGB}{100,151,186} % Couleur du fond de la bande
+\definecolor{couleurTexte}{RGB}{255,255,255} % Couleur du texte de la bande
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\begin{document}
+
+EOF
+
+awk -F '|' '! /^#/ {
+print "\\module[codeApogee={" $1 "}, \
+titre={" $2 "}, \
+COURS={" $5 "}, \
+TD={" $7 "}, \
+TP={" $8 "}, \
+CTD={" $6 "}, \
+TOTAL={" $5+$6+$7+$8 "}, \
+SEMESTRE={" $10 "}, \
+COEFF={" $3 "}, \
+ECTS={" $4 "}, \
+MethodeEval={Contrôle continue et terminal}, \
+ModalitesCCSemestreUn={CC et CT}, \
+ModalitesCCSemestreDeux={CT}, \
+%CalculNFSessionUne={\$\\frac{(CC+2*CT)}{3}\$}, \
+%CalculNFSessionDeux={CT}, \
+NoteEliminatoire={7}, \
+nomPremierResp={Prénom NOM}, \
+emailPremierResp={Prenom.NOM@univ-orleans.fr}, \
+nomSecondResp={}, \
+emailSecondResp={}, \
+langue={Français}, \
+nbPrerequis={0}, \
+descriptionCourte={true}, \
+descriptionLongue={true}, \
+objectifs={true}, \
+ressources={true}, \
+bibliographie={false}] \
+{\
+petite-DESCRIPTION \
+} \
+{\
+LONGUE-DESCRIPTION \
+} \
+{} \
+{\\begin{itemize} \
+  \\ObjItem Objectif \
+  \\ObjItem Objectif \
+\\end{itemize} \
+} \
+{Ressources} \
+{Biblio} \
+ \
+\\vfill\
+\
+%==========================================================================================" }' $1
+
+cat << EOF
+\end{document}
+EOF

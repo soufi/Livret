@@ -1,0 +1,26 @@
+Projets Eclipse (dans l'archive Gestion_Livret.tar.gz):
+Le projet Transformation_XML_Ecriture_Base est la partie du travail qui prend les fichiers .tex (de type Detail_Infos_*.tex) et transforme ceux-ci en XML à l'aide d'expressions régulières. Cet XML est par la suite transformé en SQL (dans les fichiers Detil_Infos_*.txt) à l'aide du fichier Gestion_Livret.xsl . Ces requêtes sont ensuite exécutées sur la base pour la remplir avec les donées contenues dans les fichiers Details. Certaines d'entre elles sont fabriquées dans le code Java lorsqu'elles nécessitaient des vérifications (notamment vérifier qu'un enseignant existe déjà dans la base ou non).
+
+Le projet Genere_page s'occupe de la génération des pages web exploitant jQuery et Isotope. Celui-ci va prendre des données dans la base afin d'écrire un fichier HTML qui pourra être lancé dans un navigateur, à condition de le mettre dans le dossier contenant le css et la librairie jquery et isotope (appelé jQuery).
+
+Outil de gestion de la base (dossier gestion_livret):
+Toutes les pages sont regroupées dans le dossier gestion_livret. Le nom de chaqe page est assez explicite quant à sa fonction.
+Le dossier Poubelle contient des pages que j'ai créer qui sont inutiles mais qui pourrait servir un jour.
+
+Dossier Livret : contient tout les fichiers nécessaires pour créer un livret et notamment les fichiers de Detail qui seront utiliser par Transformation_XML_Ecriture_Base.
+
+Dossier jQuery : contient tout ce qu'il faut pour faire fonctionner la page web créée par le projet Genere_page, il suffit de copier le fichier créé dans ce dossier.
+
+Fichier livret.sql : contient la copie de la base livret.
+
+En cas de besoin (j'ignore si cela sera utile mais je le précise) :
+Pour accés à la machine virtuelle (192.168.46.125):
+				   -nom d'utilisateur : root 
+				   -mot de passe : Stag05!
+
+Pour accés à la base sur la machine virtuelle : 
+						-nom d'utilisateur : root  
+						-mot de passe : mysqlroot!
+						ou
+						-nom d'utilisateur : gss_user 
+						-mot de passe : Stag05!

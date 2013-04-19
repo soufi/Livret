@@ -1,0 +1,18 @@
+% % % Personnalisation des couleurs % % %
+\definecolor{couleurFonce}{RGB}{0,92,133}
+\definecolor{couleurClaire}{RGB}{100,151,186}
+\definecolor{couleurTexte}{RGB}{255,255,255}
+\module[codeApogee={S\-M\-O\-1\-I\-N\-1\-4},
+titre={Graphes et algorithmes},
+COURS={16},
+TD={24},
+NBHgroupe={},
+TP={},
+CTD={},
+CTP={},
+TPE={},
+TOTAL={40},
+SEMESTRE={Periode 0},
+COEFF={4},
+ECTS={4},
+MethodeEval={Examen terminal et contr√

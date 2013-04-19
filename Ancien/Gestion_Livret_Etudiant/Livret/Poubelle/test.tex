@@ -1,0 +1,170 @@
+\documentclass[10pt, a5paper]{report}
+
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}% encodage utf8
+\usepackage[francais]{babel}% texte français
+\usepackage{modules-livret}% style du livret
+\usepackage{hyperref}
+\usepackage{colortbl}
+
+\usepackage{multicol}
+%\setlength{\columnseprule}{0.5pt}
+\setlength{\columnsep}{20pt}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\begin{document}
+
+%---------------------- % % % Personnalisation des couleurs % % % ----------- BLEU --------
+\definecolor{couleurFonce}{RGB}{0,92,133} % Couleur du Code APOGEE
+\definecolor{couleurClaire}{RGB}{100,151,186} % Couleur du fond de la bande
+\definecolor{couleurTexte}{RGB}{255,255,255} % Couleur du texte de la bande
+%------------------------------------------------------------------------------------------
+
+\begin{enumerate}
+\item Protocoles et sécurité:\\
+Les attaques réseau. Les méthodes de protection (inetd, tcpwrappers, arp).
+Protection des accès distants (PKI, SSO). Switch. VLAN. Routeurs.
+Pare-feux, pare-feux applicatifs, proxy.
+IPSec, VPN.
+SSL, TLS, SSH.
+NIDS.
+\item Mobilité dans les réseaux sans fil de type 802.xx:\\
+Réseaux mobiles et protocoles IP (IPV6, HMIP, LERS, SIP).
+Réseaux mobiles adhoc (par exemple MANET).
+Réseaux mobiles de type NEMO (Network Mobility).
+\item Mobilité dans les réseaux téléphoniques:\\
+Générations de mobiles (GSM, GPRS, 3G, 3G+, UMTS).
+\item Sécurité des réseaux sans fils:\\
+Sécurité des réseaux GSM (authentification et chiffrement, sécurité des cartes SIM, interception d'appel, sécurité des services de DATA (SMS, MMS)).
+Intégrité, confidentialité et disponibilité des données sur les réseaux sans fil (filtrage des adresses MAC, WEP/WPA/WPA2, AAA : Radius, Portail Captif, VPN). 
+\end{enumerate}
+
+
+   blabla sur une colonne, c'est plus sérieux. C'est le
+   style qui est généralement utilisé pour écrire des
+   articles.
+   blabla sur une colonne, c'est plus sérieux. C'est le
+   style qui est généralement utilisé pour écrire des
+   articles.
+   blabla sur \href{http://www.free.fr}{http://www.free.fr}, c'est plus sérieux. C'est le
+   style qui est généralement utilisé pour écrire des
+   articles.
+   blabla sur une colonne, c'est plus sérieux. C'est le
+   style qui est généralement utilisé pour écrire des
+   articles.
+
+\begin{multicols}{3}[Titre sur une seule colonne blabla blabla blabla blabla blabla .]
+   3~colonnes équilibrées, 3~colonnes équilibrées, 3~colonnes
+   équilibrées, 3~colonnes équilibrées, 3~colonnes équilibrées,
+   3~colonnes équilibrées, 3~colonnes équilibrées, 3~colonnes équilibrées
+\end{multicols}
+
+\begin{multicols}{2}[\section{Titre numéroté blabla blabla blabla blabla .}]
+   blabla sur deux colonnes, c'est plus sérieux. C'est le
+   style qui est généralement utilisé pour écrire des
+   articles.
+   blabla sur deux colonnes, c'est plus sérieux. C'est le
+   style qui est généralement utilisé pour écrire des
+   articles.
+   blabla sur deux colonnes, c'est plus sérieux. C'est le
+   style qui est généralement utilisé pour écrire des
+   articles.
+   blabla sur deux colonnes, c'est plus sérieux. C'est le
+   style qui est généralement utilisé pour écrire des
+   articles.
+\end{multicols}
+
+   blabla sur une colonne, c'est plus sérieux. C'est le
+   style qui est généralement utilisé pour écrire des
+   articles.
+   blabla sur une colonne, c'est plus sérieux. C'est le
+   style qui est généralement utilisé pour écrire des
+   articles.
+   blabla sur une colonne, c'est plus sérieux. C'est le
+   style qui est généralement utilisé pour écrire des
+   articles.
+   blabla sur une colonne, c'est plus sérieux. C'est le
+   style qui est généralement utilisé pour écrire des
+   articles.
+
+
+\arrayrulecolor{couleurFonce}% Couleur des lignes s√©paratrices du tableau
+\renewcommand{\arraystretch}{1.2}% Coeff appliqu√© √† la hauteur des cellules
+\begin{tabular}{c|p{6cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|}
+\cline{2-6}
+
+&
+\cellcolor{couleurFonce} \color{white}\bfseries Intitul\'e & \cellcolor{couleurFonce} \color{white}\bfseries ECTS & \cellcolor{couleurFonce} \color{white}\bfseries CM & \cellcolor{couleurFonce} \color{white}\bfseries TD & \cellcolor{couleurFonce} \color{white}\bfseries TP\\ \cline{2-6}
+
+\hline \multirow{7}{*}{\rotatebox{90}{\color{couleurFonce}\bfseries  SEMESTRE 1}}
+ & \cellcolor{couleurClaire} \color{couleurTexte} Algorithmique et programmation 1 & \cellcolor{couleurClaire} 6 & \cellcolor{couleurClaire} 45 & \cellcolor{couleurClaire}  &  \cellcolor{couleurClaire} 15 \\ \cline{2-6}
+ & Environnement informatique 1 & 3 & 24 &  &  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} Introduction au raisonnement mathématiques & \cellcolor{couleurClaire} 6 & \cellcolor{couleurClaire} 60 & \cellcolor{couleurClaire}  &  \cellcolor{couleurClaire}  \\ \cline{2-6}
+ & Suites et fonctions réelles & 6 & 60 &  &  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} Arithmétique & \cellcolor{couleurClaire} 3 & \cellcolor{couleurClaire} 24 & \cellcolor{couleurClaire}  &  \cellcolor{couleurClaire}  \\ \cline{2-6}
+ & Anglais 1 & 3 & 25 &  &  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} Unité d'ouverture & \cellcolor{couleurClaire} 3 & \cellcolor{couleurClaire}  & \cellcolor{couleurClaire} 22 &  \cellcolor{couleurClaire}  \\ \cline{2-6}
+\hline \multirow{7}{*}{\rotatebox{90}{\color{couleurFonce}\bfseries  SEMESTRE 2}}
+ & Algorithmique et programmation 2 & 6 & 60 &  &  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} Outils mathématiques pour l'informatique & \cellcolor{couleurClaire} 6 & \cellcolor{couleurClaire} 50 & \cellcolor{couleurClaire}  &  \cellcolor{couleurClaire}  \\ \cline{2-6}
+ & Modélisation & 3 & 24 &  &  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} Projet informatique & \cellcolor{couleurClaire} 3 & \cellcolor{couleurClaire}  & \cellcolor{couleurClaire}  &  \cellcolor{couleurClaire} 24 \\ \cline{2-6}
+ & Mathématiques & 6 & 60 &  &  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} Anglais 2 & \cellcolor{couleurClaire} 3 & \cellcolor{couleurClaire} 25 & \cellcolor{couleurClaire}  &  \cellcolor{couleurClaire}  \\ \cline{2-6}
+ & Préparation au C2I & 3 &  & 22 &  \\ \cline{2-6}
+\hline
+\end{tabular}
+
+\vspace{0.5cm}
+
+
+
+
+\section{Licence 3 Informatique : Parcours MIAGE}
+
+\arrayrulecolor{couleurFonce}% Couleur des lignes s√©paratrices du tableau
+\renewcommand{\arraystretch}{1.2}% Coeff appliqu√© √† la hauteur des cellules
+%\rowcolors[\hline]{ligneDeÃÅbut}{couleurPaire}{couleurImpaire}% Alternance de couleur (need package xcolor)
+\begin{tabular}{c|m{6cm}|cm{1cm}|cm{1cm}|cm{1cm}|cm{1cm}|}
+\cline{2-6}
+
+&
+\cellcolor{couleurFonce} \color{white}\bfseries Intitul\'e & \cellcolor{couleurFonce} \color{white}\bfseries ECTS & \cellcolor{couleurFonce} \color{white}\bfseries CM & \cellcolor{couleurFonce} \color{white}\bfseries TD & \cellcolor{couleurFonce} \color{white}\bfseries TP\\ \cline{2-6}
+
+\hline \multirow{10}{*}{\rotatebox{90}{\color{couleurFonce}\bfseries  SEMESTRE 3}}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Algorithmique} \mbox{et} \mbox{programmation} \mbox{3} \mbox{(programmation} \mbox{orientée} \mbox{objet)}  & \cellcolor{couleurClaire} \color{couleurTexte} 5 & \cellcolor{couleurClaire} \color{couleurTexte} 20 & \cellcolor{couleurClaire} \color{couleurTexte} 40 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Bases} \mbox{de} \mbox{données} \mbox{et} \mbox{Internet}  & \color{black} 4 & \color{black} 10 & \color{black}  & \color{black} 40CTP \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Environnement} \mbox{informatique} \mbox{2} \mbox{(Atelier} \mbox{de} \mbox{l’informaticien)}  & \cellcolor{couleurClaire} \color{couleurTexte} 4 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte} 40CTP \\ \cline{2-6}
+ & \color{black} \mbox{Architecture} \mbox{des} \mbox{ordinateurs}  & \color{black} 4 & \color{black} 8 & \color{black} 16 & \color{black} 6 \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Application} \mbox{de} \mbox{l'algèbre}  & \cellcolor{couleurClaire} \color{couleurTexte} 5 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte} 50CTD & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Anglais} \mbox{3}  & \color{black} 3 & \color{black}  & \color{black} 25CTD & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Unité} \mbox{d'ouverture}  & \cellcolor{couleurClaire} \color{couleurTexte} 3 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte} -22 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Projet} \mbox{personnel} \mbox{et} \mbox{professionnel}  & \color{black} 2 & \color{black} 12 & \color{black}  & \color{black}  \\ \cline{2-6}
+\hline \multirow{10}{*}{\rotatebox{90}{\color{couleurFonce}\bfseries  SEMESTRE 4}}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Programmation} \mbox{fonctionnelle}  & \cellcolor{couleurClaire} \color{couleurTexte} 6 & \cellcolor{couleurClaire} \color{couleurTexte} 20 & \cellcolor{couleurClaire} \color{couleurTexte} 40 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Algorithmique} \mbox{et} \mbox{combinatoire} \mbox{des} \mbox{structures} \mbox{discrètes}  & \color{black} 6 & \color{black} 20 & \color{black} 30 & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Projet} \mbox{informatique} \mbox{2} \mbox{(Conception} \mbox{et} \mbox{projet)}  & \cellcolor{couleurClaire} \color{couleurTexte} 5 & \cellcolor{couleurClaire} \color{couleurTexte} 10 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte} 30 \\ \cline{2-6}
+ & \color{black} \mbox{Probabilités}  & \color{black} 5 & \color{black}  & \color{black} 40CTD & \color{black} 30 \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Anglais} \mbox{4}  & \cellcolor{couleurClaire} \color{couleurTexte} 3 & \cellcolor{couleurClaire} \color{couleurTexte}  & \cellcolor{couleurClaire} \color{couleurTexte} 25CTD & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+ & \color{black} \mbox{Bases} \mbox{du} \mbox{système} \mbox{comptable}  & \color{black} 5 & \color{black}  & \color{black} 30CTD & \color{black}  \\ \cline{2-6}
+ & \cellcolor{couleurClaire} \color{couleurTexte} \mbox{Programmation} \mbox{impérative}  & \cellcolor{couleurClaire} \color{couleurTexte} 5 & \cellcolor{couleurClaire} \color{couleurTexte} 10 & \cellcolor{couleurClaire} \color{couleurTexte} 20 & \cellcolor{couleurClaire} \color{couleurTexte}  \\ \cline{2-6}
+\hline
+\end{tabular}
+
+%\begin{tabularx}{15cm}{|c|p{4cm}|X|}
+%    \hline
+%    1 & The two gentlemen of Verona & The Taming of the Shrew \\
+%    \hline
+%    2 & The comedy of errors & Love's Labour's Lost \\
+%    \hline
+%    3 & The Merchant of venice & The Merry Wives of Windsor \\
+%    \hline
+%\end{tabularx}
+
+%\begin{tabular}{l >{\columncolor{lightgray}} l l}
+%    1 &   & 3 \\
+%    a &   & c \\
+%    I & \multirow{-3}{1em}{2 A II} & III
+% \end{tabular}
+ 
+\end{document}

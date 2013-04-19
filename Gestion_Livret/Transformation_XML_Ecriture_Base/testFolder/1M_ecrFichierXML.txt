@@ -1,0 +1,50 @@
+<module codeApogee="UE 11" codeue="2" cours="" td="" tp="15" ctd="45" total="60" semestre="Semestre 1" coeff="6" ects="6">
+<titre>Algorithmique et programmation 1</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire></noteEliminatoire>
+
+<nomPremierResp>Alexandre TESSIER</nomPremierResp>
+
+<emailPremierResp>Alexandre.TESSIER@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Algorithmique élémentaire\,: expressions, variables, instructions, séquences, conditionnelles, boucles, tableaux, preuves, invariants, traduction dans un langage de programmation orienté objets.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Maîtriser les concepts élémentaires de l\'algorithmique et être capable de les traduire dans un langages de programmation orienté objets. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+

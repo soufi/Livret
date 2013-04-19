@@ -1,0 +1,679 @@
+\documentclass[10pt, a5paper]{report}
+
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}% encodage utf8
+\usepackage[francais]{babel}% texte français
+\usepackage{modules-livret}% style du livret
+
+% % % Personnalisation des couleurs % % %
+\definecolor{couleurFonce}{RGB}{0,92,133} % Couleur du Code APOGEE
+\definecolor{couleurClaire}{RGB}{100,151,186} % Couleur du fond de la bande
+\definecolor{couleurTexte}{RGB}{255,255,255} % Couleur du texte de la bande
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\begin{document}
+
+\module[codeApogee={UE 30 }, 
+titre={Initiation}, 
+COURS={8}, 
+TD={}, 
+TP={8}, 
+CTD={}, 
+TOTAL={16}, 
+SEMESTRE={Semestre 3}, 
+COEFF={0}, 
+ECTS={0}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Frédéric Dabrowski}, 
+emailPremierResp={Frédéric.Dabrowski@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+petite_DESCRIPTION 
+} 
+{
+Fondements de l'informatique : codage des données, traitements, structure générale d'un ordinateur
+Utilisation des systèmes d'exploitation de type Unix.
+Outils logiciels bureautique et internet. 
+} 
+{} 
+{\begin{itemize} 
+  \ObjItem Remettre à un même niveau de base tous les étudiants et les familiariser avec le fonctionnement des ordinateurs et les outils informatiques usuels 
+  
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 31 }, 
+titre={Algorithmique}, 
+COURS={15}, 
+TD={15}, 
+TP={}, 
+CTD={}, 
+TOTAL={30}, 
+SEMESTRE={Semestre 3}, 
+COEFF={3}, 
+ECTS={3}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Prénom NOM}, 
+emailPremierResp={Prenom.NOM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={1}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+petite_DESCRIPTION 
+} 
+{
+Notions : variables, affectation, conditionnelle, itération, récursion.
+Algorithmes simples sur les tableaux.
+Algorithmes de tri. 
+} 
+{Mathématiques élémentaires} 
+{\begin{itemize} 
+  \ObjItem A l'issue de ce module l'étudiant doit pouvoir comprendre le fonctionnement d'un algorithme donné, concevoir des algorithmes pour un problème simple donné,  savoir utiliser des structures de données 
+  
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 32 }, 
+titre={Bases de données}, 
+COURS={20}, 
+TD={25}, 
+TP={25}, 
+CTD={}, 
+TOTAL={70}, 
+SEMESTRE={Semestre 3}, 
+COEFF={6}, 
+ECTS={6}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Laure Khalem}, 
+emailPremierResp={Laure.Khalem@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={1}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+petite_DESCRIPTION 
+} 
+{
+Structure fonctionnelle et Architecture d’un SGBD.
+Problématique de la modélisation logique des données.
+Modèle relationnel, Langage SQL
+Interrogation de données du modèle relationnel. 
+} 
+{Module Initiation} 
+{\begin{itemize} 
+  \ObjItem Donner aux étudiants les grandes lignes des diverses fonctionnalités d’un SGBD relationnel.   
+  \ObjItem Introduire les techniques de modélisation de données.  
+  \ObjItem Apprendre et maîtriser le langage de manipulation et d’interrogation de bases de données : SQL.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 33 }, 
+titre={Systèmes}, 
+COURS={10}, 
+TD={10}, 
+TP={15}, 
+CTD={}, 
+TOTAL={35}, 
+SEMESTRE={Semestre 3}, 
+COEFF={3}, 
+ECTS={3}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Sophie ROBERT}, 
+emailPremierResp={Sophie ROBERT@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={1}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+petite_DESCRIPTION 
+} 
+{
+Architecture de systèmes d'exploitation
+Utilisation d'Unix
+Administration Unix 
+} 
+{Module Initiation} 
+{\begin{itemize} 
+  \ObjItem Utilisation et administration de systèmes d'exploitation 
+   
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 34 }, 
+titre={Réseaux}, 
+COURS={10}, 
+TD={10}, 
+TP={15}, 
+CTD={}, 
+TOTAL={35}, 
+SEMESTRE={Semestre 3}, 
+COEFF={3}, 
+ECTS={3}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={AbdelAli ED-DBALI}, 
+emailPremierResp={AbdelAli .ED-DBALI@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+petite_DESCRIPTION 
+} 
+{
+Architecture des réseaux : structure en couches, protocoles, services
+Réseaux locaux sous UDP-TCP/IP, Ethernet
+Protocoles de routage : RIP, OSPF, BGP
+Principaux protocoles Internet : DNS (annuaire de noms de domaines) SMTP (mail), FTP (transfert de fichiers), HTTP (web) ... 
+} 
+{}Module Initiation 
+{\begin{itemize} 
+  \ObjItem Principes et pratique des réseaux locaux informatiques 
+ 
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 35 }, 
+titre={Programmation objet 1}, 
+COURS={20}, 
+TD={25}, 
+TP={25}, 
+CTD={}, 
+TOTAL={70}, 
+SEMESTRE={Semestre 3}, 
+COEFF={6}, 
+ECTS={6}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Thi Bich Hanh Dao}, 
+emailPremierResp={Thi-Bich-Hanh.Dao univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={1}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+petite_DESCRIPTION 
+} 
+{
+Introduction à la programmation, algorithmes de base
+Programmation objet: classe, objet, état, méthode, communication entre objets.
+Récurrence. 
+Tableaux, Tris.
+Interfaces.
+Héritage.
+Exceptions.
+Entrées/sorties.
+Introduction à la notation UML. 
+} 
+{Module Initiation} 
+{\begin{itemize} 
+  \ObjItem Introduction à la programmation objet dans un langage impératif. 
+  \ObjItem Mise en oeuvre d'algorithmes dans ce langage. 
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 36 }, 
+titre={Projet 1}, 
+COURS={}, 
+TD={}, 
+TP={}, 
+CTD={}, 
+TOTAL={0}, 
+SEMESTRE={Semestre 3}, 
+COEFF={3}, 
+ECTS={3}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Laure KAHLEM}, 
+emailPremierResp={Laure.KAHLEM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+petite_DESCRIPTION 
+} 
+{
+Réalisation d'une applications mettant en oeuvre les notions vues dans les modules Algorithmique, Programmation objet 1, Bases de données, Systèmes et Réseaux. 
+} 
+{Module Initiation} 
+{\begin{itemize} 
+  \ObjItem Mise en oeuvre dans un exemple d'application réaliste des concepts vus dans les modules informatique de la période considérée 
+  
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 37 }, 
+titre={Simulation de  gestion d'entreprise}, 
+COURS={}, 
+TD={24}, 
+TP={}, 
+CTD={}, 
+TOTAL={24}, 
+SEMESTRE={Semestre 3}, 
+COEFF={3}, 
+ECTS={3}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Chaker HAOUET}, 
+emailPremierResp={Chaker.HAOUET@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+petite_DESCRIPTION 
+} 
+{
+Simulation visant à amener les groupes (chacun représentant une entreprise en concurrence avec les autres), après avoir formalisé une stratégie, à prendre des décisions d’ordre commercial, de production, d’investissement et de financement. Dans ce cadre, ils mettent en ?uvre la plupart des outils financiers et prévisionnels connus. 
+} 
+{Le jeu fait appel aux connaissances des étudiants ainsi qu’à la réflexion et l’imagination.} 
+{\begin{itemize} 
+  \ObjItem Au terme de cette simulation, les étudiants doivent pouvoir gérer le temps, travailler en groupe, gérer les conflits, … 
+  \ObjItem Connaissance du monde de l'entreprise 
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 38}, 
+titre={Anglais}, 
+COURS={}, 
+TD={20}, 
+TP={}, 
+CTD={}, 
+TOTAL={20}, 
+SEMESTRE={Semestre 3}, 
+COEFF={3}, 
+ECTS={3}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Prénom NOM}, 
+emailPremierResp={Prenom.NOM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={1}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+petite_DESCRIPTION 
+} 
+{
+Etude des techniques de présentation orale : amélioration de la prononciation, organisation du discours, guidage de l’auditoire, élaboration d’aides visuelles. 
+} 
+{Anglais non professionnel} 
+{\begin{itemize} 
+  \ObjItem S’exprimer couramment et efficacement dans une langue riche, souple et nuancée dans le domaine de la spécialité, exposer son opinion de manière claire, détaillée et structurée. 
+   
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 41}, 
+titre={Applications internet}, 
+COURS={20}, 
+TD={24}, 
+TP={24}, 
+CTD={}, 
+TOTAL={68}, 
+SEMESTRE={Semestre 4}, 
+COEFF={5}, 
+ECTS={5}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={AbdelAli ED-DBALI}, 
+emailPremierResp={AbdelAli.ED-DBALI@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={1}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+petite_DESCRIPTION 
+} 
+{
+Les langages HTML, XHTML, feuilles de style CSS.
+Applications réparties : le modèle client/serveur.
+Langages pour les pages web dynamiques : PHP, MySQL
+Sécurité des applications réparties. 
+} 
+{Développement et maintenance de sites et applications intra/internet.} 
+{\begin{itemize} 
+  \ObjItem Développement et maintenance de sites et applications intra/internet 
+  
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 42}, 
+titre={Génie logiciel}, 
+COURS={20}, 
+TD={24}, 
+TP={24}, 
+CTD={}, 
+TOTAL={68}, 
+SEMESTRE={Semestre 4}, 
+COEFF={5}, 
+ECTS={5}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Jean-Michel COUVREUR}, 
+emailPremierResp={Jean-Michel.COUVREUR@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={1}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+petite_DESCRIPTION 
+} 
+{
+Modélisation UML : diagrammes de classes, de séquences, d'états-transition et de cas d'utilisation.
+Pratique d'un atelier de génie logiciel.
+Méthodologie d'analyse et de conception objet.
+Introduction aux patrons de conception (design patterns).
+Introduction à la gestion de projets 
+} 
+{} 
+{\begin{itemize} 
+  \ObjItem Acquisition des connaissances de bases d'UML, d'une méthodologie permettant d'analyser un problème, d'en réaliser la modélisation, puis d'élaborer une mise en oeuvre sous forme d'une application informatique. 
+  \ObjItem Connaissance des notions de la gestion de projets. 
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 43 }, 
+titre={Programmation objet 2}, 
+COURS={20}, 
+TD={24}, 
+TP={24}, 
+CTD={}, 
+TOTAL={68}, 
+SEMESTRE={Semestre 4}, 
+COEFF={5}, 
+ECTS={5}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Laure KAHLEM}, 
+emailPremierResp={Laure.KAHLEM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={1}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+petite_DESCRIPTION 
+} 
+{
+Généricité.
+Classes internes.
+Implantation de structures de données.
+Collections des bibliothèques standards.
+Programmation événementielle.
+Interface graphique. 
+} 
+{Modules Algorithmique, Programmation objet 1} 
+{\begin{itemize} 
+  \ObjItem Savoir développer une application avec un langage orienté objet utilisant des structures de données récursives, interface graphique et interface avec une base de donnée. 
+   
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 44 }, 
+titre={Projet 2}, 
+COURS={}, 
+TD={}, 
+TP={}, 
+CTD={}, 
+TOTAL={0}, 
+SEMESTRE={Semestre 4}, 
+COEFF={5}, 
+ECTS={5}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={AbdelAli ED-DBALI}, 
+emailPremierResp={AbdelAli.ED-DBALI@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Réalisation d'une application répartie. 
+} 
+{
+LONGUE_DESCRIPTION 
+} 
+{} 
+{\begin{itemize} 
+  \ObjItem Mise en oeuvre dans un exemple d'application réaliste des concepts vus dans les modules informatique de la période considérée. 
+   
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 45}, 
+titre={Stage}, 
+COURS={10}, 
+TD={}, 
+TP={}, 
+CTD={}, 
+TOTAL={10}, 
+SEMESTRE={Semestre 4}, 
+COEFF={10}, 
+ECTS={10}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Prénom NOM}, 
+emailPremierResp={Prenom.NOM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Variable selon le sujet du stage. 
+} 
+{
+LONGUE_DESCRIPTION 
+} 
+{} 
+{\begin{itemize} 
+  \ObjItem Permettre d’une part de mettre en pratique les enseignements dispensés pendant l’année et d’autre part de familiariser les étudiants avec la vie professionnelle afin de permettre leur insertion. 
+
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\end{document}

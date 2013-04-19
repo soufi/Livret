@@ -1,0 +1,23 @@
+Master MIAGE : M1 tronc commun SIR et SIMSA
+#SEMESTRE 1
+|Analyse de données|3|3|18|||24
+|Types abstraits de données|4|4|18||24|
+|Complexité des algorithmes|3|3|18||18|
+|Langages formels et automates|3|3|18||24|
+|Ingénierie des SI|3|3|12||24|
+|Interfaces Homme-Machine|4|4|18||24|6
+|Gestion de production|3|3|24|||
+|Projet Professionnel|2|2|12||12|
+|Projet Informatique|3|3||||
+|Anglais|2|2|||24|
+#SEMESTRE 2
+|Système et Répartition|5|5|36||36|
+|Réseaux : protocoles et mobilité|3|3|18||12|12
+|Ingénierie des connaissances|3|3|18||18|
+|Méthodes avancées de conception|4|4|18||24|
+|Test et qualité du logiciel|3|3|18|||24
+|Analyse financière|3|3|24||12|
+|Simulation et jeu d’entreprise|2|2|||24|
+|Techniques de communication|2|2|||24|
+|Projet informatique|3|3||||
+|Anglais|2|2|||24|

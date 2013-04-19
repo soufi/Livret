@@ -1,0 +1,23 @@
+Licence Informatique : L3 parcours MIAGE
+#SEMESTRE 5
+UE 51 obligatoire – PRL|Mise à niveau Informatique |0|0||20||12|24|Semestre 5
+UE 52 obligatoire|Programmation avancée et structures dynamiques|4|4|20|30|40|||Semestre 5
+UE 53  obligatoire|Réseaux|4|4|18|12|40|12|24|Semestre 5
+UE 54 obligatoire|Analyse et conception des SI|4|4|20|20|40|10|24|Semestre 5
+UE 55 obligatoire|Statistiques|3|3|||40|30|24|Semestre 5
+UE 56 obligatoire|Recherche Opérationnelle|3|3|16|24|40|||Semestre 5
+UE 57 obligatoire|Gestion comptable|3|3|30||40|||Semestre 5
+UE 58 obligatoire|Anglais|2|2||24|30|||Semestre 5
+UE 59 obligatoire|Techniques de communication|2|2||24|30|||Semestre 5
+UE 60 obligatoire|Projet informatique|3|3||6||||Semestre 5
+UE 60.1 obligatoire|Projet personnel et professionnel|2|2|12|12|30|||Semestre 5
+#SEMESTRE 6
+UE 61 obligatoire – PRL|Renforcement POO Java|0|0||||12|24|Semestre 6
+UE 62 obligatoire|Génie Logiciel|4|4|12|20|40|8|24|Semestre 6
+UE 63 obligatoire|Bases de données|4|4|12|20|40|8|24|Semestre 6
+UE 64 obligatoire|Programmation des SI|4|4|20|||20|24|Semestre 6
+UE 65 obligatoire|Environnement économique de l'entreprise|3|3|24|||||Semestre 6
+UE 66 obligatoire|Droit|3|3|24|||||Semestre 6
+UE 67 obligatoire|Anglais|3|3||24|30|||Semestre 6
+UE 68 obligatoire|Projet informatique|3|3||||||Semestre 6
+UE 69 obligatoire|Stage ou projet fin d'études|6|6||||||Semestre 6

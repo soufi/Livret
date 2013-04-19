@@ -1,0 +1,290 @@
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Mise à niveau Informatique','','UE 51');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Mise à niveau Informatique','UE 51','0','0','12','20','0','0','
+  Français
+','
+	- Remise à niveau essentiellement destinée aux étudiants intégrant la Licence au semestre 5, afin de leur assurer les bases nécessaires pour suivre de manière satisfaisante les enseignements de troisième année.
+','
+Rappels sur l\'algorithmique et la programmation, les systèmes d\'exploitation, les outils de 
+développement. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Niveau bac + 2 en informatique ou équivalent
+','1');
+Catherine JULIÉ-BONNET
+Catherine.JULIE-BONNET@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Programmation avancée et structures dynamiques','','UE 52');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Programmation avancée et structures dynamiques','UE 52','4','30','0','0','4','4','
+  Français
+','
+	- Acquérir et combiner plusieurs méthodes de programmation au sein d\'un même langage. Intégrer la notion d\'abstraction des données et des traitements. 
+	- Comprendre l\'intérêt du typage fort et de l\'induction de types. Arbitrer entre des solutions statiques et dynamiques. 
+','
+Introduction au langage ADA. Types non contraints et pointeurs.
+Unités de compilation, modularité, généricité.
+Tâches, rendez-vous, type protégés, répartition.
+Types étiquetés, programmation orientée objet, programmation par classe, héritage, héritage multiple. Interfaçage : autres langages, interface graphique, serveur web,... 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Maîtrise de l\'algorithmique de base (y compris les techniques d\'assertion et d\'invariant) et des structures statiques. Connaissance des principes de gestion mémoire, de la notion d\'état, de l\'affectation. Expérience des entrées sorties (non-)bufferisées. 
+','1');
+Jean-Jacques LACRAMPE
+Jean-Jacques.LACRAMPE@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Réseaux','','UE 53');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Réseaux','UE 53','4','12','12','0','4','4','
+  Français
+','
+	- Principes et pratique des réseaux locaux informatiques.
+','
+Architecture des réseaux\,: structure en couches, protocoles, services. Réseaux locaux sous UDP-TCP/IP, Ethernet. Protocoles de routage\,: RIP, OSPF, BGP. Principaux protocoles Internet\,: DNS (annuaire de noms de domaines). SMTP (mail), FTP (transfert de fichiers), HTTP (web),... 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Algorithmique (modules de L1 et L2).
+','1');
+Abdelali ED-DBALI
+Abdelali.ED-DBALI@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Analyse et conception des SI','','UE 54');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Analyse et conception des SI','UE 54','4','20','10','0','4','4','
+  Français
+','
+	- Transformer les besoins et attentes des utilisateurs d\'un système d\'information en spécifications formalisées d\'une future application informatique.
+','
+Contribution d\'une méthode d\'analyse et de conception, Merise en l\'occurrence, au sein des activités de l\'ingénierie des systèmes d\'information. Les principes généraux de la méthode. Le cycle d\'abstraction : raisonnements de modélisation et formalismes associés. Schémas des flux ; Modèle conceptuel des données (MCD) ; Modèle conceptuel des traitements (MCT) et modèle organisationnel des traitements (MOT). Le cycle de vie : la démarche. Étude préalable : Analyse de l\'existant et Conception du futur système ; Étude détaillée du futur système. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','1');
+Raymond RAKOTOZAFY
+Raymond.RAKOTOZAFY@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Statistiques','','UE 55');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Statistiques','UE 55','0','0','30','0','3','3','
+  Français
+','
+	- Le but du cours est de savoir mener une étude statistique sur des données avec un objectif précis. 
+	- Présentation synthétique des données, puis énoncé d\'hypothèses probabilistes et enfin validation de ces hypothèses, et enfin exploitation des résultats. 
+','
+Statistique descriptive: cas uni et bidimensionnel. Statistique inférentielle\,: Démarche d\'échantillonnage: distribution d\'échantillonnage de la moyenne et de la variance dans le cas du tirage aléatoire.\,; Estimation paramètrique: qualités d\'une estimateur ponctuel, estimateur du maximum de vraisemblance, intervalle de confiance. Test: principes généraux des tests statistiques, tests de conformité, test d\'homogénéité, tests d\'ajustement, tests d\'indépendance. Étude des séries chronologiques: méthodes de filtrages (moyenne mobile, lissage exponentiel). Toutes les notions vues en cours sont illustrées en TP avec les logiciels R et XLSTAT. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Notions de probabilités.
+','1');
+Sophie JACQUOT
+Sophie.JACQUOT@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Recherche Opérationnelle','','UE 56');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Recherche Opérationnelle','UE 56','3','24','0','0','3','3','
+  Français
+','
+	- Introduction à la recherche opérationnelle (modélisation et résolution).
+','
+Recherche opérationnelle sur les graphes : ordonnancement, flots. Programmation linéaire : méthode du simplex, dualité. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+algorithmique élémentaire sur les graphes
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Gestion comptable','','UE 57');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Gestion comptable','UE 57','3','0','0','0','3','3','
+  Français
+','
+	- être capable de déterminer un coût. Réfléchir à la notion de prix, aux outils d\'aide à la décision.
+','
+Introduction\,: De la comptabilité générale à la comptabilité analytique. La détermination des coûts :
+la méthode des coûts complets (Analyse des charges. Répartition des charges indirectes, enchaînements des calculs. Le coût de production.
+Le coût de revient. La notion de résultat analytique d\'exploitation. Rapprochement avec la comptabilité générale. Critiques.)
+Les méthodes des coûts partiels (Le coût variable ; le seuil de rentabilité. La méthode du coût indirect.
+La méthode de l\'imputation rationnelle des charges fixes. Le coût marginal. ) Remise en cause des modèles traditionnels (La méthode ABC.).
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Les notions de base en comptabilité financière, charges, bilan et compte de résultat.
+','1');
+Gilles LE FLOHIC
+Gilles.LE-FLOHIC@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Anglais','','UE 58');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Anglais','UE 58','0','24','0','0','2','2','
+  Français
+','
+	- Comprendre et s\'exprimer dans une langue simple et correcte à l\'oral comme à l\'écrit afin d\'acquérir une autonomie suffisante dans le milieu professionnel
+	- Aide à la rédaction de CV et lettres de motivation dans le cadre de la recherche de stage.
+','
+	 - Restituer, échanger des informations, produire des énoncés corrects à l\'oral comme à l\'écrit.
+	 - Travail personnel : Exercices d\'application à la fin de chaque unité et remise d\'un devoir au cours du semestre (CV).
+	 - Travail individuel de remise à niveau en centre ressource multimédia si nécessaire.
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Avoir suivi avec succès les enseignements des semestres précédents.
+','1');
+Marie-Françoise TASSARD
+Marie-Françoise.TASSARD@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Techniques de communication','','UE 59');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Techniques de communication','UE 59','0','24','0','0','2','2','
+  Français
+','
+	- Savoir animer une réunion, connaître la communication orale professionnelle et rédiger des écrits professionnels en entreprise. 
+','
+	 - Prise de parole devant un groupe : constituer et présenter un dossier avec documents.
+	 - Travail de groupe et créativité : s\'initier aux méthodes de l\'invention pour innover dans un travail de groupe.
+	 - Communication et programmation neurolinguistique (PLN) : se connaître, connaître autrui pour mieux communiquer.
+	 - La recherche d\'emploi : le C.V., la lettre de motivation.
+	 - Les écrits professionnels :
+		    - La lettre : lisibilité et créativité. La note de service : concision et précision.
+		    - Le journal d\'entreprise : accroche et information.
+		    - Le compte-rendu : recherche de l\'objectivité.
+		    - Le rapport : aide à la prise de décision. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Savoir adapter un langage aux situations professionnelles.
+','1');
+Alfred HITCHCOCK
+Alfred.HITCHCOCK@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Projet informatique','','UE 60');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Projet informatique','UE 60','0','6','0','0','3','3','
+  Français
+','
+	- Au sein d\'un groupe, apprendre à organiser la réalisation complète d\'un projet, depuis l\'analyse jusqu\'aux tests de validation en utilisant des outils collaboratifs. 
+	- Percevoir les différentes compétences nécessaires au sein d\'un groupe de travail Se préparer au métier de chef de projet. 
+','
+Projet de fin d\'études, faisant intervenir différentes connaissances et compétences acquises lors de l\'ensemble de la formation en licence.
+','','Rapport et soutenance de projet','Pas de 2nde session','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Niveau de connaissance et de compétence de fin d\'année de licence (L3), en particulier dans les domaines de l\'analyse, de la modélisation et de la programmation.
+Le langage de programmation souhaité pour le projet devra être connu ou maîtrisé dans un délai très court.
+De plus il est obligatoire de s\'impliquer dans un groupe de travail et de posséder un minimum de qualités dans la communication.
+','1');
+Raymond RAKOTOZAFY
+Raymond.RAKOTOZAFY@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Projet personnel et professionnel','','UE 60.1');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Projet personnel et professionnel','UE 60.1','2','12','0','0','2','2','
+  Français
+','
+	- Se préparer au stage en entreprise, sur les plans législatif, comportemental et en terme de techniques de communication professionnelle. 
+	- Connaître les différents types d\'emplois accessibles aux diplômés, les parcours de formation possibles, et commencer à cibler son propre projet professionnel et personnel.
+','
+Préparation à la recherche de stage en entreprise. Techniques de communication dans le cadre professionnel, comportement et respect des règles de l\'entreprise et de la convention de stage.
+Rédaction du rapport de stage et préparation d\'un exposé oral.
+Présentation des différents types d\'emplois / métiers accessibles à l\'issue de la formation et des parcours de formation adéquats.
+Étude d\'un projet professionnel personnel. 
+','Contrôle continue et terminal','Production d\'un rapport','Production d\'un rapport','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','1');
+Catherine JULIÉ-BONNET
+Catherine.JULIE-BONNE@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Renforcement POO Java','','UE 61');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Renforcement POO Java','UE 61','0','0','12','0','0','0','
+  Français
+','
+	  - Assainir les lacunes encore présentes en programmation.
+','
+Programmation orientée objet. Gestion de la mémoire. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','1');
+Frédéric MOAL
+Frederic.MOAL@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Génie Logiciel','','UE 62');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Génie Logiciel','UE 62','4','20','8','0','4','4','
+  Français
+','
+	- Acquérir une connaissance des outils et des techniques de spécification tels que les réseaux de Petri. 
+	- Maîtriser un langage dédié au génie logiciel, UML. 
+','
+Généralités, cycle de vie d\'un logiciel, méthodes d\'analyse et de conception, méthodes objet, langage UML, méthodes de tests. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+notions de modélisation et de système d\'information
+','1');
+Laure KAHLEM
+Laure.KAHLEM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Bases de données','','UE 63');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Bases de données','UE 63','4','20','8','0','4','4','
+  Français
+','
+	- Créer des bases de données relationnelles d\'une bonne forme normale. 
+	- Mettre en \oe uvre des contraintes d\'intégrité au sein de bases de données relationnelles. 
+	- Interroger des bases de données relationnelles. 
+','
+Algèbre relationnelle. SQL : Langage d\'Interrogation des Données. Dépendances fonctionnelles et Formes normales. SQL : Langage de Définition des Données. Mise en \oe uvre des contraintes d\'intégrité avec Oracle 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+UE : Bases des données (L2).
+','1');
+Raymond RAKOTOZAFY
+Raymond.RAKOTOZAFY@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Programmation des SI','','UE 64');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Programmation des SI','UE 64','4','0','20','0','4','4','
+  Français
+','
+	- notion de modélisation, bases de données (niveau L2/L3) 
+	- Transformer des spécifications formalisées en une application informatique. 
+','
+Contribution d\'une méthode de conception, Merise en l\'occurrence, au sein des activités de développement des systèmes d\'information. Architectures logicielles. Le cycle de vie, la démarche \,: Étude technique du futur système ; Production du logiciel et Déploiement. Le cycle d\'abstraction, raisonnements de modélisation et formalismes associés \,: Modèle logique des données (MLD)\,; Modèle physique des données (MPD) et modèle physique des traitements (MPT). Mise en \oe uvre d\'architecture logicielle en Développement Web. Mise en \oe uvre d\'activités de développement avec Oracle. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','1');
+Raymond RAKOTOZAFY
+Raymond.RAKOTOZAFY@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Environnement économique de l\'entreprise','','UE 65');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Environnement économique de l\'entreprise','UE 65','3','0','0','0','3','3','
+  Français
+','
+	- Le cours vise à donner aux étudiants une information sur les thèmes essentiels de l\'économie contemporaine (chômage, inflation, politiques économiques,...) et à leur permettre d\'appréhender les principaux modes de raisonnement nécessaires à la compréhension de l\'environnement économique. 
+	- Pour ce faire, un retour théorique est opéré sur chaque thème, à partir d\'un regard sur l\'actualité conjoncturelle. 
+','
+Les agents économiques et leurs fonctions. Keynes et les classiques : introduction a la macroéconomie. Le modèle is-lm. Emploi et chômage. Inflation et désinflation. État et politique économique. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','1');
+Gilles LE FLOHIC
+Gilles.LE-FLOHIC@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Droit','','UE 66');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Droit','UE 66','3','0','0','0','3','3','
+  Français
+','
+	  - Connaissance des droits et obligations de l\'utilisateur de produits informatiques, de l\'utilisateur d\'Internet et des mécanismes des contrats.
+','
+Régime de protection juridique des logiciels et des produits informatiques. Droits de l\'auteur et de l\'utilisateur du logiciel. Fraude informatique. Loi informatique et Libertés. Contrats. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+','1');
+Jean-Philippe CHALLINE
+Jean-Philippe.CHALLINE@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Anglais','','UE 67');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Anglais','UE 67','0','25','0','0','3','3','
+  Français
+','
+	- Comprendre l’information exprimée dans des messages complexes sur le domaine des Sciences et Technologies et s’exprimer sur ce même domaine à l’oral avec un degré suffisant de spontanéité et de fluidité (niveau européen\,: B2). 
+','
+Travail de compréhension et d’expression à partir de documents authentiques longs et/ou complexes portant sur des innovations technologiques, des découvertes et avancées scientifiques.
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Avoir suivi l\'unité "Anglais 5" ou un volume d\'heures de formation équivalente.
+','1');
+Marie-Françoise TASSARD
+Marie-Françoise.TASSARD@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Projet informatique','','UE 68');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Projet informatique','UE 68','0','0','0','0','3','3','
+  Français
+','
+	- Transformer des spécifications formalisées en une application informatique. 
+	- Rédiger des dossiers techniques : Dossier des Spécifications techniques, Dossier de programmation, Manuel Utilisateur.
+','
+Réalisation d\'une application mettant en \oe uvre l\'analyse réalisée lors du projet de conception des SI. 
+','','Rapport et soutenance de projet','Pas de 2nde session','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Unité "Programmation des systèmes d\'information".
+','1');
+Raymond RAKOTOZAFY
+Raymond.RAKOTOZAFY@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Stage ou projet fin d\'études','','UE 69');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'Licence3_MIAGE'),'Stage ou projet fin d\'études','UE 69','0','0','0','0','6','6','
+  Français
+','
+	- Capacité à participer et mener à bien un projet au sein d\'une entreprise. 
+	- Connaissance 
+	du monde professionnel.  
+','
+Stage d\'au moins trois mois consécutifs dans une entreprise ou projet de fin d\'étude, suivi par un enseignant et donnant lieu à la rédaction d\'un mémoire puis d\'une soutenance de stage en présence d\'un jury mixte d\'enseignants et de responsables de l\'entreprise. 
+','','Rapport et soutenance de stage ou de projet','Pas de 2nde session','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','0','
+Compétences acquises au cours de la licence.
+','1');
+Frédéric MOAL
+Frederic.MOAL@univ-orleans.fr

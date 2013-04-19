@@ -1,0 +1,947 @@
+\input{Extra/couleurMasterMIAGE.tex}
+
+%==========================================================================================
+% Semestre 3
+%==========================================================================================
+\module[codeApogee={UE 31}, 
+titre={Architectures applicatives réparties}, 
+COURS={20}, 
+TD={20}, 
+TP={10}, 
+CTD={}, 
+TOTAL={50}, 
+SEMESTRE={semestre 3}, 
+COEFF={4}, 
+ECTS={4}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7},
+nomPremierResp={Frédéric MOAL}, 
+emailPremierResp={Frederic.MOAL@univ-orleans.fr}, 
+nomSecondResp={Matthieu EXBRAYAT}, 
+emailSecondResp={Matthieu.EXBRAYAT@univ-orleans.fr}, 
+langue={Français},
+nbPrerequis={1},
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+Ce module se compose de deux parties complémentaires, portant sur les
+aspects théoriques et pratiques des systèmes d'information répartis:
+Dans l'optique d'une approche fondée sur la pratique, le module aborde
+dans un premier temps les outils disponibles, autour du langage Java et de
+la plateforme Java Enterprise Edition (JavaEE) :
+\begin{itemize} 
+\item Communication répartie par invocation distante (RMI) et messagerie
+(JMS).
+\item Persistance d'objets (utilisation de différents frameworks, dont hibernate)
+\item Concept de bean métier (EJB)
+\item Intégration des différents types d'EJB, interfaçage avec la couche
+présentation.
+\item Bases de l'administration du serveur d'applications\\
+Lorsque les aspects pratiques ont été manipulés, l'étudiant est amené à les
+mettre en perspective et à rationaliser leur mise en oeuvre, par l'étude des
+aspects "théoriques" suivants :
+  \begin{itemize} 
+  \item Typologie des SI et exemples significatifs
+  \item UML et processus de développement unifié (rappels)
+  \item Patron de conception ("Design Patterns")
+  \item Concept de transaction répartie
+  \end{itemize} 
+\end{itemize} 
+} 
+{Compétences en bases de données, programmation java, conception
+d'applications web (servlets/JSP, modèle MVC2).} 
+{\begin{itemize} 
+  \ObjItem Fournir à l'étudiant les outils nécessaires à l'analyse, la mise en place et
+l'exploitation de systèmes d'informations répartis.
+  \ObjItem Apporter une solide
+formation sur la répartition des données et des traitements dans un
+Système d'Information (SI), suivant deux axes : outils avancés pour la
+modélisation et la gestion des SI (UML, design patterns, etc.) et SI
+distribués contemporains (architectures multi-tiers, plateformes
+applicatives).
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 32}, 
+titre={Extraction de connaissances dans les BD}, 
+COURS={20}, 
+TD={20}, 
+TP={10}, 
+CTD={}, 
+TOTAL={50}, 
+SEMESTRE={semestre 3}, 
+COEFF={4}, 
+ECTS={4}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Christel VRAIN}, 
+emailPremierResp={Christel.VRAIN@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={1}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+\begin{itemize} 
+\item Les différents types d'apprentissage et les différentes tâches
+\item Classification supervisée : arbre de décision, modèles probabilistes,
+machines à vecteur support, noyaux
+\item Evaluation des modèles
+\item Classification non supervisée : par partitionnement, hiérarchique,
+conceptuelle
+\item Recherche de règles d'association
+\end{itemize} 
+Savoir-faire:
+\begin{itemize} 
+\item Utilisation d'outils : Weka, RapidMiner
+\item Définir le problème d'apprentissage : modèle à acquérir, données
+nécessaires, techniques applicables
+\item Appliquer des techniques d'apprentissage.
+Etudes de cas guidés par des applications.
+\end{itemize} 
+} 
+{UE Intelligence Artificielle - UE Analyse de données.} 
+{\begin{itemize} 
+  \ObjItem Acquérir les notions de base permettant de résoudre un problème
+d'Extraction de Connaissances dans les Bases de Données : modélisation de la tâche à effectuer, préparation des données, choix des outils.\\
+Le Data
+Mining est devenu une discipline fondamentale, justifiée par le
+développement de grandes bases de données, la nécessité de constituer
+des mémoires d'entreprises et le besoin d'outils intelligents pour exploiter
+les flux d'information sur le web.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 33}, 
+titre={Introduction aux Métiers du Social et de l'Assurance}, 
+COURS={30}, 
+TD={}, 
+TP={}, 
+CTD={}, 
+TOTAL={30}, 
+SEMESTRE={semestre 3}, 
+COEFF={2}, 
+ECTS={2}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Prénom NOM}, 
+emailPremierResp={Prenom.NOM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+\begin{itemize} 
+\item Structure juridique des entreprises.
+\item Description des métiers.
+\item Aspects réglementaires et juridiques.
+\item Organismes tiers en présence.
+\item Intersections et points communs.
+\item Circuit de vente.
+\item Cartographie générale par métier.
+\item Perspectives des métiers.
+\item Métiers ouverts associés à ces formations.
+\item Les apports d'une démarche ISO9001 face à la complexité des métiers du
+social et de l'Assurance.
+\item La CNIL, un organisme incontournable pour traiter de l'Assurance.
+\item La dimension internationale dans un SI Assurances.
+\item Un SI Assurances dans un SI Bancaire : les particularités de la banque
+Assurance.
+\end{itemize} 
+} 
+{} 
+{\begin{itemize} 
+  \ObjItem Avoir une culture générale des métiers des entreprises du secteur de la
+Retraite, de l'Assurance et de la Prévoyance, et connaitre la cartographie
+des différents SI du domaine.
+  \ObjItem Etre sensibilisé à la règlementation du stockage des données à caractère
+personnel.
+  \ObjItem Appréhender le contexte international dans les projets informatiques
+Assurances et dans la gestion des SI Assurances. Connaître la banque
+Assurance.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 34}, 
+titre={SI de la Retraite}, 
+COURS={30}, 
+TD={10}, 
+TP={}, 
+CTD={}, 
+TOTAL={40}, 
+SEMESTRE={semestre 3}, 
+COEFF={4}, 
+ECTS={4}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Prénom NOM}, 
+emailPremierResp={Prenom.NOM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+\begin{itemize} 
+\item Particularités du référentiel des métiers de la retraite.
+\item Le régime général de la Sécurité Sociale et les régimes complémentaires.
+\item La gestion des adhésions des entreprises.
+\item Les déclarations nominatives.
+\item L'appel des cotisations, le recouvrement et la gestion comptable.
+\item Le calcul des droits cotisés et non cotisés : constiution de la carrière.
+\item La gestion des allocataires jusqu'à l'extinction des droits.
+\end{itemize}
+} 
+{} 
+{\begin{itemize} 
+  \ObjItem Maîtriser le fonctionnement des processus liés aux régimes de Retraite
+(régime général Sécurité Sociale et régimes complémentaires ARRCO et
+AGIRC) et les grandes entités existantes dans un SI Retraite.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 35}, 
+titre={SI de l'Assurance}, 
+COURS={30}, 
+TD={10}, 
+TP={}, 
+CTD={}, 
+TOTAL={40}, 
+SEMESTRE={semestre 3}, 
+COEFF={4}, 
+ECTS={4}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Prénom NOM}, 
+emailPremierResp={Prenom.NOM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+Ce module se compose de deux parties complémentaires, couvrant les
+domaines d'activité de l'assurance que sont la branche IARD (Incendie - Automobile - Risques Divers) et la branche
+Vie. La partie Vie est ensuite scindée en deux parties : une partie
+compréhension du métier et une partie SI d'une société d'assurance Vie.
+\begin{description}
+\item[DOMAINE IARD] : Particularités du référentiel, catalogue de produit,
+gestion du réseau et des intervenants commerciaux, contrat, cotisations et
+recouvrement, sinistres, circuit des encaissements / décaissements,
+rémunération des apporteurs (Agents, Courtiers, Salariés), résultats
+techniques.
+\item[DOMAINE VIE] :
+\begin{itemize}
+\item Généralités sur le contrat d'assurance Vie : ses caractéristiques et ses
+diverses catégories
+\item L'assurance Vie en quelques chiffres
+\item Les divers frais : théorie, modes de calcul et illustration par exemples
+\item La vie du contrat : sa formation, le paiement des primes, l'affectation des
+primes, l'avance, les rachats, le règlement des prestations
+\item La tarification du contrat : prime pure, frais, taxes ; tables de mortalité
+\item La constitution des provisions mathématiques
+\item Histoire de l'Assurance Vie
+\item Construction des SI d'une société d'assurance Vie
+\item Le régime fiscal du contrat : impôts sur les revenus et droits de
+transmission
+\item Les assurances collectives : tout ce qui diffère du contrat individuel ; les
+contrats d'épargne retraite et de prévoyance complémentaire ; les contrats
+à titre privé ou professionnel ; les contrats homme-clé et les contrats
+emprunteur.
+\end{itemize}
+} 
+{} 
+{\begin{itemize} 
+  \ObjItem Maîtriser les SI et le fonctionnement des processus liés à un contrat IARD
+(Incendie - Automobile - Risques Divers) et à un contrat d'assurance vie.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 36}, 
+titre={Gestion de projet et qualité}, 
+COURS={20}, 
+TD={20}, 
+TP={10}, 
+CTD={}, 
+TOTAL={50}, 
+SEMESTRE={semestre 3}, 
+COEFF={4}, 
+ECTS={4}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Prénom NOM}, 
+emailPremierResp={Prenom.NOM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+\begin{itemize}
+\item Les étapes d'un projet
+\item Les livrables de la conduite de projet
+\item Les rôles et responsabilités des acteurs (client, décideurs, maîtrise d'ouvrage, maîtrise d'oeuvre, assurance qualité)
+\item Le travail en équipe
+\item Méthodes de prévision et d'estimation des charges et de délais
+\item Tests
+\item Normalisation ISO / maturité CMM
+\item La gestion des risques
+\item La gestion des évolutions
+\item Le plan de communication
+\item Les outils du chef de projet.
+\end{itemize}
+} 
+{} 
+{\begin{itemize} 
+  \ObjItem Etudier la conduite de projet et la mise en place d'un système qualité.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 37}, 
+titre={Gestion des ressources humaines}, 
+COURS={10}, 
+TD={20}, 
+TP={}, 
+CTD={}, 
+TOTAL={30}, 
+SEMESTRE={semestre 3}, 
+COEFF={2}, 
+ECTS={2}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Prénom NOM}, 
+emailPremierResp={Prenom.NOM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+\begin{itemize}
+\item Introduction à la gestion des ressources humaines
+\item La DRH en entreprise
+\item Le management des hommes et des équipes
+\item Evaluation des postes
+\item Le recrutement
+\item Réforme de la formation professionnelle.
+\end{itemize}
+} 
+{} 
+{\begin{itemize} 
+  \ObjItem Appréhender la gestion des ressources humaines dans le cadre de l'entreprise.  
+\end{itemize}
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 38}, 
+titre={Anglais professionnel}, 
+COURS={}, 
+TD={24}, 
+TP={}, 
+CTD={}, 
+TOTAL={24}, 
+SEMESTRE={semestre 3}, 
+COEFF={3}, 
+ECTS={3}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Prénom NOM}, 
+emailPremierResp={Prenom.NOM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={1}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+Travailler la langue écrite et orale afin de perfectionner ses capacités à
+communiquer en milieu professionnel. Suivi interactif et personnalisé du
+projet industriel.
+
+Suivi de projet industriel :
+\begin{itemize}
+\item l'étudiant produit plusieurs devoirs pour lequel il reçoit une correction individuelle.
+\item Présentation orale
+\item Devoir écrit (compréhension et synthèse)
+\item Poursuite du travail sur le CV, la lettre de motivation et l'entretien.
+\end{itemize}
+Supports : Publications les sciences et technologies informatiques, documents
+sonores, centre de ressources multimedia.
+} 
+{Avoir suivi les modules d'anglais de Master 1 ou 550 heures de formation
+équivalente.} 
+{\begin{itemize} 
+  \ObjItem Se rapprocher des compétences demandées au niveau C1; possibilité de
+valider le CLES 3.
+  \ObjItem L'étudiant comprend des textes longs dans sa discipline, rend compte
+oralement et par écrit de documents professionnels, s'exprime dans une
+langue claire et structurée sur des sujets complexes à caractère social et
+académique.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 39}, 
+titre={Projet industriel}, 
+COURS={10}, 
+TD={}, 
+TP={}, 
+CTD={}, 
+TOTAL={}, 
+SEMESTRE={semestre 3}, 
+COEFF={3}, 
+ECTS={3}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Catherine JULIÉ-BONNET}, 
+emailPremierResp={Catherine.JULIE-BONNET@univ-orleans.fr}, 
+nomSecondResp={},
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+Ce projet met en oeuvre les connaissances acquises au cours du semestre
+par le biais de l'étude et de la réalisation d'une application J2EE ou de la
+réalisation d'un projet d'architecture applicative répartie dont le sujet est
+défini en collaboration avec un partenaire industriel.
+} 
+{} 
+{\begin{itemize} 
+  \ObjItem Maîtriser les aspects fonctionnels et techniques de la mise en oeuvre d'un
+système d'information réparti.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 41}, 
+titre={Web Services et interopérabilité}, 
+COURS={15}, 
+TD={15}, 
+TP={10}, 
+CTD={}, 
+TOTAL={40}, 
+SEMESTRE={semestre 4}, 
+COEFF={3}, 
+ECTS={3}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Frédéric MOAL},
+emailPremierResp={Frederic.MOAL@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={1}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+Ce module permet de comprendre les technologies et les architectures
+sous-jacentes mises en oeuvre dans les architectures de type SOA :
+\begin{itemize} 
+\item Implementation des Services Web (SOAP, WSDL, UDDI...) ;
+\item Exemple de mise en oeuvre en Java et .NET ;
+\item Interopérabilité entre SI hétérogènes ;
+\item Intégration d'application - Utilisation de bus ESB.
+\end{itemize} 
+} 
+{Maîtrise des architectures distribuées, JEE/.NET} 
+{\begin{itemize} 
+  \ObjItem Comprendre les architectures orientées services et les technologies sousjacentes.
+  \ObjItem Concevoir une architecture d'intégration de SI hétérogènes.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 42}, 
+titre={Intégration de SI}, 
+COURS={30}, 
+TD={10}, 
+TP={}, 
+CTD={}, 
+TOTAL={40}, 
+SEMESTRE={semestre 4}, 
+COEFF={3}, 
+ECTS={3}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Prénom NOM}, 
+emailPremierResp={Prenom.NOM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+\begin{description}
+\item[Architecture d'Entreprise]
+\begin{itemize}
+\item Principes, Gouvernance, la Stratégie (métier) de l'entreprise
+\item Capacités (organisation, acteurs, ...)
+\item Architecture fonctionnelle, architecture du système d'information
+\item Analyse de l'environnement courant et collecte de l'information
+\item Architecture applicative, Modèle fonctionnel,
+\item Entrepôts de données, Placement des données et fonctions,
+\item Architecture technique, Analyse des gaps et planification des transitions.
+\item TD : Définition d'une stratégie d'évolution ou de transformation, analyse
+des capacités puis proposition d'architecture fonctionnelle et
+d'adaptation organisationnelle.
+\end{itemize}
+\item[Architecture de solutions]
+\begin{itemize}
+\item Introduction à la notion d'Architecture de solutions.
+\item Les besoins et contraintes, diagramme d'architecture général
+\item Les aspects fonctionnels, les unités de déploiement, les aspects
+opérationnels
+\item Architecture Reference and Architecture Patterns
+\item Les contraintes et qualités d'une Architecture (performance/capacité/disponibilité/...)
+\item Documentation.
+\end{itemize}
+\item[Migration de données]
+\end{description}
+}
+{} 
+{\begin{itemize} 
+  \ObjItem Introduction à la notion d'architecture et aux disciplines du rôle
+d'architecte.
+\ObjItem La partie "Architecture de solutions" a pour objectif de
+donner un aperçu des concepts utilisés lors de la réalisation d'une
+Architecture.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 43}, 
+titre={SI Assurance de personnes}, 
+COURS={30}, 
+TD={10}, 
+TP={}, 
+CTD={}, 
+TOTAL={40}, 
+SEMESTRE={semestre 4}, 
+COEFF={3}, 
+ECTS={3}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Prénom NOM}, 
+emailPremierResp={Prenom.NOM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+\begin{itemize} 
+\item Particularités du référentiel
+\item Le régime général Maladie
+\item Catalogue de produits
+\item Contrat
+\item Cotisations
+\item Sinistres
+\item Résultats techniques.
+\end{itemize} 
+} 
+{} 
+{\begin{itemize} 
+  \ObjItem Maîtriser les spécifités des SI et du fonctionnement des processus liés à un
+contrat Prévoyance Lourde, à un contrat Santé et à un contrat Epargne,
+dans le cadre de contrats individuels ou de contrats collectifs.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 44}, 
+titre={Management des SI}, 
+COURS={30}, 
+TD={10}, 
+TP={}, 
+CTD={}, 
+TOTAL={40}, 
+SEMESTRE={semestre 4}, 
+COEFF={3}, 
+ECTS={3}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Prénom NOM}, 
+emailPremierResp={Prenom.NOM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={1}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+Plusieurs intervenants professionnels du domaine abordent différentes
+thématiques liées au management du SI dans l'entreprise :
+\begin{itemize}
+\item Dimensionner et aligner le système d'information (SI) - système
+d'information informatisé (SII) au sein des processus - organisation du
+Métier (MOA - AMOA) et Informatique (MOE) avec la stratégie de
+l'Entreprise en environnement sous contraintes ;
+\item Pilotage du SI SII par horizon (stratégique - tactique - opérationnel) et
+contrainte (Valeur - Coût) ;
+\item Intégration et évolution du SII au sein du SI - SII existant.
+\item La gestion des services de production informatique.
+\item Modèles, normes et standards existants (ITIL, ISO 17799 / 27002, ISO
+20000, COBIT, CMMI).
+\item TD portant sur les aspects méthodologiques de la mise en production
+d'une application informatique.
+\end{itemize} 
+} 
+{\begin{itemize} 
+\item Ingénierie des SI.
+\item Gestion de projets et qualité.
+\item Analyse financière.
+\end{itemize} 
+}
+{\begin{itemize} 
+  \ObjItem Identifier les tendances, les évolutions, connaître les méthodes, tableaux
+de bords et indicateurs permettant au décideur de piloter le SI (mesurer
+l'atteinte des objectifs et analyser les écarts en termes de qualité,
+supervision, sécurité, dimensionnement).
+  \ObjItem Dimensionner - préparer - suivre - contrôler - optimiser le SI, SII.
+  \ObjItem Avoir un aperçu des enjeux et des métiers de la production informatique
+et à travers la présentation des principaux processus de gestion du service informatique et
+les grand référentiels et normes reconnus sur le marché, représentant les
+"bonnes pratiques" d'une DSI nécessaire pour assurer la conformité aux
+multiples exigences actuelles.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 45}, 
+titre={Stratégie commerciale autour de l'Internet}, 
+COURS={20}, 
+TD={10}, 
+TP={}, 
+CTD={}, 
+TOTAL={30}, 
+SEMESTRE={semestre 4}, 
+COEFF={3}, 
+ECTS={3}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Prénom NOM}, 
+emailPremierResp={Prenom.NOM@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+Pilotage stratégique de l'entreprise, avec Internet comme outil de pouvoir :
+\begin{itemize} 
+\item Les différents types d'environnement concurrentiels.
+\item Analyse de l'entreprise et évaluation de l'impact d'Internet.
+\item Choisir la bonne stratégie.
+\item Web design et audit de sites.
+\end{itemize} 
+} 
+{} 
+{\begin{itemize} 
+  \ObjItem Maîtriser les aspects stratégiques et marketing pour l'utilisation d'Internet.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 46}, 
+titre={Projet industriel}, 
+COURS={10}, 
+TD={}, 
+TP={}, 
+CTD={}, 
+TOTAL={10}, 
+SEMESTRE={semestre 4}, 
+COEFF={3}, 
+ECTS={3}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Catherine JULIÉ-BONNET}, 
+emailPremierResp={Catherine.JULIE-BONNET@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+Ce projet permet de synthétiser toutes les connaissances acquises au
+cours de l'année par le biais de l'étude et de la réalisation d'une
+intégration d'applications dans un contexte hétérogène. Le sujet de ce
+projet est défini en collaboration avec un partenaire industriel.
+} 
+{} 
+{\begin{itemize} 
+  \ObjItem Maîtriser tous les aspects (logiciels, matériels, sécurité, etc) de la mise en oeuvre d'un système d'information réparti et hétérogène.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill
+
+%==========================================================================================
+\module[codeApogee={UE 47}, 
+titre={Stage professionnel}, 
+COURS={}, 
+TD={}, 
+TP={}, 
+CTD={}, 
+TOTAL={6 mois}, 
+SEMESTRE={semestre 4}, 
+COEFF={12}, 
+ECTS={12}, 
+MethodeEval={Contrôle continue et terminal}, 
+ModalitesCCSemestreUn={CC et CT}, 
+ModalitesCCSemestreDeux={CT}, 
+%CalculNFSessionUne={$\frac{(CC+2*CT)}{3}$}, 
+%CalculNFSessionDeux={CT}, 
+NoteEliminatoire={7}, 
+nomPremierResp={Catherine JULIÉ-BONNET}, 
+emailPremierResp={Catherine.JULIE-BONNET@univ-orleans.fr}, 
+nomSecondResp={}, 
+emailSecondResp={}, 
+langue={Français}, 
+nbPrerequis={0}, 
+descriptionCourte={true}, 
+descriptionLongue={true}, 
+objectifs={true}, 
+ressources={true}, 
+bibliographie={false}] 
+{
+Unité obligatoire. 
+} 
+{
+Stage professionnel en entreprise de 6 mois.
+} 
+{} 
+{\begin{itemize} 
+  \ObjItem Finaliser son projet professionnel et préparer son recrutement via le stage.
+\end{itemize} 
+} 
+{Ressources} 
+{Biblio} 
+ 
+\vfill

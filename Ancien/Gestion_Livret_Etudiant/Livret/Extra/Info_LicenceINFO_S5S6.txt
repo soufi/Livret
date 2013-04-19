@@ -1,0 +1,19 @@
+Licence Informatique : L3 parcours Informatique
+# SEMESTRE 5
+UE 51 obligatoire|Mise à niveau informatique - PRL|0|0||20CTD||12|24|Semestre 5
+UE 52 obligatoire|Programmation avancée et structures dynamiques|5|5|18|30|40|||Semestre 5
+UE 53 obligatoire|Réseaux|4|4|18|12|40|12|24|Semestre 5
+UE 54 obligatoire|Analyse des algorithmes|5|5|14|24|40|||Semestre 5
+UE 55 obligatoire|Programmation linéaire|4|4|14|20|40|4|24|Semestre 5
+UE 56 obligatoire |Logique|3|3|12|18|40|||Semestre 5
+UE 57 obligatoire |Systèmes d’information|3|3|12|12|40|6|24|Semestre 5
+UE 58 obligatoire |Anglais 5|3|3||24|30|||Semestre 5
+UE 59 obligatoire |Unité d'ouverture|3|3||24||||Semestre 5
+# SEMESTRE 6
+UE 61 obligatoire – PRL|Renforcement POO Java|0|0||||12|24|Semestre 6
+UE 62 obligatoire|Génie Logiciel|5|5|12|20|40|8|24|Semestre 6
+UE 63 obligatoire|Bases de données|4|4|12|20|40|8|24|Semestre 6
+UE 64 obligatoire|Théorie des langages|4|4|14|26|40|||Semestre 6
+UE 65 obligatoire|Projet informatique 3|6|6|6|||||Semestre 6
+UE 66 obligatoire|Anglais 6|3|3||24|30|||Semestre 6
+UE 69 obligatoire|Stage ou projet fin d'études|8|8||||||Semestre 6

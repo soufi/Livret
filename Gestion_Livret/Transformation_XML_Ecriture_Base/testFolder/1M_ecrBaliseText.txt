@@ -1,0 +1,17 @@
+<descriptionCourte>Unité obligatoire. </descriptionCourte>
+
+<descriptionLongue>
+Algorithmique élémentaire\,: expressions, variables, instructions, séquences, conditionnelles, boucles, tableaux, preuves, invariants, traduction dans un langage de programmation orienté objets.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Maîtriser les concepts élémentaires de l\'algorithmique et être capable de les traduire dans un langages de programmation orienté objets. 
+</objectifs>
+
+<ressources>Ressources</ressources>
+
+<biblio>Biblio</biblio>
+

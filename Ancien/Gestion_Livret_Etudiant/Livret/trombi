@@ -1,0 +1,47 @@
+#!/bin/bash
+
+cat << EOF > /tmp/resp.txt
+ED-DBALI;Ali;ae;+33238417265;Directeur du département;Maître de conférences
+TESSIER;Alexandre;at;+33238494670;Directeur des études Licence 1;Maître de conférences
+BOUSDIRA-SEMMAR;Wadoud;wb;+33238417269;Directeur des études;L2 Info;Maître de conférences
+TODINCA;Ioan;it;+33238417293;Responsable Licence;Directeur des études Licence 3 Info;Professeur
+DIEP-DAO;Thi-Bich-Hanh;bd;+33238494722;Directrice des études;M1 Info;Maître de conférences
+MOAL;Frédéric;fm;+33238494852;Directeur des études;L3 MIAGE;Maître de conférences
+BOICHUT;Yohan;yb;+33238492574;Directeur des études;M1 MIAGE;Maître de conférences
+JULIÉ-BONNET;Catherine;cjb;+33238494736;Directrice de la MIAGE;Directrice des études M2 SIR et SIMSA;Maître de conférences
+COUVREUR;Jean-Michel;jmc;+33238417010;Responsable du Master Info;;Professeur
+ROBERT;Sophie;sr;+33238417087;Directrice des études;M2 VIP;Maître de conférences
+DABROWSKI;Frédéric;fd;+33238492751;Directeur des études;M2 INIS-SSL;Maître de conférences
+EXBRAYAT;Matthieu;me;+33238417234;Directeur des études;M2 INIS-WIN;Maître de conférences
+LOULERGUE;Frédéric;fl;+33238417287;Directeur des études;Master MoCaHP;Professeur
+OLLINGER;Nicolas;no;+33238417288;Directeur des études;M2 CCI;Professeur
+EOF
+
+IFS=';'
+cat /tmp/resp.txt | while read NOM PRENOM PHOTO TEL ROLE1 Role2 GRADE; do
+cat << EOF  | sed -e "s/P_H_O_T_O/$PHOTO.jpg/g" -e "s/P_R_E_N_O_M/$PRENOM/g" -e "s/N_O_M/$NOM/g" -e "s/T_E_L/$TEL/g" -e "s/R_O_L_E_1/$ROLE1/g" -e "s/R_O_L_E_2/$ROLE2/g" -e "s/G_R_A_D_E/$GRADE/g" > Extra/Resp_${PRENOM}_${NOM}.tex
+	\begin{wrapfigure}{r}{0.35\textwidth}
+          \vspace{-20pt}
+            \begin{center}
+                \begin{tikzpicture}
+                    \node [rectangle, draw=couleurFonce, thick, drop shadow, fill=couleurBox, inner sep=10pt, inner ysep=10pt] (box) {
+                    \begin{minipage}{0.35\textwidth}%
+                        \begin{spacing}{1}
+                        \begin{tabular}[t]{@{}m{10mm}@{~~}m{30mm}@{}}
+                          \includegraphics[scale=0.6]{img/photos/P_H_O_T_O} & \normalsize{\textbf{P_R_E_N_O_M}\newline \textbf{N_O_M}}\newline \footnotesize{R_O_L_E_2} \newline \footnotesize{G_R_A_D_E}\\\\
+                          \multicolumn{2}{c}{{\scriptsize \textit{P_R_E_N_O_M.N_O_M@univ-orleans.fr}}} \\\\
+                          \multicolumn{2}{c}{\includegraphics[scale=0.7]{img/telephone.png}{\scriptsize T_E_L}}
+                        \end{tabular}
+                        \end{spacing}
+                    \end{minipage}
+                    };
+                    \node[fancytitle, right=5pt, rounded corners, inner xsep=10pt] at (box.north west) {\normalsize{R_O_L_E_1}};
+                \end{tikzpicture}
+            \end{center}
+            \vspace{-20pt}
+      \end{wrapfigure}
+
+
+
+EOF
+done

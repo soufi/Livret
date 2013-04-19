@@ -1,0 +1,85 @@
+% % % % % % % % % % % % % % ANCIEN CONTENU DANS INIT-PREAMBIULE % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+
+% Aligné à gauche, suivi d'un filet horizontal, légèrement dans la marge
+\makeatletter
+\def\section{\@ifstar\unnumberedsection\numberedsection}
+\def\numberedsection{\@ifnextchar[%]
+  \numberedsectionwithtwoarguments\numberedsectionwithoneargument}
+\def\unnumberedsection{\@ifnextchar[%]
+  \unnumberedsectionwithtwoarguments\unnumberedsectionwithoneargument}
+\def\numberedsectionwithoneargument#1{\numberedsectionwithtwoarguments[#1]{#1}}
+\def\unnumberedsectionwithoneargument#1{\unnumberedsectionwithtwoarguments[#1]{#1}}
+\def\numberedsectionwithtwoarguments[#1]#2{%
+  \begin{spacing}{1}
+  \ifhmode\par\fi
+  \removelastskip
+  \vskip 5ex\goodbreak
+  \refstepcounter{section}%
+  \hbox to \hsize{\hss\vbox{\advance\hsize by 1cm
+      \noindent
+      \leavevmode\Large\bfseries\raggedright
+      \thesection.\ 
+      \begin{tikzpicture}
+        \node[rectangle, fill=couleurClaire] {};
+      \end{tikzpicture}
+      #2\par
+      \vskip -2ex
+      \noindent\hrulefill
+      }}\nobreak
+  \vskip 2ex\nobreak
+  \addcontentsline{toc}{section}{%
+    \protect\numberline{\thesection}%
+    #1}%
+   \end{spacing}
+  }
+\def\unnumberedsectionwithtwoarguments[#1]#2{%
+  \begin{spacing}{1}
+  \ifhmode\par\fi
+  \removelastskip
+  \vskip 5ex\goodbreak
+%  \refstepcounter{section}%
+  \hbox to \hsize{\hss\vbox{\advance\hsize by 5mm
+      \noindent
+      \leavevmode\Large\bfseries\raggedright
+%      \thesection\ 
+      \begin{tikzpicture}
+        \node[rectangle, fill=couleurClaire] {};
+      \end{tikzpicture}
+      #2\par
+      \vskip -2ex
+      \noindent{\color{couleurFonce}\hrulefill}
+      }}\nobreak
+  \vskip 2ex\nobreak
+  \addcontentsline{toc}{section}{%
+%    \protect\numberline{\thesection}%
+    #1}%
+  \end{spacing}
+  }
+\makeatother
+\pagestyle{empty}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\newcommand*\chapterlabel{}
+\titleformat{\chapter}
+  {\gdef\chapterlabel{}
+   \normalfont\sffamily\Large\bfseries\scshape}
+  {\gdef\chapterlabel{\thechapter\ }}{0pt}
+  {\begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=-1.5cm] at (current page.north west)
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=couleurClaire] (0,0) rectangle
+          (\paperwidth,1.5cm);
+        \node[anchor=east,xshift=.9\paperwidth,rectangle,
+              rounded corners=20pt,inner sep=11pt,
+              fill=couleurFonce]
+              {\color{white}\chapterlabel#1};
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+  }
+\titlespacing*{\chapter}{0pt}{50pt}{-100pt}
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+
+\tikzstyle{fancytitle} =[fill=couleurFonce, text=white]

@@ -1,0 +1,20 @@
+Master Informatique : M1 tronc commun INIS et VIP
+#SEMESTRE 1
+UE 11 obligatoire|Système d’exploitation embarqué|4|4|16|20|40||1
+UE 12 obligatoire|Développement d’applications nomades|4|4|16|20|40||1
+UE 13 obligatoire|Programmation logique et par contraintes|4|4|16|20|40||1
+UE 14 obligatoire|Modélisation et vérification de systèmes concurrents|4|4|16|20|40||1
+UE 15 obligatoire|Interface homme machine|4|4|18|24|40|6|24|1
+UE 16 obligatoire|Programmation parallèle|4|4|16|20|40||1
+UE 17 obligatoire|Modélisation, graphes et algorithmes|4|4|16|20|40||1
+UE 18 obligatoire|Anglais|2|2||24|40||1
+#SEMESTRE 2
+UE 21 obligatoire|Intelligence artificielle|4|4|16|20|40||2
+UE 22 obligatoire|Réseaux : protocoles et mobilité|4|4|18|12|40|12|24|2
+UE 23 obligatoire|Algorithmique répartie|4|4|16|20|40||2
+UE 24 obligatoire|Calculabilité et complexité|4|4|16|20|40||2
+UE 25 obligatoire|Travaux d’études et de recherche et Technique de communication|4|4|12|24|||20|2
+UE 26 obligatoire|Anglais|2|2||24|||2
+UE 27 |Outils pour l’exploration de données|4|4|16|20|40||2
+UE 28 |Compilation|4|4|16|20|40||2
+UE 29|Programmation graphique|4|4|16|20|40||2

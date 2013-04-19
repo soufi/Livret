@@ -1,0 +1,538 @@
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Mise à niveau en informatique','','UE 11');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Mise à niveau en informatique','UE 11','1','0','15','0','1','1','
+  Français
+','
+	- Savoir écrire des programmes C qui manipulent des pointeurs, en particulier pour utiliser MPI dans le module "Programmation parallèle".
+	- Avoir les bases pour analyser la complexité d\'algorithmes séquentiels pour pouvoir dans le même module analyser des algorithmes parallèles.
+','
+	  - programmation impérative en C : constructions de base du langage C
+	  - programmation impérative en C : gestion de la mémoire
+	  - programmation impérative en C : pratique avec gcc, make et gdb
+	  - analyse des algorithmes : complexités asymptotiques, tris, strassen
+	  - introduction à la programmation en C++ 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+Notions de programmation impérative et objet en Java
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Mise à niveau en mathématique','','UE 11');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Mise à niveau en mathématique','UE 11','1','15','0','0','1','1','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Système et réseaux','','UE 12');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Système et réseaux','UE 12','6','20','30','0','6','6','
+  Français
+','
+	- Utilisation et administration de systèmes d\'exploitation 
+	- Principes et pratique des réseaux locaux informatiques
+','
+	  - Architecture de systèmes d\'exploitation
+	  - Utilisation d\'Unix
+	  - Administration Unix et windows
+	  - Architecture des réseaux : structure en couches, protocoles, services
+	  - Réseaux locaux sous UDP-TCP/IP, Ethernet
+	  - Protocoles de routage : RIP, OSPF, BGP
+	  - Principaux protocoles Internet : DNS (annuaire de noms de domaines) SMTP (mail), FTP (transfert de fichiers), HTTP (web) ... 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+Module de remise à niveau
+','1');
+Nicolas OLLINGER
+Nicolas.OLLINGER@univ-orleans.fr
+Sophie ROBERT
+Sophie.ROBERT@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Mathématiques','','UE 12');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Mathématiques','UE 12','6','35','0','0','6','6','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Anglais','','UE 13');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Anglais','UE 13','0','24','0','0','2','2','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Signal, filtrage, EDP (Théorie et pratique)','','UE 14');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Signal, filtrage, EDP (Théorie et pratique)','UE 14','7','30','0','0','7','7','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+	  - Filtres-systèmes.
+	  - Analyse spectrale des signaux analogiques.
+	  - Analyse spectrale des signaux numériques ( TFD, FFT).
+	  - Spectrogramme.
+	  - Echantillonnage - Théorème de Shannon - Analyse temps-fréquence.
+	  - Transformation  de Laplace - Transformée en z.
+	  - Filtres idéaux -réels - Fonctions de transfert - Filtres différentiels.
+	  - Filtres à réponse impulsionnelle finie  (RIF).
+	  - Application au signal sonore.
+	  - Méthodes des EDP.
+	  - Mise en \oe uvre numérique (Scilab). 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Génie logiciel pour le calcul haute performance','','UE 15');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Génie logiciel pour le calcul haute performance','UE 15','4','20','0','0','4','4','
+  Français
+','
+	- A l\'issue de cette UE les étudiants devront être capables de participer à un développement logiciel rigoureux dans le cadre spécifique d\'applications de calcul haute performance. 
+	
+','
+	  -  Introduction au génie logiciel
+	  -  Tests unitaires, de programmes séquentiels, de programmes parallèles
+	  -  Débogage de programmes séquentiels, parallèles
+	  -  Profilage pour les performances de programmes séquentiels, parallèles 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+Programmation impérative
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Modélisation, graphes et algorithmes','','UE 16');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Modélisation, graphes et algorithmes','UE 16','4','20','0','0','4','4','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Programmation parallèle','','UE 17');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Programmation parallèle','UE 17','4','20','0','0','4','4','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Langages de scripts','','UE 18');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Langages de scripts','UE 18','2','10','0','0','2','2','
+  Français
+','
+	- A l\'issue de cette UE les étudiants devront être capables de prendre en main rapidement de nouveaux langages de scripts et devront être opérationnels dans l\'utilisation du langage présenté dans l\'UE pour le prototypage d\'applications de calcul haute performance. 
+	
+','
+Les applications de calcul scientifique et de simulations font très souvent appel à des bibliothèques ou même des applications complètes qui sont réutilisées. Dans ce contexte l\'interfaçage pour manier plusieurs bibliothèques ou applications peut s\'écrire à l\'aide de langages de scripts. Certains langages peuvent même être utilisés comme langages de prototypage rapide d\'applications de calcul haute performance, ou comme langage de développement rapide avec des performances acceptables pour des programmes ne devant s\'exécuter qu\'une seule fois ou peu de fois. Cette UE présentera un tel langage de scripts et pour ces utilisations. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+Programmation impérative et objet
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Algorithmique répartie','','UE 21');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Algorithmique répartie','UE 21','4','20','0','0','4','4','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Analyse de données et méthodes de simulation','','UE 22');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Analyse de données et méthodes de simulation','UE 22','5','30','0','0','5','5','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+	  - Rappels sur l\'Analyse en Composantes Principales (ACP); Analyse Factorielle des Correspondances (AFC). Analyse des Correspondances Multiples (ACM), méthodes de Classification (hiérarchique et non hiérarchique), Analyse Discriminante. Applications à des jeux de données exemples (sous SAS et R).
+	  - Méthodes de simulation: Simulation de variables aléatoires iid; méthodes d\'inversion, acceptation-rejet, polaire. 
+	  - Méthodes de Monte-Carlo; usage de la Loi des grands Nombres et du Théorème de Limite Centrale;  calcul d\'intégrales, réduction de variance; simulation de systèmes complexes. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Calculabilité et complexité','','UE 23');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Calculabilité et complexité','UE 23','4','20','0','0','4','4','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'EDP, modélisation, analyse et simulations numériques','','UE 24');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'EDP, modélisation, analyse et simulations numériques','UE 24','5','30','0','0','5','5','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+	  - Modélisation : de  la description des phénomènes aux équations qui les régissent (Equations de bilan, adimensionnement,...). Exemples simples (masse-ressort etc...)
+	  - Calcul des variations, équations d\'Euler-Lagrange. Equations d\'ordre 2 de la mécanique.
+	  - Équations linéaires : introduction aux méthodes variationnelles, éléments finis.
+	  - Equations non linéaires, Hamilton-Jacobi, systèmes hyperboliques de lois de conservation, équations cinétiques. Méthodes numériques spécifiques. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Programmation graphique','','UE 25');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Programmation graphique','UE 25','2','10','0','0','2','2','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Travaux d\'étude et de recherche et techniques de communication','','UE 26');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Travaux d\'étude et de recherche et techniques de communication','UE 26','4','24','0','0','4','4','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Anglais','','UE 27');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Anglais','UE 27','0','24','0','0','2','2','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Stage (8 semaines minimum) ','','UE 28');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Stage (8 semaines minimum) ','UE 28','0','0','0','0','4','4','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'','','');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'','','0','0','0','0','0','0','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Anglais - Communication','','UE 31');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Anglais - Communication','UE 31','0','24','0','0','2','2','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Simulation de stratégie d\'entreprise ','','UE 32');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Simulation de stratégie d\'entreprise ','UE 32','0','24','0','0','2','2','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Automates cellulaires et réseaux d\'interactions','','UE 33 ');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Automates cellulaires et réseaux d\'interactions','UE 33 ','2','10','0','0','2','2','
+  Français
+','
+	- 
+	Meilleure compréhension des modèles utilisés. 
+	
+','
+Ce module s\'intéresse à deux modèles en eux même et non comme outils de modélisation. Le but est de comprendre les fonctionnement des modèles, leur propriétés et leurs limites.
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Modélisation, calcul scientifique, outils numériques','','UE 34 ');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Modélisation, calcul scientifique, outils numériques','UE 34 ','6','27','0','0','6','6','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+Méthodes de résolution d\'équations. Recherche de zéros. Mise en oeuvre numérique.
+Intégration numérique et méthodes de quadrature (rectangle, Heun, Simpson, etc). Calculs d\'erreurs. Mise en oeuvre numérique.
+Résolution numérique de systèmes différentiels (méthodes explicites, implicites, à un pas, multipas). Calculs d\'erreurs. Méthodes prédictives. Mise en oeuvre numérique.
+Discrétisation d\'équations aux dérivées partielles venant de la physique (par exemple équation de la chaleur, élasticité) par différences finies et éléments finis. Mise en oeuvre numérique.
+Programmation des méthodes en Scilab, Matlab, et/ou C++. 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Pratiques des contraintes','','UE 35 ');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Pratiques des contraintes','UE 35 ','4','15','0','0','4','4','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Processus aléatoires, modélisation et simulations','','UE 36 ');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Processus aléatoires, modélisation et simulations','UE 36 ','4','20','0','0','4','4','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+Processus de comptage, de Poisson, de renouvellement.
+Files d\'attente, réseaux de files d\'attente.
+Méthodes de Monte-Carlo, simulation de v.a., calcul d\'intégrales, réduction de variance, simulation par chaînes de Markov à espace d\'états discrets ou continus, algorithme de Metropolis, applications (MCMC). 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Sécurité et protocoles','','UE 37 ');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Sécurité et protocoles','UE 37 ','4','20','0','0','4','4','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Projet 1','','UE 38 ');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Projet 1','UE 38 ','0','0','0','0','6','6','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Initiation à la recherche','','UE 39');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Initiation à la recherche','UE 39','7','0','0','0','7','7','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'','','');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'','','0','0','0','0','0','0','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Programmation multi-coeurs ','','UE 40');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Programmation multi-coeurs ','UE 40','3','15','0','0','3','3','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Recherche opérationnelle','','UE 41');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Recherche opérationnelle','UE 41','3','20','0','0','3','3','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+Optimisation discrète 
+Programmation linéaire (continue); Formulations canoniques; Structure de l\'ensemble admissible; Existence de solutions et conditions d\'optimalité
+Dualité (théorie et théorèmes) 
+Algorithme du simplexe (Dantzig); Algorithmes dual et primal-dual; Généralisation (gradient réduit) 
+Autres méthodes
+Fonctions barrières et méthodes de points intérieurs; Complexité et comparaison formelle avec la méthode du simplexe; Cas des problèmes de grande taille; 
+Techniques de décomposition (généralités); Méthodes de Dantzig-Wolf, Benders, Spingarn (inverse partiel); Méthode de génération de colonnes  
+Programmation linéaire en nombres entiers
+Exemples de problèmes; Méthodes de coupes (Gomory); Séparation et Evaluation; Algorithmes approchés.
+Théorie des graphes et Recherche opérationnelle
+Généralités, Connexité, Orientation, Flots et tensions; Problème du plus court chemin, flots simples sans contraintes; Flots et multiflots (transport , télécommunications);  Problèmes d\'Ordonnancement; Problèmes d\'Affectation 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Visualisation avancée ','','UE 42');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Visualisation avancée ','UE 42','3','15','0','0','3','3','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Aide à la décision et Data-mining','','UE 43');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'1');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Aide à la décision et Data-mining','UE 43','3','18','0','0','3','3','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+On abordera les différentes tâches classiques que sont lapprentissage supervisé et non supervisé (classification non supervisée et recherche de règles dassociation) au travers différentes méthodes et différents modèles de représentation.
+Apprentissage : Historique. Arbres et Forêts de décision : CART, RandomForest, Bagging, Boosting
+Aspects statistiques. Représentations graphiques (réseaux bayésiens et modèles de Markov). SVM Réseaux de neurones. Classification non supervisée.
+Fouille de données : Correspondance et treillis de Galois. Ensembles fermés, maximaux, fréquents.
+Algorithmes A priori et variantes, Spade, CloseSpan. Flots de données.
+Mini projet  
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+Module analyse de Données
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Interventions d\'industriels','','UE 44 ');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Interventions d\'industriels','UE 44 ','1','0','0','0','1','1','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Projet 2 ','','UE 45');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Projet 2 ','UE 45','0','0','0','0','5','5','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Préparation au stage recherche','','UE 46');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Préparation au stage recherche','UE 46','0','0','0','0','6','6','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr
+insert into livret_matiere (_ID_MAT_ , _ID_PROMO_ , _NOM_MAT_ , _ABBR_MAT_ , _CODE_APOG_MAT_) values(NULL,(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Stage','','UE 47');
+insert into livret_pre_requis (_ID_MOD_FILS_,_ID_MOD_PERE_) values((select MAX(_ID_MAT_) from livret_matiere),'0');
+insert into livret_module (_ID_MOD_,_ID_MAT_ ,_ID_PROMO_,_NOM_MOD_ , _CODE_APOG_MOD_,_NBH_C_,_NBH_TD_,_NBH_TP_,_NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_,_METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_, _CALCUL_NF_1_,_CALCUL_NF_2_,_LIEN_RESSOURCE_,_BIBLIOGRAPHIE_,_NOTE_ELIM_,_PREREQUIS_,_ID_UE_) values((select MAX(_ID_MAT_) from livret_matiere),(select MAX(_ID_MAT_) from livret_matiere),(select _ID_PROMO_ from livret_promotion where _NOM_PROMO_ = 'm_MoCaHP'),'Stage','UE 47','0','0','0','0','12','12','
+  Français
+','
+	- Objectif 
+	- Objectif
+','
+DESCRIPTION-CONTENU 
+','Contrôle continue et terminal','CC et CT','CT','$\frac{(CC+2*CT)}{3}$','CT','Ressources','Biblio','7','
+','1');
+Prénom NOM
+Prenom.NOM@univ-orleans.fr

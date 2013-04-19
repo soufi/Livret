@@ -1,0 +1,19 @@
+Master MIAGE : M2 spécialité SIMSA
+#SEMESTRE 3
+|Architectures applicatives réparties  |4|4|20||20|10
+|Extraction de connaissances dans les BD |4|4|20||20|10
+|Gestion de projet et qualité|4|4|20||20|10
+|Gestion des ressources humaines|2|2|10||20|
+|Anglais professionnel|3|3|||24|
+|Projet industriel|3|3|10|||
+|Introduction aux Métiers du Social et de l'Assurance|2|2|30|||
+|SI de l'Assurance|4|4|30||10|
+|SI de la Retraite|4|4|30||10|
+#SEMESTRE 4
+|Web Services et interopérabilité|3|3|15||15|10
+|Management des SI|3|3|30||10|
+|Stratégie commerciale autour de l’Internet|3|3|20||10|
+|Projet industriel|3|3|10|||
+|Stage professionnel (6 mois)|12|12||||
+|Intégration de SI|3|3|30||10|
+|SI Assurance de personnes|3|3|30||10|

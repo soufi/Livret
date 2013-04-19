@@ -1,0 +1,8 @@
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+

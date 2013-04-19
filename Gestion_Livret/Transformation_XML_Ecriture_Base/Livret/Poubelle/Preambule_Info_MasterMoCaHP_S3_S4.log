@@ -1,0 +1,45 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.7.19)  4 MAY 2012 09:32
+entering extended mode
+ %&-line parsing enabled.
+**Preambule_Info_MasterMoCaHP_S3_S4.tex
+(./Preambule_Info_MasterMoCaHP_S3_S4.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, french, basque, loaded.
+)
+*q^^[[3~
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+<*> q
+     ^^[[3~
+? q
+OK, entering \batchmode...
+Missing character: There is no q in font nullfont!
+! Text line contains an invalid character.
+<*> q^^[
+        [3~
+A funny symbol that I can't read has just been input.
+Continue, and I'll forget that it ever happened.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no 3 in font nullfont!
+! Emergency stop.
+<*> q^^[[3~
+           
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 5 strings out of 495028
+ 237 string characters out of 1181229
+ 45133 words of memory out of 3000000
+ 3291 multiletter control sequences out of 15000+50000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 5i,0n,4p,9b,14s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

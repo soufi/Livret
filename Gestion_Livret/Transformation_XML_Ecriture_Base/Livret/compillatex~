@@ -1,0 +1,29 @@
+#!/bin/bash
+
+cat << EOF > xxx.tex
+\documentclass[10pt, a5paper]{report}
+
+\usepackage[T1]{fontenc}%
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}% encodage utf8
+\usepackage[francais]{babel}% texte franais
+\usepackage[final]{pdfpages}
+\usepackage{modules-livret}% style du livret
+\usepackage{url}
+%\usepackage{init-preambule}
+\pagestyle{empty}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\begin{document}
+EOF
+
+cat $1 >> xxx.tex
+
+cat << EOF >> xxx.tex
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\end{document}
+EOF
+
+pdflatex -interaction=nonstopmode xxx.tex
+exit 0
+

@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Programme : MIAGE d'Orléans</title>
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<link rel="stylesheet" href="style.css" />
+<!-- scripts at bottom of page -->
+</head>
+<body class="demos ">
+	<section id="content">
+<h1>Programme de la formation MIAGE d'Orléans - Habilitation 2012/2017</h1>
+<section id="copy">
+<p>
+Voici le programme complet sur les 3 années, en Licence et Master MIAGE. Il est
+possible de filtrer l'ensemble des modules par année (L3, M1, M2) mais aussi
+par thématique. Un clic sur un module permet d'afficher son contenu détaillé.
+</p>
+</section>
+<section id="options" class="clearfix">
+	<div class="option-combo">
+<h3>Sélection des modules par niveau de formation :</h3>
+<ul class="filter option-set clearfix" data-filter-group="niveau">
+<li><a href="#filter" data-filter-value="" class="selected">Tous</a></li>
+<li><a href="#filter" data-filter-value=".m2_CCI">m2_CCI</a></li></ul>
+</div>
+<div class="option-combo">
+<h3>Sélection des modules par thématique :</h3>
+<ul class="filter option-set clearfix" data-filter-group="domaine">
+<li><a href="#filter" data-filter-value="" class="selected">Tout</a></li>
+<li><a class="Informatique" href="#filter" data-filter-value=".Informatique">Informatique</a></li>
+<li><a class="Maths" href="#filter" data-filter-value=".Maths">Maths</a></li>
+<li><a class="Sciences_éco-humaine" href="#filter" data-filter-value=".Sciences_éco-humaine">Sciences éco-humaine</a></li>
+<li><a class="Ang_et_Tech_de_co" href="#filter" data-filter-value=".Ang_et_Tech_de_co">Ang et Tech de co</a></li>
+<li><a class="Architecture_logicie" href="#filter" data-filter-value=".Architecture_logicie">Architecture logicie</a></li>
+<li><a class="" href="#filter" data-filter-value="."></a></li></ul>
+</div>
+</section>
+<div id="container" class="super-list clickable clearfix">
+
+
+
+
+<div class="element feature m2_CCI Informatique Maths Sciences_éco-humaine Ang_et_Tech_de_co Architecture_logicie ">
+<h3 class="symbol">m2</h3>
+<h2 class="weight">m2_CCI</h2>
+</div>
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">0ECTS</p>
+<p class="weight">8h</p>
+<h2 class="name">Initiation</h2>
+<div class="detail cache">
+<p>	  - Fondements de l'informatique : codage des données, traitements, structure générale d'un ordinateur	  - Utilisation des systèmes d'exploitation de type Unix.	  - Outils logiciels bureautique et internet. </p>
+<p><b>Volume horaire :</b> 8h TP </p>
+<p><b>Objectifs :</b>	  - Remettre à un même niveau de base tous les étudiants et les familiariser avec le fonctionnement des ordinateurs et les outils informatiques usuels.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">6ECTS</p>
+<p class="weight">56h</p>
+<h2 class="name">Bases de données</h2>
+<div class="detail cache">
+<p>	  - Structure fonctionnelle et Architecture d'un SGBD.	  - Problématique de la modélisation logique des données.	  - Modèle relationnel, Langage SQL.	  - Interrogation de données du modèle relationnel. </p>
+<p><b>Volume horaire :</b> 6h Cours 25h TD 25h TP </p>
+<p><b>Objectifs :</b>	  - Donner aux étudiants les grandes lignes des diverses fonctionnalités d'un SGBD relationnel.   	  - Introduire les techniques de modélisation de données.  	  - Apprendre et maîtriser le langage de manipulation et d'interrogation de bases de données : SQL.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">28h</p>
+<h2 class="name">Systèmes</h2>
+<div class="detail cache">
+<p>	  - Architecture de systèmes d'exploitation.	  - Utilisation d'Unix.	  - Administration Unix. </p>
+<p><b>Volume horaire :</b> 3h Cours 10h TD 15h TP </p>
+<p><b>Objectifs :</b>	  - Utilisation et administration de systèmes d'exploitation.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">28h</p>
+<h2 class="name">Réseaux</h2>
+<div class="detail cache">
+<p>	  - Architecture des réseaux : structure en couches, protocoles, services.	  - Réseaux locaux sous UDP-TCP/IP, Ethernet.	  - Protocoles de routage : RIP, OSPF, BGP.	  - Principaux protocoles Internet : DNS (annuaire de noms de domaines) SMTP (mail), FTP (transfert de fichiers), HTTP (web) ... </p>
+<p><b>Volume horaire :</b> 3h Cours 10h TD 15h TP </p>
+<p><b>Objectifs :</b>	  - Principes et pratique des réseaux locaux informatiques.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">6ECTS</p>
+<p class="weight">56h</p>
+<h2 class="name">Programmation objet 1</h2>
+<div class="detail cache">
+<p>	  - Introduction à la programmation, algorithmes de base	  - Programmation objet: classe, objet, état, méthode, communication entre objets.	  - Récurrence. 	  - Tableaux, Tris.	  - Interfaces.	  - Héritage.	  - Exceptions.	  - Entrées/sorties.	  - Introduction à la notation UML. </p>
+<p><b>Volume horaire :</b> 6h Cours 25h TD 25h TP </p>
+<p><b>Objectifs :</b>	  - Introduction à la programmation objet dans un langage impératif. 	  - Mise en oeuvre d'algorithmes dans ce langage. </p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">0h</p>
+<h2 class="name">Projet 1</h2>
+<div class="detail cache">
+<p>Réalisation d'une applications mettant en oeuvre les notions vues dans les modules Algorithmique, Programmation objet 1, Bases de données, Systèmes et Réseaux. </p>
+<p><b>Volume horaire :</b> </p>
+<p><b>Objectifs :</b>	  - Mise en oeuvre dans un exemple d'application réaliste des concepts vus dans les modules informatique de la période considérée.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">24h</p>
+<h2 class="name">Simulation de  gestion d'entreprise</h2>
+<div class="detail cache">
+<p>Simulation visant à amener les groupes (chacun représentant une entreprise en concurrence avec les autres), après avoir formalisé une stratégie, à prendre des décisions d'ordre commercial, de production, d'investissement et de financement. Dans ce cadre, ils mettent en oe uvre la plupart des outils financiers et prévisionnels connus. </p>
+<p><b>Volume horaire :</b> 24h TD </p>
+<p><b>Objectifs :</b>	  - Au terme de cette simulation, les étudiants doivent pouvoir gérer le temps, travailler en groupe, gérer les conflits, ... 	  - Connaitre le monde de l'entreprise.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">20h</p>
+<h2 class="name">Anglais</h2>
+<div class="detail cache">
+<p>Etude des techniques de présentation orale : amélioration de la prononciation, organisation du discours, guidage de l'auditoire, élaboration d'aides visuelles. </p>
+<p><b>Volume horaire :</b> 20h TD </p>
+<p><b>Objectifs :</b>	  - S'exprimer couramment et efficacement dans une langue riche, souple et nuancée dans le domaine de la spécialité, exposer son opinion de manière claire, détaillée et structurée.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">5ECTS</p>
+<p class="weight">53h</p>
+<h2 class="name">Applications internet</h2>
+<div class="detail cache">
+<p>	  - Les langages HTML, XHTML, feuilles de style CSS.	  - Applications réparties : le modèle client/serveur.	  - Langages pour les pages web dynamiques : PHP, MySQL	  - XML. </p>
+<p><b>Volume horaire :</b> 5h Cours 24h TD 24h TP </p>
+<p><b>Objectifs :</b>	  - Développer et maintenir des sites et applications intra/internet.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">5ECTS</p>
+<p class="weight">53h</p>
+<h2 class="name">Génie logiciel</h2>
+<div class="detail cache">
+<p>	  - Modélisation UML : diagrammes de classes, de séquences, d'états-transition et de cas d'utilisation.	  - Pratique d'un atelier de génie logiciel.	  - Méthodologie d'analyse et de conception objet.	  - Introduction aux patrons de conception (design patterns).	  - Introduction à la gestion de projets.</p>
+<p><b>Volume horaire :</b> 5h Cours 24h TD 24h TP </p>
+<p><b>Objectifs :</b>	  - Acquisition des connaissances de bases d'UML, d'une méthodologie permettant d'analyser un problème, d'en réaliser la modélisation, puis d'élaborer une mise en oeuvre sous forme d'une application informatique. 	  - Connaissance des notions de la gestion de projets. </p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">5ECTS</p>
+<p class="weight">53h</p>
+<h2 class="name">Programmation objet 2</h2>
+<div class="detail cache">
+<p>	  - Généricité.	  - Classes internes.	  - Implantation de structures de données.	  - Collections des bibliothèques standards.	  - Programmation événementielle.	  - Interface graphique. </p>
+<p><b>Volume horaire :</b> 5h Cours 24h TD 24h TP </p>
+<p><b>Objectifs :</b>	  - Savoir développer une application avec un langage orienté objet utilisant des structures de données récursives, interface graphique et interface avec une base de donnée.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">5ECTS</p>
+<p class="weight">0h</p>
+<h2 class="name">Projet 2</h2>
+<div class="detail cache">
+<p>Développer une application web en mettant en oe uvre les concepts appris en génie logiciel et applications internet. </p>
+<p><b>Volume horaire :</b> </p>
+<p><b>Objectifs :</b>	  - Mise en oeuvre dans un exemple d'application réaliste des concepts vus dans les modules informatique de la période considérée.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">10ECTS</p>
+<p class="weight">10h</p>
+<h2 class="name">Stage</h2>
+<div class="detail cache">
+<p>Stage de 4 à 6 mois consécutifs dans une entreprise, suivi par un enseignant et donnant lieu à la rédaction d'un mémoire puis d'une soutenance en présence d'un jury mixte d'enseignants et de responsables de l'entreprise.\Le sujet est variable selon le stage. </p>
+<p><b>Volume horaire :</b> 10h Cours </p>
+<p><b>Objectifs :</b>	  - Permettre d'une part de mettre en pratique les enseignements dispensés pendant l'année et d'autre part de familiariser 	  les étudiants avec la vie professionnelle afin de permettre leur insertion.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">0ECTS</p>
+<p class="weight">8h</p>
+<h2 class="name">Initiation</h2>
+<div class="detail cache">
+<p>	  - Fondements de l'informatique : codage des données, traitements, structure générale d'un ordinateur	  - Utilisation des systèmes d'exploitation de type Unix.	  - Outils logiciels bureautique et internet. </p>
+<p><b>Volume horaire :</b> 8h TP </p>
+<p><b>Objectifs :</b>	  - Remettre à un même niveau de base tous les étudiants et les familiariser avec le fonctionnement des ordinateurs et les outils informatiques usuels.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">18h</p>
+<h2 class="name">Algorithmique</h2>
+<div class="detail cache">
+<p>	  - Notions : variables, affectation, conditionnelle, itération, récursion.	  - Algorithmes simples sur les tableaux.	  - Algorithmes de tri. </p>
+<p><b>Volume horaire :</b> 3h Cours 15h TD </p>
+<p><b>Objectifs :</b>	  - Comprendre le fonctionnement d'un algorithme donné.	  - Concevoir des algorithmes pour un problème simple donné.	  - Savoir utiliser des structures de données.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">6ECTS</p>
+<p class="weight">56h</p>
+<h2 class="name">Bases de données</h2>
+<div class="detail cache">
+<p>	  - Structure fonctionnelle et Architecture d'un SGBD.	  - Problématique de la modélisation logique des données.	  - Modèle relationnel, Langage SQL.	  - Interrogation de données du modèle relationnel. </p>
+<p><b>Volume horaire :</b> 6h Cours 25h TD 25h TP </p>
+<p><b>Objectifs :</b>	  - Donner aux étudiants les grandes lignes des diverses fonctionnalités d'un SGBD relationnel.   	  - Introduire les techniques de modélisation de données.  	  - Apprendre et maîtriser le langage de manipulation et d'interrogation de bases de données : SQL.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">28h</p>
+<h2 class="name">Systèmes</h2>
+<div class="detail cache">
+<p>	  - Architecture de systèmes d'exploitation.	  - Utilisation d'Unix.	  - Administration Unix. </p>
+<p><b>Volume horaire :</b> 3h Cours 10h TD 15h TP </p>
+<p><b>Objectifs :</b>	  - Utilisation et administration de systèmes d'exploitation.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">28h</p>
+<h2 class="name">Réseaux</h2>
+<div class="detail cache">
+<p>	  - Architecture des réseaux : structure en couches, protocoles, services.	  - Réseaux locaux sous UDP-TCP/IP, Ethernet.	  - Protocoles de routage : RIP, OSPF, BGP.	  - Principaux protocoles Internet : DNS (annuaire de noms de domaines) SMTP (mail), FTP (transfert de fichiers), HTTP (web) ... </p>
+<p><b>Volume horaire :</b> 3h Cours 10h TD 15h TP </p>
+<p><b>Objectifs :</b>	  - Principes et pratique des réseaux locaux informatiques.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">6ECTS</p>
+<p class="weight">56h</p>
+<h2 class="name">Programmation objet 1</h2>
+<div class="detail cache">
+<p>	  - Introduction à la programmation, algorithmes de base	  - Programmation objet: classe, objet, état, méthode, communication entre objets.	  - Récurrence. 	  - Tableaux, Tris.	  - Interfaces.	  - Héritage.	  - Exceptions.	  - Entrées/sorties.	  - Introduction à la notation UML. </p>
+<p><b>Volume horaire :</b> 6h Cours 25h TD 25h TP </p>
+<p><b>Objectifs :</b>	  - Introduction à la programmation objet dans un langage impératif. 	  - Mise en oeuvre d'algorithmes dans ce langage. </p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">0h</p>
+<h2 class="name">Projet 1</h2>
+<div class="detail cache">
+<p>Réalisation d'une applications mettant en oeuvre les notions vues dans les modules Algorithmique, Programmation objet 1, Bases de données, Systèmes et Réseaux. </p>
+<p><b>Volume horaire :</b> </p>
+<p><b>Objectifs :</b>	  - Mise en oeuvre dans un exemple d'application réaliste des concepts vus dans les modules informatique de la période considérée.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">24h</p>
+<h2 class="name">Simulation de  gestion d'entreprise</h2>
+<div class="detail cache">
+<p>Simulation visant à amener les groupes (chacun représentant une entreprise en concurrence avec les autres), après avoir formalisé une stratégie, à prendre des décisions d'ordre commercial, de production, d'investissement et de financement. Dans ce cadre, ils mettent en oe uvre la plupart des outils financiers et prévisionnels connus. </p>
+<p><b>Volume horaire :</b> 24h TD </p>
+<p><b>Objectifs :</b>	  - Au terme de cette simulation, les étudiants doivent pouvoir gérer le temps, travailler en groupe, gérer les conflits, ... 	  - Connaitre le monde de l'entreprise.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">20h</p>
+<h2 class="name">Anglais</h2>
+<div class="detail cache">
+<p>Etude des techniques de présentation orale : amélioration de la prononciation, organisation du discours, guidage de l'auditoire, élaboration d'aides visuelles. </p>
+<p><b>Volume horaire :</b> 20h TD </p>
+<p><b>Objectifs :</b>	  - S'exprimer couramment et efficacement dans une langue riche, souple et nuancée dans le domaine de la spécialité, exposer son opinion de manière claire, détaillée et structurée.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">5ECTS</p>
+<p class="weight">53h</p>
+<h2 class="name">Applications internet</h2>
+<div class="detail cache">
+<p>	  - Les langages HTML, XHTML, feuilles de style CSS.	  - Applications réparties : le modèle client/serveur.	  - Langages pour les pages web dynamiques : PHP, MySQL	  - XML. </p>
+<p><b>Volume horaire :</b> 5h Cours 24h TD 24h TP </p>
+<p><b>Objectifs :</b>	  - Développer et maintenir des sites et applications intra/internet.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">5ECTS</p>
+<p class="weight">53h</p>
+<h2 class="name">Génie logiciel</h2>
+<div class="detail cache">
+<p>	  - Modélisation UML : diagrammes de classes, de séquences, d'états-transition et de cas d'utilisation.	  - Pratique d'un atelier de génie logiciel.	  - Méthodologie d'analyse et de conception objet.	  - Introduction aux patrons de conception (design patterns).	  - Introduction à la gestion de projets.</p>
+<p><b>Volume horaire :</b> 5h Cours 24h TD 24h TP </p>
+<p><b>Objectifs :</b>	  - Acquisition des connaissances de bases d'UML, d'une méthodologie permettant d'analyser un problème, d'en réaliser la modélisation, puis d'élaborer une mise en oeuvre sous forme d'une application informatique. 	  - Connaissance des notions de la gestion de projets. </p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">5ECTS</p>
+<p class="weight">53h</p>
+<h2 class="name">Programmation objet 2</h2>
+<div class="detail cache">
+<p>	  - Généricité.	  - Classes internes.	  - Implantation de structures de données.	  - Collections des bibliothèques standards.	  - Programmation événementielle.	  - Interface graphique. </p>
+<p><b>Volume horaire :</b> 5h Cours 24h TD 24h TP </p>
+<p><b>Objectifs :</b>	  - Savoir développer une application avec un langage orienté objet utilisant des structures de données récursives, interface graphique et interface avec une base de donnée.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">5ECTS</p>
+<p class="weight">0h</p>
+<h2 class="name">Projet 2</h2>
+<div class="detail cache">
+<p>Développer une application web en mettant en oe uvre les concepts appris en génie logiciel et applications internet. </p>
+<p><b>Volume horaire :</b> </p>
+<p><b>Objectifs :</b>	  - Mise en oeuvre dans un exemple d'application réaliste des concepts vus dans les modules informatique de la période considérée.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">10ECTS</p>
+<p class="weight">10h</p>
+<h2 class="name">Stage</h2>
+<div class="detail cache">
+<p>Stage de 4 à 6 mois consécutifs dans une entreprise, suivi par un enseignant et donnant lieu à la rédaction d'un mémoire puis d'une soutenance en présence d'un jury mixte d'enseignants et de responsables de l'entreprise.\Le sujet est variable selon le stage. </p>
+<p><b>Volume horaire :</b> 10h Cours </p>
+<p><b>Objectifs :</b>	  - Permettre d'une part de mettre en pratique les enseignements dispensés pendant l'année et d'autre part de familiariser 	  les étudiants avec la vie professionnelle afin de permettre leur insertion.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">0ECTS</p>
+<p class="weight">8h</p>
+<h2 class="name">Initiation</h2>
+<div class="detail cache">
+<p>	  - Fondements de l'informatique : codage des données, traitements, structure générale d'un ordinateur	  - Utilisation des systèmes d'exploitation de type Unix.	  - Outils logiciels bureautique et internet. </p>
+<p><b>Volume horaire :</b> 8h TP </p>
+<p><b>Objectifs :</b>	  - Remettre à un même niveau de base tous les étudiants et les familiariser avec le fonctionnement des ordinateurs et les outils informatiques usuels.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">18h</p>
+<h2 class="name">Algorithmique</h2>
+<div class="detail cache">
+<p>	  - Notions : variables, affectation, conditionnelle, itération, récursion.	  - Algorithmes simples sur les tableaux.	  - Algorithmes de tri. </p>
+<p><b>Volume horaire :</b> 3h Cours 15h TD </p>
+<p><b>Objectifs :</b>	  - Comprendre le fonctionnement d'un algorithme donné.	  - Concevoir des algorithmes pour un problème simple donné.	  - Savoir utiliser des structures de données.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">6ECTS</p>
+<p class="weight">56h</p>
+<h2 class="name">Bases de données</h2>
+<div class="detail cache">
+<p>	  - Structure fonctionnelle et Architecture d'un SGBD.	  - Problématique de la modélisation logique des données.	  - Modèle relationnel, Langage SQL.	  - Interrogation de données du modèle relationnel. </p>
+<p><b>Volume horaire :</b> 6h Cours 25h TD 25h TP </p>
+<p><b>Objectifs :</b>	  - Donner aux étudiants les grandes lignes des diverses fonctionnalités d'un SGBD relationnel.   	  - Introduire les techniques de modélisation de données.  	  - Apprendre et maîtriser le langage de manipulation et d'interrogation de bases de données : SQL.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">28h</p>
+<h2 class="name">Systèmes</h2>
+<div class="detail cache">
+<p>	  - Architecture de systèmes d'exploitation.	  - Utilisation d'Unix.	  - Administration Unix. </p>
+<p><b>Volume horaire :</b> 3h Cours 10h TD 15h TP </p>
+<p><b>Objectifs :</b>	  - Utilisation et administration de systèmes d'exploitation.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">28h</p>
+<h2 class="name">Réseaux</h2>
+<div class="detail cache">
+<p>	  - Architecture des réseaux : structure en couches, protocoles, services.	  - Réseaux locaux sous UDP-TCP/IP, Ethernet.	  - Protocoles de routage : RIP, OSPF, BGP.	  - Principaux protocoles Internet : DNS (annuaire de noms de domaines) SMTP (mail), FTP (transfert de fichiers), HTTP (web) ... </p>
+<p><b>Volume horaire :</b> 3h Cours 10h TD 15h TP </p>
+<p><b>Objectifs :</b>	  - Principes et pratique des réseaux locaux informatiques.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">6ECTS</p>
+<p class="weight">56h</p>
+<h2 class="name">Programmation objet 1</h2>
+<div class="detail cache">
+<p>	  - Introduction à la programmation, algorithmes de base	  - Programmation objet: classe, objet, état, méthode, communication entre objets.	  - Récurrence. 	  - Tableaux, Tris.	  - Interfaces.	  - Héritage.	  - Exceptions.	  - Entrées/sorties.	  - Introduction à la notation UML. </p>
+<p><b>Volume horaire :</b> 6h Cours 25h TD 25h TP </p>
+<p><b>Objectifs :</b>	  - Introduction à la programmation objet dans un langage impératif. 	  - Mise en oeuvre d'algorithmes dans ce langage. </p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">0h</p>
+<h2 class="name">Projet 1</h2>
+<div class="detail cache">
+<p>Réalisation d'une applications mettant en oeuvre les notions vues dans les modules Algorithmique, Programmation objet 1, Bases de données, Systèmes et Réseaux. </p>
+<p><b>Volume horaire :</b> </p>
+<p><b>Objectifs :</b>	  - Mise en oeuvre dans un exemple d'application réaliste des concepts vus dans les modules informatique de la période considérée.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">24h</p>
+<h2 class="name">Simulation de  gestion d'entreprise</h2>
+<div class="detail cache">
+<p>Simulation visant à amener les groupes (chacun représentant une entreprise en concurrence avec les autres), après avoir formalisé une stratégie, à prendre des décisions d'ordre commercial, de production, d'investissement et de financement. Dans ce cadre, ils mettent en oe uvre la plupart des outils financiers et prévisionnels connus. </p>
+<p><b>Volume horaire :</b> 24h TD </p>
+<p><b>Objectifs :</b>	  - Au terme de cette simulation, les étudiants doivent pouvoir gérer le temps, travailler en groupe, gérer les conflits, ... 	  - Connaitre le monde de l'entreprise.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">3ECTS</p>
+<p class="weight">20h</p>
+<h2 class="name">Anglais</h2>
+<div class="detail cache">
+<p>Etude des techniques de présentation orale : amélioration de la prononciation, organisation du discours, guidage de l'auditoire, élaboration d'aides visuelles. </p>
+<p><b>Volume horaire :</b> 20h TD </p>
+<p><b>Objectifs :</b>	  - S'exprimer couramment et efficacement dans une langue riche, souple et nuancée dans le domaine de la spécialité, exposer son opinion de manière claire, détaillée et structurée.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">5ECTS</p>
+<p class="weight">53h</p>
+<h2 class="name">Applications internet</h2>
+<div class="detail cache">
+<p>	  - Les langages HTML, XHTML, feuilles de style CSS.	  - Applications réparties : le modèle client/serveur.	  - Langages pour les pages web dynamiques : PHP, MySQL	  - XML. </p>
+<p><b>Volume horaire :</b> 5h Cours 24h TD 24h TP </p>
+<p><b>Objectifs :</b>	  - Développer et maintenir des sites et applications intra/internet.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">5ECTS</p>
+<p class="weight">53h</p>
+<h2 class="name">Génie logiciel</h2>
+<div class="detail cache">
+<p>	  - Modélisation UML : diagrammes de classes, de séquences, d'états-transition et de cas d'utilisation.	  - Pratique d'un atelier de génie logiciel.	  - Méthodologie d'analyse et de conception objet.	  - Introduction aux patrons de conception (design patterns).	  - Introduction à la gestion de projets.</p>
+<p><b>Volume horaire :</b> 5h Cours 24h TD 24h TP </p>
+<p><b>Objectifs :</b>	  - Acquisition des connaissances de bases d'UML, d'une méthodologie permettant d'analyser un problème, d'en réaliser la modélisation, puis d'élaborer une mise en oeuvre sous forme d'une application informatique. 	  - Connaissance des notions de la gestion de projets. </p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">5ECTS</p>
+<p class="weight">53h</p>
+<h2 class="name">Programmation objet 2</h2>
+<div class="detail cache">
+<p>	  - Généricité.	  - Classes internes.	  - Implantation de structures de données.	  - Collections des bibliothèques standards.	  - Programmation événementielle.	  - Interface graphique. </p>
+<p><b>Volume horaire :</b> 5h Cours 24h TD 24h TP </p>
+<p><b>Objectifs :</b>	  - Savoir développer une application avec un langage orienté objet utilisant des structures de données récursives, interface graphique et interface avec une base de donnée.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">5ECTS</p>
+<p class="weight">0h</p>
+<h2 class="name">Projet 2</h2>
+<div class="detail cache">
+<p>Développer une application web en mettant en oe uvre les concepts appris en génie logiciel et applications internet. </p>
+<p><b>Volume horaire :</b> </p>
+<p><b>Objectifs :</b>	  - Mise en oeuvre dans un exemple d'application réaliste des concepts vus dans les modules informatique de la période considérée.</p>
+</div>
+</div>
+
+<div class="element Informatique m2_CCI" data-symbol="Mg" data-category="Informatique">
+<p class="number">10ECTS</p>
+<p class="weight">10h</p>
+<h2 class="name">Stage</h2>
+<div class="detail cache">
+<p>Stage de 4 à 6 mois consécutifs dans une entreprise, suivi par un enseignant et donnant lieu à la rédaction d'un mémoire puis d'une soutenance en présence d'un jury mixte d'enseignants et de responsables de l'entreprise.\Le sujet est variable selon le stage. </p>
+<p><b>Volume horaire :</b> 10h Cours </p>
+<p><b>Objectifs :</b>	  - Permettre d'une part de mettre en pratique les enseignements dispensés pendant l'année et d'autre part de familiariser 	  les étudiants avec la vie professionnelle afin de permettre leur insertion.</p>
+</div>
+</div>
+
+</div><script src="js/jquery-1.7.1.min.js"></script><script src="jquery.isotope.min.js"></script><script>$(function() {var $container = $('#container'),filters = {};$container.isotope({itemSelector : '.element',masonry : {columnWidth : 120},masonryHorizontal : {rowHeight : 120},cellsByRow : {columnWidth : 240,rowHeight : 240},cellsByColumn : {columnWidth : 240,rowHeight : 240},getSortData : {symbol : function($elem) {return $elem.attr('data-symbol');},category : function($elem) {return $elem.attr('data-category');},number : function($elem) {return parseInt($elem.find('.number').text(), 10);},weight : function($elem) {return parseFloat($elem.find('.weight').text().replace(/[\(\)]/g, ''));},name : function($elem) {return $elem.find('.name').text();}}});var $optionSets = $('#options .option-set'), $optionLinks = $optionSets.find('a');$('.filter a').click(function(){var $this = $(this);if ($this.hasClass('selected')) {return false;}var $optionSet = $this.parents('.option-set');$optionSet.find('.selected').removeClass('selected');$this.addClass('selected');var group = $optionSet.attr('data-filter-group');filters[ group ] = $this.attr('data-filter-value');var isoFilters = [];for ( var prop in filters ) {isoFilters.push( filters[ prop ] )}var selector = isoFilters.join('');$container.isotope({ filter: selector });return false;});var isHorizontal = false;function changeLayoutMode($link, options) {var wasHorizontal = isHorizontal;isHorizontal = $link.hasClass('horizontal');if (wasHorizontal !== isHorizontal) {var style = isHorizontal ? {height : '80%',width : $container.width()} : {width : 'auto'};$container.filter(':animated').stop();$container.addClass('no-transition').css(style);setTimeout(function() {$container.removeClass('no-transition').isotope(options);}, 100)} else {$container.isotope(options);}}$container.delegate('.element', 'click', function() {$(this).toggleClass('large');if ($(this).hasClass('large')) {$(this).find('.detail').removeClass('cache');} else {$(this).find('.detail').addClass('cache');}$container.isotope('reLayout');});$('#toggle-sizes').find('a').click(function() {$container.toggleClass('variable-sizes').isotope('reLayout');return false;});var $sortBy = $('#sort-by');$('#shuffle a').click(function() {$container.isotope('shuffle');$sortBy.find('.selected').removeClass('selected');$sortBy.find('[data-option-value="random"]').addClass('selected');return false;});});</script><!-- 		<footer> --><!-- 			Isotope by <a href="http://desandro.com">David DeSandro</a> / <a --><!-- 				href="http://metafizzy.co">Metafizzy</a> --><!-- 		</footer> --></section><!-- #content --></body></html>);

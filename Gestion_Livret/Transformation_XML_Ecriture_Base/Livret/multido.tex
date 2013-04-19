@@ -1,0 +1,563 @@
+%%% Save file as: MULTIDO.TEX/MULTIDO.STY      Source: FILESERV@SHSU.BITNET
+%%% NOTE: The documentation for this TeX macro/LaTeX style option appears
+%%%       in multido.doc, a LaTeX file which follows \endinput
+%%% The following checksum includes all SHSU-generated topmatter
+%%% checksum = "61709 563 2028 19405"
+%% BEGIN multido.tex/multido.sty
+%%
+\def\fileversion{1.3}
+\def\filedate{92/11/06}
+%%
+%% COPYRIGHT 1992, by Timothy Van Zandt, tvz@Princeton.EDU
+%%
+%% DESCRIPTION:
+%%   multido.tex/multido.sty contains a loop macro, \multido, that supports
+%%   fixed-point addition and has a nice interface. Among other things, it
+%%   is useful for pictures and putting numbers on axes. multido.tex
+%%   is compatible with most TeX macro packages, including Plain TeX, LaTeX,
+%%   AmSTeX, and Ams-LaTeX.
+%%
+%% INSTALLATION:
+%%   Put this file where your TeX looks for inputs, under the name multido.tex.
+%%   Name a copy multido.sty to use as a LaTeX style option, or create a file
+%%   multido.sty with the lines:
+%%     \input multido.tex
+%%     \endinput
+%%
+%% DOCUMENTATION:
+%%   See multido.doc, which might be appended to this file.
+%%
+%% COPYING:
+%%   Copying of part or all of this file is allowed under the following
+%%   conditions only:
+%%   (1) You may freely distribute unchanged copies of the file. Please
+%%       include the documentation when you do so.
+%%   (2) You may modify a renamed copy of the file, but only for personal
+%%       use or use within an organization.
+%%   (3) You may copy fragments from the file, for personal use or for
+%%       distribution, as long as credit is given where credit is due.
+%%
+%%   You are NOT ALLOWED to take money for the distribution or use of
+%%   this file or modified versions or fragments thereof, except for
+%%   a nominal charge for copying etc.
+%%
+%% CODE:
+% These macros use TeX primitives, plus the Plain TeX commands:
+%   \dimen@, \dimen@i, \count@, \newcount, \newtoks, \@ne, \tw@, \@z@.
+%
+% Check if file is loaded, announce file on terminal, and take care of @:
+%
+\expandafter\ifx\csname multido@\endcsname\relax\else\expandafter\endinput\fi
+\message{\space\space v\fileversion\space\space\filedate\space\space <tvz>}
+\edef\MultidoAtCode{\the\catcode`\@}\catcode`\@=11
+%
+% These are some hacks borrowed from PSTricks, which are loaded if PSTricks is
+% not being used. "\@dimtonum" strips the value of "#1", a dimension register,
+% of the "pt", and assigns the result to "#2", a command sequence.
+% 
+\expandafter\ifx\csname @pstrickserr\endcsname\relax
+  \def\@empty{}
+  \def\@nnil{\@nil}
+  \def\@dimtonum#1#2{\edef#2{\@@dimtonum#1}}
+  \def\@@dimtonum#1{\expandafter\@@@dimtonum\the#1}
+  {\let\@nnil\expandafter\catcode`\p=12\catcode`\t=12
+  \global\@nnil\def\csname @@@dimtonum\endcsname#1pt{#1}}
+\fi
+%
+% "\multido@count" stores the number of repetitions. "\multidocount" keeps
+% track of the iteration. These are also used locally as scratch counters by
+% "\FPadd@". "\multido@stuff" is used to store the <stuff> that is to be
+% repeated.
+%
+\newcount\multido@count
+\newcount\multidocount
+\newtoks\multido@stuff
+%
+\def\multido{\multido@{}{\begingroup}{\endgroup}}
+\def\mmultido{\multido@{\multido@stepvar}{\begingroup}{\endgroup}}
+\def\Multido{\multido@{}{}{}}
+\def\MMultido{\multido@{\multido@stepvar}{}{}}
+%
+% "\multido@initvar" processes the variable declarations, initializing the
+% value of the variables and defining "\multido@stepvar" to increment the
+% variables with each repetition. "\multido@count" is set to the number of
+% repetitions.
+%
+\long\def\multido@#1#2#3#4#5#6{%
+  #2%
+    \multido@count=#5\relax
+    \ifnum\multido@count=\z@\else\multido@@{#1}{#4}{#6}\fi
+  #3%
+  \ignorespaces}
+\def\multido@@#1#2#3{%
+  \def\multido@stepvar{}%
+  \def\do{\noexpand\do\noexpand}%
+  \multido@initvar#2,\@nil,%
+  \let\do\noexpand
+  \edef\multido@stepvar{\multido@stepvar}%
+  \ifnum\multido@count<\z@\multido@count=-\multido@count\fi
+  \multidocount=1\relax
+  #1%
+  \multido@stuff{#3}%
+  \multido@loop}
+\def\multido@loop{%
+  \the\multido@stuff
+  \ifnum\multidocount<\multido@count
+    \advance\multidocount\@ne
+    \multido@stepvar
+    \expandafter\multido@loop
+  \fi}
+\def\multidostop{\multidocount=\multido@count}
+\def\multido@badvar{%
+  \multido@count=0
+  \errhelp{\multido command will be skipped.}%
+  \errmessage{Bad \string\multido\space variable declaration}}
+\def\multido@initvar#1,{%
+  \def\multido@temp{#1}%
+  \ifx\multido@temp\@nnil\else
+    \ifx\multido@temp\@empty\else
+      \multido@@initvar#1\@nil=+\@nil\relax
+    \fi
+    \expandafter\multido@initvar
+  \fi}
+\def\multido@@initvar#1=#2+#3\@nil#4\relax{%
+  \ifx\@empty#4\@empty
+    \multido@badvar
+  \else
+    \multido@vartype#1\@empty
+    \ifx\multido@temp\relax
+      \multido@badvar
+    \else
+      \multido@temp{#2}{#3}#1%
+    \fi
+  \fi}
+\def\multido@vartype#1{%
+  \ifcat\noexpand\@nil\noexpand#1%
+     \expandafter\multido@@vartype\string#1\@nil
+  \else
+    \let\multido@temp\relax
+  \fi}
+\def\multido@@vartype#1#2#3\@nil{%
+  \expandafter\let\expandafter\multido@temp
+    \csname multido@init@#2\endcsname}
+\def\MultidoCheckNames{%
+  \let\multido@@@vartype\multido@vartype
+  \def\multido@vartype##1{%
+    \ifx\undefined##1%
+      \multido@@@vartype{##1}%
+    \else
+      \errhelp{\multido command will be skipped.}%
+      \errmessage{Multido variable \string##1 already defined}%
+      \let\multido@temp\relax
+    \fi}}
+%
+% For each variable type, we must now define \multido@init<vartype>. The
+% syntax of these macros is:
+%
+%   \multido@init@<vartype>{initial value}{increment}{variable}
+%
+% and the outcome should be:
+%
+% 1. Set <variable> to the initial value.
+% 2. Invoke \multido@addtostep{step stuff}, where <step stuff> is whatever
+% should be done to increment the variable. <step stuff> is expanded first,
+% with expansion suppressed by "\do".
+%
+\def\multido@addtostep#1{\edef\multido@stepvar{\multido@stepvar#1}}
+%
+% Variable type for dimensions ("d", "D"):
+%
+\def\multido@init@d#1#2#3{%
+  \expandafter\ifx\csname pssetlength\endcsname\relax
+    \dimen@=#1\relax\dimen@i=#2\relax
+  \else
+    \pssetlength\dimen@{#1}\pssetlength\dimen@i{#2}%
+  \fi
+  \edef#3{\number\dimen@ sp}%
+  \ifnum\multido@count<\z@\dimen@i=-\dimen@i\fi
+  \multido@addtostep{\do\multido@step@d{\do#3}{\number\dimen@i sp}}}
+\def\multido@step@d#1#2{%
+  \dimen@=#1\advance\dimen@#2
+  \edef#1{\number\dimen@ sp}}%
+\def\multido@init@D{\multido@init@d}
+%
+% Variable type for integers ("i", "I"):
+%
+\def\multido@init@i#1#2#3{%
+  \count@=#1\relax
+  \edef#3{\the\count@}%
+  \count@=#2\relax
+  \ifnum\multido@count<\z@\count@=-\count@\fi
+  \multido@addtostep{\do\multido@step@i{\do#3}{\the\count@}}}
+\def\multido@step@i#1#2{%
+  \count@=#1\advance\count@ by #2
+  \edef#1{\the\count@}}
+\def\multido@init@I{\multido@init@i}
+%
+% Variable type for reals ("r", "R").
+%
+\def\multido@init@r#1#2#3{%
+  \dimen@=#1pt
+  \@dimtonum\dimen@#3%
+  \dimen@=#2pt
+  \ifnum\multido@count<\z@\dimen@=-\dimen@\fi
+  \multido@addtostep{\do\multido@step@r{\do#3}{\number\dimen@ sp}}}
+\def\multido@step@r#1#2{%
+  \dimen@=#1pt\advance\dimen@#2
+  \@dimtonum\dimen@#1}
+\def\multido@init@R{\multido@init@r}
+%
+% Variable type for numbers ("n", "N").
+%
+\def\multido@init@n#1#2#3{%
+  \edef#3{#1}%
+  \ifnum\multido@count<\z@\expandafter\FPsub\else\expandafter\FPadd\fi
+  {0}{#2}\multido@temp
+  \multido@addtostep{\do\FPadd{\do#3}{\multido@temp}{\do#3}}}
+\def\multido@init@N{\multido@init@n}
+%
+% Simple fixed-point addition couldn't be harder. "\dimen@" and "\dimen@i" are
+% used as scratch {\em counters} (to avoid creating a new counter). "\count@",
+% "\multido@count" and "\multidocount" are also used as scratch counters.
+%
+% This is probably pretty close to optimal, given the requirements that
+% leading and trailing spaces be OK in the arguments, and that there need not
+% be any numbers to the left of the decimal.
+%
+\def\FPadd#1#2#3{%
+  \edef\multido@temp{#1..\noexpand\@nil#2}%
+  \expandafter\FPadd@\multido@temp..\@nil
+  \let#3\multido@temp}
+\def\FPsub#1#2{%
+  \edef\multido@temp{\noexpand\FPsub@#2\noexpand\@empty}%
+  \FPadd{#1}{\multido@temp}}
+\def\FPsub@#1{\ifx-#1\else-#1\fi}
+\def\FPadd@#1.#2.#3\@nil#4.#5.#6\@nil{%
+  \begingroup
+    \def\multido@temp{\let\next\relax}%
+    \let\next\z@
+    \afterassignment\multido@temp\count@=#1\next
+    \dimen@i=0#2sp\relax
+    \let\next\z@
+    \afterassignment\multido@temp\multido@count=#4\next
+    \multidocount=0#5\relax
+    \dimen@=\number\count@ sp
+    \count@=\@ne
+    \FPadd@@@#500000000\@nil
+    \ifnum#11<\z@
+      \count@=-\tw@
+      \dimen@=-\dimen@
+    \fi
+    \ifnum#41<\z@
+      \count@=-\count@
+      \multido@count=-\multido@count
+    \fi
+    \ifnum\count@>\z@
+      \advance\multido@count\dimen@
+      \advance\multidocount\dimen@i
+      \ifnum\multidocount<\multido@temp\relax
+        \advance\multidocount\multido@temp\relax
+      \else
+        \advance\multido@count\@ne
+      \fi
+      \advance\count@-3
+    \else
+      \advance\multido@count-\dimen@
+      \advance\multidocount-\dimen@i
+      \ifnum\multido@count<\z@
+        \multido@count=-\multido@count
+        \multidocount=-\multidocount
+        \advance\count@\@ne
+      \else
+        \ifnum\multido@count=\z@
+          \ifnum\multidocount<\z@
+            \multidocount=-\multidocount
+            \advance\count@\@ne
+          \fi
+        \fi
+      \fi
+      \ifnum\multidocount<\z@
+        \advance\multidocount\multido@temp
+        \advance\multido@count-\@ne
+      \fi
+      \advance\multidocount\multido@temp\relax
+    \fi
+    \expandafter\FPadd@@\the\multidocount\@empty\@nil
+  \endgroup}
+\def\FPadd@@#1#2#3\@nil{\xdef\multido@temp{%
+  \ifnum\count@=-1-\fi
+  \the\multido@count\ifx#2\@empty\else.#2#3\fi}}
+\def\FPadd@@@#1#2#3#4#5#6#7#8#9\@nil{\def\multido@temp{1#9}}
+%
+\catcode`\@=\MultidoAtCode\relax
+\endinput
+%% END multido.tex/multido.sty
+
+%% BEGIN multido.doc
+%%
+%% Documentation for multido.tex/multido.sty.
+%% Run through LaTeX, with or without the NFSS.
+%%
+%% If you find this file appended to multido.tex, copy it to a separate file
+%% or simply add "\let\endinput\relax" to the beginning of multido.tex.
+%%
+\documentstyle[12pt]{article}
+\input multido.tex
+
+\makeatletter
+
+%% PAGE PARAMETERS:
+\setlength{\parindent}{0pt}          % paragraph indent
+\setlength{\parskip}{4pt plus 1pt minus 1pt}
+\setlength{\topmargin}{-2.5pc}
+\setlength{\headheight}{12pt}        % height of running head
+\setlength{\headsep}{30pt}           % distance between header and text
+\setlength{\textheight}{54pc}        % height of text on page
+%%
+%% DATES, VERSIONS AND TITLES:
+%%
+\def\expanddate#1/#2/#3/{\year=19#1 \month=#2 \day=#3}
+\begingroup
+  \expandafter\expanddate\filedate/
+  \xdef\thefiledate{\today}
+\endgroup
+\date{Version \fileversion\\ \thefiledate}
+\def\@maketitle{%
+ \begin{center}
+   {\Large\bf \@title \par}
+   \vskip 1.2em {\lineskip .5em
+   \begin{tabular}[t]{c}\@author\end{tabular}\par} 
+   \vskip .8em {\@date}%
+  \end{center}
+  \par
+  \vskip .5em}
+%%
+%% PAGE STYLE:
+%%
+\pagestyle{myheadings}
+\markright{Documentation for multido.tex \hfill
+  v.\fileversion\hskip 1em \thefiledate\hfill}%
+%%
+%% VERBATIM:
+%%
+\begingroup
+  \catcode`\{=12 \catcode`\}=12
+  \catcode`\(=1 \catcode`\)=2
+  \catcode`\+=0 \catcode`\\=12
+  +gdef+|(\)          % \| = character \
+  +gdef+{({)          % \{ = character {
+  +gdef+}(})          % \} = character }
++endgroup
+\def\Backslash{\protect\|}
+%%
+%% Define some functional font commands:
+%%
+\def\MainFont{\tt}      % For macro definitions.
+\def\UsageFont{\tt}           % For in-line macro names.
+\def\InlineFont{\tt}          % For other in-line snipets of code.
+\def\MetaFont{\rm\it}            % For meta arguments.
+%%
+%% Short-cuts for font commands:
+%%
+\def\s#1{\string#1}
+\def\t#1{{\InlineFont\string#1}}   % For other in-line code.
+\def\m#1{{\MetaFont #1\/}}         % For just putting things in italics
+\def\M#1{{\InlineFont\{\m{#1}\}}}  % Arg is in italic, enclosed in tt braces.
+\let\N\t                           % For in-line macro names.
+\catcode`\<=13 \def<#1>{\m{#1}}    % <meta>
+%%
+%% This is for listing macro definitions in a quote-like environment.
+%%
+\begingroup
+  \catcode`\[=1 \catcode`\]=2
+  \catcode`\{=13 \catcode`\}=12
+  \gdef\@MD[%
+    \catcode`\{=13 \catcode`\}=12
+    \def{##1}[\{[\MetaFont ##1]\}]]
+\endgroup
+\def\MD{%
+  \quote
+  \begingroup
+    \@MD
+    \def\end{\endgroup\end}%
+    \def\\{\@centercr\s}%
+    \MainFont
+    \s}
+\def\endMD{\endquote}
+%%
+%% END PREAMBLE:
+%%
+\catcode`\"=13
+\def"{\verb"}
+\catcode`\@=12
+\begin{document}
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Documentation for multido.tex:\\[2pt]
+  A loop macro for Generic \protect\TeX}
+\author{Timothy Van Zandt%
+  \thanks{Author's address: Department of Economics, Princeton University,
+  Princeton, NJ 08544-1021, USA. Internet: {\tt tvz@Princeton.EDU}}}
+\maketitle
+
+ "multido.tex"/"multido.sty" contains the \N\multido\ macro, which is a loop
+facility for Generic TeX. This macro happens to be useful for drawing
+pictures, and was originally developed for the PSTricks
+package,\footnote{PSTricks is an extensive collection of PostScript-based
+macros for Generic TeX. It is available from the /pub directory at
+Princeton.EDU, and \TeX\ archives.} but you can use it for other purposes as
+well.
+
+ A special feature is support of fixed-point addition. For example, PSTricks
+uses the \N\multido\ to put numbers on axes, much like in the following
+\LaTeX\ example:
+\begin{verbatim}
+    \setlength{\unitlength}{1cm}
+    \small
+    \begin{picture}(8,1)(0,-.5)
+      \put(0,0){\vector(1,0){8}}
+      \multido{\i=0+1,\n=0+0.25}{8}{%
+        \put(\i,-.1){\line(0,1){.2}}
+        \put(\i,-.2){\makebox(0,0)[t]{\n}}}
+    \end{picture}
+\end{verbatim}
+\begin{center}
+    \setlength{\unitlength}{1cm}
+    \small
+    \begin{picture}(8,1)(0,-.5)
+      \put(0,0){\vector(1,0){8}}
+      \multido{\i=0+1,\n=0+0.25}{8}{%
+        \put(\i,-.1){\line(0,1){.2}}
+        \put(\i,-.2){\makebox(0,0)[t]{\n}}}
+    \end{picture}
+\end{center}
+
+The general syntax for \N\multido\ is:
+\begin{MD}
+  \multido{variables}{repetitions}{stuff}
+\end{MD}
+ <stuff> is whatever you want repeated; it can be any balanced \TeX\ input.
+<repetitions> is the number times <stuff> is repeated.
+
+ The first argument is the interesting one. <variables> is a comma-separated
+list of variable declarations.\footnote{Don't use commas to mark the decimal
+point within the \protect<variables> argument, as they will be confused for
+delimiters.} Each variable declaration is of the form:
+\begin{center}\tt
+  <variable> = <initial value> + <increment>
+\end{center}
+ <variable> is a command sequence that can be used in <stuff>. It is initially
+set to <initial value>, and is then incremented by <increment> with each
+repetition.
+
+ The first letter of the variable name determines the variable type. There are
+four variable types:
+\begin{description}
+ \item[Dimension (d or D)] The initial value and the increment should be
+dimensions (lengths, in \LaTeX\ parlance). The substitution text is a
+dimension, with "sp" units. E.g., "\dx=4cm+5pt".\footnote{For PSTricks users,
+the unit is optional.}
+
+ \item[Number (n or N)] The initial value and increment should be integers or
+numbers with the same number of digits to the right of the decimal. The one
+exception is that it is always OK for the initial value to be an integer.
+There can be at most 8 digits on each side of the decimal. The substitution
+text is a number, with fixed-point addition. E.g., "\n=3+7.05",
+"\Nx=5.30+-1.25".
+
+ \item[Integer (i or I)] The initial value and increment should be integers.
+This gives the same result as using a number variable, but it is faster. E.g.,
+"\I=2+-1".
+
+ \item[Real (r or R)] The initial value and increment should be integers or
+numbers with at most 4 digits on each side of the decimal. The substitution
+text is a number, but with floating point addition and occasional small
+errors. This gives a less satisfactory result than using a number variable,
+but it is faster. E.g., "\ry=4.2+1.05".
+\end{description}
+
+ Here are some examples that illustrate how the substitution text is
+determined:
+\begin{quote}
+  "\multido{}{10}{\TeX\ }"\\[3pt]
+    \hbox to 2em{}\multido{}{10}{\TeX\ }{}\\[8pt]
+  "\multido{\d=2pt+3pt}{5}{\d, }"\\[3pt]
+    \hbox to 2em{}\multido{\d=2pt+3pt}{5}{\d, }{}\\[8pt]
+  "\multido{\n=2+3}{10}{\n, }"\\[3pt]
+    \hbox to 2em{}\multido{\n=2+3}{10}{\n, }{}\\[8pt]
+  "\multido{\i=2+-3}{10}{\i, }"\\[3pt]
+    \hbox to 2em{}\multido{\i=2+-3}{10}{\i, }{}\\[8pt]
+  "\multido{\r=2+3.05}{6}{\r, }"\\[3pt]
+    \hbox to 2em{}\multido{\r=2+3.05}{6}{\r, }{}\\[8pt]
+  "\multido{\n=2.00+-3.05}{8}{\n, }"\\[3pt]
+    \hbox to 2em{}\multido{\n=2.00+-3.05}{8}{\n, }{}
+\end{quote}
+
+Here are some details about the choice of names:
+\begin{itemize}
+ \item Your computer won't explode if you use names that conflict with \TeX\
+internal commands, but you might want to check name conflicts if you get
+inexplicable errors. The command \N\MultidoCheckNames\ can be useful in this
+case. It causes \N\multido\ to report an error whenever you use a variable
+name that is already defined. But see the next item.
+ \item The whole \N\multido\ loop is grouped. This means, e.g., that although
+"\i" is a Plain \TeX\ command sequence (giving a dotless ``\i''), you can use
+the variable "\i" if you do not use any dotless i's in <stuff> (and if you do
+not use \N\MultidoCheckNames).
+\end{itemize}
+
+Here are a few more details:
+\begin{itemize}
+\item \N\Multido\ commands can be nested.
+ \item Spaces after a \N\multido\ command are ignored. This makes \N\multido\
+more hospitable for pictures.
+ \item Spaces between the various parts of the <variables> argument are
+ignored.
+\end{itemize}
+
+ And finally here a few special features, some of which are of interest mainly
+macro writers and other \TeX nicians:
+\begin{itemize}
+ \item The material that is repeated is not grouped, so that you can insert
+your own recursive routines.
+ \item There is a variant, "\mmultido", which works just like "\multido"
+except that the variables are all incremented once before starting.
+ \item If you use "\Multido" or "\MMultido" instead of "\multido" or
+"\mmultido", resp., then the whole loop is not grouped. This can be useful,
+e.g., for making entries in an alignment environment. However, these cannot be
+nested within any "\multido" macro.
+ \item If the number of repetitions is a negative number, the variables are
+incremented backwards.
+ \item The count register "\multidocount" keeps track of the number of current
+iteration.
+ \item The command "\multidostop" causes the "\multido" loop to quit at the
+end of the current iteration.
+\item Fixed point addition is performed by \N\FPadd\ and \N\FPsub:
+\begin{MD}
+  \FPadd{num1}{num2}{command}\\
+  \FPsub{num1}{num2}{command}
+\end{MD}
+ <num2> is added to or subtracted from <num1>, and the answers is stored in
+the command sequence given as the third argument. The rules about decimals and
+so on that apply to number variables apply here as well. E.g., after
+\begin{verbatim}
+    \FPsub{1.75}{-0.15}{\answer}
+\end{verbatim}
+the definition of "\answer" is 1.90.
+\end{itemize}
+
+\subsection*{Changes:}
+
+\begin{description}
+ \item[V1.1] Fixed bug in \N\FPadd\ that gave wrong answer for, e.g., $3.4 +
+-0.2.$
+
+\item[V1.2] Made unit optional for dimension variables when using PSTricks.
+
+ \item[V1.3] Now 0 repetitions really gets 0 repetitions. "\def\multido@"
+changed to "\long\def\multido@".
+\end{description}
+
+\end{document}
+%% END multido.doc

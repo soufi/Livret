@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livret>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 11" codeue="1" cours="16" td="20" tp="" ctd="" total="36" semestre="Semestre 1" coeff="4" ects="4">
+<titre>Système d\'exploitation embarqué</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Frédéric DABROWSKI</nomPremierResp>
+
+<emailPremierResp>Frederic.DABROWSKI@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire </descriptionCourte>
+
+<descriptionLongue>
+Ce cours porte sur l\'étude des concepts des systèmes d\'exploitation au travers du noyau linux (à la base de nombreux systèmes mobile, en particulier d\'Android).
+Un sous-ensemble du noyau linux servira de base à la mise en oeuvre de différents concepts comme la pagination, la segmentation, le multi-tâches, les systèmes de fichiers,...
+L\'accent sera mis sur l\'utilisation d\'un noyau linux dans le cadre de la gestion de systèmes nomades.
+Des réalisations pratiques impliquant des matériels embarqués seront proposées.
+</descriptionLongue>
+
+<textePrerequis>
+kkk
+</textePrerequis>
+
+<objectifs>
+	- Connaissance des principes des systèmes d\'exploitation
+	- Maîtrise des subtilités du noyau linux pour le développement d\'applications
+	- Capacité à modifier un noyau linux pour des applications spécifiques
+	- Capacité à adapter le noyau linux à une plateforme nomade donnée
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: UR</ressources>
+
+<biblio>Bibli</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 12" codeue="1" cours="16" td="20" tp="" ctd="" total="36" semestre="Semestre 1" coeff="4" ects="4">
+<titre>Développement d\'applications nomades</titre>
+
+<methodeEval>Réalisation d\'une application pour mobiles</methodeEval>
+
+<modalitesCCSemestreUn>Rapport et soutenance de projet</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>Rapport et soutenance de projet</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>AbdelAli ED-DBALI</nomPremierResp>
+
+<emailPremierResp>AbdelAli.ED-DBALI@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire </descriptionCourte>
+
+<descriptionLongue>
+	- Architectures et plateformes
+	- Développement d\'applications sous Android
+	- Développement web pour mobile
+	- Sensibilisation au développement sous iOS
+</descriptionLongue>
+
+<textePrerequis>
+Programmation C, C++ ou Java. Notion d\'architecture des ordinateurs.
+</textePrerequis>
+
+<objectifs>
+	- Fournir une culture autour de l\'informatique nomade : domaines d\'applications concernés, enjeux, spécificités, possibilités offertes mais également limitations.
+	- Apporter une expérience du développement sur différents systèmes nomades afin de les exploiter le plus efficacement possible.
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: URL</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 13" codeue="1" cours="16" td="20" tp="" ctd="" total="36" semestre="Semestre 1" coeff="4" ects="4">
+<titre>Programmation logique et par contraintes</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Bich DAO</nomPremierResp>
+
+<emailPremierResp>Bich.DAO@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire </descriptionCourte>
+
+<descriptionLongue>
+1. La programmation en logique avec Prolog : 
+	- point de vue déclaratif
+	- résolution SLD, sémantiques opérationnelle et déclarative
+	- structure des listes, coupure, négation
+	- prédicats d\'ordre supérieur, méta-programmation
+2. Notion de contraintes et de solveurs de contraintes : études de contraintes de domaines finis, de domaine booléen.
+</descriptionLongue>
+
+<textePrerequis>
+Logiques mathématiques
+</textePrerequis>
+
+<objectifs>
+	- L\'utilisation des langages de Prolog et des solveurs de contraintes intégrés.
+	- Capacité de programmer pour résoudre des problèmes par une approche déclarative en utilisant la logique du premier ordre.
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: URL</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 14" codeue="1" cours="16" td="20" tp="" ctd="" total="36" semestre="Semestre 1" coeff="4" ects="4">
+<titre>Modélisation et vérification de systèmes concurrents</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Yohan BOICHUT</nomPremierResp>
+
+<emailPremierResp>Yohan.BOICHUT@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire </descriptionCourte>
+
+<descriptionLongue>
+Ce module introduit le concept de logiques appliquées au contexte de la vérification de systèmes concurrents. Des formules logiques permettent de modéliser les propriétés attendues par un système. Ce système est décrit sous forme de système d\'états/transitions. Le model-checking est une technique permettant de vérifier si une propriété est satisfaite ou non sur un système donné. Dans le cas négatif, une trace du comportement non-souhaité du système est retournée par cette technique. Pour mieux comprendre cette application des logiques, ce module débute par une étude des logiques monadiques du 2nd ordre sur les mots finis et infinis. Ce cadre constitue les fondements de la technique de Model-Checking. La transformation d\'une formule en automate de mots finis ou automate de mots infinis est étudiée en profondeur. Ainsi, savoir si une formule f est satisfaite sur un langage L revient à calculer l\'automate de la négation de f puis calculer l\'intersection avec le langage L. Une intersection vide signifie que la négation de f n\'est pas satisfaite, et donc que f est satisfaite. D\'une intersection non vide, nous en déduisons que la formule n\'est pas satisfaite et de l\'intersection, nous pouvons extraire un mot témoin. Une fois les fondements théoriques établis, les logiques temporelles usuelles LTL et CTL sont étudiées. Dans le cadre de LTL, l\'outil de vérification SPIN mènera les étudiants à modéliser les systèmes sous forme de procéssus et les propriétés attendues de ce système sous forme de formules logiques.
+</descriptionLongue>
+
+<textePrerequis>
+Notions élémentaires en logique, théorie des langages 
+</textePrerequis>
+
+<objectifs>
+	- Maîtriser et comprendre une technique de vérification,
+	- modéliser en logique les propriétés attendues d\'un système 
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: URL</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 15" codeue="1" cours="18" td="24" tp="6" ctd="" total="48" semestre="Semestre 1" coeff="4" ects="4">
+<titre>Interface homme machine</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Frédéric MOAL</nomPremierResp>
+
+<emailPremierResp>Frederic.MOAL@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire </descriptionCourte>
+
+<descriptionLongue>
+	- Principes de la programmation événementielle, le modèle MVC
+	- Définition et programmation des interfaces graphiques en client {\it lourd}
+	- Illustration et mise en oeuvre avec le langage Java/SWING
+	- Architectures des interfaces Web (JSP/servlets), le modèle MVC 2
+	- Utilisation des frameworks Javascript / Exemple de GWT (Google Web Toolkit)
+	- Les interfaces des terminaux portables / Exemple d\'Android
+</descriptionLongue>
+
+<textePrerequis>
+Programmation Java, maîtrise de la programmation orientée objet 
+</textePrerequis>
+
+<objectifs>
+	- Comprendre les architectures Modèle Vue Contrôleur.
+	- Maîtriser le développement et la maintenance d\'IHM pour les architectures clients légers et clients lourds.
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: URL</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 16" codeue="1" cours="16" td="20" tp="" ctd="" total="36" semestre="Semestre 1" coeff="4" ects="4">
+<titre>Programmation parallèle</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Sophie ROBERT</nomPremierResp>
+
+<emailPremierResp>Sophie.ROBERT@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire </descriptionCourte>
+
+<descriptionLongue>
+Extrêmement importants dans la plupart des domaines scientifiques, le calcul scientifique et la simulation numérique ont également pris une grande place dans des applications technologiques. Ils sont utilisés pour concevoir, optimiser et réduire les risques de développement dans tous les domaines de l\'activité économique (simulations de phénomènes physiques, biologiques, économiques... , maquettes numériques). Ce module aborde les bases de la programmation parallèle de machines à mémoire répartie :
+	- Architectures parallèles
+	- Algorithmique parallèle
+	- Programmation parallèle impérative par passage de messages
+	- Programmation répartie modulaire et politiques de synchronisation fines
+</descriptionLongue>
+
+<textePrerequis>
+Programmation impérative, utilisation d\'un système unix, outils de développements
+</textePrerequis>
+
+<objectifs>
+Compétences pour la programmation d\'applications pour supercalculateurs à mémoire répartie.
+Ce module est un pré-requis pour les modules de M2 "Programmation multi-coeurs" et "Visualisation avancée". 
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: URL</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 17" codeue="1" cours="16" td="20" tp="" ctd="" total="36" semestre="Semestre 1" coeff="4" ects="4">
+<titre>Modélisation, graphes et algorithmes</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Ioan TODINCA</nomPremierResp>
+
+<emailPremierResp>Ioan.TODINCA@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp>Mathieu LIEDLOFF</nomSecondResp>
+
+<emailSecondResp>Mathieu.LIEDLOFF@univ-orleans.fr</emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire </descriptionCourte>
+
+<descriptionLongue>
+L\'enseignement aborde à la fois des aspects algorithmiques d\'optimisation combinatoire avec des techniques de résolution polynomiale (flots et réseaux de transport, problèmes de postier chinois...), d\'approximation (voyageur de commerce...) et heuristiques pour des problèmes difficiles comme la coloration ou le stable maximum) et des aspects de modélisation des réseaux d\'interconnexion et de problèmes d\'algorithmique distribuée.
+</descriptionLongue>
+
+<textePrerequis>
+Algorithmique élémentaire sur les graphes, programmation linéaire
+</textePrerequis>
+
+<objectifs>
+	- Savoir modéliser et résoudre des problèmes d\'optimisation sur les graphes.
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: URL</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 18" codeue="1" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 1" coeff="2" ects="2">
+<titre>Anglais</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Cédric SARRE</nomPremierResp>
+
+<emailPremierResp>Cedric.SARRE@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire </descriptionCourte>
+
+<descriptionLongue>
+Etudes des techniques de présentation orale : amélioration de la prononciation, organisation du discours, guidage de l\'auditoire, élaboration d\'aides visuelles, etc.
+</descriptionLongue>
+
+<textePrerequis>
+Anglais non professionnel
+</textePrerequis>
+
+<objectifs>
+	- S\'exprimer couramment et efficacement dans le domaine de la spécialité.
+</objectifs>
+
+<ressources>Page du département des langues\,: {\tt http://www.univ-orleans.fr/sciences/?page=12}</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 21" codeue="1" cours="16" td="20" tp="" ctd="" total="36" semestre="Semestre 2" coeff="4" ects="4">
+<titre>Intelligence artificielle</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Matthieu EXBRAYAT</nomPremierResp>
+
+<emailPremierResp>Matthieu.EXBRAYAT@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire </descriptionCourte>
+
+<descriptionLongue>
+	- Introduction à l\'Intelligence Artificielle
+	- Résolution de problèmes : modélisation d\'un problème, algorithmes de recherche non informés (largeur, profondeur, ...) et informés (meilleur d\'abord, A*, ...) 
+	- Modélisation des connaissances et inférence : représentations logiques et représentations de connaissances incertaines.
+Dans ce module, sont abordées des techniques fondamentales pour la résolution de problèmes complexes, fondées soit sur la modélisation  du problème par un graphe d\'états,
+soit sur la représentation des connaissances sous-jacentes. On peut citer comme domaines d\'application les problèmes d\'aide à la décision,
+mais aussi par exemple la  constitution de mémoires d\'entreprises.
+</descriptionLongue>
+
+<textePrerequis>
+Programmation en logique 
+</textePrerequis>
+
+<objectifs>
+	- Savoir modéliser un problème qui fait appel à des techniques de l\'intelligence artificielle.
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: URL</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 22" codeue="1" cours="18" td="12" tp="12" ctd="" total="42" semestre="Semestre 2" coeff="4" ects="4">
+<titre>Réseaux : protocoles et mobilité</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>AbdelAli ED-DBALI</nomPremierResp>
+
+<emailPremierResp>AbdelAli.ED-DBALI@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire </descriptionCourte>
+
+<descriptionLongue>
+	- Spécification de protocoles (à l\'aide des automates d\'états finis étendus)
+	- Etude détaillée des protocoles : TCP, DHCP et NAT
+	- Les réseaux mobiles : Etude du protocole 802.11 (wifi), éléments de sécurité dans les réseaux sans fils (WEP, WPA, ...),
+	autres protocoles sans fils (Bluetooth, WiMax, GPRS, ...), mobilité
+</descriptionLongue>
+
+<textePrerequis>
+Protocole IP, routage (programme du module "réseaux 1" de licence 3)
+</textePrerequis>
+
+<objectifs>
+	- Comprendre et réaliser des spécifications de protocoles réseaux.
+	- Installer, configurer et sécuriser un réseau local hétérogène (avec du filaire et du WiFi) ouvert sur Internet.
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: URL</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 23" codeue="1" cours="16" td="20" tp="" ctd="" total="36" semestre="Semestre 2" coeff="4" ects="4">
+<titre>Algorithmique répartie</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Frédéric DABROWSKI</nomPremierResp>
+
+<emailPremierResp>Frederic.DABROWSKI@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire </descriptionCourte>
+
+<descriptionLongue>
+Ce module vise à sensibiliser les étudiants aux problèmes particuliers qui se posent lorsque les processus participant à une application s\'exécutent sur des sites distants.
+Le modèle de répartition auquel nous nous intéressons ici est celui de la communication par message.
+Les solutions existantes à différents problèmes classiques dans ce contexte seront présentéesÊ:
+gestion du temps, réalisation de l\'exclusion mutuelle, détection de la terminaison de l\'application, etc.
+Il aborde les thèmes suivants communication entre site (algorithme de parcours), causalité en l\'absence d\'horloge globale, mécanismes d\'horloges logiques,
+calcul d\'état global, élection, terminaison.
+</descriptionLongue>
+
+<textePrerequis>
+Programmation parallèle
+</textePrerequis>
+
+<objectifs>
+Sensibiliser les étudiants aux problèmes posés par la programmation d\'applications réparties. 
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: URL</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 24" codeue="1" cours="16" td="20" tp="" ctd="" total="36" semestre="Semestre 2" coeff="4" ects="4">
+<titre>Calculabilité et complexité</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Mathieu LIEDLOFF</nomPremierResp>
+
+<emailPremierResp>Mathieu.LIEDLOFF@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire.</descriptionCourte>
+
+<descriptionLongue>
+	- Définition d\'un problème, représentation des données et des résultats. Approche mécanique du calcul, Machine de Turing. Approche inductive, fonction primitive et mu récursives. Equivalence entre les deux modèles et plus généralement Thèse de Church-Turing. Problème indécidables et semi-décidables. Problème de la halte. Réduction entre problèmes.
+	- Calcul d\'une machine sur une entrée, notion de ressource et de coût (temps ou espace) d\'une exécution. Complexité d\'un algorithme. Difficulté de comparer les algorithmes, approche asymptotique. Notion de complexité d\'un programme. Class de complexité P. Définition de NP par certificat et non déterministe. Réduction polynomiale entre problèmes. Question P=NP.
+</descriptionLongue>
+
+<textePrerequis>
+	- Complexité des algorithmes.
+	- Théorie des langages.
+</textePrerequis>
+
+<objectifs>
+	- Comprendre la relative indifférence des problèmes par rapport à une machine comme un langage de programmation.
+	- Connaître les limites -en terme de problème et non d\'algorithme- de ce que l\'on peut calculer dans l\'absolu (calculabilité) comme dans la pratique (complexité).
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: URL</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 25" codeue="1" cours="12" td="24" tp="" ctd="" total="36" semestre="Semestre 2" coeff="4" ects="4">
+<titre>Travaux d\'études et de recherche et Technique de communication</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Jean-Michel COUVREUR</nomPremierResp>
+
+<emailPremierResp>Jean-Michel.COUVREUR@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp>AbdelAli ED-DBALI</nomSecondResp>
+
+<emailSecondResp>AbdelAli.ED-DBALI@univ-orleans.fr</emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire composée de deux domaines séparés.</descriptionCourte>
+
+<descriptionLongue>
+L\'unité "Travaux d\'études et de recherche" (TER) est articulée autour de trois axes :
+	- génie logiciel: analyse des besoins et élaboration du cahier des charges, conception et implémentation, test, réalisation d\'une documentation et d\'une distribution portable, travail en équipe. 
+	- pratique scientifique : recherche et analyse de l\'existant, justifications, critiques du travail réalisé, assimilation de nouveaux concepts dans la discipline ou transdisciplinaires.
+	- recherche documentaire : Manipulation des bases de données et des catalogues disponibles au service commun de la documentation.
+L\'unité "Technique de communication" vise l\'apprentissage des principales techniques de communication liées à la gestion de projetÊ: technique de réunion, gestion des relations entre personnes, conduite de projet.
+</descriptionLongue>
+
+<textePrerequis>
+Pour la partie TER : différents aspects de la programmation (impérative, fonctionnelle et par objets).
+</textePrerequis>
+
+<objectifs>
+	- TER
+		\item Mise en pratique de principes et de techniques étudiés dans les unités d\'enseignement,
+		\item acquisition d\'une expérience de génie logiciel, application d\'une pratique scientifique
+	- Technique de communication
+		\item Comprendre l\'importance des relations humaines dans un projet.
+		\item Apprendre à maîtriser les problèmes humains dans un projet.
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: URL</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 26" codeue="1" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 2" coeff="2" ects="2">
+<titre>Anglais</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Cédric SARRE</nomPremierResp>
+
+<emailPremierResp>Cedric.SARRE@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Unité obligatoire qui fait suite à l\'unité UE18 : Anglais du premier semestre.</descriptionCourte>
+
+<descriptionLongue>
+Etudes des techniques de présentation orale : amélioration de la prononciation, organisation du discours, guidage de l\'auditoire, élaboration d\'aides visuelles, etc.
+</descriptionLongue>
+
+<textePrerequis>
+Anglais non professionnel
+</textePrerequis>
+
+<objectifs>
+	- S\'exprimer couramment et efficacement dans le domaine de la spécialité.
+</objectifs>
+
+<ressources>Page du département des langues\,: http://www.univ-orleans.fr/sciences/?page=12</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 27 " codeue="1" cours="16" td="20" tp="" ctd="" total="36" semestre="Semestre 2" coeff="4" ects="4">
+<titre>Outils pour l\'exploration de données</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Christel VRAIN</nomPremierResp>
+
+<emailPremierResp>Christel.VRAIN@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>0</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Fait partie des 2 UE à choisir parmi les 3 UE (UE 27, UE 28 et UE 29)}</descriptionCourte>
+
+<descriptionLongue>
+	- Apprentissage et développement en langage R
+	- Notions élémentaires de probabilités : variables aléatoires, loi, espérance, variance, probabilité conditionnelle
+	- Statistiques descriptives :
+		 - Indicateurs de tendance centrale, de dispersion et de forme (médiane, quantiles, moyenne, mode, variance et écart-type), tableau de contingence,
+		 - Contrôle de la qualité des données (valeurs aberrantes, données manquantes, ..)
+		 - Coefficient de corrélation, matrice de corrélation
+	- Analyse de données: analyse en composantes principales, analyse des correspondances, analyse discriminante
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+	- Etre capable d\'effectuer tous les traitements simples sur un jeu de données.
+	- Etre capable de produire une étude descriptive et d\'en interpréter les résultats.
+	- Connaître les principes de l\'analyse et visualisation du nuage d\'individus/de variables, interpréter les résultats.
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: URL</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 28 " codeue="1" cours="16" td="20" tp="" ctd="" total="36" semestre="Semestre 2" coeff="4" ects="4">
+<titre>Compilation</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Jean-Michel COUVREUR</nomPremierResp>
+
+<emailPremierResp>Jean-Michel.COUVREUR@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp></nomSecondResp>
+
+<emailSecondResp></emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Fait partie des 2 UE à choisir parmi les 3 UE (UE 27, UE 28 et UE 29) </descriptionCourte>
+
+<descriptionLongue>
+	- Conception d\'un compilateur : de la théorie à la pratique.
+	- Analyse syntaxique et sémantique.
+	- Traitement des erreurs.
+	- Génération de code.
+	- Traitement des types complexes.
+	- Fonctions et procédures.
+	- Edition de liens.
+</descriptionLongue>
+
+<textePrerequis>
+Programmation impérative, Programmation fonctionnelle, Programmation par objets. Théorie des langages.
+</textePrerequis>
+
+<objectifs>
+	- Savoir utiliser les générateurs d\'analyseurs.
+	- Maitriser les mécanismes de transduction d\'un langage de haut niveau vers un assembleur.
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: URL</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UE 29" codeue="1" cours="16" td="20" tp="" ctd="" total="36" semestre="Semestre 2" coeff="4" ects="4">
+<titre>Programmation graphique</titre>
+
+<methodeEval>Contrôle continue et terminal</methodeEval>
+
+<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+
+<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteEliminatoire>7</noteEliminatoire>
+
+<nomPremierResp>Sophie ROBERT</nomPremierResp>
+
+<emailPremierResp>Sophie.ROBERT@univ-orleans.fr</emailPremierResp>
+
+<nomSecondResp>Rachid JENNANE</nomSecondResp>
+
+<emailSecondResp>Rachid.JENNANE@univ-orleans.fr</emailSecondResp>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<lesPrerequis>
+  <prerequis>1</prerequis>
+</lesPrerequis>
+
+<descriptionCourte>Fait partie des 2 UE à choisir parmi les 3 UE (UE 27, UE 28 et UE 29) </descriptionCourte>
+
+<descriptionLongue>
+	- Pipeline graphique et introduction à OpenGL. La synthèse d\'images et la visualisation sont des domaines importants en informatique qui s\'appuient sur leur propre paradigme de développement. Dans cette première partie, ce module présentera le pipeline graphique afin de connaître le fonctionnement d\'une carte graphique simple. Ensuite, la programmation graphique sera traitée à partir d\'OpenGL qui reste un standard dans ce contexte.
+	- Introduction au traitement numérique des images. Les étudiants informaticiens ne sont pas familiers de méthodes mathématiques nécessaires au traitement numérique des images. Il s\'agira ici de leur faire une introduction aux techniques d\'analyse d\'images et aux techniques de filtrage.
+</descriptionLongue>
+
+<textePrerequis>
+Langage de programmation (C, C++)
+</textePrerequis>
+
+<objectifs>
+Compétences pour la programmation d\'applications 3D.
+</objectifs>
+
+<ressources>Plateforme de cours en ligne pour le M1 Informatique\,: URL</ressources>
+
+<biblio>Biblio</biblio>
+
+</module>
+
+</livret>
