@@ -30,9 +30,10 @@ public class Requete {
 				//extraction de tous les fichier du dossier
 				String [] files = rep.list();
 				StringBuffer allFiles = new StringBuffer();
+				File f;
 				for (int i = 0 ; i < files.length ; i++){
 					if(files[i].matches("Detail_..*_..*_..*.sql")){
-						File f = new File (files[i]);
+						f = new File (files[i]);
 						allFiles.append(f.getAbsolutePath()+" ");
 					}
 				}
@@ -56,17 +57,19 @@ public class Requete {
 		if(!script.exists())
 			return "Script incorrect, veuillez verifier le chemin : "+ script.getAbsolutePath();
 		String response = "";
+		String errors = "";
 		ProcessBuilder pb;
 		if(param == null || param.length() <= 0)
-			return "Pas de Paramètres, impossible de lancer processus .";
+			return "Pas de Paramètres, impossible de lancer le processus .";
 		else{
 			//création d'un processus externe avec les paramètre d'execution d'un processus shell
-			pb = new ProcessBuilder("bash", "-c", "./"+script.getName()+" "+param.toString());
+			pb = new ProcessBuilder("bash", "-c", script.getAbsolutePath(), param.toString());
 		}
 		//redirection d'erreur du processus lancé vers la sortie standard de notre programme
 		pb.redirectErrorStream(true); 
 		Process shell = pb.start();
-		InputStream shell_in = shell.getInputStream();
+		InputStream shell_in = shell.getInputStream(); //redirection sortie standard
+		InputStream shell_error = shell.getErrorStream(); //redirection sortie erreur
 		//on attend la fin de l'execution du processus lancé pour communiquer le resultats
 		int shellExitStatus = shell.waitFor();
 		//si on a une erreur (code de retour different de 0)
@@ -75,6 +78,10 @@ public class Requete {
 			return null;
 		}
 		response = convertStreamToString(shell_in);
+		errors = convertStreamToString(shell_error);
+		if(!errors.isEmpty())
+			response += "\nERR : "+errors;
+	
 		shell_in.close();
 		return response;
 	}

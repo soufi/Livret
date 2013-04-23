@@ -55,7 +55,7 @@ public class Menu {
 		if(trouve){
 			System.out.println("Execution des Requetes contenu dans le repertoir SQL/ ... \n");
 			try {
-				System.out.println("=> "+Requete.execRequests("SQL/"));
+				Requete.execRequests("SQL/");
 			} catch (IOException e) {
 				System.err.println(e.getMessage());
 			} catch (InterruptedException e) {
@@ -64,6 +64,8 @@ public class Menu {
 		}
 		else
 			System.out.println("Aucun fichier de type Detail_Info_*.tex trouvé.");
+		
+		System.out.println("Fin du Traitement. Exit.");
 	}
 	
 	
@@ -89,7 +91,7 @@ public class Menu {
 				spl = listefichiers[i].split("_");
 				compo = spl[1];
 				filiere = spl[2];
-				promo = spl[3];
+				promo = spl[3].substring(0, spl[3].length()-4); //on enleve la partie '.tex' du mot
 				//extraire tous les modules du fichier tex
 				String res[] = LF.lireModule();
 				System.out.print(listefichiers[i].substring(0,listefichiers[i].length()-4)+".txt...");

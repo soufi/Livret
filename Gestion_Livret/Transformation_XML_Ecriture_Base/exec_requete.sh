@@ -2,5 +2,6 @@
 
 for i in $@ 
 do 
-	mysql -h localhost -u root livret < $i
+	echo $i;
+	mysql -h localhost --user=root livret --password=root < $i
 done
