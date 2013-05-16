@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livret>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5BO02" cours="14" td="8" tp="14" ctd="" ctp="" total="36" semestre="Semestre 5" coeff="4" ects="4">
+<titre>Ecologie fonctionnelle</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CM(CT) + TP/TD (CT oral) 2h+20 min</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CM(CT) + TP/TD (CT oral) 2h+20 min</modalitesccsemestredeux>
+
+<calculnfsessionune>60\% CM + 40\% TD+TP</calculnfsessionune>
+
+<calculnfsessiondeux>60\% CM + 40\% TD+TP</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Aurélien Sallé</nompremierresp>
+
+<emailpremierresp>aurelien.salle@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Le fonctionnement des écosystèmes ; modalités des transferts de matières et d’énergie (puits, sources, zones de stockage), au travers des réseaux trophiques ; quelques dysfonctionnements et leurs remèdes ; analyse d’un milieu en liaison
+avec une perturbation ; notion de pédologie.
+* Un groupe de TP terrain encadré par deux enseignants
+
+</descriptionLongue>
+
+<textePrerequis>Notions d'écologie générale.
+
+</textePrerequis>
+
+<objectifs> 
+  * Appréhension théorique et pratique du fonctionnement des écosystèmes et de l’impact des activités anthropiques sur le cycle du carbone et l’effet de serre.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5BO09" cours="12" td="12" tp="" ctd="" ctp="" total="24" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Génétique quantitative</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE : CC(TD) / CT(Ecrit+Oral) 1h+15min ; RSE : CT(Ecrit+Oral) 1h+15min</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(Ecrit+Oral) 1h+15min</modalitesccsemestredeux>
+
+<calculnfsessionune>RNE : 33\% + 33\% + 33\% (TD+Ecrit+Oral) ; RSE : 50\% + 50\% (Ecrit+Oral)</calculnfsessionune>
+
+<calculnfsessiondeux>50\% + 50\% (Ecrit+Oral)</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Arnaud Menuet</nompremierresp>
+
+<emailpremierresp>arnaud.menuet@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Etude de la transmission des caractères quantitatifs. Notions d’héritabilité. Illustration de l’analyse des caractères quantitatifs chez l’homme. La sélection artificielle et les nouveaux outils moléculaires. De la sélection naturelle à la dérive génétique.
+</descriptionLongue>
+
+<textePrerequis>Génétique formelle de première année de Licence.
+
+</textePrerequis>
+
+<objectifs> 
+  * Montrer comment l’analyse formelle chez un organisme ne se limite pas aux caractères qualitatifs.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5BO06" cours="24" td="" tp="12" ctd="" ctp="" total="36" semestre="Semestre 5" coeff="4" ects="4">
+<titre>Croissance et développement des végétaux</titre>
+
+<methodeeval>Ecrit/TP</methodeeval>
+
+<modalitesccsemestreun>RNE : Ecrit CT 2h / TP CC ; RSE : Ecrit CT 2h / TP CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : Ecrit/TP CT 2h/1h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 66\% + TP 33\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 66\% + TP 33\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Daniel Hagège</nompremierresp>
+
+<emailpremierresp>daniel.hagege@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours BOPE / BBV
+</descriptionCourte>
+
+<descriptionLongue>
+Les phytohormones (les principales familles, biosynthèse et dégradation, transport, rôles physiologiques, utilisations pratiques) - La graine : de la mise en réserve à la mobilisation - La germination - La floraison (vernalisation, photopériodisme, thermopériodisme, théories de la floraison, morphogenèse florale)
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquisition des connaissances de base de la physiologie du développement des plantes.
+ 
+</objectifs>
+
+<ressources>
+
+</ressources>
+
+<biblio>Heller et al.-T1 et 2 (Dunod) ; Mazliak et al. (Hermann) ; Laval-Martin et Mazliak (Hermann) ; Guignard- Biochimie végétale (Dunod 2000) ; Luttge, Kluge et Bauer, Botanique (Tec et Doc 1996) ; Anderson-Beardall : Molecular activities of plant cells. (Blackwell Scientific Pub.) ; Campbell : Biologie (De Boeck Université) ; Nultsch : Botanique générale (De Boeck Université) ; Taiz and Zeiger : Plant physiology (Sinauer) ; Buchanan, Gruissem and Jones, Biochemistry and molecular biology (Amer. Soc. Plant Physiol.)
+
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5BO08" cours="2" td="10" tp="12" ctd="" ctp="" total="24" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Télédétection et cartographie végétale</titre>
+
+<methodeeval>Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT(E+TP) 15min+20min</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 20min</modalitesccsemestredeux>
+
+<calculnfsessionune>50\% + 50\%</calculnfsessionune>
+
+<calculnfsessiondeux>100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Cécile Vincent</nompremierresp>
+
+<emailpremierresp>cecile.vincent@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Acquérir des connaissances de base sur le mode d’organisation, la création, la gestion et l’analyse d’une base de données à références spatiales (Systèmes d’Informations Géographiques). Comprendre les principes de base de la télédétection
+et les potentialités offertes par cette technique pour des applications environnementales. Application à une étude de cas sur le terrain avec relevé floristique et mesures des variables environnementales.
+</descriptionLongue>
+
+<textePrerequis>Notions écologie, télédétection, botanique.
+
+</textePrerequis>
+
+<objectifs> 
+  * Utiliser les outils de télédétection pour le prétraitement, traitement d’images et extraction de l’information à partir de données de télédétection.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5BO07" cours="14" td="10" tp="12" ctd="" ctp="" total="36" semestre="Semestre 5" coeff="4" ects="4">
+<titre>Entomologie générale</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE : Ecrit CT 2h / TP CC ; RSE : Ecrit CT 2h / TP CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(Ecrit+Oral) 2h+15min</modalitesccsemestredeux>
+
+<calculnfsessionune>75\% Ecrit + 25\% TP</calculnfsessionune>
+
+<calculnfsessiondeux>60\% Ecrit + 40\% TP</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Stéphanie Bankhead-Dronnet</nompremierresp>
+
+<emailpremierresp>stephanie.bankhead@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Morphologie, anatomie et physiologie de l’insecte : appareil digestif et digestion, tissu adipeux, appareil excréteur et osmorégulation, appareil circulatoire, système trachéen et respiration, systèmes sensoriels et nerveux, appareils reproducteurs. Développement post-embryonnaire, mue et métamorphoses. Physiologie du développement : diapause, contrôle endocrine. Systématique générale ; Eusocialité des insectes ; Insectes parasites.
+</descriptionLongue>
+
+<textePrerequis>Caractères généraux des Euarthropodes.
+
+</textePrerequis>
+
+<objectifs> 
+  * Connaître la systématique des Insectes jusqu’à l’Ordre et sous-Ordre, les caractères morphologiques et les grandes fonctions, et la place des insectes dans le monde animal.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5BO04" cours="" td="" tp="" ctd="24" ctp="" total="24" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Lois de probabilités et estimations de paramètres usuels</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT (Ecrit) 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (Oral) 15 min</modalitesccsemestredeux>
+
+<calculnfsessionune>100\% CT</calculnfsessionune>
+
+<calculnfsessiondeux>100\% CT</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Franck Brignolas</nompremierresp>
+
+<emailpremierresp>franck.brignolas@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours BOPE / BMC / BBV
+</descriptionCourte>
+
+<descriptionLongue>
+Notion de variable aléatoire (VA) ; VA qualitatives, VA quantitatives discrètes et continues ; principales lois de probabilité et leur utilisation en biologie ; estimation de paramètres et intervalles de confiance.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquisition de connaissances de bases en statistique.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5AG35" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Anglais 5</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CC 3h ; RSE : CT 1h30</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h30</modalitesccsemestredeux>
+
+<calculnfsessionune>100\%</calculnfsessionune>
+
+<calculnfsessiondeux>100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Hervé Perreau</nompremierresp>
+
+<emailpremierresp>herve.perreau@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français/Anglais</langue>
+</langues>
+
+<descriptionCourte>
+Parcours BOPE / BMC/ BBV / BGST / PLURI
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d’expression orale à partir de documents authentiques longs et/ou complexes, portant sur des innovations technologiques, des découvertes ou avancées scientifiques.
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Anglais 3 + 4 ou environ 500 heures de formation équivalente.
+
+</textePrerequis>
+
+<objectifs> 
+  * Comprendre l’information exprimée dans des messages complexes sur le domaine des Sciences et Technologies et s’exprimer sur ce même domaine à l’écrit dans un registre de langue approprié.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5IP01" cours="10" td="9" tp="" ctd="" ctp="" total="19" semestre="Semestre 5" coeff="1" ects="1">
+<titre>Insertion professionnelle</titre>
+
+<methodeeval>Ecrit / Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT(Ecrit) 1h30</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(Ecrit) 1h / CT (Oral) 15 min </modalitesccsemestredeux>
+
+<calculnfsessionune>100\% CT</calculnfsessionune>
+
+<calculnfsessiondeux>50\% Ecrit + 50\% Oral</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Olivier Richard</nompremierresp>
+
+<emailpremierresp>olivier.richard@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours BOPE / BMC / BBV
+</descriptionCourte>
+
+<descriptionLongue>
+
+* (4h par des intervenants du domaine) Découverte de l’entreprise privée (dans le domaine des Sciences de la Vie) : rôle économique, organisation, fonctionnement, types de métiers, modes de recrutement, droit du travail (4h par des intervenants du domaine) Découverte de l’entreprise publique (dans le domaine des Sciences de la vie : CNRS/INRA/Université etc ...) : statuts, buts, organisation hiérarchiques et carrières, modes de financement, modes de recrutement.
+* Travail en groupe (TD groupe de 20) Initiation à la rédaction d’un CV, d’une lettre de motivation dans le cadre d’une demande de stage ou d’inscription en Master. Première approche de la situation de l’entretien de recrutement (niveau L, objectif le stage ou l’insertion en M1). Sensibilisation aux moyens pour rechercher l’information sur les stages et les emplois (secteur privé). Utilisation des ressources en ligne sur les métiers de la fonction publique.
+
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Rendre actif la démarche étudiante pour une insertion après la Licence (emploi, formation complémentaire, Master). Connaissance du tissu économique dans le domaine des Sciences de la Vie. Réflexion de l’étudiant sur son projet personnel. Elaboration d’un CV niveau L, d’une demande de stage niveau L.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5BO01" cours="4" td="4" tp="40" ctd="" ctp="" total="48" semestre="Semestre 5" coeff="5" ects="5">
+<titre>Biodiversité</titre>
+
+<methodeeval>TP</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC+CT 1h+1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h+1h</modalitesccsemestredeux>
+
+<calculnfsessionune>50\% + 50\%</calculnfsessionune>
+
+<calculnfsessiondeux>50\% + 50\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Christiane Depierreux</nompremierresp>
+
+<emailpremierresp>christiane.depierreux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Géraldine Roux</nomsecondresp>
+
+<emailsecondresp>geraldine.roux@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours BOPE / BBV / BGST
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Inventaire et diversité taxonomique des principaux groupes d’animaux. Floristique et systématique du monde végétal. Clefs pour la détermination des taxons rencontrés. Mesure des indices de diversité.
+* Observations sur le terrain (un groupe TP terrain encadré par deux enseignants) et analyses en laboratoire (TP)
+
+</descriptionLongue>
+
+<textePrerequis>Bases en systématique des arthropodes et en écologie des peuplements.
+
+</textePrerequis>
+
+<objectifs> 
+  * Permettre à l’étudiant de découvrir des milieux naturels de notre région, participer à l’inventaire de la faune et de la flore par la réalisation d’un herbier personnel et d’une boite de référence d’insectes.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5BO05" cours="14" td="" tp="10" ctd="" ctp="" total="24" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Bases anatomiques des grandes fonctions animales</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT (Ecrit) 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (Oral) 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>100\%</calculnfsessionune>
+
+<calculnfsessiondeux>100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Valérie Altemayer</nompremierresp>
+
+<emailpremierresp>valerie.altemayer@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours BOPE/ BMC / BGST / PLURI
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Cours : Organisation des tissus : tissus épithéliaux – conjonctifs – musculaires. Description anatomique et histologique des appareils : circulatoire – respiratoire – digestif excréteur et reproducteur. 
+* TP illustration du cours à partir de préparations et de coupes histologiques – Etude de l’organisation de tous les appareils présentés en cours chez une souris. Les TP pourront être enseignés en anglais.
+
+</descriptionLongue>
+
+<textePrerequis>Avoir de bonnes bases en biologie cellulaire.
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquisition de l’anatomie et de l’histologie des grandes fonctions avant d’appréhender la physiologie.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5BO03" cours="14" td="12" tp="10" ctd="" ctp="" total="36" semestre="Semestre 5" coeff="4" ects="4">
+<titre>Evolution et adaptation des angiospermes</titre>
+
+<methodeeval>Ecrit/TP</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : Ecrit (CT) + TP (CC+CT) 1h30+2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : Ecrit (CT) + TP (CT) 1h30+2h</modalitesccsemestredeux>
+
+<calculnfsessionune>66\% Ecrit + 33\% TP</calculnfsessionune>
+
+<calculnfsessiondeux>66\% Ecrit + 33\% TP</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Christiane Depierreux</nompremierresp>
+
+<emailpremierresp>christiane.depierreux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours BOPE / BBV / BGST
+</descriptionCourte>
+
+<descriptionLongue>
+Evolution et adaptation des végétaux au milieu : Compléments sur la reproduction et l’évolution de l’appareil reproducteur des angiospermes. Notions de classification. Adaptations morphologiques et anatomiques des végétaux aux différentes contraintes environnementales. Perception des signaux de contrainte : lumière, température, gravité...
+</descriptionLongue>
+
+<textePrerequis>Notions d’organisation, d’anatomie et de reproduction des embryophytes.
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquérir les connaissances sur l’évolution et l’adaptation des plantes aux milieux.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+</livret>

@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livret>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3PJ02" cours="" td="6" tp="" ctd="" ctp="" total="6" semestre="Semestre 3" coeff="2" ects="2">
+<titre>Synthèse documentaire/bibliographique et projet de stage</titre>
+
+<methodeeval>Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : Oral</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : pas de seconde session</modalitesccsemestredeux>
+
+<calculnfsessionune>Oral 100\%</calculnfsessionune>
+
+<CalculNFSessionDeux>Ecrit 100\%</CalculNFSessionDeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Chantal Pichon</nompremierresp>
+
+<emailpremierresp>chantal.pichon@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>François Lieutier</nomsecondresp>
+
+<emailsecondresp>francois.lieutier@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialités BBMB / BOPE
+</descriptionCourte>
+
+<descriptionLongue>
+Travail en liaison avec le maître de stage du semestre 4 : Réalisation d’une synthèse bibliographique ou documentaire situant le sujet du stage de longue durée dans les programmes de l’équipe d’accueil et le contexte international, et débouchant sur l'élaboration du projet de recherche/travail de l'étudiant.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Aptitude à situer son travail dans un contexte scientifique et à définir un programme de recherche ; maîtrise des techniques de l’exposé oral et écrit, en français et en anglais.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3IF18" cours="" td="12" tp="24" ctd="" ctp="" total="36" semestre="Semestre 3" coeff="4" ects="4">
+<titre>Base de données et SIG</titre>
+
+<methodeeval>Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT Oral</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT Oral</modalitesccsemestredeux>
+
+<calculnfsessionune>Oral 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Oral 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Cécile Vincent</nompremierresp>
+
+<emailpremierresp>cecile.vincent@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Aurélien Sallé</nomsecondresp>
+
+<emailsecondresp>eurelien.salle@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Construction, gestion et utilisation d’une base de données, présentation et récupération
+de bases vecteurs nationales, généralités SIG, utilisation de logiciel SIG (Mapinfo), utilisation de
+bases de données classiques type CORINE, analyse de bases de données, analyses spatiales et
+statistiques.
+</descriptionLongue>
+
+<textePrerequis>Notions d’écologie du paysage et de télédétection.
+
+</textePrerequis>
+
+<objectifs> 
+  * Donner à l’étudiant une formation de base sur la construction de bases de données et leur utilisation en SIG.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO14" cours="30" td="6" tp="" ctd="" ctp="" total="36" semestre="Semestre 3" coeff="4" ects="4">
+<titre>Réponse des végétaux aux contraintes physiques et agression pathologiques</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT Ecrit 4h + Oral 15 min</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT Ecrit 2h</modalitesccsemestredeux>
+
+<CalculNFSessionUne>Ecrit 100\%</CalculNFSessionUne>
+
+<CalculNFSessionDeux>Ecrit 100\%</CalculNFSessionDeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Franck Brignolas</nompremierresp>
+
+<emailpremierresp>franck.brignolas@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Approche des mécanismes de résistance et de défense des plantes aux contraintes biotiques et abiotiques et de leurs effets sur les populations d’agresseurs. Contraintes abiotiques :Aspects physiologiques, moléculaires et génétiques de la réponse des plantes (forêt et grandes cultures) aux contraintes abiotiques (sécheresse, choc osmotique, polluants, contraintes mécaniques et thermiques). Amélioration génétique pour la résistance. Agressions biotiques : Mécanismes de résistance aux agressions pathologiques. Exemples en forêt et grandes cultures ; conséquences pour la dynamique des populations d’agresseurs ; rôle modulateur des facteurs abiotiques. Amélioration génétique pour la résistance.
+</descriptionLongue>
+
+<textePrerequis>Notions de dynamique des écosystèmes et Technologies végétales.
+
+</textePrerequis>
+
+<objectifs> 
+  * Approche des mécanismes de résistance et de défense des plantes aux contraintes biotiques et abiotiques et de leurs effets sur les populations d’agresseurs.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3IP00" cours="12" td="" tp="" ctd="" ctp="" total="12" semestre="Semestre 3" coeff="2" ects="2">
+<titre>Filières professionnelles</titre>
+
+<MethodeEval></MethodeEval>
+
+<ModalitesCCSemestreUn>RNE et RSE : CC : DM + 15 min Oral + 1h30 Ecrit</ModalitesCCSemestreUn>
+
+<ModalitesCCSemestreDeux>RNE et RSE : CT 1h30 Ecrit</ModalitesCCSemestreDeux>
+
+<CalculNFSessionUne>Ecrit 50\% + Oral 50\%</CalculNFSessionUne>
+
+<CalculNFSessionDeux>Ecrit 100\%</CalculNFSessionDeux>
+
+<NoteEliminatoire>7</NoteEliminatoire>
+
+<nompremierresp>William Même</nompremierresp>
+
+<emailpremierresp>william.meme@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Aline Lejeune</nomsecondresp>
+
+<emailsecondresp>aline.lejeune@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialités BBMB / BOPE
+</descriptionCourte>
+
+<descriptionLongue>
+-Présentation de laboratoires dans les différents secteurs biotechnologiques, cosmétiques, pharmaceutiques. Introduction au droit des affaires; l'activité économique et commerciale; le cadre juridique de l'activité d'entreprise (contrat, la responsabilité de l'entreprise); réglementation du travail. Société de projet et l'innovation: entreprises, l'entrepreneuriat et l'innovation, la stratégie marketing et études de marché. Gestion de projet : gestion de l'équipe, négociation du contrat, protection de l'innovation :la propriété intellectuelle, des outils sur le témoignage de l'invention, le brevet et le droit d'auteur. Protection de la propriété industrielle : outils de la protection des inventions. Les différents brevets ; forme et contenu. Les méthodes de recherche.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Consolider les connaissances de l’entreprise dans des domaines pointus comme la protection des inventions, le management en équipe.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3AG23" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Anglais scientifique 2</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC : DM + 15 min Oral + 1h30 Ecrit</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h30 Ecrit</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 50\% + Oral 50\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Marie-Françoise Tassard</nompremierresp>
+
+<emailpremierresp>marie-francoise.tassard@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Anglais</langue>
+</langues>
+
+<descriptionCourte>
+Spécialités BBMB / BOPE
+</descriptionCourte>
+
+<descriptionLongue>
+Faire un bilan du stage de l’année passée et résumer les visites d’entreprises en anglais. Commenter le déroulement d’un atelier technologique en anglais. Se préparer à des entretiens en anglais pour une embauche (thèse ou poste R &amp; D).
+</descriptionLongue>
+
+<textePrerequis>Bon niveau d’ordre général pratique, oral et écrite, assez bonne connaissance de la langue spécifique de son domaine scientifique et technique.
+
+</textePrerequis>
+
+<objectifs> 
+  * Savoir présenter un rapport de travail en anglais et commenter le déroulement d’une expérimentation.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO01" cours="12" td="12" tp="" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Biostatistiques 2 : Modèle linéaire et analyse multivariées</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT Ecrit 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT Ecrit 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Franck Brignolas</nompremierresp>
+
+<emailpremierresp>franck.brignolas@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialités BBMB / BOPE
+</descriptionCourte>
+
+<descriptionLongue>
+ Intérêts du modèle linéaire : modèles et sous-modèles, méthodes d’estimations des paramètres du modèle linéaire. - Modèles linéaires ne comportant que des facteurs (ANOVA) : tests, interprétations et comparaisons multiples de moyennes; - Modèles linéaires ne comportant que des régresseurs : tests, interprétations, choix de régresseurs ; - Modèles linéaires combinant facteurs et régresseurs; - Analyses factorielles (analyse en composantes principales, analyse factorielle des correspondances, analyse discriminante).
+</descriptionLongue>
+
+<textePrerequis>UE Biométrie de licence 3 (ou équivalent) et de master 1.
+
+</textePrerequis>
+
+<objectifs> 
+  * Maîtrise des méthodes spécialisées de la statistique couramment utilisées dans les Sciences de la vie.
+* Initiation à la modélisation.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO13" cours="30" td="6" tp="" ctd="" ctp="" total="36" semestre="Semestre 3" coeff="4" ects="4">
+<titre>Dynamique et structuration des populations</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 2h Ecrit</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h Ecrit</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Stéphanie Bankhead-Dronnet</nompremierresp>
+
+<emailpremierresp>stephanie.bankhead@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Approfondissement de l’organisation et du rôle de la diversité génétique, notamment dans la structuration génétique des populations de ravageurs, d’hôtes et de pathogènes. Les phénomènes de coévolution sont étudiés en considérant les interactions plantes-insectes. Enfin, un volet est consacré à la conservation, la gestion et la valorisation des ressources génétiques ainsi qu’à l’amélioration génétique.
+</descriptionLongue>
+
+<textePrerequis>Notions de génétique formelle, de génétique des populations et de génétique moléculaire.
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquisition des connaissances essentielles sur la diversité génétique et ses applications pratiques.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO08" cours="32" td="4" tp="" ctd="" ctp="" total="36" semestre="Semestre 3" coeff="4" ects="4">
+<titre>Gestion des écosystèmes terrestres</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT(CM, TD) Ecrit (rapport + oral (soutenance)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT Ecrit 2h</modalitesccsemestredeux>
+
+<CalculNFSessionUne>Ecrit 100\%</CalculNFSessionUne>
+
+<CalculNFSessionDeux>Oral 100\%</CalculNFSessionDeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Aurélien Sallé</nompremierresp>
+
+<emailpremierresp>aurelien.salle@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Montrer comment, à partir d'un problème environnemental concret, la recherche peut conduire à proposer des solutions pour la gestion des écosystèmes. Exemples de thèmes développés: Gestion forestière ; protection phytosanitaire et biodiversité ; invasions biologiques ; agriculture durable ; gestion des espèces protégées ; gestion des populations de gibier ; gestion par le feu ; écologie et rôle du paysage ; économie et éthique de l’environnement ; changement global ; ou autres thèmes : conférences en français ou anglais ; exposés d’étudiants.
+</descriptionLongue>
+
+<textePrerequis>Notions de dynamique des écosystèmes et de dynamique et de structuration des populations.
+
+</textePrerequis>
+
+<objectifs> 
+  * Apporter des connaissances élémentaires de gestion des écosystèmes et des populations, ainsi que d’économie de l’environnement. Savoir mobiliser ses connaissances théoriques pour résoudre un cas concret de gestion environnementale.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO15" cours="30" td="6" tp="" ctd="" ctp="" total="36" semestre="Semestre 3" coeff="4" ects="4">
+<titre>Entomologie approfondie et gestion des populations d’insectes</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+
+<CalculNFSessionUne>Ecrit 100\%</CalculNFSessionUne>
+
+<CalculNFSessionDeux>Ecrit 100\%</CalculNFSessionDeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Stéphanie Bankhead-Dronnet</nompremierresp>
+
+<emailpremierresp>stephanie.bankhead@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+(i)  Relations plantes-insectes présentées à différentes échelles, en prenant en compte le rôle modulateur des facteurs environnementaux. Importance de la physiologie des insectes pour leurs adaptations, notamment en considérant l’intervention éventuelle d’autres organismes (symbiotes, pathogènes); (ii) Biologie de la conservation des insectes menacés par les modifications de leur habitat et par l’introduction d’espèces nouvelles de plantes et d’insectes ; (iii) Communication chimique chez les insectes non-sociaux et sociaux. Application de ces connaissances pour comprendre comment mieux gérer les populations d’agresseurs ; (iv) Complexité des systèmes génétiques impliqués dans la reproduction et le comportement des insectes, dont les insectes sociaux.</descriptionLongue>
+
+<textePrerequis>Notions d’entomologie et de dynamique et génétique des populations.
+
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+</livret>

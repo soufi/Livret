@@ -15,7 +15,6 @@ import java.io.Writer;
  *Elle est aussi utilisée pour lire les requêtes créées par le XSL  et les insérer sur la base
  */
 public class Requete {
-	
 
 	/**
 	 * permet d'executer les requetes SQL contenu dans les fichiers .sql cree dans le dossier SQL/ avec l'execution d'un script shell
@@ -32,16 +31,20 @@ public class Requete {
 			if(rep.exists() && rep.isDirectory()){
 				//extraction de tous les fichier du dossier
 				String [] files = rep.list();
-				StringBuffer allFiles = new StringBuffer();
-				File f;
-				for (int i = 0 ; i < files.length ; i++){
-					if(files[i].matches("Detail_..*_..*_..*.sql")){
-						f = new File (files[i]);
-						allFiles.append(f.getAbsolutePath()+" ");
+				//si les fichier sont bien present 
+				if(files.length>0){
+					StringBuffer allFiles = new StringBuffer();
+					File f;
+					for (int i = 0 ; i < files.length ; i++){
+						if(files[i].matches("Detail_..*_..*_..*.sql")){
+							f = new File (files[i]);
+							allFiles.append(f.getAbsolutePath()+" ");
+						}
 					}
-				}
-				//execution des requetes avec le script shell 
-				return execShellScript ("exec_requete.sh", allFiles);
+					//execution des requetes avec le script shell 
+					return execShellScript ("exec_requete.sh", allFiles);
+				}else
+					return "Impossible d'effectué l'opération le dossier "+repository+" est vide !";
 			}
 		}
 		return "Dossier "+repository+" Inexistant";
@@ -74,7 +77,6 @@ public class Requete {
 		//rendre le script executable, ajout de permission pour tous les utilisater afin de faciliter l'accés après
 		File file = new File ("exec_requete.sh");
 		file.setExecutable(true, false);
-
 	}
 	
 	/**
@@ -89,34 +91,34 @@ public class Requete {
 		File script = new File (file);
 		if(!script.exists())
 			return "Script incorrect, veuillez verifier le chemin : "+ script.getAbsolutePath();
-		String response = "";
-		String errors = "";
+		String process_in = "";
+		String process_errors = "";
 		ProcessBuilder pb;
-		if(param == null || param.length() <= 0)
+		if(param == null || param.length() == 0)
 			return "Pas de Paramètres, impossible de lancer le processus .";
 		else{
 			//création d'un processus externe avec les paramètre d'execution d'un processus shell
-			pb = new ProcessBuilder("bash", "-c", script.getAbsolutePath(), param.toString());
+			pb = new ProcessBuilder("/bin/bash", "-c", script.getAbsolutePath(), param.toString());
 		}
 		//redirection d'erreur du processus lancé vers la sortie standard de notre programme
 		pb.redirectErrorStream(true); 
 		Process shell = pb.start();
-		InputStream shell_in = shell.getInputStream(); //redirection sortie standard
+		InputStream shell_in = shell.getInputStream();
 		InputStream shell_error = shell.getErrorStream(); //redirection sortie erreur
 		//on attend la fin de l'execution du processus lancé pour communiquer le resultats
 		int shellExitStatus = shell.waitFor();
 		//si on a une erreur (code de retour different de 0)
 		if(shellExitStatus != 0){
 			System.out.println("Exit status : " + shellExitStatus);
-			return null;
 		}
-		response = convertStreamToString(shell_in);
-		errors = convertStreamToString(shell_error);
-		if(!errors.isEmpty())
-			response += "\nERR : "+errors;
+		process_in = convertStreamToString(shell_in);
+		process_errors = convertStreamToString(shell_error);
+		if(!process_errors.isEmpty())
+			process_in += "\nERRORS : "+process_errors;
 	
 		shell_in.close();
-		return response;
+		shell_error.close();
+		return "PROCESS :\n"+process_in;
 	}
 	
 	
@@ -128,7 +130,7 @@ public class Requete {
 	 * @see http://www.dzone.com/snippets/convert-stream-string
 	 */
 	private static String convertStreamToString(InputStream is) throws IOException {
-		if (is != null) {
+		if (is != null && is.available() != 0) {
 			Writer writer = new StringWriter();
 			char[] buffer = new char[1024];
 			try {

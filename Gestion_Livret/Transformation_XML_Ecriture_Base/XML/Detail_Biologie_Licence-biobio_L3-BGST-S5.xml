@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livret>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UEL" cours="" td="20" tp="" ctd="" ctp="" total="20" semestre="Semestre 5" coeff="" ects="">
+<titre>Approches psychologiques et sociologiques pour l'enseignement</titre>
+
+<MethodeEval></MethodeEval>
+
+<modalitesccsemestreun>Cf. modalités de contrôle de connaissances des UE Libres</modalitesccsemestreun>
+
+<modalitesccsemestredeux>Cf. modalités de contrôle de connaissances des UE Libres</modalitesccsemestredeux>
+
+<CalculNFSessionUne>E 50\% + O 25\% + TP 25\%</CalculNFSessionUne>
+
+<CalculNFSessionDeux>E 66\% + TP 33\%</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Anne-Lise Doyen</nompremierresp>
+
+<emailpremierresp>anne-lise.doyen@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours renforcé
+</descriptionCourte>
+
+<descriptionLongue>
+a) Approches psychologiques :
+- découverte de quelques sous-domaines de la psychologie, leurs démarches et objets d'études ;
+- apports de ces approches à la compréhension de situations scolaires, à partir de vidéos de classe et de productions d'élèves.
+b) Approches sociologiques :
+- découverte de thématiques et méthodologies en sociologie de l'Ecole ;
+- analyse aux différents cycles de la scolarisation, analyse de situations vécues par les étudiants et analyse de vidéos</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Comprendre, en particulier pour les non-spécialistes, ce que la psychologie et la sociologie, en tant que disciplines, apportent aux situations d'enseignement.
+* A partir des approches en psychologie et en sociologie, pouvoir entrer dans une posture d'observateur des élèves.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5GO02" cours="24" td="12" tp="24" ctd="" ctp="" total="48" semestre="Semestre 5" coeff="" ects="">
+<titre>Pétrologie endogène II</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE : CC(TD) / CT(Ecrit+Oral) 1h+15min ; RSE : CT(Ecrit+Oral) 1h+15min</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(Ecrit+Oral) 1h+15min</modalitesccsemestredeux>
+
+<calculnfsessionune>RNE : 33\% + 33\% + 33\% (TD+Ecrit+Oral) ; RSE : 50\% + 50\% (Ecrit+Oral)</calculnfsessionune>
+
+<calculnfsessiondeux>50\% + 50\% (Ecrit+Oral)</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Arnaud Menuet</nompremierresp>
+
+<emailpremierresp>arnaud.menuet@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours renforcé
+</descriptionCourte>
+
+<descriptionLongue>
+\textbf{Pétrologie magmatique.} Cours : Mise en place des roches volcaniques et plutoniques ; le magmatisme dans son cadre géodynamique, les grandes séries magmatiques TD : diagrammes de phases ; bilans de masse, principes et modèles géochimiques TP : description macroscopique et microscopique des grands types de roches magmatiques 
+\textbf{Pétrologie métamorphique.} Cours : Approche dynamique du métamorphisme : trajets P-T, évolutions minéralogiques et texturales, lien avec le cadre géodynamique – Les migmatites : caractéristiques, modes de formation, lien avec le métamorphisme au sens strict – Les différents métamorphismes observés dans les Alpes. TD : Représentation des compositions de minéraux et desparagenèses dans les diagrammes triangulaires ACF, A’KF et AFM– Utilisation des diagrammes AFMpour suivre les évolutions paragénétiques des métapélites dans différents contextes géodynamiques– Construction et exploitation de chemins P-T en utilisant les résultats demodèles numériques TP : Etude microscopique de quelques paragenèses des métapélites et des métabasites – Travail sur les faciès métamorphiques et sur la reconstitution grossière de chemins P-T.
+</descriptionLongue>
+
+<textePrerequis>Minéralogie (S2) – Sédimentologie et pétrologie sédimentaire (S3) – Pétrologie endogène I (S4).
+
+</textePrerequis>
+
+<objectifs> 
+  * Connaître les modes de mise en place magmatiques. Connaître les textures et structures des roches magmatiques. Connaître les séries magmatiques dans leurs environnements géodynamiques. Maîtriser le choix du radiochronomètre approprié au mode de mise en place. Maîtriser les principes de la géochimie appliqués au magmatisme. Appréhender le métamorphisme comme un phénomène dynamique. Interpréter les textures microscopiques en termes de successions paragénétiques. Reconstituer des trajets P-T approximatifs.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>
+%\begin{itemize
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5BO06" cours="24" td="" tp="12" ctd="" ctp="" total="36" semestre="Semestre 5" coeff="4" ects="4">
+<titre>Croissance et développement des végétaux</titre>
+
+<methodeeval>Ecrit/TP</methodeeval>
+
+<modalitesccsemestreun>RNE : Ecrit CT 2h / TP CC ; RSE : Ecrit CT 2h / TP CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : Ecrit/TP CT 2h/1h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 66\% + TP 33\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 66\% + TP 33\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Daniel Hagège</nompremierresp>
+
+<emailpremierresp>daniel.hagege@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours BOPE / BBV
+</descriptionCourte>
+
+<descriptionLongue>
+Les phytohormones (les principales familles, biosynthèse et dégradation, transport, rôles physiologiques, utilisations pratiques) - La graine : de la mise en réserve à la mobilisation - La germination - La floraison (vernalisation, photopériodisme, thermopériodisme, théories de la floraison, morphogenèse florale)
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquisition des connaissances de base de la physiologie du développement des plantes.
+ 
+</objectifs>
+
+<ressources>
+
+</ressources>
+
+<biblio>Heller et al.-T1 et 2 (Dunod) ; Mazliak et al. (Hermann) ; Laval-Martin et Mazliak (Hermann) ; Guignard- Biochimie végétale (Dunod 2000) ; Luttge, Kluge et Bauer, Botanique (Tec et Doc 1996) ; Anderson-Beardall : Molecular activities of plant cells. (Blackwell Scientific Pub.) ; Campbell : Biologie (De Boeck Université) ; Nultsch : Botanique générale (De Boeck Université) ; Taiz and Zeiger : Plant physiology (Sinauer) ; Buchanan, Gruissem and Jones, Biochemistry and molecular biology (Amer. Soc. Plant Physiol.)
+
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5BO13" cours="46" td="2" tp="" ctd="" ctp="" total="48" semestre="Semestre 5" coeff="5" ects="5">
+<titre>Introduction à la physiologie cellulaire et à l'embryologie</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 2x2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2x2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Jean-Pierre Gomez</nompremierresp>
+
+<emailpremierresp>jean-pierre.gomez@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Céline Montécot-Dubourg</nomsecondresp>
+
+<emailsecondresp>celine.montecot@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+\textbf{Partie Physiologie cellulaire :} Le fonctionnement des cellules excitables (cellules nerveuses, cellules musculaires striées et lisses, cellules sécrétrices). Etude du rôle de la membrane plasmique et des échanges membranaires passifs et actifs dans le fonctionnement de la cellule excitable (notions de gradients de concentration, de flux ioniques à travers les membranes semiperméables, les canaux ioniques et les transporteurs). Le potentiel d’action neuronal et la propagation de l’information nerveuse et neuro-musculaire. Le couplage excitation-contraction des muscles striés et lisses. Première approche de la neurotransmission (neurotransmetteurs, récepteurs membranaires, la synapse) et exemples de pathologies liées aux dysfonctionnements de ces systèmes. La physiologie cardiaque : organisation générale du tissu cardiaque au niveau macroscopique et microscopique (cardiomyocytes). Etude de l’activité électrique au niveau cellulaire (le tissu pacemaker, le tissu conducteur, les potentiels d’action) et global (l’électrocardiogramme). L’activité mécanique cardiaque (le couplage excitation-contraction, la révolution cardiaque). \textbf{Sensibilité et traitements sensoriels :} Etude de la transduction, l’encodage, transmission et de la perception des stimuli de l’environnement. Fonctionnement de la chaîne d’événements de l’activation des récepteurs périphériques à l’intégration cérébrale en prenant comme exemple la somesthésie,l’olfaction et la gustation. \textbf{Embryologie :} Différents types d’œufs. Polarités et axes corporels. Types de développements embryonnaire et post -embryonnaire chez les invertébrés et vertébrés. Lignée germinale. Annexes embryonnaires. Induction, compétence et gradient morphogénétique. Mécanisme des gènes de développement. Notions d’embryologie expérimentale.
+</descriptionLongue>
+
+<textePrerequis> Physiologie : Connaissances sur la biologie cellulaire (structure de la cellule et de lamembrane plasmique, la synapse et le potentiel d’action). Embryologie : connaître les principaux groupes du règne animal
+
+</textePrerequis>
+
+<objectifs> 
+  * Physiologie : Connaissance du fonctionnement des biomembranes, de la signalisation nerveuse et de la physiologie des cellules excitables, introduction aux techniques d’électrophysiologie et l’étude des canaux ioniques et des courants transmembranaires. Connaissance en neuro-antomie et du fonctionnement du système nerveux central.
+* Embryologie : Connaissance des grandes lignes du développement animal. Acquérir un espritsynthétique afin de généraliser la majorité des phénomènes étudiés.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5AG35" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Anglais 5</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CC 3h ; RSE : CT 1h30</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h30</modalitesccsemestredeux>
+
+<calculnfsessionune>100\%</calculnfsessionune>
+
+<calculnfsessiondeux>100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Hervé Perreau</nompremierresp>
+
+<emailpremierresp>herve.perreau@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français/Anglais</langue>
+</langues>
+
+<descriptionCourte>
+Parcours BOPE / BMC/ BBV / BGST / PLURI
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d’expression orale à partir de documents authentiques longs et/ou complexes, portant sur des innovations technologiques, des découvertes ou avancées scientifiques.
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Anglais 3 + 4 ou environ 500 heures de formation équivalente.
+
+</textePrerequis>
+
+<objectifs> 
+  * Comprendre l’information exprimée dans des messages complexes sur le domaine des Sciences et Technologies et s’exprimer sur ce même domaine à l’écrit dans un registre de langue approprié.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5BO01" cours="4" td="4" tp="40" ctd="" ctp="" total="48" semestre="Semestre 5" coeff="5" ects="5">
+<titre>Biodiversité</titre>
+
+<methodeeval>TP</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC+CT 1h+1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h+1h</modalitesccsemestredeux>
+
+<calculnfsessionune>50\% + 50\%</calculnfsessionune>
+
+<calculnfsessiondeux>50\% + 50\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Christiane Depierreux</nompremierresp>
+
+<emailpremierresp>christiane.depierreux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Géraldine Roux</nomsecondresp>
+
+<emailsecondresp>geraldine.roux@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours BOPE / BBV / BGST
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Inventaire et diversité taxonomique des principaux groupes d’animaux. Floristique et systématique du monde végétal. Clefs pour la détermination des taxons rencontrés. Mesure des indices de diversité.
+* Observations sur le terrain (un groupe TP terrain encadré par deux enseignants) et analyses en laboratoire (TP)
+
+</descriptionLongue>
+
+<textePrerequis>Bases en systématique des arthropodes et en écologie des peuplements.
+
+</textePrerequis>
+
+<objectifs> 
+  * Permettre à l’étudiant de découvrir des milieux naturels de notre région, participer à l’inventaire de la faune et de la flore par la réalisation d’un herbier personnel et d’une boite de référence d’insectes.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5GO01" cours="20" td="" tp="28" ctd="" ctp="" total="48" semestre="Semestre 5" coeff="6" ects="6">
+<titre>Chaînes et bassins</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : Ecrit CC 2x2h / Rapport stage</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE :Ecrit CC 2x2h / Oral 30 min</modalitesccsemestredeux>
+
+<calculnfsessionune>66\% Ecrit + 33\% Rapport</calculnfsessionune>
+
+<calculnfsessiondeux>66\% Ecrit + 40\% Oral</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Michel Faure</nompremierresp>
+
+<emailpremierresp>michel.faure@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+\textbf{Cours.} Chaînes intracontinentales, de subduction, d’obduction et de collision. Accrétion et collage. Régimes thermiques et déformations de la croûte continentale; liaison tectonique-métamorphisme ; "metamorphic core complexes"; exhumation syn- et post-collision. Bassins intracontinentaux en extension et coulissement, grabens et hémigrabens, bassins d’avant-pays et intramontagneux.
+\textbf{TP.} Cartographie à différentes échelles : coupes géologiques (plis, nappes, chevauchements) ; schémas structuraux ; analyse de cartes Dans le cadre des activités de travail personnel non-présentiel, il est demandé de préparer un exposé par groupe de 2 ou 3 étudiants portant sur l'analyse critique d'un article scientifique. Il s'agit pour les étudiants de lire un article court en anglais traitant d'un point moins approfondi du cours ou d'un exemple de chaîne ou de bassin non traité. Ils doivent en extraire les grandes idées et les restituer oralement à leurs collègues. A la suite de l'exposé, l'enseignant intervient pour corriger les points mal compris ou apporter d'autres précisions.
+</descriptionLongue>
+
+<textePrerequis>Bases de la géologie structurale dans les différents niveaux structuraux. Bases de la tectonique des plaques. Analyses géométriques, cinématiques et dynamiques des déformations ductiles et fragiles.
+Bases en pétrologie endogène et exogène. Bases en géophysique : sismologie, sismique, magnétisme, gravimétrie
+
+</textePrerequis>
+
+<objectifs> 
+  * Cette unité apporte une description détaillée des grands types de chaînes de montagnes et des bassins sédimentaires. Elle permet la compréhension de l'architecture des orogènes dans leurs cadres géodynamiques et celle de la place des accumulations sédimentaires avant, pendant et après la tectonique et des mécanismes responsables de la formation de ces objets. L'enseignement magistral est complété par l'apprentissage de la cartographie et de l'établissement de coupes géologiques et de
+schémas structuraux à diverses échelles. Il aboutit à l'acquisition de méthodes géologiques d'études d'objets géologiques comme une chaîne de montagnes ou un bassin.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5BO05" cours="14" td="" tp="10" ctd="" ctp="" total="24" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Bases anatomiques des grandes fonctions animales</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT (Ecrit) 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (Oral) 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>100\%</calculnfsessionune>
+
+<calculnfsessiondeux>100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Valérie Altemayer</nompremierresp>
+
+<emailpremierresp>valerie.altemayer@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours BOPE/ BMC / BGST / PLURI
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Cours : Organisation des tissus : tissus épithéliaux – conjonctifs – musculaires. Description anatomique et histologique des appareils : circulatoire – respiratoire – digestif excréteur et reproducteur. 
+* TP illustration du cours à partir de préparations et de coupes histologiques – Etude de l’organisation de tous les appareils présentés en cours chez une souris. Les TP pourront être enseignés en anglais.
+
+</descriptionLongue>
+
+<textePrerequis>Avoir de bonnes bases en biologie cellulaire.
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquisition de l’anatomie et de l’histologie des grandes fonctions avant d’appréhender la physiologie.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL5BO03" cours="14" td="12" tp="10" ctd="" ctp="" total="36" semestre="Semestre 5" coeff="4" ects="4">
+<titre>Evolution et adaptation des angiospermes</titre>
+
+<methodeeval>Ecrit/TP</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : Ecrit (CT) + TP (CC+CT) 1h30+2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : Ecrit (CT) + TP (CT) 1h30+2h</modalitesccsemestredeux>
+
+<calculnfsessionune>66\% Ecrit + 33\% TP</calculnfsessionune>
+
+<calculnfsessiondeux>66\% Ecrit + 33\% TP</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Christiane Depierreux</nompremierresp>
+
+<emailpremierresp>christiane.depierreux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours BOPE / BBV / BGST
+</descriptionCourte>
+
+<descriptionLongue>
+Evolution et adaptation des végétaux au milieu : Compléments sur la reproduction et l’évolution de l’appareil reproducteur des angiospermes. Notions de classification. Adaptations morphologiques et anatomiques des végétaux aux différentes contraintes environnementales. Perception des signaux de contrainte : lumière, température, gravité...
+</descriptionLongue>
+
+<textePrerequis>Notions d’organisation, d’anatomie et de reproduction des embryophytes.
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquérir les connaissances sur l’évolution et l’adaptation des plantes aux milieux.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+</livret>

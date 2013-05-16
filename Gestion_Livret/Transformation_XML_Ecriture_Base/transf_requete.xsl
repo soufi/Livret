@@ -44,6 +44,15 @@
 		<xsl:value-of select="$promo"/>
 		<xsl:text>');&#xA;</xsl:text>
 		
+		<!-- On insert la Promotion si elle n'existe pas deja -->
+		<xsl:text>INSERT IGNORE INTO livret_promotion (_ID_PROMO_, _LIBELLE_PROMO_) VALUES (@id_promo, '</xsl:text>
+		<xsl:value-of select="$promo"/>
+		<xsl:text>');&#xA;</xsl:text>
+		
+		<xsl:text>SET @id_promo := (SELECT DISTINCT _ID_PROMO_ FROM livret_promotion WHERE _LIBELLE_PROMO_ = '</xsl:text>
+		<xsl:value-of select="$promo"/>
+		<xsl:text>');&#xA;</xsl:text>
+		
 		<!-- on insert dans la table de parcours meme procédure -->
 		<xsl:text>INSERT IGNORE INTO livret_parcours (_ID_FILIERE_, _ID_PROMO_) VALUES (@id_filiere , @id_promo);&#xA;</xsl:text>
 		

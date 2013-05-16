@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livret>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6ST03" cours="" td="" tp="" ctd="" ctp="" total="" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Stage laboratoire</titre>
+
+<methodeeval>Oral/Poster</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT Oral 20 min / CC Poster Appréciation / CC MS</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : Pas de session de rattrapage pour les stages</modalitesccsemestredeux>
+
+<calculnfsessionune>E 50\% + O 25\% + TP 25\%</calculnfsessionune>
+
+<CalculNFSessionDeux>E 66\% + TP 33\%</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Géraldine Roux</nompremierresp>
+
+<emailpremierresp>geraldine.roux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Fabienne Brulé</nomsecondresp>
+
+<emailsecondresp>fabienne.brule@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BOPE / BMC / BBV
+</descriptionCourte>
+
+<descriptionLongue>
+Stage en laboratoire académique ou industriel dans le domaine du parcours envisagé. La durée est de 4 à 6 semaines (détails de l’organisation fourni durant le semestre 5, avec signature d‘une convention de stage.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Initiation au travail de recherche en laboratoire.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BO02" cours="28" td="12" tp="8" ctd="" ctp="" total="48" semestre="Semestre 6" coeff="5" ects="5">
+<titre>Biologie évolutive et moléculaire</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT : Ecrit 2h + Ecrit TP 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT : Ecrit 2h + Ecrit TP 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>E 75\% + TP 25\%</calculnfsessionune>
+
+<calculnfsessiondeux>E 75\% + TP 25\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Géraldine Roux</nompremierresp>
+
+<emailpremierresp>geraldine.roux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Alain Legrand</nomsecondresp>
+
+<emailsecondresp>alain.legrand@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BOPE / BGST
+</descriptionCourte>
+
+<descriptionLongue>
+La réalité de l’évolution. Caractéristiques et mécanismes biologiques de l’évolution des lignées. Classification et phylogénèse : méthodes (cladistique, phénétique) et principes de la reconstruction phylogénétique (utilisation des logiciels PAUP, Mega). Notions d’évolution des génomes, d’horloge moléculaire, de duplication et pertes de gènes, éléments mobiles (transposons), transferts horizontaux de gènes. Techniques de biologie moléculaire liées à l’étude des génomes.
+</descriptionLongue>
+
+<textePrerequis>connaissance des plans d’organisations des animaux et végétaux.
+
+</textePrerequis>
+
+<objectifs> 
+  * Appréhender les contraintes phylogénétiques dans la classification évolutive des espèces. Maîtriser les principales méthodes de reconstruction utilisées en phylogénie moléculaire. Ces approches seront soutenues par l’enseignement de connaissances fondamentales et techniques en biologie moléculaire associées à l’étude de la structure des génomes et de leurévolution.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BO01" cours="24" td="12" tp="12" ctd="" ctp="" total="48" semestre="Semestre 6" coeff="5" ects="5">
+<titre>Biologie des populations</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT : Ecrit 2h + Oral 15 min + Ecrit TP 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT : Ecrit 2h + Ecrit TP 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>E 50\% + O 25\% + TP 25\%</calculnfsessionune>
+
+<calculnfsessiondeux>E 66\% + TP 33\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Géraldine Roux</nompremierresp>
+
+<emailpremierresp>geraldine.roux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Dynamique, génétique et évolution de populations d’animaux et de plantes. Applications aux domaines de
+l’exploitation (espèces non domestiques), du contrôle (espèces jugées nuisibles, invasions) et de la conservation (espèces menacées d’extinction).
+</descriptionLongue>
+
+<textePrerequis>Ecologie générale ; Bases de la génétique formelle.
+
+</textePrerequis>
+
+<objectifs> 
+  * Appréhender les modèles de base en dynamique et génétique des populations. Comprendre les problèmes inhérents à la conservation et aux invasions d’espèces animales et végétales. Compétences visées : capacité à lire et à comprendre les publications des revues internationales, consacrées aux aspects fondamentaux et appliqués de la biologie des populations.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BO07" cours="" td="12" tp="12" ctd="" ctp="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Stage terrain : écologie du littoral-faune marine</titre>
+
+<methodeeval>Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 30 min (sur site)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT Oral 15 min</modalitesccsemestredeux>
+
+<calculnfsessionune>100\%</calculnfsessionune>
+
+<calculnfsessiondeux>100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Géraldine Roux</nompremierresp>
+
+<emailpremierresp>geraldine.roux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BOPE / BGST
+</descriptionCourte>
+
+<descriptionLongue>
+Trois journées en Normandie consacrées aux organismes animaux de la zone intertidale, suivies d’analyses et de démonstrations au laboratoire. Ces études se font sur la base d’excursions sur différents biotopes représentatifs du milieu (observation des organismes et de l’environnement, prélèvements d’échantillons) et sont axées essentiellement sur la faune marine, les insectes et les oiseaux. Elles permettent la mise en relation entre biodiversité et conditions du milieu. Les séances en laboratoire sont des démonstrations (systématique, dissection, morphologie comparée, etc...) à partir des échantillons récoltés. D’autres études sont réalisées in situ afin de déterminer la diversité, la répartition et la quantification des organismes représentatifs des variations du milieu (salinité, durée d’immersion ou d’émersion, nature du substrat...).
+</descriptionLongue>
+
+<textePrerequis>Connaissance des groupes taxonomiques du règne animal.
+
+</textePrerequis>
+
+<objectifs> 
+  * Apprentissage de la reconnaissance d’organismes animaux en rapport avec la diversité et l’écologie des sites rencontrés lors du stage. Formation et préparation aux carrières de l’enseignement. Préparation aux métiers de l’environnement et à la gestion des écosystèmes.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6AG36" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Anglais 6</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE : CC 2h (écrit/oral) / RSE : CT (écrit) 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (écrit) 1h30</modalitesccsemestredeux>
+
+<calculnfsessionune>100\%</calculnfsessionune>
+
+<calculnfsessiondeux>100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Hervé Perreau</nompremierresp>
+
+<emailpremierresp>herve.perreau@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BMC / BOPE / BGST / BBV / PLURI
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d’expression à partir de documents authentiques longs et/ou complexes, portant sur des innovations technologiques, des découvertes ou avancées scientifiques.
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Anglais 5 ou environ 500 heures de formation équivalente.
+
+</textePrerequis>
+
+<objectifs> 
+  * Comprendre l’information exprimée dans des messages complexes sur le domaine des Sciences et Technologies et s’exprimer sur ce même domaine à l’oral avec un degré de spontanéité et de fluidité (niveau européen B2).
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BO05" cours="24" td="4" tp="20" ctd="" ctp="" total="48" semestre="Semestre 6" coeff="5" ects="5">
+<titre>Fixation de l'azote et agroéconomie végétale</titre>
+
+<methodeeval>Ecrit/TP</methodeeval>
+
+<modalitesccsemestreun>RNE : CT (Ecrit) 2h + CC (TP) ; RSE : CT (Ecrit 2h + TP 1h)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (Ecrit 2h + TP 1h)</modalitesccsemestredeux>
+
+<calculnfsessionune>E 66\% + TP 33\%</calculnfsessionune>
+
+<calculnfsessiondeux>E 66\% + TP 33\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Daniel Hagège</nompremierresp>
+
+<emailpremierresp>daniel.hagege@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BGST / BBV
+</descriptionCourte>
+
+<descriptionLongue>
+Métabolisme azoté et fixation symbiotique. Du blé au pain- De la vigne au vin. Sorties : utilisation des farines boulangères ; laboratoire de recherche sur la qualité des blés ; entreprise vinicole.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquisition des connaissances de base de la physiologie végétales.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BO03" cours="12" td="4" tp="8" ctd="" ctp="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Transduction des signaux chez les plantes</titre>
+
+<methodeeval>Ecrit/TP</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT : Ecrit 2h + TP 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT : Ecrit 2h + TP 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>E 66\% + TP 33\%</calculnfsessionune>
+
+<calculnfsessiondeux>E 66\% + TP 33\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Daniel Hagège</nompremierresp>
+
+<emailpremierresp>daniel.hagege@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BOPE / BBV
+</descriptionCourte>
+
+<descriptionLongue>
+Perception de l’environnement par les plantes (généralités)- Les récepteurs impliqués dans la perception ; Rôle des régulateurs à phosphorelais : les récepteurs à l’éthylène, les récepteurs aux cytokinines, Rôle des LeucineRichRepeat Récepteur Kinases. Acteurs de la transduction et messagers secondaires : les protéines G hétérotrimériques, les petites protéines G, les protéines kinases, les phosphatases, les phospholipases, le calcium, l'AMPc, l'adénosine-diphosphate-ribose cyclique. Le système ubiquitine/protéasome.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Connaissances générales en agronomie.
+ 
+</objectifs>
+
+<ressources>Taiz et Zeiger (Sinauer), revues spécialisées (Trends in plant Sciences)
+
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BO04" cours="" td="" tp="" ctd="24" ctp="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Tests statistiques</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT : Ecrit 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT : Oral 15 min</modalitesccsemestredeux>
+
+<calculnfsessionune>100\%</calculnfsessionune>
+
+<calculnfsessiondeux>100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Franck Brignolas</nompremierresp>
+
+<emailpremierresp>franck.brignolas@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Utilisation des outils statistiques classiques pour l’interprétation des résultats expérimentaux et la conception d’expériences dans le domaine des sciences de la vie (écologie, physiologie, génétique, agronomie, médecine, etc.). Décisions statistiques relatives aux proportions, aux espérances et aux variances ; tests d’indépendance, d’homogénéité et d’ajustement ; tests non paramétriques ; plans d’expérience ; corrélation et régression linéaire simple.
+</descriptionLongue>
+
+<textePrerequis>UE Lois de probabilités et estimation de paramètres usuels (semestre 5).
+
+</textePrerequis>
+
+<objectifs> 
+  * Autonomie dans l’analyse des données.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BO08" cours="" td="" tp="24" ctd="" ctp="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Stage terrain : diversité des algues marines</titre>
+
+<methodeeval>Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC(2) + CT Oral 30 min</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : Pas de session de rattrapage pour le terrain</modalitesccsemestredeux>
+
+<calculnfsessionune>CC 50\% + CT 50\%</calculnfsessionune>
+
+<CalculNFSessionDeux>E 66\% + TP 33\%</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Christiane Depierreux</nompremierresp>
+
+<emailpremierresp>christiane.depierreux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BOPE / BBV / BGST
+</descriptionCourte>
+
+<descriptionLongue>
+Etude sur le terrain (3 jours) des macroalgues benthiques. Observation des algues dans leur milieu naturel, identification des échantillons récoltés par analyse en laboratoire.
+</descriptionLongue>
+
+<textePrerequis>Connaissance des cycles biologiques des algues.
+
+</textePrerequis>
+
+<objectifs> 
+  * Identifier les principales algues des cotes françaises. Réaliser un alguier.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BO06" cours="34" td="" tp="14" ctd="" ctp="" total="48" semestre="Semestre 6" coeff="5" ects="5">
+<titre>Physiologie humaine et comparée</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT : Ecrit 2h + Oral 15 min</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT Ecrit 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>E 66\% + TP 33\%</calculnfsessionune>
+
+<calculnfsessiondeux>100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Olivier Richard</nompremierresp>
+
+<emailpremierresp>olivier.richard@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Jean-Pierre Gomez</nomsecondresp>
+
+<emailsecondresp>jean-pierre.gomez@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français/Anglais</langue>
+</langues>
+
+<descriptionCourte>Parcours BOPE / BGST / PLURI
+</descriptionCourte>
+
+<descriptionLongue>
+Compartiments liquidiens de l’organisme. Hématologie, bases d’immunologie. Physiologie des systèmes cardio-vasculaire et respiratoire : aspects anatomo-fonctionnels et régulations. Fonctionnement du système digestif, cheminement de l’aliment de la bouche à l’absorption intestinale. Physiologie du néphron. Physiologie osseuse et de l’ossification. Introduction aux neurosciences : organisation du cerveau, activités du système nerveux central et périphérique, bases de physiologie sensorielle. Introduction à l’endocrinologie : organisation d’une glande, physiologie hormonale. Physiologie de la reproduction : de la production des gamètes à la naissance ; liens entre système hypothamo-hypophysaire et gonades. Les travaux pratiques illustreront le cours sous formes d’ateliers expérimentaux, certaines des activités proposées pourront être enseignées en anglais. L’organisation générale anatomique de l’animal, nécessaire pour la compréhension des aspects physiologiques, sera illustrée à l’aide du modèle murin.
+</descriptionLongue>
+
+<textePrerequis>Bases anatomiques des grandes fonctions animales (semestre 5)
+
+</textePrerequis>
+
+<objectifs> 
+  * Ce module présente les notions de base en physiologie animale et humaine nécessaires pour une compréhension des mécanismes physiologiques chez l’humain. 
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="UEL" cours="" td="20" tp="" ctd="" ctp="" total="" semestre="Semestre 6" coeff="" ects="">
+<titre>Ouverture Maths pour prépa-concours, entraînement au concours</titre>
+
+<MethodeEval></MethodeEval>
+
+<modalitesccsemestreun>Cf. modalités de contrôle de connaissances des UE Libres</modalitesccsemestreun>
+
+<modalitesccsemestredeux>Cf. modalités de contrôle de connaissances des UE Libres</modalitesccsemestredeux>
+
+<CalculNFSessionUne>E 50\% + O 25\% + TP 25\%</CalculNFSessionUne>
+
+<CalculNFSessionDeux>E 66\% + TP 33\%</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Emmanuel Cepa</nompremierresp>
+
+<emailpremierresp>emmanuel.cepa@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours renforcé
+</descriptionCourte>
+
+<descriptionLongue>
+Exercices pour entraînement au concours.
+</descriptionLongue>
+
+<textePrerequis>Module Techniques en Mathématiques du semestre impair, forte motivation
+
+</textePrerequis>
+
+<objectifs> 
+  * Permettre à des étudiants d’acquérir des connaissances utiles pour passer les concours d’accès aux écoles nationales vétérinaires (concours ENV- voie B), les concours d’ingénieurs agro (concours ENSA voie B) mais également certains concours administratifs.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+</livret>

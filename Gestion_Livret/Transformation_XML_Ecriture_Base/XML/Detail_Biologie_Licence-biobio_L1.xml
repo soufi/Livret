@@ -1,0 +1,1236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livret>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL2CH14 SSL2CH14" cours="10" td="11" tp="3" ctd="" ctp="" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Chimie en solution 2</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CCI (E(2)+TP(5)) 4h ; RSE : CT (E+TP) 3h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (E+TP) 3h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 67 \% ; TP 33 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 67 \% ; TP 33 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Valérie Bertagna</nompremierresp>
+
+<emailpremierresp>valerie.bertagna@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours général
+</descriptionCourte>
+
+<descriptionLongue>
+Approfondissement des notions de pH, et d'oxydo-réduction (notions non abordées en chimie en solution 1)), conductivité solubilité  et cinétique. Applications à la biologie.</descriptionLongue>
+
+<textePrerequis>Chimie en Solution 1
+
+</textePrerequis>
+
+<objectifs> 
+  * Aborder les notions de base de la chimie en solution, avec applications à la biologie : équilibres d’oxydo-réduction, cinétique chimique.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL2BO03 SSL2BO03" cours="6" td="6" tp="" ctd="" ctp="" total="12" semestre="Semestre 2" coeff="2" ects="2">
+<titre>Bases de la génétique des populations</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Catherine Mura</nompremierresp>
+
+<emailpremierresp>catherine.mura@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Ossature - tous parcours 
+</descriptionCourte>
+
+<descriptionLongue>
+Notions de génétique des populations. Le modèle de Hardy Weinberg. La sélection. Les mutations. La migration. Le hasard et la dérive. 
+TP : Modélisation dérive génétique
+</descriptionLongue>
+
+<textePrerequis>Principe de la génétique formelle
+</textePrerequis>
+
+<objectifs> 
+  * Acquérir les bases de la génétique des populations
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL1CH02 SSL1CH02" cours="17" td="16" tp="15" ctd="" ctp="" total="48" semestre="Semestre 1" coeff="5" ects="5">
+<titre>Atomistique et thermodynamique</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CCI (E(3) + TP(5)) 5h ; RSE : CT (E+TP) 3h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (E+TP) 3h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit : 67 \% ; TP : 33 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit : 67 \% ; TP : 33 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Fabienne Méducin</nompremierresp>
+
+<emailpremierresp>fabienne.meducin@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Tronc commun 
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Structure de l'atome (le noyau, les électrons : introduction des orbitales atomiques), formation des liaisons (introduction des orbitales moléculaires)
+* Radioactivité, quelques propriétés moléculaires (moment dipolaire, énergies de liaison, ...)
+* Gaz parfaits, premier et deuxième principes de thermodynamique.
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Bases de chimie générale.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL1BO02 SSL1BO02" cours="18" td="6" tp="12" ctd="" ctp="" total="36" semestre="Semestre 1" coeff="4" ects="4">
+<titre>Introduction à la biologie cellulaire</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CCI (E(2)+TP(4-5)) 3h ; RSE : CT (E+TP) 1h30</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit : 75 \% ; TP : 25 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Valérie Altemayer</nompremierresp>
+
+<emailpremierresp>valerie.altemayer@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Eric Duverger</nomsecondresp>
+
+<emailsecondresp>eric.duverger@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Tronc commun 
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Acaryotes, Procaryotes et Eucaryotes : Définition, classification, multiplication. 
+* Description de la cellule : membrane plasmique, parois, système membranaire interne, organites semi-autonome, cytosquelette. 
+* Différenciation cellulaire : types cellulaires et structure des cellules spécialisées. 
+* Particularité de la cellule végétale : plastes, paroi, vacuoles, pigments… 
+* TP : Apprentissage de quelques techniques d’observation de la cellule et illustration du cours. 
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Sensibiliser l’étudiant à la diversité du monde vivant et lui faire connaître son organisation.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL1BO03 SSL1BO03" cours="6" td="6" tp="" ctd="" ctp="" total="12" semestre="Semestre 1" coeff="2" ects="2">
+<titre>Analyse des données en biosciences</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CCI(3) 1h30</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Aurélien Sallé</nompremierresp>
+
+<emailpremierresp>aurelien.salle@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Tronc commun 
+</descriptionCourte>
+
+<descriptionLongue>
+Représentation des données dans le domaine biologique ; valeurs centrales et de dispersion. Distribution normale et épreuves de normalité. Test de comparaison des moyennes (Student). Applications en écologie : Régression linéaire simple, covariance, corrélation, test de signification du coefficient de corrélation, loi de Poisson, Chi2 d'ajustement à la loi de Poisson. Applications en biochimie-physiologie et génétique : les principes énoncés en cours seront appliqués à des analyses de données issues de travaux dans le domaine bio-santé. Il sera mis l’accent en particulier sur la pertinence d’emploi de tel ou tel test statistique et la présentation graphique des résultats (moyenne, écart type, erreur standard à la moyenne…)
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Eléments statistiques de base pour les applications écologiques et physiologiques en Travaux Dirigés.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL2BO06 SSL2BO06" cours="18" td="" tp="6" ctd="" ctp="" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Parasitisme et grandes endémies</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Valérie Altemayer</nompremierresp>
+
+<emailpremierresp>valerie.altemayer@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours général et enseignement PLURI
+</descriptionCourte>
+
+<descriptionLongue>
+Les grandes parasitoses mondiales. Les parasites animaux d’intérêts médicaux Morphologie et cycle parasitaire. Répartition géographiques et coûts des principales parasitoses humaines. Traitements.  Notion d’épidémiologie.</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Connaissance des principaux parasites de l’Homme et des animaux domestiques et notion d’écologie parasitaire.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL2BO02 SSL2BO02" cours="12" td="16" tp="8" ctd="" ctp="" total="36" semestre="Semestre 2" coeff="4" ects="4">
+<titre>Principe de la génétique formelle</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CT (E) 2h / CC (TP) ; RSE : CT (E+TP) 3h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (E+TP) 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 75 \% ; TP 25 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 75 \% ; TP 25 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Catherine Mura</nompremierresp>
+
+<emailpremierresp>catherine.mura@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Ossature - tous parcours 
+</descriptionCourte>
+
+<descriptionLongue>
+Le modèle mendélien mono et dihybridisme.
+Notions fondamentales en génétique formelle : Le gène, Génotype/Phénotype, dominance récessivité, mutation, allèles, allèles multiples, allèles létaux, complémentation, pléiotropie, Interaction entre les gènes
+Théorie Chromosomique de l’hérédité. Distance génétique, cartographie des loci.
+Génétique humaine. L’analyse des pedigrees.
+Génétique formelle des phages et des bactéries.
+TP : Croisements Drosophiles, Polymorphisme de l’amylase</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Acquérir les bases de la génétique formelle permettant d’interpréter la ségrégation des caractères héréditaires.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL2ST01 SSL2ST01" cours="18" td="6" tp="24" ctd="" ctp="" total="48" semestre="Semestre 2" coeff="6" ects="6">
+<titre>Cours Paléoenvironnement, stratigraphie et paléontologie</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CCI (E(2)+TP(2)) 5h ; RSE : CT 3h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (E+TP) 3h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 67 \% ; TP 33 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 67 \% ; TP 33 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Christian Di Giovanni</nompremierresp>
+
+<emailpremierresp>christian.di-giovanni@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours enseignement BGST
+</descriptionCourte>
+
+<descriptionLongue>
+La caractérisation du paysage (relief terrestre) - L'enregistrement du temps (grands principes de stratigraphie, lithostratigraphie, biostratigraphie, chimiostratigraphie) - Histoire des climats et environnements (paléoclimats, paléoenvironnements, marqueurs paléoclimatiques et paléoenvironnementaux) - Histoire de la vie (grandes étapes de la vie et crises biologiques)</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Notion de stratigraphie, échelle biostratigraphique, variabilité climatique naturelle, histoire de la vie.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL1PP01 SSL1PP01" cours="2" td="14" tp="" ctd="" ctp="" total="16" semestre="Semestre 1" coeff="3" ects="3">
+<titre>Projet personnel et professionnel - techniques de communications</titre>
+
+<methodeeval>Ecrit et oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CCI(2) 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 50 \% ; Oral 50 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 50 \% ; Oral 50 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Olivier Richard</nompremierresp>
+
+<emailpremierresp>olivier.richard@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Tronc commun 
+</descriptionCourte>
+
+<descriptionLongue>
+Après une présentation générale des objectifs de l’UE et des modalités de recherche documentaire au cours d’un premier cours magistral, l’élaboration d’une fiche de projet individuel sera réalisée par l’étudiant. A l’issue du dépouillement de ces fiches, des groupes de travail (3-4 étudiants) seront organisés pour les séances de TD suivantes. Ces séances seront destinées à préparer une présentation sous forme de poster et de diaporama informatisés soutenu oralement lors de la dernière séance.Des séances spécifiques seront consacrées à la prise de parole en public, la capacité à s’exprimer avec/sans notes, aux techniques d’interview, d’entretien et à la rédaction écrite. La réalisation du diaporama informatique sera facilitée par le travail en deux séances de TP (initiation au logiciel, réalisation du document). La présentation finale sera construite autour d’une recherche de documents sur le métier ou l’activité choisie en début de semestre, et d’une rencontre avec un professionnel. Le travail personnel sera guidé par un enseignant lors des séances de TD. Le SUIO sera présenté et l’étudiant devra l’utiliser dans sa démarche personnelle. Un rapport individuel issu du travail produit pendant le module sera remis pour évaluation lors de la dernière séance de TD</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Recherche d’informations sur les métiers (sites internet appropriés, nécessité de mise à jour pour ce type d’information). 
+* Prise de parole lors d’interviews et face à un public. 
+* Réalisation d’une production écrite sous forme de poster.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL2AG12 SSL2AG12" cours="0" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Anglais 2</titre>
+
+<methodeeval>Ecrit et/ou oral</methodeeval>
+
+<modalitesccsemestreun>RNE : CCI(4-7) 2h ; RSE : CT 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h30</modalitesccsemestredeux>
+
+<calculnfsessionune>CCI ou CT 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>CT 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Murielle Pasquet</nompremierresp>
+
+<emailpremierresp>murielle.pasquet@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français/Anglais</langue>
+</langues>
+
+<descriptionCourte>
+Ossature - tous parcours 
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d’expression orale et écrite à partir de documents authentiques simples et / ou courts centrés sur le monde universitaire anglo-saxon.</descriptionLongue>
+
+<textePrerequis>Avoir suivi Anglais 1 ou environ  400 heures de formation équivalente.
+</textePrerequis>
+
+<objectifs> 
+  * Comprendre et s’exprimer de manière plus autonome dans des situations de séjour d’études universitaires en pays anglophone (niveau européen : B1).
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL2BO07 SSL2BO07" cours="10" td="4" tp="10" ctd="" ctp="" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Algues et mycètes</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Christiane Depierreux</nompremierresp>
+
+<emailpremierresp>christiane.depierreux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours général et enseignement PLURI
+</descriptionCourte>
+
+<descriptionLongue>
+Biologie et reproduction des algues et des champignons, initiation à la reconnaissance des champignons. Intérêts économiques, pharmaceutiques et biotechnologiques des algues et des champignons </descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Intérêts économiques et biologie des algues et des champignons.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL1BO01 SSL1BO01" cours="30" td="3" tp="15" ctd="" ctp="" total="48" semestre="Semestre 1" coeff="5" ects="5">
+<titre>Panorama du monde animal et végétal</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CCI(3) 4h ; RSE : CT 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>François Leutier</nompremierresp>
+
+<emailpremierresp>francois.lieutier@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Tronc commun 
+</descriptionCourte>
+
+<descriptionLongue>
+Origine de la vie et grandes étapes de sa complexification .Eubactéries, archées, eucaryotes ; les diverses lignées unicellulaires et pluricellulaires ; les plans d’organisation du monde animal (feuillets embryonnaires, coelome, ..) et caractères généraux des grands embranchements. Plans d’organisation du monde végétal, les étapes de l’acquisition des différents organes des algues aux angiospermes; particularités des mycètes.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Sensibiliser l’étudiant à la diversité du monde vivant et lui faire connaître son organisation.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL2BO05 SSL2BO05" cours="12" td="6" tp="6" ctd="" ctp="" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Ecologie générale : environnement et fonctionnement de la biosphère</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT(CM+TD) 1h30 / CC(TP)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(CM+TD+TP) 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>CT 67 \% ; CC 33 \%</calculnfsessionune>
+
+<calculnfsessiondeux>CM 33 \% ; TD 33 \% ; TP 33 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>François Lieutier</nompremierresp>
+
+<emailpremierresp>francois.lieutier@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours général et enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Quelques problèmes environnementaux et notions d'interdépendance; organisation générale de la biosphère (bilan énergétique, circulation atmosphérique, organisation spatiale); organisation fonctionnelle (chaînes et réseaux trophiques, perturbations d'origine humaine); circulation de la matière et cycles biogéochimiques (eau, carbone, azote, oxygène), et relations avec les activités humaines; flux d'énergie (bilans énergétiques, productivité, efficacité des écosystèmes naturels et anthropisés); organisation des biocénoses, biogéographie et fonctionnement des grands biomes terrestres; notions de biodiversité.</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Montrer comment la connaissance du fonctionnement de la biosphère, en liaison avec les activités humaines, peut permettre de comprendre les problèmes environnementaux actuels, d'envisager des solutions et d'appréhender les problèmes futurs.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL2ST02 SSL2ST02" cours="18" td="6" tp="24" ctd="" ctp="" total="48" semestre="Semestre 2" coeff="6" ects="6">
+<titre>Cours Minéralogie</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CCI (E(2)+TP(2)) 8h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (E+TP) 4h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 67 \% ; TP 33 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 67 \% ; TP 33 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Nicole Lebreton</nompremierresp>
+
+<emailpremierresp>nicole.lebreton@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours enseignement BGST
+</descriptionCourte>
+
+<descriptionLongue>
+
+*[CM :] Définition d’un minéral – Bases élémentaires de cristallographie et cristallochimie – Notions de symétrie cristalline – Présentation des critères de détermination macroscopique des minéraux – Notions d’optique cristalline pour la détermination des minéraux à l’aide du microscope polarisant – La classification des minéraux et leur répartition dans le globe – Présentation des grandes familles de minéraux (cristallochimie, gisements, applications industrielles).
+*[TD :] La symétrie des mailles élémentaires – Calcul de formules structurales.
+
+</descriptionLongue>
+
+<textePrerequis>Connaissances de base en chimie.
+</textePrerequis>
+
+<objectifs> 
+  * Connaissances du monde minéral dans sa diversité et ses principes – Apprentissage des méthodes d’identification des minéraux.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL2CH04 SSL2CH04" cours="8" td="7" tp="9" ctd="" ctp="" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Chimie en solution 1</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CCI ((E(2-3) + TP(5)) 2h ; RSE : CT (E + TP) 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (E + TP) 3h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 67 \% ; TP 33 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 67 \% ; TP 33 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Valérie Bertagna</nompremierresp>
+
+<emailpremierresp>valerie.bertagna@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Ossature - tous parcours 
+</descriptionCourte>
+
+<descriptionLongue>
+Equilibres, pH d'une solution aqueuse, Oxydo-réduction. Ces chapitres seront abordés avec le minimum de notions nécessaires
+</descriptionLongue>
+
+<textePrerequis>Atomistique et thermodynamique
+</textePrerequis>
+
+<objectifs> 
+  * Aborder les notions de base de la chimie en solution, avec applications à la biologie : les équilibres chimiques, pH de solutions aqueuses, dosages acides-bases, précipitation, complexation.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="???" cours="20" td="" tp="" ctd="" ctp="" total="20" semestre="Semestre 2" coeff="3" ects="3">
+<titre>UEL IUFM - Histoire Géo ou EPS à l'école</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 1h30</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h30</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Pierre-Olivier Hochard</nompremierresp>
+
+<emailpremierresp>pierre-olivier.hochard@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Jocelyne Jamet</nomsecondresp>
+
+<emailsecondresp>jocelyne.jamet@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours enseignement PLURI
+</descriptionCourte>
+
+<descriptionLongue>???</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * ???
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL2BO04 SSL2BO04" cours="10" td="14" tp="" ctd="" ctp="" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Méthodologie, analyse et recherche documentaire</titre>
+
+<methodeeval>Ecrit et oral</methodeeval>
+
+<modalitesccsemestreun>RNE : CC(2)/CT 2h ; RSE : CT 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Jean-Pierre Gomez</nompremierresp>
+
+<emailpremierresp>jean-pierre.gomez@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours général et enseignement PLURI
+</descriptionCourte>
+
+<descriptionLongue>
+Des cours-conférences sont destinés à présenter des approches biochimiques, physiologiques et génétiques de pathologies humaines d’actualité. Par une présentation démarrant des fondements les plus simples accessibles par tous, et suivis des découvertes les plus récentes, l’étudiant comprendra en quoi la recherche peut apporter des solutions à plus ou moins brève échéance.
+Les thématiques de ces cours pourront évoluer chaque année en fonction de l’actualité biomédicale : des sujets comme l’obésité, l’hypertension artérielle et ses conséquences cardio-vasculaires, la maladie d’Alzheimer, la mucoviscidose pourront par exemple être abordées.   
+Les thématiques proposées en cours-conférences seront ensuite reprises en TD avec un travail sur documents scientifiques afin de compléter et conforter les notions acquises en cours</descriptionLongue>
+
+<textePrerequis>Atomistique et thermodynamique
+</textePrerequis>
+
+<objectifs> 
+  * Ce module se veut comme une première approche du monde la recherche dans le domaine de la biologie de la santé. Il doit permettre à l’étudiant d’appréhender de façon concrète les découvertes les plus récentes et d’acquérir la démarche et la méthodologie nécessaire dans la recherche d’information scientifique. 
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL1BH01 SSL1BH01" cours="28" td="10" tp="10" ctd="" ctp="" total="48" semestre="Semestre 1" coeff="5" ects="5">
+<titre>Molécules du vivant</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CCI (E(3)+TP) 4h ; RSE : CT (E+TP) 4h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (E+TP) 2h30</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit : 75 \% ; TP : 25 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit : 75 \% ; TP : 25 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Eric Hébert</nompremierresp>
+
+<emailpremierresp>eric.hebert@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Tronc commun 
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Protéines : acides aminés - propriétés physico-chimiques. Structure primaire des protéines. Structure secondaire : hélice $\alpha$ , feuillets $\beta$.
+* Lipides : acides gras, triglycérides, glycéro-phospholipides, stéroïdes. Membranes et surface cellulaire, structure, composition des protéines membranaires.
+* Oses : nomenclature, mono et diholosides, polyosides de réserve et de structure. 
+* Acides nucléiques : structure primaire : bases puriques et pyrimidiques.  Nucléosides, nucléotides. Structure secondaire : liaisons faibles, double brin, double hélice, séquençage chimique de l’ADN. 
+* Enzymologie : rappels de cinétique chimique ; structure et mécanisme d’action des enzymes ; régulation de l’activité enzymatique ; 
+* Introduction au métabolisme : glycolyse et cycle de Krebs ; oxydations phosphorylantes.
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Bases moléculaires de la biologie.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°19 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL1II01 SSL1II01" cours="" td="" tp="" ctd="" ctp="24" total="24" semestre="Semestre 1" coeff="3" ects="3">
+<titre>Préparation au C2i (Certificat informatique et internet)</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CCI(3) 5h ; RSE : CT 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>CCI ou CT 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Laure Kahlem</nompremierresp>
+
+<emailpremierresp>laure.kahlem@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Tronc commun 
+</descriptionCourte>
+
+<descriptionLongue>
+Cette UE a pour objectif de développer les compétences de base nécessaires à l’usage des Technologies de l’Information et de la Communication telles que définies dans le référentiel national du C2i niveau 1 et de préparer les étudiants à la certification. </descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°20 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL2BO01 SSL2BO01" cours="20" td="4" tp="" ctd="" ctp="" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Organisation et fonctionnement de la cellule eucaryote</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CCI(2) 2h ; RSE : CT 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Jacques Pichon</nompremierresp>
+
+<emailpremierresp>jacques.pichon@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Eric Duverger</nomsecondresp>
+
+<emailsecondresp>Eric.duverger@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Ossature - tous parcours 
+</descriptionCourte>
+
+<descriptionLongue>
+La membrane plasmique : structure et transport des molécules. Réticulum endoplasmique. Appareil de Golgi. Lysosome….  Le noyau : Introduction à l’expression des gènes et le cycle cellulaire.</descriptionLongue>
+
+<textePrerequis>
+* Molécules du vivant
+* Introduction à la biologie cellulaire
+
+</textePrerequis>
+
+<objectifs> 
+  * Initiation au fonctionnement de la cellule eucaryote.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°21 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL2CH06 SSL2CH06" cours="12" td="12" tp="" ctd="" ctp="" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Bases de la chimie organique</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CCI (2) 3h ; RSE : CT 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>CCI ou CT 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Arnaud Tatibouet</nompremierresp>
+
+<emailpremierresp>arnaud.tatibouet@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours général
+</descriptionCourte>
+
+<descriptionLongue>
+Initiation à la chimie organique : Etude des grandes réactivités (Substitution, Elimination, Addition) associées aux fonctions essentielles du monde du vivant, les insaturations (alcène et alcynes) les fonctions alcool, carbonyle, pour une meilleure compréhension des phénomènes biochimiques. Présentation des réactivités, mécanismes et des intermédiaires réactionnels.
+</descriptionLongue>
+
+<textePrerequis>
+* Atomistique et Thermodynamique
+* Chimie en Solution 1
+
+
+</textePrerequis>
+
+<objectifs> 
+  * Connaissances fondamentales de la chimie bio-organique réactionnelle.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°22 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL1AG11 SSL1AG11" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 1" coeff="3" ects="3">
+<titre>Anglais 1</titre>
+
+<methodeeval>Ecrit et/ou oral</methodeeval>
+
+<modalitesccsemestreun>RNE : CCI(5) 2h ; RSE : CT 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h30</modalitesccsemestredeux>
+
+<calculnfsessionune>CCI ou CT 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>CT 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Murielle Pasquet</nompremierresp>
+
+<emailpremierresp>murielle.pasquet@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français/Anglais</langue>
+</langues>
+
+<descriptionCourte>
+Tronc commun 
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d’expression orale et écrite à partir de documents authentiques simples et / ou courts centrés sur le monde universitaire anglo-saxon.
+</descriptionLongue>
+
+<textePrerequis>Niveau baccalauréat anglais LV1 ou LV2 ou environ 400 heures de formation
+</textePrerequis>
+
+<objectifs> 
+  * Etre à même de préparer un projet de séjour d’études universitaires en pays anglophone dans une langue écrite et orale simple et suffisamment claire.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+</livret>
