@@ -1,0 +1,93 @@
+% Informations générales
+\NeedsTeXFormat{LaTeX2e}[1999/01/01]
+\ProvidesPackage{pageDeGarde-livret}[2011/07/05]
+
+%% Chargement des packages nécessaires
+\RequirePackage{xkeyval}
+\RequirePackage[top=27mm, head=27mm, bottom=20mm, foot=20mm, left=1mm, offset=0mm, textwidth=146mm]{geometry}
+\RequirePackage{lmodern}
+\RequirePackage{fancyhdr}
+\RequirePackage{tikz}
+
+\define@cmdkey [LIV] {pageGarde} {nomFormation}{}
+\define@cmdkey [LIV] {pageGarde} {objetDocument}{}
+\define@cmdkey [LIV] {pageGarde} {typeDocument}{}
+\define@cmdkey [LIV] {pageGarde} {anneeUniversitaire}{}
+
+\presetkeys [LIV] {pageGarde} {nomFormation=,typeDocument=,anneeUniversitaire=}{}
+
+\fancyhead{}
+\fancyfoot{}
+\usetikzlibrary{arrows,calc}
+
+% % % % % % % % % % PARAMETRAGE DE LA LIGNE DE SEPARATION DU HEADER ET FOOTER % % % % % % % % % %
+\renewcommand{\headrulewidth}{0.1pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% % % % % % % % % % PERSONNALISATION DU FOOTER GAUCHE % % % % % % % % % %
+\fancyfoot[L]{
+    \begin{tikzpicture}[xshift=-1mm, remember picture, overlay]
+      %A grid can be useful when defining coordinates
+%     \draw[step=1mm, gray, thin] (0,0) grid (9,5); 
+%     \draw[step=5mm, black] (0,0) grid (9,5); 
+      \path
+      coordinate (start) at (0,4)
+      coordinate (c1) at +(5,3)
+      coordinate (c2) at +(6.5,1)
+      coordinate (c3) at +(7.5,0)
+      coordinate (slut) at (0,0);
+      \draw[thick,fill=couleurClaire,draw=couleurClaire] (start) .. controls (c1) and (c2) .. (c3);
+      \draw[thick,fill=couleurClaire,draw=couleurClaire] (c3) -- (slut) -- (start);
+      \draw[thick,fill=couleurClaire,draw=couleurClaire] (start) -- (c3);
+      \node at (2,1.25) {
+      \includegraphics[scale=0.4]{img/logo_uo_blanc.png}
+      };
+    \end{tikzpicture}
+}
+
+% % % % % % % % % % PERSONNALISATION DU FOOTER DROIT % % % % % % % % % %
+\fancyfoot[R]{}
+
+% % % % % % % % % % PERSONNALISATION DU HEADER GAUCHE % % % % % % % % % %
+\fancyhead[L]{
+  \begin{tikzpicture}[remember picture, overlay]
+    \node at (2.5,0.7) {
+      \includegraphics[scale=0.8]{img/logo_UFR_Sciences.png}
+      };
+  \end{tikzpicture}}
+  
+% % % % % % % % % % PERSONNALISATION DU HEADER DROIT % % % % % % % % % %
+\fancyhead[R]{}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+\newcommand*{\pageDeGarde}[1][]{\livPageDeGarde[#1]}
+
+\def\livPageDeGarde[#1]{
+  \setkeys[LIV]{pageGarde}{#1}
+  \pagestyle{fancy}
+  ~
+  \vfill
+  \centering
+  \begin{minipage}{0.7\textwidth}
+    \centering
+    \HRule
+    \vspace{5mm}
+    {\huge \bfseries \color{couleurFonce} \cmdLIV@pageGarde@nomFormation}
+    \HRule
+    
+    \begin{center}
+      {\LARGE \color{couleurFonce} \cmdLIV@pageGarde@objetDocument}\ \\ \ \\
+
+      {\small \color{couleurClaire} \cmdLIV@pageGarde@typeDocument}\ \\ \ \\
+
+      {\small \color{couleurClaire} \cmdLIV@pageGarde@anneeUniversitaire}
+    \end{center}
+  \end{minipage}
+  \vfill
+  \newpage
+  \raggedright
+  \pagestyle{plain}
+}
+
+\endinput

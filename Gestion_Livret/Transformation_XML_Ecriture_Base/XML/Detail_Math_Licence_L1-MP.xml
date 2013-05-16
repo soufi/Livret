@@ -1,0 +1,2792 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livret>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="3MT09" cours="24" td="36" tp="" ctd="" total="60" semestre="Semestre 3" coeff="6" ects="6">
+<titre>Analyse 2</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Vittoria Pierfelice</nompremierresp>
+
+<emailpremierresp>vittoria.pierfelice@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Suites de Cauchy - Suites extraites - Théorème de Bolzano-Weierstrass,
+  * Séries numériques,
+  * Intégrales généralisées.
+
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Analyse 1 au semestre 2.
+</textePrerequis>
+
+<objectifs>Approfondir les notions sur les suites, et s'initier aux intégrales généralisées</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="4PY06" cours="" td="" tp="18" ctd="30" total="48" semestre="Semestre 4" coeff="4" ects="4">
+<titre>Interférences et diffraction</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Norbert Garnier</nompremierresp>
+
+<emailpremierresp>norbert.garnier@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Noureddine El Jaouhari</nomsecondresp>
+
+<emailsecondresp>noureddine.el\_jaouhari@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+
+*
+Notion d'onde, l'onde progressive plane monochromatique (OPPM);
+Le phénomène d'interférence à 2 ondes; -Condition d'interférence de la lumière, différence de marche, déphasage, ordre d'interférence;
+* 
+Interférences non localisées : - Conditions nécessaires à la formation d'interférences non localisées ; - Exemples de montages optiques permettant de former ce type d'interférences : fentes d'Young, miroir de Lloyd, miroirs de Fresnel, bi-lentilles de Billet.
+*
+Interférences localisées : - Conditions nécessaires à la formation d'interférences localisées et principales propriétés de ce type d'interférences : - Interférence par des lames à faces parallèles;- Interférences de "coin d'air"; - Exemples montage optique permettant l'observation de ces interférences : l'interféromètre Michelson.
+*
+Diffraction : - Principe d'Huygens-Fresnel, diffraction par une fente fine, 2 fentes fines; - Diffraction par $N$ fentes fines, réseau en transmission ; - Diffraction par une ouverture circulaire, résolution des instruments d'optique.
+
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi le module d'Optique au semestre 1.
+</textePrerequis>
+
+<objectifs>Donner les connaissances de base en optique ondulatoire.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6MT05" cours="24" td="36" tp="" ctd="" total="60" semestre="Semestre 6" coeff="6" ects="6">
+<titre>Probabilités</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Athanasios Batakis</nompremierresp>
+
+<emailpremierresp>athanasios.batakis@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Formalisme probabiliste
+  * Variables aléatoires
+  * Mesure image, loi d'une variable aléatoire
+  * Lois à densité, exemples usuels
+  * Loi d'un vecteur aléatoire
+  * Indépendance
+  * Moments
+  * Diverses formes de convergence, espaces $L^p$
+  * Loi des grands nombres.
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="3IF02" cours="24" td="36" tp="" ctd="" total="60" semestre="Semestre 3" coeff="6" ects="6">
+<titre>Algorithmique et programmation 3</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Mathieu Liedloff</nompremierresp>
+
+<emailpremierresp>mathieu.liedloff@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Vittoria Pierfelice</nomsecondresp>
+
+<emailsecondresp>vittoria.pierfelice@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité optionnelle. Option 2 (1 parmi 3).
+</descriptionCourte>
+
+<descriptionLongue>Présentation de l'approche objet (valeurs + message), bases de conception/analyse objet.
+Notions de classes, méthodes, attributs, encapsulation, héritage (simple), interface, classes internes, exceptions... Mise en \oe uvre des interfaces graphiques et de la programmation événementielle.</descriptionLongue>
+
+<textePrerequis>Programmation impérative, algorithmes et structures de données (algorithmique et programmation 1 et 2).
+</textePrerequis>
+
+<objectifs>Maîtrise des bases de la conception et de la programmation objet.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="1MT02" cours="" td="" tp="" ctd="60" total="60" semestre="Semestre 1" coeff="6" ects="6">
+<titre>Introduction au raisonnement math\'ematique</titre>
+
+<methodeeval>Contrôle continu intégral</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Cécile Louchet</nompremierresp>
+
+<emailpremierresp>cecile.louchet@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Alexandre Tessier</nomsecondresp>
+
+<emailsecondresp>alexandre.tessier@univ-orleans.fr </emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Logique \'el\'ementaire, implication, quantificateurs,
+  * Les différents types de démonstrations en mathématiques (implication directe, récurrence, preuve par l'absurde ...),
+  * Manipulations ensemblistes, application d'un ensemble vers un autre,
+  * Applications injectives, surjectives, bijectives,
+  * Nombres complexes,
+  * Systèmes lin\'eaires, familles libres, matrices dans $\mathbb{R}^2$ et $\mathbb{R}^3$.
+ 
+</descriptionLongue>
+
+<textePrerequis>Mathématiques de Terminale S.
+</textePrerequis>
+
+<objectifs>Savoir mettre en \oe uvre un raisonnement mathématique de base.</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="" cours="" td="" tp="" ctd="20" total="20" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Unité d'enseignement libre</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Vittoria Pierfelice</nompremierresp>
+
+<emailpremierresp>vittoria.pierfelice@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>L'unité d'ouverture est à choisir, en début du semestre, parmi la centaine d'enseignements dédiés à cet usage et offerts par toutes les composantes de l'université (Sciences, Droit-
+\'Economie-Gestion, Sport). Voici quelques exemples d'unités d'ouverture :
+
+* Sport.
+* Traitement de signal et d'image.
+* Droit de l'informatique.
+* Problèmes économiques contemporains.
+* Histoire du cinéma, histoire des arts.
+* Enseigner : posture et identité professionnelles.
+* Lecture critique du réchauffement climatique.
+* Maîtriser son expression ; les enjeux de la communication orale : le corps, l'espace, la voix.
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>Comprendre comment ce qu'on apprend dans le cadre d'un diplôme déjà très spécialisé ; s'insérer dans le large champ des connaissances et des savoirs auxquels on sera confronté dans son expérience professionnelle ou personnelle.</objectifs>
+
+<ressources>La page du site de l'université dédiée aux unités d'ouverture : http://www.univ-orleans.fr/scolarite/inscriptions/?page=2
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="4MT05" cours="24" td="24" tp="" ctd="" total="48" semestre="Semestre 4" coeff="5" ects="5">
+<titre>Suites et séries de fonctions</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Noureddine El Jaouhari</nompremierresp>
+
+<emailpremierresp>noureddine.el\_jaouhari@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Suites et séries de fonctions,
+  * Séries entières, séries de Fourier,
+  * Intégrales dépendant d'un paramètre.
+
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Analyse 2 au semestre 3.
+</textePrerequis>
+
+<objectifs>Apprendre à manipuler des suites de fonctions et des intégrales dépendant d'un paramètre.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="1PY03" cours="" td="" tp="12" ctd="24" total="36" semestre="Semestre 1" coeff="3" ects="3">
+<titre>Lois fondamentales d'électricité linéaire</titre>
+
+<methodeeval>Contrôle continu intégral</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Pascal Andreazza</nompremierresp>
+
+<emailpremierresp>pascal.andreazza@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Alexandre Tessier</nomsecondresp>
+
+<emailsecondresp>alexandre.tessier@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+\'Etude des circuits électriques linéaires en continu et alternatif. Les notions abordées sont les dipôles passifs et actifs, leurs associations, les théorèmes de Thévenin et de Norton, la puissance instantanée et la puissance complexe, les fonctions de transfert, la réponse temporelle d'un circuit et le régime transitoire. Les éléments de mathématiques (nombres complexes, équations aux dérivées ordinaires) seront utilisées dans ce module.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+Acquérir les notions de base en électricité. Savoir analyser et câbler un circuit constitué de dipôles linéaires. Mesurer des tensions, des fréquences et des déphasages.
+</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6AG36" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Anglais 6</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sylvain Gendron</nompremierresp>
+
+<emailpremierresp>sylvain.gendron@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d'expression à partir de documents authentiques longs et/ou complexes portant sur des innovations technologiques, des découvertes et des avancées scientifiques.
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Anglais 5 ou environ 500 heures de formation équivalente.
+</textePrerequis>
+
+<objectifs>Comprendre l'information exprimée dans des messages complexes sur le domaine des sciences et technologies, et s'exprimer sur ce même domaine à l'oral avec un degré suffisant de spontanéité et de fluidité (niveau européen B2).</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5MT04" cours="24" td="36" tp="" ctd="" total="60" semestre="Semestre 5" coeff="6" ects="6">
+<titre>Topologie des espaces métriques</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Nawfal Elhage Hassan</nompremierresp>
+
+<emailpremierresp>nawfal.elhage\_hassan@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Distances, normes
+  * Convergences de suites, continuité
+  * Espaces complets
+  * Espaces compacts
+  * Espaces vectoriels normés, applications linéaires continues
+  * Connexité
+
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi les unités de mathématiques des semestres précédents.
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="3MT12" cours="24" td="36" tp="" ctd="" total="60" semestre="Semestre 3" coeff="6" ects="6">
+<titre>Géométrie du plan et de l'espace</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Jean Renault</nompremierresp>
+
+<emailpremierresp>jean.renault@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Vittoria Pierfelice</nomsecondresp>
+
+<emailsecondresp>vittoria.pierfelice@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité optionnelle. Option 2 (1 parmi 3).
+</descriptionCourte>
+
+<descriptionLongue>
+* Relations d'équivalence et quotients,
+* actions de groupes,
+* notions de géométrie affine : points et vecteurs,
+* repères, barycentres,
+* droites et plans dans l'espace,
+* applications affines,
+* géométrie dans $\mathbb{C}$.
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="3MT08" cours="24" td="36" tp="" ctd="" total="60" semestre="Semestre 3" coeff="6" ects="6">
+<titre>Algèbre 2</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Vittoria Pierfelice</nompremierresp>
+
+<emailpremierresp>vittoria.pierfelice@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Valeurs propres, vecteurs propres,
+  * Polynôme caractéristique,
+  * Diagonalisation - Trigonalisation,
+  * Polynômes d'endomorphismes,
+  * Polynômes annulateurs,
+  * Anneaux de polynômes [optionnel].
+
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Algèbre 1 au semestre 2.
+</textePrerequis>
+
+<objectifs>Se former à l'étude spectrale de matrices.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6PY07" cours="18" td="18" tp="" ctd="" total="36" semestre="Semestre 6" coeff="" ects="">
+<titre>Relativité et physique subatomique</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Alessandro Spallicci Di Filottrano</nompremierresp>
+
+<emailpremierresp>alessandro.spallicci@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité optionnelle : au choix parmi 3.
+</descriptionCourte>
+
+<descriptionLongue>
+Physique subatomique :: principe de la relativité; l'expérience de Michelson-Morley; transformation de Lorentz-Poincaré (TLP) : dilatation du temps, contraction de la longueur; Cône de lumière et l'espace-temps; invariants relativistes ; quadrivecteurs et mécanique relativiste ; Relation et conservation énergie-masse ; \'Electromagnétisme : tenseur du champ, équation de Maxwell sous forme tensorielle, invariance TLP ; principe d'équivalence, courbure de l'espace-temps.
+Relativité :: noyaux et radioactivité; accélérateurs et collisionneurs ; forces faible et forte; familles des particules ; le photon comme boson; effets Compton.
+
+</descriptionLongue>
+
+<textePrerequis>Mécanique du point; Champs électrostatiques; Magnétisme et ondes dans le vide; Mathématiques pour sciences physiques 1,2 et 3; physique quantique pour l'option en S6.
+</textePrerequis>
+
+<objectifs>Acquérir les bases de la relativité restreinte et de la physique subatomique pour pouvoir les appliquer à des phénomènes de la physique en général; avoir une introduction à la physique moderne.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="1MT03" cours="" td="" tp="" ctd="60" total="60" semestre="Semestre 1" coeff="6" ects="6">
+<titre>Suites et fonctions réelles</titre>
+
+<methodeeval>Contrôle continu intégral</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<nompremierresp>Jean-Philippe Anker</nompremierresp>
+
+<emailpremierresp>jean-philippe.anker@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Alexandre Tessier</nomsecondresp>
+
+<emailsecondresp>alexandre.tessier@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Structures d'ordre, majorants-minorants, bornes supérieures et inférieures,
+  * Suites numériques: étude, convergence, suites récurrentes,
+  * Fonctions numériques: limite, continuité,
+  * Dérivabilité, fonctions usuelles, étude de fonctions,
+  * Fonctions réciproques.
+
+</descriptionLongue>
+
+<textePrerequis>Mathématiques de Terminale S.
+</textePrerequis>
+
+<objectifs>Ce module d'analyse traite des suites et fonctions réelles. Les notions de limite, de continuité, de dérivabilité sont proprement établies et permettent alors l'étude précise de suites et de fonctions.</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="2MT13" cours="" td="" tp="" ctd="24" total="24" semestre="Semestre 2" coeff="2" ects="2">
+<titre>Optique matricielle</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Gerald Kneller</nompremierresp>
+
+<emailpremierresp>gerald.kneller@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Guillaume Havard</nomsecondresp>
+
+<emailsecondresp>guillaume.havard@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité optionnelle. Option 2 (parmi 2). 
+</descriptionCourte>
+
+<descriptionLongue></descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5PY05" cours="18" td="18" tp="" ctd="" total="36" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Mécanique analytique</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Isabelle Rannou</nompremierresp>
+
+<emailpremierresp>isabelle.rannou@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Calcul variationnel, principe de moindre action, coordonnées généralisées, équations de Lagrange, systèmes conservatifs, frottement solide et visqueux. 
+* Transformation de Legendre, équations de Hamilton, lois de conservation. 
+* Application aux systèmes à plusieurs degrés de liberté, pulsations propres, modes propres, mouvements libres et exités. 
+* Systèmes discrets à $n$ degrés de liberté(avec n grand), propagation d'une onde. Introduction aux systèmes continus : vibrations transversales des cordes,longitudinales des barres, libres et exitées.
+
+</descriptionLongue>
+
+<textePrerequis>Mécanique du point (principaux théorèmes de conservation). Mécanique du solide (moment d'inertie, théorèmes de Huygens et Koenig.
+</textePrerequis>
+
+<objectifs>Notions de mécanique analytique. Décrire les comportements des systèmes à plusieurs degrés de liberté. Décrire les comportements des systèmes continus.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="4MT07" cours="24" td="24" tp="" ctd="" total="48" semestre="Semestre 4" coeff="5" ects="5">
+<titre>Fonctions de plusieurs variables, courbes et surfaces paramétrées</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Martin Grensing</nompremierresp>
+
+<emailpremierresp>martin.grensing@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Noureddine El Jaouhari</nomsecondresp>
+
+<emailsecondresp>noureddine.el\_jaouhari@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Fonctions de plusieurs variables,
+  * Intégrales multiples,
+  * Courbes et surfaces paramétrées.
+
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Analyse 2.
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="2MT06" cours="" td="" tp="" ctd="60" total="60" semestre="Semestre 2" coeff="6" ects="6">
+<titre>Algèbre 1</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Patrick Maheux</nompremierresp>
+
+<emailpremierresp>patrick.maheux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Guillaume Havard</nomsecondresp>
+
+<emailsecondresp>guillaume.havard@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue> 
+  * Arithmétique des polynômes, décomposition des fractions rationnelles,
+  * Espaces et sous-espaces vectoriels,
+  * Bases en dimension finie, théorie de la dimension,
+  * Applications linéaires,
+  * Matrices, calcul matriciel,
+  * Déterminant.
+ 
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Introduction au raisonnement mathématique au S1.
+</textePrerequis>
+
+<objectifs>Se familiariser avec les polynômes. Apprendre l'algèbre linéaire et manipuler des matrices.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°19 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6PY05" cours="18" td="18" tp="" ctd="" total="36" semestre="Semestre 6" coeff="4" ects="4">
+<titre>Optique de Fourier</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Pascal Andreazza</nompremierresp>
+
+<emailpremierresp>pascal.andreazza@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité optionnelle : au choix parmi 3.
+</descriptionCourte>
+
+<descriptionLongue>Les phénomènes d'interférences et de diffraction sont présentés en utilisant le formalisme de Fourier. En application des phénomènes d'interférences on abordera les systèmes spectroscopiques. On étudiera ensuite le problème de la formation et du traitement des images. On verra comment utiliser le filtrage optique pour éliminer l'information inutile soit à grande, soit à petite échelle, et pour travailler le contraste afin de détecter des objets de phase.\vskip 0mm
+Les bases mathématiques et la démarche de cet enseignement sont basées sur l'analyse de Fourier. Grâce à l'optique de Fourier, on montre les similitudes entre l'optique instrumentale et l'électronique. Dans les deux disciplines on voit que le signal à la sortie d'un appareil (optique ou électronique) apparaît comme la convolution du signal d'entrée avec la réponse impulsionnelle de l'appareil. Le complément expérimental indispensable à cet enseignement est donné dans le module "mesures physiques" du même semestre.</descriptionLongue>
+
+<textePrerequis>Interférences et diffraction de la lumière (semestre 3).
+</textePrerequis>
+
+<objectifs>L'objectif de ce module est d'apporter aux étudiants une méthode utilisable dans divers domaines de la physique : optique, électronique, acoustique. </objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°20 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="" cours="" td="20" tp="" ctd="" total="20" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Unité d'enseignement libre</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Noureddine El Jaouhari</nompremierresp>
+
+<emailpremierresp>noureddine.el\_jaouhari@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire
+</descriptionCourte>
+
+<descriptionLongue>L'unité d'ouverture est à choisir, en début du semestre, parmi la centaine d'enseignements dédiés à cet usage et offerts par toutes les composantes de l'université (Sciences, Droit-
+\'Economie-Gestion, Sport). Voici quelques exemples d'unités d'ouverture :
+
+* Sport.
+* Traitement de signal et d'image.
+* Droit de l'informatique.
+* Problèmes économiques contemporains.
+* Histoire du cinéma, histoire des arts.
+* Enseigner : posture et identité professionnelles.
+* Lecture critique du réchauffement climatique.
+* Maîtriser son expression ; les enjeux de la communication orale : le corps, l'espace, la voix.
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>Comprendre comment ce qu'on apprend dans le cadre d'un diplôme déjà très spécialisé ; s'insérer dans le large champ des connaissances et des savoirs auxquels on sera confronté dans son expérience professionnelle ou personnelle.</objectifs>
+
+<ressources>La page du site de l'université dédiée aux unités d'ouverture : http://www.univ-orleans.fr/scolarite/inscriptions/?page=2
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°21 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5AG35" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Anglais 5</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Hervé Perreau</nompremierresp>
+
+<emailpremierresp>herve.perreau@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte> 
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d'expression à partir de documents authentiques longs et/ou complexes portant sur des innovations technologiques, des découvertes et avancées scientifiques.
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi anglais 3 &amp; 4 ou environ 500 heures de formation équivalente.
+</textePrerequis>
+
+<objectifs>Comprendre l'information exprimée dans des messages complexes sur le domaine des sciences et technologies et s'exprimer sur ce même domaine à l'écrit dans un registre de langue approprié.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°22 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="3MT13" cours="" td="" tp="" ctd="48" total="48" semestre="Semestre 3" coeff="5" ects="5">
+<titre>Calculus &amp; calcul formel</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Carine Lucas</nompremierresp>
+
+<emailpremierresp>carine.lucas@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Vittoria Pierfelice</nomsecondresp>
+
+<emailsecondresp>vittoria.pierfelice@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité optionnelle. Option 2 (1 parmi 3). 
+</descriptionCourte>
+
+<descriptionLongue>
+
+* La partie "calculus" permet de passer en revue les principaux points calculatoires qui doivent être maîtrisés pour la suite de la licence. Elle traite des fonctions usuelles, suites, dérivation, intégration, calculs de primitives, équations différentielles et d'algèbre (matrices, déterminants).
+* La partie "calcul formel" est faite sur le logiciel "Sage". Après une prise en main du logiciel et de son mode de programmation, plusieurs exemples sont traités, comme les graphiques, les suites récurrentes, les résolutions exactes de systèmes linéaires et des équations différentielles.
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>Le but de ce module est d'aider les étudiants à mieux appréhender les calculs.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°23 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6ST01" cours="" td="" tp="" ctd="4" total="4" semestre="Semestre 6" coeff="8" ects="8">
+<titre>Projet de fin d'étude</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Pierre Debs</nompremierresp>
+
+<emailpremierresp>pierre.debs@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue></descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°24 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="3PY05" cours="" td="" tp="" ctd="48" total="48" semestre="Semestre 3" coeff="6" ects="6">
+<titre>Mécanique des solides et vibration</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Francesco Piazza</nompremierresp>
+
+<emailpremierresp>francesco.piazza@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Vittoria Pierfelice</nomsecondresp>
+
+<emailsecondresp>vittoria.pierfelice@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité optionnelle. Option 2 (1 parmi 3). 
+</descriptionCourte>
+
+<descriptionLongue>
+Cinématique : 
+
+* translation et rotation d'un solide ; 
+* géométrie de masses ; 
+* éléments cinétiques d'un système de points mécaniques et d'un solide indéformable ; 
+* théorèmes généraux : étude dynamique, étude énergétique ; 
+* contact entre solides et lois de frottement.
+
+</descriptionLongue>
+
+<textePrerequis>Mécanique du point; Mathématiques pour sciences physiques 1 &amp; 2.
+</textePrerequis>
+
+<objectifs>Pouvoir mettre en équation, analyser théoriquement et prédire l'évolution d'un solide indéformable simple et d'un système mécanique dans leurs mouvements.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°25 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="4PY07" cours="19" td="20" tp="9" ctd="" total="48" semestre="Semestre 4" coeff="4" ects="4">
+<titre>Magnétisme dans le vide</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Orélien Randriamboarison</nompremierresp>
+
+<emailpremierresp>orelien.randriamboarison@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Noureddine El Jaouhari</nomsecondresp>
+
+<emailsecondresp>noureddine.el\_jaouhari@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Electrocinétique : définition de la densité et de l'intensité de courant ; loi d'Ohm locale.
+* Magnétostatique : Loi de Biot et Savart; propriété du champ magnétique : flux conservatif, théorème d'Ampère; force de laplace et de Lorentz; interactions magnétiques entre circuits électriques : théorème de Maxwell: équations locales du champ magnétostatique; potentiel vecteur.
+* Induction électromagnétique : observation du phénomène; loi de Faraday et de Lenz; auto-induction et induction mutuelle des circuits électriques;énergie potentielle magnétostatique.
+* Equation de Maxwell : écriture dans le cas général et dans le vide; équation de propagation dans le vide.
+* Ondes électromagnétiques progressives planes monochromatiques dans le vide;structure de l'onde; superposition d'ondes planes, ondes stationnaires; polarisation de l'onde; transport de l'énergie, vecteur de Poynting, intensité des ondes électromagnétiques.
+
+</descriptionLongue>
+
+<textePrerequis>Champs électrostatiques; Mécanique du point; Mathématiques pour les sciences physiques 1 &amp; 2
+</textePrerequis>
+
+<objectifs>Acquérir les bases fondamentales de la magnétostatique, des phénomènes électromagnétiques dépendant du temps et le phénomène de propagation des ondes électromagnétiques dans le vide</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°26 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6MT07" cours="" td="" tp="" ctd="24" total="24" semestre="Semestre 6" coeff="2" ects="2">
+<titre>Statistiques empiriques</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Didier Chauveau</nompremierresp>
+
+<emailpremierresp>didier.chauveau@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Notion de modèle statistique et d'estimateur, estimateurs empiriques (moments)
+  * Notions de consistance (LNG). Intervalles de confiance pour la moyenne d'échantillons gaussiens, intervalles de confiance approchés par théorème central limite.
+  * Estimation par maximum de vraisemblance
+  * Notion de tests statistiques  
+  * Application avec le logiciel R.
+
+</descriptionLongue>
+
+<textePrerequis>Statistiques descriptives (unité du semestre 2).
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°27 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6PY01" cours="18" td="18" tp="" ctd="" total="36" semestre="Semestre 6" coeff="4" ects="4">
+<titre>Physique quantique</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Caroline Andreazza</nompremierresp>
+
+<emailpremierresp>caroline.andreazza@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Concepts et phénomènes quantiques. Dualité onde-corpuscule. Inégalités de Heisenberg. 
+* Fonction d'ondes. Equation de Schrödinger. \'Etats stationnaires. Notions d'opérateurs, valeurs moyennes. \'Etats liés. Quantification des énergies. 
+* Potentiels périodiques. Notions de bandes d'énergie. Expérience de Sterne et Guerlach.
+</descriptionLongue>
+
+<textePrerequis>Mathématiques pour sciences physiques 1, 2 et 3.
+</textePrerequis>
+
+<objectifs>Introduction aux concepts de la physique quantique.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°28 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="1II01" cours="" td="" tp="" ctd="24" total="24" semestre="Semestre 1" coeff="3" ects="3">
+<titre>Préparation au C2I</titre>
+
+<methodeeval>Contrôle continu intégral</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Laure Kahlem</nompremierresp>
+
+<emailpremierresp>laure.kahlem@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Alexandre Tessier</nomsecondresp>
+
+<emailsecondresp>alexandre.tessier@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+Préparation aux domaines de compétences du réferentiel national suivant:
+
+D1: Travailler dans un environnement numérique évolutif,
+D2: Être responsable à l'aire du numérique,
+D3: Produire, traiter, exploiter et diffuser des documents numériques,
+D5: Travailler en réseau, communiquer et collaborer.
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+Maîtriser les compétences D1, D2, D3, et D5 du référentiel national C2I1.
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°29 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="2MT05" cours="" td="" tp="" ctd="60" total="60" semestre="Semestre 2" coeff="6" ects="6">
+<titre>Analyse 1</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Guillaume Havard</nompremierresp>
+
+<emailpremierresp>guillaume.havard@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Continuité uniforme,
+  * Dérivation, fonctions dérivables sur un intervalle, dérivée d'une fonction réciproque,
+  * Théorème de Taylor, développements limités,
+  * Introduction à l'intégrale de Riemann,
+  * Calcul des primitives.
+
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Suites et fonctions réelles au S1.
+</textePrerequis>
+
+<objectifs>S'initier aux méthodes plus fines d'analyse des fonctions réelles.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°30 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="1AG11" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 1" coeff="3" ects="3">
+<titre>Anglais 1</titre>
+
+<MethodeEval>Contrôle continu intégral</MethodeEval>
+
+<modalitesccsemestreun>Rapport et soutenance de projet</modalitesccsemestreun>
+
+<modalitesccsemestredeux>Pas de 2nde session</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Murielle Pasquet</nompremierresp>
+
+<emailpremierresp>murielle.pasquet@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Alexandre Tessier</nomsecondresp>
+
+<emailsecondresp>alexandre.tessier@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire.
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d'expression orale et écrite, à partir de documents authentiques simples, ou courts, centrés sur le monde universitaire anglo-saxon.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+Être à même de préparer un projet de séjour d'études universitaires en pays anglophone dans une langue écrite et orale simple.
+</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°31 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="1IF04" cours="" td="" tp="" ctd="24" total="24" semestre="Semestre 1" coeff="3" ects="3">
+<titre>Atelier de l'informaticien</titre>
+
+<methodeeval>Contrôle continu intégral</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Pierre Réty</nompremierresp>
+
+<emailpremierresp>pierre.rety@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Alexandre Tessier</nomsecondresp>
+
+<emailsecondresp>alexandre.tessier@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+Notions sur le matériel, les systèmes d'exploitation, et les réseaux. Installation, administration, et utilisation d'un système Linux sur un PC
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+Installer, administrer, et utiliser un système Linux sur un PC.
+</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°32 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5IF02" cours="" td="" tp="" ctd="12" total="12" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Insertion professionnelle</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>Pas de 2e session</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Pôle Avenir</nompremierresp>
+
+<emailpremierresp>poleavenir.ove@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>Préparation de CV, de lettres de motivation, gestion de carrière.</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>Se préparer à l'insertion professionnelle.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°33 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5MT05" cours="" td="" tp="" ctd="24" total="24" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Analyse numérique matricielle</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Carine Lucas</nompremierresp>
+
+<emailpremierresp>carine.lucas@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Inversion de matrices,
+  * Décompositions de matrices,
+  * Moindres carrés,
+  * Mise en \oe uvre avec le logiciel Scilab de calcul matriciel.
+
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi ``Mathématiques numériques'' au semestre 3 et l'ensemble des modules d'algèbre des semestres précédents.
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°34 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5MT07" cours="24" td="36" tp="" ctd="" total="60" semestre="Semestre 5" coeff="6" ects="6">
+<titre>Mesure et intégration</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Athanasios Batakis</nompremierresp>
+
+<emailpremierresp>athanasios.batakis@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Tribus, mesures ; mesure de Lebesgue
+  * Intégrale par rapport à une mesure
+  * Théorèmes de convergence monotone, de convergence dominée 
+  * Théorème de Fubini
+  * Convolution
+  * Transformée de Fourier
+  * Espaces $L^p$.
+ 
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°35 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="2PY01" cours="" td="" tp="9" ctd="51" total="60" semestre="Semestre 2" coeff="6" ects="6">
+<titre>Mécanique du point</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Michèle Hollecker</nompremierresp>
+
+<emailpremierresp>michele.hollecker@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Guillaume Havard</nomsecondresp>
+
+<emailsecondresp>guillaume.havard@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité optionnelle. Option 1 (parmi 3). 
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Analyse dimensionnelle et unités,
+* Cinématique du point,
+* Dynamique du point dans un référentiel galiléen,
+* Travail, puissance, énergies (cinétique, potentielle et mécanique),
+* Oscillateurs mécaniques (oscillateurs harmonique libre, amorti, en oscillations forcées, résonance),
+* Forces centrales, forces de gravitation, satellites.
+
+</descriptionLongue>
+
+<textePrerequis>Bases de la mécanique enseignées dans le secondaire : UE - mathématiques pour sciences physiques 1.
+</textePrerequis>
+
+<objectifs>Reprendre de façon plus formelle et rigoureuse les concepts abordés par les étudiants dans le secondaire (cinématique, lois fondamentales de la mécanique, concepts d'énergie cinétique, potentielle et mécanique).</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°36 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6MT04" cours="24" td="36" tp="" ctd="" total="60" semestre="Semestre 6" coeff="6" ects="6">
+<titre>Calcul différentiel et optimisation</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Luc Hillairet</nompremierresp>
+
+<emailpremierresp>luc.hillairet@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Différentielle d'ordre 1,
+  * Inversion locale, théorème des fonctions implicites,
+  * Différentielle d'ordre 2, formule de Taylor,
+  * Extrema liés.
+ 
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°37 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6MT06" cours="24" td="24" tp="" ctd="" total="48" semestre="Semestre 6" coeff="5" ects="5">
+<titre>\'Equations différentielles ordinaires : théorie et méthodes numériques</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Stéphane Cordier</nompremierresp>
+
+<emailpremierresp>stephane.cordier@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire.
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Définition et exemples
+  * Notion de solution maximale, lemme de Gronwall, applications
+  * Théorème de Cauchy-Lipschitz, théorème des bouts 
+  * Stabilité  
+  * Méthodes numériques.
+
+</descriptionLongue>
+
+<textePrerequis>Unités d'analyse des semestres précédents.
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°38 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="2UL05" cours="" td="20" tp="" ctd="" total="20" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Unité d'enseignement libre</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Guillaume Havard</nompremierresp>
+
+<emailpremierresp>guillaume.havard@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire
+</descriptionCourte>
+
+<descriptionLongue>L'unité d'ouverture est à choisir, en début du semestre, parmi la centaine d'enseignements dédiés à cet usage et offerts par toutes les composantes de l'université (Sciences, Droit-
+\'Economie-Gestion, Sport). Voici quelques exemples d'unités d'ouverture :
+
+* Sport.
+* Traitement de signal et d'image.
+* Droit de l'informatique.
+* Problèmes économiques contemporains.
+* Histoire du cinéma, histoire des arts.
+* Enseigner : posture et identité professionnelles.
+* Lecture critique du réchauffement climatique.
+* Maîtriser son expression ; les enjeux de la communication orale : le corps, l'espace, la voix.
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>Comprendre comment ce qu'on apprend dans le cadre d'un diplôme déjà très spécialisé ; s'insérer dans le large champ des connaissances et des savoirs auxquels on sera confronté dans son expérience professionnelle ou personnelle.</objectifs>
+
+<ressources>La page du site de l'université dédiée aux unités d'ouverture : http://www.univ-orleans.fr/scolarite/inscriptions/?page=2
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°39 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="3AG23" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Anglais 3</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sylvain Gendron</nompremierresp>
+
+<emailpremierresp>sylvain.gendron@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Vittoria Pierfelice</nomsecondresp>
+
+<emailsecondresp>vittoria.pierfelice@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d'expression à partir de documents authentiques simples et/ou courts portant sur des innovations technologiques, des découvertes et avancées scientifiques.
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Anglais 1 + 2 ou environ 450 heures de formation équivalente
+</textePrerequis>
+
+<objectifs>Découvrir les bases de l'anglais scientifique et les utiliser à l'écrit et à l'oral</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°40 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="3IF03" cours="12" td="" tp="24" ctd="" total="36" semestre="Semestre 3" coeff="5" ects="5">
+<titre>Bases de données et internet</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Jérôme Durand-Lose</nompremierresp>
+
+<emailpremierresp>jerome.durand-lose@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Vittoria Pierfelice</nomsecondresp>
+
+<emailsecondresp>vittoria.pierfelice@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité optionnelle. Option 2 (1 parmi 3). 
+</descriptionCourte>
+
+<descriptionLongue>Architecture LAMP (Linux, Apache, MySQL, PHP). Modélisation d'une base de donnée : modélisation conceptuelle (entité-association) ; modélisation logique (relationnelle). Manipulation de données avec SQL. Structuration de pages web statiques et dynamiques. Réalisation d'une application web dynamique (type PHP / MySQL).</descriptionLongue>
+
+<textePrerequis>Maîtrise des bases de l'algorithmique et de la programmation (pour la réalisation de l'application web).
+</textePrerequis>
+
+<objectifs>Être à même de concevoir et réaliser une application web dynamique utilisant une base de données relationnelles.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°41 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="3MT10" cours="" td="" tp="" ctd="36" total="36" semestre="Semestre 3" coeff="4" ects="4">
+<titre>Mathématiques numériques</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Carine Lucas</nompremierresp>
+
+<emailpremierresp>carine.lucas@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Vittoria Pierfelice</nomsecondresp>
+
+<emailsecondresp>vittoria.pierfelice@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Introduction à Scilab,
+  * Manipulation de données matricielles,
+  * Construction de vecteurs, matrices, extraction de sous-matrices,
+  * Représentation graphique 2D,
+  * Suites récurrentes,
+  * Systèmes linéaires - Pivot de Gauss,
+  * Générateurs aléatoires, lois uniformes, simulation de lois discrètes,
+  * Introduction aux équations différentielles,
+  * Quelques problèmes de mathématiques appliquées.
+
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi les modules de mathématiques de première année.
+</textePrerequis>
+
+<objectifs>Se familiariser avec le logiciel de calcul matriciel Scilab.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°42 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="2MT09" cours="" td="" tp="" ctd="24" total="24" semestre="Semestre 2" coeff="2" ects="2">
+<titre>Statistiques descriptives</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sophie Jacquot</nompremierresp>
+
+<emailpremierresp>sophie.jacquot@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Guillaume Havard</nomsecondresp>
+
+<emailsecondresp>guillaume.havard@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité optionnelle. Option 2 (parmi 2). 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Présentation et prise en main du logiciel R,
+  * Analyse des variables qualitatives et quantitatives.
+ 
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°43 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="4AG24" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 4" coeff="3" ects="3">
+<titre>Anglais 4</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Michèle Cimolino</nompremierresp>
+
+<emailpremierresp>michele.cimolino@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Noureddine El Jaouhari</nomsecondresp>
+
+<emailsecondresp>noureddine.el\_jaouhari@univ-orleans.fr </emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>Travail de compréhension et d'expression à partir de documents authentiques simples et/ou courts portant sur des innovations technologiques, des découvertes et avancées scientifiques. Supports : vidéo, audio, articles de presse.</descriptionLongue>
+
+<textePrerequis>Avoir suivi Anglais 3 ou environ 450 heures de formation équivalente.
+</textePrerequis>
+
+<objectifs>Analyser dans une langue simple et cohérente les rapports entre science et société à l'écrit et à l'oral (niveau européen : B1+)</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°44 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="3PY01" cours="19" td="20" tp="9" ctd="" total="48" semestre="Semestre 3" coeff="6" ects="6">
+<titre>Champs électrostatiques</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Norbert Garnier</nompremierresp>
+
+<emailpremierresp>norbert.garnier@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Vittoria Pierfelice</nomsecondresp>
+
+<emailsecondresp>vittoria.pierfelice@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité optionnelle. Option 1 (1 parmi 3).
+</descriptionCourte>
+
+<descriptionLongue></descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°45 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="2AG12" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Anglais 2</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sylvain Gendron</nompremierresp>
+
+<emailpremierresp>sylvain.gendron@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Guillaume Havard</nomsecondresp>
+
+<emailsecondresp>guillaume.havard@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire
+</descriptionCourte>
+
+<descriptionLongue>Travail de compréhension et d'expression orale et écrite à partir de documents authentiques simples et/ou cours centrés sur le monde universitaire anglo-saxon. Supports : vidéo, audio, articles de presse.</descriptionLongue>
+
+<textePrerequis>avoir suivi Anglais 1 ou environ 400 heures de formation équivalente
+</textePrerequis>
+
+<objectifs>Comprendre et s'exprimer de manière plus autonome dans des situations de séjour d'études universitaires en pays anglophone (niveau européen : B1)</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°46 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="2PP02" cours="2" td="10" tp="" ctd="" total="12" semestre="Semestre 2" coeff="2" ects="2">
+<titre>Projet personnel et professionnel</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Guillaume Havard</nompremierresp>
+
+<emailpremierresp>guillaume.havard@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité optionnelle. Option 1 (parmi 3).
+</descriptionCourte>
+
+<descriptionLongue>Cours : 
+
+* présentation des objectifs,
+* modalités de recherche documentaire,
+* présentation du SUIO,
+* élaboration d'une fiche de projet individuel.
+
+TD : 
+
+* recherche massive de documents sur le métier ou l'activité choisie,
+* préparation d'une rencontre avec un professionnel correspondant au projet,
+* préparation du rapport écrit, du poster et de la soutenance.
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>Initiation à la recherche documentaire, au travail en groupes, à la présentation orale et à la présentation d'un poster</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°47 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5PY15" cours="22" td="22" tp="16" ctd="" total="60" semestre="Semestre 5" coeff="5" ects="5">
+<titre>Thermodynamique et statique des fluides</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Pascal Andreazza</nompremierresp>
+
+<emailpremierresp>pascal.andreazza@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue></descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°48 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="1IF02" cours="" td="" tp="15" ctd="45" total="60" semestre="Semestre 1" coeff="6" ects="6">
+<titre>Algorithmique et programmation 1</titre>
+
+<methodeeval>Contrôle continu intégral</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Alexandre Tessier</nompremierresp>
+
+<emailpremierresp>alexandre.tessier@univ-orleans.fr</emailpremierresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>Algorithmique élémentaire : expressions, variables, instructions, séquences, conditionnelles, boucles, tableaux, preuves, invariants, traduction dans le langage Java.</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>Maîtriser les concepts élémentaires de l'algorithmique et être capable de les traduire dans le langage C</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°49 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5PY16" cours="18" td="18" tp="" ctd="" total="36" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Ondes électromagnétiques</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Gerald Kneller</nompremierresp>
+
+<emailpremierresp>gerald.kneller@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue></descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°50 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="4MT06" cours="24" td="36" tp="" ctd="" total="60" semestre="Semestre 4" coeff="6" ects="6">
+<titre>Algèbre bilinéaire et géométrie euclidienne</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Jean Renault</nompremierresp>
+
+<emailpremierresp>jean.renault@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Noureddine El Jaouhari</nomsecondresp>
+
+<emailsecondresp>noureddine.el\_jaouhari@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+  * Dual d'un espace vectoriel,
+  * Formes quadratiques,
+  * formes quadratiques réelles,
+  * Espaces vectoriels euclidiens : projections orthogonales, adjoint,
+  * espaces affines euclidiens : classification des isométries du plan et de l'espace,
+  * Applications : coniques et quadriques, polynômes orthogonaux.
+ 
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Algèbre 2 au semestre 3.
+</textePrerequis>
+
+<objectifs>Découvrir l'algèbre bilinéaire et ses liens avec la géométrie.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+</livret>

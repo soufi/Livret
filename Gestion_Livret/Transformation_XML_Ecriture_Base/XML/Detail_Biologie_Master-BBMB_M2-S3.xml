@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livret>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO07" cours="24" td="" tp="" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Aspects structuraux des pathologies</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 1h Ecrit</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT Oral</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Oral 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Rachid Rahmouni</nompremierresp>
+
+<emailpremierresp>rachid.rahmouni@cnrs-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Option Biologie Moléculaire et Cellulaire
+</descriptionCourte>
+
+<descriptionLongue>
+Etude des grandes fonctions biologiques de la cellule et des mécanismes moléculaires à la base de leurs régulations : réplication et réparation de l’ADN, transcription et régulation de l’expression génique, régulations post-transcriptionnelles et export des ARNs messagers. Implication des différentes régulations des fonctions biologiques dans les dysfonctionnements cellulaires à l’origine de pathologies.  
+</descriptionLongue>
+
+<textePrerequis>Notions de base en biochimie, biologie moléculaire et génétique moléculaire.
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquérir une connaissance approfondie des mécanismes moléculaires par lesquels les machineries cellulaires performent les fonctions biologiques.   
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO05" cours="" td="" tp="20" ctd="" ctp="" total="20" semestre="Semestre 3" coeff="5" ects="5">
+<titre>Ateliers technologiques - 2 - Bioingénierie moléculaire</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : Pas de seconde session</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<CalculNFSessionDeux>Ecrit 100\%</CalculNFSessionDeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Richard Daniellou</nompremierresp>
+
+<emailpremierresp>richard.daniellou@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Le génie génétique comme outil moderne pour l’amélioration des biocatalyseurs – Transformation d’une enzyme hydrolytique en un outil performant de synthèse - Applications dans les biotechnologies blanches.
+</descriptionLongue>
+
+<textePrerequis>Connaissance de la biochimie, de la biologie moléculaire et de l’enzymologie.
+
+</textePrerequis>
+
+<objectifs> 
+  * Maitriser les techniques et connaissances de l’ADN recombinant : de la séquence du gène à la fonction de la protéine.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO06" cours="24" td="" tp="" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Aspects génétiques des pathologies</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 1h Ecrit</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT Oral</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Oral 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Martine Decoville</nompremierresp>
+
+<emailpremierresp>martine.decoville@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Option Biologie Moléculaire et Cellulaire
+</descriptionCourte>
+
+<descriptionLongue>
+Conférences de recherche portant sur les applications de la génétique dans différents domaines de la biologie. Les principales thématiques abordées sont : l’épigénétique, l’utilisation des outils génétiques (exemples : le système Cre/lox pour la bio-mimagerie, UAS/Gal4 et l’IRM….), la génétique humaine, la génomique et transcriptomique. Le contenu peut varier d’une année sur l’autre pour être au plus près des derniers résultats de la recherche dans le domaine.
+</descriptionLongue>
+
+<textePrerequis>Notions de bases en génétique et biologie moléculaire.
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquérir des connaissances approfondies sur des problématiques de recherche utilisant une approche génétique.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3PJ02" cours="" td="6" tp="" ctd="" ctp="" total="6" semestre="Semestre 3" coeff="2" ects="2">
+<titre>Synthèse documentaire/bibliographique et projet de stage</titre>
+
+<methodeeval>Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : Oral</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : pas de seconde session</modalitesccsemestredeux>
+
+<calculnfsessionune>Oral 100\%</calculnfsessionune>
+
+<CalculNFSessionDeux>Ecrit 100\%</CalculNFSessionDeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Chantal Pichon</nompremierresp>
+
+<emailpremierresp>chantal.pichon@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>François Lieutier</nomsecondresp>
+
+<emailsecondresp>francois.lieutier@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialités BBMB / BOPE
+</descriptionCourte>
+
+<descriptionLongue>
+Travail en liaison avec le maître de stage du semestre 4 : Réalisation d’une synthèse bibliographique ou documentaire situant le sujet du stage de longue durée dans les programmes de l’équipe d’accueil et le contexte international, et débouchant sur l'élaboration du projet de recherche/travail de l'étudiant.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Aptitude à situer son travail dans un contexte scientifique et à définir un programme de recherche ; maîtrise des techniques de l’exposé oral et écrit, en français et en anglais.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO04" cours="24" td="" tp="" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Bioimagerie</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 1h Ecrit</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT Oral</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Oral 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Chantal Pichon</nompremierresp>
+
+<emailpremierresp>chantal.pichon@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français/Anglais</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Application de la microscopie de fluorescence dans la recherche fondamentale et biomédicale Microscopie confocale de fluorescence mono et multiphotons,. F-techniques (FRAP, FRET, FLIM, FCS et SPT) ;  imagerie en temps réel, imagerie spectrale, TIRF. Imagerie in vivo : basée sur les Rayons-X (radiographie, tomodensitometrie) ; Imagerie radioisotopique (scintigraphie, tomographie à émission de positon. Imagerie Optique (bioluminescence, fluorescence dans le champ visible et proche infra-rouge) ; Imagerie par résonnance magnétique, Imagerie par ultra-sons. 
+</descriptionLongue>
+
+<textePrerequis>Notions de bases en biochimie, biologie moléculaire, biologie cellulaire et immunologie.
+
+</textePrerequis>
+
+<objectifs> 
+  * Maîtriser les nouvelles technologies d'imagerie cellulaire et de l’imagerie in-vivo. Acquérir des techniques d’analyse pour l’évaluation qualitative et quantitative des mécanismes cellulaires  et du matériel biologique. 
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO05" cours="" td="" tp="20" ctd="" ctp="" total="20" semestre="Semestre 3" coeff="5" ects="5">
+<titre>Ateliers technologiques - 1 - Méthodologie Transfert de gènes et Bioingéniérie cellulaire</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : Pas de seconde session</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<CalculNFSessionDeux>Ecrit 100\%</CalculNFSessionDeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Patrick Baril</nompremierresp>
+
+<emailpremierresp>patrick.baril@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Acquérir la connaissance et maitrise des techniques utilisées en transfert de gènes. Les expériences réalisées concerneront l’exploitation des vecteurs chimiques et de méthodes physiques (électroporation et nucléofection) ; transformation d’une lignée cellulaire et imagerie cellulaire.
+</descriptionLongue>
+
+<textePrerequis>Connaissance de la biochimie et de la biologie moléculaire.
+
+</textePrerequis>
+
+<objectifs> 
+  * Exploiter et comparer différentes méthodes non virales pour transférer de l’ADN plasmidique ; production d’une lignée génétiquement modifiée et validation de la transformation.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO05" cours="" td="" tp="20" ctd="" ctp="" total="20" semestre="Semestre 3" coeff="5" ects="5">
+<titre>Ateliers technologiques - 3 - Aalyse génomique fonctionnelle</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : Pas de seconde session</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<CalculNFSessionDeux>Ecrit 100\%</CalculNFSessionDeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Martine Decoville</nompremierresp>
+
+<emailpremierresp>martine.decoville@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Arnaud Menuet</nomsecondresp>
+
+<emailsecondresp>arnaud.menuet@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+ChIP : Immunoprécipitation de la chromatine pontée. Cet atelier vise à initier les étudiants à de nouvelles approches pour mettre en évidence les sites de fixation d’un facteur de transcription, de protéines chromatiniennes, les modifications épigénétiques. Les différentes étapes du ChIP seront abordées avec leurs problèmes. FISH : De la cytogénétique conventionnelle à l'approche génomique : cet atelier concernera la mise en œuvre d'une analyse génétique du caryotype à l'approche génomique.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Connaissances et maîtrises des techniques modernes de l’approche génétique et génomique: de l’anomalie chromosomique à l’identification de séquences cibles.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO01" cours="12" td="12" tp="" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Biostatistiques 2 : Modèle linéaire et analyse multivariées</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT Ecrit 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT Ecrit 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Franck Brignolas</nompremierresp>
+
+<emailpremierresp>franck.brignolas@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialités BBMB / BOPE
+</descriptionCourte>
+
+<descriptionLongue>
+ Intérêts du modèle linéaire : modèles et sous-modèles, méthodes d’estimations des paramètres du modèle linéaire. - Modèles linéaires ne comportant que des facteurs (ANOVA) : tests, interprétations et comparaisons multiples de moyennes; - Modèles linéaires ne comportant que des régresseurs : tests, interprétations, choix de régresseurs ; - Modèles linéaires combinant facteurs et régresseurs; - Analyses factorielles (analyse en composantes principales, analyse factorielle des correspondances, analyse discriminante).
+</descriptionLongue>
+
+<textePrerequis>UE Biométrie de licence 3 (ou équivalent) et de master 1.
+
+</textePrerequis>
+
+<objectifs> 
+  * Maîtrise des méthodes spécialisées de la statistique couramment utilisées dans les Sciences de la vie.
+* Initiation à la modélisation.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO03" cours="24" td="" tp="" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Immunologie 3</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>François Erard</nompremierresp>
+
+<emailpremierresp>francois.erard@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français/Anglais</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Divers aspects de l’immunologie cellulaire et moléculaire sont abordés sur la base d’enseignements réalisés essentiellement sous forme de conférences. Les intervenants sont des chercheurs spécialisés dans diverses thématiques. Seront  abordés les modes de régulation et de dérégulation du système immunitaire, les mécanismes de défense et de tolérance aux contacts des microorganismes et de signaux de dangers…
+</descriptionLongue>
+
+<textePrerequis>Notions d’immunologie cellulaire et moléculaire.
+
+</textePrerequis>
+
+<objectifs> 
+  * Découvrir les nouveaux concepts en immunologie et les méthodes expérimentales utilisées pour analyser et influencer les réponses immunitaires.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3CH01" cours="12" td="" tp="12" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Techniques analyse chimique : applications instrumentales</titre>
+
+<methodeeval>Ecrit/TP</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 1h30 Ecrit + Rapport TP</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h30 Ecrit</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 50\% + TP 50\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Emilie Destandau</nompremierresp>
+
+<emailpremierresp>emilie.destandau@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Caroline West</nomsecondresp>
+
+<emailsecondresp>caroline.west@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français/Anglais</langue>
+</langues>
+
+<descriptionCourte>
+Option Techniques Bio-Industrielles
+</descriptionCourte>
+
+<descriptionLongue>
+Approche théorique et pratiquedesméthodes chromatographiques : chromatographie d’échange d’ions, chromatographie de paires d’ions. Electrophorèse capillaire. Traitement de l’échantillon. Couplages des méthodes chromatographiques et de la spectrométrie de masse.Travaux Pratiques : méthodes séparatives (GC, HPLC, HPTLC), méthodes spectrales (IR, UV, SM) et traitement de l’échantillon (ASE, SPME).
+</descriptionLongue>
+
+<textePrerequis>Techniques de base de chimie analytique.
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquérir les compétences théoriques et techniques en analyse chimique.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3IP00" cours="12" td="" tp="" ctd="" ctp="" total="12" semestre="Semestre 3" coeff="2" ects="2">
+<titre>Filières professionnelles</titre>
+
+<MethodeEval></MethodeEval>
+
+<ModalitesCCSemestreUn>RNE et RSE : CC : DM + 15 min Oral + 1h30 Ecrit</ModalitesCCSemestreUn>
+
+<ModalitesCCSemestreDeux>RNE et RSE : CT 1h30 Ecrit</ModalitesCCSemestreDeux>
+
+<CalculNFSessionUne>Ecrit 50\% + Oral 50\%</CalculNFSessionUne>
+
+<CalculNFSessionDeux>Ecrit 100\%</CalculNFSessionDeux>
+
+<NoteEliminatoire>7</NoteEliminatoire>
+
+<nompremierresp>William Même</nompremierresp>
+
+<emailpremierresp>william.meme@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Aline Lejeune</nomsecondresp>
+
+<emailsecondresp>aline.lejeune@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialités BBMB / BOPE
+</descriptionCourte>
+
+<descriptionLongue>
+-Présentation de laboratoires dans les différents secteurs biotechnologiques, cosmétiques, pharmaceutiques. Introduction au droit des affaires; l'activité économique et commerciale; le cadre juridique de l'activité d'entreprise (contrat, la responsabilité de l'entreprise); réglementation du travail. Société de projet et l'innovation: entreprises, l'entrepreneuriat et l'innovation, la stratégie marketing et études de marché. Gestion de projet : gestion de l'équipe, négociation du contrat, protection de l'innovation :la propriété intellectuelle, des outils sur le témoignage de l'invention, le brevet et le droit d'auteur. Protection de la propriété industrielle : outils de la protection des inventions. Les différents brevets ; forme et contenu. Les méthodes de recherche.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Consolider les connaissances de l’entreprise dans des domaines pointus comme la protection des inventions, le management en équipe.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO03" cours="24" td="" tp="" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Thérapies innovantes</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 1h Ecrit</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT Oral</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Oral 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Chantal Pichon</nompremierresp>
+
+<emailpremierresp>chantal.pichon@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Cycles de conférences de recherche.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquérir des connaissances approfondies sur les nouvelles thérapies.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3BO09" cours="8" td="4" tp="12" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Biotechnologie végétale</titre>
+
+<methodeeval>Ecrit/Oral/TP</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 2h Ecrit + CT Oral + CC TP</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (2h Ecrit + 2h TP)</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 40\% + Oral 20\% + TP 40\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 50\% + TP 50\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Stéphane Maury</nompremierresp>
+
+<emailpremierresp>stephane.maury@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Eric Lainé</nomsecondresp>
+
+<emailsecondresp>eric.laine@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français/Anglais</langue>
+</langues>
+
+<descriptionCourte>
+Option Techniques Bio-Industrielles
+</descriptionCourte>
+
+<descriptionLongue>
+les principales techniques de transgénèse végétale (Agrobacterium tumefaciens, méthodes directes par électroporation ou biolistique), applications à l’amélioration des plantes et à la production de molécules d’intérêt industriel, stratégies (gènes homologues ou hétérologues, sens antisens RNAi cosuppression, unigènes, multigènes, types de caractères introduits : agronomiques, qualitatifs, molecular Pharming), techniques, et applications de la transgénèse végétale). Les plantes OGM dans le monde, Transformation génétique du tabac via Agrobacterium tumefaciens (gène rapporteur gus), mise en évidence de l’expression du gène rapporteur, extraction d’ADN et détection d’un transgène par PCR.  Réalisation de transgénèse de tabac avec une construction promoteur rapporteur Gus. (confection de milieux et solutions, co-culture, repiquage, observation, test X gluc).
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * cquisition des connaissances théoriques et savoir-faire technologiques nécessaires à la mise en œuvre d’un protocole de transformation génétique visant à la régénération de plantes transgéniques.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM3AG23" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Anglais scientifique 2</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC : DM + 15 min Oral + 1h30 Ecrit</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h30 Ecrit</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 50\% + Oral 50\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Marie-Françoise Tassard</nompremierresp>
+
+<emailpremierresp>marie-francoise.tassard@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Anglais</langue>
+</langues>
+
+<descriptionCourte>
+Spécialités BBMB / BOPE
+</descriptionCourte>
+
+<descriptionLongue>
+Faire un bilan du stage de l’année passée et résumer les visites d’entreprises en anglais. Commenter le déroulement d’un atelier technologique en anglais. Se préparer à des entretiens en anglais pour une embauche (thèse ou poste R\&D).
+</descriptionLongue>
+
+<textePrerequis>Bon niveau d’ordre général pratique, oral et écrite, assez bonne connaissance de la langue spécifique de son domaine scientifique et technique.
+
+</textePrerequis>
+
+<objectifs> 
+  * Savoir présenter un rapport de travail en anglais et commenter le déroulement d’une expérimentation.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+</livret>

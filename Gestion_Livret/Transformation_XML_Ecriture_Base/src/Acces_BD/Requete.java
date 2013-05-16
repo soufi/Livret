@@ -1,7 +1,9 @@
 package Acces_BD;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -22,6 +24,7 @@ public class Requete {
 	 * @throws IOException 
 	 */
 	public static String execRequests(String repository) throws IOException, InterruptedException {
+		//creatExec(); //creation du script shell
 		if(repository != null){
 			if(!repository.matches("(.*)/"))
 				repository += "/";
@@ -42,6 +45,36 @@ public class Requete {
 			}
 		}
 		return "Dossier "+repository+" Inexistant";
+	}
+	
+	/**
+	 * Permet de Créer le fichier shell permettant d'executer les requetes d'un ou plusieurs fichier .sql
+	 * @throws IOException 
+	 */
+	public static void creatExec() throws IOException{
+		FileWriter fw = new FileWriter ("exec_requete.sh", false);
+		BufferedWriter scriptBuf = new BufferedWriter(fw);
+		
+		//contenu du script
+		scriptBuf.write("#/bin/sh");
+		scriptBuf.newLine();
+		scriptBuf.append("for i in $@");
+		scriptBuf.newLine();
+		scriptBuf.append("do");
+		scriptBuf.newLine();
+		scriptBuf.append("	echo \"Traitement du fichier : \".$i");
+		scriptBuf.newLine();
+		scriptBuf.append("	mysql -h localhost --user=root livret --password=root < $i");
+		scriptBuf.newLine();
+		scriptBuf.append("done");
+		scriptBuf.newLine();
+		
+		scriptBuf.close();
+		fw.close();
+		//rendre le script executable, ajout de permission pour tous les utilisater afin de faciliter l'accés après
+		File file = new File ("exec_requete.sh");
+		file.setExecutable(true, false);
+
 	}
 	
 	/**

@@ -1,0 +1,2033 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livret>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4BO01 SSL4BO01" cours="23" td="4" tp="21" ctd="" ctp="" total="48" semestre="Semestre 4" coeff="5" ects="5">
+<titre>Morphologie et reproduction des plantes</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT (E/TP) 3h30</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h30</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Christiane Depierreux</nompremierresp>
+
+<emailpremierresp>christiane.depierreux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général et Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Organisation anatomique des appareils végétatif et reproducteur des Plantes, des mousses (Bryophytes) aux plantes à fleurs (Angiospermes).
+</descriptionLongue>
+
+<textePrerequis>Notions d’organisation des végétaux.
+</textePrerequis>
+
+<objectifs> 
+  * Connaissance sur l’anatomie et la reproduction des Embryophytes.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="???" cours="" td="20" tp="" ctd="" ctp="" total="20" semestre="Semestre 4" coeff="0" ects="0">
+<titre>Ouverture maths pour prépa-concours : entraînement au concours</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>???</modalitesccsemestreun>
+
+<modalitesccsemestredeux>???</modalitesccsemestredeux>
+
+<calculnfsessionune>???</calculnfsessionune>
+
+<calculnfsessiondeux>???</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Emmanuel Cepa</nompremierresp>
+
+<emailpremierresp>emmanuel.cepa@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours général renforcé
+</descriptionCourte>
+
+<descriptionLongue>
+Exercices pour entrainement au concours.</descriptionLongue>
+
+<textePrerequis>Module Techniques en Mathématiques du semestre impair, forte motivation.
+</textePrerequis>
+
+<objectifs> 
+  * Permettre à des étudiants d’acquérir des connaissances utiles pour passer les concours d’accès aux écoles nationales vétérinaires (concours ENV- voie B), les concours d’ingénieurs agro (concours ENSA voie B) mais également certains concours administratifs.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4BO05 SSL4BO05" cours="10" td="8" tp="6" ctd="" ctp="" total="24" semestre="Semestre 4" coeff="3" ects="3">
+<titre>Génétique fonctionnelle</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT/CC(2-3) 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 3h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 75 \% ; TP 25 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Catherine Mura</nompremierresp>
+
+<emailpremierresp>catherine.mura@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général
+</descriptionCourte>
+
+<descriptionLongue>
+Analyse niveau diploide et haploide. Etude des voies métaboliques et des mutations. Les gènes suppresseurs. Génétique extrachromosomique. Modèle levure pour l’étude des gènes humains. Etude de l’interactome. TP : Test de complémentation chez la levure
+</descriptionLongue>
+
+<textePrerequis>Génétique de première année.
+</textePrerequis>
+
+<objectifs> 
+  * Montrer comment l’analyse formelle chez un organisme modèle peut permettre d’aborder des problèmes de santé humaine.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3BO05 SSL3BO05" cours="46" td="2" tp="" ctd="" ctp="" total="48" semestre="Semestre 3" coeff="5" ects="5">
+<titre>Introduction à la physiologie cellulaire et à l'embryologie</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 2x2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2x2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Jean-Pierre Gomez</nompremierresp>
+
+<emailpremierresp>jean-pierre.gomez@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Enseignement Pluridisciplinaire
+</descriptionCourte>
+
+<descriptionLongue>
+\textbf{Partie Physiologie cellulaire :} Le fonctionnement des cellules excitables (cellules nerveuses, cellules musculaires striées et lisses, cellules sécrétrices). Etude du rôle de la membrane plasmique et des échanges membranaires passifs et actifs dans le fonctionnement de la cellule excitable (notions de gradients de concentration, de flux ioniques à travers les membranes semiperméables, les canaux ioniques et les transporteurs). Le potentiel d’action neuronal et la propagation de l’information nerveuse et neuro-musculaire. Le couplage excitation-contraction des muscles striés et lisses. Première approche de la neurotransmission (neurotransmetteurs, récepteurs membranaires, la synapse) et exemples de pathologies liées aux dysfonctionnements de ces systèmes. La physiologie cardiaque : organisation générale du tissu cardiaque au niveau macroscopique et microscopique (cardiomyocytes). Etude de l’activité électrique au niveau cellulaire (le tissu pacemaker, le tissu conducteur, les potentiels d’action) et global (l’électrocardiogramme). L’activité mécanique cardiaque (le couplage excitation-contraction, la révolution cardiaque). \textbf{Sensibilité et traitements sensoriels :} Etude de la transduction, l’encodage, transmission et de la perception des stimuli de l’environnement. Fonctionnement de la chaîne d’événements de l’activation des récepteurs périphériques à l’intégration cérébrale en prenant comme exemple la somesthésie,l’olfaction et la gustation. \textbf{Embryologie :} Différents types d’œufs. Polarités et axes corporels. Types de développements embryonnaire et post -embryonnaire chez les invertébrés et vertébrés. Lignée germinale. Annexes embryonnaires. Induction, compétence et gradient morphogénétique. Mécanisme des gènes de développement. Notions d’embryologie expérimentale.
+</descriptionLongue>
+
+<textePrerequis> Physiologie : Connaissances sur la biologie cellulaire (structure de la cellule et de lamembrane plasmique, la synapse et le potentiel d’action). Embryologie : connaître les principaux groupes du règne animal
+
+</textePrerequis>
+
+<objectifs> 
+  * Physiologie : Connaissance du fonctionnement des biomembranes, de la signalisation nerveuse et de la physiologie des cellules excitables, introduction aux techniques d’électrophysiologie et l’étude des canaux ioniques et des courants transmembranaires. Connaissance en neuro-antomie et du fonctionnement du système nerveux central.
+* Embryologie : Connaissance des grandes lignes du développement animal. Acquérir un espritsynthétique afin de généraliser la majorité des phénomènes étudiés.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3BO02 SSL3BO02" cours="22" td="12" tp="14" ctd="" ctp="" total="48" semestre="Semestre 3" coeff="5" ects="5">
+<titre>Bases d'embryologie</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 3h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 3h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Stéphane Pallu</nompremierresp>
+
+<emailpremierresp>stephane.pallu@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Céline Montécot-Dubourg</nomsecondresp>
+
+<emailsecondresp>celine.montecot-dubourg@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général et Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+
+* [\bf{Cours}] : Différents types d’œufs. Polarités et axes corporels. Types de développements
+embryonnaire et post-embryonnaire chez les invertébrés et vertébrés. Lignée germinale. Annexes
+embryonnaires. Induction, compétence et gradient morphogénétique. Mécanisme des gènes de
+développement.
+* [\bf{TD-TP}] : Travail à partir de lames histologiques et de photographies, en application du cours.
+Embryogenèse : Oursin, Amphibiens, Oiseaux, Souris. Annexes embryonnaires. Développement
+embryonnaires et post-embryonnaires des Insectes.
+
+</descriptionLongue>
+
+<textePrerequis>Connaître les principaux groupes du règne animal.
+</textePrerequis>
+
+<objectifs> 
+  * Connaissance des grandes lignes du développement animal. Acquérir un esprit synthétique
+afin de généraliser la majorité des phénomènes étudiés.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3AG23 SSL3AG23" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Anglais 3</titre>
+
+<methodeeval>Ecrit et oral</methodeeval>
+
+<modalitesccsemestreun>RNE : CC 2h30 ; RSE : CT 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit/oral 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Michèle Cimolino</nompremierresp>
+
+<emailpremierresp>michele.cimolino@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français/Anglais</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général et Enseignement 
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d’expression à partir de documents authentiques simples et/ou courts
+portant sur des innovations technologiques, des découvertes.
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Anglais 1 + 2 ou environ 450 heures de formation équivalente.
+
+</textePrerequis>
+
+<objectifs> 
+  * Découvrir les bases de l’anglais scientifique et les utiliser à l’écrit et à l’oral.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="???" cours="20" td="" tp="" ctd="" ctp="" total="20" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Histoire des sciences naturelles</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 1h30</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h30</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Géraldine Roux</nompremierresp>
+
+<emailpremierresp>geraldine.roux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+A quoi sert l'histoire des sciences. Du savoir à la science. Histoire des classifications ou comment ordonner la nature. Débat création-évolution. Histoire des neurosciences: comment l'Homme essaie de comprendre le fonctionnement de son cerveau: de la préhistoire à nos jours. Histoire de la microbiologie.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Donner une idée de la démarche scientifique et présenter, par quelques exemplesbiologiques, l'évolution des connaissances scientifiques au cours du temps.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4BH03 SSL4BH03" cours="18" td="" tp="30" ctd="" ctp="" total="48" semestre="Semestre 4" coeff="5" ects="5">
+<titre>Purification et analyse des molécules biologiques</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : Ecrit : CT 2h / TP : CC(2)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(E+TP) 2h30</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 75 \% ; TP 25 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 75 \% ; TP 25 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sylvain Bourgerie</nompremierresp>
+
+<emailpremierresp>sylvain.bourgerie@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général
+</descriptionCourte>
+
+<descriptionLongue>
+Protéines : extraction. Centrifugation. précipitations. Ultrafiltration. Dialyse. Méthodes chromatographiques : échangeurs d’ions, chromatofocalisation, tamisage moléculaire, affinité. Méthodes électrophorétiques : électrophorèse zonale, électrofocalisation, isotachophorèse, électrophorèse capillaire, SDS/bmercaptoéthanol. Transfert Western. Acides nucléiques. Oses et lipides : chromatographie sur couches minces, chromatographie en phase gazeuse (CPG), 
+chromatographie liquide haute performance (HPLC.).
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+   
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4BO06 SSL4BO06" cours="" td="12" tp="" ctd="" ctp="" total="12" semestre="Semestre 4" coeff="2" ects="2">
+<titre>Initiation à la valorisation des ressources végétales</titre>
+
+<methodeeval>Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC 15min</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 15min</modalitesccsemestredeux>
+
+<calculnfsessionune>Oral 100 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Oral 100 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Daniel Hagège</nompremierresp>
+
+<emailpremierresp>daniel.hagege@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Eric lainé</nomsecondresp>
+
+<emailsecondresp>eric.laine@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général et Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Pourquoi les plantes fabriquent elles des métabolites secondaires ? Quel intérêt pour l'homme? Exemples de valorisations de métabolites secondaires dans les domaines pharmaceutiques, alimentaires ou cosmétiques, avantages et contraintes.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3BO01 SSL3BO01" cours="24" td="8" tp="16" ctd="" ctp="" total="48" semestre="Semestre 3" coeff="5" ects="5">
+<titre>Physiologie des cellules excitables</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 3h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 3h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>William Même</nompremierresp>
+
+<emailpremierresp>william.meme@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général
+</descriptionCourte>
+
+<descriptionLongue>
+\textbf{Physiologie cellulaire} : fonctionnement des cellules excitables (cellules nerveuses, musculaires striées et lisses, sécrétrices). Rôle de la membrane plasmique et des échanges membranaires passifs et actifs dans le fonctionnement de la cellule excitable (gradients de concentration, de flux ioniques à travers les membranes semi-perméables, les canaux ioniques et les transporteurs). Potentiel d’action neuronal et propagation de l’information nerveuse et neuro-musculaire. Couplage excitation-contraction des muscles striés et lisses. Première approche de la neurotransmission (neurotransmetteurs, récepteurs membranaires, synapse) et exemples de pathologies. \textbf{Physiologie cardiaque} : organisation générale du tissu cardiaque au niveau macroscopique et microscopique (cardiomyocytes). Etude de l’activité électrique au niveau cellulaire (tissu pacemaker, tissu conducteur, potentiels d’action) et global (électrocardiogramme). L’activité mécanique cardiaque (le couplage excitation-contraction, la révolution cardiaque).Les travaux pratiques illustreront les contenus du cours par des expérimentations sur tissu vivant (nerf isolé, préparation nerf-muscle), observation de coupes histologiques et modélisation informatique (le potentiel d’action neuronal, les canaux ioniques). 
+\textbf{Sensibilité et traitements sensoriels} : étude de la transduction, l’encodage, transmission et de la perception des stimuli de l’environnement. Fonctionnement de la chaîne d’événements de l’activation des récepteurs périphériques à l’intégration cérébrale (somesthésie, olfaction et gustation).
+</descriptionLongue>
+
+<textePrerequis>Connaissances de biologie cellulaire.
+</textePrerequis>
+
+<objectifs> 
+  * Connaissance du fonctionnement des biomembranes, de la signalisation nerveuse et de la physiologie des cellules excitables, introduction aux techniques d’électrophysiologie et l’étude des canaux ioniques et des courants transmembranaires. Connaissance en neuro-antomie et du fonctionnement du système nerveux central.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="IUFM ???" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 4" coeff="3" ects="3">
+<titre>Stage d'observation en école, collège ou lycée</titre>
+
+<methodeeval>Ecrit/oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 1h30</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h30</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit/oral 100 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Valérie Zanelli</nompremierresp>
+
+<emailpremierresp>valerie.zanelli@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Préparation du stage :
+%
+%* L'observation et son utilisation
+%* Construction de thèmes et d'outils d'observation
+%* Compte rendu et analyse des situations éducatives observées
+%* Méthodologie du rapport de stage
+%
+L'observation et son utilisation ; Construction de thèmes et d'outils d'observation ; Compte rendu et analyse des situations éducatives observées ; Méthodologie du rapport de stage
+</descriptionLongue>
+
+<textePrerequis>Découverte de l'Ecole et des institutions éducatives.
+</textePrerequis>
+
+<objectifs> 
+  * Connaître le travail réel d'un enseignant en classe.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4BO03 SSL4BO03" cours="20" td="5" tp="11" ctd="" ctp="" total="36" semestre="Semestre 4" coeff="4" ects="4">
+<titre>Communication cellulaire et pharmacologie</titre>
+
+<methodeeval>Ecrit/exposé</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT (E+TP) 2h30 /CC(TP)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>CT : Ecrit 33 \%, TP : 33\% ; CC 33 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Jacques Pichon</nompremierresp>
+
+<emailpremierresp>jacques.pichon@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>William Même</nomsecondresp>
+
+<emailsecondresp>william.meme@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général et Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Communications intercellulaires et transfert d’informations via les systèmes récepteurs. Les grandes familles de récepteurs. Première approche des notions de transduction du signal. Interaction ligand-récepteur. Pharmacologie fondamentale et appliquée : les grands groupes de médicaments évoqués à l’aide d’exemples physiopathologiques. L’implication du biologiste dans l’élaboration et/ou la production d’un nouveau médicament. Origine des molécules pharmacologiquement actives : les molécules naturelles animale ou végétales ; à partir d’exemples concrets, étude de la découverte d’un médicament.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * L’initiation à la connaissance du médicament permettra d’aborder les fondements du fonctionnement des récepteurs cellulaires d’une part et des cibles d’agents pharmacologiques d’autre part. En employant quelques exemples précis, faire comprendre à l’étudiant les interrelations cellulaires qui soustendent la situation normale ou pathologique.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3ST01" cours="26" td="10" tp="24" ctd="" ctp="" total="60" semestre="Semestre 3" coeff="6" ects="6">
+<titre>Tectonique et géophysique</titre>
+
+<methodeeval>Ecrit et oral</methodeeval>
+
+<modalitesccsemestreun>RNE : CC(6)/CT 6h ; RSE : CT 5h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (oral/TP) 3h20</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 40 \% ; TP 60 \%</calculnfsessionune>
+
+<calculnfsessiondeux>CT 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Charles Gumiaux</nompremierresp>
+
+<emailpremierresp>charles.gumiaux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Enseignement BGST
+</descriptionCourte>
+
+<descriptionLongue>
+Cours : Géophysique interne et dynamique lithosphérique. Tectonique : cinématique et déformations aux limites des plaques, régimes tectoniques. Rappels sur les contraintes et la rhéologie. Quantification de la déformation finie. Objets structuraux : failles, plis, schistosité/foliation et linéations, boudinage. Exemples de structures régionales: rifts, domaines transformants, grandes structures des marges actives (prismes d'accrétion, chaînes de subduction, obduction, bassins arrière-arc), chaînes intracontinentales, chaînes de collision.
+TD : Géophysique : gravimétrie, magnétisme et paléomagnétisme, mécanisme au foyer des séismes.
+TP : Analyse de cartes géologiques, construction de coupes, éléments de dessin cartographique, notions de construction des cartes géologiques.
+</descriptionLongue>
+
+<textePrerequis>Biochimie générale.
+</textePrerequis>
+
+<objectifs> 
+  * Connaissances générales en géophysique et en tectonique. Notions d’analyse de la déformation et sur le comportement mécanique des solides. Techniques de construction de coupes et de lecture de cartes géologiques.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4AG24 SSL4AG24" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Anglais 4</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE : CC 2h30 ; RSE : CT 1h30</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h30</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Michèle Cimolino</nompremierresp>
+
+<emailpremierresp>michele.cimolino@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français/Anglais</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général et Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d’expression à partir de documents authentiques simples et/ou courts portant sur des innovations technologiques, des découvertes et avancées scientifiques.
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Anglais 3 ou environ 450 heures de formation équivalente.
+
+</textePrerequis>
+
+<objectifs> 
+  * Analyser dans une langue simple et cohérente les rapports entre science et société à l’écrit et à l’oral (niveau européen : B1+).
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3BH12 SSL2BH12" cours="18" td="2" tp="4" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="2" ects="2">
+<titre>Photosynthèse et nutrition carbonée</titre>
+
+<methodeeval>Ecrit et oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT (E) 2h / CC (TP) (écrit)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (E+TP) 2h (écrit/oral)</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 67 \% ; TP 33 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 67 \% ; TP 33 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Daniel Hagège</nompremierresp>
+
+<emailpremierresp>daniel.hagege@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Eric Lainé</nomsecondresp>
+
+<emailsecondresp>eric.laine@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours général et Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Les bases de la photosynthèse; photosynthèse des plantes en C3 : acte photochimique et fixation du CO$_2$ atmosphérique (Cycle de Calvin), biosynthèse de l'amidon et du saccharose. Photorespiration, photosynthèse des plantes en C4 et CAM.
+</descriptionLongue>
+
+<textePrerequis>Biochimie générale.
+</textePrerequis>
+
+<objectifs> 
+  * cquisition des bases fondamentales de la physiologie et de la biochimie végétales.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4BO07" cours="6" td="2" tp="4" ctd="" ctp="" total="12" semestre="Semestre 4" coeff="1" ects="1">
+<titre>Les algues</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 30 min</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 30 min</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sabine Carpin</nompremierresp>
+
+<emailpremierresp>sabine.carpin@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Biologie et reproduction des algues. Intérêts économiques, pharmaceutiques et biotechnologiques des algues.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Intérêts économiques et biologie des algues.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="???" cours="" td="20" tp="" ctd="" ctp="" total="20" semestre="Semestre 3" coeff="0" ects="0">
+<titre>Découverte de l'école et des institutions éducatives</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>???</modalitesccsemestreun>
+
+<modalitesccsemestredeux>???</modalitesccsemestredeux>
+
+<CalculNFSessionUne>Examen 67 \% ; TP 33 \%</CalculNFSessionUne>
+
+<CalculNFSessionDeux>Examen 67 \% ; TP 33 \%</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Valérie Zanelli</nompremierresp>
+
+<emailpremierresp>valerie.zanelli@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Enseignement BGST et Pluridisciplinaire
+</descriptionCourte>
+
+<descriptionLongue>
+???</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * ???
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4BO04 SSL4BO04" cours="14" td="8" tp="14" ctd="" ctp="" total="36" semestre="Semestre 4" coeff="4" ects="4">
+<titre>L'eau, les minéraux et la plante</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT/CC(2-3) 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 3h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Daniel Hagège</nompremierresp>
+
+<emailpremierresp>daniel.hagege@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Eric lainé</nomsecondresp>
+
+<emailsecondresp>eric.laine@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général et Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+L'eau et la plante, nutrition minérale hors azote, le transport des assimilats. Phytoremediation, engrais, rôle des mycorhizes dans l'absorption de l'eau et du phosphate.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Acquisition des bases fondamentales de physiologie et biochimie végétales.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°19 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4BH02 SSL4BH02" cours="26" td="6" tp="18" ctd="" ctp="" total="48" semestre="Semestre 4" coeff="5" ects="5">
+<titre>Microbiologie générale</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT/CC(2) 3h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 3h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 75 \% ; TP 25 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Maryvonne Ardourel</nompremierresp>
+
+<emailpremierresp>maryvonne.ardourel@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général et Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Microorganismes: Structure et organisation cellulaire (bactéries, fungi, bactériophages). Les transferts naturels de matériel génétique chez les microorganismes : aspects physiologiques (conjugaison, transformation, transduction et reproduction des bactériophages). Croissance microbienne : Cinétique, types trophiques, nutriments, métabolisme. Systématique bactérienne : Méthodes de la taxinomie, les grands groupes bactériens, techniques d’identification. Notions de virologie : Principaux types de virus animaux et végétaux. Maîtrise des populations bactériennes : Procédés de décontamination. Notions d’épidémiologie, virulence, pouvoir pathogène, toxines.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Faire découvrir la microbiologie en fournissant les connaissances indispensables sur les microorganismes (structure, mode de division, taxinomie...) puis en préciser les méthodes d’étude et d’analyse. Cet enseignement axé principalement sur la bactériologie, donnera les bases nécessaires au contrôle et à la maîtrise du développement des microorganismes nécessaire dans différents domaines (industrie, recherche, milieu médical, agroalimentaire...).
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°20 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4CH05 SSL4CH05" cours="" td="" tp="24" ctd="" ctp="" total="24" semestre="Semestre 4" coeff="3" ects="3">
+<titre>Chimie organique expérimentale</titre>
+
+<methodeeval>Travaux pratiques</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC(6)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 4h</modalitesccsemestredeux>
+
+<calculnfsessionune>CR TP 100 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Arnaud Tatibouet</nompremierresp>
+
+<emailpremierresp>arnaud.tatibouet@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général
+</descriptionCourte>
+
+<descriptionLongue>
+Méthodes de synthèse et Bonnes Pratiques en laboratoire de chimie organique. Expérimentations des réactions et techniques essentielles au laboratoire de chimie organique.
+</descriptionLongue>
+
+<textePrerequis>Chimie organique I.
+</textePrerequis>
+
+<objectifs> 
+  * Maîtrise des techniques de purifications et d’analyse, maîtrise des méthodes et pratiques d’expérimentation dans un laboratoire de chimie organique.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°21 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3BH13 SSL3BH13" cours="12" td="6" tp="12" ctd="" ctp="" total="30" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Enzymologie</titre>
+
+<methodeeval>Ecrit et oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT (E) 2h / CC (TP) (écrit)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (E+TP) 2h15 (écrit/oral)</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 75\% ; TP 25 \%</calculnfsessionune>
+
+<calculnfsessiondeux>CT 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Richard Daniellou</nompremierresp>
+
+<emailpremierresp>richard.daniellou@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général et Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Définitions, origine de la catalyse, Cinétique michaelienne, Modèles d’inhibition, application des enzymes en sciences, en santé, en agroalimentaire et en environnement.
+</descriptionLongue>
+
+<textePrerequis>Biochimie générale.
+</textePrerequis>
+
+<objectifs> 
+  * Connaissance des bases de l'enzymologie.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°22 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4BO02 SSL4BO02" cours="16" td="4" tp="16" ctd="" ctp="" total="36" semestre="Semestre 4" coeff="4" ects="4">
+<titre>Ecologie des peuplements</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT(CM+TD) 1h30 / CC(TP)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(CM+TD+TP) 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 66 \% ; TP 33 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit : CM 33 \%, TD 33 \% ; TP 33 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>François Lieutier</nompremierresp>
+
+<emailpremierresp>francois.lieutier@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général et Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Caractères fondamentaux de l'organisation des peuplements; équilibre dynamique et colonisation des îles; les facteurs de l’organisation et de la dynamique des peuplements (rôles de la compétition, de la prédation, du parasitisme, des ressources, de la variabilité spatiale et temporelle) ; dynamique des peuplements et évolution, coévolution; organisation des biocénoses (structure spatiale et temporelle, successions écologiques, biodiversité); structure de quelques communautés de la zone tempérée : forêts, prairies, cultures, lacs, étangs, rivières,.... comparaison et caractères généraux; études théoriques et pratiques.
+</descriptionLongue>
+
+<textePrerequis>Notions d’écologie générale et d'écologie des populations.
+</textePrerequis>
+
+<objectifs> 
+  * Familiariser l’étudiant avec l’organisation et la dynamique des peuplements, un domaine essentiel pour la compréhension du fonctionnement de la biosphère.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°23 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4ST02" cours="18" td="6" tp="24" ctd="" ctp="" total="48" semestre="Semestre 4" coeff="5" ects="5">
+<titre>Pétrologie endogène 1</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC(2) 2x2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Jean-Louis Bourdier</nompremierresp>
+
+<emailpremierresp>jean-louis.bourdier@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Enseignement BGST
+</descriptionCourte>
+
+<descriptionLongue>
+\textbf{Pétrologie magmatique} Cours : Définitions ; nomenclature et classifications des roches magmatiques ; processus de genèse et de différenciation des magmas TD : diagrammes de phases ; calcul de norme CIPW TP : description macroscopique et microscopique des grands types de roches magmatiques. \textbf{Pétrologie métamorphique} Cours : Présentation préliminaire des roches métamorphiques et du métamorphisme – Les facteurs du métamorphisme – La nomenclature des roches métamorphiques fondée sur leur minéralogie, leur texture et leur structure - Approche statique du métamorphisme : degré de métamorphisme et faciès métamorphiques – Le métamorphisme de contact TP : Détermination macroscopique et microscopique des minéraux, des textures et des structures des roches métamorphiques – Détermination des noms des roches métamorphiques
+</descriptionLongue>
+
+<textePrerequis>Bases de minéralogie.
+</textePrerequis>
+
+<objectifs> 
+  * Identifier les minéraux cardinaux des roches magmatiques macroscopiquement et microscopiquement. Décrire et interpréter des textures courantes des roches plutoniques et volcaniques Connaître les grands processus magmatiques : genèse et différenciation des magmas Maîtriser les diagrammes de phases binaires dans les systèmes magmatiques Maîtriser la représentation graphique des processus de fusion partielle et de cristallisation fractionnée, bilans de masse, application sous tableur Mettre en œuvre le calcul normatif, application sous tableur Appréhender le phénomène métamorphique dans sa diversité Connaître le lien entre le métamorphisme et la géodynamique Reconnaître les principales roches métamorphiques après observation de leurs minéraux et de leurs caractères texturaux et structuraux Interpréter les paragenèses minérales en termes de séquences métamorphiques et en termes de faciès métamorphiques.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°24 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3PY06 SSL3PY06" cours="13" td="14" tp="9" ctd="" ctp="" total="36" semestre="Semestre 3" coeff="4" ects="4">
+<titre>Physique pour les biosciences</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CC(E+TP(6)) 3h ; RSE : CT 1h30</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h30</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Isabelle Rannou</nompremierresp>
+
+<emailpremierresp>isabelle.ranou@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général
+</descriptionCourte>
+
+<descriptionLongue>
+Cours et TD :
+
+* Rappels de mathématiques.
+* Lois de comportement : Croissance et décroissance exponentielles / Equilibre dynamique / Régulation /Applications : Élimination d’une substance (notion de clairance) - Phénomènes de régulation biologique (respiration, glycémie, équilibre hormonal)
+* Eléments de mécanique des fluides : Hydrostatique /Écoulement des fluides parfaits / Viscosité
+
+Travaux pratiques : Loi exponentielle (absorption d’un rayonnement par une substance) / Lentille
+minces (application à l’œil)
+</descriptionLongue>
+
+<textePrerequis>Toutes les notions de physique et de mathématiques acquises dans l’enseignement
+secondaire.
+</textePrerequis>
+
+<objectifs> 
+  * Ce module s’attache à donner aux étudiants les outils physiques nécessaires en Sciences de la Vie. Le but essentiel est de mettre en évidence certaines lois de comportement pouvant être décrites par les mêmes formalismes, tout en reliant ces lois à des exemples pris dans le domaine de la biologie.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°25 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3BH01 SSL3BH01" cours="26" td="22" tp="" ctd="" ctp="" total="48" semestre="Semestre 3" coeff="5" ects="5">
+<titre>Bases de biologie moléculaire</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Alain Legrand</nompremierresp>
+
+<emailpremierresp>alain.legrand@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours général et enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Biologie moléculaire et dogme central de la biologie. Transmission de l’information génétique : du gène à la protéine.
+* Structure des acides nucléiques (ADN / ARN), supports de l’information génétique.
+* Conservation de l’information génétique : réplication et notions de réparation de l’ADN.
+* Expression des gènes : production d’ARN (transcription).
+* Finalisation du message génétique chez les organismes eucaryotes : maturation des ARN messagers (modifications post-transcriptionnelles).
+* Décryptage du code génétique : traduction des ARNm ; acteurs de la traduction et mécanismes.
+* Modifications des protéines (modifications post traductionnelles).
+* Notions de technologies en biologie moléculaire.
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Acquérir les connaissances de base sur les mécanismes fondamentaux de la transmissionde l’information génétique.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°26 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4ST01" cours="10" td="2" tp="12" ctd="" ctp="" total="24" semestre="Semestre 4" coeff="3" ects="3">
+<titre>Bassins sédimentaires</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 4h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 4h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit/TP 100 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit/TP 100 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Emmanuel Chapron</nompremierresp>
+
+<emailpremierresp>emmanuel.chapron@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Enseignement BGST
+</descriptionCourte>
+
+<descriptionLongue>
+\textbf{Cours :} Présentation des principaux outils de cartographie et de prélèvements du remplissage sédimentaire au sein de bassins actuels. Lecture et analyse des paramètres contrôlant l’enregistrement sédimentaire : stratigraphies génétique et sismique (applications). Flux sédimentaire, accommodation et subsidence, cartes isobathes, isopaques, architecture 3D des corps sédimentaires et des bassins. \textbf{TD/TP} : Principe et interprétation de la sismique réflexion (différentes échelles), application aux corps sédimentaires (affleurements, carottages), architecture 3D des corps sédimentaires : marqueurs du climat et de la tectonique.
+</descriptionLongue>
+
+<textePrerequis>Paléoenvironnements, stratigraphie et paléontologie ; Sédimentologie et pétrologie
+sédimentaire.
+</textePrerequis>
+
+<objectifs> 
+  * Connaissance approfondie des facteurs contrôlant la sédimentation. Maîtrise des principaux outils d’investigation stratigraphique. Capacité d’interpréter des coupes sismiques réflexion à différentes résolutions, ainsi que les faciès sédimentaires. Connaissance de l’architecture 3D de bassins sédimentaires types.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°27 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3CH02 SSL3CH02" cours="18" td="18" tp="12" ctd="" ctp="" total="48" semestre="Semestre 3" coeff="5" ects="5">
+<titre>Chimie organique</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CC (E(2)+TP) 3h ; RSE : CT (E+TP) 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (E+TP) 2h+1h</modalitesccsemestredeux>
+
+<CalculNFSessionUne>Ecrit 100\%</CalculNFSessionUne>
+
+<CalculNFSessionDeux>Ecrit 100\%</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Arnaud Tatibouet</nompremierresp>
+
+<emailpremierresp>arnaud.tatibouet@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général
+</descriptionCourte>
+
+<descriptionLongue>
+Exploration des fonctions essentielles et avancées de la chimie organique réactionnelle : Les fonctions acides et dérivés, chimie du benzène; chimie des énolates; réaction de Wittig/WittigHorner; Les amines et aminoacides; introduction aux réactions péricycliques (DielsAlder).
+</descriptionLongue>
+
+<textePrerequis>Introduction à la chimie organique.
+</textePrerequis>
+
+<objectifs> 
+  * Pouvoir identifier, nommer différentes fonctions et composés chimiques. Connaître et
+comprendre des transformations chimiques. Approche de la stratégie de synthèse. Initiation à la
+synthèse multiétapes.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°28 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3ST02" cours="20" td="4" tp="24" ctd="" ctp="" total="48" semestre="Semestre 3" coeff="5" ects="5">
+<titre>Sédimentologie et pétrologie sédimentaire</titre>
+
+<methodeeval>Ecrit et oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC(7) 8h30</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 3h30</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Mohammed Boussafir</nompremierresp>
+
+<emailpremierresp>mohammed.boussafir@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Enseignement BGST
+</descriptionCourte>
+
+<descriptionLongue>
+Cours : Dynamique et environnement sédimentaires, paléogéograhie, sédimentation continentale (glaciaire, fluviatile, lacustre, éolienne), sédimentation marine (plateforme, talus, profonde), sédimentation organique, diagenèses minérale et organique.
+TD : Figures et structures sédimentaires ; Minéralogie sédimentaire, classification 
+TP : Minéralogie et classification des roches sédimentaires ; Granulométrie, exoscopie des sables et morphométrie des galets pour les sédiments et macrofaciès des roches consolidées (détritiques silicoclastiques, carbonatées, siliceuses non-détritiques, résiduelles, évaporitiques et carbonées), figures et structures sédimentaires et microfaciès.
+</descriptionLongue>
+
+<textePrerequis>Minéralogie et système terre.
+</textePrerequis>
+
+<objectifs> 
+  * Acquisition des bases de sédimentologie (processus d’érosion, transport et dépôt pour les différents types d’environnements) et de diagenèse.
+* Identification macroscopique et microscopique des minéraux et des roches sédimentaires
+* Acquisition des outils (figures, structures et textures sédimentaires) de diagnostique des environnements sédimentaires
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°29 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4CH04 SSL4CH04" cours="8" td="4" tp="12" ctd="" ctp="" total="24" semestre="Semestre 4" coeff="2" ects="2">
+<titre>Chimie pour les biosciences</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC(4)/CT (E+TP) 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 50 \% ; TP 50 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra Javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Fabienne Meducin</nomsecondresp>
+
+<emailsecondresp>fabienne.meducin@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général et Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Application des notions de chimie générale à différents domaines de la vie courante et à différents problèmes en biologie: chimie des solutions, extraction et distillation du pétrole, introduction aux polymères. Application pratique de la chimie générale au dosage des produits courants (produits alimentaires, médicaments, produits ménagers, composés d’intérêt biologique).
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Utilisation des notions de chimie de base, acquises en 1ère année de licence pour comprendre quelques phénomènes quotidiens : maladies du sang liées à la dérégulation de son acidité, extraction et distillation du pétrole, introduction aux polymères
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°30 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3BO04 SSL3BO04" cours="16" td="4" tp="4" ctd="" ctp="" total="24" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Ecologie : les relations populations-environnement</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT(CM+TD) 1h30 / CC(TP)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(CM+TD+TP) 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>CT 67 \% ; CC 33 \%</calculnfsessionune>
+
+<calculnfsessiondeux>CM 33 \% ; TD 33 \% ; TP 33 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>François Lieutier</nompremierresp>
+
+<emailpremierresp>francois.lieutier@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours général et enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Les facteurs abiotiques et leur influence sur les êtres vivants (facteurs limitants et adaptation des organismes, facteurs climatiques, hydrologiques et édaphiques); les populations et leurs interactions (paramètres démographiques, croissance et fluctuations des populations, stratégies démographiques, facteurs de régulation, densité-dépendance, compétitions, prédation, parasitisme, interactions positives); notions de base sur la structure et l'organisation des peuplements (paramètres fondamentaux: richesse spécifique, diversité, niche écologique).
+</descriptionLongue>
+
+<textePrerequis>Ecologie générale
+</textePrerequis>
+
+<objectifs> 
+  * Les populations sont les pièces élémentaires des systèmes écologiques. Etudier les relations des populations avec leur environnement abiotique et biotique, c'est se donner les notions de base pour la compréhension du fonctionnement des écosystèmes.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°31 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3BH11 SSL3BH11" cours="20" td="10" tp="" ctd="" ctp="" total="30" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Métabolisme général</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Eric Hébert</nompremierresp>
+
+<emailpremierresp>eric.hebert@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général et Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Présentation dans l’espèce humaine des voies métaboliques de base des glucides (catabolisme et anabolisme) : glycolyse, cycle de Krebs et oxydations phosphorylantes, néoglucogenèse, voies des pentoses, glycogène), des lipides (acides gras et triglycérides : biosynthèse et dégradation) et des corps cétoniques ; intégration métabolique tissulaire. Différents modes de contrôle hormonal de ces voies (insuline, glucagon, adrénaline) et pathologies associées.
+</descriptionLongue>
+
+<textePrerequis>Biochimie générale.
+</textePrerequis>
+
+<objectifs> 
+  * Connaissance des métabolismes glucidique et lipidique humain de base.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°32 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4BH01 SSL4BH01" cours="18" td="18" tp="12" ctd="" ctp="" total="48" semestre="Semestre 4" coeff="5" ects="5">
+<titre>Techniques en biologie moléculaire</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT/CC(3-4) 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(E/TP) 3h</modalitesccsemestredeux>
+
+<calculnfsessionune>CT 75 \% ; CC 25 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Alain Legrand</nompremierresp>
+
+<emailpremierresp>alain.legrand@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général et Enseignement
+</descriptionCourte>
+
+<descriptionLongue>
+Techniques de bases de la manipulation des acides nucléiques (Extraction, purification, dosage, électrophorèse, enzymes de restriction et de modification, mutagénèse dirigée, transformation de E.coli. Notions de vecteurs (plasmides, cosmides, phages, YAC). Clonage, construction et utilisation de banques d'ADN. Détection, caractérisation et identification des acides nucléiques : Marquages radioactifs et marquages froids. Hybridation moléculaire. Techniques de Southern et Northern, hybridation in situ. Amplification (PCR) et séquençage. Applications : expression de protéines recombinantes, analyse de l'activité et de la structure des gènes, polymorphisme, études cliniques.
+</descriptionLongue>
+
+<textePrerequis>Bases fondamentales de biologie moléculaire.
+</textePrerequis>
+
+<objectifs> 
+  * Acquérir les bases nécessaires à la compréhension et à la réalisation des techniques de biologie moléculaire utilisées en recherche fondamentale, médicale et biotechnologique.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°33 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="???" cours="" td="20" tp="" ctd="" ctp="" total="20" semestre="Semestre 3" coeff="3" ects="3">
+<titre>Maths prépa concours : techniques de calcul en mathématiques</titre>
+
+<methodeeval>???</methodeeval>
+
+<modalitesccsemestreun>???</modalitesccsemestreun>
+
+<modalitesccsemestredeux>???</modalitesccsemestredeux>
+
+<CalculNFSessionUne>Examen 67 \% ; TP 33 \%</CalculNFSessionUne>
+
+<CalculNFSessionDeux>Examen 67 \% ; TP 33 \%</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Emmanuel Cepa</nompremierresp>
+
+<emailpremierresp>emmanuel.cepa@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours général renforcé
+</descriptionCourte>
+
+<descriptionLongue>
+Les thèmes suivants seront abordés. Les notions minimales de cours seront données afin de privilégier les exemples.
+
+* Fonctions numériques de la variable réelle / Intégrales / Equations différentielles
+* Suites / Algèbre Linéaire /Probabilités
+
+</descriptionLongue>
+
+<textePrerequis>Maths niveau BAC S, forte motivation.
+</textePrerequis>
+
+<objectifs> 
+  * Permettre à des étudiants d’acquérir des connaissances utiles pour passer les concours d’accès aux écoles nationales vétérinaires (concours ENV- voie B), les concours d’ingénieurs agro (concours ENSA voie B) mais également certains concours administratifs.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°34 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3ST03" cours="18" td="6" tp="24" ctd="" ctp="" total="48" semestre="Semestre 3" coeff="0" ects="0">
+<titre>Minéralogie</titre>
+
+<methodeeval>Ecrit/TP</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : Ecrit : CC(2) 2x2h / TP : CC(2) 2x2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (E+TP) 2h+2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 67 \% ; TP 33 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 67 \% ; TP 33 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Nicole Lebreton</nompremierresp>
+
+<emailpremierresp>nicole.lebreton@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Enseignement BGST
+</descriptionCourte>
+
+<descriptionLongue>
+???
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * ???
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°35 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL3BO03 SSL3BO03" cours="" td="" tp="8" ctd="" ctp="" total="8" semestre="Semestre 3" coeff="1" ects="1">
+<titre>Travaux pratiques photosynthèse</titre>
+
+<methodeeval>Ecrit et oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC(2)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 15min</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Oral 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Domenico Morabito</nompremierresp>
+
+<emailpremierresp>domenico.morabito@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Général
+</descriptionCourte>
+
+<descriptionLongue>
+Travaux pratiques mettant en évidence les bases de la photosynthèse.
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs> 
+  * Acquisition des bases fondamentales de physiologie et biochimie végétales
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°36 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL4FR01 SSL4FR01" cours="" td="12" tp="" ctd="" ctp="" total="12" semestre="Semestre 4" coeff="1" ects="1">
+<titre>Français</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 1h30</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h30</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Didier Colin</nompremierresp>
+
+<emailpremierresp>didier.colin@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours Enseignement Pluri
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de la grammaire française et de l’orthographe notamment à l’aide du logiciel Voltaire disponible à l’Université.
+</descriptionLongue>
+
+<textePrerequis>Biochimie générale.
+</textePrerequis>
+
+<objectifs> 
+  * Améliorer les performances orthographiques de l'étudiant(e) et l'aider à comprendre ses erreurs.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+</livret>

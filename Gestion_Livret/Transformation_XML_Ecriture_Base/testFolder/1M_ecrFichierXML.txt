@@ -1,25 +1,27 @@
-<module codeApogee="UE 11" codeue="2" cours="" td="" tp="15" ctd="45" total="60" semestre="Semestre 1" coeff="6" ects="6">
-<titre>Algorithmique et programmation 1</titre>
+<module codeApogee="6ST01" cours="" td="" tp="" ctd="4" total="4" semestre="Semestre 6" coeff="8" ects="8">
+<titre>Projet de fin d'étude</titre>
 
-<methodeEval>Contrôle continue et terminal</methodeEval>
+<methodeeval>Contrôle continu et terminal</methodeeval>
 
-<modalitesCCSemestreUn>CC et CT</modalitesCCSemestreUn>
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
 
-<modalitesCCSemestreDeux>CT</modalitesCCSemestreDeux>
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
 
 <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
 
 <CalculNFSessionDeux>CT</CalculNFSessionDeux>
 
-<noteEliminatoire></noteEliminatoire>
+<noteeliminatoire></noteeliminatoire>
 
-<nomPremierResp>Alexandre TESSIER</nomPremierResp>
+<nompremierresp>Pierre Debs</nompremierresp>
 
-<emailPremierResp>Alexandre.TESSIER@univ-orleans.fr</emailPremierResp>
+<emailpremierresp>pierre.debs@univ-orleans.fr</emailpremierresp>
 
-<nomSecondResp></nomSecondResp>
+<nomsecondresp></nomsecondresp>
 
-<emailSecondResp></emailSecondResp>
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
 
 <langues>
   <langue>Français</langue>
@@ -29,22 +31,27 @@
   <prerequis>0</prerequis>
 </lesPrerequis>
 
-<descriptionCourte>Unité obligatoire. </descriptionCourte>
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
 
-<descriptionLongue>
-Algorithmique élémentaire\,: expressions, variables, instructions, séquences, conditionnelles, boucles, tableaux, preuves, invariants, traduction dans un langage de programmation orienté objets.
-</descriptionLongue>
+<descriptionLongue></descriptionLongue>
 
 <textePrerequis>
+
+Comportements stratégiques: Le cours présente les principes de comportement des entreprises en concurrence imparfaite (monopole discriminant, concurrence monopolistique, duopole, oligopole). Il présente des instruments permettant d'analyser la concurrence sur un marché, et étudie les conséquences des imperfections de concurrence, tant normatives (intervention publique) que positives (rigidité macroéconomique des prix). Ce cours constitue une introduction à l'économie industrielle.
+Microéconomie: Ce cours dispensé en travaux dirigés se proposent d'illustrer l'enseignement de microéconomie au moyen de jeux économiques (dilemme du prisonnier, enchères, « concours de beauté »). Il se termine par une étude sectorielle d'économie industrielle.
+
+
 </textePrerequis>
 
-<objectifs>
-	- Maîtriser les concepts élémentaires de l\'algorithmique et être capable de les traduire dans un langages de programmation orienté objets. 
-</objectifs>
+<objectifs></objectifs>
 
-<ressources>Ressources</ressources>
+<ressources>Ressources
+</ressources>
 
-<biblio>Biblio</biblio>
+<biblio>Biblio
+</biblio>
 
 </module>
 

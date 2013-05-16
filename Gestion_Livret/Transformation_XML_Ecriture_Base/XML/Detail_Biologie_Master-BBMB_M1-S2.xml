@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livret>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM2BO04" cours="16" td="" tp="32" ctd="" ctp="" total="48" semestre="Semestre 2" coeff="5" ects="5">
+<titre>Modèles expérimentaux</titre>
+
+<methodeeval>Ecrit/TP/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT(E) 2h + CC(TP)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(E) 2h + Oral(TP)</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 66\% + TP 33\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 66\% + TP 33\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Céline Montécot Catherine Mura</nompremierresp>
+
+<emailpremierresp>celine.montecot-dubourg@univ-orleans.fr catherine.mura@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Martine Decoville</nomsecondresp>
+
+<emailsecondresp>martine.decoville@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialité BBMB - Option Génétique et neuropathologies
+</descriptionCourte>
+
+<descriptionLongue>
+1- Approche expérimentale en génétique : étude d’une maladie neurodégénérative humaine chez la drosophile, caractérisation du phénotype, recherche de mutants enhancers ou suppresseurs, caractérisation par « plasmid rescue », séquençage et analyse de banques de données des gènes enhancers ou suppresseurs. 2- Culture et étude de la spéciation in vitro de cellules souches neurales 3- Traitement de souris par un (des) xénobiotique(s) neuroactif(s) : conséquences comportementales et histologiques. Pathologies monogéniques : du défaut moléculaire à la physiopathologie. Plusieurs exemples de maladies monogéniques communes seront développés. Obtention et utilisation des modèles animaux : souris, drosophile, C. elegans. Données obtenues à partir des modèles. La diversité des approches de la cytogénétique et de la génomique à haute résolution. Utilisation de bases de données (Ensembl, Omim,USCS,DGV...). Apport des génomes : Génomique comparative et le choix des modèles. Enseignement basé notamment sur des exemples de  pathologies du langage et de la cognition.
+</descriptionLongue>
+
+<textePrerequis>Connaissances en génétique et biologie moléculaire.
+
+</textePrerequis>
+
+<objectifs> 
+  * Permettre aux étudiants d’appréhender les outils génétiques les plus récents et leurs applications en particulier dans les domaines des pathologies humaines.
+* Savoir appliquer les connaissances acquises au cours des modules théoriques et de se confronter à l’analyse de résultats expérimentaux..
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM2BH01" cours="12" td="" tp="12" ctd="" ctp="" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Immunologie 2</titre>
+
+<methodeeval>Ecrit/Oral/TP</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT(E) 1h + oral + Rapport TP</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (E) 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 25\% + Oral 50\% + TP 25\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>François Erard</nompremierresp>
+
+<emailpremierresp>francois.erard@cnrs-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialité BBMB et Passerelle MESC2A
+</descriptionCourte>
+
+<descriptionLongue>
+Immunité adaptative : Développement, fonctions et dysfonctions des lymphocytes. Homéostasie et mémoire immunologique.
+</descriptionLongue>
+
+<textePrerequis>Notions de base en immunologie.
+
+</textePrerequis>
+
+<objectifs> 
+  * L’objectif majeur de ce module est de permettre aux étudiants une compréhension aisée des mécanismes cellulaires et moléculaires les plus subtils du fonctionnement normal du système immunitaire et de ses déficiences.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM2SE02" cours="60" td="" tp="" ctd="" ctp="" total="60" semestre="Semestre 2" coeff="7" ects="7">
+<titre>Outils de développement technologique, économie d'entreprise</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT Oral</modalitesccsemestredeux>
+
+<CalculNFSessionUne>Ecrit 100\%</CalculNFSessionUne>
+
+<CalculNFSessionDeux>Oral\%</CalculNFSessionDeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Eline Nicolas</nompremierresp>
+
+<emailpremierresp>eline.nicolas@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Passerelle MESC2A
+</descriptionCourte>
+
+<descriptionLongue>
+Introduction à la gestion et à l’innovation dans les entreprises : l’innovation au sein des PME, animée par Fabienne Ermel, actuellement directrice générale d’une PME de l’agro-alimentaire dans la région Centre. Mme Ermel a également une expérience au sein de structures de financement de l’innovation, et propose ainsi un panorama des politiques d’aide à l’innovation en France, Les outils de gestion au sein des entreprises, présentés par Nathalie Dubost, Maître de Conférences à l’IAE d’Orléans. L’objectif de cette partie est de montrer, à l’aide d’un exemple de création d’entreprise, comment la comptabilité et la finance aident à la prise de décision et au pilotage d’une entreprise (choix d’investissements, calcul de coûts, documents de synthèse). Le marketing, présenté par Sandra Rimbert, Maître de Conférences à l’IAE d’Orléans. Les étudiants devront présenter un projet marketing à partir d’un thème donné par l’enseignante, en utilisant la méthodologie marketing préalablement exposée
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Sensibiliser aux problématiques de gestion d’une entreprise.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM2ST01" cours="" td="12" tp="" ctd="" ctp="" total="12" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Stage</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT(Rapport)+CT(Soutenance)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : Pas de seconde session</modalitesccsemestredeux>
+
+<CalculNFSessionUne>Ecrit 100\%</CalculNFSessionUne>
+
+<CalculNFSessionDeux>Oral\%</CalculNFSessionDeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Chantal Pichon</nompremierresp>
+
+<emailpremierresp>chantal.pichon@cnrs-orleans.fr</emailpremierresp>
+
+<nomsecondresp>William Même</nomsecondresp>
+
+<emailsecondresp>william.meme@cnrs-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialités BBMB et BOPE / Passerelle MESC2A
+</descriptionCourte>
+
+<descriptionLongue>
+Stage de 2 mois en laboratoire de recherche, ou en entreprise ou collectivité locale : participation à la construction d’un protocole, la réalisation d’une expérience ou d’un projet ; mise en forme des résultats ; traitement des données ; interprétation ; présentation orale et écrite.
+</descriptionLongue>
+
+<textePrerequis>Bon niveau d’ordre général pratique.
+
+</textePrerequis>
+
+<objectifs> 
+  * Prise de contact avec le monde professionnel de la recherche et le travail de chercheur.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM2BO03" cours="48" td="24" tp="" ctd="" ctp="" total="72" semestre="Semestre 2" coeff="7" ects="7">
+<titre>Bases génomiques en physiopathologies</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Stéphane Mortaud</nompremierresp>
+
+<emailpremierresp>stephane.mortaud@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Jacques Pichon</nomsecondresp>
+
+<emailsecondresp>jacques.pichon@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialité BBMB - Option Génétique et neuropathologies
+</descriptionCourte>
+
+<descriptionLongue>
+1- Une partie de cet enseignement a pour but l'étude des systèmes intégrés impliquant les mécanismes cellulaire et moléculaire au cours du développement et chez l'adulte (cellules souches) dans le cadre des processus mnésique (mémoire &amp; oubli), d'apprentissage et de plasticité cérébrale. 2- Une deuxième partie (20h) sera consacrée à l'étude de pathologies humaines en mettant en relation la sémiologie et l'étiologie de la maladie : maladies neurodégénératives (Alzheimer ou Creutzfeldt-Jakob ou Huntington), cancers cérébraux, autisme et retard mental. L'enseignement est assuré par des universitaires physiologistes et biologistes cellulaire et par des cliniciens du CHRO.
+</descriptionLongue>
+
+<textePrerequis>Connaissance en physiologie, physiopathologie, 
+
+</textePrerequis>
+
+<objectifs> 
+  * Physiologie des systèmes intégrés des fonctions cérébrales, Mécanismes de spéciation, de différenciation et d'intégration des cellules du système nerveux. Compréhension des mécanismes de physiologie moléculaire en liaison avec les pathologies.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM2MT02" cours="36" td="" tp="" ctd="" ctp="" total="36" semestre="Semestre 2" coeff="5" ects="5">
+<titre>Statistiques appliquées aux bio-industries</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT oral</modalitesccsemestredeux>
+
+<CalculNFSessionUne>Ecrit 100\%</CalculNFSessionUne>
+
+<CalculNFSessionDeux>Oral\%</CalculNFSessionDeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Richard Emilion</nompremierresp>
+
+<emailpremierresp>richard.emilion@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Passerelle MESC2A
+</descriptionCourte>
+
+<descriptionLongue>
+Analyse de données : ACP, AFC, AFCM ; Classification : hiérarchies, Moyennes mobiles, arbres de décision. Mini-projet présentant des applications dans les bio-industries. Plans d’expériences ;  Analyse de données, tests statistiques : Anova, test de Student, tests non paramétriques. Analyse de données avec SAS et Excel.</descriptionLongue>
+
+<textePrerequis>Calcul matriciel, la statistique descriptive (des rappels et compléments nécessaires sont dispensés.
+
+</textePrerequis>
+
+<objectifs> 
+  * Présentation de méthodes d’analyse de données et de classification ; Savoir mettre en œuvre des plans d’expériences et l’analyse de données brutes. Applications en biologie. Traitement statistique sur ordinateur. Utilisation du langage R.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM2BH07" cours="" td="48" tp="" ctd="" ctp="" total="48" semestre="Semestre 2" coeff="5" ects="5">
+<titre>Bioinformatique</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Stéphane Charpentier</nompremierresp>
+
+<emailpremierresp>stephane.charpentier@cnrs-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialité BBMB et Passerelle MESC2A
+</descriptionCourte>
+
+<descriptionLongue>
+Description et utilisation de banques de données. Analyse de séquences nucléiques et protéiques. Prédiction de l’organisation de gènes. Méthodes prédictives de structures secondaires. Visualisation de structures tridimensionnelles. Comparaisons de séquences (principes, matrices de calcul, logiciels d’alignement, recherche d’homologies, identification de motifs, alignements multiples). Modélisation des interactions moléculaires. Etude comparative de la séquence des génomes. Phylogénie. Utilisation des logiciels graphiques de visualisation et modélisation des bio-molécules. Modélisation comparative.
+</descriptionLongue>
+
+<textePrerequis>Connaissance de base des biomolécules.
+
+</textePrerequis>
+
+<objectifs> 
+  * Former le chercheur de demain aux outils en ligne de traitement de données expérimentales (comparaison de séquence, analyse structurale par utilisation d’outil de visualisation PyMOL).
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM2BH02" cours="48" td="" tp="" ctd="" ctp="" total="48" semestre="Semestre 2" coeff="5" ects="5">
+<titre>Relation structure-fonction</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC(O) + CT(E) 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(E) 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 66\% + Oral 33 \%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Richard Daniellou</nompremierresp>
+
+<emailpremierresp>richard.daniellou@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialité BBMB - Option Biologie Moléculaire et Structurale
+</descriptionCourte>
+
+<descriptionLongue>
+Interactions protéines-protéines à la jonction entre cellules endothéliales, agrégation de protéines et neurodégénérescence, coordination des réseaux sanguins et nerveux, radeaux lipidiques comme principe d'organisation membranaire. De la structure des ARN à leurs fonctions. Interactions Ligand-protéine : Enzymologie et réceptologie moléculaires, mécanismes de reconnaissance, allostérie, applications (docking, évolution dirigée, exemples tirés de publications).
+</descriptionLongue>
+
+<textePrerequis>Bon niveau d’ordre général pratique.
+
+</textePrerequis>
+
+<objectifs> 
+  * connaissance de la biochimie et de la structure des protéines et des acides nucléiques.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM2BH03" cours="36" td="" tp="36" ctd="" ctp="" total="72" semestre="Semestre 2" coeff="7" ects="7">
+<titre>Techniques expérimentales</titre>
+
+<methodeeval>Ecrit/TP</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC rapport TP + CT(E) 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(E) 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 66\% + TP 33\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Fabienne Brulé</nompremierresp>
+
+<emailpremierresp>brule@cnrs-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialité BBMB - Option Biologie Moléculaire et Structurale
+</descriptionCourte>
+
+<descriptionLongue>
+Études de la structure des protéines par RMN, par spectrométrie de fluorescence, par spectrométrie de masse, par dichroïsme circulaire. Études des interactions protéine-ligand. Imagerie par Résonance Magnétique.
+</descriptionLongue>
+
+<textePrerequis>connaissance de la biochimie et de la structure des protéines et des acides nucléiques.
+
+</textePrerequis>
+
+<objectifs> 
+  * Connaissance pratique de la production, purification de protéine recombinante pour des études de cristallographie et de RMN.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM2IP00" cours="" td="12" tp="" ctd="" ctp="" total="12" semestre="Semestre 2" coeff="1" ects="1">
+<titre>Ouverture à l'international</titre>
+
+<MethodeEval></MethodeEval>
+
+<ModalitesCCSemestreUn>RNE et RSE : CT(E) 1h30 / CC(O) 15 min</ModalitesCCSemestreUn>
+
+<ModalitesCCSemestreDeux>RNE et RSE : CT(O) 20 min</ModalitesCCSemestreDeux>
+
+<CalculNFSessionUne>Ecrit 75\% + Oral 50\%</CalculNFSessionUne>
+
+<CalculNFSessionDeux>Oral\%</CalculNFSessionDeux>
+
+<NoteEliminatoire>7</NoteEliminatoire>
+
+<nompremierresp>Lupka Mihajlovska</nompremierresp>
+
+<emailpremierresp>lupka.mihajlovska@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Anglais</langue>
+</langues>
+
+<descriptionCourte>
+Spécialités BBMB et BOPE / Passerelle MESC2A
+</descriptionCourte>
+
+<descriptionLongue>
+Savoir communiquer dans le milieu professionnel (CV, lettre, téléphone, entretien de recrutement, participer à une réunion), valider son niveau d’anglais par une certification en langues, niveau B2 (TOEIC, CLES).
+</descriptionLongue>
+
+<textePrerequis>Bon niveau d’ordre général pratique.
+
+</textePrerequis>
+
+<objectifs> 
+  * Préparer l’étudiant à faire un entretien  d’embauche dans la langue anglaise (savoir communiquer dans le milieu professionnel).
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM2PR01" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Projet Professionnel et connaissance de l'entreprise</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC rapport</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : Pas de seconde session</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<CalculNFSessionDeux>Oral\%</CalculNFSessionDeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Olivier Richard William Même</nompremierresp>
+
+<emailpremierresp>olivier.richard@univ-orleans.fr william.meme@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Philippe Herrandez</nomsecondresp>
+
+<emailsecondresp>philippe.herrandez@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialités BBMB et BOPE / Passerelle MESC2A
+</descriptionCourte>
+
+<descriptionLongue>
+Construction d’un projet professionnel ; visites d’entreprises, de collectivités locales, organismes ; préparation de CV, techniques de recherche d’emploi, informations sur les concours de recrutement de chercheurs et enseignants-chercheurs, ingénieurs…, table ronde sur les exigences du milieu professionnel, avec participation de représentants du publique et du privé. Connaissance de l’entreprise (grandes fonctions, grands types d’activités); connaissance des différents secteurs de recherche (public et privé); notions d’économie et de gestion (éléments de base); conférences et témoignages de parcours professionnels;  contacts avec le milieu professionnel.
+</descriptionLongue>
+
+<textePrerequis>Bon niveau d’ordre général pratique.
+
+</textePrerequis>
+
+<objectifs> 
+  * faire réfléchir l’étudiant sur ses motivations et ses ambitions professionnelles ; le faire se positionner par rapport à la continuation en thèse ou à l’entrée dans la vie active ; sensibiliser les étudiants à la connaissance des métiers de la recherche.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOM2AG42" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 2" coeff="3" ects="3">
+<titre>Anglais Scientifique et communication</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT(E) 1h30 / CC(O) 15 min</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(O) 20 min</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 75\% + Oral 50\%</calculnfsessionune>
+
+<calculnfsessiondeux>Oral\%</calculnfsessiondeux>
+
+<noteeliminatoire>7</noteeliminatoire>
+
+<nompremierresp>Lucile Mollet</nompremierresp>
+
+<emailpremierresp>lucile.mollet@cnrs-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Olivier Richard</nomsecondresp>
+
+<emailsecondresp>olivier.richard@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Spécialités BBMB et BOPE / Passerelle MESC2A
+</descriptionCourte>
+
+<descriptionLongue>
+Faire un bilan du stage de l’année passée et résumer les visites d’entreprises en anglais. Commenter le déroulement d’un atelier technologique en anglais. Se préparer à des entretiens en anglais pour une embauche (thèse ou poste R &amp; D)
+</descriptionLongue>
+
+<textePrerequis>Bon niveau d’ordre général pratique, oral et écrite, assez bonne connaissance de la langue spécifique de son domaine scientifique et technique.
+
+</textePrerequis>
+
+<objectifs> 
+  * Savoir présenter un rapport de travail en anglais et commenter le déroulement d’une expérimentation.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+</livret>

@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livret>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BH02" cours="20" td="12" tp="16" ctd="" ctp="" total="48" semestre="Semestre 6" coeff="5" ects="5">
+<titre>Biotechnologie appliquée</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE : CT (Ecrit 2h) + CC ; RSE : CT (Ecrit 2h + 1h)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (Ecrit 2h + 1h)</modalitesccsemestredeux>
+
+<calculnfsessionune>75\% + 25\%</calculnfsessionune>
+
+<calculnfsessiondeux>75\% + 25 \%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Maryvonne Ardourel</nompremierresp>
+
+<emailpremierresp>maryvonne ardourel@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BMC / BBV
+</descriptionCourte>
+
+<descriptionLongue>
+\textit{Production de molécules d’intérêt par génie génétique} : présentation des différents systèmes de production de protéines recombinantes en définissant leurs différents avantages et inconvénients : systèmes confinés procaryotes (bactéries : E. coli, Bacillus...) et eucaryotes (levures, cellules d’insecte, cellules de mammifère), systèmes ouverts (animaux et plantes transgéniques).
+\textit{Comment construire des animaux transgéniques} : pour améliorer la race, comme bioréacteur, comme modèles animaux de pathologies humaines, pour la correction d’un déficit, l’étude de la régulation des gènes... Présentation des différentes possibilités comme la micro-injection, pour l’amélioration de la race, l’utilisation de cellules ES pour l’invalidation de gènes en vue de l’élaboration de modèles animaux, de valider un ADN médicament... 
+\textit{Notion de thérapie génique} : utilisation de vecteur pour le transfert du gène : les vecteurs viraux.
+\textit{Transgénèse végétale} : du système de transgénèse naturelle des agrobactéries à leur utilisation en biotechnologie végétale. Les agrobactéries, outils naturels d’ingénierie génétique : infection des végétaux par les bactéries du sol, les plasmides Ti, les mécanismes de transfert de l’ADN-T, les vecteurs binaires, les techniques de coculture et de coinoculation. 
+\textit{Les méthodes de transgénèse alternatives} : électroporation, biolistique, vecteurs viraux, magnifection, etc. Avantages et limites. 
+\textit{Applications de la transgénèse végétale} : transfert de gènes d’intérêt agronomique, gènes de résistance aux herbicides, gènes de résistance aux insectes ravageurs (maïs Bt, toxines de Bacillus thuringiensis) ; transfert de gènes pour l’amélioration des qualités nutritives, augmentation de la teneur en acides aminés indispensables, modulation de la teneur en lipides, augmentation de la teneur en composés édulcorants, synthèse de $\beta$-carotène (golden rice) ; la cellule végétale une usine de production de molécules d’intérêt thérapeutique, vaccins comestibles, immunothérapie passive avec des planticorps, synthèse de protéines humaines ; production pour l’industrie agroalimentaire et autres, etc... 
+\textit{Les limites et problèmes actuels de la transgénèse végétale} : méthodes alternatives, intégration ciblée des gènes d’intérêt, transplastomique, suppression des gènes de sélection, etc...
+</descriptionLongue>
+
+<textePrerequis>Techniques en biologie moléculaire.
+
+</textePrerequis>
+
+<objectifs> 
+  * Les objectifs majeurs de cette unité sont 1) d’apporter les connaissances de base de biotechnologies impliquant les techniques de l’ADN recombinant 2) de savoir définir la procédure expérimentale de choix en fonction de chaque problématique 3) d’en développer les applications d’aujourd’hui et de demain.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6AG36" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Anglais 6</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE : CC 2h (écrit/oral) / RSE : CT (écrit) 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (écrit) 1h30</modalitesccsemestredeux>
+
+<calculnfsessionune>100\%</calculnfsessionune>
+
+<calculnfsessiondeux>100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Hervé Perreau</nompremierresp>
+
+<emailpremierresp>herve.perreau@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BMC / BOPE / BGST / BBV / PLURI
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d’expression à partir de documents authentiques longs et/ou complexes, portant sur des innovations technologiques, des découvertes ou avancées scientifiques.
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Anglais 5 ou environ 500 heures de formation équivalente.
+
+</textePrerequis>
+
+<objectifs> 
+  * Comprendre l’information exprimée dans des messages complexes sur le domaine des Sciences et Technologies et s’exprimer sur ce même domaine à l’oral avec un degré de spontanéité et de fluidité (niveau européen B2).
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BO03" cours="12" td="4" tp="8" ctd="" ctp="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Transduction des signaux chez les plantes</titre>
+
+<methodeeval>Ecrit/TP</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT : Ecrit 2h + TP 1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT : Ecrit 2h + TP 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>E 66\% + TP 33\%</calculnfsessionune>
+
+<calculnfsessiondeux>E 66\% + TP 33\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Daniel Hagège</nompremierresp>
+
+<emailpremierresp>daniel.hagege@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BOPE / BBV
+</descriptionCourte>
+
+<descriptionLongue>
+Perception de l’environnement par les plantes (généralités)- Les récepteurs impliqués dans la perception ; Rôle des régulateurs à phosphorelais : les récepteurs à l’éthylène, les récepteurs aux cytokinines, Rôle des LeucineRichRepeat Récepteur Kinases. Acteurs de la transduction et messagers secondaires : les protéines G hétérotrimériques, les petites protéines G, les protéines kinases, les phosphatases, les phospholipases, le calcium, l'AMPc, l'adénosine-diphosphate-ribose cyclique. Le système ubiquitine/protéasome.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Connaissances générales en agronomie.
+ 
+</objectifs>
+
+<ressources>Taiz et Zeiger (Sinauer), revues spécialisées (Trends in plant Sciences)
+
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BO05" cours="24" td="4" tp="20" ctd="" ctp="" total="48" semestre="Semestre 6" coeff="5" ects="5">
+<titre>Fixation de l'azote et agroéconomie végétale</titre>
+
+<methodeeval>Ecrit/TP</methodeeval>
+
+<modalitesccsemestreun>RNE : CT (Ecrit) 2h + CC (TP) ; RSE : CT (Ecrit 2h + TP 1h)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT (Ecrit 2h + TP 1h)</modalitesccsemestredeux>
+
+<calculnfsessionune>E 66\% + TP 33\%</calculnfsessionune>
+
+<calculnfsessiondeux>E 66\% + TP 33\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Daniel Hagège</nompremierresp>
+
+<emailpremierresp>daniel.hagege@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BGST / BBV
+</descriptionCourte>
+
+<descriptionLongue>
+Métabolisme azoté et fixation symbiotique. Du blé au pain- De la vigne au vin. Sorties : utilisation des farines boulangères ; laboratoire de recherche sur la qualité des blés ; entreprise vinicole.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquisition des connaissances de base de la physiologie végétales.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6ST04" cours="" td="" tp="" ctd="" ctp="" total="" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Stage laboratoire</titre>
+
+<methodeeval>Oral/Poster</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT Oral 20 min / CC Poster Appréciation / CC MS</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : Pas de session de rattrapage pour les stages</modalitesccsemestredeux>
+
+<calculnfsessionune>E 50\% + O 25\% + TP 25\%</calculnfsessionune>
+
+<CalculNFSessionDeux>E 66\% + TP 33\%</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Géraldine Roux</nompremierresp>
+
+<emailpremierresp>geraldine.roux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Fabienne Brulé</nomsecondresp>
+
+<emailsecondresp>fabienne.brule@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BOPE / BMC / BBV
+</descriptionCourte>
+
+<descriptionLongue>
+Stage en laboratoire académique ou industriel dans le domaine du parcours envisagé. La durée est de 4 à 6 semaines (détails de l’organisation fourni durant le semestre 5, avec signature d‘une convention de stage.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Initiation au travail de recherche en laboratoire.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BO14" cours="12" td="8" tp="16" ctd="" ctp="" total="36" semestre="Semestre 6" coeff="4" ects="4">
+<titre>Culture végétale in vitro</titre>
+
+<methodeeval>Ecrit/TP</methodeeval>
+
+<modalitesccsemestreun>RNE : CT(E) 2h + CC(TP) ; RSE : CT(E+TP) 2h+1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(E+TP) 2h+1h</modalitesccsemestredeux>
+
+<calculnfsessionune>E 66\% + TP 33\%</calculnfsessionune>
+
+<calculnfsessiondeux>E 66\% + TP 33\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Daniel Hagège</nompremierresp>
+
+<emailpremierresp>daniel.hagege@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Eric Lainé</nomsecondresp>
+
+<emailsecondresp>eric.laine.univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Bases historiques et physiologiques (totipotence cellulaire ; aptitude à la dédifférenciation ; propriétés des hormones
+végétales) de la culture /in vitro/ ; Technologie de la culture /in vitro/ (caractéristiques de l'explant ; composition du milieu de
+culture ; effets de l'atmosphère gazeuse ; asepsie) ; Applications de la culture /in vitro/ (micropropagation ; embryogenèse
+somatique ; amélioration sanitaire et génétique ; variation soma-clonale ; production de métabolites secondaires ; utilisation
+industrielle de la technique).</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Connaître les bases de la culture in vitro ; Savoir manipuler en conditions d’asepsie ; Maîtriser la technique ;
+Savoir l'utiliser comme un outil d'étude des processus de croissance et de développement des végétaux ; Etre capable de
+l'adapter à des problèmes posés par les professionnels de la production et de l'amélioration.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BO13" cours="16" td="12" tp="18" ctd="" ctp="" total="36" semestre="Semestre 6" coeff="4" ects="4">
+<titre>Molécules naturelles</titre>
+
+<methodeeval>Ecrit/TP</methodeeval>
+
+<modalitesccsemestreun>RNE : CT(E) 2h + CC(TP) ; RSE : CT(E+TP) 2h+1h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT(E+TP) 2h+1h</modalitesccsemestredeux>
+
+<calculnfsessionune>E 66\% + TP 33\%</calculnfsessionune>
+
+<calculnfsessiondeux>E 66\% + TP 33\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Daniel Hagège</nompremierresp>
+
+<emailpremierresp>daniel.hagege@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Eric Lainé</nomsecondresp>
+
+<emailsecondresp>eric.laine.univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+</descriptionCourte>
+
+<descriptionLongue>
+Connaissance des principales molécules d'origine végétales utilisables en bio-industries, voies de biosynthèse et
+applications.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquisition des connaissances de base de la physiologie végétale.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Pharmacognosie J. Bruneton Tec-Doc
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BH03" cours="20" td="" tp="16" ctd="" ctp="" total="36" semestre="Semestre 6" coeff="4" ects="4">
+<titre>Microbiologie appliquée</titre>
+
+<methodeeval>Ecrit/TP</methodeeval>
+
+<modalitesccsemestreun>RNE : CT(E) 2h + CC(TP) ; RSE : CT (E 2h + TP 1h)</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT : Ecrit 2h + Ecrit TP 1h</modalitesccsemestredeux>
+
+<calculnfsessionune>E 50\% + TP 50\%</calculnfsessionune>
+
+<calculnfsessiondeux>E 50\% + TP 50\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Maryvonne Ardourel</nompremierresp>
+
+<emailpremierresp>maryvonne.ardourel@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Parcours BMC / BBV
+</descriptionCourte>
+
+<descriptionLongue>
+Interactions entre micro-organismes : Associations synergiques et antagonistes, commensalisme, mutualisme,
+parasitisme. Microbiologie du sol et de l’eau : Les grands cycles (Carbone, Azote, Soufre) ; auto-épuration et biodégradation (ex : xénobiotiques, lixiviats, résidus industriels). Techniques d’analyse des eaux et du sol. Microbiologie médicale : Virus et bactéries pathogènes (habitat, épidémiologie, pouvoir pathogène, diagnostic, traitement). Microbiologie industrielle : Fermentations d’intérêts économiques.
+</descriptionLongue>
+
+<textePrerequis>
+
+</textePrerequis>
+
+<objectifs> 
+  * Donner un aperçu des différentes utilisations potentielles des micro-organismes, de connaître les
+démarches et de savoir effectuer des contrôles bactériologiques de l’eau et en agro-alimentaire
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BH01" cours="28" td="8" tp="" ctd="" ctp="" total="36" semestre="Semestre 6" coeff="4" ects="4">
+<titre>Métabolisme normal et pathologique</titre>
+
+<methodeeval>Ecrit/Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT : Ecrit 2h + Oral 15 min</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT : Ecrit 2h + Oral 15min</modalitesccsemestredeux>
+
+<calculnfsessionune>E 60\% + O 40\%</calculnfsessionune>
+
+<calculnfsessiondeux>E 60\% + O 40\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Eric Hébert</nompremierresp>
+
+<emailpremierresp>eric.hebert@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BMC / BBV
+</descriptionCourte>
+
+<descriptionLongue>
+Rappels des principales voies du métabolisme glucidique et lipidique ; métabolisme des acides aminés (élimination de l’azote ; cycle de l’urée ; biosynthèse des acides aminés non indispensables). Intégration métabolique tissulaire ; métabolisme « en situation » : état post-prandial ; jeûne pathologique et non pathologique, métabolisme musculaire. Métabolisme des nucléotides (biosynthèse ; chimiothérapie anticancéreuse ; dégradation) ; métabolisme du cholestérol (trafic intratissulaire et athérosclérose) et de l’hème. Modes de contrôle hormonal et pathologies associées.
+</descriptionLongue>
+
+<textePrerequis>unités Biochimie métabolique et enzymologie des semestres 3 et 4.
+
+</textePrerequis>
+
+<objectifs> 
+  * Métabolisme humain avancé et son contrôle hormonal ; pathologies associées.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BO08" cours="" td="" tp="24" ctd="" ctp="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Stage terrain : diversité des algues marines</titre>
+
+<methodeeval>Oral</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CC(2) + CT Oral 30 min</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : Pas de session de rattrapage pour le terrain</modalitesccsemestredeux>
+
+<calculnfsessionune>CC 50\% + CT 50\%</calculnfsessionune>
+
+<CalculNFSessionDeux>E 66\% + TP 33\%</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Christiane Depierreux</nompremierresp>
+
+<emailpremierresp>christiane.depierreux@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BOPE / BBV / BGST
+</descriptionCourte>
+
+<descriptionLongue>
+Etude sur le terrain (3 jours) des macroalgues benthiques. Observation des algues dans leur milieu naturel, identification des échantillons récoltés par analyse en laboratoire.
+</descriptionLongue>
+
+<textePrerequis>Connaissance des cycles biologiques des algues.
+
+</textePrerequis>
+
+<objectifs> 
+  * Identifier les principales algues des cotes françaises. Réaliser un alguier.
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="SOL6BH05" cours="24" td="" tp="" ctd="" ctp="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Virologie moléculaire</titre>
+
+<methodeeval>Ecrit</methodeeval>
+
+<modalitesccsemestreun>RNE et RSE : CT 2h</modalitesccsemestreun>
+
+<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+
+<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+
+<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Fabienne Brulé</nompremierresp>
+
+<emailpremierresp>fabienne.brule-morabito@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp></nomsecondresp>
+
+<emailsecondresp></emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>Parcours BBV / BMC
+</descriptionCourte>
+
+<descriptionLongue>
+Présentation du monde viral. Modes de réplication des virus. Interactions virus/cellule. Diagnostic et traitements
+anti-viraux. Action anti-virale du système immunitaire et stratégies d’échappement du virus. Vaccins et vecteurs viraux.
+Particularités des virus des végétaux. Exemples : VIH, Rougeole, Hépatites, Virus émergents, Virus de plantes, ...
+</descriptionLongue>
+
+<textePrerequis>Bases fondamentales de la biologie moléculaire, Immunologie générale.
+
+</textePrerequis>
+
+<objectifs> 
+  * Acquérir des connaissances dans le domaine de la virologie;
+ 
+</objectifs>
+
+<ressources>
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+</livret>

@@ -1,0 +1,576 @@
+% Informations générales
+\NeedsTeXFormat{LaTeX2e}[1999/01/01]
+\ProvidesPackage{modules-livret}[2011/06/16]
+
+%% Chargement des packages nécessaires
+\RequirePackage{xkeyval}
+\RequirePackage{hyperref}
+\RequirePackageWithOptions{xcolor}
+\RequirePackage[headheight=0mm, voffset=0mm, top=0mm, hoffset=0mm , bottom=10mm, head=5mm, foot=5mm, left=2mm, textwidth=145mm]{geometry}
+\RequirePackage{lmodern}
+\RequirePackage{ifthen}
+\RequirePackage{tabularx}
+\RequirePackage{xstring}
+\RequirePackage{multido}
+\RequirePackage{multicol}
+\RequirePackage{colortbl}
+\RequirePackage{setspace}
+\RequirePackage{multirow}
+\RequirePackage{graphicx}
+\RequirePackage{pifont}
+\RequirePackage{clock}
+\RequirePackage{fancyhdr}
+\RequirePackage{tikz}
+% \RequirePackage[cam, a0, center]{crop}
+% \RequirePackage{tkz-kiviat}
+
+% \newcommand*\colorgraphics{\crop[nographics]}
+
+\usetikzlibrary{positioning,shapes,shadows,arrows}
+
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+
+\fancyhead{}
+\fancyfoot{}
+
+\hypersetup{
+  colorlinks,
+  citecolor=couleurFonce,
+  filecolor=couleurFonce,
+  linkcolor=couleurFonce,
+  urlcolor=couleurFonce
+}
+
+% % % % % % % % % % PARAMETRAGE DE LA LIGNE DE SEPARATION DU HEADER ET FOOTER % % % % % % % % % %
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% % % % % % % % % % PERSONNALISATION DU FOOTER GAUCHE % % % % % % % % % %
+\fancyfoot[C]{\footnotesize{\thepage}}
+%\fancyfoot[R]{
+%    \vspace{2pt}
+%    \begin{tikzpicture}
+%        \node (page) [circle, fill=couleurFonce]{\textcolor{couleurTexte}{\footnotesize{\thepage}}};
+%    \end{tikzpicture}
+%}
+
+\fancyhead[L]{
+  \begin{tabular}{@{}>{\centering\arraybackslash\columncolor{couleurClaire}}p{\leftcolumnwidth}p{\bodycolumnwidth}@{}}
+    ~ \\[1\textheight]
+    ~ \\[-1.2\textheight]
+% %     ~ \\[1.105\textheight]
+%     ~ \\[220mm]
+  \end{tabular}
+}
+
+%\module[ codeApogee=SN03 , titre=Module1 , COURS=12h , TD=16h , TP=14h , CTD=14h , CTP=14h , TPE=14h , TOTAL=14h , SEMESTRE=1 , COEFF=3 , ECTS=1 , MethodeEval=Continue , ModalitesCCSemestreUn=CC1 , ModalitesCCSemestreDeux=CC2 , CalculNFSessionUne=C+56 , CalculNFSessionDeux=C-56 , NoteEliminatoire=0 , nomPremierResp=Ali ED-DBALI , emailPremierResp=AbdelAli.ED-DBALI@univ-orleans.fr , nomSecondResp=Ali ED-DBALI , emailSecondResp=AbdelAli.ED-DBALI@univ-orleans.fr , langue=Français] {Description courte} {Description longue} {prérequis} {Objectifs} {Ressources} {Bibliographie}
+
+\define@cmdkey [LIV] {module} {codeApogee}{}
+\define@cmdkey [LIV] {module} {titre}{}
+\define@cmdkey [LIV] {module} {COURS}{}
+\define@cmdkey [LIV] {module} {TD}{}
+\define@cmdkey [LIV] {module} {TP}{}
+\define@cmdkey [LIV] {module} {CTD}{}
+\define@cmdkey [LIV] {module} {CTP}{}
+\define@cmdkey [LIV] {module} {TPE}{}
+\define@cmdkey [LIV] {module} {NBHgroupe}{}
+\define@cmdkey [LIV] {module} {TOTAL}{}
+\define@cmdkey [LIV] {module} {SEMESTRE}{}
+\define@cmdkey [LIV] {module} {COEFF}{}
+\define@cmdkey [LIV] {module} {ECTS}{}
+\define@cmdkey [LIV] {module} {MethodeEval}{}
+\define@cmdkey [LIV] {module} {ModalitesCCSemestreUn}{}
+\define@cmdkey [LIV] {module} {ModalitesCCSemestreDeux}{}
+\define@cmdkey [LIV] {module} {CalculNFSessionUne}{}
+\define@cmdkey [LIV] {module} {CalculNFSessionDeux}{}
+\define@cmdkey [LIV] {module} {NoteEliminatoire}{}
+\define@cmdkey [LIV] {module} {nomPremierResp}{}
+\define@cmdkey [LIV] {module} {emailPremierResp}{}
+\define@cmdkey [LIV] {module} {nomSecondResp}{}
+\define@cmdkey [LIV] {module} {emailSecondResp}{}
+\define@cmdkey [LIV] {module} {langue}{}
+\define@cmdkey [LIV] {module} {nbPrerequis}{}
+\define@boolkey[LIV] {module} {descriptionCourte}[false]{}
+\define@boolkey[LIV] {module} {descriptionLongue}[false]{}
+\define@boolkey[LIV] {module} {objectifs}[false]{}
+\define@boolkey[LIV] {module} {ressources}[false]{}
+\define@boolkey[LIV] {module} {bibliographie}[false]{}
+
+\presetkeys [LIV] {module} {codeApogee=,titre=,COURS=,TD=,TP=,CTD=,CTP=,TPE=,NBHgroupe=,TOTAL=,SEMESTRE=,COEFF=,ECTS=,MethodeEval=,ModalitesCCSemestreUn=,ModalitesCCSemestreDeux=,CalculNFSessionUne=,CalculNFSessionDeux=,NoteEliminatoire=,nomPremierResp=,emailPremierResp=,nomSecondResp=,emailSecondResp=,langue=,nbPrerequis=0}{}
+
+% % % Personnalise les puces/items % % %
+\newcommand*{\Myitem}{% puces dpt info
+  \item[{\includegraphics[scale=0.3]{img/puce.jpg}}]%
+}
+\newcommand*{\ObjItem}{% puces pour les objectifs (main)
+  \item[\ding{43}]%
+}
+% % % % % % % % PERSONNALISE LES DRAPEAUX % % % % % % % % %
+\newcommand*{\FlagFR}{\item[{\includegraphics[scale=0.2]{img/flags/France.png}}]}
+\newcommand*{\FlagUK}{\item[{\includegraphics[scale=0.2]{img/flags/United-Kingdom.png}}]}
+\newcommand*{\FlagOTHERS}{\item[{\includegraphics[scale=0.2]{img/flags/United-Nations.png}}]}
+
+% % % Quelques paramétrages de mise en forme % % %
+\renewcommand{\arraystretch}{0.5} % custom hauteur ligne tableau
+\renewcommand{\familydefault}{\sfdefault}
+
+% % % Déclaration des compteurs % % %
+\newcounter{cpthoraires}
+\newcounter{cptprerequis}
+\newcounter{cpteval}
+
+% % % Déclaration de quelques longueurs % % %
+\newlength{\leftcolumnwidth}
+\setlength{\leftcolumnwidth}{25mm}
+
+\newlength{\pageheight}
+\setlength{\pageheight}{210mm}
+
+\newlength{\bodycolumnwidth}
+\setlength{\bodycolumnwidth}{\textwidth}
+\addtolength{\bodycolumnwidth}{-\leftcolumnwidth}
+\addtolength{\bodycolumnwidth}{-3mm}
+
+\newlength{\indentBeforeShortDescr}
+\setlength{\indentBeforeShortDescr}{2mm}
+
+\newlength{\ShortDescrWidth}
+\setlength{\ShortDescrWidth}{\bodycolumnwidth}
+\addtolength{\ShortDescrWidth}{-\indentBeforeShortDescr}
+
+% % % Permet de personnaliser l'affichage du/des responsable(s) % % %
+\newcommand\CreerResponsables[4]{%
+    \IfStrEq{#1}{}{
+      % si premier nom vide
+      \IfStrEq{#3}{}{
+        % si deuxieme nom vide
+      }{
+        % si deuxieme nom NON vide
+        \begin{tikzpicture}
+          \hspace{-6pt}\node (boxresp) [fill=white]{
+            \begin{tabular}{@{}p{20mm}|>{\raggedleft\arraybackslash}p{28mm}!{\ding{229}}>{\raggedleft\arraybackslash}p{53mm}@{}}
+                  \raggedright{\textbf{Responsable}} & #3 & \scriptsize{\IfStrEq{#4}{}{\textcolor{red!70}{\raisebox{-1pt}{\ding{54}}} email non communiqué}{\href{mailto:#4}{#4}}} \\
+              \end{tabular}
+         };
+         \begin{pgfonlayer}{background}
+              \path (boxresp.west |- boxresp.north)+(-0.2,-0.02) node (a) {};
+              \path (boxresp.east |- boxresp.south)+(-0.05,-0.02) node (b) {};
+              \hspace{-6pt}\path [left color=couleurFonce, right color=white] (a) rectangle (b);
+          \end{pgfonlayer}
+        \end{tikzpicture}
+%         \begin{tikzpicture}
+%             \node [bottom color=couleurClaire!20, top color=white, draw=couleurClaire!30, rounded corners=5pt]{
+%               \begin{tabular}{@{}p{20mm}|>{\raggedleft\arraybackslash}p{28mm}!{\ding{229}}>{\raggedleft\arraybackslash}p{53mm}@{}}
+%                   \raggedright{\textbf{Responsable}} & #3 & \scriptsize{\IfStrEq{#4}{}{\textcolor{red!70}{\raisebox{-1pt}{\ding{54}}} email non communiqué}{\href{mailto:#4}{#4}}} \\
+%               \end{tabular}
+%             };
+%         \end{tikzpicture}
+      }
+    }{
+      % si premier nom NON vide
+      \IfStrEq{#3}{}{
+        % si deuxieme nom vide
+        \begin{tikzpicture}
+          \hspace{-6pt}\node (boxresp) [fill=white]{
+            \begin{tabular}{@{}p{20mm}|>{\raggedleft\arraybackslash}p{28mm}!{\ding{229}}>{\raggedleft\arraybackslash}p{53mm}@{}}
+            \raggedright{\textbf{Responsable}} & #1 & \scriptsize{\IfStrEq{#2}{}{\textcolor{red!70}{\raisebox{-1pt}{\ding{54}}} email non communiqué}{\href{mailto:#2}{#2}}} \\
+            \end{tabular}
+         };
+         \begin{pgfonlayer}{background}
+              \path (boxresp.west |- boxresp.north)+(-0.2,-0.02) node (a) {};
+              \path (boxresp.east |- boxresp.south)+(-0.05,-0.02) node (b) {};
+              \hspace{-6pt}\path [left color=couleurFonce, right color=white] (a) rectangle (b);
+          \end{pgfonlayer}
+        \end{tikzpicture}
+%         \begin{tikzpicture}
+%             \node [bottom color=couleurClaire!20, top color=white, draw=couleurClaire!30, rounded corners=5pt]{
+%             \begin{tabular}{@{}p{20mm}|>{\raggedleft\arraybackslash}p{28mm}!{\ding{229}}>{\raggedleft\arraybackslash}p{53mm}@{}}
+%             \raggedright{\textbf{Responsable}} & #1 & \scriptsize{\IfStrEq{#2}{}{\textcolor{red!70}{\raisebox{-1pt}{\ding{54}}} email non communiqué}{\href{mailto:#2}{#2}}} \\
+%             \end{tabular}
+%          };
+%         \end{tikzpicture}
+      }{
+        % si deuxieme nom NON vide
+        \begin{tikzpicture}
+          \hspace{-6pt}\node (boxresp) [fill=white]{
+            \begin{tabular}{@{}p{20mm}|>{\raggedleft\arraybackslash}p{28mm}!{\ding{229}}>{\raggedleft\arraybackslash}p{53mm}@{}}
+            \raggedright{\textbf{Responsables}} & #1 & \scriptsize{\IfStrEq{#2}{}{\textcolor{red!70}{\raisebox{-1pt}{\ding{54}}} email non communiqué}{\href{mailto:#2}{#2}}} \\
+                                         & #3 & \scriptsize{\IfStrEq{#4}{}{\textcolor{red!70}{\raisebox{-1pt}{\ding{54}}} email non communiqué}{\href{mailto:#4}{#4}}} \\
+            \end{tabular}
+          };
+          \begin{pgfonlayer}{background}
+              \path (boxresp.west |- boxresp.north)+(-0.2,-0.02) node (a) {};
+              \path (boxresp.east |- boxresp.south)+(-0.05,-0.02) node (b) {};
+              \hspace{-6pt}\path [left color=couleurFonce, right color=white] (a) rectangle (b);
+          \end{pgfonlayer}
+        \end{tikzpicture}
+%         \begin{tikzpicture}
+%           \node [bottom color=couleurClaire!20, top color=white, draw=couleurClaire!30, rounded corners=5pt]{
+%             \begin{tabular}{@{}p{20mm}|>{\raggedleft\arraybackslash}p{28mm}!{\ding{229}}>{\raggedleft\arraybackslash}p{53mm}@{}}
+%             \raggedright{\textbf{Responsables}} & #1 & \scriptsize{\IfStrEq{#2}{}{\textcolor{red!70}{\raisebox{-1pt}{\ding{54}}} email non communiqué}{\href{mailto:#2}{#2}}} \\
+%                                          & #3 & \scriptsize{\IfStrEq{#4}{}{\textcolor{red!70}{\raisebox{-1pt}{\ding{54}}} email non communiqué}{\href{mailto:#4}{#4}}} \\
+%             \end{tabular}
+%         };
+%         \end{tikzpicture}
+      }
+    }
+}
+
+% % % Permet de personnaliser l'affichage des horaires % % %
+\newcommand\CreerHorairesModule[6]{
+    \def\total{#6}
+    % % % Boucle pour réaliser le traitement sur chaque argument % % %
+    \multido{\i=1+1}{6}{
+      \IfStrEqCase{\i}{%
+        {1}{\def\var{#1}\def\type{Cours}}%
+        {2}{\def\var{#2}\def\type{TD}}%
+        {3}{\def\var{#3}\def\type{TP}}%
+        {4}{\def\var{#4}\def\type{CTD}}%
+        {5}{\def\var{#5}\def\type{CTP}}%
+%         {6}{\def\var{#6}\def\type{Total}}%
+      }[\def\var{}\def\type{}]%
+      \IfStrEq{\var}{}{}{
+        % si le compteur est égal à zéro
+        \IfEq{\thecpthoraires}{0}{
+            \begin{tabular}[t]{@{}p{\leftcolumnwidth}}
+                \footnotesize{\textcolor{couleurTexte}{Durée \clock{15}{41}\IfStrEq{\total}{}{}{~\total~h}}} \\
+                \textcolor{couleurTexte}{\rule[10pt]{2.2cm}{0.5pt}} \\[-5pt]
+            \end{tabular}
+        }
+        %sinon
+        {}
+        \addtocounter{cpthoraires}{1}
+        \begin{tabular}[t]{@{}p{8mm}!{\ding{224}}>{\raggedleft\arraybackslash}p{10mm}<{~h}}
+        \type & \var \\
+        \end{tabular}
+       }
+    }
+    \IfEq{\thecpthoraires}{0}{}{\setcounter{cpthoraires}{0}\vspace{-5pt}}
+}
+
+% % % Permet de personnaliser l'affichage de la partie evaluation % % %
+\newcommand\CreerEvaluationModule[8]{
+    % % % Boucle pour réaliser le traitement sur chaque argument % % %
+    \multido{\i=1+1}{9}{
+      \IfStrEqCase{\i}{%
+        {1}{\def\var{#1}}%
+        {2}{\def\var{#2}}%
+        {3}{\def\var{#3}}%
+        {4}{\def\var{#4}}%
+        {5}{\def\var{#5}}%
+        {6}{\def\var{#6}}%
+        {7}{\def\var{#7}}%
+        {8}{\def\var{#8}}%
+      }[\def\var{}]%
+      \IfStrEq{\var}{}{}{
+        \addtocounter{cpteval}{1}
+      }
+    }
+    % si le compteur n'est pas égal à zéro
+    \IfEq{\thecpteval}{0}{}
+    {
+        \textcolor{couleurFonce}{\'Evaluation\newline\rule[10pt]{10cm}{0.5pt}}\\[-7pt]
+        % % % COEFF, ECTS et NOTE Eliminatoire % % %
+        \IfStrEq{#1}{}{\IfStrEq{#2}{}{\IfStrEq{#3}{}{}{\vspace{-14pt}\begin{center}}}{\vspace{-14pt}\begin{center}}}{\vspace{-14pt}\begin{center}}
+%         \vspace{-14pt}\begin{center}
+        \IfStrEq{#1}{}{}{
+            \begin{tikzpicture}
+                \node (coeff) [rectangle, fill=couleurFonce]{\textcolor{couleurTexte}{\textbf{#1}}};
+                \node [anchor=east] at (coeff.west) {\scriptsize{Coefficient}};
+            \end{tikzpicture}
+            \hspace{20pt}
+        }
+        \IfStrEq{#2}{}{}{ 
+            \begin{tikzpicture}
+                \node (ects) [rectangle, fill=couleurFonce]{\textcolor{couleurTexte}{\textbf{#2}}};
+                \node [anchor=east] at (ects.west) {\scriptsize{ECTS}};
+            \end{tikzpicture}
+            \hspace{20pt}
+        }
+        \IfStrEq{#3}{}{}{
+            \begin{tikzpicture}
+                \node (elim) [rectangle, fill=couleurFonce]{\textcolor{couleurTexte}{\textbf{\cmdLIV@module@NoteEliminatoire}}};
+                \node [anchor=east] at (elim.west) {\scriptsize{Note éliminatoire}};
+            \end{tikzpicture}
+        }
+        \IfStrEq{#1}{}{\IfStrEq{#2}{}{\IfStrEq{#3}{}{}{\end{center}\vspace{-9pt}}}{\end{center}\vspace{-9pt}}}{\end{center}\vspace{-9pt}}
+%         
+        % % % % % % % % % Méthodes d'évaluation % % % % % % %
+        \IfStrEq{#6}{}{}{
+            \includegraphics[scale=0.3]{img/puce.jpg} \textbf{Méthode d'évaluation :} \\[3pt]
+            \hspace{3mm}
+            \begin{minipage}[t]{10.6cm}
+                \scriptsize{#6}
+            \end{minipage} \\
+            \\
+        }
+        % % % % % % % % % Modalités de controle % % % % % % %
+        \IfStrEq{#4}{}{\IfStrEq{#5}{}{}{
+            \includegraphics[scale=0.3]{img/puce.jpg} \textbf{Modalités de contrôle des connaissances :} \\[3pt]\hspace{\indentBeforeShortDescr}}}{\includegraphics[scale=0.3]{img/puce.jpg} \textbf{Modalités de contrôle des connaissances :} \\[3pt]\hspace{\indentBeforeShortDescr}}
+        \IfStrEq{#4}{}{
+            \IfStrEq{#5}{}{%rien a faire
+            }{
+                \begin{tabular}[t]{!{\ding{224}}>{\raggedleft\arraybackslash}p{22mm}!{:}p{74mm}@{}}
+                    Seconde session   &   \scriptsize{#5} \\[3pt]
+                \end{tabular}
+            }
+        }{
+            \IfStrEq{#5}{}{
+                \begin{tabular}[t]{!{\ding{224}}>{\raggedleft\arraybackslash}p{22mm}!{:}p{74mm}@{}}
+                    Première session  &   \scriptsize{#4} \\[3pt]
+                \end{tabular} \\
+            }{
+                \begin{tabular}[t]{!{\ding{224}}>{\raggedleft\arraybackslash}p{22mm}!{:}p{74mm}@{}}
+                    Première session  &   \scriptsize{#4} \\[3pt]
+                    Seconde session   &   \scriptsize{#5} \\[3pt]
+                \end{tabular} \\
+            }
+        }
+        % % % % % % % % % Calcul note finale % % % % % % %
+        \IfStrEq{#7}{}{\IfStrEq{#8}{}{}{\includegraphics[scale=0.3]{img/puce.jpg} \textbf{Calcul de la note finale :} \\[3pt]\hspace{\indentBeforeShortDescr}}}{\includegraphics[scale=0.3]{img/puce.jpg} \textbf{Calcul de la note finale :} \\[3pt]\hspace{\indentBeforeShortDescr}}
+        \IfStrEq{#7}{}{
+            \IfStrEq{#8}{}{%rien a faire
+            }{
+                \begin{tabular}[t]{!{\ding{224}}>{\raggedleft\arraybackslash}p{22mm}!{:}p{74mm}@{}}
+                    Seconde session   &   \scriptsize{#8} \\[3pt]
+                \end{tabular} \\
+            }
+        }{
+            \IfStrEq{#8}{}{
+                \begin{tabular}[t]{!{\ding{224}}>{\raggedleft\arraybackslash}p{22mm}!{:}p{74mm}@{}}
+                    Première session  &   \scriptsize{#7} \\[3pt]
+                \end{tabular} \\
+            }{
+                \begin{tabular}[t]{!{\ding{224}}>{\raggedleft\arraybackslash}p{22mm}!{:}p{74mm}@{}}
+                    Première session  &   \scriptsize{#7} \\[3pt]
+                    Seconde session   &   \scriptsize{#8} \\[3pt]
+                \end{tabular} \\
+            }
+        }
+    }
+    \IfEq{\thecpteval}{0}{}{\setcounter{cpteval}{0}\vspace{-5pt}}
+}
+
+% % % Permet de personnaliser l'affichage des langues d'enseignement % % %
+\newcommand\CreerLangue[1]{
+  \def\var{#1}
+  \IfStrEqCase{\var}{%
+    {Français}{\FlagFR #1}
+    {Anglais}{\FlagUK #1}
+    {Français/Anglais}{\FlagFR Français \FlagUK Anglais}%
+  }[\FlagOTHERS #1]
+}
+
+% % % Permet de personnaliser l'affichage de la description courte % % %
+\newcommand\CreerDescrCourteModule[1]{
+  \def\var{#1}
+  \hspace{\indentBeforeShortDescr}
+      \begin{minipage}[t]{10.6cm}
+      \begin{spacing}{0.5}
+          \textit{\textcolor{couleurFonce}{\scriptsize{
+              \var
+          }}}
+      \end{spacing}\vspace{2mm}
+      \end{minipage} \\
+   \\
+}
+
+% % % Permet de personnaliser l'affichage des prérequis % % %
+\newcommand\CreerPrerequis[2]{
+  \begin{tikzpicture}
+      \hspace{-6pt}\node (boxreq) [fill=white]{
+          \begin{tabular}{@{}p{20mm}|>{\raggedright\arraybackslash}p{87.7mm}@{}}
+          \footnotesize{\textbf{Pré-requis}} & {\scriptsize #1}
+          \end{tabular}
+      };
+      \begin{pgfonlayer}{background}
+          \path (boxreq.west |- boxreq.north)+(-0.2,-0.02) node (a) {};
+          \path (boxreq.east |- boxreq.south)+(-0.05,-0.02) node (b) {};
+          \hspace{-6pt}\path [left color=couleurFonce, right color=white] (a) rectangle (b);
+      \end{pgfonlayer}
+  \end{tikzpicture}
+  \\
+%   \begin{tikzpicture}
+%      \node [bottom color=couleurClaire!20, top color=white, draw=couleurClaire!30, rounded corners=5pt]{
+%           \begin{tabular}{@{}p{20mm}|>{\raggedright\arraybackslash}p{87.7mm}@{}}
+%           \footnotesize{\textbf{#2 Pré-requis}} & {\scriptsize #1}
+%           \end{tabular}
+%       };
+%   \end{tikzpicture}
+%   \\
+}
+
+\newcommand*{\module}[1][]{\livModule[#1]}
+
+\def\livModule[#1]#2#3#4#5#6#7{
+  \setkeys[LIV]{module}{#1}
+  
+  % % % % % % % % % Parametrages % % % % % % % %
+  \pagestyle{fancy}
+  \sloppy% permet le retour a la ligne automatique
+  {\footnotesize% parametre la taille de la police de tout le document en footnotesize
+  % % % % % % % % % % % % % % % % % % % % % % % % 
+  
+  \noindent
+  \begin{tabular}{@{}>{\centering\arraybackslash\columncolor{couleurClaire}}p{\leftcolumnwidth}p{\bodycolumnwidth}@{}} % ce tableau permet de garder le module en UN bloc
+    \rowcolor{couleurFonce}{} & \cellcolor{couleurClaire}{} \\
+    \rowcolor{couleurFonce}{\textbf{\textsf{\large{\textcolor{couleurTexte}{
+        \IfStrEq{\cmdLIV@module@codeApogee}{}{~}{\cmdLIV@module@codeApogee}
+    }}}}}
+    & 
+    \cellcolor{couleurClaire}\textbf{\textsf{\large{\textcolor{couleurTexte}{\IfStrEq{\cmdLIV@module@titre}{}{Aucun nom de module}{\cmdLIV@module@titre}}}}} \\
+    \rowcolor{couleurFonce}{} & \cellcolor{couleurClaire}{} \\
+  \\
+  
+    % % % % % % % % % % % % % % % % % % % % % %     HORAIRES     % % % % % % % % % % % % % % % % % % % % % %
+       \CreerHorairesModule{\cmdLIV@module@COURS}{\cmdLIV@module@TD}{\cmdLIV@module@TP}{\cmdLIV@module@CTD}{\cmdLIV@module@CTP}{\cmdLIV@module@TOTAL}
+
+    % % % % % % % % % % % % % % % % % % % % % %     Nombre d'heures pas groupe     % % % % % % % % % % % % % % % % % % % % % %
+       \IfStrEq{\cmdLIV@module@NBHgroupe}{}{}{
+          \begin{tabular}[t]{@{}>{\centering\arraybackslash}p{\leftcolumnwidth}}
+              \cmdLIV@module@NBHgroupe \scriptsize{ d'encadrement consacrées par \textbf{\linebreak[4]groupe de travail}} \\[5pt]
+          \end{tabular}
+       }
+          
+    % % % % % % % % % % % % % % % % % % % % % %     TPE     % % % % % % % % % % % % % % % % % % % % % %
+       \IfStrEq{\cmdLIV@module@TPE}{}{}{
+          \begin{tabular}[t]{@{}>{\centering\arraybackslash}p{\leftcolumnwidth}}
+              \cmdLIV@module@TPE h \scriptsize{de \textbf{T}ravail \textbf{P}ersonnel \textbf{E}nvisagé} \\[5pt]
+          \end{tabular}
+       }
+       
+    % % % % % % % % % % % % % % % % % % % % % %     SEMESTRE     % % % % % % % % % % % % % % % % % % % % % %
+       \IfStrEq{\cmdLIV@module@SEMESTRE}{}{}{\begin{tabular}[t]{@{}l}\textbf{\textcolor{couleurTexte}{\cmdLIV@module@SEMESTRE}} \\[5pt]\end{tabular}}
+    
+     % % % % % % % % % % % % % % % % % % % % %     OBJECTIFS     % % % % % % % % % % % % % % % % % % % % % %
+     \ifLIV@module@objectifs
+        \begin{tabular}{@{}p{\leftcolumnwidth}}
+            \footnotesize{\textcolor{couleurTexte}{Objectifs\newline\rule[10pt]{2.2cm}{0.5pt}}} \\[-20pt]
+            \scriptsize{
+            \begin{flushleft}
+              #5
+            \end{flushleft}
+            }
+         \end{tabular}
+      \else\fi
+     
+     % % % % % % % % % % % % % % % % % % % % %     LANGUE     % % % % % % % % % % % % % % % % % % % % % %
+    \IfStrEq{\cmdLIV@module@langue}{}{}{
+      \begin{tabular}{@{}p{\leftcolumnwidth}}
+          \footnotesize{\textcolor{couleurTexte}{Langue(s)\newline\rule[10pt]{2.2cm}{0.5pt}}} \\[-10pt]
+          \scriptsize{
+          \begin{itemize}
+            \CreerLangue{\cmdLIV@module@langue}
+          \end{itemize}
+          }
+       \end{tabular}
+     }
+  &  
+      \vspace{-5pt}
+      \begin{tabular}[t]{@{}p{11cm}}
+  % % % % % % % % % % % % % % % % % % % % % %     DESCRIPTION COURTE     % % % % % % % % % % % % % % % % % % % % % %
+    \ifLIV@module@descriptionCourte
+        \CreerDescrCourteModule{#2}
+    \else
+        \vspace{-10pt}
+    \fi
+  % % % % % % % % % % % % % % % % % % % % % %     INFOS GENERALES     % % % % % % % % % % % % % % % % % % % % % % 
+    \IfStrEq{\cmdLIV@module@nomPremierResp}{}{
+          \IfStrEq{\cmdLIV@module@nomSecondResp}{}{
+                \IfStrEq{\cmdLIV@module@nbPrerequis}{0}{
+                  % aucun des trois
+                }{ % 1erResp:NON  2eResp:NON  prerequis:OUI
+%                   \textcolor{couleurFonce}{Informations générales\newline\rule[10pt]{10cm}{0.5pt}} \\[-7pt]
+                  \CreerPrerequis{#4}{\cmdLIV@module@nbPrerequis}
+                }
+          }
+          { % 1erResp:NON  2eResp:OUI
+%                 \textcolor{couleurFonce}{Informations générales\newline\rule[10pt]{10cm}{0.5pt}} \\[-7pt]
+                \IfStrEq{\cmdLIV@module@nbPrerequis}{0}{
+                      % 1erResp:NON  2eResp:OUI  prerequis:NON
+                      \CreerResponsables{\cmdLIV@module@nomPremierResp}{\cmdLIV@module@emailPremierResp}{\cmdLIV@module@nomSecondResp}{\cmdLIV@module@emailSecondResp}
+                }
+                { % 1erResp:NON  2eResp:OUI  prerequis:OUI
+                      \CreerResponsables{\cmdLIV@module@nomPremierResp}{\cmdLIV@module@emailPremierResp}{\cmdLIV@module@nomSecondResp}{\cmdLIV@module@emailSecondResp}
+                      \\[-7pt]
+                      \CreerPrerequis{#4}{\cmdLIV@module@nbPrerequis}
+                }
+          }
+    }
+    { % 1erResp:OUI
+%           \textcolor{couleurFonce}{Informations générales\newline\rule[10pt]{10cm}{0.5pt}} \\[-7pt]
+          \IfStrEq{\cmdLIV@module@nbPrerequis}{0}{
+                % 1erResp:OUI  prerequis:NON
+                 \CreerResponsables{\cmdLIV@module@nomPremierResp}{\cmdLIV@module@emailPremierResp}{\cmdLIV@module@nomSecondResp}{\cmdLIV@module@emailSecondResp}
+           }
+           { % 1erResp:OUI  prerequis:OUI
+                 \CreerResponsables{\cmdLIV@module@nomPremierResp}{\cmdLIV@module@emailPremierResp}{\cmdLIV@module@nomSecondResp}{\cmdLIV@module@emailSecondResp}
+                 \\[-15pt]
+                 \CreerPrerequis{#4}{\cmdLIV@module@nbPrerequis}
+           }
+    }
+    \\[-5pt]
+  % % % % % % % % % % % % % % % % % % % %     DESCRIPTION DETAILLEE     % % % % % % % % % % % % % % % % % % % % 
+      \ifLIV@module@descriptionLongue
+      \textcolor{couleurFonce}{Contenu\newline\rule[10pt]{10cm}{0.5pt}} \\[-7pt]
+      #3 \\
+      \\
+      \else\fi
+  % % % % % % % % % % % % % % % % % % % % % %     EVALUATION     % % % % % % % % % % % % % % % % % % % % % % 
+      \CreerEvaluationModule{\cmdLIV@module@COEFF}{\cmdLIV@module@ECTS}{\cmdLIV@module@NoteEliminatoire}{\cmdLIV@module@ModalitesCCSemestreUn}{\cmdLIV@module@ModalitesCCSemestreDeux}{\cmdLIV@module@MethodeEval}{\cmdLIV@module@CalculNFSessionUne}{\cmdLIV@module@CalculNFSessionDeux}
+     \\
+  % % % % % % % % % % % % % % % % % % % % % %     REFERENCES     % % % % % % % % % % % % % % % % % % % % % % 
+      \ifLIV@module@ressources
+          \ifLIV@module@bibliographie
+                \IfStrEq{#6}{}{
+                    \IfStrEq{#7}{}{
+                    }{
+                      \textcolor{couleurFonce}{Références\newline\rule[10pt]{10cm}{0.5pt}}\\[-7pt]
+                       #7 \\
+                    }
+                 }{
+                    \textcolor{couleurFonce}{Références\newline\rule[10pt]{10cm}{0.5pt}}\\[-7pt]
+                    #6 \\
+                    \IfStrEq{#7}{}{
+                      }{
+                      #7 \\
+                      }
+                 }
+          \else
+              \IfStrEq{#6}{}{
+              }{
+                \textcolor{couleurFonce}{Références\newline\rule[10pt]{10cm}{0.5pt}}\\[-7pt]
+                #6 \\
+              }
+          \fi
+       \else
+          \ifLIV@module@bibliographie
+                \IfStrEq{#7}{}{
+                 }{
+                    \vfill\textcolor{couleurFonce}{Références\newline\rule[10pt]{10cm}{0.5pt}}\\[-7pt]
+                    #7 \\
+                 }
+          \else\fi
+       \fi
+    \end{tabular} \\
+  \\[-1pt]
+  \end{tabular} 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+  }% fin de footnotesize
+  \vfill
+  ~
+}
+
+\def\patronModule{
+%   \tikzstyle{block} = [rectangle, draw=red, text centered, text width=0.8\textwidth, fill=white, minimum height=48.5mm, rounded corners]
+  \tikzstyle{block} = [rectangle, text centered, text width=0.8\textwidth, minimum height=48.5mm]
+  \begin{tikzpicture}
+    \node [block] {};
+  \end{tikzpicture}
+  \vfill
+  ~
+}
+
+\endinput

@@ -1,0 +1,1023 @@
+<?xml version="1.0" encoding="utf-8"?>
+<livret>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Prépro : Sensibilisation à l'enseignement des arts à l'école primaire</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité optionnelle choix 2.
+</descriptionCourte>
+
+<descriptionLongue>
+* Découvrir l'enseignements des arts visuels et de l'éducation musicale en milieu scolaire (apports pratiques et théoriques, modalité d'interventions, actions en partenariat, etc.;
+* Identifier ses repères artistiques et culturels personnels, les développer et les compléter, en vue de transpositions pédagogiques possibles à destination d'un public scolaire (médiation ou intervention culturelle, enseignement généraliste ou spécialisé).
+* Favoriser les rencontres réelles avec des \oe uvres ou des artistes.
+* Entrevoir des liens avec d'autres disciplines.
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+* Aperçu des politiques et des pratiques d'éducation artistique scolaire,
+* analyse de séquences et d'outils pédagogiques,
+* étude théorique et pratique de modalités de rencontre avec des \oe uvres et des démarches artistiques.
+
+</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6MT51" cours="24" td="24" tp="" ctd="" total="48" semestre="Semestre 6" coeff="" ects="">
+<titre>Mathématiques - Géométrie</titre>
+
+<MethodeEval>ContrÃŽle continu et terminal</MethodeEval>
+
+<modalitesccsemestreun>Rapport et soutenance de projet</modalitesccsemestreun>
+
+<modalitesccsemestredeux>Pas de 2nde session</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra Javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Espaces affines et applications affines, barycentre, projections, groupe affine, homothéties;
+* espace affine euclidien et isométries, produit scalaire, orthogonalité, groupe orthogonal et groupe spécial orthogonal, projecteurs orthogonaux.
+
+</descriptionLongue>
+
+<textePrerequis>Espaces vectoriels, applications linéaires, matrices.
+</textePrerequis>
+
+<objectifs>Caractériser les isométries du plan et de l'espace.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5PY51" cours="20" td="" tp="16" ctd="" total="36" semestre="Semestre 5" coeff="4" ects="4">
+<titre>Physique</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra Javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Historique sur l'évolution de certains concepts en physique au travers du temps.
+* Notions de base en électricité et mécanique.
+* \'Etude de quelques phénomènes physiques, de leur utilisation et applications pour différents instruments et dans différents domaines.
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>Acquisition de connaissances en physique afin de comprendre quelques phénomènes rencontrés dans la vie courante.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5BO11" cours="" td="4" tp="32" ctd="" total="36" semestre="Semestre 5" coeff="4" ects="4">
+<titre>Entomofaune et flore de la région Centre</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra Javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Inventaire et diversité taxonomique des principaux groupes d'animaux.
+* Floristique et systématique du monde végétal. Clefs pour le détermination des taxons rencontrés.
+* Mesure des indices de diversité. Observation sur le terrain (un groupe TP terrain encadré par 2 enseignants) et analyses en laboratoire (TP).
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+
+* Permettre à l'étudiant de découvrir des milieux naturels de notre région, participer à l'inventaire de la faune et de la flore par la réalisation d'un herbier personnel et d'une boîte de référence d'insectes. 
+* Savoir reconnaître les espèces courantes de la flore et de la faune de la région. 
+* Savoir utiliser une faune et une flore.
+
+</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Prépro : Sensibilisation à l'enseignement des histoire-géographie à l'école primaire</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire.
+</descriptionCourte>
+
+<descriptionLongue></descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5BO05" cours="14" td="" tp="10" ctd="" total="24" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Bases anatomiques des grandes fonctions animales</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra Javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Cours : Organisation des tissus : tissus épithéliaux - conjonctifs - musculaires. Description anatomique et histologique des appareils : circulatoires - respiratoire - digestif excréteur et reproducteur.
+* TP : Illustration du cours à partir de préparations et de coupes histologiques - \'Etude de l'organisation de tous les appareils présentés en cours chez une souris. Les TP pourront être enseignés en anglais.
+
+</descriptionLongue>
+
+<textePrerequis>Avoir de bonnes bases en biologie cellulaire.
+</textePrerequis>
+
+<objectifs>Acquisition de l'anatomie et de l'histologie des grandes fonctions avant d'appréhender la
+physiologie.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5AG35" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Anglais 5</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Hervé Perreau</nompremierresp>
+
+<emailpremierresp>herve.perreau@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>1</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte> 
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d'expression à partir de documents authentiques longs et/ou complexes portant sur des innovations technologiques, des découvertes et avancées scientifiques.
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi anglais 3 &amp; 4 ou environ 500 heures de formation équivalente.
+</textePrerequis>
+
+<objectifs>Comprendre l'information exprimée dans des messages complexes sur le domaine des sciences  er technologies et s'exprimer sur ce même domaine à l'écrit dans un registre de langue approprié.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Enseigner : posture et identité</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra Javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+
+* \'Etudes de documents textuels, audio, vidéo ou multimédia en rapport avec les compétences des enseignants dans les domaines de la relation éducative, de la pédagogie et de la didactique des disciplines.
+* Enseignement sur les valeurs de l'éducation, l'éthique et la déontologie.
+* Appropriation du référentiel de compétences du professeur.
+* Méthodologie d'analyse de situations professionnelles.
+* Conception et exploitation d'enquètes documentaires réalisées auprès des acteurs du terrain (professeurs, élèves, parents, équipes éducatives, chefs d'établissement...)
+* \'Etude de cas, analyses de pratiques ou études de situations professionnelles sur la base d'observations directes (enquètes) ou indirectes (documents textuels, audio, vidéo ou multimédia).
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+
+* Prendre la mesure des écarts possibles entre le métier désiré, le métier réel et le métier prescrit. 
+* Connaître le référentiel de compétences de la formation des maîtres. 
+* \^Etre capable de décrire, analyser et comparer des pratiques professionnelles en identifiant les compétences prescrites.
+
+</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6FC51" cours="16" td="24" tp="" ctd="" total="40" semestre="6" coeff="5" ects="5">
+<titre>Théâtre, poésie et textes de réflexion</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra Javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>\begin{description}
+\item[Littérature]
+
+* appropriation des notions mises en jeu dans l'approche littéraire du théâtre et de la poésie,
+* analyse de textes littéraires,
+* approche des mouvements esthétiques.
+
+\item[Langue]
+
+* éléments de grammaire de phrase (approfondissement),
+* niveaux de langue, figures de style et organisation du lexique français (dont formation des mots).
+
+\item[Argumentation]
+
+* lecture, analyse et production d'écrits de réflexion.
+
+\end{description}
+</descriptionLongue>
+
+<textePrerequis>Programme du second degré.
+</textePrerequis>
+
+<objectifs>
+
+* Donner des repères en histoire littéraire; 
+* étudier des textes littéraires classiques et contemporains dans le domaine du théâtre et de la poésie ; 
+* s'initier à la synthèse de textes de réflexion;
+* systématiser l'apprentissage de la grammaire de phrase;
+* connaître les règles d'organisation du lexique français.
+
+</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6BO06" cours="34" td="" tp="14" ctd="" total="48" semestre="Semestre 6" coeff="" ects="">
+<titre>Physiologie humaines et comparées</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra Javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Compartiments liquidiens de l'organisme. Hématologie, bases d'immunologie. Physiologie des systèmes cardio-vasculaire et respiratoire : aspects anatomo-fonctionnels et régulations; Fonctionnement du système digestif, cheminement de l'aliment de la bouche à l'absorbtion intestinale. Physiologie du néphron. Physiologie osseuse et de l'ossification. 
+* Introduction aux neurosciences : organisation du cerveau, activités du système nerveux central et périphérique, bases de physiologie sensorielle.
+* Introduction à l'endocrinologie : organisation d'une glande, physiologie hormonale. 
+* Physiologie de la reproduction : de la production des gamètes à la naissance; liens entre système hypothamo-hypophysaire et gonades.
+
+Les travaux pratiques illustreront le cours sous formes d'ateliers expérimentaux. Certaines des activités proposées pourront être enseignées en anglais.
+L'organisation générale anatomique de l'animal, nécessaire pour la compréhension des aspects physiologiques, sera illustrée à l'aide du modèle murin.</descriptionLongue>
+
+<textePrerequis>Bases anatomiques des grandes fonctions animales (semestre 5).
+</textePrerequis>
+
+<objectifs>Ce module présente les notions de base physiologie anaimale et humaine nécessaires pour une compréhension des mécanismes physiologiques chez l'humain. Il constitue les bases nécessaires pour un étudiant de biologie des organismes, les fondements (à renforcer lors de la préparation au {\sc capes svt}), pour un étudiant du parcours {\sc bgst} et l'essentiel pour un enseignement dans les classes de l'école élémentaire (étudiants du parcours pluri).</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5MT51" cours="18" td="30" tp="" ctd="" total="48" semestre="Semestre 5" coeff="5" ects="5">
+<titre>Mathématiques 1 : Les nombres</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra Javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy.james@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+ 
+* Arithmétique : {\sc pgcd}, {\sc ppcm}, nombres premiers, congruences, écriture en base $a$.
+* Nombres réels : décimaux, rationnels, développement décimal.
+
+</descriptionLongue>
+
+<textePrerequis>Entiers naturels, récurrence, suites, intégrales.
+</textePrerequis>
+
+<objectifs>Théorie des nombres entiers, divisibilité et passage des nombres rationnels aux réels.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5FC51" cours="20" td="28" tp="" ctd="12" total="12" semestre="Semestre 5" coeff="5" ects="5">
+<titre>Français</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra Javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+\begin{description}
+\item[Littérature]
+ 
+* appropriation des notions mises en jeu dans l'approche littéraire des genres narratifs majeurs (le roman, la nouvelle, le conte, la fable),
+* analyse de textes littéraires narratifs (registres réaliste, fantastique, merveilleux),
+* production d'écrits narratifs et descriptifs.
+
+\item[Grammaire]
+ 
+* éléments de grammaire textuelle,
+* éléments de grammaire de phrase.
+
+\end{description}
+</descriptionLongue>
+
+<textePrerequis>Connaissances acquises dans le second degré.
+</textePrerequis>
+
+<objectifs>
+
+* Connaître les formes narratives en termes de type d'écrits, de type de séquences textuelles et de genres; 
+* connaître des éléments de narratologie et de critique littéraire;
+* connaître les éléments de base des grammaires de texte et de phrase.
+
+</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6CH51" cours="28" td="8" tp="12" ctd="" total="48" semestre="Semestre 6" coeff="5" ects="5">
+<titre>Chimie, énergie et environnement</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+* Notions de base en chimie, axées sur la matière, ses différents états (solide, liquide, gaz) et ses transformations.
+* Les différentes sources d'énergie (fossiles, nucléaire, renouvelables) et leur impact sur l'environnement.
+* Les propriétés physico-chimiques de l'air et de l'eau (aspects généraux, caractéristiques et pollutions).
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>Outre l'acquisition de connaissances pratiques et théoriques en chimie, les objectifs de cette unité sont de montrer l'influence de la chimie dans la vie quotidienne et de susciter l'envie de comprendre et d'expliquer le fonctionnement de ce qui nous entoure.</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6AG36" cours="" td="24" tp="" ctd="24" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Anglais 6</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra Javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis></nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+Travail de compréhension et d'expression à partir de documents authentiques longs et/ou complexes portant sur des innovations technologiques, des découvertes et des avancées scientifiques.
+</descriptionLongue>
+
+<textePrerequis>Avoir suivi Anglais 5 ou environ 500 heures de formation équivalente.
+</textePrerequis>
+
+<objectifs>Comprendre l'information exprimée dans des messages complexes sur le domaine des sciences et technologies, et s'exprimer sur ce même domaine à l'oral avec un degré suffisant de spontanéité et de fluidité (niveau européen B2).</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 6" coeff="3" ects="3">
+<titre>Prépro : Sensibilisation à l'enseignement de l'éducation physique et sportive à l'école primaire</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité optionnelle choix 1.
+</descriptionCourte>
+
+<descriptionLongue>
+
+* Relevé des représentations initiales des étudiants sur l'EPS puis construction
+d'une grille d'observation (ou adaptation de celle construite dans un autre module de sensibilisation aux métiers de l'enseignement.
+* Observation de séances d'EPS en classe à partir de la grille construite puis analyse ensemble.
+* Pratique de différentes activités et sportives en liaison avec leur enseignement à l'école (maternelle et élémentaire) pour la réussite de tous(seront ici abordées les notions de motivation, de différentiation, de réussite scolaire, de métacognition, de plaisir d'agir)...
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+* Découvrir l'enseignement de l'EPS et de ses particularités (et ainsi renforcer une capacité d'observation et d'analyse de l'acte d'enseignement);
+* Donner "confiance en soi" à des étudiants dans leur pratique physique;
+* Aider au choix de l'option proposée au CRPE (concours professeur des écoles).
+
+</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="6GE01" cours="14" td="10" tp="12" ctd="" total="36" semestre="Semestre 6" coeff="4" ects="4">
+<titre>Paysages et objets géologiques</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Pierre Debs</nomsecondresp>
+
+<emailsecondresp>pierre.debs@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+CM :: Eléments de pétrographie, de géodynamique, de géomorphologie et de paléontologie. Volcans et séismes, risques naturels.
+TD :: Pétrographie macroscopique, paléontologie des grands groupes fossiles.
+TP :: Initiation à la lecture des cartes topographiques et géologiques. Sortie géologique (1 journée).
+
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs></objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+<module codeApogee="5II01" cours="" td="24" tp="" ctd="" total="24" semestre="Semestre 5" coeff="3" ects="3">
+<titre>Informatique : C2I</titre>
+
+<methodeeval>Contrôle continu et terminal</methodeeval>
+
+<modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+
+<modalitesccsemestredeux>CT</modalitesccsemestredeux>
+
+<CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+
+<CalculNFSessionDeux>CT</CalculNFSessionDeux>
+
+<noteeliminatoire></noteeliminatoire>
+
+<nompremierresp>Sandra Javoy</nompremierresp>
+
+<emailpremierresp>sandra.javoy@univ-orleans.fr</emailpremierresp>
+
+<nomsecondresp>Nawfal Elhage Hassan</nomsecondresp>
+
+<emailsecondresp>nawfal.elhage\_hassan@univ-orleans.fr</emailsecondresp>
+
+<nbprerequis>0</nbprerequis>
+
+<langues>
+  <langue>Français</langue>
+</langues>
+
+<descriptionCourte>
+Unité obligatoire. 
+</descriptionCourte>
+
+<descriptionLongue>
+\begin{description}
+\item[Architecture PC :]
+
+* les différentes composantes (principales caractéristiques, fonctions...) : carte-mère, processeur, mémoire, carte graphique, disque dur, lecteur graveur DVD/Blu-ray...
+* principe de fonctionnement d'un PC
+* montage matériel d'un PC
+* Bios et SETUP (différentes rubriques, réglages, optimisation...)
+* les ressources systèmes (RAM, E/S, DMA, IRQ), gestion des ressources, gestion des conflits, conséquences d'un conflit, résolution.
+
+\item[Système d'exploitation :]
+
+* système d'exploitation (notions fondamentales, exemples : famille Windows, famille Linux)
+* Partition (primaire, étendue, active, lecteurs logiques...)
+* Système de gestion de fichiers : FAT32, NFTS, EXT3, EXT4, ...
+* Installation d'un système double boot (Windows/Ubuntu)
+* Optimisation système.
+
+\item[Réseau :]
+
+* Notions de base (matériels, protocoles,...)
+* Réseau Egal/Egal, Client/Serveur, Internet, Extranet, Intranet
+* Installation d'un réseau
+* partage de ressources
+
+\end{description}
+</descriptionLongue>
+
+<textePrerequis>
+</textePrerequis>
+
+<objectifs>
+
+* Comprendre les systèmes informatiques (matériels, systèmes d'exploitation, réseaux);
+* se familiariser avec les systèmes informatiques.
+
+</objectifs>
+
+<ressources>Ressources
+</ressources>
+
+<biblio>Biblio
+</biblio>
+
+</module>
+
+</livret>

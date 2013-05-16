@@ -1,0 +1,34 @@
+\documentclass[10pt, a5paper]{report}
+
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}% encodage utf8
+\usepackage[francais]{babel}% texte français
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage[final]{pdfpages}
+
+% Définir les couleur du document
+\input{Extra/couleurLicence}
+
+% % % Personnalisation diverses % % %
+\sloppy
+\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{pageDeGarde-livret}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\begin{document}
+
+\pageDeGarde[nomFormation={Licence Biologie-Biochimie - Troisième année},objetDocument={Parcours Biologie des Organismes, des Populations et des Ecosystèmes (BOPE)},typeDocument={Livret de l'étudiant}, anneeUniversitaire={2012-2013}]
+
+\includepdf[fitpaper,pages=-]{Preambule_Licence3_BOPE_S5.pdf}
+
+\includepdf[fitpaper,pages=-]{Detail_modules_Licence_biobio_L3-BOPE-S5.pdf}
+
+\includepdf[fitpaper,pages=-]{Preambule_Licence3_BOPE_S6.pdf}
+
+\includepdf[fitpaper,pages=-]{Detail_modules_Licence_biobio_L3-BOPE-S6.pdf}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+
+\end{document}

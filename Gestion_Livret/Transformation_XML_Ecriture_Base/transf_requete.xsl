@@ -179,7 +179,6 @@
 			<xsl:text>SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '</xsl:text>
 			<xsl:value-of select="$lastName"/>
 			<xsl:text>' AND _PRENOM_ENS_='</xsl:text>
-			<!-- prenom element -->
 			<xsl:value-of select="$firstName"/>
 			<xsl:text>' AND _EMAIL_ENS_='</xsl:text>
 			<xsl:value-of select="./emailSecondResp"/>

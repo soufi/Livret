@@ -1,0 +1,31 @@
+#!/bin/bash
+
+cat << EOF > xxx.tex
+\documentclass[10pt, a5paper]{report}
+
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}% encodage utf8
+\usepackage[francais]{babel}% texte franais
+\usepackage[final]{pdfpages}
+\usepackage{modules-livret}% style du livret
+\usepackage{url}
+%\usepackage{init-preambule}
+\pagestyle{empty}
+
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\begin{document}
+EOF
+
+cat $1 >> xxx.tex
+
+cat << EOF >> xxx.tex
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\end{document}
+EOF
+
+pdflatex xxx.tex
+
+mv xxx.pdf $(basename $1 .tex).pdf
+rm xxx.*
+exit 0
+

@@ -6,8 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.HashSet;
 
 public class LectureFichier {
 	/**
@@ -59,44 +58,39 @@ public class LectureFichier {
 		}
 	}
 
-	//Lit la totalite du fichier et cree un tableau de string contenant chacune un module
-	//(entre une balise \module et une balise \vfill)
-	//utilisation d'un tableau de StringBuffer pour le stockage de données car la concaténation est plus rapide
-	public String[] lireModule(){
-		boolean enEcriture = false;
-		StringBuffer[] texte=new StringBuffer[50];
-		for(int i=0;i<texte.length;++i)
-			texte[i]= new StringBuffer();
-		String ligne = "";
-		Pattern pm = Pattern.compile("\\\\module");
-		Pattern pv = Pattern.compile("\\\\vfill");
-		Matcher m;
-		int cpt=0;
-		while((ligne=lire()) != null){
-			if(!enEcriture) {
-				m = pm.matcher(ligne);
-				if(m.find()) {
-					enEcriture = true;
-					texte[cpt].append(ligne+"\n"); 
-				}
-			}
-			else{
-				texte[cpt].append(ligne+"\n");
-				m=pv.matcher(ligne);
-				if(m.find()) {
-					enEcriture = false;
-					cpt++;
-				}
-			}
-		}
-		String[] res=new String[cpt];
-		for(int i=0;i < cpt;++i){
-			res[i]=texte[i].toString();
-		}
-		
-		//fermer();
-		
-		return res;
-	}
 	
+	/**Lit la totalite du fichier et cree un tableau de string contenant chacune un module (entre une balise \module et une balise \vfill)
+	 * utilise une HashSet de String dans laquelle on strock les elements
+	 * @return un tableau de String contenant dans chaque case un module
+	 */
+	public String[] lireModule(){
+		boolean enEcriture = false; //indique lorsqu'on ecrit un module
+		HashSet <String> lesModules = new HashSet <String>();
+		StringBuffer module = new StringBuffer();
+		String ligne = "";
+		boolean finDocument = false;
+		while((ligne=lire()) != null && !finDocument){
+			//si on a terminer d'ecrire un module donc on a trouver avant \vfill
+			if(!enEcriture) {
+				if(ligne.contains("\\module")) {
+					enEcriture = true;
+					module.append(ligne+"\n"); 
+				}
+			//si c la fin du document on arrete l'operation
+			}else if(ligne.contains("\\begin{document}")){
+				finDocument = false;
+			//si on est a l'interieur d'un module 
+			}else{
+				module.append(ligne+"\n");
+				//la fin du module
+				if(ligne.contains("\\vfill")) {
+					enEcriture = false;
+					//on ajoute le modules
+					lesModules.add(module.toString());
+					module.delete(0, module.length());
+				}
+			}
+		}
+		return lesModules.toArray(new String[lesModules.size()]);
+	}
 }

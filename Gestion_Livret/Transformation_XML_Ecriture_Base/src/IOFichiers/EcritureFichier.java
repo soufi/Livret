@@ -4,6 +4,8 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.util.Iterator;
+import java.util.TreeSet;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -92,30 +94,30 @@ public class EcritureFichier {
 	 * Ecriture de la balise <module> et de ses attributs
 	 * @param aExtraire
 	 * @return
+	 * @throws Exception 
 	 */
-	public boolean ecrireModule(String aExtraire){
+	public boolean ecrireModule(String aExtraire) throws Exception{
 		if(aExtraire == null || aExtraire.length() == 0) // on fait rien si le String est 
 			return false;
 		ecrire("<module ");
-		Pattern p = Pattern.compile("codeApogee=\\{(.*)\\}");
+		Pattern p = Pattern.compile("codeApogee=\\{(.*)?\\}");
 		Matcher m = p.matcher(aExtraire);
-		m.find();
-		ecrire("codeApogee=\""+m.group(1)+"\"");
-		
-		Pattern a = Pattern.compile("\n(.*)=\\{(.*)\\},");
-		Matcher ma = a.matcher(aExtraire);
-		String line;
-		String contenu;
-		while(ma.find()) {
-			line = ma.group(1);
-			contenu = ma.group(2);
-			if(verifierMajuscules(line))
+		if(m.find()){
+			ecrire("codeApogee=\""+m.group(1)+"\"");
+			
+			Pattern attributs = Pattern.compile("\n([A-Z]+)=\\{(.*)\\}");
+			Matcher ma = attributs.matcher(aExtraire);
+			String line = "";
+			String contenu = "";
+			while(ma.find()) {
+				line = ma.group(1);
+				contenu = ma.group(2);
 				ecrire(" "+line.toLowerCase()+"="+"\""+contenu+"\"");
-		}
-		//String module = f.getName().split(".txt")[0];
-		//ecrire(" promo=\""+module+"\">\n");
-		ecrire(">\n");
-		return true;
+			}
+			ecrire(">\n");
+			return true;
+		}else
+			throw new Exception ("=> Erreur : impossible de trouver les attributs de module");
 	}
 
 	/**
@@ -123,227 +125,207 @@ public class EcritureFichier {
 	 * @param aExtraire : le contenu de travail
 	 */
 	public void ecrireBalises(String aExtraire){
-		Pattern p = Pattern.compile("(.*)=\\{(.*)\\}");
+		Pattern p = Pattern.compile("\n(.*)=\\{(.*)\\}");
 		Matcher m = p.matcher(aExtraire);
-		while(m.find() && !m.group(1).equals("langue")){
-			if(m.group(1).charAt(0) == '%'){
-				ecrire("<"+m.group(1).substring(1)+">"+m.group(2)+"</"+m.group(1).substring(1)+">\n\n");
+		String balise = "";
+		String contenu = "";
+		//on extrait les lignes entre crochet et qui ne correspondent pas a des valeurs booleene ou langue, nbPrerequis
+		while (m.find()){
+			balise = m.group(1);
+			contenu = m.group(2);
+			if(!balise.equals("langue") && !(contenu.equals("true") || contenu.equals("false"))){
+				if(balise.charAt(0) == '%'){
+					ecrire("<"+balise.substring(1)+">"+contenu+"</"+balise.substring(1)+">\n\n");
+				}
+				if(!verifierMajuscules(balise) && Character.isLetterOrDigit(balise.charAt(0))){
+					balise = balise.toLowerCase();//Pour afficher la balise ouvrante correctement
+					ecrire("<"+balise+">"+ contenu + "</"+balise+">\n\n");
+				}
 			}
-			if(!verifierMajuscules(m.group(1)) && Character.isLetterOrDigit(m.group(1).charAt(0)))
-				ecrire("<"+
-						Character.toLowerCase(m.group(1).charAt(0))+m.group(1).substring(1)+ //Pour afficher la balise ouvrante correctement
-						">"+m.group(2)+
-						"</"+
-						Character.toLowerCase(m.group(1).charAt(0))+m.group(1).substring(1)+ //Pour afficher la balise fermante correctement
-						">\n\n");
 		}
+		
 	}
 
 	/**
-	 * Ecrit les balises composees (comme langues et lesPrerequis)
+	 * Ecrit les balises composees (comme langues )
 	 * @param aExtraire
+	 * @throws Exception 
 	 */
-	public void ecrireBalisesComposees(String aExtraire){
-		//Recupere toutes les lignes entre emailSecondResp et descriptionCourte (incluses) 
-		Pattern pp = Pattern.compile("langue=\\{.*\\}, ?\n(.*\n)+descriptionCourte=\\{.*\\},");
+	public void ecrireBalisesComposees(String aExtraire) throws Exception{
+		//Recupere toutes les lignes entre emailSecondResp (exclut) et descriptionCourte (incluses) 
+		Pattern pp = Pattern.compile("(langue=\\{)(.*)(\\},)");
 		Matcher mm = pp.matcher(aExtraire);
-		mm.find();
-		String [] s = mm.group().split("\n"); //On découpe en plusieurs chaines, suivant les lignes
-		//On traite toutes les lignes à l'exception de la premiere et de la derniere
-		for(int i=0;i<s.length-1;++i){
-			Pattern p = Pattern.compile("(.*)=\\{(.*)\\},"); //On decoupe chaque ligne afin de pouvoir recuperer
-			Matcher m = p.matcher(s[i]);     //le nom de variable et la/les valeurs qu'elle contient
-			m.find();
-			String[] res;
-			res=m.group(2).split(",");  //On separe les valeurs en plusieurs chaines
-
-			//Condition particuliere pour la balise prerequis 
-			if(m.group(1).equals("nbPrerequis")){
-				ecrire("<lesPrerequis>\n");
-				for(int j=0;j<res.length;++j)
-					ecrire("  <prerequis>"+res[j]+"</prerequis>\n");
-				ecrire("</lesPrerequis>\n\n");
-
+		if(mm.find()){
+			String [] lines = mm.group().split("(\\s*),(\\s*)"); //On découpe en plusieurs chaines, suivant les lignes
+			Pattern p = Pattern.compile("(.*)(={1})(\\{)(.*)(\\})"); //On decoupe chaque ligne afin de pouvoir recuperer
+			Matcher m;
+			String gauche = ""; //la partie gauche de la ligne, c-a-d le nom de variable si on peut l'appeler ainsi
+			String droite = ""; //idem
+			//On traite toutes les lignes à l'exception de la premiere et de la derniere
+			for(int i=0;i<lines.length;i++){
+				m = p.matcher(lines[i]);     //le nom de variable et la/les valeurs qu'elle contient
+				if(m.find()){
+					gauche = m.group(1);
+					droite = m.group(4);
+					String [] result = droite.split(",");
+					if(gauche.equals("langue")) {
+						ecrire("<"+gauche+"s>\n");	//On ecrit la balise generale ouvrante
+						//(nom de l'attribut + s; exemple : "langue" devient "langues")
+						for(int j=0;j<result.length;j++)//On ecrit les balises internes avec leurs valeurs
+							ecrire("  <"+gauche+">"+checkFormat(result[j])+"</"+gauche+">\n");
+						ecrire("</"+gauche+"s>\n\n"); //On ecrit la balise generale fermante
+					}
+				}else
+					throw new Exception ("=> Erreur : Impossible de trouver les lignes correspondantes au langues");
 			}
-			else {
-				ecrire("<"+m.group(1)+"s>\n");//On ecrit la balise generale ouvrante
-				//(nom de l'attribut + s; exemple : "langue" devient "langues")
-				for(int j=0;j<res.length;++j)//On ecrit les balises internes avec leurs valeurs
-					ecrire("  <"+m.group(1)+">"+res[j]+"</"+m.group(1)+">\n");
-				ecrire("</"+m.group(1)+"s>\n\n"); //On ecrit la balise generale fermante
-			}
-		}
+		}else
+			throw new Exception ("=> Erreur : impossible de trouver les langues ! ");
 	}
 
 	/**
-	 * Ecrit les dernieres balises
+	 * Ecrit les dernieres balises qui correspondent aux balises description Courte et Longue, prerequis, ressources et biblio
 	 * @param aExtraire
+	 * @throws Exception 
 	 */
-	public void ecrireBalisesTexte(String aExtraire){
-		Pattern pa = Pattern.compile("\\] ?\n\\{(.*\n)+\\\\vfill"); //Pour recupere la zone concernee
+	public void ecrireBalisesTexte(String aExtraire) throws Exception{
+		Pattern pa = Pattern.compile("(\\]){1}(\\s+)(((%.*)*|(\\s*\\{\\s*)|(.*\\w*.*)|(\\s*))*)(\\\\vfill){1}"); //Pour recupere la zone concernee
 		Matcher ma = pa.matcher(aExtraire);
-		ma.find();
-		String [] aux = ma.group().split("\n");//On split avec le retour chariot
-		String tab = "";
-		int cpt = 0;
-		int num = 0;
-		int nbitemize = 0;
-		for(int i = 1; i < aux.length; ++i) {
-			if(aux[i].equals("{") || aux[i].matches("\\{(.*)")){ //Ici on regarde si l'on est dans une
-				cpt++;											//"zone d'ecriture" c à d entre deux 
-				switch(cpt){									//accolades, on commence par verifier 
-				case 1 :										//qu'on a une accolade ouvrante
-					ecrire("<descriptionCourte>");break;
-				case 2 :
-					ecrire("<descriptionLongue>\n");break;
-				case 3 :
-					ecrire("<textePrerequis>\n");
-					aux[i] = aux[i].substring(1);
+		if(ma.find()){
+			String [] parties = ma.group().split("(\\}{1}\\s*(%.*)*\\s*\\{{1})"); //on récupere les bloques des differentes partie en prend "} %commentaire {" comme séparateur 
+			for(int i = 0; i < parties.length; i++) {
+				switch(i){
+				case 0 : //bloc de description courte
+					ecrire("<descriptionCourte>");
+					String [] spl  = parties[i].split("\\{");
+					if(spl.length > 1)
+						ecrire(checkFormat(spl[1]));
+					ecrire ("</descriptionCourte>\n\n");break;
+				case 1 : //bloc de description longue
+					ecrire("<descriptionLongue>");
+					ecrire(checkFormat(parties[i]));
+					ecrire("</descriptionLongue>\n\n");
 					break;
-				case 4 :
-					ecrire("<objectifs>\n");
-					if(!aux[i].equals("{"))
-						aux[i] = aux[i].substring(1);
+				case 2 : //bloc de prerequis
+					ecrire("<textePrerequis>");
+					ecrire(checkFormat(parties[i]));
+					ecrire("\n</textePrerequis>\n\n");
 					break;
-				case 5 :
-					ecrire("<ressources>");break;
-				case 6 :
-					ecrire("<biblio>");break;
+				case 3 : //bloc d'objectifs
+					ecrire("<objectifs>");
+					ecrire(checkFormat(parties[i]));
+					ecrire("</objectifs>\n\n");
+					break;
+				case 4 : //bloc de ressources
+					ecrire ("<ressources>");
+					ecrire(checkFormat(parties[i]));
+					ecrire("\n</ressources>\n\n");
+					break;
+				case 5 : //bloc de biblio
+					ecrire("<biblio>");
+					String[] spl1 = parties[i].split("\\}");
+					ecrire(checkFormat(spl1[0]));
+					ecrire("\n</biblio>\n\n");
+					break;
 				}
 			}
-			if(aux[i].equals("} ")){ //Puis on verifie l'accolade fermante
-				switch(cpt){
-				case 1 :
-					ecrire("</descriptionCourte>\n\n");break;
-				case 2 :
-					ecrire("</descriptionLongue>\n\n");break;
-				case 3 :
-					ecrire("</textePrerequis>\n\n");break;
-				case 4 :
-					ecrire("</objectifs>\n\n");break;
+		}else
+			throw new Exception ("=> Erreur : impossible de trouver les balise de description, texte Prerequis, objectifs, ressources, et biblio ! ");
+	}
+	
+	/**
+	 * Vérifie la strucutre du bloc, gère la mise en forme des enumerate, itemize et ObjItem des fichier TEX
+	 * @param bloc texte
+	 * @return texte mise en forme en supprimant les symbole des mise en forme de fichier tex
+	 * @throws Exception 
+	 */
+	private static String checkFormat (String bloc) throws Exception{
+		String[] spl = null;
+		StringBuffer result = new StringBuffer();
+		Pattern pattern;
+		Pattern format;
+		Matcher m;
+		String [] portions;
+		//enumeration
+		if(bloc.contains("\\begin{enumerate}") && bloc.contains("\\end{enumerate}")){
+			//on casse le bloc en trois parties : avant "begin", apres et apres "end"
+			pattern = Pattern.compile("\\\\begin\\{enumerate\\}|\\\\end\\{enumerate\\}");
+			portions = pattern.split(bloc);
+			if(portions.length > 0){
+				//partie a l'interieur entre "begin" et "end" on la met en forme 
+				for(int i = 0; i < portions.length ; i++){
+					if((i+1)%2 == 0){
+						spl = portions[i].split("\\\\item");
+						//écrit les lignes avec leurs numerotation
+						for(int j = 1; j < spl.length; j++)
+							result.append(i+"- "+spl[j]);
+					}else
+						result.append(portions[i]);
 				}
-			}
-			//Et enfin on écrit ce qu'elles doivent contenir en traitant les cas particuliers de format
-			if(!aux[i].equals("{") && !aux[i].equals("} ") 
-					&& !aux[i].matches("%.*") && !aux[i].matches(" +")){
-				switch(cpt) {
-				case 1 : 
-					if(aux[i].matches("(.*)\\} ?"))
-						ecrire(aux[i].substring(0,aux[i].length()-1)+"</descriptionCourte>\n\n");
-					else 
-						ecrire(aux[i]);
-					break;
-				case 2 : 
-					if(aux[i].equals("}"))
-						ecrire("</descriptionLongue>\n\n");
-					else {
-						if(aux[i].matches("(.*)\\\\begin\\{enumerate\\} ?")) {
-							num++;
-						}
-						else {
-							if(aux[i].matches("(.*)\\\\end\\{enumerate\\} ?")) {
-								num = 0;
-							}
-							else {
-								if(aux[i].matches("(.*)\\\\begin\\{itemize\\} ?")){
-									nbitemize++;
-									tab = tab.replace(String.valueOf(num),"");
-									tab=tab.concat("\t");
-								}
-								else {
-									if(aux[i].matches("(.*)\\\\end\\{itemize\\} ?")){
-										System.out.println(tab);
-										tab = tab.substring(0,tab.length()-1);
-										nbitemize--;
-									}
-									else {
-										if(nbitemize == 0 && num != 0){
-											tab = tab.concat(String.valueOf(num)+".");
-											ecrire(tab+aux[i].replace("\\item", "")+"\n");
-											tab=tab.replace(String.valueOf(num)+".","");
-											num++;
-
-										}
-										else {
-											if(aux[i].matches("(.*)\\\\item(.*)")) {
-												aux[i] = aux[i].replace("\\item", "-");
-												ecrire(tab+aux[i]+"\n");
-											}
-											else 
-												ecrire(tab+aux[i]+"\n");
-										}
-									}
-								}
-							}
-						}
-					}
-					break;
-				case 3 :
-					if(aux[i].matches("(.*)\\\\begin\\{itemize\\} ?")){
-						tab=tab.concat("\t");
-					}
-					else 
-						if(aux[i].matches("(.*)\\\\end\\{itemize\\} ?"))
-							tab = tab.substring(0,tab.length()-1);
-						else 
-							if(aux[i].matches("(.*)\\}"))
-								ecrire(tab+aux[i].substring(0,aux[i].length()-1)+"\n</textePrerequis>\n\n");
-							else 
-								if(aux[i].matches("(.*)\\} "))
-									ecrire(tab+aux[i].substring(0,aux[i].length()-2)+"\n</textePrerequis>\n\n");
-								else 
-									ecrire(tab+aux[i].replace("\\item", "-")+"\n");
-					break;
-				case 4 : 
-					if(aux[i].equals("}"))
-						ecrire("</objectifs>\n\n");
-					else {
-						if(aux[i].matches("(.*)\\\\begin\\{itemize\\}(.*)")){
-							tab=tab.concat("\t");
-							Pattern p = Pattern.compile(".*\\\\begin\\{itemize\\}(.*)");
-							Matcher m = p.matcher(aux[i]);
-							m.find();
-							if(m.group(1).matches("(.*)\\\\ObjItem(.*)")) {
-								aux[i] = m.group(1).replace("\\ObjItem", "-");
-								ecrire(tab+aux[i]+"\n");
-							}
-						}
-						else 
-							if(aux[i].matches("(.*)\\\\end\\{itemize\\}(.*)")){
-								tab = tab.substring(0,tab.length()-1);
-							}
-							else
-								if(aux[i].matches("(.*)\\\\ObjItem(.*)")) {
-									if(aux[i].matches(" \\\\ObjItem(.*)"))
-										aux[i] = aux[i].replace(" \\ObjItem", "-");
-									else
-										aux[i] = aux[i].replace("\\ObjItem", "-");
-									ecrire(tab+aux[i]+"\n");
-								}
-								else 
-									ecrire(tab+aux[i]+"\n");
-					}
-					break;
+			}else
+				throw new Exception ("Erreur EcritureFichier::checkFormat(String bloc) => enumerate erreur ***Bloc :\n"+bloc);
+		//itemize
+		}else if(bloc.contains("\\begin{itemize}") && bloc.contains("\\end{itemize}")){
+			//on casse le bloc en trois parties : avant "begin", apres et apres "end"
+			pattern = Pattern.compile("\\\\begin\\{itemize\\}|\\\\end\\{itemize\\}");
+			portions = pattern.split(bloc); //on recupere les differentes parties
+			if(portions.length > 0){
+				for(int i = 0; i < portions.length ; i++){
+					//partie a l'interieur entre "begin" et "end" on la met en forme 
+					if((i+1)%2 == 0){
+						format = Pattern.compile("\\\\item|\\\\ObjItem");
+						m = format.matcher(portions[i]);
+						result.append(m.replaceAll("*"));
+					//le reste on l'ecrit tel quel
+					}else
+						result.append(portions[i]);
 				}
-
-				if(aux[i].matches("\\{(.*)\\} ?")){
-					switch(cpt) {
-					case 5 :
-						ecrire(aux[i].substring(1,aux[i].length()-2)+"</ressources>\n\n");break;
-					case 6 : 
-						ecrire(aux[i].substring(1,aux[i].length()-2)+"</biblio>\n\n");break;
-					}
+			}else
+				throw new Exception ("Erreur EcritureFichier::checkFormat(String bloc) => itemize erreur ***Bloc :\n"+bloc);
+		//s'il s'agit d'une description
+		}else if(bloc.contains("\\begin{description}") && bloc.contains("\\end{description}")){
+			//meme chose 
+			pattern = Pattern.compile("\\\\begin\\{description\\}|\\\\end\\{description\\}");
+			portions = pattern.split(bloc);
+			if(portions.length > 0){
+				for(int i = 0; i < portions.length; i++){
+					//partie a l'interieur entre 'begin' et 'end' on la met en forme
+					if((i+1)%2 == 0){
+						format = Pattern.compile("\\\\item\\[(.*)\\]");
+						m = format.matcher(portions[i]);
+						//garder l'ordre des elements entre parenthese de la regexp pour les mettres a la place de \item[...]
+						TreeSet <String> listeOrdre = new TreeSet <String> ();
+						//on stocke les elements un a un
+						while(m.find())
+							listeOrdre.add(m.group(1));
+						//si on trouve 
+						if(!listeOrdre.isEmpty()){
+							Iterator <String> ordre = listeOrdre.iterator();
+							String str = m.replaceFirst(ordre.next()+":");
+							while(ordre.hasNext()){
+								m = format.matcher(str);
+								str = m.replaceFirst(ordre.next()+":");
+							}
+							result.append(str);
+						}else
+							throw new Exception("Erreur EcritureFichier::checkFormat(String bloc) => description erreur dans la partie : \n"+portions[i]+"\n***Bloc :\n"+bloc);
+					}else
+						result.append(portions[i]);
 				}
-
-			}
-		}
+			}else
+				throw new Exception("Erreur EcritureFichier::checkFormat(String bloc) => description erreur ***Bloc : \n"+bloc);
+		//autre on fait rien
+		}else
+			return bloc;
+		return result.toString();
 	}
 
+	
 	/**
 	 * Applique toute les extraction pour construire le fichier XML en entier et ecrit le tous sur flux de sortie
 	 * @param aExtraire : le contenu sur le quel on travail
+	 * @throws Exception 
 	 */
-	public void ecrireFichierXML(String aExtraire){
+	public void ecrireModuleXML(String aExtraire) throws Exception{
 		ecrireModule(aExtraire);
 		ecrireBalises(aExtraire);
 		ecrireBalisesComposees(aExtraire);
@@ -352,26 +334,15 @@ public class EcritureFichier {
 		envoyer();
 	}
 	
+	
 	//recupération des resultats de différentes parties pour tester les résultats 
-	/*public static void main (String [] args){
+	/*public static void main (String [] args) throws Exception{
 		LectureFichier lf = new LectureFichier("./testFolder/1module.tex");
-		EcritureFichier ecr = new EcritureFichier("./testFolder/1M_ecrModule.txt");
-		EcritureFichier ecr1 = new EcritureFichier("./testFolder/1M_ecrBalise.txt");
-		EcritureFichier ecr2 = new EcritureFichier("./testFolder/1M_ecrBaliseComposee.txt");
-		EcritureFichier ecr3 = new EcritureFichier("./testFolder/1M_ecrBaliseText.txt");
 		EcritureFichier ecr4 = new EcritureFichier("./testFolder/1M_ecrFichierXML.txt");
 		String[] rez = lf.lireModule();
 		
-		ecr.ecrireModule(rez[0]);
-		ecr1.ecrireBalises(rez[0]);
-		ecr2.ecrireBalisesComposees(rez[0]);
-		ecr3.ecrireBalisesTexte(rez[0]);
-		ecr4.ecrireFichierXML(rez[0]);
-		
-		ecr.fermer();
-		ecr1.fermer();
-		ecr2.fermer();
-		ecr3.fermer();
+		ecr4.ecrireModuleXML(rez[0]);
+
 		ecr4.fermer();
 	}*/
 }

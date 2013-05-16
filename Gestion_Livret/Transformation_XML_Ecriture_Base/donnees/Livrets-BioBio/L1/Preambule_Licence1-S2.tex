@@ -1,0 +1,33 @@
+\documentclass[10pt, a5paper]{report}
+
+\usepackage[T1]{fontenc}%
+\usepackage[utf8]{inputenc}% encodage utf8
+\usepackage[francais]{babel}% texte français
+\usepackage[top=10mm, bottom=20mm, foot=5mm, left=7mm, offset=7mm, textwidth=350pt]{geometry}
+\usepackage{url}
+\usepackage{init-preambule}
+\usepackage[final]{pdfpages}
+
+% Définir les couleur du document
+\input{Extra/couleurLicence}
+
+\begin{document}
+\begin{spacing}{1.5}
+\footnotesize
+
+\section*{Semestre 2}
+\subsection*{Maquette des enseignements}
+
+\subsubsection*{Parcours Général}
+
+\input{Tableau_S2_gen}
+
+\subsubsection*{Parcours Enseignement}
+
+\input{Tableau_S2_ens}
+
+\subsection*{Détail des enseignements}
+
+\end{spacing}
+
+\end{document}
