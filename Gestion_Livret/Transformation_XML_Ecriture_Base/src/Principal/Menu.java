@@ -1,6 +1,7 @@
 package Principal;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -10,6 +11,12 @@ import java.util.regex.Pattern;
 
 import javax.xml.transform.*;
 import javax.xml.transform.stream.*;
+
+import org.jdom2.Document;
+import org.jdom2.JDOMException;
+import org.jdom2.input.SAXBuilder;
+import org.jdom2.output.Format;
+import org.jdom2.output.XMLOutputter;
 
 import Acces_BD.Requete;
 import IOFichiers.EcritureFichier;
@@ -179,10 +186,14 @@ public class Menu {
 							EF.ecrireModuleXML(module[j]);
 							System.out.print("module "+(j+1)+" done .... ");
 						}
-						System.out.println(""); //saut de ligne console 
 						EF.ecrire("</livret>");
 						//Fin ecriture du fichier XML
 						EF.fermer();
+						System.out.println(""); //saut de ligne console
+						
+						//XML Pretty Format
+						prettyFormat ("XML/"+listefichiers[i].substring(0,listefichiers[i].length()-4)+".xml");
+						
 						//chargement du contenu XML 
 						ssXML = new StreamSource("XML/"+listefichiers[i].substring(0,listefichiers[i].length()-4)+".xml");
 						//Preparation du Stream de sortie pour la transfromation
@@ -223,5 +234,20 @@ public class Menu {
 				transform(ssRep.getAbsolutePath(), ssRep.list());
 			}
 		}
+	}
+	
+	private static void prettyFormat (String path) throws JDOMException, IOException{
+		File fichier = new File (path);
+		if(fichier.exists() && fichier.isFile()){
+			SAXBuilder reader = new SAXBuilder ();
+			Document doc = reader.build(fichier);
+			try{
+				XMLOutputter sortie = new XMLOutputter(Format.getPrettyFormat());
+				sortie.output(doc, new FileOutputStream (fichier));
+			}catch(Exception e){
+				e.printStackTrace();
+			}
+		}else
+			System.err.println("Menu::prettyFormat Erreur => fichier n'existe pas ou fichier invalide : "+path);
 	}
 }

@@ -8,17 +8,7 @@ SET @id_promo := (SELECT DISTINCT _ID_PROMO_ FROM livret_promotion WHERE _LIBELL
 INSERT IGNORE INTO livret_promotion (_ID_PROMO_, _LIBELLE_PROMO_) VALUES (@id_promo, 'M2-S4');
 SET @id_promo := (SELECT DISTINCT _ID_PROMO_ FROM livret_promotion WHERE _LIBELLE_PROMO_ = 'M2-S4');
 INSERT IGNORE INTO livret_parcours (_ID_FILIERE_, _ID_PROMO_) VALUES (@id_filiere , @id_promo);
-SET @id_matiere := (SELECT _ID_MAT_ FROM livret_matiere WHERE _ID_PROMO_ = @id_promo AND _LIBELLE_MAT_ = 'Stage');
-INSERT IGNORE INTO livret_matiere (_ID_MAT_, _ID_PROMO_, _LIBELLE_MAT_, _CODE_APOG_MAT_, _ID_UE_) VALUES (@id_matiere, @id_promo, 'Stage', 'SOM4ST02', '');
-SET @id_matiere := (SELECT _ID_MAT_ FROM livret_matiere WHERE _ID_PROMO_ = @id_promo AND _LIBELLE_MAT_='Stage');
-INSERT IGNORE INTO livret_semestre (_ID_PROMO_, _ID_MAT_, _SEMESTRE_) VALUES (@id_promo, @id_matiere, 'Semestre 3');
-INSERT IGNORE INTO livret_module (_ID_MAT_ , _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_matiere, '0', '8', '0', '0', '30', '30', 'Français/Anglais_', ' 
-  * Initiation à la recherche dans les domaines de la spécialité; Mettre les étudiants en contact avec le monde professionnel par la pratique d'une activité scientifique au sein d'un laboratoire (public ou privé).
- 
-', '
-Stage de recherche de 4,5 mois dans un laboratoire (labo + terrain) ou en entreprise, dans les domaines des spécialités : réalisation d'un petit programme de recherche (de l'hypothèse à l'interprétation).
-', '', '', '', 'Ecrit 50\% + Oral 50\%', 'Ecrit 100\%', '
-', 'Biblio
-', '', '
-Spécialités BBMB / BOPE
-');
+SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Stage' AND _ECTS_='30' AND _CODE_MAT_='PJ');
+INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_, _MOD_CC_1_, _MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_mod, 'PJ', 'Stage', '3', '0', '8', '0', '0', '30', '30', 'Français/Anglais_', '* Initiation à la recherche dans les domaines de la spécialité; Mettre les étudiants en contact avec le monde professionnel par la pratique d\'une activité scientifique au sein d\'un laboratoire (public ou privé).', 'Stage de recherche de 4,5 mois dans un laboratoire (labo + terrain) ou en entreprise, dans les domaines des spécialités : réalisation d\'un petit programme de recherche (de l\'hypothèse à l\'interprétation).', '', '', '', 'Ecrit 50\% + Oral 50\%', 'Ecrit 100\%', 'Unité SOM3PJ02 "Synthèse bibliographique et projet de recherche".', '', 'Biblio', '', 'Spécialités BBMB / BOPE');
+SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Stage' AND _ECTS_='30' AND _CODE_MAT_='PJ');
+INSERT IGNORE INTO livret_programme (_ID_PROMO_, _ID_MOD_) VALUES (@id_promo, @id_mod);

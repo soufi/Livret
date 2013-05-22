@@ -1,60 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <livret>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL5AG35" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 5" coeff="3" ects="3">
-<titre>Anglais 5</titre>
-
-<methodeeval>Ecrit</methodeeval>
-
-<modalitesccsemestreun>RNE : CC 3h ; RSE : CT 1h30</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT 1h30</modalitesccsemestredeux>
-
-<calculnfsessionune>100\%</calculnfsessionune>
-
-<calculnfsessiondeux>100\%</calculnfsessiondeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>Hervé Perreau</nompremierresp>
-
-<emailpremierresp>herve.perreau@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français/Anglais</langue>
-</langues>
-
-<descriptionCourte>
-Parcours BOPE / BMC/ BBV / BGST / PLURI
-</descriptionCourte>
-
-<descriptionLongue>
-Travail de compréhension et d’expression orale à partir de documents authentiques longs et/ou complexes, portant sur des innovations technologiques, des découvertes ou avancées scientifiques.
-</descriptionLongue>
-
-<textePrerequis>Avoir suivi Anglais 3 + 4 ou environ 500 heures de formation équivalente.
-
-</textePrerequis>
-
-<objectifs> 
-  * Comprendre l’information exprimée dans des messages complexes sur le domaine des Sciences et Technologies et s’exprimer sur ce même domaine à l’écrit dans un registre de langue approprié.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL5AG35" matiere="AG" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="5" coeff="3" ects="3">
+    <titre>Anglais 5</titre>
+    <methodeeval>Ecrit</methodeeval>
+    <modalitesccsemestreun>RNE : CC 3h ; RSE : CT 1h30</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT 1h30</modalitesccsemestredeux>
+    <calculnfsessionune>100\%</calculnfsessionune>
+    <calculnfsessiondeux>100\%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>Hervé Perreau</nompremierresp>
+    <emailpremierresp>herve.perreau@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français/Anglais</langue>
+    </langues>
+    <descriptionCourte>Parcours BOPE / BMC/ BBV / BGST / PLURI</descriptionCourte>
+    <descriptionLongue>Travail de compréhension et d’expression orale à partir de documents authentiques longs et/ou complexes, portant sur des innovations technologiques, des découvertes ou avancées scientifiques.</descriptionLongue>
+    <textePrerequis>Avoir suivi Anglais 3 + 4 ou environ 500 heures de formation équivalente.</textePrerequis>
+    <objectifs>* Comprendre l’information exprimée dans des messages complexes sur le domaine des Sciences et Technologies et s’exprimer sur ce même domaine à l’écrit dans un registre de langue approprié.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
 </livret>

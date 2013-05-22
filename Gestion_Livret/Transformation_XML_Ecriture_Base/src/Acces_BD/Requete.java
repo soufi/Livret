@@ -1,9 +1,7 @@
 package Acces_BD;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -19,65 +17,20 @@ public class Requete {
 	/**
 	 * permet d'executer les requetes SQL contenu dans les fichiers .sql cree dans le dossier SQL/ avec l'execution d'un script shell
 	 * @param repository : le repertoir contenant les fichiers sql avec les requetes
-	 * @throws InterruptedException 
-	 * @throws IOException 
+	 * @throws Exception 
 	 */
-	public static String execRequests(String repository) throws IOException, InterruptedException {
-		//creatExec(); //creation du script shell
-		if(repository != null){
-			if(!repository.matches("(.*)/"))
-				repository += "/";
+	public static String execRequests(String repository) throws Exception {
+		if(!repository.isEmpty()){
 			File rep = new File (repository);
-			if(rep.exists() && rep.isDirectory()){
-				//extraction de tous les fichier du dossier
-				String [] files = rep.list();
-				//si les fichier sont bien present 
-				if(files.length>0){
-					StringBuffer allFiles = new StringBuffer();
-					File f;
-					for (int i = 0 ; i < files.length ; i++){
-						if(files[i].matches("Detail_..*_..*_..*.sql")){
-							f = new File (files[i]);
-							allFiles.append(f.getAbsolutePath()+" ");
-						}
-					}
-					//execution des requetes avec le script shell 
-					return execShellScript ("exec_requete.sh", allFiles);
-				}else
-					return "Impossible d'effectué l'opération le dossier "+repository+" est vide !";
-			}
-		}
-		return "Dossier "+repository+" Inexistant";
+			if(rep.isDirectory())
+				//execution des requetes avec le script shell 
+				return execShellScript ("exec_requete.sh", rep.getAbsolutePath());
+			else
+				throw new Exception("impossible d'executer les requetes dossier inexistant ! ");
+		}else
+			throw new Exception("impossible d'executer les requetes dossier inexistant ! ");
 	}
 	
-	/**
-	 * Permet de Créer le fichier shell permettant d'executer les requetes d'un ou plusieurs fichier .sql
-	 * @throws IOException 
-	 */
-	public static void creatExec() throws IOException{
-		FileWriter fw = new FileWriter ("exec_requete.sh", false);
-		BufferedWriter scriptBuf = new BufferedWriter(fw);
-		
-		//contenu du script
-		scriptBuf.write("#/bin/sh");
-		scriptBuf.newLine();
-		scriptBuf.append("for i in $@");
-		scriptBuf.newLine();
-		scriptBuf.append("do");
-		scriptBuf.newLine();
-		scriptBuf.append("	echo \"Traitement du fichier : \".$i");
-		scriptBuf.newLine();
-		scriptBuf.append("	mysql -h localhost --user=root livret --password=root < $i");
-		scriptBuf.newLine();
-		scriptBuf.append("done");
-		scriptBuf.newLine();
-		
-		scriptBuf.close();
-		fw.close();
-		//rendre le script executable, ajout de permission pour tous les utilisater afin de faciliter l'accés après
-		File file = new File ("exec_requete.sh");
-		file.setExecutable(true, false);
-	}
 	
 	/**
 	 * Permet d'executer un script shell à partir de son chemin
@@ -87,18 +40,20 @@ public class Requete {
 	 * @throws IOException 
 	 * @throws InterruptedException 
 	 */
-	public static String execShellScript (String file , StringBuffer param) throws IOException, InterruptedException{
+	public static String execShellScript (String file , String param) throws IOException, InterruptedException{
 		File script = new File (file);
 		if(!script.exists())
 			return "Script incorrect, veuillez verifier le chemin : "+ script.getAbsolutePath();
 		String process_in = "";
 		String process_errors = "";
 		ProcessBuilder pb;
+		//sans parametres
 		if(param == null || param.length() == 0)
-			return "Pas de Paramètres, impossible de lancer le processus .";
+			pb = new ProcessBuilder("/bin/bash", "-c", script.getAbsolutePath());
+		//avec parametres
 		else{
 			//création d'un processus externe avec les paramètre d'execution d'un processus shell
-			pb = new ProcessBuilder("/bin/bash", "-c", script.getAbsolutePath(), param.toString());
+			pb = new ProcessBuilder("/bin/bash", "-c", script.getAbsolutePath()+" "+param);
 		}
 		//redirection d'erreur du processus lancé vers la sortie standard de notre programme
 		pb.redirectErrorStream(true); 

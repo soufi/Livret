@@ -7,7 +7,6 @@
 		<xsl:output method="text"/>
 	<xsl:param name="promo"/>
 		<xsl:output method="text"/>
-	
 			
 	<xsl:template match="/">
 		
@@ -40,6 +39,8 @@
 		<xsl:value-of select="$filiere"/>
 		<xsl:text>' AND _ID_COMPO_ = @id_compo);&#xA;</xsl:text>
 		
+		<!-- onr recup l'id de la promo avant insertion, si elle n'existe pas  -->
+		
 		<xsl:text>SET @id_promo := (SELECT DISTINCT _ID_PROMO_ FROM livret_promotion WHERE _LIBELLE_PROMO_ = '</xsl:text>
 		<xsl:value-of select="$promo"/>
 		<xsl:text>');&#xA;</xsl:text>
@@ -56,6 +57,7 @@
 		<!-- on insert dans la table de parcours meme procédure -->
 		<xsl:text>INSERT IGNORE INTO livret_parcours (_ID_FILIERE_, _ID_PROMO_) VALUES (@id_filiere , @id_promo);&#xA;</xsl:text>
 		
+		<!-- maintenant on ajoute tous les modules -->
 		<xsl:apply-templates select="//module"/>
 		
 	</xsl:template>
@@ -63,33 +65,24 @@
 	<!-- pour les modules -->
 	<xsl:template match="module">
 		
-		<!-- on recupere l'id de la matiere avant l'insertion pour eviter les doublons-->
-		<xsl:text>SET @id_matiere := (SELECT _ID_MAT_ FROM livret_matiere WHERE _ID_PROMO_ = @id_promo AND _LIBELLE_MAT_ = '</xsl:text>
+		<!-- On vérifie si le module existe deja ou non sur la base de données -->
+		<xsl:text>SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='</xsl:text>
 		<xsl:value-of select="./titre"/>
-		<xsl:text>');&#xA;</xsl:text>
-		
-		<!-- insertion table matiere -->
-		<xsl:text>INSERT IGNORE INTO livret_matiere (_ID_MAT_, _ID_PROMO_, _LIBELLE_MAT_, _CODE_APOG_MAT_, _ID_UE_) VALUES (@id_matiere, @id_promo, '</xsl:text>
-		<xsl:value-of select="./titre"/>
-		<xsl:text>', '</xsl:text>
-		<xsl:value-of select="@codeApogee"/>
-		<xsl:text>', '</xsl:text>
-		<xsl:value-of select="@codeue"/>
-		<xsl:text>');&#xA;</xsl:text>
-		
-		<!-- on recupere l'id de la matiere -->
-		<xsl:text>SET @id_matiere := (SELECT _ID_MAT_ FROM livret_matiere WHERE _ID_PROMO_ = @id_promo AND _LIBELLE_MAT_='</xsl:text>
-		<xsl:value-of select="./titre"/>
-		<xsl:text>');&#xA;</xsl:text>
-		
-		<!-- ajout de relation entre semestre et la matiere -->
-		<xsl:text>INSERT IGNORE INTO livret_semestre (_ID_PROMO_, _ID_MAT_, _SEMESTRE_) VALUES (@id_promo, @id_matiere, '</xsl:text>
-		<xsl:value-of select="@semestre"/>
+		<xsl:text>' AND _ECTS_='</xsl:text>
+		<xsl:value-of select="@ects"/>
+		<xsl:text>' AND _CODE_MAT_='</xsl:text>
+		<xsl:value-of select="@matiere"/>
 		<xsl:text>');&#xA;</xsl:text>
 		
 		<!-- ajout des informations complémentaire du module -->
-		<xsl:text>INSERT IGNORE INTO livret_module (_ID_MAT_ , _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _NB_ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_matiere, '</xsl:text>
-		<xsl:choose> 
+		<xsl:text>INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_, _MOD_CC_1_, _MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_mod, '</xsl:text>
+		<xsl:value-of select="@matiere"/>
+		<xsl:text>', '</xsl:text>
+		<xsl:value-of select="./titre"/>
+		<xsl:text>', '</xsl:text>
+		<xsl:value-of select="@semestre"/>
+		<xsl:text>', '</xsl:text>
+		<xsl:choose>
 			<xsl:when test="@cours = ''"> 
 				<xsl:text>0</xsl:text>
 			</xsl:when>
@@ -131,7 +124,7 @@
 			<xsl:otherwise> <xsl:value-of select="@coeff"/> </xsl:otherwise>
 		</xsl:choose>
 		<xsl:text>', '</xsl:text>
-		<!-- les langues sont separe par des '_' -->
+		<!-- les langues sont separe par des "_" -->
 		<xsl:for-each select="langues/langue">
 			<xsl:value-of select="."/><xsl:text>_</xsl:text>
 		</xsl:for-each>
@@ -150,6 +143,8 @@
 		<xsl:text>', '</xsl:text>
 		<xsl:value-of select="./CalculNFSessionDeux"/>
 		<xsl:text>', '</xsl:text>
+		<xsl:value-of select="./textePrerequis"/>
+		<xsl:text>', '</xsl:text>
 		<xsl:value-of select="./ressources"/>
 		<xsl:text>', '</xsl:text>
 		<xsl:value-of select="./biblio"/>
@@ -164,20 +159,17 @@
 		<xsl:value-of select="./descriptionCourte"/>
 		<xsl:text>');&#xA;</xsl:text>
 		
-		<!-- ajout des prérequis -->
-		<xsl:for-each select="./lesPrerequis/prerequis">
-			<xsl:choose>
-				<xsl:when test="not(.)">
-				</xsl:when>
-				<xsl:otherwise>
-					<xsl:text> INSERT IGNORE INTO livret_pre_requis (_ID_MOD_FILS_, _ID_MOD_PERE_ ,_DESCRIPTION_) VALUES (@id_matiere, </xsl:text>
-					<xsl:value-of select="."/>
-					<xsl:text>, '</xsl:text>
-					<xsl:value-of select="../textPrerequis"/>
-					<xsl:text>');&#xA;</xsl:text>
-				</xsl:otherwise>
-			</xsl:choose>
-		</xsl:for-each>
+		<!-- on recup l'id du mod au cas ou il n'existait pas avant -->
+		<xsl:text>SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='</xsl:text>
+		<xsl:value-of select="./titre"/>
+		<xsl:text>' AND _ECTS_='</xsl:text>
+		<xsl:value-of select="@ects"/>
+		<xsl:text>' AND _CODE_MAT_='</xsl:text>
+		<xsl:value-of select="@matiere"/>
+		<xsl:text>');&#xA;</xsl:text>
+		
+		<!-- ajout de relation entre la matiere et la promotion -->
+		<xsl:text>INSERT IGNORE INTO livret_programme (_ID_PROMO_, _ID_MOD_) VALUES (@id_promo, @id_mod);&#xA;</xsl:text>
 		
 		<!-- ajout d'enseignant principal et son e-mail -->
 		<xsl:if test="./nomPremierResp">
@@ -211,7 +203,7 @@
 			<xsl:text>');&#xA;</xsl:text>
 			
 			<!-- ajout comme responsable -->
-			<xsl:text>INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_) VALUES (@id_matiere, @id_ens1);&#xA;</xsl:text>
+			<xsl:text>INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, 1);&#xA;</xsl:text>
 		</xsl:if>
 		
 		
@@ -246,8 +238,22 @@
 			<xsl:text>');&#xA;</xsl:text>
 			
 			<!-- ajout comme responsable -->
-			<xsl:text>INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_) VALUES (@id_matiere, @id_ens2);&#xA;</xsl:text>
-		</xsl:if>		
+			<xsl:text>INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, 2);&#xA;</xsl:text>
+		</xsl:if>
+		
+		<!-- Ajout du code Apogee s'il existe -->
+		<xsl:if test="./codeApogee1">
+			<xsl:text>INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('</xsl:text>
+			<xsl:value-of select="./codeApogee1"/>
+			<xsl:text>', @id_mod);&#xA;</xsl:text>
+		</xsl:if>
+		
+		<!-- Ajout du second code apogee s'il existe -->
+		<xsl:if test="./codeApogee2">
+			<xsl:text>INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('</xsl:text>
+			<xsl:value-of select="./codeApogee2"/>
+			<xsl:text>', @id_mod);&#xA;</xsl:text>
+		</xsl:if>
 		
 	</xsl:template>
 	

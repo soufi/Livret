@@ -1,207 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <livret>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL6BH04" cours="14" td="6" tp="16" ctd="" ctp="" total="36" semestre="Semestre 6" coeff="4" ects="4">
-<titre>Immunologie expérimentale</titre>
-
-<methodeeval>Ecrit/Oral/TP</methodeeval>
-
-<modalitesccsemestreun>RNE : CT(E) 1h + CC(Oral) + CC(TP) ; RSE : CT(E) 1h + CC(Oral)</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT : Ecrit 1h + Oral 15 min</modalitesccsemestredeux>
-
-<calculnfsessionune>RNE : E 30\% + O 40\% + TP 30\% ; RSE : E 50\% + O 50\%</calculnfsessionune>
-
-<calculnfsessiondeux>E 50\% + O 50\%</calculnfsessiondeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>François Erard</nompremierresp>
-
-<emailpremierresp>francois.erard@cnrs-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-</descriptionCourte>
-
-<descriptionLongue>
-Description de modèles expérimentaux pour l’étude de maladies auto-immunes, infectieuses, ou liées au cancer. Stratégies pour le développement de nouvelles thérapies et vaccins préventifs. Utilisation de souris KO, transgéniques et chimériques. Techniques d’analyse de spécificités, fréquences, régulations et fonctions effectrices des cellules de l’immunité adaptative et innée (T et B, NK, dendritiques, neutrophiles, mastocytes...) Détection et caractérisation d’anticorps, monoclonaux et recombinants, et leur utilisation comme outils de recherche, de diagnostique et de thérapie. Méthodes d’identification de nouveaux gènes contrôlant l’immunité. TP : Techniques ELISA et Western Blot</descriptionLongue>
-
-<textePrerequis>Immunologie générale
-
-</textePrerequis>
-
-<objectifs> 
-  * Ce module devrait permettre aux étudiants d’appréhender les outils immunologiques utilisés en analyses biochimiques et ceux permettant la caractérisation, la prévention et le traitement de diverses pathologies.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL6CH10" cours="18" td="18" tp="12" ctd="" ctp="" total="48" semestre="Semestre 6" coeff="5" ects="5">
-<titre>Chimie Organique II</titre>
-
-<methodeeval>Ecrit/Oral/TP</methodeeval>
-
-<modalitesccsemestreun>RNE : CC/CR/CT : Ecrit (CM 3h + TP 4h) ; RSE : CT/CR/CT : Ecrit 2h Ecrit/oral 1h</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT : Ecrit 2h + Ecrit/Oral 2h</modalitesccsemestredeux>
-
-<calculnfsessionune>CC 67\% + CR+CT 33\%</calculnfsessionune>
-
-<calculnfsessiondeux>E 66\% + E/O 33\%</calculnfsessiondeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>Franck Suzenet</nompremierresp>
-
-<emailpremierresp>franck.suzenet@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>Commun avec Licence 2 Chimie (Semestre 4)
-</descriptionCourte>
-
-<descriptionLongue>
-Chimie des composés aromatiques : Aromaticité et SEAr, - Enolates : aldolisation, alkylation, synthèse malonique, halogénation, Claisen, Dieckmann, Knoevenagel, Elimination E1CB Réaction de Wittig/Wittig-Horner; Réactivité des amines (Gabriel, amination reductive, Hofmann) ; Introduction à la réaction de Diels-Alder ; Base de la RMN $^1$H
-</descriptionLongue>
-
-<textePrerequis>Introduction à la chimie organique et Chimie Organique I / En complément de l’UE SOL6 ST05
-
-</textePrerequis>
-
-<objectifs> 
-  * Pouvoir identifier, nommer différentes fonctions et composés chimiques. Connaître et comprendre des transformations chimiques. Approche de la stratégie de synthèse. Initiation à la synthèse multi-étapes. Interpréter un spectre RMN $^1$H.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL6BH01" cours="28" td="8" tp="" ctd="" ctp="" total="36" semestre="Semestre 6" coeff="4" ects="4">
-<titre>Métabolisme normal et pathologique</titre>
-
-<methodeeval>Ecrit/Oral</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT : Ecrit 2h + Oral 15 min</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT : Ecrit 2h + Oral 15min</modalitesccsemestredeux>
-
-<calculnfsessionune>E 60\% + O 40\%</calculnfsessionune>
-
-<calculnfsessiondeux>E 60\% + O 40\%</calculnfsessiondeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>Eric Hébert</nompremierresp>
-
-<emailpremierresp>eric.hebert@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>Parcours BMC / BBV
-</descriptionCourte>
-
-<descriptionLongue>
-Rappels des principales voies du métabolisme glucidique et lipidique ; métabolisme des acides aminés (élimination de l’azote ; cycle de l’urée ; biosynthèse des acides aminés non indispensables). Intégration métabolique tissulaire ; métabolisme « en situation » : état post-prandial ; jeûne pathologique et non pathologique, métabolisme musculaire. Métabolisme des nucléotides (biosynthèse ; chimiothérapie anticancéreuse ; dégradation) ; métabolisme du cholestérol (trafic intratissulaire et athérosclérose) et de l’hème. Modes de contrôle hormonal et pathologies associées.
-</descriptionLongue>
-
-<textePrerequis>unités Biochimie métabolique et enzymologie des semestres 3 et 4.
-
-</textePrerequis>
-
-<objectifs> 
-  * Métabolisme humain avancé et son contrôle hormonal ; pathologies associées.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL6BO12" cours="48" td="6" tp="18" ctd="" ctp="" total="72" semestre="Semestre 6" coeff="7" ects="7">
-<titre>Physiologie de la communication et de la reproduction</titre>
-
-<methodeeval>Ecrit/Oral</methodeeval>
-
-<modalitesccsemestreun>RNE : E(CT) 3h + TP(CC+CT) 1h ; RSE : CT (E+TP) 3h+1h</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT Ecrit 2h + Oral 15min</modalitesccsemestredeux>
-
-<calculnfsessionune>E 66\% + TP 33\%</calculnfsessionune>
-
-<calculnfsessiondeux>E 50\% + O 50\%</calculnfsessiondeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>Olivier Richard</nompremierresp>
-
-<emailpremierresp>olivier.richard@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp>Jean-Pierre Gomez</nomsecondresp>
-
-<emailsecondresp>jean-pierre.gomez@univ-orleans.fr</emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-</descriptionCourte>
-
-<descriptionLongue>
-
-* Système nerveux. Mouvement somatique volontaire et involontaire (mouvement commandé, réflexes, posture).
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL6BH04" matiere="BH" cours="14" td="6" tp="16" ctd="" ctp="" total="36" semestre="6" coeff="4" ects="4">
+    <titre>Immunologie expérimentale</titre>
+    <methodeeval>Ecrit/Oral/TP</methodeeval>
+    <modalitesccsemestreun>RNE : CT(E) 1h + CC(Oral) + CC(TP) ; RSE : CT(E) 1h + CC(Oral)</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT : Ecrit 1h + Oral 15 min</modalitesccsemestredeux>
+    <calculnfsessionune>RNE : E 30\% + O 40\% + TP 30\% ; RSE : E 50\% + O 50\%</calculnfsessionune>
+    <calculnfsessiondeux>E 50\% + O 50\%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>François Erard</nompremierresp>
+    <emailpremierresp>francois.erard@cnrs-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte />
+    <descriptionLongue>Description de modèles expérimentaux pour l’étude de maladies auto-immunes, infectieuses, ou liées au cancer. Stratégies pour le développement de nouvelles thérapies et vaccins préventifs. Utilisation de souris KO, transgéniques et chimériques. Techniques d’analyse de spécificités, fréquences, régulations et fonctions effectrices des cellules de l’immunité adaptative et innée (T et B, NK, dendritiques, neutrophiles, mastocytes...) Détection et caractérisation d’anticorps, monoclonaux et recombinants, et leur utilisation comme outils de recherche, de diagnostique et de thérapie. Méthodes d’identification de nouveaux gènes contrôlant l’immunité. TP : Techniques ELISA et Western Blot</descriptionLongue>
+    <textePrerequis>Immunologie générale</textePrerequis>
+    <objectifs>* Ce module devrait permettre aux étudiants d’appréhender les outils immunologiques utilisés en analyses biochimiques et ceux permettant la caractérisation, la prévention et le traitement de diverses pathologies.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL6CH10" matiere="CH" cours="18" td="18" tp="12" ctd="" ctp="" total="48" semestre="6" coeff="5" ects="5">
+    <titre>Chimie Organique II</titre>
+    <methodeeval>Ecrit/Oral/TP</methodeeval>
+    <modalitesccsemestreun>RNE : CC/CR/CT : Ecrit (CM 3h + TP 4h) ; RSE : CT/CR/CT : Ecrit 2h Ecrit/oral 1h</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT : Ecrit 2h + Ecrit/Oral 2h</modalitesccsemestredeux>
+    <calculnfsessionune>CC 67\% + CR+CT 33\%</calculnfsessionune>
+    <calculnfsessiondeux>E 66\% + E/O 33\%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>Franck Suzenet</nompremierresp>
+    <emailpremierresp>franck.suzenet@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Commun avec Licence 2 Chimie (Semestre 4)</descriptionCourte>
+    <descriptionLongue>Chimie des composés aromatiques : Aromaticité et SEAr, - Enolates : aldolisation, alkylation, synthèse malonique, halogénation, Claisen, Dieckmann, Knoevenagel, Elimination E1CB Réaction de Wittig/Wittig-Horner; Réactivité des amines (Gabriel, amination reductive, Hofmann) ; Introduction à la réaction de Diels-Alder ; Base de la RMN $^1$H</descriptionLongue>
+    <textePrerequis>Introduction à la chimie organique et Chimie Organique I / En complément de l’UE SOL6 ST05</textePrerequis>
+    <objectifs>* Pouvoir identifier, nommer différentes fonctions et composés chimiques. Connaître et comprendre des transformations chimiques. Approche de la stratégie de synthèse. Initiation à la synthèse multi-étapes. Interpréter un spectre RMN $^1$H.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL6BH01" matiere="BH" cours="28" td="8" tp="" ctd="" ctp="" total="36" semestre="6" coeff="4" ects="4">
+    <titre>Métabolisme normal et pathologique</titre>
+    <methodeeval>Ecrit/Oral</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT : Ecrit 2h + Oral 15 min</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT : Ecrit 2h + Oral 15min</modalitesccsemestredeux>
+    <calculnfsessionune>E 60\% + O 40\%</calculnfsessionune>
+    <calculnfsessiondeux>E 60\% + O 40\%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>Eric Hébert</nompremierresp>
+    <emailpremierresp>eric.hebert@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Parcours BMC / BBV</descriptionCourte>
+    <descriptionLongue>Rappels des principales voies du métabolisme glucidique et lipidique ; métabolisme des acides aminés (élimination de l’azote ; cycle de l’urée ; biosynthèse des acides aminés non indispensables). Intégration métabolique tissulaire ; métabolisme « en situation » : état post-prandial ; jeûne pathologique et non pathologique, métabolisme musculaire. Métabolisme des nucléotides (biosynthèse ; chimiothérapie anticancéreuse ; dégradation) ; métabolisme du cholestérol (trafic intratissulaire et athérosclérose) et de l’hème. Modes de contrôle hormonal et pathologies associées.</descriptionLongue>
+    <textePrerequis>unités Biochimie métabolique et enzymologie des semestres 3 et 4.</textePrerequis>
+    <objectifs>* Métabolisme humain avancé et son contrôle hormonal ; pathologies associées.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL6BO12" matiere="BO" cours="48" td="6" tp="18" ctd="" ctp="" total="72" semestre="6" coeff="7" ects="7">
+    <titre>Physiologie de la communication et de la reproduction</titre>
+    <methodeeval>Ecrit/Oral</methodeeval>
+    <modalitesccsemestreun>RNE : E(CT) 3h + TP(CC+CT) 1h ; RSE : CT (E+TP) 3h+1h</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT Ecrit 2h + Oral 15min</modalitesccsemestredeux>
+    <calculnfsessionune>E 66\% + TP 33\%</calculnfsessionune>
+    <calculnfsessiondeux>E 50\% + O 50\%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>Olivier Richard</nompremierresp>
+    <emailpremierresp>olivier.richard@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp>Jean-Pierre Gomez</nomsecondresp>
+    <emailsecondresp>jean-pierre.gomez@univ-orleans.fr</emailsecondresp>
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte />
+    <descriptionLongue>* Système nerveux. Mouvement somatique volontaire et involontaire (mouvement commandé, réflexes, posture).
 Physiologie des 5 sens (vision, audition, olfaction, gustation, somesthésie). Physiologie de la douleur. L’organisation anatomo-
 fonctionnelle du système nerveux central et périphérique (cerveau, cervelet, tronc cérébral, moelle épinière, nerfs rachidiens)
 sera traitée au cours des différents thèmes abordés.
@@ -210,598 +99,275 @@ thyroïde, le pancréas, les surrénales, les systèmes endocrines particuliers 
 de transduction du signal en endocrinologie.
 * Biologie de la reproduction : gamétogenèse masculine, féminine. Physiologie chez la femme, organisation fonctionnelle du tractus génital, endocrinologie de l’ovaire, relations hypothalamo- hypophyso-ovarienne, les cycles féminins. Physiologie chez l’homme : organisation du tractus génital mâle, endocrinologie du testicule et relations hormonales avec le système hypothalamo-hypophysaire. Mise en place comparée des gonades et du tractus génital chez divers mammifères et variation du cycle sexuel. Physiologie de la grossesse : Fécondation et gestation. Parturition et lactation. Physiologie fœtale et néo-natale. Nidation, placentation chez l’humain.
 * Quelques aspects de Physiologie du développement : mécanismes physiologiques et moléculaires de l’organogénèse. Induction
-/ compétence. Voies de signalisation impliquées dans le développement. Guidage axonal.
-</descriptionLongue>
-
-<textePrerequis>Connaissances sur la communication cellulaire (récepteurs, seconds messagers) et la physiologie générale (grandes fonctions). Bases d’embryologie et de division cellulaire fortement recommandées.
-
-</textePrerequis>
-
-<objectifs> 
-  * Connaissance des deux grands systèmes de communication de l’organisme (systèmes nerveux et endocrines) tant
+/ compétence. Voies de signalisation impliquées dans le développement. Guidage axonal.</descriptionLongue>
+    <textePrerequis>Connaissances sur la communication cellulaire (récepteurs, seconds messagers) et la physiologie générale (grandes fonctions). Bases d’embryologie et de division cellulaire fortement recommandées.</textePrerequis>
+    <objectifs>* Connaissance des deux grands systèmes de communication de l’organisme (systèmes nerveux et endocrines) tant
 au niveau anatomique que fonctionnel ainsi que de leurs dysfonctionnements (pathologies associées). Ce module s’intéresse
 aussi à l’ensemble des phénomènes biologiques et physiologiques permettant la production du spermatozoïde et de l’ovule,
 leur union, le développement fœtal jusqu’au nouveau-né chez les mammifères, l’accent étant particulièrement mis sur le
-modèle humain.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL6CH02" cours="" td="" tp="" ctd="" ctp="" total="" semestre="Semestre 6" coeff="2" ects="2">
-<titre>Stage en chimie organique</titre>
-
-<methodeeval>Oral</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CC + CR : Oral 1h</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CC + CR : Oral 1h</modalitesccsemestredeux>
-
-<calculnfsessionune>Oral 100\%</calculnfsessionune>
-
-<calculnfsessiondeux>Oral 100\%</calculnfsessiondeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>Arnaud Tatibouet</nompremierresp>
-
-<emailpremierresp>arnaud.tatibouet@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-</descriptionCourte>
-
-<descriptionLongue>
-Stage pratique en chimie organique.
-</descriptionLongue>
-
-<textePrerequis>En complément de l’UE SOL6CH10.
-
-</textePrerequis>
-
-<objectifs></objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL6BH02" cours="20" td="12" tp="16" ctd="" ctp="" total="48" semestre="Semestre 6" coeff="5" ects="5">
-<titre>Biotechnologie appliquée</titre>
-
-<methodeeval>Ecrit</methodeeval>
-
-<modalitesccsemestreun>RNE : CT (Ecrit 2h) + CC ; RSE : CT (Ecrit 2h + 1h)</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT (Ecrit 2h + 1h)</modalitesccsemestredeux>
-
-<calculnfsessionune>75\% + 25\%</calculnfsessionune>
-
-<calculnfsessiondeux>75\% + 25 \%</calculnfsessiondeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>Maryvonne Ardourel</nompremierresp>
-
-<emailpremierresp>maryvonne ardourel@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>Parcours BMC / BBV
-</descriptionCourte>
-
-<descriptionLongue>
-\textit{Production de molécules d’intérêt par génie génétique} : présentation des différents systèmes de production de protéines recombinantes en définissant leurs différents avantages et inconvénients : systèmes confinés procaryotes (bactéries : E. coli, Bacillus...) et eucaryotes (levures, cellules d’insecte, cellules de mammifère), systèmes ouverts (animaux et plantes transgéniques).
+modèle humain.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL6CH02" matiere="CH" cours="" td="" tp="" ctd="" ctp="" total="" semestre="6" coeff="2" ects="2">
+    <titre>Stage en chimie organique</titre>
+    <methodeeval>Oral</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CC + CR : Oral 1h</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CC + CR : Oral 1h</modalitesccsemestredeux>
+    <calculnfsessionune>Oral 100\%</calculnfsessionune>
+    <calculnfsessiondeux>Oral 100\%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>Arnaud Tatibouet</nompremierresp>
+    <emailpremierresp>arnaud.tatibouet@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte />
+    <descriptionLongue>Stage pratique en chimie organique.</descriptionLongue>
+    <textePrerequis>En complément de l’UE SOL6CH10.</textePrerequis>
+    <objectifs />
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL6BH02" matiere="BH" cours="20" td="12" tp="16" ctd="" ctp="" total="48" semestre="6" coeff="5" ects="5">
+    <titre>Biotechnologie appliquée</titre>
+    <methodeeval>Ecrit</methodeeval>
+    <modalitesccsemestreun>RNE : CT (Ecrit 2h) + CC ; RSE : CT (Ecrit 2h + 1h)</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT (Ecrit 2h + 1h)</modalitesccsemestredeux>
+    <calculnfsessionune>75\% + 25\%</calculnfsessionune>
+    <calculnfsessiondeux>75\% + 25 \%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>Maryvonne Ardourel</nompremierresp>
+    <emailpremierresp>maryvonne ardourel@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Parcours BMC / BBV</descriptionCourte>
+    <descriptionLongue>\textit{Production de molécules d’intérêt par génie génétique} : présentation des différents systèmes de production de protéines recombinantes en définissant leurs différents avantages et inconvénients : systèmes confinés procaryotes (bactéries : E. coli, Bacillus...) et eucaryotes (levures, cellules d’insecte, cellules de mammifère), systèmes ouverts (animaux et plantes transgéniques).
 \textit{Comment construire des animaux transgéniques} : pour améliorer la race, comme bioréacteur, comme modèles animaux de pathologies humaines, pour la correction d’un déficit, l’étude de la régulation des gènes... Présentation des différentes possibilités comme la micro-injection, pour l’amélioration de la race, l’utilisation de cellules ES pour l’invalidation de gènes en vue de l’élaboration de modèles animaux, de valider un ADN médicament... 
 \textit{Notion de thérapie génique} : utilisation de vecteur pour le transfert du gène : les vecteurs viraux.
 \textit{Transgénèse végétale} : du système de transgénèse naturelle des agrobactéries à leur utilisation en biotechnologie végétale. Les agrobactéries, outils naturels d’ingénierie génétique : infection des végétaux par les bactéries du sol, les plasmides Ti, les mécanismes de transfert de l’ADN-T, les vecteurs binaires, les techniques de coculture et de coinoculation. 
 \textit{Les méthodes de transgénèse alternatives} : électroporation, biolistique, vecteurs viraux, magnifection, etc. Avantages et limites. 
 \textit{Applications de la transgénèse végétale} : transfert de gènes d’intérêt agronomique, gènes de résistance aux herbicides, gènes de résistance aux insectes ravageurs (maïs Bt, toxines de Bacillus thuringiensis) ; transfert de gènes pour l’amélioration des qualités nutritives, augmentation de la teneur en acides aminés indispensables, modulation de la teneur en lipides, augmentation de la teneur en composés édulcorants, synthèse de $\beta$-carotène (golden rice) ; la cellule végétale une usine de production de molécules d’intérêt thérapeutique, vaccins comestibles, immunothérapie passive avec des planticorps, synthèse de protéines humaines ; production pour l’industrie agroalimentaire et autres, etc... 
-\textit{Les limites et problèmes actuels de la transgénèse végétale} : méthodes alternatives, intégration ciblée des gènes d’intérêt, transplastomique, suppression des gènes de sélection, etc...
-</descriptionLongue>
-
-<textePrerequis>Techniques en biologie moléculaire.
-
-</textePrerequis>
-
-<objectifs> 
-  * Les objectifs majeurs de cette unité sont 1) d’apporter les connaissances de base de biotechnologies impliquant les techniques de l’ADN recombinant 2) de savoir définir la procédure expérimentale de choix en fonction de chaque problématique 3) d’en développer les applications d’aujourd’hui et de demain.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL6BH06" cours="46" td="14" tp="7" ctd="" ctp="5" total="72" semestre="Semestre 6" coeff="7" ects="7">
-<titre>Biochimie moléculaire</titre>
-
-<methodeeval>Ecrit/TP</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT(E) 3h + CC(TP)</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT(E+TP) 3h</modalitesccsemestredeux>
-
-<calculnfsessionune>E 50\% + O 25\% + TP 25\%</calculnfsessionune>
-
-<calculnfsessiondeux>E 66\% + TP 33\%</calculnfsessiondeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>F.Brulé C.Pichon R.Daniellou</nompremierresp>
-
-<emailpremierresp>fabienne.brule-morabito@univ-orleans.fr chantal.pichon@univ-orleans.fr richard.daniellou@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-</descriptionCourte>
-
-<descriptionLongue>
-
-* Imagerie moléculaire : Bases et concepts fondamentaux des techniques de microscopie et des nouvelles
+\textit{Les limites et problèmes actuels de la transgénèse végétale} : méthodes alternatives, intégration ciblée des gènes d’intérêt, transplastomique, suppression des gènes de sélection, etc...</descriptionLongue>
+    <textePrerequis>Techniques en biologie moléculaire.</textePrerequis>
+    <objectifs>* Les objectifs majeurs de cette unité sont 1) d’apporter les connaissances de base de biotechnologies impliquant les techniques de l’ADN recombinant 2) de savoir définir la procédure expérimentale de choix en fonction de chaque problématique 3) d’en développer les applications d’aujourd’hui et de demain.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL6BH06" matiere="BH" cours="46" td="14" tp="7" ctd="" ctp="5" total="72" semestre="6" coeff="7" ects="7">
+    <titre>Biochimie moléculaire</titre>
+    <methodeeval>Ecrit/TP</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT(E) 3h + CC(TP)</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT(E+TP) 3h</modalitesccsemestredeux>
+    <calculnfsessionune>E 50\% + O 25\% + TP 25\%</calculnfsessionune>
+    <calculnfsessiondeux>E 66\% + TP 33\%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>F.Brulé C.Pichon R.Daniellou</nompremierresp>
+    <emailpremierresp>fabienne.brule-morabito@univ-orleans.fr chantal.pichon@univ-orleans.fr richard.daniellou@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte />
+    <descriptionLongue>* Imagerie moléculaire : Bases et concepts fondamentaux des techniques de microscopie et des nouvelles
 technologies faisant appel aux biopuces (luminescence, fluorescence, microscopie de fluorescence, pinces optiques sources,
 sondes) et analyses ultrastructurales par microscopie électronique à transmission et à balayage.
 * Structure 3D : Acides nucléiques : ADN structures II et III : paramètres hélicoïdaux, familles de double hélice, techniques d’analyse du polymorphisme conformationnel. ARN : structures et implications biologiques, ribozyme, ARN de transfert. Protéines : structures II : hélices, feuillets, coudes et boucles, méthodes prédictives. Structures III : domaines structuraux, faisceaux d’hélices $\alpha$, les protéines $\beta$, hélices $\beta$, structures $\alpha$/$\beta$ et $\alpha$+$\beta$. Structures IV : symétries, oligomères, association, dissociation, hybridation, allostérie. Relations structure/fonction illustrées par quelques exemples récents. Ingénierie des protéines.
 * Enzymologie structurale : Enzymes à plusieurs substrats. Régulation de l’activité enzymatique. Modification structurale des
-enzymes et/ou de leurs substrats. Relations structure-activités.
-
-</descriptionLongue>
-
-<textePrerequis>Techniques d’analyses spectroscopiques des biomolécules, Enzymologie fondamentale, Biochimie générale.
-
-</textePrerequis>
-
-<objectifs> 
-  * Acquérir les bases nécessaires à la compréhension et à la réalisation des techniques de microanalyses et d’imagerie
+enzymes et/ou de leurs substrats. Relations structure-activités.</descriptionLongue>
+    <textePrerequis>Techniques d’analyses spectroscopiques des biomolécules, Enzymologie fondamentale, Biochimie générale.</textePrerequis>
+    <objectifs>* Acquérir les bases nécessaires à la compréhension et à la réalisation des techniques de microanalyses et d’imagerie
 des biomolécules utilisées en recherche fondamentale, médicale et biotechnologique.
 * Approfondissement des connaissances en enzymologie. 
-* Etudes des structures tridimensionnelles des macromolécules biologiques et de leurs implications fonctionnelles.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL6AG36" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 6" coeff="3" ects="3">
-<titre>Anglais 6</titre>
-
-<methodeeval>Ecrit/Oral</methodeeval>
-
-<modalitesccsemestreun>RNE : CC 2h (écrit/oral) / RSE : CT (écrit) 2h</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT (écrit) 1h30</modalitesccsemestredeux>
-
-<calculnfsessionune>100\%</calculnfsessionune>
-
-<calculnfsessiondeux>100\%</calculnfsessiondeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>Hervé Perreau</nompremierresp>
-
-<emailpremierresp>herve.perreau@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>Parcours BMC / BOPE / BGST / BBV / PLURI
-</descriptionCourte>
-
-<descriptionLongue>
-Travail de compréhension et d’expression à partir de documents authentiques longs et/ou complexes, portant sur des innovations technologiques, des découvertes ou avancées scientifiques.
-</descriptionLongue>
-
-<textePrerequis>Avoir suivi Anglais 5 ou environ 500 heures de formation équivalente.
-
-</textePrerequis>
-
-<objectifs> 
-  * Comprendre l’information exprimée dans des messages complexes sur le domaine des Sciences et Technologies et s’exprimer sur ce même domaine à l’oral avec un degré de spontanéité et de fluidité (niveau européen B2).
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL6ST04" cours="" td="" tp="" ctd="" ctp="" total="" semestre="Semestre 6" coeff="3" ects="3">
-<titre>Stage laboratoire</titre>
-
-<methodeeval>Oral/Poster</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT Oral 20 min / CC Poster Appréciation / CC MS</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : Pas de session de rattrapage pour les stages</modalitesccsemestredeux>
-
-<calculnfsessionune>E 50\% + O 25\% + TP 25\%</calculnfsessionune>
-
-<CalculNFSessionDeux>E 66\% + TP 33\%</CalculNFSessionDeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>Géraldine Roux</nompremierresp>
-
-<emailpremierresp>geraldine.roux@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp>Fabienne Brulé</nomsecondresp>
-
-<emailsecondresp>fabienne.brule@univ-orleans.fr</emailsecondresp>
-
-<nbprerequis>0</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>Parcours BOPE / BMC / BBV
-</descriptionCourte>
-
-<descriptionLongue>
-Stage en laboratoire académique ou industriel dans le domaine du parcours envisagé. La durée est de 4 à 6 semaines (détails de l’organisation fourni durant le semestre 5, avec signature d‘une convention de stage.
-</descriptionLongue>
-
-<textePrerequis>
-
-</textePrerequis>
-
-<objectifs> 
-  * Initiation au travail de recherche en laboratoire.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL6BO09" cours="22" td="4" tp="10" ctd="" ctp="" total="36" semestre="Semestre 6" coeff="4" ects="4">
-<titre>Dynamique et différenciation cellulaire</titre>
-
-<methodeeval>Ecrit/TP</methodeeval>
-
-<modalitesccsemestreun>RNE : CT(E) 2h / CC(TP) ; RSE : CT(E) 2h + CT(TP) 1h</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT(E) 2h + CT(TP) 1h</modalitesccsemestredeux>
-
-<calculnfsessionune>E 66\% + TP 33\%</calculnfsessionune>
-
-<calculnfsessiondeux>E 66\% + TP 33\%</calculnfsessiondeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>Martine Guérin</nompremierresp>
-
-<emailpremierresp>martine.guerin@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp>Jacques Pichon</nomsecondresp>
-
-<emailsecondresp>jacques.pichon@univ-orleans.fr</emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-</descriptionCourte>
-
-<descriptionLongue>
-Notions de cycle cellulaire, de vieillissement cellulaire et de mort programmée. Trafic vésiculaire intracellulaire, renouvellement membranaire. Cytosquelette. Protéasomes. Matrice extracellulaire et mécanismes d’adhésion cellulaire. Différenciation et dédifférenciation, polarisation, adressage des composants membranaires. Techniques de biologie cellulaire : marquages cellulaires, les différentes microscopies. Culture cellulaire
-</descriptionLongue>
-
-<textePrerequis>Bases de biologie cellulaire.
-
-</textePrerequis>
-
-<objectifs> 
-  * Ce module aborde certaines spécificités du fonctionnement cellulaire.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL6BH03" cours="20" td="" tp="16" ctd="" ctp="" total="36" semestre="Semestre 6" coeff="4" ects="4">
-<titre>Microbiologie appliquée</titre>
-
-<methodeeval>Ecrit/TP</methodeeval>
-
-<modalitesccsemestreun>RNE : CT(E) 2h + CC(TP) ; RSE : CT (E 2h + TP 1h)</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT : Ecrit 2h + Ecrit TP 1h</modalitesccsemestredeux>
-
-<calculnfsessionune>E 50\% + TP 50\%</calculnfsessionune>
-
-<calculnfsessiondeux>E 50\% + TP 50\%</calculnfsessiondeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>Maryvonne Ardourel</nompremierresp>
-
-<emailpremierresp>maryvonne.ardourel@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>0</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-Parcours BMC / BBV
-</descriptionCourte>
-
-<descriptionLongue>
-Interactions entre micro-organismes : Associations synergiques et antagonistes, commensalisme, mutualisme,
-parasitisme. Microbiologie du sol et de l’eau : Les grands cycles (Carbone, Azote, Soufre) ; auto-épuration et biodégradation (ex : xénobiotiques, lixiviats, résidus industriels). Techniques d’analyse des eaux et du sol. Microbiologie médicale : Virus et bactéries pathogènes (habitat, épidémiologie, pouvoir pathogène, diagnostic, traitement). Microbiologie industrielle : Fermentations d’intérêts économiques.
-</descriptionLongue>
-
-<textePrerequis>
-
-</textePrerequis>
-
-<objectifs> 
-  * Donner un aperçu des différentes utilisations potentielles des micro-organismes, de connaître les
-démarches et de savoir effectuer des contrôles bactériologiques de l’eau et en agro-alimentaire
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL6BO11" cours="12" td="" tp="12" ctd="" ctp="" total="24" semestre="Semestre 6" coeff="3" ects="3">
-<titre>Epigénétique, pathologie et développement</titre>
-
-<methodeeval>Ecrit/TP</methodeeval>
-
-<modalitesccsemestreun>RNE : CT(E) 2h + CC(TP) ; RSE : CT 2h</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
-
-<calculnfsessionune>RNE : E 66\% + TP 33\% ; RSE : E 100 \%</calculnfsessionune>
-
-<calculnfsessiondeux>E 100\%</calculnfsessiondeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>Martine Decoville</nompremierresp>
-
-<emailpremierresp>martine.decoville@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>0</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-</descriptionCourte>
-
-<descriptionLongue>
-Epigénétique : La relation génotype phénotype. Modèles de régulation épigénétique Epigénétique et maladies. Empreinte parentale. Inactivation de l’X, anomalies du développement. Effets épigénétiques de l’environnement et de la nutrition. TP : Etude de l’implication de mécanismes épigénétiques dans un modèle de leucémie chez la drosophile.
-</descriptionLongue>
-
-<textePrerequis>Ecologie générale ; Bases de la génétique formelle.
-
-</textePrerequis>
-
-<objectifs> 
-  * Acquérir des connaissances de base sur les processus épigénétiques. Connaître l’importance de ces processus dans
-la vie de la cellule et le développement d’un organisme.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL6BO10" cours="6" td="6" tp="24" ctd="" ctp="" total="36" semestre="Semestre 6" coeff="4" ects="4">
-<titre>Neurosciences et physiologie expérimentales</titre>
-
-<methodeeval>Ecrit/TP</methodeeval>
-
-<modalitesccsemestreun>RNE : CT(E) 2h + CC(TP) ; RSE : CT 2h</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
-
-<calculnfsessionune>RNE : E 50\% + TP 50\% ; RSE : E 100 \%</calculnfsessionune>
-
-<calculnfsessiondeux>E 100\%</calculnfsessiondeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>Céline Dubourg</nompremierresp>
-
-<emailpremierresp>celine.montecot-dubourg@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp>Stéphane Mortaud</nomsecondresp>
-
-<emailsecondresp>stephane.mortaud@univ-orleans.fr</emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-</descriptionCourte>
-
-<descriptionLongue>
-Ce module est destiné à apporter à l’étudiant des compétences dans les différentes techniques expérimentales
+* Etudes des structures tridimensionnelles des macromolécules biologiques et de leurs implications fonctionnelles.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL6AG36" matiere="AG" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="6" coeff="3" ects="3">
+    <titre>Anglais 6</titre>
+    <methodeeval>Ecrit/Oral</methodeeval>
+    <modalitesccsemestreun>RNE : CC 2h (écrit/oral) / RSE : CT (écrit) 2h</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT (écrit) 1h30</modalitesccsemestredeux>
+    <calculnfsessionune>100\%</calculnfsessionune>
+    <calculnfsessiondeux>100\%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>Hervé Perreau</nompremierresp>
+    <emailpremierresp>herve.perreau@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Parcours BMC / BOPE / BGST / BBV / PLURI</descriptionCourte>
+    <descriptionLongue>Travail de compréhension et d’expression à partir de documents authentiques longs et/ou complexes, portant sur des innovations technologiques, des découvertes ou avancées scientifiques.</descriptionLongue>
+    <textePrerequis>Avoir suivi Anglais 5 ou environ 500 heures de formation équivalente.</textePrerequis>
+    <objectifs>* Comprendre l’information exprimée dans des messages complexes sur le domaine des Sciences et Technologies et s’exprimer sur ce même domaine à l’oral avec un degré de spontanéité et de fluidité (niveau européen B2).</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL6ST04" matiere="PJ" cours="" td="" tp="" ctd="" ctp="" total="" semestre="6" coeff="3" ects="3">
+    <titre>Stage laboratoire</titre>
+    <methodeeval>Oral/Poster</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT Oral 20 min / CC Poster Appréciation / CC MS</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : Pas de session de rattrapage pour les stages</modalitesccsemestredeux>
+    <calculnfsessionune>E 50\% + O 25\% + TP 25\%</calculnfsessionune>
+    <CalculNFSessionDeux>E 66\% + TP 33\%</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Géraldine Roux</nompremierresp>
+    <emailpremierresp>geraldine.roux@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp>Fabienne Brulé</nomsecondresp>
+    <emailsecondresp>fabienne.brule@univ-orleans.fr</emailsecondresp>
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Parcours BOPE / BMC / BBV</descriptionCourte>
+    <descriptionLongue>Stage en laboratoire académique ou industriel dans le domaine du parcours envisagé. La durée est de 4 à 6 semaines (détails de l’organisation fourni durant le semestre 5, avec signature d‘une convention de stage.</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Initiation au travail de recherche en laboratoire.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL6BO09" matiere="BO" cours="22" td="4" tp="10" ctd="" ctp="" total="36" semestre="6" coeff="4" ects="4">
+    <titre>Dynamique et différenciation cellulaire</titre>
+    <methodeeval>Ecrit/TP</methodeeval>
+    <modalitesccsemestreun>RNE : CT(E) 2h / CC(TP) ; RSE : CT(E) 2h + CT(TP) 1h</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT(E) 2h + CT(TP) 1h</modalitesccsemestredeux>
+    <calculnfsessionune>E 66\% + TP 33\%</calculnfsessionune>
+    <calculnfsessiondeux>E 66\% + TP 33\%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>Martine Guérin</nompremierresp>
+    <emailpremierresp>martine.guerin@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp>Jacques Pichon</nomsecondresp>
+    <emailsecondresp>jacques.pichon@univ-orleans.fr</emailsecondresp>
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte />
+    <descriptionLongue>Notions de cycle cellulaire, de vieillissement cellulaire et de mort programmée. Trafic vésiculaire intracellulaire, renouvellement membranaire. Cytosquelette. Protéasomes. Matrice extracellulaire et mécanismes d’adhésion cellulaire. Différenciation et dédifférenciation, polarisation, adressage des composants membranaires. Techniques de biologie cellulaire : marquages cellulaires, les différentes microscopies. Culture cellulaire</descriptionLongue>
+    <textePrerequis>Bases de biologie cellulaire.</textePrerequis>
+    <objectifs>* Ce module aborde certaines spécificités du fonctionnement cellulaire.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL6BH03" matiere="BH" cours="20" td="" tp="16" ctd="" ctp="" total="36" semestre="6" coeff="4" ects="4">
+    <titre>Microbiologie appliquée</titre>
+    <methodeeval>Ecrit/TP</methodeeval>
+    <modalitesccsemestreun>RNE : CT(E) 2h + CC(TP) ; RSE : CT (E 2h + TP 1h)</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT : Ecrit 2h + Ecrit TP 1h</modalitesccsemestredeux>
+    <calculnfsessionune>E 50\% + TP 50\%</calculnfsessionune>
+    <calculnfsessiondeux>E 50\% + TP 50\%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>Maryvonne Ardourel</nompremierresp>
+    <emailpremierresp>maryvonne.ardourel@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Parcours BMC / BBV</descriptionCourte>
+    <descriptionLongue>Interactions entre micro-organismes : Associations synergiques et antagonistes, commensalisme, mutualisme,
+parasitisme. Microbiologie du sol et de l’eau : Les grands cycles (Carbone, Azote, Soufre) ; auto-épuration et biodégradation (ex : xénobiotiques, lixiviats, résidus industriels). Techniques d’analyse des eaux et du sol. Microbiologie médicale : Virus et bactéries pathogènes (habitat, épidémiologie, pouvoir pathogène, diagnostic, traitement). Microbiologie industrielle : Fermentations d’intérêts économiques.</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Donner un aperçu des différentes utilisations potentielles des micro-organismes, de connaître les
+démarches et de savoir effectuer des contrôles bactériologiques de l’eau et en agro-alimentaire</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL6BO11" matiere="BO" cours="12" td="" tp="12" ctd="" ctp="" total="24" semestre="6" coeff="3" ects="3">
+    <titre>Epigénétique, pathologie et développement</titre>
+    <methodeeval>Ecrit/TP</methodeeval>
+    <modalitesccsemestreun>RNE : CT(E) 2h + CC(TP) ; RSE : CT 2h</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+    <calculnfsessionune>RNE : E 66\% + TP 33\% ; RSE : E 100 \%</calculnfsessionune>
+    <calculnfsessiondeux>E 100\%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>Martine Decoville</nompremierresp>
+    <emailpremierresp>martine.decoville@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte />
+    <descriptionLongue>Epigénétique : La relation génotype phénotype. Modèles de régulation épigénétique Epigénétique et maladies. Empreinte parentale. Inactivation de l’X, anomalies du développement. Effets épigénétiques de l’environnement et de la nutrition. TP : Etude de l’implication de mécanismes épigénétiques dans un modèle de leucémie chez la drosophile.</descriptionLongue>
+    <textePrerequis>Ecologie générale ; Bases de la génétique formelle.</textePrerequis>
+    <objectifs>* Acquérir des connaissances de base sur les processus épigénétiques. Connaître l’importance de ces processus dans
+la vie de la cellule et le développement d’un organisme.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL6BO10" matiere="BO" cours="6" td="6" tp="24" ctd="" ctp="" total="36" semestre="6" coeff="4" ects="4">
+    <titre>Neurosciences et physiologie expérimentales</titre>
+    <methodeeval>Ecrit/TP</methodeeval>
+    <modalitesccsemestreun>RNE : CT(E) 2h + CC(TP) ; RSE : CT 2h</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+    <calculnfsessionune>RNE : E 50\% + TP 50\% ; RSE : E 100 \%</calculnfsessionune>
+    <calculnfsessiondeux>E 100\%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>Céline Dubourg</nompremierresp>
+    <emailpremierresp>celine.montecot-dubourg@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp>Stéphane Mortaud</nomsecondresp>
+    <emailsecondresp>stephane.mortaud@univ-orleans.fr</emailsecondresp>
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte />
+    <descriptionLongue>Ce module est destiné à apporter à l’étudiant des compétences dans les différentes techniques expérimentales
 appliquées à l’étude des fonctions physiologiques et cérébrales chez l’animal. Ce module principalement pratique abordera entre autres la culture de cellules nerveuses et leur utilisation, la technique d’immunohistochimie cérébrale ainsi que les méthodes d’exploration comportementale chez le rongeur. Des techniques de physiologie seront également abordées via par exemple l’étude pharmacologique de l’automatisme cardiaque et de la pression artérielle, ...</descriptionLongue>
-
-<textePrerequis>Connaissances de physiologie animale (niveau L2)
-
-</textePrerequis>
-
-<objectifs> 
-  * Techniques de culture cellulaire animale. Techniques de chirurgie et d’expérimentation animale. Pharmacologie
-comportementale du rongeur. Dosages de molécules naturelles chez l’animal.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOL6BH05" cours="24" td="" tp="" ctd="" ctp="" total="24" semestre="Semestre 6" coeff="3" ects="3">
-<titre>Virologie moléculaire</titre>
-
-<methodeeval>Ecrit</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT 2h</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
-
-<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
-
-<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
-
-<noteeliminatoire></noteeliminatoire>
-
-<nompremierresp>Fabienne Brulé</nompremierresp>
-
-<emailpremierresp>fabienne.brule-morabito@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>Parcours BBV / BMC
-</descriptionCourte>
-
-<descriptionLongue>
-Présentation du monde viral. Modes de réplication des virus. Interactions virus/cellule. Diagnostic et traitements
+    <textePrerequis>Connaissances de physiologie animale (niveau L2)</textePrerequis>
+    <objectifs>* Techniques de culture cellulaire animale. Techniques de chirurgie et d’expérimentation animale. Pharmacologie
+comportementale du rongeur. Dosages de molécules naturelles chez l’animal.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL6BH05" matiere="BH" cours="24" td="" tp="" ctd="" ctp="" total="24" semestre="6" coeff="3" ects="3">
+    <titre>Virologie moléculaire</titre>
+    <methodeeval>Ecrit</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT 2h</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+    <calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+    <calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>Fabienne Brulé</nompremierresp>
+    <emailpremierresp>fabienne.brule-morabito@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Parcours BBV / BMC</descriptionCourte>
+    <descriptionLongue>Présentation du monde viral. Modes de réplication des virus. Interactions virus/cellule. Diagnostic et traitements
 anti-viraux. Action anti-virale du système immunitaire et stratégies d’échappement du virus. Vaccins et vecteurs viraux.
-Particularités des virus des végétaux. Exemples : VIH, Rougeole, Hépatites, Virus émergents, Virus de plantes, ...
-</descriptionLongue>
-
-<textePrerequis>Bases fondamentales de la biologie moléculaire, Immunologie générale.
-
-</textePrerequis>
-
-<objectifs> 
-  * Acquérir des connaissances dans le domaine de la virologie;
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
+Particularités des virus des végétaux. Exemples : VIH, Rougeole, Hépatites, Virus émergents, Virus de plantes, ...</descriptionLongue>
+    <textePrerequis>Bases fondamentales de la biologie moléculaire, Immunologie générale.</textePrerequis>
+    <objectifs>* Acquérir des connaissances dans le domaine de la virologie;</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
 </livret>

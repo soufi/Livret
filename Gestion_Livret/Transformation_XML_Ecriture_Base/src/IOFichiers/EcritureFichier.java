@@ -10,6 +10,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class EcritureFichier {
+	//pour donner un code Apogee par defaut au module n'ayant pas de code
+	static int iterApogee = 45;
 /**
  * Cette classe vise à simplifier l'écriture dans un fichier
  * Elle est aussi utilisée pour écrire le fichier XML
@@ -97,34 +99,111 @@ public class EcritureFichier {
 	 * @throws Exception 
 	 */
 	public boolean ecrireModule(String aExtraire) throws Exception{
+		
 		if(aExtraire == null || aExtraire.length() == 0) // on fait rien si le String est 
 			return false;
 		ecrire("<module ");
 		Pattern p = Pattern.compile("codeApogee=\\{(.*)?\\}");
 		Matcher m = p.matcher(aExtraire);
+		String laMatiere="";
+		//extraction du code Apogee
 		if(m.find()){
-			ecrire("codeApogee=\""+m.group(1)+"\"");
-			
-			Pattern attributs = Pattern.compile("\n([A-Z]+)=\\{(.*)\\}");
-			Matcher ma = attributs.matcher(aExtraire);
-			String line = "";
-			String contenu = "";
-			while(ma.find()) {
-				line = ma.group(1);
-				contenu = ma.group(2);
-				ecrire(" "+line.toLowerCase()+"="+"\""+contenu+"\"");
+			String codeApogee = m.group(1);
+			if(!codeApogee.isEmpty()){
+				String [] spl = codeApogee.split(" ");
+				for(int i = 0; i < spl.length; i++){
+					if(apogee(spl[i])){
+						if(i == 0)
+							ecrire("codeApogee"+(i+1)+"=\""+spl[i]+"\"");
+						else
+							ecrire(" codeApogee"+(i+1)+"=\""+spl[i]+"\"");
+						//on prend un des codes apogee pour extraire
+						if(laMatiere.isEmpty())
+							laMatiere = spl[i];
+					}
+				}
+			}else{
+				ecrire("codeApogee1=\"UE"+iterApogee+"\"");
+				iterApogee++; //pour le prochain qui n'aura pas 
 			}
-			ecrire(">\n");
-			return true;
+		}else{
+			ecrire("codeApogee1=\"UE"+iterApogee+"\"");
+			iterApogee++;
+		}
+		ecrire(" matiere=\""+matiere(laMatiere)+"\"");
+		Pattern attributs = Pattern.compile("\n([A-Z]+)=\\{(.*)\\}");
+		Matcher ma = attributs.matcher(aExtraire);
+		String line = "";
+		String contenu = "";
+		while(ma.find()) {
+			line = ma.group(1);
+			contenu = ma.group(2);
+			//on extrait le numero correspondant au semestre
+			if(line.equals("SEMESTRE")){
+				Pattern giveNumber = Pattern.compile("([a-z]|[A-Z])*\\s*(\\d)");
+				Matcher leSemestre = giveNumber.matcher(contenu);
+				if(leSemestre.find())
+					ecrire(" "+line.toLowerCase()+"=\""+leSemestre.group(2)+"\"");
+			}else
+				ecrire(" "+line.toLowerCase()+"=\""+checkFormat(contenu)+"\"");
+		}
+		ecrire(">\n");
+		return true;
+	}
+	
+	/**
+	 * Vérifie la strucutre du code apogee les 3 cas de strucutre suivant sont accepté : 
+	 * cas 1 =>   SOM4AG06
+	 * cas 2 =>   2IF03
+	 * cas 3 =>   IF12
+	 * @param codeApogee
+	 * @return vrai si le code est bon, faux sinon
+	 */
+	private boolean apogee(String codeApogee){
+		if(!codeApogee.isEmpty()){
+			Pattern p = Pattern.compile("((([A-Z]{3}\\d)?)|\\d?)([A-Z]{2})\\d{1,2}");
+			Matcher m = p.matcher(codeApogee);
+			return m.matches();
 		}else
-			throw new Exception ("=> Erreur : impossible de trouver les attributs de module");
+			return false;
+	}
+	
+	/**
+	 * Extrait la matiere du code apogee comme définit sur la base de données
+	 * @param codeApogee
+	 * @return IND si la matiere est indefinit, le code de la matiere sur la base sinon
+	 */
+	private String matiere (String codeApogee){
+		if(!codeApogee.isEmpty()){
+			Pattern p = Pattern.compile("((([A-Z]{3}\\d)?)|\\d?)([A-Z]{2})\\d{1,2}");
+			Matcher m = p.matcher(codeApogee);
+			if(m.find()){
+				String laMatiere = m.group(4); //on extrait le quatrieme groupe en partant de la gauche dans l'expression reguliere
+				//nous verifions les code avant de retourner le code, car il existe plusiseurs codes faisant référence a la meme matiere exemple : IN et IF pour informatique
+				if(laMatiere.equals("IN")) //informatique
+					laMatiere = "IF";
+				else if(laMatiere.equals("MT")) //mathématique
+					laMatiere = "MA";
+				else if(laMatiere.equals("PP") || laMatiere.equals("ST") || laMatiere.equals("PR")) //projet
+					laMatiere = "PJ";
+				else if(laMatiere.equals("GE")) //Geologie
+					laMatiere = "GO";
+				else if(laMatiere.equals("UE")) //indefinit
+					laMatiere = "UND";
+				
+				return laMatiere;
+			}else
+				return "UND";
+		}else
+			return "UND";
 	}
 
 	/**
 	 * Ecrit les balises "normales"
 	 * @param aExtraire : le contenu de travail
+	 * @throws Exception 
 	 */
-	public void ecrireBalises(String aExtraire){
+	public void ecrireBalises(String aExtraire) throws Exception{
 		Pattern p = Pattern.compile("\n(.*)=\\{(.*)\\}");
 		Matcher m = p.matcher(aExtraire);
 		String balise = "";
@@ -135,11 +214,11 @@ public class EcritureFichier {
 			contenu = m.group(2);
 			if(!balise.equals("langue") && !(contenu.equals("true") || contenu.equals("false"))){
 				if(balise.charAt(0) == '%'){
-					ecrire("<"+balise.substring(1)+">"+contenu+"</"+balise.substring(1)+">\n\n");
+					ecrire("<"+balise.substring(1)+">"+checkFormat(contenu)+"</"+balise.substring(1)+">\n\n");
 				}
 				if(!verifierMajuscules(balise) && Character.isLetterOrDigit(balise.charAt(0))){
 					balise = balise.toLowerCase();//Pour afficher la balise ouvrante correctement
-					ecrire("<"+balise+">"+ contenu + "</"+balise+">\n\n");
+					ecrire("<"+balise+">"+checkFormat(contenu) + "</"+balise+">\n\n");
 				}
 			}
 		}
@@ -313,10 +392,19 @@ public class EcritureFichier {
 				}
 			}else
 				throw new Exception("Erreur EcritureFichier::checkFormat(String bloc) => description erreur ***Bloc : \n"+bloc);
-		//autre on fait rien
-		}else
-			return bloc;
-		return result.toString();
+		}
+		
+		if(result.length()!=0)
+			bloc = result.toString();
+		//on remplace tout les ' par des \'
+		Pattern simpleCote = Pattern.compile("(?!\\\\)'");
+		Matcher findCotes = simpleCote.matcher(bloc);
+		bloc = findCotes.replaceAll("\\\\'");
+		//si on a plusieurs backslash on les supprime et on laisse un seul de sorte a avoir \'
+		simpleCote = Pattern.compile("\\\\{2}'");
+		findCotes = simpleCote.matcher(bloc);
+		bloc = findCotes.replaceAll("\\\\'");
+		return bloc;
 	}
 
 	
@@ -337,12 +425,7 @@ public class EcritureFichier {
 	
 	//recupération des resultats de différentes parties pour tester les résultats 
 	/*public static void main (String [] args) throws Exception{
-		LectureFichier lf = new LectureFichier("./testFolder/1module.tex");
-		EcritureFichier ecr4 = new EcritureFichier("./testFolder/1M_ecrFichierXML.txt");
-		String[] rez = lf.lireModule();
-		
-		ecr4.ecrireModuleXML(rez[0]);
-
-		ecr4.fermer();
+		String s1 = "\\'avion a décolé ce matin l'arbre est tombé d'un coup j'ai rien compris !";
+		System.out.println(checkFormat(s1));
 	}*/
 }

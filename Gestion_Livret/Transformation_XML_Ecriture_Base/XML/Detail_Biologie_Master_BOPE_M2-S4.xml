@@ -1,60 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <livret>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM4ST02" cours="" td="8" tp="" ctd="" ctp="" total="8" semestre="Semestre 3" coeff="30" ects="30">
-<titre>Stage</titre>
-
-<methodeeval>Ecrit/Oral</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : Ecrit/Oral</modalitesccsemestreun>
-
-<modalitesccsemestredeux>Pas de seconde session</modalitesccsemestredeux>
-
-<CalculNFSessionUne>Ecrit 50\% + Oral 50\%</CalculNFSessionUne>
-
-<CalculNFSessionDeux>Ecrit 100\%</CalculNFSessionDeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>Chantal Pichon François Lieutier Daniel Hagège</nompremierresp>
-
-<emailpremierresp>chantal.pichon@univ-orleans.fr francois.lieutier@univ-orleans.fr daniel.hagege@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français/Anglais</langue>
-</langues>
-
-<descriptionCourte>
-Spécialités BBMB / BOPE
-</descriptionCourte>
-
-<descriptionLongue>
-Stage de recherche de 4,5 mois dans un laboratoire (labo + terrain) ou en entreprise, dans les domaines des spécialités : réalisation d'un petit programme de recherche (de l'hypothèse à l'interprétation).
-</descriptionLongue>
-
-<textePrerequis>Unité SOM3PJ02 "Synthèse bibliographique et projet de recherche".
-
-</textePrerequis>
-
-<objectifs> 
-  * Initiation à la recherche dans les domaines de la spécialité; Mettre les étudiants en contact avec le monde professionnel par la pratique d'une activité scientifique au sein d'un laboratoire (public ou privé).
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM4ST02" matiere="PJ" cours="" td="8" tp="" ctd="" ctp="" total="8" semestre="3" coeff="30" ects="30">
+    <titre>Stage</titre>
+    <methodeeval>Ecrit/Oral</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : Ecrit/Oral</modalitesccsemestreun>
+    <modalitesccsemestredeux>Pas de seconde session</modalitesccsemestredeux>
+    <CalculNFSessionUne>Ecrit 50\% + Oral 50\%</CalculNFSessionUne>
+    <CalculNFSessionDeux>Ecrit 100\%</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Chantal Pichon François Lieutier Daniel Hagège</nompremierresp>
+    <emailpremierresp>chantal.pichon@univ-orleans.fr francois.lieutier@univ-orleans.fr daniel.hagege@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français/Anglais</langue>
+    </langues>
+    <descriptionCourte>Spécialités BBMB / BOPE</descriptionCourte>
+    <descriptionLongue>Stage de recherche de 4,5 mois dans un laboratoire (labo + terrain) ou en entreprise, dans les domaines des spécialités : réalisation d\'un petit programme de recherche (de l\'hypothèse à l\'interprétation).</descriptionLongue>
+    <textePrerequis>Unité SOM3PJ02 "Synthèse bibliographique et projet de recherche".</textePrerequis>
+    <objectifs>* Initiation à la recherche dans les domaines de la spécialité; Mettre les étudiants en contact avec le monde professionnel par la pratique d\'une activité scientifique au sein d\'un laboratoire (public ou privé).</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
 </livret>

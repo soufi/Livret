@@ -1,396 +1,174 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <livret>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM1AG41" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 1" coeff="3" ects="3">
-<titre>Anglais scientifique 1</titre>
-
-<methodeeval>Ecrit/Oral</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT(E) 1h30 / CC(O) 1h30</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT(E) 1h30</modalitesccsemestredeux>
-
-<calculnfsessionune>Ecrit 50\% + oral 50 \%</calculnfsessionune>
-
-<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>Lupka Mihajlovska</nompremierresp>
-
-<emailpremierresp>lupka.mihajlovska@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Anglais</langue>
-</langues>
-
-<descriptionCourte>
-Spécialités BBMB et BOPE / Passerelle MESC2A
-</descriptionCourte>
-
-<descriptionLongue>
-Remise à niveau, Conversation en anglais avec les moyens audio-visuels modernes (e-mail, video-projecteur…)</descriptionLongue>
-
-<textePrerequis>Bon niveau d’ordre général pratique, oral (conversation, téléphone, voyage) et écrite (synthèse de lecture, s’exprimer simplement mais clairement). Assez bonne connaissance de la langue spécifique de son domaine scientifique et technique.
-
-</textePrerequis>
-
-<objectifs> 
-  * Savoir présenter un rapport de travail en anglais et commenter le déroulement d’une opération.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM1BH02" cours="" td="" tp="48" ctd="" ctp="" total="48" semestre="Semestre 1" coeff="5" ects="5">
-<titre>Biologie Moléculaire et Cellulaire Expérimentales</titre>
-
-<methodeeval>Ecrit/TP</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CC(TP)</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT écrit 1h</modalitesccsemestredeux>
-
-<calculnfsessionune>TP 100\%</calculnfsessionune>
-
-<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>Lucile Mollet</nompremierresp>
-
-<emailpremierresp>lucile.mollet@cnrs-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-Spécialités BBMB et BOPE / Passerelle MESC2A
-</descriptionCourte>
-
-<descriptionLongue>
-Construction de vecteurs d’expression avec gènes rapporteurs pour l’analyse de la domiciliation de protéines de fusion (gène GFP). Cultures cellulaire et transfection de vecteurs d’expression permettant l’analyse de l’activité de promoteurs (gène rapporteur luciférase, luminométrie). PCR : application à la détection de mutations ponctuelles. Méthode semi-quantitative pour la quantification d’ARN spécifiques. Interactions protéine/protéine \textit{in vitro} par chromatographie d'affinité : techniques du GST pull-down et analyse par western blot.
-</descriptionLongue>
-
-<textePrerequis>18 ECTS de biologie moléculaire
-
-</textePrerequis>
-
-<objectifs> 
-  * Cette unité entièrement consacrée au travail expérimental vise à permettre d'acquérir une bonne pratique de quelques techniques fondamentales utilisées en biologies moléculaire et cellulaire.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM1BO03" cours="31" td="9" tp="8" ctd="" ctp="" total="48" semestre="Semestre 1" coeff="5" ects="5">
-<titre>Dynamique et fonctionnement des écosystèmes terrestres</titre>
-
-<methodeeval>Ecrit/Oral</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT(CM+TP+TD) Ecrit 2h + Oral</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT(CM+TP+TD) Ecrit 2h + Oral</modalitesccsemestredeux>
-
-<calculnfsessionune>Ecrit 50\% + oral 50\%</calculnfsessionune>
-
-<calculnfsessiondeux>Ecrit 50\% + oral 50\%</calculnfsessiondeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>François Lieutier</nompremierresp>
-
-<emailpremierresp>francois.lieutier@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-Spécialité BOPE
-</descriptionCourte>
-
-<descriptionLongue>
-I. Fonctionnement et dynamique : Caractéristiques et originalités des écosystèmes forestiers, des ripisylves, des agrosystèmes, et relations avec les activités humaines ; structure fonctionnelle ; interactions forêt-grandes cultures ; les sols agricoles et forestiers ; les symbioses du sol; les relations plantes-animaux et les relations végétal-pathogènes ; rôle des relations trophiques dans les fluctuations cycliques.
-II. Les facteurs de perturbations dans les écosystèmes exploités et artificiels : Définition, différentes échelles de perturbation; facteurs biotiques de perturbation : dynamique de population de ravageurs; phytopathologie ; impact sur les écosystèmes forestiers et agricoles et méthodes de protection; contraintes abiotiques (sécheresse, polluants, fertilisants); L'homme, relations avec l'environnement et devenir des civilisations.
-</descriptionLongue>
-
-<textePrerequis>Connaissances de bases en écologie générale, en écologie fonctionnelle, en croissance et développement des végétaux et en entomologie.
-
-</textePrerequis>
-
-<objectifs> 
-  * Compréhension synthétique de l’organisation spatiale, temporelle et fonctionnelle des écosystèmes terrestres et de leurs interrelations.  Perception de la place et du rôle de l’homme en tant qu’élément constitutif et moteur.  Acquisition des connaissances de base sur les principaux facteurs de perturbation et leur contrôle par les activités humaines.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM1BO04" cours="24" td="12" tp="12" ctd="" total="24" semestre="Semestre 1" coeff="3" ects="3">
-<titre>Facteurs de la distribution des organismes et évolution des espèces</titre>
-
-<methodeeval>Ecrit/Oral/TP</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT(CM+TD) Ecrit 1h30 + Oral + CC TP</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT(CM+TD+TP) Ecrit 1h30 + Oral</modalitesccsemestredeux>
-
-<calculnfsessionune>Ecrit 33\% + Oral 33\% + TP 33\%</calculnfsessionune>
-
-<calculnfsessiondeux>Ecrit 66\% + Oral 33\%</calculnfsessiondeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>Géraldine Roux</nompremierresp>
-
-<emailpremierresp>geraldine.roux@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp>François Lieutier</nomsecondresp>
-
-<emailsecondresp>francois.lieutier@univ-orleans.fr</emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-</descriptionCourte>
-
-<descriptionLongue>
-Biogéographie générale, des origines à aujourd'hui (facteurs de distribution des espèces, géographie passée et actuelle, distribution de la vie sur terre, les glaciations : causes et conséquences, l'émergence de l’homme et ses conséquences sur la biodiversité, évolution de la population humaine, modifications environnementales et biogéographie); Les bases des mécanismes évolutifs ; mécanismes de spéciation et d’extinction (anagénèse et spéciation, l'espèce et les problèmes associés, systématique moléculaire); Méthodes permettant de reconstituer les évènements en biogéographie historique : phylogéographie; différenciation des populations, modes de dispersion des organismes. Dynamique de l'évolution.</descriptionLongue>
-
-<textePrerequis>Connaissances de bases en écologie générale, en génétique formelle, génétique des populations, et génétique moléculaire.
-
-</textePrerequis>
-
-<objectifs> 
-  * Connaissances récentes en biogéographie et évolution et compréhension des mécanismes de l’évolution, à toutes les échelles de temps et d’espace.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM1BO02" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 1" coeff="3" ects="3">
-<titre>Biostat 1 : Initiation à "R"</titre>
-
-<methodeeval>Ecrit</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT 1h</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT 1h</modalitesccsemestredeux>
-
-<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
-
-<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>Franck Brignolas</nompremierresp>
-
-<emailpremierresp>franck.brignolas@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-Spécialités BBMB et BOPE / Passerelle MESC2A
-</descriptionCourte>
-
-<descriptionLongue>
-- Présentation de "R" : objets de données, fonctions et opérateurs ; manipulations des objets de données ; fonctions de statistique descriptives ; création de graphiques usuels.
-- Utilisation de "R" : lois de probabilités ; tests statistiques : comparaison d’effectifs, de proportions, de moyennes, de médianes, de variances et de distribution ; corrélations entre variables ; régression linéaire.
-</descriptionLongue>
-
-<textePrerequis>UE Biométrie de licence 3 (ou équivalent)
-
-</textePrerequis>
-
-<objectifs> 
-  * Maîtriser les tests statistiques couramment utilisés dans les Sciences de la Vie.
-* Acquérir une autonomie dans l’analyse des données en utilisant le logiciel "R".
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM1BH01" cours="24" td="14" tp="10" ctd="" ctp="" total="48" semestre="Semestre 1" coeff="5" ects="5">
-<titre>Expression du génôme eucaryote</titre>
-
-<methodeeval>Ecrit/TP</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT(E) 2h / CC(TP)</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT(E) 2h / CC(TP)</modalitesccsemestredeux>
-
-<calculnfsessionune>Ecrit 75\% + TP 25 \%</calculnfsessionune>
-
-<calculnfsessiondeux>Ecrit 75\% + TP 25 \%</calculnfsessiondeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>Alain Legrand</nompremierresp>
-
-<emailpremierresp>alain.legrand@cnrs-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-Spécialités BBMB et BOPE / Passerelle MESC2A
-</descriptionCourte>
-
-<descriptionLongue>
-Régulation au niveau de l’ADN : Régulation transcriptionnelle (mode d’activation des facteurs de transcription), post-transcriptionnelle (coiffe des ARNm et polyadénylation), traductionnelle (initiation coiffe dépendante et indépendante), Epissage alternatif, constitutif et en trans), structure génique complexes , méthodologie ( étude du transcriptome, hybridation différentielle, puces à ADN, criblage virtuel de banque de données, RT-PCR quantitative, technique de double hybride).
-</descriptionLongue>
-
-<textePrerequis>18 ECTS de biologie moléculaire
-
-</textePrerequis>
-
-<objectifs> 
-  * Approfondir la connaissance des mécanismes de régulation de l'expression génique au niveau transcriptionnel, post transcriptionnel et traductionnel. Présentation des techniques les plus récentes utilisées dans le domaine de recherche.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM1BO05" cours="18" td="14" tp="4" ctd="" ctp="" total="36" semestre="Semestre 1" coeff="4" ects="4">
-<titre>Ecologie du paysage</titre>
-
-<methodeeval>Ecrit/Oral/TP</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT(CM) Ecrit 1h + CC (TP+TD)</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT(CM+TD+TP) Ecrit 1h30 + Oral</modalitesccsemestredeux>
-
-<calculnfsessionune>Ecrit 50\% + Oral 25\% + TP 25\%</calculnfsessionune>
-
-<calculnfsessiondeux>Ecrit 66\% + Oral 33\%</calculnfsessiondeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>Chantal Pichon</nompremierresp>
-
-<emailpremierresp>chantal.pichon@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-Spécialité BOPE
-</descriptionCourte>
-
-<descriptionLongue>
-Rôle de l'hétérogénéité, des activités humaines et des perturbations dans l'organisation et l'évolution des systèmes écologiques; les structures spatiales des paysages (hétérogénéité, fragmentation, connectivité, notions d'échelle et de hiérarchie); les changements d'occupation des terres (approche régionale, approche locale, exemples); dynamique des cours d'eau et des corridors, exemples; organisation des paysages; Télédetection.
-</descriptionLongue>
-
-<textePrerequis>Connaissances de base en écologie générale et des communautés.
-
-</textePrerequis>
-
-<objectifs> 
-  * Fournir aux étudiants les bases pour la compréhension de l'organisation des paysages et de leur évolution.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM1AG41" matiere="AG" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="1" coeff="3" ects="3">
+    <titre>Anglais scientifique 1</titre>
+    <methodeeval>Ecrit/Oral</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT(E) 1h30 / CC(O) 1h30</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT(E) 1h30</modalitesccsemestredeux>
+    <calculnfsessionune>Ecrit 50\% + oral 50 \%</calculnfsessionune>
+    <calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Lupka Mihajlovska</nompremierresp>
+    <emailpremierresp>lupka.mihajlovska@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Anglais</langue>
+    </langues>
+    <descriptionCourte>Spécialités BBMB et BOPE / Passerelle MESC2A</descriptionCourte>
+    <descriptionLongue>Remise à niveau, Conversation en anglais avec les moyens audio-visuels modernes (e-mail, video-projecteur…)</descriptionLongue>
+    <textePrerequis>Bon niveau d’ordre général pratique, oral (conversation, téléphone, voyage) et écrite (synthèse de lecture, s’exprimer simplement mais clairement). Assez bonne connaissance de la langue spécifique de son domaine scientifique et technique.</textePrerequis>
+    <objectifs>* Savoir présenter un rapport de travail en anglais et commenter le déroulement d’une opération.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM1BH02" matiere="BH" cours="" td="" tp="48" ctd="" ctp="" total="48" semestre="1" coeff="5" ects="5">
+    <titre>Biologie Moléculaire et Cellulaire Expérimentales</titre>
+    <methodeeval>Ecrit/TP</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CC(TP)</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT écrit 1h</modalitesccsemestredeux>
+    <calculnfsessionune>TP 100\%</calculnfsessionune>
+    <calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Lucile Mollet</nompremierresp>
+    <emailpremierresp>lucile.mollet@cnrs-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Spécialités BBMB et BOPE / Passerelle MESC2A</descriptionCourte>
+    <descriptionLongue>Construction de vecteurs d’expression avec gènes rapporteurs pour l’analyse de la domiciliation de protéines de fusion (gène GFP). Cultures cellulaire et transfection de vecteurs d’expression permettant l’analyse de l’activité de promoteurs (gène rapporteur luciférase, luminométrie). PCR : application à la détection de mutations ponctuelles. Méthode semi-quantitative pour la quantification d’ARN spécifiques. Interactions protéine/protéine \textit{in vitro} par chromatographie d\'affinité : techniques du GST pull-down et analyse par western blot.</descriptionLongue>
+    <textePrerequis>18 ECTS de biologie moléculaire</textePrerequis>
+    <objectifs>* Cette unité entièrement consacrée au travail expérimental vise à permettre d\'acquérir une bonne pratique de quelques techniques fondamentales utilisées en biologies moléculaire et cellulaire.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM1BO03" matiere="BO" cours="31" td="9" tp="8" ctd="" ctp="" total="48" semestre="1" coeff="5" ects="5">
+    <titre>Dynamique et fonctionnement des écosystèmes terrestres</titre>
+    <methodeeval>Ecrit/Oral</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT(CM+TP+TD) Ecrit 2h + Oral</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT(CM+TP+TD) Ecrit 2h + Oral</modalitesccsemestredeux>
+    <calculnfsessionune>Ecrit 50\% + oral 50\%</calculnfsessionune>
+    <calculnfsessiondeux>Ecrit 50\% + oral 50\%</calculnfsessiondeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>François Lieutier</nompremierresp>
+    <emailpremierresp>francois.lieutier@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Spécialité BOPE</descriptionCourte>
+    <descriptionLongue>I. Fonctionnement et dynamique : Caractéristiques et originalités des écosystèmes forestiers, des ripisylves, des agrosystèmes, et relations avec les activités humaines ; structure fonctionnelle ; interactions forêt-grandes cultures ; les sols agricoles et forestiers ; les symbioses du sol; les relations plantes-animaux et les relations végétal-pathogènes ; rôle des relations trophiques dans les fluctuations cycliques.
+II. Les facteurs de perturbations dans les écosystèmes exploités et artificiels : Définition, différentes échelles de perturbation; facteurs biotiques de perturbation : dynamique de population de ravageurs; phytopathologie ; impact sur les écosystèmes forestiers et agricoles et méthodes de protection; contraintes abiotiques (sécheresse, polluants, fertilisants); L\'homme, relations avec l\'environnement et devenir des civilisations.</descriptionLongue>
+    <textePrerequis>Connaissances de bases en écologie générale, en écologie fonctionnelle, en croissance et développement des végétaux et en entomologie.</textePrerequis>
+    <objectifs>* Compréhension synthétique de l’organisation spatiale, temporelle et fonctionnelle des écosystèmes terrestres et de leurs interrelations.  Perception de la place et du rôle de l’homme en tant qu’élément constitutif et moteur.  Acquisition des connaissances de base sur les principaux facteurs de perturbation et leur contrôle par les activités humaines.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM1BO04" matiere="BO" cours="24" td="12" tp="12" ctd="" total="24" semestre="1" coeff="3" ects="3">
+    <titre>Facteurs de la distribution des organismes et évolution des espèces</titre>
+    <methodeeval>Ecrit/Oral/TP</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT(CM+TD) Ecrit 1h30 + Oral + CC TP</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT(CM+TD+TP) Ecrit 1h30 + Oral</modalitesccsemestredeux>
+    <calculnfsessionune>Ecrit 33\% + Oral 33\% + TP 33\%</calculnfsessionune>
+    <calculnfsessiondeux>Ecrit 66\% + Oral 33\%</calculnfsessiondeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Géraldine Roux</nompremierresp>
+    <emailpremierresp>geraldine.roux@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp>François Lieutier</nomsecondresp>
+    <emailsecondresp>francois.lieutier@univ-orleans.fr</emailsecondresp>
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte />
+    <descriptionLongue>Biogéographie générale, des origines à aujourd\'hui (facteurs de distribution des espèces, géographie passée et actuelle, distribution de la vie sur terre, les glaciations : causes et conséquences, l\'émergence de l’homme et ses conséquences sur la biodiversité, évolution de la population humaine, modifications environnementales et biogéographie); Les bases des mécanismes évolutifs ; mécanismes de spéciation et d’extinction (anagénèse et spéciation, l\'espèce et les problèmes associés, systématique moléculaire); Méthodes permettant de reconstituer les évènements en biogéographie historique : phylogéographie; différenciation des populations, modes de dispersion des organismes. Dynamique de l\'évolution.</descriptionLongue>
+    <textePrerequis>Connaissances de bases en écologie générale, en génétique formelle, génétique des populations, et génétique moléculaire.</textePrerequis>
+    <objectifs>* Connaissances récentes en biogéographie et évolution et compréhension des mécanismes de l’évolution, à toutes les échelles de temps et d’espace.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM1BO02" matiere="BO" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="1" coeff="3" ects="3">
+    <titre>Biostat 1 : Initiation à "R"</titre>
+    <methodeeval>Ecrit</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT 1h</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT 1h</modalitesccsemestredeux>
+    <calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+    <calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Franck Brignolas</nompremierresp>
+    <emailpremierresp>franck.brignolas@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Spécialités BBMB et BOPE / Passerelle MESC2A</descriptionCourte>
+    <descriptionLongue>- Présentation de "R" : objets de données, fonctions et opérateurs ; manipulations des objets de données ; fonctions de statistique descriptives ; création de graphiques usuels.
+- Utilisation de "R" : lois de probabilités ; tests statistiques : comparaison d’effectifs, de proportions, de moyennes, de médianes, de variances et de distribution ; corrélations entre variables ; régression linéaire.</descriptionLongue>
+    <textePrerequis>UE Biométrie de licence 3 (ou équivalent)</textePrerequis>
+    <objectifs>* Maîtriser les tests statistiques couramment utilisés dans les Sciences de la Vie.
+* Acquérir une autonomie dans l’analyse des données en utilisant le logiciel "R".</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM1BH01" matiere="BH" cours="24" td="14" tp="10" ctd="" ctp="" total="48" semestre="1" coeff="5" ects="5">
+    <titre>Expression du génôme eucaryote</titre>
+    <methodeeval>Ecrit/TP</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT(E) 2h / CC(TP)</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT(E) 2h / CC(TP)</modalitesccsemestredeux>
+    <calculnfsessionune>Ecrit 75\% + TP 25 \%</calculnfsessionune>
+    <calculnfsessiondeux>Ecrit 75\% + TP 25 \%</calculnfsessiondeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Alain Legrand</nompremierresp>
+    <emailpremierresp>alain.legrand@cnrs-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Spécialités BBMB et BOPE / Passerelle MESC2A</descriptionCourte>
+    <descriptionLongue>Régulation au niveau de l’ADN : Régulation transcriptionnelle (mode d’activation des facteurs de transcription), post-transcriptionnelle (coiffe des ARNm et polyadénylation), traductionnelle (initiation coiffe dépendante et indépendante), Epissage alternatif, constitutif et en trans), structure génique complexes , méthodologie ( étude du transcriptome, hybridation différentielle, puces à ADN, criblage virtuel de banque de données, RT-PCR quantitative, technique de double hybride).</descriptionLongue>
+    <textePrerequis>18 ECTS de biologie moléculaire</textePrerequis>
+    <objectifs>* Approfondir la connaissance des mécanismes de régulation de l\'expression génique au niveau transcriptionnel, post transcriptionnel et traductionnel. Présentation des techniques les plus récentes utilisées dans le domaine de recherche.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM1BO05" matiere="BO" cours="18" td="14" tp="4" ctd="" ctp="" total="36" semestre="1" coeff="4" ects="4">
+    <titre>Ecologie du paysage</titre>
+    <methodeeval>Ecrit/Oral/TP</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT(CM) Ecrit 1h + CC (TP+TD)</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT(CM+TD+TP) Ecrit 1h30 + Oral</modalitesccsemestredeux>
+    <calculnfsessionune>Ecrit 50\% + Oral 25\% + TP 25\%</calculnfsessionune>
+    <calculnfsessiondeux>Ecrit 66\% + Oral 33\%</calculnfsessiondeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Chantal Pichon</nompremierresp>
+    <emailpremierresp>chantal.pichon@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Spécialité BOPE</descriptionCourte>
+    <descriptionLongue>Rôle de l\'hétérogénéité, des activités humaines et des perturbations dans l\'organisation et l\'évolution des systèmes écologiques; les structures spatiales des paysages (hétérogénéité, fragmentation, connectivité, notions d\'échelle et de hiérarchie); les changements d\'occupation des terres (approche régionale, approche locale, exemples); dynamique des cours d\'eau et des corridors, exemples; organisation des paysages; Télédetection.</descriptionLongue>
+    <textePrerequis>Connaissances de base en écologie générale et des communautés.</textePrerequis>
+    <objectifs>* Fournir aux étudiants les bases pour la compréhension de l\'organisation des paysages et de leur évolution.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
 </livret>

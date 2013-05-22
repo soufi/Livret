@@ -1,448 +1,195 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <livret>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM2BO08" cours="24" td="8" tp="16" ctd="" ctp="" total="48" semestre="Semestre 2" coeff="5" ects="5">
-<titre>Agents de perturbation dans les écosystèmes terrestres</titre>
-
-<methodeeval>Ecrit/TP</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT(CM) Ecrit 2h + CC (TP,TD)</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT(E) 2h</modalitesccsemestredeux>
-
-<calculnfsessionune>CT 66\% + CC 33 \%</calculnfsessionune>
-
-<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>Aurélien Sallé</nompremierresp>
-
-<emailpremierresp>aurelien.salle@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-</descriptionCourte>
-
-<descriptionLongue>
-Perturbations biotiques et abiotiques, phytophagie, guildes de ravageurs, phytopathologie, gestion chimique et biologique des ravageurs, perturbations abiotiques.
-</descriptionLongue>
-
-<textePrerequis>Ecologie générale, notions d’entomologie générale.
-
-</textePrerequis>
-
-<objectifs> 
-  * Donner à l’étudiant un panorama des agents de perturbations biotiques et abiotiques dans les écosystèmes terrestres, des problèmes qu’ils posent et des modalités de gestion.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM2BO07" cours="28" td="12" tp="8" ctd="" ctp="" total="48" semestre="Semestre 2" coeff="5" ects="5">
-<titre>Ecotoxicologie et phytoremédiation</titre>
-
-<methodeeval>Ecrit/TP</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT(CM) Ecrit 2h + CC (TP,TD)</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT(E) 2h</modalitesccsemestredeux>
-
-<calculnfsessionune>CT 66\% + CC 33 \%</calculnfsessionune>
-
-<calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>Domenico Morabito</nompremierresp>
-
-<emailpremierresp>domenico.morabito@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-</descriptionCourte>
-
-<descriptionLongue>
-Connaissances modernes sur les principaux types de pollution terrestre, de leurs effets sur les êtres vivants et les écosystèmes, et des possibilités de réhabilitation des milieux pollués. Exemples majeurs de pollution. Les polluants et leur mode d’action : pollution domestique, pollution industrielle, pollution agricole, pollution atmosphérique. Biotransformation, bioaccumulation et biomagnification des polluants. La réhabilitation des milieux pollués et les possibilités offertes par la phytoremédiation. Etude de cas concrets. Risques liés à l’utilisation des OGM.
-</descriptionLongue>
-
-<textePrerequis>Ecologie générale et Physiologie.
-
-</textePrerequis>
-
-<objectifs> 
-  * Acquisition des  connaissances récentes liées à l’effet de la pollution sur la santé humaine et les écosystèmes.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM2PR01" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 2" coeff="3" ects="3">
-<titre>Projet Professionnel et connaissance de l'entreprise</titre>
-
-<methodeeval>Ecrit</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CC rapport</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : Pas de seconde session</modalitesccsemestredeux>
-
-<calculnfsessionune>Ecrit 100\%</calculnfsessionune>
-
-<CalculNFSessionDeux>Oral\%</CalculNFSessionDeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>Olivier Richard William Même Philippe Herrandez</nompremierresp>
-
-<emailpremierresp>olivier.richard@univ-orleans.fr william.meme@univ-orleans.fr philippe.herrandez@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>0</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-Spécialités BBMB et BOPE / Passerelle MESC2A
-</descriptionCourte>
-
-<descriptionLongue>
-Construction d’un projet professionnel ; visites d’entreprises, de collectivités locales, organismes ; préparation de CV, techniques de recherche d’emploi, informations sur les concours de recrutement de chercheurs et enseignants-chercheurs, ingénieurs…, table ronde sur les exigences du milieu professionnel, avec participation de représentants du publique et du privé. Connaissance de l’entreprise (grandes fonctions, grands types d’activités); connaissance des différents secteurs de recherche (public et privé); notions d’économie et de gestion (éléments de base); conférences et témoignages de parcours professionnels;  contacts avec le milieu professionnel.
-</descriptionLongue>
-
-<textePrerequis>Bon niveau d’ordre général pratique.
-
-</textePrerequis>
-
-<objectifs> 
-  * faire réfléchir l’étudiant sur ses motivations et ses ambitions professionnelles ; le faire se positionner par rapport à la continuation en thèse ou à l’entrée dans la vie active ; sensibiliser les étudiants à la connaissance des métiers de la recherche.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM2ST01" cours="" td="12" tp="" ctd="" ctp="" total="12" semestre="Semestre 2" coeff="3" ects="3">
-<titre>Stage</titre>
-
-<methodeeval>Ecrit/Oral</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT(Rapport)+ Oral + Note Maître de stage</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : Pas de seconde session</modalitesccsemestredeux>
-
-<CalculNFSessionUne>Ecrit 100\%</CalculNFSessionUne>
-
-<CalculNFSessionDeux>Oral\%</CalculNFSessionDeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>François lieutier</nompremierresp>
-
-<emailpremierresp>francois.lieutier@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>0</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-Spécialités BBMB et BOPE / Passerelle MESC2A
-</descriptionCourte>
-
-<descriptionLongue>
-Stage de 2 mois en laboratoire de recherche, ou en entreprise ou collectivité locale : participation à la construction d’un protocole, la réalisation d’une expérience ou d’un projet ; mise en forme des résultats ; traitement des données ; interprétation ; présentation orale et écrite.
-</descriptionLongue>
-
-<textePrerequis>Bon niveau d’ordre général pratique.
-
-</textePrerequis>
-
-<objectifs> 
-  * Prise de contact avec le monde professionnel de la recherche et le travail de chercheur.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM2IP00" cours="" td="12" tp="" ctd="" ctp="" total="12" semestre="Semestre 2" coeff="1" ects="1">
-<titre>Ouverture à l'international</titre>
-
-<MethodeEval></MethodeEval>
-
-<ModalitesCCSemestreUn>RNE et RSE : CT(E) 1h30 / CC(O) 15 min</ModalitesCCSemestreUn>
-
-<ModalitesCCSemestreDeux>RNE et RSE : CT(O) 20 min</ModalitesCCSemestreDeux>
-
-<CalculNFSessionUne>Ecrit 75\% + Oral 50\%</CalculNFSessionUne>
-
-<CalculNFSessionDeux>Oral\%</CalculNFSessionDeux>
-
-<NoteEliminatoire>7</NoteEliminatoire>
-
-<nompremierresp>Lupka Mihajlovska</nompremierresp>
-
-<emailpremierresp>lupka.mihajlovska@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Anglais</langue>
-</langues>
-
-<descriptionCourte>
-Spécialités BBMB et BOPE / Passerelle MESC2A
-</descriptionCourte>
-
-<descriptionLongue>
-Savoir communiquer dans le milieu professionnel (CV, lettre, téléphone, entretien de recrutement, participer à une réunion), valider son niveau d’anglais par une certification en langues, niveau B2 (TOEIC, CLES).
-</descriptionLongue>
-
-<textePrerequis>Bon niveau d’ordre général pratique.
-
-</textePrerequis>
-
-<objectifs> 
-  * Préparer l’étudiant à faire un entretien  d’embauche dans la langue anglaise (savoir communiquer dans le milieu professionnel).
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM2BO05" cours="25" td="5" tp="18" ctd="" ctp="" total="48" semestre="Semestre 2" coeff="5" ects="5">
-<titre>Agronomie et amélioration des plantes</titre>
-
-<methodeeval>Ecrit/Oral/TP</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT (CM+TD) Ecrit 2h + Oral + CC (TP)</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT (CM+TD) Ecrit 2h + (TP) Ecrit 1h</modalitesccsemestredeux>
-
-<calculnfsessionune>Ecrit 50\% + Oral 25\% + TP 25\%</calculnfsessionune>
-
-<calculnfsessiondeux>Ecrit 50\% + Oral 25\% + TP 25\%</calculnfsessiondeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>Stéphane Maury</nompremierresp>
-
-<emailpremierresp>stephane.maury@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>0</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-</descriptionCourte>
-
-<descriptionLongue>
-Amélioration des plantes cultivées, processus de propagation des espèces végétales d’intérêt agronomique  (reproduction sexuée, multiplication végétative traditionnelle, in vitro, hors sol, initiation à la transgénèse) et utilisation des plantes pour la production de molécules à visée pharmacologique ou agroalimentaire (cultures cellulaires et ingénierie métabolique).
-</descriptionLongue>
-
-<textePrerequis>
-
-</textePrerequis>
-
-<objectifs> 
-  * Connaissances des méthodologies d’amélioration, production et exploitation des plantes notamment cultivées.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM2BO06" cours="28" td="4" tp="16" ctd="" ctp="" total="48" semestre="Semestre 2" coeff="5" ects="5">
-<titre>Influence de l’environnement sur le développement des plantes</titre>
-
-<methodeeval>Ecrit/Oral/TP</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT(E) 2h + oral + CC TP</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT(E) 2h + oral + CT TP 1h</modalitesccsemestredeux>
-
-<calculnfsessionune>Ecrit 40\% + Oral 40\% + TP 20\%</calculnfsessionune>
-
-<calculnfsessiondeux>Ecrit 40\% + Oral 40\% + TP 20\%</calculnfsessiondeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>Daniel Hagège</nompremierresp>
-
-<emailpremierresp>daniel.hagege@univ-orleans.fr</emailpremierresp>
-
-<nomsecondresp></nomsecondresp>
-
-<emailsecondresp></emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-</descriptionCourte>
-
-<descriptionLongue>
-Quelques mécanismes fondamentaux du contrôle du développement des plantes : Perception de l’environnement ; lumière et photomorphogenèse ; vernalisation ; gravitropisme.  Croissance et développement ; rôle du métabolisme secondaire ; lignine ; rôle des phytohormones et modes d’actions moléculaires.
-</descriptionLongue>
-
-<textePrerequis>Connaissance générale sur la physiologie,  la croissance et le développement des végétaux.
-
-</textePrerequis>
-
-<objectifs> 
-  * Connaissances approfondies des mécanismes physiologiques, biochimiques et moléculaires qui régissent les interactions entre les plantes et leur environnement.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
-		<!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-
-<module codeApogee="SOM2AG42" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="Semestre 2" coeff="3" ects="3">
-<titre>Anglais Scientifique et communication</titre>
-
-<methodeeval>Ecrit/Oral</methodeeval>
-
-<modalitesccsemestreun>RNE et RSE : CT(E) 1h30 / CC(O) 15 min</modalitesccsemestreun>
-
-<modalitesccsemestredeux>RNE et RSE : CT(O) 20 min</modalitesccsemestredeux>
-
-<calculnfsessionune>Ecrit 75\% + Oral 50\%</calculnfsessionune>
-
-<calculnfsessiondeux>Oral\%</calculnfsessiondeux>
-
-<noteeliminatoire>7</noteeliminatoire>
-
-<nompremierresp>Lucile Mollet</nompremierresp>
-
-<emailpremierresp>lucile.mollet@cnrs-orleans.fr</emailpremierresp>
-
-<nomsecondresp>Olivier Richard</nomsecondresp>
-
-<emailsecondresp>olivier.richard@univ-orleans.fr</emailsecondresp>
-
-<nbprerequis>1</nbprerequis>
-
-<langues>
-  <langue>Français</langue>
-</langues>
-
-<descriptionCourte>
-Spécialités BBMB et BOPE / Passerelle MESC2A
-</descriptionCourte>
-
-<descriptionLongue>
-Faire un bilan du stage de l’année passée et résumer les visites d’entreprises en anglais. Commenter le déroulement d’un atelier technologique en anglais. Se préparer à des entretiens en anglais pour une embauche (thèse ou poste R &amp; D)
-</descriptionLongue>
-
-<textePrerequis>Bon niveau d’ordre général pratique, oral et écrite, assez bonne connaissance de la langue spécifique de son domaine scientifique et technique.
-
-</textePrerequis>
-
-<objectifs> 
-  * Savoir présenter un rapport de travail en anglais et commenter le déroulement d’une expérimentation.
- 
-</objectifs>
-
-<ressources>
-</ressources>
-
-<biblio>Biblio
-</biblio>
-
-</module>
-
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM2BO08" matiere="BO" cours="24" td="8" tp="16" ctd="" ctp="" total="48" semestre="2" coeff="5" ects="5">
+    <titre>Agents de perturbation dans les écosystèmes terrestres</titre>
+    <methodeeval>Ecrit/TP</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT(CM) Ecrit 2h + CC (TP,TD)</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT(E) 2h</modalitesccsemestredeux>
+    <calculnfsessionune>CT 66\% + CC 33 \%</calculnfsessionune>
+    <calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Aurélien Sallé</nompremierresp>
+    <emailpremierresp>aurelien.salle@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte />
+    <descriptionLongue>Perturbations biotiques et abiotiques, phytophagie, guildes de ravageurs, phytopathologie, gestion chimique et biologique des ravageurs, perturbations abiotiques.</descriptionLongue>
+    <textePrerequis>Ecologie générale, notions d’entomologie générale.</textePrerequis>
+    <objectifs>* Donner à l’étudiant un panorama des agents de perturbations biotiques et abiotiques dans les écosystèmes terrestres, des problèmes qu’ils posent et des modalités de gestion.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM2BO07" matiere="BO" cours="28" td="12" tp="8" ctd="" ctp="" total="48" semestre="2" coeff="5" ects="5">
+    <titre>Ecotoxicologie et phytoremédiation</titre>
+    <methodeeval>Ecrit/TP</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT(CM) Ecrit 2h + CC (TP,TD)</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT(E) 2h</modalitesccsemestredeux>
+    <calculnfsessionune>CT 66\% + CC 33 \%</calculnfsessionune>
+    <calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Domenico Morabito</nompremierresp>
+    <emailpremierresp>domenico.morabito@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte />
+    <descriptionLongue>Connaissances modernes sur les principaux types de pollution terrestre, de leurs effets sur les êtres vivants et les écosystèmes, et des possibilités de réhabilitation des milieux pollués. Exemples majeurs de pollution. Les polluants et leur mode d’action : pollution domestique, pollution industrielle, pollution agricole, pollution atmosphérique. Biotransformation, bioaccumulation et biomagnification des polluants. La réhabilitation des milieux pollués et les possibilités offertes par la phytoremédiation. Etude de cas concrets. Risques liés à l’utilisation des OGM.</descriptionLongue>
+    <textePrerequis>Ecologie générale et Physiologie.</textePrerequis>
+    <objectifs>* Acquisition des  connaissances récentes liées à l’effet de la pollution sur la santé humaine et les écosystèmes.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM2PR01" matiere="PJ" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="2" coeff="3" ects="3">
+    <titre>Projet Professionnel et connaissance de l\'entreprise</titre>
+    <methodeeval>Ecrit</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CC rapport</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : Pas de seconde session</modalitesccsemestredeux>
+    <calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+    <CalculNFSessionDeux>Oral\%</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Olivier Richard William Même Philippe Herrandez</nompremierresp>
+    <emailpremierresp>olivier.richard@univ-orleans.fr william.meme@univ-orleans.fr philippe.herrandez@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Spécialités BBMB et BOPE / Passerelle MESC2A</descriptionCourte>
+    <descriptionLongue>Construction d’un projet professionnel ; visites d’entreprises, de collectivités locales, organismes ; préparation de CV, techniques de recherche d’emploi, informations sur les concours de recrutement de chercheurs et enseignants-chercheurs, ingénieurs…, table ronde sur les exigences du milieu professionnel, avec participation de représentants du publique et du privé. Connaissance de l’entreprise (grandes fonctions, grands types d’activités); connaissance des différents secteurs de recherche (public et privé); notions d’économie et de gestion (éléments de base); conférences et témoignages de parcours professionnels;  contacts avec le milieu professionnel.</descriptionLongue>
+    <textePrerequis>Bon niveau d’ordre général pratique.</textePrerequis>
+    <objectifs>* faire réfléchir l’étudiant sur ses motivations et ses ambitions professionnelles ; le faire se positionner par rapport à la continuation en thèse ou à l’entrée dans la vie active ; sensibiliser les étudiants à la connaissance des métiers de la recherche.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM2ST01" matiere="PJ" cours="" td="12" tp="" ctd="" ctp="" total="12" semestre="2" coeff="3" ects="3">
+    <titre>Stage</titre>
+    <methodeeval>Ecrit/Oral</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT(Rapport)+ Oral + Note Maître de stage</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : Pas de seconde session</modalitesccsemestredeux>
+    <CalculNFSessionUne>Ecrit 100\%</CalculNFSessionUne>
+    <CalculNFSessionDeux>Oral\%</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>François lieutier</nompremierresp>
+    <emailpremierresp>francois.lieutier@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Spécialités BBMB et BOPE / Passerelle MESC2A</descriptionCourte>
+    <descriptionLongue>Stage de 2 mois en laboratoire de recherche, ou en entreprise ou collectivité locale : participation à la construction d’un protocole, la réalisation d’une expérience ou d’un projet ; mise en forme des résultats ; traitement des données ; interprétation ; présentation orale et écrite.</descriptionLongue>
+    <textePrerequis>Bon niveau d’ordre général pratique.</textePrerequis>
+    <objectifs>* Prise de contact avec le monde professionnel de la recherche et le travail de chercheur.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM2IP00" matiere="IP" cours="" td="12" tp="" ctd="" ctp="" total="12" semestre="2" coeff="1" ects="1">
+    <titre>Ouverture à l\'international</titre>
+    <MethodeEval />
+    <ModalitesCCSemestreUn>RNE et RSE : CT(E) 1h30 / CC(O) 15 min</ModalitesCCSemestreUn>
+    <ModalitesCCSemestreDeux>RNE et RSE : CT(O) 20 min</ModalitesCCSemestreDeux>
+    <CalculNFSessionUne>Ecrit 75\% + Oral 50\%</CalculNFSessionUne>
+    <CalculNFSessionDeux>Oral\%</CalculNFSessionDeux>
+    <NoteEliminatoire>7</NoteEliminatoire>
+    <nompremierresp>Lupka Mihajlovska</nompremierresp>
+    <emailpremierresp>lupka.mihajlovska@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Anglais</langue>
+    </langues>
+    <descriptionCourte>Spécialités BBMB et BOPE / Passerelle MESC2A</descriptionCourte>
+    <descriptionLongue>Savoir communiquer dans le milieu professionnel (CV, lettre, téléphone, entretien de recrutement, participer à une réunion), valider son niveau d’anglais par une certification en langues, niveau B2 (TOEIC, CLES).</descriptionLongue>
+    <textePrerequis>Bon niveau d’ordre général pratique.</textePrerequis>
+    <objectifs>* Préparer l’étudiant à faire un entretien  d’embauche dans la langue anglaise (savoir communiquer dans le milieu professionnel).</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM2BO05" matiere="BO" cours="25" td="5" tp="18" ctd="" ctp="" total="48" semestre="2" coeff="5" ects="5">
+    <titre>Agronomie et amélioration des plantes</titre>
+    <methodeeval>Ecrit/Oral/TP</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT (CM+TD) Ecrit 2h + Oral + CC (TP)</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT (CM+TD) Ecrit 2h + (TP) Ecrit 1h</modalitesccsemestredeux>
+    <calculnfsessionune>Ecrit 50\% + Oral 25\% + TP 25\%</calculnfsessionune>
+    <calculnfsessiondeux>Ecrit 50\% + Oral 25\% + TP 25\%</calculnfsessiondeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Stéphane Maury</nompremierresp>
+    <emailpremierresp>stephane.maury@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte />
+    <descriptionLongue>Amélioration des plantes cultivées, processus de propagation des espèces végétales d’intérêt agronomique  (reproduction sexuée, multiplication végétative traditionnelle, in vitro, hors sol, initiation à la transgénèse) et utilisation des plantes pour la production de molécules à visée pharmacologique ou agroalimentaire (cultures cellulaires et ingénierie métabolique).</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Connaissances des méthodologies d’amélioration, production et exploitation des plantes notamment cultivées.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM2BO06" matiere="BO" cours="28" td="4" tp="16" ctd="" ctp="" total="48" semestre="2" coeff="5" ects="5">
+    <titre>Influence de l’environnement sur le développement des plantes</titre>
+    <methodeeval>Ecrit/Oral/TP</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT(E) 2h + oral + CC TP</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT(E) 2h + oral + CT TP 1h</modalitesccsemestredeux>
+    <calculnfsessionune>Ecrit 40\% + Oral 40\% + TP 20\%</calculnfsessionune>
+    <calculnfsessiondeux>Ecrit 40\% + Oral 40\% + TP 20\%</calculnfsessiondeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Daniel Hagège</nompremierresp>
+    <emailpremierresp>daniel.hagege@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte />
+    <descriptionLongue>Quelques mécanismes fondamentaux du contrôle du développement des plantes : Perception de l’environnement ; lumière et photomorphogenèse ; vernalisation ; gravitropisme.  Croissance et développement ; rôle du métabolisme secondaire ; lignine ; rôle des phytohormones et modes d’actions moléculaires.</descriptionLongue>
+    <textePrerequis>Connaissance générale sur la physiologie,  la croissance et le développement des végétaux.</textePrerequis>
+    <objectifs>* Connaissances approfondies des mécanismes physiologiques, biochimiques et moléculaires qui régissent les interactions entre les plantes et leur environnement.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOM2AG42" matiere="AG" cours="" td="24" tp="" ctd="" ctp="" total="24" semestre="2" coeff="3" ects="3">
+    <titre>Anglais Scientifique et communication</titre>
+    <methodeeval>Ecrit/Oral</methodeeval>
+    <modalitesccsemestreun>RNE et RSE : CT(E) 1h30 / CC(O) 15 min</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT(O) 20 min</modalitesccsemestredeux>
+    <calculnfsessionune>Ecrit 75\% + Oral 50\%</calculnfsessionune>
+    <calculnfsessiondeux>Oral\%</calculnfsessiondeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Lucile Mollet</nompremierresp>
+    <emailpremierresp>lucile.mollet@cnrs-orleans.fr</emailpremierresp>
+    <nomsecondresp>Olivier Richard</nomsecondresp>
+    <emailsecondresp>olivier.richard@univ-orleans.fr</emailsecondresp>
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Spécialités BBMB et BOPE / Passerelle MESC2A</descriptionCourte>
+    <descriptionLongue>Faire un bilan du stage de l’année passée et résumer les visites d’entreprises en anglais. Commenter le déroulement d’un atelier technologique en anglais. Se préparer à des entretiens en anglais pour une embauche (thèse ou poste R &amp; D)</descriptionLongue>
+    <textePrerequis>Bon niveau d’ordre général pratique, oral et écrite, assez bonne connaissance de la langue spécifique de son domaine scientifique et technique.</textePrerequis>
+    <objectifs>* Savoir présenter un rapport de travail en anglais et commenter le déroulement d’une expérimentation.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
 </livret>
