@@ -424,8 +424,8 @@ public class EcritureFichier {
 	
 	
 	//recupération des resultats de différentes parties pour tester les résultats 
-	/*public static void main (String [] args) throws Exception{
+	public static void main (String [] args) throws Exception{
 		String s1 = "\\'avion a décolé ce matin l'arbre est tombé d'un coup j'ai rien compris !";
 		System.out.println(checkFormat(s1));
-	}*/
+	}
 }

@@ -172,74 +172,79 @@
 		<xsl:text>INSERT IGNORE INTO livret_programme (_ID_PROMO_, _ID_MOD_) VALUES (@id_promo, @id_mod);&#xA;</xsl:text>
 		
 		<!-- ajout d'enseignant principal et son e-mail -->
-		<xsl:if test="./nomPremierResp">
-			<!-- Extraction des informations du Premier Responsable -->
-			<xsl:variable name="lastName" select="substring-before(./nomPremierResp, ' ')" />
-			<xsl:variable name="firstName" select="substring-after(./nomPremierResp, ' ')" />
-			<!--recup avnat 'insertion au cas ou il existe deja pour l'ignorer -->
-			<xsl:text>SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '</xsl:text>
-			<xsl:value-of select="$lastName"/>
-			<xsl:text>' AND _PRENOM_ENS_='</xsl:text>
-			<xsl:value-of select="$firstName"/>
-			<xsl:text>' AND _EMAIL_ENS_='</xsl:text>
-			<xsl:value-of select="./emailSecondResp"/>
-			<xsl:text>');&#xA;</xsl:text>
-			
-			<xsl:text>INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens1, '</xsl:text>
-			<xsl:value-of select="$lastName"/>
-			<xsl:text>', '</xsl:text>
-			<xsl:value-of select="$firstName"/>
-			<xsl:text>', '</xsl:text>
-			<xsl:value-of select="./emailPremierResp"/>
-			<xsl:text>');&#xA;</xsl:text>
-			
-			<!-- mise a jour de l'id du premier ens au cas il n'existait pas avant -->
-			<xsl:text>SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_='</xsl:text>
-			<xsl:value-of select="$lastName"/>
-			<xsl:text>' AND _PRENOM_ENS_='</xsl:text>
-			<xsl:value-of select="$firstName"/>
-			<xsl:text>' AND _EMAIL_ENS_='</xsl:text>
-			<xsl:value-of select="./emailSecondResp"/>
-			<xsl:text>');&#xA;</xsl:text>
-			
-			<!-- ajout comme responsable -->
-			<xsl:text>INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, 1);&#xA;</xsl:text>
-		</xsl:if>
-		
+		<xsl:choose>
+			<xsl:when test="not(./nompremierresp)"/>  <!-- on ne fait rien s'il est vide -->
+			<xsl:otherwise>
+				<!-- Extraction des informations du Premier Responsable -->
+				<xsl:variable name="lastName" select="substring-before(./nompremierresp, ' ')" />
+				<xsl:variable name="firstName" select="substring-after(./nompremierresp, ' ')" />
+				<!--recup avnat 'insertion au cas ou il existe deja pour l'ignorer -->
+				<xsl:text>SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '</xsl:text>
+				<xsl:value-of select="$lastName"/>
+				<xsl:text>' AND _PRENOM_ENS_='</xsl:text>
+				<xsl:value-of select="$firstName"/>
+				<xsl:text>' AND _EMAIL_ENS_='</xsl:text>
+				<xsl:value-of select="./emailsecondresp"/>
+				<xsl:text>');&#xA;</xsl:text>
+				<!-- insertion de l'enseignant -->
+				<xsl:text>INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens1, '</xsl:text>
+				<xsl:value-of select="$lastName"/>
+				<xsl:text>', '</xsl:text>
+				<xsl:value-of select="$firstName"/>
+				<xsl:text>', '</xsl:text>
+				<xsl:value-of select="./emailpremierresp"/>
+				<xsl:text>');&#xA;</xsl:text>
+				
+				<!-- mise a jour de l'id du premier ens au cas il n'existait pas avant -->
+				<xsl:text>SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_='</xsl:text>
+				<xsl:value-of select="$lastName"/>
+				<xsl:text>' AND _PRENOM_ENS_='</xsl:text>
+				<xsl:value-of select="$firstName"/>
+				<xsl:text>' AND _EMAIL_ENS_='</xsl:text>
+				<xsl:value-of select="./emailpremierresp"/>
+				<xsl:text>');&#xA;</xsl:text>
+				
+				<!-- ajout comme responsable -->
+				<xsl:text>INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, '1');&#xA;</xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
 		
 		<!-- Ajout de responsable secondaire et son e-mail Meme principe que le Premier -->
-		<xsl:if test="./nomSecondResp">
-			<!-- Extraction du nom et prenom du second enseignant -->
-			<xsl:variable name="lastName" select="substring-before(./nomSecondResp, ' ')" />
-			<xsl:variable name="firstName" select="substring-after(./nomSecondResp, ' ')" />
-
-			<xsl:text>SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '</xsl:text>
-			<xsl:value-of select="$lastName"/>
-			<xsl:text>' AND _PRENOM_ENS_='</xsl:text>
-			<xsl:value-of select="$firstName"/>
-			<xsl:text>' AND _EMAIL_ENS_='</xsl:text>
-			<xsl:value-of select="./emailSecondResp"/>
-			<xsl:text>');&#xA;</xsl:text>
-			
-			<xsl:text>INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens2,'</xsl:text>
-			<xsl:value-of select="$lastName"/>
-			<xsl:text>', '</xsl:text>
-			<xsl:value-of select="$firstName"/>
-			<xsl:text>', '</xsl:text>
-			<xsl:value-of select="./emailSecondResp"/>
-			<xsl:text>');&#xA;</xsl:text>
-			
-			<xsl:text>SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '</xsl:text>
-			<xsl:value-of select="$lastName"/>
-			<xsl:text>' AND _PRENOM_ENS_='</xsl:text>
-			<xsl:value-of select="$firstName"/>
-			<xsl:text>' AND _EMAIL_ENS_='</xsl:text>
-			<xsl:value-of select="./emailSecondResp"/>
-			<xsl:text>');&#xA;</xsl:text>
-			
-			<!-- ajout comme responsable -->
-			<xsl:text>INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, 2);&#xA;</xsl:text>
-		</xsl:if>
+		<xsl:choose>
+			<xsl:when test="not(./nomsecondresp)"/> <!-- on ne fait rien s'il est vide -->
+			<xsl:otherwise>
+				<!-- Extraction du nom et prenom du second enseignant -->
+				<xsl:variable name="lastName" select="substring-before(./nomsecondresp, ' ')" />
+				<xsl:variable name="firstName" select="substring-after(./nomsecondresp, ' ')" />
+	
+				<xsl:text>SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '</xsl:text>
+				<xsl:value-of select="$lastName"/>
+				<xsl:text>' AND _PRENOM_ENS_='</xsl:text>
+				<xsl:value-of select="$firstName"/>
+				<xsl:text>' AND _EMAIL_ENS_='</xsl:text>
+				<xsl:value-of select="./emailsecondresp"/>
+				<xsl:text>');&#xA;</xsl:text>
+				
+				<xsl:text>INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens2,'</xsl:text>
+				<xsl:value-of select="$lastName"/>
+				<xsl:text>', '</xsl:text>
+				<xsl:value-of select="$firstName"/>
+				<xsl:text>', '</xsl:text>
+				<xsl:value-of select="./emailsecondresp"/>
+				<xsl:text>');&#xA;</xsl:text>
+				
+				<xsl:text>SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '</xsl:text>
+				<xsl:value-of select="$lastName"/>
+				<xsl:text>' AND _PRENOM_ENS_='</xsl:text>
+				<xsl:value-of select="$firstName"/>
+				<xsl:text>' AND _EMAIL_ENS_='</xsl:text>
+				<xsl:value-of select="./emailsecondresp"/>
+				<xsl:text>');&#xA;</xsl:text>
+				
+				<!-- ajout comme responsable -->
+				<xsl:text>INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, '2');&#xA;</xsl:text>
+			</xsl:otherwise>
+		</xsl:choose>
 		
 		<!-- Ajout du code Apogee s'il existe -->
 		<xsl:if test="./codeApogee1">
