@@ -18,7 +18,7 @@ INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTR
 \textit{Les limites et problèmes actuels de la transgénèse végétale} : méthodes alternatives, intégration ciblée des gènes d’intérêt, transplastomique, suppression des gènes de sélection, etc...', '', '', '', '', '', 'Techniques en biologie moléculaire.', '', 'Biblio', '', 'Parcours BMC / BBV');
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Biotechnologie appliquée' AND _ECTS_='5' AND _CODE_MAT_='BH');
 INSERT IGNORE INTO livret_programme (_ID_PROMO_, _ID_MOD_) VALUES (@id_promo, @id_mod);
-SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Maryvonne' AND _PRENOM_ENS_='Ardourel' AND _EMAIL_ENS_='');
+SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Maryvonne' AND _PRENOM_ENS_='Ardourel' AND _EMAIL_ENS_='maryvonne ardourel@univ-orleans.fr');
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens1, 'Maryvonne', 'Ardourel', 'maryvonne ardourel@univ-orleans.fr');
 SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_='Maryvonne' AND _PRENOM_ENS_='Ardourel' AND _EMAIL_ENS_='maryvonne ardourel@univ-orleans.fr');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, '1');
@@ -26,11 +26,12 @@ SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens2,'', '', '');
 SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '' AND _PRENOM_ENS_='' AND _EMAIL_ENS_='');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, '2');
+INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('SOL6BH02', @id_mod);
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Anglais 6' AND _ECTS_='3' AND _CODE_MAT_='AG');
 INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_, _MOD_CC_1_, _MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_mod, 'AG', 'Anglais 6', '6', '0', '24', '0', '0', '3', '3', 'Français_', '* Comprendre l’information exprimée dans des messages complexes sur le domaine des Sciences et Technologies et s’exprimer sur ce même domaine à l’oral avec un degré de spontanéité et de fluidité (niveau européen B2).', 'Travail de compréhension et d’expression à partir de documents authentiques longs et/ou complexes, portant sur des innovations technologiques, des découvertes ou avancées scientifiques.', '', '', '', '', '', 'Avoir suivi Anglais 5 ou environ 500 heures de formation équivalente.', '', 'Biblio', '', 'Parcours BMC / BOPE / BGST / BBV / PLURI');
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Anglais 6' AND _ECTS_='3' AND _CODE_MAT_='AG');
 INSERT IGNORE INTO livret_programme (_ID_PROMO_, _ID_MOD_) VALUES (@id_promo, @id_mod);
-SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Hervé' AND _PRENOM_ENS_='Perreau' AND _EMAIL_ENS_='');
+SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Hervé' AND _PRENOM_ENS_='Perreau' AND _EMAIL_ENS_='herve.perreau@univ-orleans.fr');
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens1, 'Hervé', 'Perreau', 'herve.perreau@univ-orleans.fr');
 SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_='Hervé' AND _PRENOM_ENS_='Perreau' AND _EMAIL_ENS_='herve.perreau@univ-orleans.fr');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, '1');
@@ -38,11 +39,12 @@ SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens2,'', '', '');
 SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '' AND _PRENOM_ENS_='' AND _EMAIL_ENS_='');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, '2');
+INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('SOL6AG36', @id_mod);
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Transduction des signaux chez les plantes' AND _ECTS_='3' AND _CODE_MAT_='BO');
 INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_, _MOD_CC_1_, _MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_mod, 'BO', 'Transduction des signaux chez les plantes', '6', '12', '4', '8', '0', '3', '3', 'Français_', '* Connaissances générales en agronomie.', 'Perception de l’environnement par les plantes (généralités)- Les récepteurs impliqués dans la perception ; Rôle des régulateurs à phosphorelais : les récepteurs à l’éthylène, les récepteurs aux cytokinines, Rôle des LeucineRichRepeat Récepteur Kinases. Acteurs de la transduction et messagers secondaires : les protéines G hétérotrimériques, les petites protéines G, les protéines kinases, les phosphatases, les phospholipases, le calcium, l\'AMPc, l\'adénosine-diphosphate-ribose cyclique. Le système ubiquitine/protéasome.', '', '', '', '', '', '', 'Taiz et Zeiger (Sinauer), revues spécialisées (Trends in plant Sciences)', 'Biblio', '', 'Parcours BOPE / BBV');
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Transduction des signaux chez les plantes' AND _ECTS_='3' AND _CODE_MAT_='BO');
 INSERT IGNORE INTO livret_programme (_ID_PROMO_, _ID_MOD_) VALUES (@id_promo, @id_mod);
-SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Daniel' AND _PRENOM_ENS_='Hagège' AND _EMAIL_ENS_='');
+SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Daniel' AND _PRENOM_ENS_='Hagège' AND _EMAIL_ENS_='daniel.hagege@univ-orleans.fr');
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens1, 'Daniel', 'Hagège', 'daniel.hagege@univ-orleans.fr');
 SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_='Daniel' AND _PRENOM_ENS_='Hagège' AND _EMAIL_ENS_='daniel.hagege@univ-orleans.fr');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, '1');
@@ -50,11 +52,12 @@ SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens2,'', '', '');
 SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '' AND _PRENOM_ENS_='' AND _EMAIL_ENS_='');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, '2');
+INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('SOL6BO03', @id_mod);
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Fixation de l\'azote et agroéconomie végétale' AND _ECTS_='5' AND _CODE_MAT_='BO');
 INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_, _MOD_CC_1_, _MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_mod, 'BO', 'Fixation de l\'azote et agroéconomie végétale', '6', '24', '4', '20', '0', '5', '5', 'Français_', '* Acquisition des connaissances de base de la physiologie végétales.', 'Métabolisme azoté et fixation symbiotique. Du blé au pain- De la vigne au vin. Sorties : utilisation des farines boulangères ; laboratoire de recherche sur la qualité des blés ; entreprise vinicole.', '', '', '', '', '', '', '', 'Biblio', '', 'Parcours BGST / BBV');
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Fixation de l\'azote et agroéconomie végétale' AND _ECTS_='5' AND _CODE_MAT_='BO');
 INSERT IGNORE INTO livret_programme (_ID_PROMO_, _ID_MOD_) VALUES (@id_promo, @id_mod);
-SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Daniel' AND _PRENOM_ENS_='Hagège' AND _EMAIL_ENS_='');
+SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Daniel' AND _PRENOM_ENS_='Hagège' AND _EMAIL_ENS_='daniel.hagege@univ-orleans.fr');
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens1, 'Daniel', 'Hagège', 'daniel.hagege@univ-orleans.fr');
 SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_='Daniel' AND _PRENOM_ENS_='Hagège' AND _EMAIL_ENS_='daniel.hagege@univ-orleans.fr');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, '1');
@@ -62,11 +65,12 @@ SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens2,'', '', '');
 SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '' AND _PRENOM_ENS_='' AND _EMAIL_ENS_='');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, '2');
+INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('SOL6BO05', @id_mod);
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Stage laboratoire' AND _ECTS_='3' AND _CODE_MAT_='PJ');
 INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_, _MOD_CC_1_, _MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_mod, 'PJ', 'Stage laboratoire', '6', '0', '0', '0', '0', '3', '3', 'Français_', '* Initiation au travail de recherche en laboratoire.', 'Stage en laboratoire académique ou industriel dans le domaine du parcours envisagé. La durée est de 4 à 6 semaines (détails de l’organisation fourni durant le semestre 5, avec signature d‘une convention de stage.', '', '', '', '', 'E 66\% + TP 33\%', '', '', 'Biblio', '', 'Parcours BOPE / BMC / BBV');
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Stage laboratoire' AND _ECTS_='3' AND _CODE_MAT_='PJ');
 INSERT IGNORE INTO livret_programme (_ID_PROMO_, _ID_MOD_) VALUES (@id_promo, @id_mod);
-SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Géraldine' AND _PRENOM_ENS_='Roux' AND _EMAIL_ENS_='fabienne.brule@univ-orleans.fr');
+SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Géraldine' AND _PRENOM_ENS_='Roux' AND _EMAIL_ENS_='geraldine.roux@univ-orleans.fr');
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens1, 'Géraldine', 'Roux', 'geraldine.roux@univ-orleans.fr');
 SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_='Géraldine' AND _PRENOM_ENS_='Roux' AND _EMAIL_ENS_='geraldine.roux@univ-orleans.fr');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, '1');
@@ -74,6 +78,7 @@ SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens2,'Fabienne', 'Brulé', 'fabienne.brule@univ-orleans.fr');
 SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Fabienne' AND _PRENOM_ENS_='Brulé' AND _EMAIL_ENS_='fabienne.brule@univ-orleans.fr');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, '2');
+INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('SOL6ST04', @id_mod);
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Culture végétale in vitro' AND _ECTS_='4' AND _CODE_MAT_='BO');
 INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_, _MOD_CC_1_, _MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_mod, 'BO', 'Culture végétale in vitro', '6', '12', '8', '16', '0', '4', '4', 'Français_', '* Connaître les bases de la culture in vitro ; Savoir manipuler en conditions d’asepsie ; Maîtriser la technique ;
 Savoir l\'utiliser comme un outil d\'étude des processus de croissance et de développement des végétaux ; Etre capable de
@@ -84,7 +89,7 @@ somatique ; amélioration sanitaire et génétique ; variation soma-clonale ; pr
 industrielle de la technique).', '', '', '', '', '', '', '', 'Biblio', '', '');
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Culture végétale in vitro' AND _ECTS_='4' AND _CODE_MAT_='BO');
 INSERT IGNORE INTO livret_programme (_ID_PROMO_, _ID_MOD_) VALUES (@id_promo, @id_mod);
-SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Daniel' AND _PRENOM_ENS_='Hagège' AND _EMAIL_ENS_='eric.laine.univ-orleans.fr');
+SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Daniel' AND _PRENOM_ENS_='Hagège' AND _EMAIL_ENS_='daniel.hagege@univ-orleans.fr');
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens1, 'Daniel', 'Hagège', 'daniel.hagege@univ-orleans.fr');
 SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_='Daniel' AND _PRENOM_ENS_='Hagège' AND _EMAIL_ENS_='daniel.hagege@univ-orleans.fr');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, '1');
@@ -92,12 +97,13 @@ SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens2,'Eric', 'Lainé', 'eric.laine.univ-orleans.fr');
 SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Eric' AND _PRENOM_ENS_='Lainé' AND _EMAIL_ENS_='eric.laine.univ-orleans.fr');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, '2');
+INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('SOL6BO14', @id_mod);
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Molécules naturelles' AND _ECTS_='4' AND _CODE_MAT_='BO');
 INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_, _MOD_CC_1_, _MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_mod, 'BO', 'Molécules naturelles', '6', '16', '12', '18', '0', '4', '4', 'Français_', '* Acquisition des connaissances de base de la physiologie végétale.', 'Connaissance des principales molécules d\'origine végétales utilisables en bio-industries, voies de biosynthèse et
 applications.', '', '', '', '', '', '', '', 'Pharmacognosie J. Bruneton Tec-Doc', '', '');
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Molécules naturelles' AND _ECTS_='4' AND _CODE_MAT_='BO');
 INSERT IGNORE INTO livret_programme (_ID_PROMO_, _ID_MOD_) VALUES (@id_promo, @id_mod);
-SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Daniel' AND _PRENOM_ENS_='Hagège' AND _EMAIL_ENS_='eric.laine.univ-orleans.fr');
+SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Daniel' AND _PRENOM_ENS_='Hagège' AND _EMAIL_ENS_='daniel.hagege@univ-orleans.fr');
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens1, 'Daniel', 'Hagège', 'daniel.hagege@univ-orleans.fr');
 SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_='Daniel' AND _PRENOM_ENS_='Hagège' AND _EMAIL_ENS_='daniel.hagege@univ-orleans.fr');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, '1');
@@ -105,13 +111,14 @@ SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens2,'Eric', 'Lainé', 'eric.laine.univ-orleans.fr');
 SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Eric' AND _PRENOM_ENS_='Lainé' AND _EMAIL_ENS_='eric.laine.univ-orleans.fr');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, '2');
+INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('SOL6BO13', @id_mod);
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Microbiologie appliquée' AND _ECTS_='4' AND _CODE_MAT_='BH');
 INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_, _MOD_CC_1_, _MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_mod, 'BH', 'Microbiologie appliquée', '6', '20', '0', '16', '0', '4', '4', 'Français_', '* Donner un aperçu des différentes utilisations potentielles des micro-organismes, de connaître les
 démarches et de savoir effectuer des contrôles bactériologiques de l’eau et en agro-alimentaire', 'Interactions entre micro-organismes : Associations synergiques et antagonistes, commensalisme, mutualisme,
 parasitisme. Microbiologie du sol et de l’eau : Les grands cycles (Carbone, Azote, Soufre) ; auto-épuration et biodégradation (ex : xénobiotiques, lixiviats, résidus industriels). Techniques d’analyse des eaux et du sol. Microbiologie médicale : Virus et bactéries pathogènes (habitat, épidémiologie, pouvoir pathogène, diagnostic, traitement). Microbiologie industrielle : Fermentations d’intérêts économiques.', '', '', '', '', '', '', '', 'Biblio', '', 'Parcours BMC / BBV');
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Microbiologie appliquée' AND _ECTS_='4' AND _CODE_MAT_='BH');
 INSERT IGNORE INTO livret_programme (_ID_PROMO_, _ID_MOD_) VALUES (@id_promo, @id_mod);
-SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Maryvonne' AND _PRENOM_ENS_='Ardourel' AND _EMAIL_ENS_='');
+SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Maryvonne' AND _PRENOM_ENS_='Ardourel' AND _EMAIL_ENS_='maryvonne.ardourel@univ-orleans.fr');
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens1, 'Maryvonne', 'Ardourel', 'maryvonne.ardourel@univ-orleans.fr');
 SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_='Maryvonne' AND _PRENOM_ENS_='Ardourel' AND _EMAIL_ENS_='maryvonne.ardourel@univ-orleans.fr');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, '1');
@@ -119,11 +126,12 @@ SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens2,'', '', '');
 SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '' AND _PRENOM_ENS_='' AND _EMAIL_ENS_='');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, '2');
+INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('SOL6BH03', @id_mod);
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Métabolisme normal et pathologique' AND _ECTS_='4' AND _CODE_MAT_='BH');
 INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_, _MOD_CC_1_, _MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_mod, 'BH', 'Métabolisme normal et pathologique', '6', '28', '8', '0', '0', '4', '4', 'Français_', '* Métabolisme humain avancé et son contrôle hormonal ; pathologies associées.', 'Rappels des principales voies du métabolisme glucidique et lipidique ; métabolisme des acides aminés (élimination de l’azote ; cycle de l’urée ; biosynthèse des acides aminés non indispensables). Intégration métabolique tissulaire ; métabolisme « en situation » : état post-prandial ; jeûne pathologique et non pathologique, métabolisme musculaire. Métabolisme des nucléotides (biosynthèse ; chimiothérapie anticancéreuse ; dégradation) ; métabolisme du cholestérol (trafic intratissulaire et athérosclérose) et de l’hème. Modes de contrôle hormonal et pathologies associées.', '', '', '', '', '', 'unités Biochimie métabolique et enzymologie des semestres 3 et 4.', '', 'Biblio', '', 'Parcours BMC / BBV');
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Métabolisme normal et pathologique' AND _ECTS_='4' AND _CODE_MAT_='BH');
 INSERT IGNORE INTO livret_programme (_ID_PROMO_, _ID_MOD_) VALUES (@id_promo, @id_mod);
-SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Eric' AND _PRENOM_ENS_='Hébert' AND _EMAIL_ENS_='');
+SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Eric' AND _PRENOM_ENS_='Hébert' AND _EMAIL_ENS_='eric.hebert@univ-orleans.fr');
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens1, 'Eric', 'Hébert', 'eric.hebert@univ-orleans.fr');
 SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_='Eric' AND _PRENOM_ENS_='Hébert' AND _EMAIL_ENS_='eric.hebert@univ-orleans.fr');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, '1');
@@ -131,11 +139,12 @@ SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens2,'', '', '');
 SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '' AND _PRENOM_ENS_='' AND _EMAIL_ENS_='');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, '2');
+INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('SOL6BH01', @id_mod);
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Stage terrain : diversité des algues marines' AND _ECTS_='3' AND _CODE_MAT_='BO');
 INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_, _MOD_CC_1_, _MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_mod, 'BO', 'Stage terrain : diversité des algues marines', '6', '0', '0', '24', '0', '3', '3', 'Français_', '* Identifier les principales algues des cotes françaises. Réaliser un alguier.', 'Etude sur le terrain (3 jours) des macroalgues benthiques. Observation des algues dans leur milieu naturel, identification des échantillons récoltés par analyse en laboratoire.', '', '', '', '', 'E 66\% + TP 33\%', 'Connaissance des cycles biologiques des algues.', '', 'Biblio', '', 'Parcours BOPE / BBV / BGST');
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Stage terrain : diversité des algues marines' AND _ECTS_='3' AND _CODE_MAT_='BO');
 INSERT IGNORE INTO livret_programme (_ID_PROMO_, _ID_MOD_) VALUES (@id_promo, @id_mod);
-SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Christiane' AND _PRENOM_ENS_='Depierreux' AND _EMAIL_ENS_='');
+SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Christiane' AND _PRENOM_ENS_='Depierreux' AND _EMAIL_ENS_='christiane.depierreux@univ-orleans.fr');
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens1, 'Christiane', 'Depierreux', 'christiane.depierreux@univ-orleans.fr');
 SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_='Christiane' AND _PRENOM_ENS_='Depierreux' AND _EMAIL_ENS_='christiane.depierreux@univ-orleans.fr');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, '1');
@@ -143,13 +152,14 @@ SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens2,'', '', '');
 SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '' AND _PRENOM_ENS_='' AND _EMAIL_ENS_='');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, '2');
+INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('SOL6BO08', @id_mod);
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Virologie moléculaire' AND _ECTS_='3' AND _CODE_MAT_='BH');
 INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_, _MOD_CC_1_, _MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_mod, 'BH', 'Virologie moléculaire', '6', '24', '0', '0', '0', '3', '3', 'Français_', '* Acquérir des connaissances dans le domaine de la virologie;', 'Présentation du monde viral. Modes de réplication des virus. Interactions virus/cellule. Diagnostic et traitements
 anti-viraux. Action anti-virale du système immunitaire et stratégies d’échappement du virus. Vaccins et vecteurs viraux.
 Particularités des virus des végétaux. Exemples : VIH, Rougeole, Hépatites, Virus émergents, Virus de plantes, ...', '', '', '', '', '', 'Bases fondamentales de la biologie moléculaire, Immunologie générale.', '', 'Biblio', '', 'Parcours BBV / BMC');
 SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='Virologie moléculaire' AND _ECTS_='3' AND _CODE_MAT_='BH');
 INSERT IGNORE INTO livret_programme (_ID_PROMO_, _ID_MOD_) VALUES (@id_promo, @id_mod);
-SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Fabienne' AND _PRENOM_ENS_='Brulé' AND _EMAIL_ENS_='');
+SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = 'Fabienne' AND _PRENOM_ENS_='Brulé' AND _EMAIL_ENS_='fabienne.brule-morabito@univ-orleans.fr');
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens1, 'Fabienne', 'Brulé', 'fabienne.brule-morabito@univ-orleans.fr');
 SET @id_ens1 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_='Fabienne' AND _PRENOM_ENS_='Brulé' AND _EMAIL_ENS_='fabienne.brule-morabito@univ-orleans.fr');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, '1');
@@ -157,3 +167,4 @@ SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_
 INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens2,'', '', '');
 SET @id_ens2 := (SELECT DISTINCT _ID_ENS_ FROM livret_enseignant WHERE _NOM_ENS_ = '' AND _PRENOM_ENS_='' AND _EMAIL_ENS_='');
 INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, '2');
+INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('SOL6BH05', @id_mod);

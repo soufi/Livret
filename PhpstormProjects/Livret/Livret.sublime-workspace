@@ -4,6 +4,238 @@
 		"selected_items":
 		[
 			[
+				"trouvé",
+				"trouvée"
+			],
+			[
+				"genere",
+				"genereWarning"
+			],
+			[
+				"libelle",
+				"libelleOfCode"
+			],
+			[
+				"cal",
+				"calculNF2"
+			],
+			[
+				"cac",
+				"calculNF1"
+			],
+			[
+				"modC",
+				"modCC2"
+			],
+			[
+				"lang",
+				"langues"
+			],
+			[
+				"ec",
+				"ects"
+			],
+			[
+				"nbr",
+				"nbrCTD"
+			],
+			[
+				"nb",
+				"nbrC"
+			],
+			[
+				"code",
+				"codeMatiere"
+			],
+			[
+				"id",
+				"idModule"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"les",
+				"lesLangues"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"_Cal",
+				"_CALCUL_NF_1_"
+			],
+			[
+				"_C",
+				"_COEF_"
+			],
+			[
+				"_NBH",
+				"_NBH_TP_"
+			],
+			[
+				"_NBH_",
+				"_NBH_TD_"
+			],
+			[
+				"Module",
+				"Module"
+			],
+			[
+				"_NB",
+				"_NBH_TP_"
+			],
+			[
+				"Mati",
+				"Matière"
+			],
+			[
+				"Libelle",
+				"Libelle"
+			],
+			[
+				"inser",
+				"insertMatiere"
+			],
+			[
+				"liv",
+				"livret_module"
+			],
+			[
+				"_code",
+				"_code"
+			],
+			[
+				"delete",
+				"deleteMatiere"
+			],
+			[
+				"Matiere",
+				"MatiereTool"
+			],
+			[
+				"requete",
+				"requete"
+			],
+			[
+				"PARAM",
+				"PARAM_STR"
+			],
+			[
+				"pre",
+				"prepare"
+			],
+			[
+				"livret",
+				"livret_matiere"
+			],
+			[
+				"color",
+				"color3"
+			],
+			[
+				"is_nu",
+				"is_numeric"
+			],
+			[
+				"colo",
+				"color3"
+			],
+			[
+				"co",
+				"color2"
+			],
+			[
+				"col",
+				"color1"
+			],
+			[
+				"PARAM_",
+				"PARAM_INT"
+			],
+			[
+				"_color",
+				"_color3"
+			],
+			[
+				"_col",
+				"_color1"
+			],
+			[
+				"req",
+				"requete"
+			],
+			[
+				"_COU",
+				"_COULEUR3_"
+			],
+			[
+				"_COUL",
+				"_COULEUR1_"
+			],
+			[
+				"_c",
+				"_cfg"
+			],
+			[
+				"ex",
+				"explode"
+			],
+			[
+				"_ID_",
+				"_ID_COMPO_"
+			],
+			[
+				"Filier",
+				"Filiere"
+			],
+			[
+				"_id",
+				"_idCompo"
+			],
+			[
+				"Filiere",
+				"FiliereTool"
+			],
+			[
+				"bind",
+				"bindValue"
+			],
+			[
+				"contr",
+				"control-label"
+			],
+			[
+				"Fili",
+				"Filière"
+			],
+			[
+				"_",
+				"_ID_COMPO_"
+			],
+			[
+				"try",
+				"try	Wrap in try { … } catch (…) { … }"
+			],
+			[
+				"getB",
+				"getByID"
+			],
+			[
+				"Composante",
+				"ComposanteTool"
+			],
+			[
+				"Compo",
+				"ComposanteTool"
+			],
+			[
+				"exec",
+				"execute"
+			],
+			[
 				"allC",
 				"allComposantes"
 			],
@@ -16,74 +248,46 @@
 				"allCompo"
 			],
 			[
-				"Composante",
-				"Composante"
-			],
-			[
 				"table",
 				"table"
 			],
 			[
-				"for",
-				"foreach	foreach …"
-			],
-			[
 				"var",
 				"var_dump"
-			],
-			[
-				"req",
-				"require_once"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "manage.php",
+			"file": "Managers/filiereManager.php",
 			"settings":
 			{
-				"buffer_size": 1334,
+				"buffer_size": 3084,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Managers/compoManager.php",
+			"file": "Managers/matiereManager.php",
 			"settings":
 			{
-				"buffer_size": 1200,
+				"buffer_size": 3871,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Tools/composante.php",
+			"file": "Managers/moduleManager.php",
 			"settings":
 			{
-				"buffer_size": 7865,
+				"buffer_size": 7134,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Blocks/nav_gestion.html",
+			"file": "Tools/module.php",
 			"settings":
 			{
-				"buffer_size": 623,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Blocks/entete.html",
-			"settings":
-			{
-				"buffer_size": 1421,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "showIsotope.php",
-			"settings":
-			{
-				"buffer_size": 2238,
+				"buffer_size": 38257,
 				"line_ending": "Unix"
 			}
 		},
@@ -91,7 +295,31 @@
 			"file": "Tools/matiere.php",
 			"settings":
 			{
-				"buffer_size": 4721,
+				"buffer_size": 11736,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Tools/filiere.php",
+			"settings":
+			{
+				"buffer_size": 13394,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Blocks/nav_gestion.html",
+			"settings":
+			{
+				"buffer_size": 798,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Blocks/entete.html",
+			"settings":
+			{
+				"buffer_size": 1492,
 				"line_ending": "Unix"
 			}
 		}
@@ -120,17 +348,26 @@
 	},
 	"file_history":
 	[
-		"/Users/Souf/PhpstormProjects/Livret/CSS/Bootstrap/js/bootstrap.js",
-		"/Users/Souf/PhpstormProjects/Livret/showIsotope.php",
-		"/Users/Souf/PhpstormProjects/Livret/Tools/filterDiv.php",
-		"/Users/Souf/PhpstormProjects/Livret/Tools/matiere.php",
 		"/Users/Souf/PhpstormProjects/Livret/Tools/module.php",
-		"/Users/Souf/PhpstormProjects/Livret/ndex.php",
-		"/Users/Souf/PhpstormProjects/Livret/Livret.sublime-project",
+		"/Users/Souf/PhpstormProjects/Livret/Managers/promoManager.php",
 		"/Users/Souf/PhpstormProjects/Livret/Tools/connexion.php",
-		"/Users/Souf/PhpstormProjects/Livret/Tools/filiere.php",
 		"/Users/Souf/PhpstormProjects/Livret/Tools/composante.php",
 		"/Users/Souf/PhpstormProjects/Livret/Tools/promotion.php",
+		"/Users/Souf/PhpstormProjects/Livret/Managers/PromoManager.php",
+		"/Users/Souf/PhpstormProjects/Livret/Managers/compoManager.php",
+		"/Users/Souf/PhpstormProjects/Livret/Blocks/nav_gestion.html",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/filiere.php",
+		"/Users/Souf/PhpstormProjects/Livret/manage.php",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/color.php",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/alerts.php",
+		"/Users/Souf/PhpstormProjects/Livret/Managers/filiereManager.php",
+		"/Users/Souf/PhpstormProjects/Livret/Blocks/entete.html",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/matiere.php",
+		"/Users/Souf/PhpstormProjects/Livret/showIsotope.php",
+		"/Users/Souf/PhpstormProjects/Livret/CSS/Bootstrap/js/bootstrap.js",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/filterDiv.php",
+		"/Users/Souf/PhpstormProjects/Livret/ndex.php",
+		"/Users/Souf/PhpstormProjects/Livret/Livret.sublime-project",
 		"/Users/Souf/PhpstormProjects/Livret/Tools/ue.php",
 		"/Users/Souf/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/Souf/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
@@ -142,9 +379,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -152,6 +390,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"variable",
+			"$line = $line.",
+			"$form = $form.",
+			"$table = $table.",
+			"$form = $form.",
+			"$line = $line.",
+			"bindValue",
+			"expression",
+			"Aucune",
 			"CSS",
 			"modal",
 			"</a> <span class=\"add-on\"> <i class=\"icon-chevron-right\"></i> </span>",
@@ -170,88 +417,125 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$line .= ",
+			"$form .= ",
+			"$table .= ",
+			"$form .= ",
+			"$line .= ",
+			"bindParam",
 			"<span class=\"add-on\"> <i class=\"icon-chevron-right\"></i> </span> </a>",
 			"<span class=\"add-on\">",
 			"<span> <i class=\"icon-chevron-right\"></i> </span>"
 		],
 		"reverse": false,
-		"show_context": true,
-		"use_buffer2": true,
+		"show_context": false,
+		"use_buffer2": false,
 		"whole_word": false,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "manage.php",
+					"file": "Managers/filiereManager.php",
 					"settings":
 					{
-						"buffer_size": 1334,
+						"buffer_size": 3084,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								578,
-								578
+								1946,
+								1946
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 473.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Managers/compoManager.php",
+					"file": "Managers/matiereManager.php",
 					"settings":
 					{
-						"buffer_size": 1200,
+						"buffer_size": 3871,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1142,
-								1142
+								2664,
+								2664
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 471.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Tools/composante.php",
+					"file": "Managers/moduleManager.php",
 					"settings":
 					{
-						"buffer_size": 7865,
+						"buffer_size": 7134,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2485,
-								2485
+								6972,
+								6972
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1418.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Tools/module.php",
+					"settings":
+					{
+						"buffer_size": 38257,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3062,
+								3062
 							]
 						],
 						"settings":
@@ -260,26 +544,79 @@
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 52.0,
-						"translation.y": 263.0,
+						"translation.x": 0.0,
+						"translation.y": 295.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "Blocks/nav_gestion.html",
+					"buffer": 4,
+					"file": "Tools/matiere.php",
 					"settings":
 					{
-						"buffer_size": 623,
+						"buffer_size": 11736,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								569,
-								569
+								11340,
+								11340
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2784.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Tools/filiere.php",
+					"settings":
+					{
+						"buffer_size": 13394,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6805,
+								6805
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1609.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Blocks/nav_gestion.html",
+					"settings":
+					{
+						"buffer_size": 798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								690,
+								690
 							]
 						],
 						"settings":
@@ -293,78 +630,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 7,
 					"file": "Blocks/entete.html",
 					"settings":
 					{
-						"buffer_size": 1421,
+						"buffer_size": 1492,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								782,
-								782
+								589,
+								589
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "showIsotope.php",
-					"settings":
-					{
-						"buffer_size": 2238,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1434,
-								1434
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 158.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Tools/matiere.php",
-					"settings":
-					{
-						"buffer_size": 4721,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								266,
-								266
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,

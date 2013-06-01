@@ -1,14 +1,487 @@
 <?php
 include_once("connexion.php");
 include_once("matiere.php");
+include_once("alerts.php");
 	
 	//les attributs de cette class seront mis automatiquement grace a PDO::FETCH_CLASS
 	class Module{
+        //un tableau contenant des langues pour la liste déroulante de langue
+        static $lesLangues = Array("Allemand","Arabe","Anglais","Bulgare","Catalan","Coréen","Croite","Danois","Espagnol","Français","Grec","Irlandais","Italien","Japonais","Latin","Néerlandais","Norvégien","Polonais","Portugais","Roumain","Russe","Serbe","Suédois","Tchèque","Turc","Ukrainien","Vietnamien");
+		
+        //genere une ligne d'un tableau contenant les informations de l'instance
+        public function genereLine($connect){
+        	$line = "<tr>";
+        	if(!empty($connect)){
+                //on affiche le probleme au cas ou une exception est levee
+                try {
+                    $line .= "<input type='hidden' value='".$this->_ID_MOD_."'/>";
+                    $line .= "<td> ".$this->_LIBELLE_MOD_."</td>";
+                    $line .= "<td>".MatiereTool::libelleOfCode($connect, $this->_CODE_MAT_)."</td>";
+                    $line .= "<td>".$this->_SEMESTRE_."</td>";
+                    $line .= "<td>".$this->_NBH_C_."</td>";
+                    $line .= "<td>".$this->_NBH_TD_."</td>";
+                    $line .= "<td>".$this->_NBH_TP_."</td>";
+                    $line .= "<td>".$this->_NBH_CTD_."</td>";
+                    $line .= "<td>".$this->_ECTS_."</td>";
+                    $line .= "<td>".$this->_COEF_."</td>";
+                } catch (Exception $e) {
+                    $line .= AlertTool::genereDanger($e->getMessage());
+                }
+        	}else
+        		$line .= AlertTool::genereWarning("Impossible de Récupérer les informations de la base");
+        	$line .= "</tr>";
+	        return $line;
+        }
+
+        //genere un tableau contenant les informations de l'instance
+        public static function genereTable($connect, $tableauModule, $page){
+        	$table = "<table class='table table-hover'> <div class='well well-small'> <h2>Les Modules</h2></div>";
+        	if(!empty($connect)){
+	            if(!empty($tableauModule)){
+	                $table .= "<tr>";
+	                //les titres des colonnes
+	                $table .= "<th>Libelle</th>";
+	                $table .= "<th>Matière</th>";
+	                $table .= "<th>Semestre</th>";
+	                $table .= "<th>Heure Cours</th>";
+	                $table .= "<th>Heure TD</th>";
+	                $table .= "<th>Heure TP</th>";
+	                $table .= "<th>Heure Cours-TD</th>";
+	                $table .= "<th>ECTS</th>";
+	                $table .= "<th>Coefficient</th>";
+	                $table .= "</tr>";
+	                //generation des lignes du tableau
+                    //prise en compte de pagination
+                    $taillePage = 15;//le nombre de ligne par page
+                    $nbrModules = count($tableauModule); //le nombre de modules
+                    $nbrPage = $nbrModules / $taillePage;
+                    //on ajoute une page dans le cas ou le nombre n'est pas divisible par la taille de la page
+                    if(($nbrPage % $taillePage) != 0) {  $nbrPage++; }
+                    //si le nbr de la page est superieur aux bords 
+                    if($page > $nbrPage || $page < 1)
+                        $page = $nbrPage;
+                    $debutPage = (($page*$taillePage)-$taillePage)+1;
+                    //si ce qui reste des modules est sup a la taille de la page on calcule la fin sinon on s'arrete à la fin du tableau
+                    if(($nbrModules-(($page-1)*$taillePage)) > $taillePage)
+                        $finPage = $debutPage + $taillePage;
+                    else
+                        $finPage = $nbrModules;
+                    //chargement des lignes de la page
+	                for ($i = $debutPage; $i < $finPage ; $i++) { 
+                        $table .= $tableauModule[$i]->genereLine($connect);
+                    }
+	            //quand le tableau est vide on genere un warning
+	            }else
+	                $table .= (AlertTool::genereWarning("Aucun Module trouvé !"));
+        	}else
+        		$table .= AlertTool::genereWarning("Impossible de récupérer les informations de la base");
+            $table .= "</table>";
+            if(!empty($nbrPage)){
+                $table .= "<div class='pagination  pagination-centered'> <ul>";
+                for ($i=1; $i <= $nbrPage; $i++) { 
+                    if($i === $page)
+                        $table .= "<li class='active'><a href='#'>".$i."</a></li>";
+                    else
+                        $table .= "<li><a href='moduleManager.php?pm=".$i."'>".$i."</a></li>";
+                }
+                $table .= "</ul> </div>";
+            }
+            return $table;
+        }
+
+        //genere un formulaire qui modifie une composante
+        public function genereFormModif($connect){
+            $form = "<div id='myModal".$this->_ID_MOD_."' class='modal hide fade in' style='display: none;'>";
+            $form .= "<div class='modal-header'>";
+            $form .= "<a href='#' class='close' data-dismiss='modal'>x</a> <h3>Modification Composante</h3>";
+            $form .= "</div>";
+            $form .= "<div class='modal-body'>";
+            $form .= "<form id='form-myModal".$this->_ID_MOD_."' method='post' action='moduleManager.php'  class='form-horizontal'>";
+            //Code de la matiere : liste deroulante a partir du contenu de la table livret_matiere
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='matiereAssoc'>Matière</label>";
+            $form .= "<div class='controls'>";
+			$form .= "<select name='matiereAssoc' id='matiereAssoc' required>";
+            if(!empty($connect)){
+                try {
+                    $allModule = MatiereTool::getAll($connect);
+                    //si on a des modules 
+                    if(!empty($allModule)){
+                        //on ajoute chaque module a la liste de selection
+                        foreach ($allModule as $value) {
+                            //on selectionne l'element qui appartient a l'instantce affiché
+                            if($value->_CODE_MAT_ === $this->_CODE_MAT_)
+                                $form .= "<option select='selected' value='".$value->_CODE_MAT_."'>".$value->_LIBELLE_MAT_."</option>";
+                            else
+                                $form .= "<option value='".$value->_CODE_MAT_."'>".$value->_LIBELLE_MAT_."</option>";
+                        }
+                    }else
+                        $form .= AlertTool::genereWarning("Aucune matière trouvée");
+                } catch (Exception $e) {
+                    $form .= AlertTool::genereDanger($e->getMessage());
+                }	
+            }else
+                $form .= AlertTool::genereDanger("Impossible de récuperer les Matières");
+           	$form .= "</select>";
+            $form .= "</div> </div>";
+            //Libelle
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='libelleModule'>Libelle Module</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' name='libelleModule' id='libelleModule' placeholder='Champ Obligatoire ...' required size='50' value='".$this->_LIBELLE_MOD_."'/>";
+            $form .= "<input type='hidden' name='idModule' value='".$this->_ID_MOD_."'/>";
+            $form .= "</div> </div>";
+            //Semestre
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='semestre'>Semestre</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<select name='semestre' id='semestre' required>";
+            for ($i=1 ; $i <= 6; $i++) { 
+            	if($i === $this->_SEMESTRE_)
+            		$form .= "<option select='selected' value='".$i."'>".$i."</option>";
+            	else
+            		$form .= "<option value='".$i."'>".$i."</option>";
+            }
+            $form .= "</select>";
+            $form .= "</div> </div>";
+            //nbr de cours
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='nbrC'>Nombre Cours</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' pattern='\\d*' name='nbrC' id='nbrC' required value='".$this->_NBH_C_."'/>";
+            $form .= "</div> </div>";
+            //nbr TD
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='nbrTD'>Nombre TD</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' pattern='\\d*' name='nbrTD' id='nbrTD' required value='".$this->_NBH_TD_."'/>";
+            $form .= "</div> </div>";
+            //nbr TP
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='nbrTP'>Nombre TP</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' pattern='\\d*' name='nbrTP' id='nbrTP' required value='".$this->_NBH_TP_."'/>";
+            $form .= "</div> </div>";
+            //nbr CTD
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='nbrCTD'>Nombre CTD</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' pattern='\\d*' name='nbrCTD' id='nbrCTD' required value='".$this->_NBH_CTD_."'/>";
+            $form .= "</div> </div>";
+            //nbr ECTS
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='ects'>ECTS</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' pattern='\\d*' name='ects' id='ects' required value='".$this->_ECTS_."'/>";
+            $form .= "</div> </div>";
+            //COEF
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='coef'>Coefficient</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' pattern='\\d*' name='coef' id='coef' required value='".$this->_COEF_."'/>";
+            $form .= "</div> </div>";
+            //LANGUE
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='langueModule'>Langue</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<select multiple='multiple' name='langueModule[]' id='langueModule' required>";
+            //Recuperation du contenu de la base
+            $languages = explode('/', $this->_LANGUE_);
+            //on supprime le caractère _ s'il existe
+            foreach ($languages as $key => $value) {
+                $languages[key] = strtr($value, "_", "");
+            }
+            //on selectionne les langues deja selectionné
+            $bool = FALSE;
+            foreach (self::$lesLangues as $langList) {
+                foreach ($languages as $langBase) {
+                    $bool = $bool || ($langList === $langBase);
+                }
+                if($bool)
+                    $form .= "<option select='selected' value='".$langList."'>".$langList."</option>";
+                else
+                    $form .= "<option value='".$langList."'>".$langList."</option>";
+                $bool = False; //réinitialise
+            }
+            $form .= "</select>";
+            $form .= "</div> </div>";
+            //Objectif
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='objectifModule'>Objectif</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<textarea name='objectifModule' id='objectifModule' >".$this->_OBJECTIF_."</textarea>";
+            $form .= "</div> </div>";
+            //Description
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='descrModule'>Description</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<textarea name='descrModule' id='descrModule'>".$this->_DESCRIPTION_."</textarea>";
+            $form .= "</div> </div>";
+            //Methode evaluation
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='methodEval'>Méthode Évaluation</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' name='methodEval' id='methodEval' required value='".$this->_METHODE_EVAL_."'/>";
+            $form .= "</div> </div>";
+            //control continue session 1
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='modCC1'>Modalité C.C Session 1</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' name='modCC1' id='modCC1' value='".$this->_MOD_CC_1_."'/>";
+            $form .= "</div> </div>";
+            // control continue session 2
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='modCC2'>Modalité C.C Session 2</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' name='modCC2' id='modCC2' value='".$this->_MOD_CC_2_."'/>";
+            $form .= "</div> </div>";
+            //calcul note final 1
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='calculNF1'>Calcule Note Finale Session 1</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' name='calculNF1' id='calculNF1' value='".$this->_CALCUL_NF_1_."'/>";
+            $form .= "</div> </div>";
+            //calcul note final 2
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='calculNF2'>Calcule Note Finale Session 2</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' name='calculNF2' id='calculNF2' value='".$this->_CALCUL_NF_2_."'/>";
+            $form .= "</div> </div>";
+            //Prerequis
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='prerequisModule'>Prérequis</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<textarea name='prerequisModule' id='prerequisModule'>".$this->_PREREQUIS_."</textarea>";
+            $form .= "</div> </div>";
+            //RESSOURCES
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='ressourceModule'>Ressources</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<textarea name='ressourcesModule' id='ressourcesModule'>".$this->_LIEN_RESSOURCE_."</textarea>";
+            $form .= "</div> </div>";
+            //Biblio
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='biblioModule'>Bibliographie</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<textarea name='biblioModule' id='biblioModule' >".$this->_BIBLIOGRAPHIE_."</textarea>";
+            $form .= "</div> </div>";
+            //Note Eliminatoire
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='noteElimModule'>Note éliminatoire</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' pattern='\\d*' name='noteElimModule' id='noteElimModule' required value='".$this->_NOTE_ELIM_."'/>";
+            $form .= "</div> </div>";
+            //OBLIGATOIRE
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='obligModule'>Obligatoire</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<select name='obligModule' id='obligModule' required>";
+            if($this->_OBLIGATOIRE_ === 0){
+                $form .= "<option value='0' select='selected'>Non</option>";
+                $form .= "<option value='1'>Oui</option>";
+            }
+            else{
+                $form .= "<option value='1' select='selected'>Oui</option>";
+                $form .= "<option value='0'>Non</option>";
+            }
+            $form .= "</select>";    
+            $form .= "</div> </div>";
+            //fin modal-body
+            $form .= "</div>";
+            $form .= "<div class='control-group modal-footer'>";
+            $form .= "<input type='submit' class='btn btn-primary ' name='formUpdSubmit' value='Envoyer'/>";
+            $form .= "<input type='submit' class='btn btn-danger' name='formDeleteSubmit' value='Supprimer'/>";
+            $form .= "<input type='button' data-dismiss='modal' class='btn' value='Annuler'/>";
+            $form .= "</div> </form>";
+            $form .= "</div>";
+            return $form;
+        }
+
+        //genere un formulaire de creation de composante
+        public static function genereFormAdd($connect){
+            $form = "<div id='formAddModule' class='modal hide fade in' style='display: none;'>";
+            $form .= "<div class='modal-header'>";
+            $form .= "<a href='#' class='close' data-dismiss='modal'>x</a> <h3>Modification Composante</h3>";
+            $form .= "</div>";
+            $form .= "<div class='modal-body'>";
+            $form .= "<form method='post' action='moduleManager.php'  class='form-horizontal'>";
+            //Code de la matiere : liste deroulante a partir du contenu de la table livret_matiere
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='matiereAssoc'>Matière</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<select name='matiereAssoc' id='matiereAssoc' required>";
+            if(!empty($connect)){
+                try {
+                    $allModule = MatiereTool::getAll($connect);
+                    //si on a des modules 
+                    if(!empty($allModule)){
+                        //on ajoute chaque module a la liste de selection
+                        foreach ($allModule as $value) {
+                            $form .= "<option value='".$value->_CODE_MAT_."'>".$value->_LIBELLE_MAT_."</option>";
+                        }
+                    }else
+                        $form .= AlertTool::genereWarning("Aucune matière dans trouvée !");
+                } catch (Exception $e) {
+                    $form .= AlertTool::generDanger($e->getMessage());
+                }
+            }else
+                $form .= AlertTool::genereDanger("Impossible de récuperer les Matières");
+            $form .= "</select>";
+            $form .= "</div> </div>";
+            //Libelle
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='libelleModule'>Libelle Module</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' name='libelleAddModule' id='libelleModule' placeholder='Champ Obligatoire ...' required size='50'/>";
+            $form .= "</div> </div>";
+            //Semestre
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='semestre'>Semestre</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<select name='semestreAdd' id='semestre' required>";
+            for ($i=1 ; $i <= 6; $i++) { 
+                $form .= "<option value='".$i."'>".$i."</option>";
+            }
+            $form .= "</select>";
+            $form .= "</div> </div>";
+            //nbr de cours
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='nbrC'>Nombre Cours</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' pattern='\\d*' name='nbrCAdd' id='nbrC' required />";
+            $form .= "</div> </div>";
+            //nbr TD
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='nbrTD'>Nombre TD</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' pattern='\\d*' name='nbrTDAdd' id='nbrTD' required />";
+            $form .= "</div> </div>";
+            //nbr TP
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='nbrTP'>Nombre TP</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='\\d*' pattern='\\d*' name='nbrTPAdd' id='nbrTP' required />";
+            $form .= "</div> </div>";
+            //nbr CTD
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='nbrCTD'>Nombre CTD</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' pattern='\\d*' name='nbrCTDAdd' id='nbrCTD' required />";
+            $form .= "</div> </div>";
+            //nbr ECTS
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='ects'>ECTS</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' pattern='\\d*' name='ectsAdd' id='ects' required />";
+            $form .= "</div> </div>";
+            //COEF
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='coef'>Coefficient</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' pattern='\\d*' name='coefAdd' id='coef' required />";
+            $form .= "</div> </div>";
+            //LANGUE
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='langueModule'>Langue</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<select multiple='multiple' name='langueAddModule[]' required>";
+            foreach (self::$lesLangues as $value) {
+                $form .= "<option value='".$value."'>".$value."</option>";
+            }
+            $form .= "</select>";
+            $form .= "</div> </div>";
+            //Objectif
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='objectifModule'>Objectif</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<textarea name='objectifAddModule' id='objectifModule' ></textarea>";
+            $form .= "</div> </div>";
+            //Description
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='descrModule'>Description</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<textarea name='descrAddModule' id='descrModule'></textarea>";
+            $form .= "</div> </div>";
+            //Methode evaluation
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='methodEval'>Méthode Évaluation</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' name='methodEvalAdd' id='methodEval' />";
+            $form .= "</div> </div>";
+            //control continue session 1
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='modCC1'>Modalité C.C Session 1</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' name='modCC1Add' id='modCC1' />";
+            $form .= "</div> </div>";
+            // control continue session 2
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='modCC2'>Modalité C.C Session 2</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' name='modCC2Add' id='modCC2' />";
+            $form .= "</div> </div>";
+            //calcul note final 1
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='calculNF1'>Calcule Note Finale Session 1</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' name='calculNF1Add' id='calculNF1' />";
+            $form .= "</div> </div>";
+            //calcul note final 2
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='calculNF2'>Calcule Note Finale Session 2</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' name='calculNF2Add' id='calculNF2' />";
+            $form .= "</div> </div>";
+            //Prerequis
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='prerequisModule'>Prérequis</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<textarea name='prerequisModule' id='prerequisModule'></textarea>";
+            $form .= "</div> </div>";
+            //RESSOURCES
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='ressourceModule'>Ressources</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<textarea name='ressourcesAddModule' id='ressourcesModule'></textarea>";
+            $form .= "</div> </div>";
+            //Biblio
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='biblioModule'>Bibliographie</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<textarea name='biblioAddModule' id='biblioModule' ></textarea>";
+            $form .= "</div> </div>";
+            //Note Eliminatoire
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='noteElimModule'>Note éliminatoire</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='text' pattern='\\d*' name='noteElimAddModule' id='noteElimModule' required />";
+            $form .= "</div> </div>";
+            //OBLIGATOIRE
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='prerequisModule'>Obligatoire</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<select name='obligAddModule' required>";
+            $form .= "<option value='1'>Oui</option>";
+            $form .= "<option value='0'>Non</option>";
+            $form .= "</select>";    
+            $form .= "</div> </div>";
+            //fin modal-body
+            $form .= "</div>";
+            $form .= "<div class='control-group modal-footer'>";
+            $form .= "<input type='submit' class='btn btn-primary ' name='formAddSubmit' value='Envoyer'/>";
+            $form .= "<input type='button' data-dismiss='modal' class='btn' value='Annuler'/>";
+            $form .= "</div> </form>";
+            $form .= "</div>";
+            return $form;
+        }
+
 		//genere un div avec les informations principal du module this 
 		public function getDiv (){
 			return '<div class="box span4 '.$this->_CODE_MAT_.'"> <h4 class="box-title">'.$this->_LIBELLE_MOD_.'</h2> <div class="box-text">"'.$this->_DESCRIPTION_.'</div> </div>';
 		}
 	}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 //la variable $connect instance de PDO vers la bdd livret
 //cette class permet d'avoir des outils qui permettrons la manipulation des matiere sur notre base données
@@ -204,12 +677,29 @@ include_once("matiere.php");
 		
 		//permet d'avoir tous les modules
 		public static function getAll($connect) {
-			$requete = "SELECT * FROM livret_module ";
-			$stmt = $connect->prepare($requete);
-			if($stmt->execute())
-				return $stmt->fetchAll(PDO::FETCH_CLASS, "Module");
-			else 
-				throw new exception ("ModuleTool::getAllModules => impossible d'executer la requete !");
+			$requete = "SELECT * FROM livret_module";
+			if(!empty($connect)){
+				$stmt = $connect->prepare($requete);
+				if($stmt->execute())
+					return $stmt->fetchAll(PDO::FETCH_CLASS, "Module");
+				else 
+					throw new Exception ("ModuleTool::getAll => impossible d'executer la requete !");
+			}else
+				throw new Exception("ModuleTool::getAll => parametre invalide");
+		}
+
+		//permet de supprimer un Module
+		public static function deleteModule($connect, $_id_mod){
+			$requete = "DELETE FROM livret_module WHERE _ID_MOD_ = ?";
+			if(!empty($connect) && is_numeric($_id_mod)){
+				$stmt = $connect->prepare($requete);
+				if($stmt->execute())
+					return TRUE;
+				else
+					throw new Exception("ModuleTool::deleteModule => impossible d'executer la requte !");
+			}else
+				throw new Exception("ModuleTool::deleteModule => impossible d'executer la requete !");
+				
 		}
 		
 	}

@@ -184,7 +184,7 @@
 				<xsl:text>' AND _PRENOM_ENS_='</xsl:text>
 				<xsl:value-of select="$firstName"/>
 				<xsl:text>' AND _EMAIL_ENS_='</xsl:text>
-				<xsl:value-of select="./emailsecondresp"/>
+				<xsl:value-of select="./emailpremierresp"/>
 				<xsl:text>');&#xA;</xsl:text>
 				<!-- insertion de l'enseignant -->
 				<xsl:text>INSERT IGNORE INTO livret_enseignant (_ID_ENS_, _NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_) VALUES (@id_ens1, '</xsl:text>
@@ -247,16 +247,16 @@
 		</xsl:choose>
 		
 		<!-- Ajout du code Apogee s'il existe -->
-		<xsl:if test="./codeApogee1">
+		<xsl:if test="@codeApogee1">
 			<xsl:text>INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('</xsl:text>
-			<xsl:value-of select="./codeApogee1"/>
+			<xsl:value-of select="@codeApogee1"/>
 			<xsl:text>', @id_mod);&#xA;</xsl:text>
 		</xsl:if>
 		
 		<!-- Ajout du second code apogee s'il existe -->
-		<xsl:if test="./codeApogee2">
+		<xsl:if test="@codeApogee2">
 			<xsl:text>INSERT IGNORE INTO livret_ue (_APOGEE_,_ID_MOD_) VALUES ('</xsl:text>
-			<xsl:value-of select="./codeApogee2"/>
+			<xsl:value-of select="@codeApogee2"/>
 			<xsl:text>', @id_mod);&#xA;</xsl:text>
 		</xsl:if>
 		
