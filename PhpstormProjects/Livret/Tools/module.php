@@ -1,80 +1,87 @@
 <?php
-include_once("connexion.php");
 include_once("matiere.php");
+include_once("responsable.php");
 include_once("alerts.php");
-	
+include_once("ue.php");
+
 	//les attributs de cette class seront mis automatiquement grace a PDO::FETCH_CLASS
 	class Module{
+
         //un tableau contenant des langues pour la liste déroulante de langue
-        static $lesLangues = Array("Allemand","Arabe","Anglais","Bulgare","Catalan","Coréen","Croite","Danois","Espagnol","Français","Grec","Irlandais","Italien","Japonais","Latin","Néerlandais","Norvégien","Polonais","Portugais","Roumain","Russe","Serbe","Suédois","Tchèque","Turc","Ukrainien","Vietnamien");
-		
+        static $lesLangues = Array("Allemand","Arabe","Anglais","Bulgare","Catalan","Coréen","Croite","Danois","Espagnol","Français","Grec","Irlandais","Italien","Japonais","Latin","Néerlandais","Norvégien","Polonais","Portugais","Roumain","Russe","Serbe","Suédois","Tchèque","Turc","Ukrainien","Vietnamien");  
+
         //genere une ligne d'un tableau contenant les informations de l'instance
         public function genereLine($connect){
-        	$line = "<tr>";
-        	if(!empty($connect)){
-                //on affiche le probleme au cas ou une exception est levee
-                try {
-                    $line .= "<input type='hidden' value='".$this->_ID_MOD_."'/>";
-                    $line .= "<td> ".$this->_LIBELLE_MOD_."</td>";
-                    $line .= "<td>".MatiereTool::libelleOfCode($connect, $this->_CODE_MAT_)."</td>";
-                    $line .= "<td>".$this->_SEMESTRE_."</td>";
-                    $line .= "<td>".$this->_NBH_C_."</td>";
-                    $line .= "<td>".$this->_NBH_TD_."</td>";
-                    $line .= "<td>".$this->_NBH_TP_."</td>";
-                    $line .= "<td>".$this->_NBH_CTD_."</td>";
-                    $line .= "<td>".$this->_ECTS_."</td>";
-                    $line .= "<td>".$this->_COEF_."</td>";
-                } catch (Exception $e) {
-                    $line .= AlertTool::genereDanger($e->getMessage());
-                }
-        	}else
-        		$line .= AlertTool::genereWarning("Impossible de Récupérer les informations de la base");
+            $line = "<tr rel='popover' data-content=\"";
+            $line .= $this->generePop($connect);
+            $line .= "\" data-original-title='Responsable(s)'>";
+            $line .= "<input type='hidden' value='".$this->_ID_MOD_."'/>";
+            $line .= "<td> ".$this->_LIBELLE_MOD_."</td>";
+            //on affiche le probleme au cas ou une exception est levee
+            try {
+                $line .= "<td>".MatiereTool::libelleOfCode($connect, $this->_CODE_MAT_)."</td>";
+            } catch (Exception $e) {
+                $line .= "<td>".AlertTool::genereDanger($e->getMessage())."</td>";
+            }
+            $line .= "<td>".$this->_SEMESTRE_."</td>";
+            $line .= "<td>".$this->_NBH_C_."</td>";
+            $line .= "<td>".$this->_NBH_TD_."</td>";
+            $line .= "<td>".$this->_NBH_TP_."</td>";
+            $line .= "<td>".$this->_NBH_CTD_."</td>";
+            $line .= "<td>".$this->_ECTS_."</td>";
+            $line .= "<td>".$this->_COEF_."</td>";
+            try {
+                $line .= "<td>".UE::pack_it($connect,$this)."</td>";
+            } catch (Exception $e) {
+                $line .= "<td>".AlertTool::genereDanger($e->getMessage())."</td>";
+            }
+            
         	$line .= "</tr>";
 	        return $line;
         }
 
         //genere un tableau contenant les informations de l'instance
-        public static function genereTable($connect, $tableauModule, $page){
-        	$table = "<table class='table table-hover'> <div class='well well-small'> <h2>Les Modules</h2></div>";
-        	if(!empty($connect)){
-	            if(!empty($tableauModule)){
-	                $table .= "<tr>";
-	                //les titres des colonnes
-	                $table .= "<th>Libelle</th>";
-	                $table .= "<th>Matière</th>";
-	                $table .= "<th>Semestre</th>";
-	                $table .= "<th>Heure Cours</th>";
-	                $table .= "<th>Heure TD</th>";
-	                $table .= "<th>Heure TP</th>";
-	                $table .= "<th>Heure Cours-TD</th>";
-	                $table .= "<th>ECTS</th>";
-	                $table .= "<th>Coefficient</th>";
-	                $table .= "</tr>";
-	                //generation des lignes du tableau
-                    //prise en compte de pagination
-                    $taillePage = 15;//le nombre de ligne par page
-                    $nbrModules = count($tableauModule); //le nombre de modules
-                    $nbrPage = $nbrModules / $taillePage;
-                    //on ajoute une page dans le cas ou le nombre n'est pas divisible par la taille de la page
-                    if(($nbrPage % $taillePage) != 0) {  $nbrPage++; }
-                    //si le nbr de la page est superieur aux bords 
-                    if($page > $nbrPage || $page < 1)
-                        $page = $nbrPage;
-                    $debutPage = (($page*$taillePage)-$taillePage)+1;
-                    //si ce qui reste des modules est sup a la taille de la page on calcule la fin sinon on s'arrete à la fin du tableau
-                    if(($nbrModules-(($page-1)*$taillePage)) > $taillePage)
-                        $finPage = $debutPage + $taillePage;
-                    else
-                        $finPage = $nbrModules;
-                    //chargement des lignes de la page
-	                for ($i = $debutPage; $i < $finPage ; $i++) { 
-                        $table .= $tableauModule[$i]->genereLine($connect);
-                    }
-	            //quand le tableau est vide on genere un warning
-	            }else
-	                $table .= (AlertTool::genereWarning("Aucun Module trouvé !"));
-        	}else
-        		$table .= AlertTool::genereWarning("Impossible de récupérer les informations de la base");
+        public static function genereTable($connect, $tableauModule, $page, $taillePage){
+        	$table = "<table class='table table-hover'> <div class='well well-small'> <h2>Les Modules</h2></div>"; 
+            if(!empty($tableauModule)){
+            //-----------------------------
+                //les titres des colonnes
+                $table .= "<tr>";
+                $table .= "<th>Libelle</th>";
+                $table .= "<th>Matière</th>";
+                $table .= "<th>Semestre</th>";
+                $table .= "<th>Cours</th>";
+                $table .= "<th>TD</th>";
+                $table .= "<th>TP</th>";
+                $table .= "<th>Cours-TD</th>";
+                $table .= "<th>ECTS</th>";
+                $table .= "<th>Coef</th>";
+                $table .= "<th>U.E</th>";
+                $table .= "</tr>";
+            //-------------------------------
+                //generation des lignes du tableau
+                //prise en compte de pagination
+                $nbrModules = count($tableauModule); //le nombre de modules
+                $nbrPage = $nbrModules / $taillePage;
+                //on ajoute une page dans le cas ou le nombre n'est pas divisible par la taille de la page
+                if(($nbrPage % $taillePage) != 0) {  $nbrPage++; }
+                //si le nbr de la page est superieur aux bords 
+                if($page > $nbrPage || $page < 1)
+                    $page = $nbrPage;
+                $debutPage = (($page*$taillePage)-$taillePage)+1;
+                //si ce qui reste des modules est sup a la taille de la page on calcule la fin sinon on s'arrete à la fin du tableau
+                if(($nbrModules-(($page-1)*$taillePage)) > $taillePage)
+                    $finPage = $debutPage + $taillePage;
+                else
+                    $finPage = $nbrModules;
+                //chargement des lignes de la page
+                for ($i = $debutPage; $i < $finPage ; $i++) { 
+                    $table .= $tableauModule[$i]->genereLine($connect);
+                }
+            //quand le tableau est vide on genere un warning
+            }else
+                $table .= (AlertTool::genereWarning("Aucun Module trouvé !"));
+
             $table .= "</table>";
             if(!empty($nbrPage)){
                 $table .= "<div class='pagination  pagination-centered'> <ul>";
@@ -89,11 +96,139 @@ include_once("alerts.php");
             return $table;
         }
 
-        //genere un formulaire qui modifie une composante
+        //le contenu du pop qui sera généré au clique sur une ligne <tr> du tableau de Module
+        //on affichera les responsable de cette instance de module
+        private function generePop($connect){
+            $pop = "<div class='container-fluid popRespMod'>";
+            if(!empty($connect)){
+                //recuperation des responsables de cette instance de module
+                //on recupere un tableau contenant les objets de type RespModule (cf. responsable.php)
+                //l'objet RespModule contient l'id du module, l'id du responsable qui est un enseignant (cf. enseignant.php)
+                try{
+                    $lesResp = ResponsableTool::getRespByMod($connect, $this->_ID_MOD_);
+                    //parcour des différents responsable
+                    if(!empty($lesResp)){
+                        foreach ($lesResp as $leResp){
+                            //récupération des information  sur le responsable
+                            $enseignant = $leResp->sheetOfEns($connect);
+                            if(!empty($enseignant)){
+                                $pop .= "<span class='row'><a href='moduleManager.php?pop=formUpdRespMod".$this->_ID_MOD_."&ens=".$leResp->_ID_ENS_."'>".$enseignant->_NOM_ENS_." ".$enseignant->_PRENOM_ENS_."</a></span>";
+                            }
+                        }
+                        //bouton d'ajout de responsable
+                        $pop .= "<span class='row'><a class='btn btn-mini' href='moduleManager.php?pop=formAddRespMod".$this->_ID_MOD_."'><i class='icon-plus'></i></a></span>";
+                    //si on a aucun responsable on fournit un message plus le bouton
+                    }
+                    else{
+                        $message = "<span class='row'>Aucun Responsable trouvé</span>";
+                        $message .= "<span class='row'><a class='btn btn-mini' href='moduleManager.php?pop=formAddRespMod".$this->_ID_MOD_."'><i class='icon-plus'></i></a></span>";
+                        $pop .= AlertTool::genereInfo("FUCK YOU");
+                    }
+                }catch (Exception $e) {
+                    $pop .= AlertTool::genereDanger($e->getMessage());
+                }
+            }else
+                $pop .= AlertTool::genereDanger("Module::generePop => parametre invalide");
+            $pop .= "</div>";
+            return htmlspecialchars($pop);
+        }
+
+        //ce formulaire est généré par le lien du pop qui permet de le selectionner et l'afficher en modal 
+        //genere le formulaire qui permet de mettre a jour les responsable de cette instance de module
+        public function genereFormUpdResp($connect){
+            $form = "<div id='formUpdRespMod".$this->_ID_MOD_."' class='modal hide fade in' style='display: none;'>";
+            $form .= "<div class='modal-header'>";
+            $form .= "<a href='moduleManager.php' class='close' data-dismiss='modal'>x</a> <h3>Modification Responsable Module</h3>";
+            $form .= "</div>";
+            //Libelle de la filiere avec un input cache contenant l'id de la filiere
+            $form .= "<div class='modal-body'>";
+            $form .= "<form id='form-myModal".$this->_ID_MOD_."' method='post' action='moduleManager.php'  class='form-horizontal'>";
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='libelleModulePop'>Libelle Module</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<span id='libelleModulePop' class='input-xlarge uneditable-input'>".$this->_LIBELLE_MOD_."</span>";
+            $form .= "<input type='hidden' name='idModulePop' value='".$this->_ID_MOD_."'/>";
+            $form .= "<input type='hidden' name='oldIdEnsPop' id='oldIdEnsPop'>";
+            $form .= "</div></div>";
+            //liste d'enseignant
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='enseignant'>Enseignant</label>";
+            $form .= "<div class='controls'>";
+            //recup de tous les enseignants 
+            try{
+                $lesEnseignants = EnseignantTool::getAll($connect);
+                if(!empty($lesEnseignants)){
+                    $form .= "<select name='idEnsPop' id='enseignant' required='required'>";
+                    foreach ($lesEnseignants as $enseignant) {
+                        $form .= "<option value='".$enseignant->_ID_ENS_."'>".$enseignant->_NOM_ENS_." ".$enseignant->_PRENOM_ENS_."</option>";
+                    }
+                    $form .= "</select>";
+                }else
+                    $form .= AlertTool::genereWarning("Pensez à ajouter des enseignants !");
+            }catch(Exception $e){
+                $form .= AlertTool::genereDanger($e->getMessage());
+            }
+            $form .= "</div> </div>";
+            //fin modal-body
+            $form .= "</div>";
+            $form .= "<div class='control-group modal-footer'>";
+            $form .= "<input type='submit' class='btn btn-primary' name='formUpdRespSubmit' value='Envoyer'/>";
+            $form .= "<input type='submit' class='btn btn-danger' name='formDeleteRespSubmit' value='Supprimer'/>";
+            $form .= "<span><a href='moduleManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            $form .= "</div> </form>";
+            $form .= "</div>";
+            return $form;
+        }
+
+        //permet de generer un formulaire d'ajout de responsable de cette instance de module
+        public function genereFormAddResp($connect){
+            $form = "<div id='formAddRespMod".$this->_ID_MOD_."' class='modal hide fade in' style='display: none;'>";
+            $form .= "<div class='modal-header'>";
+            $form .= "<a href='moduleManager.php' class='close' data-dismiss='modal'>x</a> <h3>Ajout Responsable Module</h3>";
+            $form .= "</div>";
+            //Libelle de la filiere avec un input cache contenant l'id de la filiere
+            $form .= "<div class='modal-body'>";
+            $form .= "<form method='post' action='moduleManager.php'  class='form-horizontal'>";
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='libelleModulePop'>Libelle Module</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<span id='libelleModulePop' class='input-xlarge uneditable-input'>".$this->_LIBELLE_MOD_."</span>";
+            $form .= "<input type='hidden' name='idModPop' value='".$this->_ID_MOD_."'/>";
+            $form .= "</div></div>";
+            //liste d'enseignant
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='enseignant'>Enseignant</label>";
+            $form .= "<div class='controls'>";
+            //recup de tous les enseignants 
+            try{
+                $lesEnseignants = EnseignantTool::getAll($connect);
+                if(!empty($lesEnseignants)){
+                    $form .= "<select name='idEnsPop' id='enseignant' required='required'>";
+                    foreach ($lesEnseignants as $enseignant) {
+                        $form .= "<option value='".$enseignant->_ID_ENS_."'>".$enseignant->_NOM_ENS_." ".$enseignant->_PRENOM_ENS_."</option>";
+                    }
+                    $form .= "</select>";
+                }else
+                    $form .= AlertTool::genereWarning("Pensez à ajouter des enseignants !");
+            }catch(Exception $e){
+                $form .= AlertTool::genereDanger($e->getMessage());
+            }
+            $form .= "</div> </div>";
+            //fin modal-body
+            $form .= "</div>";
+            $form .= "<div class='control-group modal-footer'>";
+            $form .= "<input type='submit' class='btn btn-primary' name='formAddRespSubmit' value='Envoyer'/>";
+            $form .= "<span><a href='moduleManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            $form .= "</div> </form>";
+            $form .= "</div>";
+            return $form;
+        }
+
+        //genere un formulaire qui modifie un Module
         public function genereFormModif($connect){
             $form = "<div id='myModal".$this->_ID_MOD_."' class='modal hide fade in' style='display: none;'>";
             $form .= "<div class='modal-header'>";
-            $form .= "<a href='#' class='close' data-dismiss='modal'>x</a> <h3>Modification Composante</h3>";
+            $form .= "<a href='moduleManager.php' class='close' data-dismiss='modal'>x</a> <h3>Modification Module</h3>";
             $form .= "</div>";
             $form .= "<div class='modal-body'>";
             $form .= "<form id='form-myModal".$this->_ID_MOD_."' method='post' action='moduleManager.php'  class='form-horizontal'>";
@@ -291,17 +426,17 @@ include_once("alerts.php");
             $form .= "<div class='control-group modal-footer'>";
             $form .= "<input type='submit' class='btn btn-primary ' name='formUpdSubmit' value='Envoyer'/>";
             $form .= "<input type='submit' class='btn btn-danger' name='formDeleteSubmit' value='Supprimer'/>";
-            $form .= "<input type='button' data-dismiss='modal' class='btn' value='Annuler'/>";
+            $form .= "<span><a href='moduleManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
             $form .= "</div> </form>";
             $form .= "</div>";
             return $form;
         }
 
-        //genere un formulaire de creation de composante
+        //genere un formulaire de creation de module
         public static function genereFormAdd($connect){
             $form = "<div id='formAddModule' class='modal hide fade in' style='display: none;'>";
             $form .= "<div class='modal-header'>";
-            $form .= "<a href='#' class='close' data-dismiss='modal'>x</a> <h3>Modification Composante</h3>";
+            $form .= "<a href='moduleManager.php' class='close' data-dismiss='modal'>x</a> <h3>Ajouter un Module</h3>";
             $form .= "</div>";
             $form .= "<div class='modal-body'>";
             $form .= "<form method='post' action='moduleManager.php'  class='form-horizontal'>";
@@ -469,7 +604,7 @@ include_once("alerts.php");
             $form .= "</div>";
             $form .= "<div class='control-group modal-footer'>";
             $form .= "<input type='submit' class='btn btn-primary ' name='formAddSubmit' value='Envoyer'/>";
-            $form .= "<input type='button' data-dismiss='modal' class='btn' value='Annuler'/>";
+            $form .= "<span><a href='moduleManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
             $form .= "</div> </form>";
             $form .= "</div>";
             return $form;

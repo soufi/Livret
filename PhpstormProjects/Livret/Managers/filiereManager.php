@@ -1,10 +1,11 @@
 <html lang="fr">
 	<?php
+		include_once("../Tools/connexion.php");
 		include_once("../Tools/filiere.php");
 		include_once("../Blocks/entete.html");
 		include_once("../Tools/alerts.php");
 
-/*--------------------------- Gestion de BDD Filiere -------------------------------- */
+/*-------------------------------------------------------------- Gestion de BDD Filiere ---------------------------------------------------------------- */
 		//gestionnaire de mise a jour de filiere
 		if(isset($_POST['formUpdSubmit'])){
 			$_libelle = $_POST['libelleFiliere'];
@@ -12,7 +13,7 @@
 			$_idCompo = $_POST['compoAssoc'];
 			try {
 				FiliereTool::updateFiliere($bdd->getConnexion(), $_id, $_libelle, $_idCompo);
-				echo AlertTool::genereSuccess("Mise à jour effectué avec succés !"); //message de confirmation
+				echo AlertTool::genereInfo("Mise à jour effectué avec succés !"); //message de confirmation
 			} catch (Exception $e) {
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -23,7 +24,7 @@
 			$_id = $_POST['idFiliere'];
 			try {
 				FiliereTool::deleteFiliere($bdd->getConnexion(), $_id);
-				echo AlertTool::genereSuccess("Suppression effectué avec succés !"); //mmessage de confirmation
+				echo AlertTool::genereInfo("Suppression effectué avec succés !"); //mmessage de confirmation
 			} catch (Exception $e) {
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -35,12 +36,52 @@
 			$_idCompo = $_POST['compoAssoc'];
 			try {
 				FiliereTool::insertFiliere($bdd->getConnexion(), $_libelle, $_idCompo);
-				echo AlertTool::genereSuccess("Ajout effectué avec succés !"); //message de confirmation
+				echo AlertTool::genereInfo("Ajout effectué avec succés !"); //message de confirmation
 			} catch (Exception $e) {
 				echo AlertTool::genereDanger($e->getMessage());
 			}
 		}
-/*----------------------------------------------------------------------------------- */
+
+/*-------------------------------------------------------------- Gestion de BDD responsable ---------------------------------------------------------------- */
+	
+	//mise a jour du responsable de la filiere
+	if(isset($_POST['formUpdRespSubmit'])){
+		$idFiliere = $_POST['idFilierePop'];
+		$oldIdEns = $_POST['oldIdEnsPop'];
+		$idEns = $_POST['idEnsPop'];
+		try{
+			ResponsableTool::updRespFil($bdd->getConnexion(), $idFiliere, $oldIdEns, $idFiliere, $idEns);
+			echo AlertTool::genereInfo("Mise à jour du responsable de filière effectuée avec succés !");
+		}catch(Exception $e){
+			echo AlertTool::genereDanger($e->getMessage());
+		}
+	}
+
+	//ajout de responsable de filiere
+	if(isset($_POST['formAddRespSubmit'])){
+		$idFiliere = $_POST['idFilierePop'];
+		$idEns = $_POST['idEnsPop'];
+		try{
+			ResponsableTool::insertRespFil($bdd->getConnexion(), $idFiliere, $idEns);
+			echo AlertTool::genereInfo("Ajout du responsable effectué avec succés !");
+		}catch(Exception $e){
+			echo AlertTool::genereDanger($e->getMessage());
+		}
+	}
+
+	//suppression de responsable de filiere
+	if(isset($_POST['formDeleteRespSubmit'])){
+		$idFiliere = $_POST['idFilierePop'];
+		$oldIdEns = $_POST['oldIdEnsPop'];
+		try {
+			ResponsableTool::deleteRespFil($bdd->getConnexion(), $idFiliere, $oldIdEns);
+			echo AlertTool::genereInfo("Suppression du responsable effectué avec succés !");
+		} catch (Exception $e) {
+			echo AlertTool::genereDanger($e->getMessage());
+		}
+	}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------- */
 	?>
 	<body>
 		<div class="container-fluid">
@@ -67,8 +108,12 @@
 					// Les formulaires des Filieres deja preparer qui'on affichera que s'il y'a un evenement -->
 					//generation des formulaires
 					if(!empty($allFiliere)){
-						foreach ($allFiliere as $value) {
-							echo $value->genereFormModif($bdd->getConnexion());
+						foreach ($allFiliere as $laFiliere) {
+							echo $laFiliere->genereFormModif($bdd->getConnexion());
+							//formulaire d'update de responsable
+							echo $laFiliere->genereFormUpdResp($bdd->getConnexion());
+							//formualire d'ajout de responsable
+							echo $laFiliere->genereFormAddResp($bdd->getConnexion());
 						}
 					}
 
@@ -81,12 +126,70 @@
 	
 	<!-- le script permettant d'afficher le formulaire apres clique sur la ligne du tableau -->
 	<script type="text/javascript">
-		$("tr:has(td):not(:has(th))").click(function(){
-			var idModal = "#myModal".concat($(this).find("input:hidden").val());
-			$(idModal).modal();
-		});
-		$("#addFiliere").click(function(){
-			$("#formAddFiliere").modal();
+		$(document).ready(function(){
+			$(".alert").alert();
+
+			//parametrage du popover
+			$("tr:has(td):not(:has(th))").popover({
+				trigger: 'click',
+				html: true,
+				placement: 'right',
+				container: 'body'
+			});
+			$("tr:has(td):not(:has(th))").dblclick(function(){
+				var idModal = "#myModal".concat($(this).find("input:hidden").val());
+				$(idModal).modal();
+			});
+
+			$("#addFiliere").click(function(){
+				$("#formAddFiliere").modal();
+			});
+
+			//source : http://stackoverflow.com/questions/6001839/check-whether-a-url-variable-is-set-using-jquery
+			//permet d'avoir les valeur d'une varible GET
+			$.extend({
+			  getUrlVars: function(){
+			    var vars = [], hash;
+			    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+			    for(var i = 0; i < hashes.length; i++)
+			    {
+			      hash = hashes[i].split('=');
+			      vars.push(hash[0]);
+			      vars[hash[0]] = hash[1];
+			    }
+			    return vars;
+			  },
+			  getUrlVar: function(name){
+			    return $.getUrlVars()[name];
+			  }
+			});
+	 
+			//if isset $_GET['pop']
+			//la variable pop contient le nom du formulaire à afficher
+			//on affiche les modal des filières
+			if (!jQuery.isEmptyObject($.getUrlVar("pop"))){
+				var nomForm = "#"+$.getUrlVar("pop");
+				//on prend le debut du mot afin de tester s'il s'agit d'un form d'ajout ou de modification
+				var valTest = nomForm.substring(0,8);
+				//s'il s'agit d'un ajout
+				if(valTest == "#formAdd"){
+					$(nomForm).modal();
+				}
+				//dans le cas d'un form de modification
+				else{
+					if((valTest == "#formUpd") && !jQuery.isEmptyObject($.getUrlVar("ens"))){
+						var idEns = $.getUrlVar("ens");
+						var opt_select_ens = "#enseignant option[value="+idEns+"]";
+						//affichage du modal contenant le formualaire d'update
+						//set de l'ancien id de l'enseignant responsable pour permettre l'update
+						$(nomForm).find("#oldIdEnsPop").prop("value",idEns);
+						//select de l'element correspondant a la valeur actuelle du responsable
+						$(nomForm).find("#enseignant option:selected").removeAttr("selected");
+						$(nomForm).find(opt_select_ens).prop("selected", true);
+						$(nomForm).modal(); //show modal
+					}
+				}
+			}
 		});
 	</script>
 

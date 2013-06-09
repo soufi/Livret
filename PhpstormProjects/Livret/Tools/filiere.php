@@ -1,22 +1,25 @@
 <?php 
-include_once("connexion.php");
 include_once("composante.php");
 include_once("alerts.php");
+include_once("responsable.php");
 
 	//les attributs de cette class seront mis automatiquement grace a PDO::FETCH_CLASS
 	class Filiere{
 
 		//Genere une ligne de tableau contenant les information de l'instance
         public function genereLine($connect){
-        	if(!empty($connect)){
-	            $line = "<tr>";
-	            $line .= "<input type='hidden' value='".$this->_ID_FILIERE_."'/>";
-	            $line .= "<td>".$this->_LIBELLE_FILIERE_."</td>";
-	            $line .= "<td>".ComposanteTool::libelleOfID($connect, $this->_ID_COMPO_)."</td>";
-	            $line .= "</tr>";
-	            return $line;
-	        }else
-	        	throw new Exception("Filiere::genereLine => parametre invalide !");
+            $line = "<tr rel='popover' data-content=\"";
+            $line .= $this->generePop($connect);
+            $line .= "\" data-original-title='Responsable(s)'>";
+            $line .= "<input type='hidden' value='".$this->_ID_FILIERE_."'/>";
+            $line .= "<td>".$this->_LIBELLE_FILIERE_."</td>";
+            try {
+               $line .= "<td>".ComposanteTool::libelleOfID($connect, $this->_ID_COMPO_)."</td>"; 
+            } catch (Exception $e) {
+                $line .= "<td>".AlertTool::genereDanger($e->getMessage())."</td>";
+            }
+            $line .= "</tr>";
+            return $line;
         }
 
         //genere un tableau contenant les informations de l'instance
@@ -26,7 +29,7 @@ include_once("alerts.php");
                 $table .= "<tr>";
                 //les titres des colonnes
                 $table .= "<th>Libelle</th>";
-                $table .= "<th>Composante Associé</th>";
+                $table .= "<th>Composante</th>";
                 $table .= "</tr>";
                 //generation des lignes du tableau
                 foreach ($tableauFiliere as $value) {
@@ -37,6 +40,131 @@ include_once("alerts.php");
                 $table .= (AlertTool::genereWarning("Aucune Filière trouvée !"));
             $table .= "</table>";
             return $table;
+        }
+
+        //generation du pop qui sera afficher lors du clique sur une ligne du tableau juste au dessus
+        //le pop contiendra les informations sur l'enseignant responsable 
+        private function generePop($connect){
+        	$pop = "<div class='row-fluid popRespFil'>";
+        	if(!empty($connect)){
+        		//recuperation des responsables de cette instance de filiere
+        		//on recupere un tableau contennat les objet de type RespFiliere
+        		//l'objet RespFiliere contient l'id de la filiere, l'id du responsable qui est un enseignant et sa qualité (premier ou second responsable)
+        		try{
+	        		$lesResp = ResponsableTool::getRespByFil($connect, $this->_ID_FILIERE_);
+	        		//parcour des différents responsable
+	        		if(!empty($lesResp)){
+		        		foreach ($lesResp as $leResp){
+		        			//récupération des information  sur le responsable
+	        				$enseignant = $leResp->sheetOfEns($connect);
+	        				if(!empty($enseignant))
+	        					$pop .= "<span class='row'><a href='filiereManager.php?pop=formUpdRespFil".$this->_ID_FILIERE_."&ens=".$leResp->_ID_ENS_."'>".$enseignant->_NOM_ENS_." ".$enseignant->_PRENOM_ENS_."</a></span>";
+		        		}
+		        		//bouton d'ajout de responsable
+		        		$pop .= "<span class='row'><a class='btn btn-mini' href='filiereManager.php?pop=formAddRespFil".$this->_ID_FILIERE_."'><i class='icon-plus'></i></a></span>";
+		        	//si on a aucun responsable on fournit un message plus le bouton
+		        	}else{
+		        		$messageAvecAjout = "<span class='row'>Aucun Responsable trouvé</span>";
+	                    $messageAvecAjout .= "<span class='row'> <a href='filiereManager.php?pop=formAddRespFil".$this->_ID_FILIERE_."' class='btn btn-mini'><i class='icon-plus'></i></a></span>";
+	                    $pop .= AlertTool::genereInfo($messageAvecAjout);
+		        	}
+		        }catch (Exception $e) {
+	   				$pop .= AlertTool::genereDanger($e->getMessage());
+	        	}
+        	}else
+        		$pop .= AlertTool::genereDanger("Filiere::generePop => parametre invalide");
+        	$pop .= "</div>";
+        	return htmlspecialchars($pop);
+        }
+
+        //genere le formulaire qui permet de mettre a jour les responsable de cette instance de filiere
+        public function genereFormUpdResp($connect){
+        	$form = "<div id='formUpdRespFil".$this->_ID_FILIERE_."' class='modal hide fade in' style='display: none;'>";
+        	$form .= "<div class='modal-header'>";
+        	$form .= "<a href='filiereManager.php' class='close' data-dismiss='modal'>x</a> <h3>Modification Responsable Filière</h3>";
+            $form .= "</div>";
+            //Libelle de la filiere avec un input cache contenant l'id de la filiere
+            $form .= "<div class='modal-body'>";
+            $form .= "<form id='form-myModal".$this->_ID_FILIERE_."' method='post' action='filiereManager.php'  class='form-horizontal'>";
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='libelleFilierePop'>Libelle Filière</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<span id='libelleFilierePop' class='input-xlarge uneditable-input'>".$this->_LIBELLE_FILIERE_."</span>";
+            $form .= "<input type='hidden' name='idFilierePop' value='".$this->_ID_FILIERE_."'/>";
+            $form .= "<input type='hidden' name='oldIdEnsPop' id='oldIdEnsPop' value=''>";
+            $form .= "</div></div>";
+            //liste d'enseignant
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='enseignant'>Enseignant</label>";
+            $form .= "<div class='controls'>";
+            //recup de tous les enseignants 
+            try{
+            	$lesEnseignants = EnseignantTool::getAll($connect);
+            	if(!empty($lesEnseignants)){
+            		$form .= "<select name='idEnsPop' id='enseignant' required='required'>";
+            		foreach ($lesEnseignants as $enseignant) {
+            			$form .= "<option value='".$enseignant->_ID_ENS_."'>".$enseignant->_NOM_ENS_." ".$enseignant->_PRENOM_ENS_."</option>";
+            		}
+            		$form .= "</select>";
+            	}else
+            		$form .= AlertTool::genereWarning("Pensez à ajouter des enseignants !");
+            }catch(Exception $e){
+            	$form .= AlertTool::genereDanger($e->getMessage());
+            }
+            $form .= "</div> </div>";
+            //fin modal-body
+            $form .= "</div>";
+            $form .= "<div class='control-group modal-footer'>";
+            $form .= "<input type='submit' class='btn btn-primary' name='formUpdRespSubmit' value='Envoyer'/>";
+            $form .= "<input type='submit' class='btn btn-danger' name='formDeleteRespSubmit' value='Supprimer'/>";
+            $form .= "<span><a href='filiereManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            $form .= "</div> </form>";
+            $form .= "</div>";
+            return $form;
+        }
+
+        //permet de generer un formulaire d'ajout de responsable de cette instance de filiere
+        public function genereFormAddResp($connect){
+        	$form = "<div id='formAddRespFil".$this->_ID_FILIERE_."' class='modal hide fade in' style='display: none;'>";
+        	$form .= "<div class='modal-header'>";
+        	$form .= "<a href='filiereManager.php' class='close' data-dismiss='modal'>x</a> <h3>Ajout Responsable Filière</h3>";
+            $form .= "</div>";
+            //Libelle de la filiere avec un input cache contenant l'id de la filiere
+            $form .= "<div class='modal-body'>";
+            $form .= "<form method='post' action='filiereManager.php'  class='form-horizontal'>";
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='libelleFilierePop'>Libelle Filière</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<span id='libelleFiliere' class='input-xlarge uneditable-input'>".$this->_LIBELLE_FILIERE_."</span>";
+            $form .= "<input type='hidden' name='idFilierePop' value='".$this->_ID_FILIERE_."'/>";
+            $form .= "</div></div>";
+            //liste d'enseignant
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='enseignant'>Enseignant</label>";
+            $form .= "<div class='controls'>";
+            //recup de tous les enseignants 
+            try{
+            	$lesEnseignants = EnseignantTool::getAll($connect);
+            	if(!empty($lesEnseignants)){
+            		$form .= "<select name='idEnsPop' id='enseignant' required='required'>";
+            		foreach ($lesEnseignants as $enseignant) {
+            			$form .= "<option value='".$enseignant->_ID_ENS_."'>".$enseignant->_NOM_ENS_." ".$enseignant->_PRENOM_ENS_."</option>";
+            		}
+            		$form .= "</select>";
+            	}else
+            		$form .= AlertTool::genereWarning("Pensez à ajouter des enseignants !");
+            }catch(Exception $e){
+            	$form .= AlertTool::genereDanger($e->getMessage());
+            }
+            $form .= "</div> </div>";
+            //fin modal-body
+            $form .= "</div>";
+            $form .= "<div class='control-group modal-footer'>";
+            $form .= "<input type='submit' class='btn btn-primary' name='formAddRespSubmit' value='Envoyer'/>";
+            $form .= "<span><a href='filiereManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            $form .= "</div> </form>";
+            $form .= "</div>";
+            return $form;
         }
 
         //genere un formulaire qui modifie une composante
@@ -118,7 +246,6 @@ include_once("alerts.php");
             $form .= "</div>";
             return $form;
         }
-
 
 	}
 

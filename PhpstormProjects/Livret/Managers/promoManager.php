@@ -147,6 +147,7 @@
 	<!-- le script permettant d'afficher le formulaire apres clique sur la ligne du tableau -->
 	<script type="text/javascript">
 		$(document).ready(function(){
+			$(".alert").alert();
 			//parametrage du popover
 			$("tr:has(td):not(:has(th))").popover({
 				trigger: 'click',

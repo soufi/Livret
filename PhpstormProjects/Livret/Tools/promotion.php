@@ -8,7 +8,6 @@ include_once("filiere.php");
 		 //genere une ligne d'un tableau contenant les informations de l'instance
         public function genereLine($connect){
             //parametrage du popOver afin d'avoir les informations de la filiere au clique
-
             $line = "<tr rel='popover' data-content=\"";
             if(!empty($connect))
                 $line .= $this->generePop($connect);
@@ -56,35 +55,39 @@ include_once("filiere.php");
         //le pop contiendra les libelles des Filiere de l'instance
         //ce pop sera genere avec Jquery 
         //pour pouvoir générer un popOver de Bootstrap, il faut placer les informations à l'interieur des parenthèses
-        public function generePop($connect){
+        private function generePop($connect){
             $pop = "<div class='row-fluid popFiliere'>";
             if(!empty($connect)){
                 //recup des Filieres dont l'instance de la promotion est en relation
-                $lesParcours = ParcoursTool::getByIDPromo($connect, $this->_ID_PROMO_); 
-                //pour chaque filiere trouvee
-                //rappel : un parcour est une ligne de la table parcour qui represente la relation entre la filiere et la promotion
-                //et qui contient deux champs qui sont l'id de la filiere et l'id de la promotion
-                if(!empty($lesParcours)){
-                    //on passe le nom du modal de modification
-                    foreach ($lesParcours as $leParcour) {
-                        //le pop qui sera afficher devra avoir la forme suivante : formUpdFilPro[idPromo]
-                        //celle si sera passe en method get avec la variable pop
-                        $pop .= "<span class='row'><a href='promoManager.php?pop=formUpdFilPro".$leParcour->_ID_PROMO_."&fil=".$leParcour->_ID_FILIERE_."' class='btn btn-link'>".$leParcour->getLibelleFiliere($connect)."</a></span>";
+                try {
+                    $lesParcours = ParcoursTool::getByIDPromo($connect, $this->_ID_PROMO_); 
+                    //pour chaque filiere trouvee
+                    //rappel : un parcour est une ligne de la table parcour qui represente la relation entre la filiere et la promotion
+                    //et qui contient deux champs qui sont l'id de la filiere et l'id de la promotion
+                    if(!empty($lesParcours)){
+                        //on passe le nom du modal de modification
+                        foreach ($lesParcours as $leParcour){
+                            //le pop qui sera afficher devra avoir la forme suivante : formUpdFilPro[idPromo]
+                            //celle si sera passe en method get avec la variable pop
+                            $pop .= "<span class='row'><a href='promoManager.php?pop=formUpdFilPro".$leParcour->_ID_PROMO_."&fil=".$leParcour->_ID_FILIERE_."' class='btn btn-link'>".$leParcour->getLibelleFiliere($connect)."</a></span>";
+                        }
+                        $pop .= "<span class='row'><a class='btn btn-mini' href='promoManager.php?pop=formAddResp".$this->_ID_FILIERE_."'><i class='icon-plus'></i></a></span>";
+                    //si les parcours sont vides 
+                    //on propose d'ajouter une filiere en relation avec la promotion
+                    }else{
+                        $messageAvecAjout = "<span class='row'>Aucune filière trouvée</span>";
+                        //cette fois ci la variable GET 'pop' prendra la valeur de l'id du formulaire d'ajout
+                        //on ajoute la valeur de la promotion a laquelle on ajoutera la Filiere comme reference
+                        $messageAvecAjout .= "<span class='row'> <a href='promoManager.php?pop=formAddResp".$this->_ID_FILIERE_."' class='btn btn-mini'><i class='icon-plus'></i></a></span>";
+                        $pop .= AlertTool::genereInfo($messageAvecAjout);
                     }
-                    $pop .= "<span class='row'><a class='btn btn-mini' href='promoManager.php?pop=formAddFilPro".$this->_ID_PROMO_."'>Ajouter</a></span>";
-                //si les parcours sont vides 
-                //on propose d'ajouter une filiere en relation avec la promotion
-                }else{
-                    $messageAvecAjout = "<span class='row'>Aucune filière trouvée</span>";
-                    //cette fois ci la variable GET 'pop' prendra la valeur de l'id du formulaire d'ajout
-                    //on ajoute la valeur de la promotion a laquelle on ajoutera la Filiere comme reference
-                    $messageAvecAjout .= "<span class='row'> <a href='promoManager.php?pop=formAddFilPro".$this->_ID_PROMO_."' class='btn btn-mini'>Ajouter</a></span>";
-                    $pop .= AlertTool::genereWarning($messageAvecAjout);
-                }       
+                } catch (Exception $e) {
+                    $pop .= AlertTool::genereDanger($e->getMessage);   
+                }    
             }else
                 $pop .= AlertTool::genereDanger("Impossible de se connecter");
             $pop .= "</div>";
-            return htmlspecialchars($pop);
+            return htmlspecialchars($pop); //a fin que le code soit interpréter comme un code html 
         }
 
         //permet de generer un formulaire de modification ou suppression des Filieres en relation avec cette instance de promotion

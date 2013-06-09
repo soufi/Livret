@@ -82,13 +82,18 @@
     
     <!-- le script permettant d'afficher le formulaire apres clique sur la ligne du tableau -->
     <script type="text/javascript">
-        $("tr:has(td):not(:has(th))").click(function(){
-            var idModal = "#myModal".concat($(this).find("input:hidden").val());
-            $(idModal).modal();
+        $(document).ready(function(){
+            $(".alert").alert();
+
+            $("tr:has(td):not(:has(th))").dblclick(function(){
+                var idModal = "#myModal".concat($(this).find("input:hidden").val());
+                $(idModal).modal();
+            });
+            $("#addMatiere").click(function(){
+                $("#formAddMatiere").modal();
+            });
         });
-        $("#addMatiere").click(function(){
-            $("#formAddMatiere").modal();
-        });
+            
     </script>
 
 </html>
