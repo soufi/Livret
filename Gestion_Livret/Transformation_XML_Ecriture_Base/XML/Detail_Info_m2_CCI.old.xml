@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livret>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="8" td="" tp="8" ctd="" total="16" semestre="3" coeff="0" ects="0">
+    <titre>Initiation</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Fr�d�ric Dabrowski</nompremierresp>
+    <emailpremierresp>Fr�d�ric.Dabrowski@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>petite_DESCRIPTION</descriptionCourte>
+    <descriptionLongue>Fondements de l\'informatique : codage des donn�es, traitements, structure g�n�rale d\'un ordinateur
+Utilisation des syst�mes d\'exploitation de type Unix.
+Outils logiciels bureautique et internet.</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Remettre � un m�me niveau de base tous les �tudiants et les familiariser avec le fonctionnement des ordinateurs et les outils informatiques usuels</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="10" td="10" tp="15" ctd="" total="35" semestre="3" coeff="3" ects="3">
+    <titre>Syst�mes</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Sophie ROBERT</nompremierresp>
+    <emailpremierresp>Sophie ROBERT@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>petite_DESCRIPTION</descriptionCourte>
+    <descriptionLongue>Architecture de syst�mes d\'exploitation
+Utilisation d\'Unix
+Administration Unix</descriptionLongue>
+    <textePrerequis>Module Initiation</textePrerequis>
+    <objectifs>* Utilisation et administration de syst�mes d\'exploitation</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="4" coeff="5" ects="5">
+    <titre>Projet 2</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>AbdelAli ED-DBALI</nompremierresp>
+    <emailpremierresp>AbdelAli.ED-DBALI@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>R�alisation d\'une application r�partie.</descriptionCourte>
+    <descriptionLongue>LONGUE_DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Mise en oeuvre dans un exemple d\'application r�aliste des concepts vus dans les modules informatique de la p�riode consid�r�e.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="20" td="25" tp="25" ctd="" total="70" semestre="3" coeff="6" ects="6">
+    <titre>Bases de donn�es</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Laure Khalem</nompremierresp>
+    <emailpremierresp>Laure.Khalem@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>petite_DESCRIPTION</descriptionCourte>
+    <descriptionLongue>Structure fonctionnelle et Architecture d�un SGBD.
+Probl�matique de la mod�lisation logique des donn�es.
+Mod�le relationnel, Langage SQL
+Interrogation de donn�es du mod�le relationnel.</descriptionLongue>
+    <textePrerequis>Module Initiation</textePrerequis>
+    <objectifs>* Donner aux �tudiants les grandes lignes des diverses fonctionnalit�s d�un SGBD relationnel.   
+  * Introduire les techniques de mod�lisation de donn�es.  
+  * Apprendre et ma�triser le langage de manipulation et d�interrogation de bases de donn�es�: SQL.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="10" td="" tp="" ctd="" total="10" semestre="4" coeff="10" ects="10">
+    <titre>Stage</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Variable selon le sujet du stage.</descriptionCourte>
+    <descriptionLongue>LONGUE_DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Permettre d�une part de mettre en pratique les enseignements dispens�s pendant l�ann�e et d�autre part de familiariser les �tudiants avec la vie professionnelle afin de permettre leur insertion.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="24" tp="" ctd="" total="24" semestre="3" coeff="3" ects="3">
+    <titre>Simulation de  gestion d\'entreprise</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Chaker HAOUET</nompremierresp>
+    <emailpremierresp>Chaker.HAOUET@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>petite_DESCRIPTION</descriptionCourte>
+    <descriptionLongue>Simulation visant � amener les groupes (chacun repr�sentant une entreprise en concurrence avec les autres), apr�s avoir formalis� une strat�gie, � prendre des d�cisions d�ordre commercial, de production, d�investissement et de financement. Dans ce cadre, ils mettent en ?uvre la plupart des outils financiers et pr�visionnels connus.</descriptionLongue>
+    <textePrerequis>Le jeu fait appel aux connaissances des �tudiants ainsi qu�� la r�flexion et l�imagination.</textePrerequis>
+    <objectifs>* Au terme de cette simulation, les �tudiants doivent�pouvoir g�rer le temps, travailler en groupe, g�rer les conflits, � 
+  * Connaissance du monde de l\'entreprise</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="20" td="24" tp="24" ctd="" total="68" semestre="4" coeff="5" ects="5">
+    <titre>Applications internet</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>AbdelAli ED-DBALI</nompremierresp>
+    <emailpremierresp>AbdelAli.ED-DBALI@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>petite_DESCRIPTION</descriptionCourte>
+    <descriptionLongue>Les langages HTML, XHTML, feuilles de style CSS.
+Applications r�parties�: le mod�le client/serveur.
+Langages pour les pages web dynamiques : PHP, MySQL
+S�curit� des applications r�parties.</descriptionLongue>
+    <textePrerequis>D�veloppement et maintenance de sites et applications intra/internet.</textePrerequis>
+    <objectifs>* D�veloppement et maintenance de sites et applications intra/internet</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="20" td="24" tp="24" ctd="" total="68" semestre="4" coeff="5" ects="5">
+    <titre>G�nie logiciel</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Jean-Michel COUVREUR</nompremierresp>
+    <emailpremierresp>Jean-Michel.COUVREUR@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>petite_DESCRIPTION</descriptionCourte>
+    <descriptionLongue>Mod�lisation UML : diagrammes de classes, de s�quences, d\'�tats-transition et de cas d\'utilisation.
+Pratique d\'un atelier de g�nie logiciel.
+M�thodologie d\'analyse et de conception objet.
+Introduction aux patrons de conception (design patterns).
+Introduction � la gestion de projets</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Acquisition des connaissances de bases d\'UML, d\'une m�thodologie permettant d\'analyser un probl�me, d\'en r�aliser la mod�lisation, puis d\'�laborer une mise en oeuvre sous forme d\'une application informatique. 
+  * Connaissance des notions de la gestion de projets.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="20" td="24" tp="24" ctd="" total="68" semestre="4" coeff="5" ects="5">
+    <titre>Programmation objet 2</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Laure KAHLEM</nompremierresp>
+    <emailpremierresp>Laure.KAHLEM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>petite_DESCRIPTION</descriptionCourte>
+    <descriptionLongue>G�n�ricit�.
+Classes internes.
+Implantation de structures de donn�es.
+Collections des biblioth�ques standards.
+Programmation �v�nementielle.
+Interface graphique.</descriptionLongue>
+    <textePrerequis>Modules Algorithmique, Programmation objet 1</textePrerequis>
+    <objectifs>* Savoir d�velopper une application avec un langage orient� objet utilisant des structures de donn�es r�cursives, interface graphique et interface avec une base de donn�e.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="10" td="10" tp="15" ctd="" total="35" semestre="3" coeff="3" ects="3">
+    <titre>R�seaux</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>AbdelAli ED-DBALI</nompremierresp>
+    <emailpremierresp>AbdelAli .ED-DBALI@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>petite_DESCRIPTION</descriptionCourte>
+    <descriptionLongue>Architecture des r�seaux : structure en couches, protocoles, services
+R�seaux locaux sous UDP-TCP/IP, Ethernet
+Protocoles de routage : RIP, OSPF, BGP
+Principaux protocoles Internet : DNS (annuaire de noms de domaines) SMTP (mail), FTP (transfert de fichiers), HTTP (web) ...</descriptionLongue>
+    <textePrerequis>}Module Initiation 
+{ 
+  * Principes et pratique des r�seaux locaux informatiques</textePrerequis>
+    <objectifs>Ressources</objectifs>
+    <ressources>Biblio} 
+ 
+\vfill</ressources>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="3" coeff="3" ects="3">
+    <titre>Projet 1</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Laure KAHLEM</nompremierresp>
+    <emailpremierresp>Laure.KAHLEM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>petite_DESCRIPTION</descriptionCourte>
+    <descriptionLongue>R�alisation d\'une applications mettant en oeuvre les notions vues dans les modules Algorithmique, Programmation objet 1, Bases de donn�es, Syst�mes et R�seaux.</descriptionLongue>
+    <textePrerequis>Module Initiation</textePrerequis>
+    <objectifs>* Mise en oeuvre dans un exemple d\'application r�aliste des concepts vus dans les modules informatique de la p�riode consid�r�e</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="15" td="15" tp="" ctd="" total="30" semestre="3" coeff="3" ects="3">
+    <titre>Algorithmique</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>petite_DESCRIPTION</descriptionCourte>
+    <descriptionLongue>Notions : variables, affectation, conditionnelle, it�ration, r�cursion.
+Algorithmes simples sur les tableaux.
+Algorithmes de tri.</descriptionLongue>
+    <textePrerequis>Math�matiques �l�mentaires</textePrerequis>
+    <objectifs>* A l\'issue de ce module l\'�tudiant doit pouvoir comprendre le fonctionnement d\'un algorithme donn�, concevoir des algorithmes pour un probl�me simple donn�,  savoir utiliser des structures de donn�es</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="20" tp="" ctd="" total="20" semestre="3" coeff="3" ects="3">
+    <titre>Anglais</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>petite_DESCRIPTION</descriptionCourte>
+    <descriptionLongue>Etude des techniques de pr�sentation orale�: am�lioration de la prononciation, organisation du discours, guidage de l�auditoire, �laboration d�aides visuelles.</descriptionLongue>
+    <textePrerequis>Anglais non professionnel</textePrerequis>
+    <objectifs>* S�exprimer couramment et efficacement dans une langue riche, souple et nuanc�e dans le domaine de la sp�cialit�, exposer son opinion de mani�re claire, d�taill�e et structur�e.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="20" td="25" tp="25" ctd="" total="70" semestre="3" coeff="6" ects="6">
+    <titre>Programmation objet�1</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Thi Bich Hanh Dao</nompremierresp>
+    <emailpremierresp>Thi-Bich-Hanh.Dao univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>petite_DESCRIPTION</descriptionCourte>
+    <descriptionLongue>Introduction � la programmation, algorithmes de base
+Programmation objet: classe, objet, �tat, m�thode, communication entre objets.
+R�currence. 
+Tableaux, Tris.
+Interfaces.
+H�ritage.
+Exceptions.
+Entr�es/sorties.
+Introduction � la notation UML.</descriptionLongue>
+    <textePrerequis>Module Initiation</textePrerequis>
+    <objectifs>* Introduction � la programmation objet dans un langage imp�ratif. 
+  * Mise en oeuvre d\'algorithmes dans ce langage.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+</livret>

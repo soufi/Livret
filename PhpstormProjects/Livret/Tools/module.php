@@ -3,12 +3,178 @@ include_once("matiere.php");
 include_once("responsable.php");
 include_once("alerts.php");
 include_once("ue.php");
+include_once("programme.php");
 
 	//les attributs de cette class seront mis automatiquement grace a PDO::FETCH_CLASS
 	class Module{
 
         //un tableau contenant des langues pour la liste déroulante de langue
         static $lesLangues = Array("Allemand","Arabe","Anglais","Bulgare","Catalan","Coréen","Croite","Danois","Espagnol","Français","Grec","Irlandais","Italien","Japonais","Latin","Néerlandais","Norvégien","Polonais","Portugais","Roumain","Russe","Serbe","Suédois","Tchèque","Turc","Ukrainien","Vietnamien");  
+
+        //genere la partie du module comme dans les modeles de fichier latex renseigné
+        //ecrit le contenu de le handler : pointeur vers un fichier
+        public function genereLatex($connect, $handler){
+            $latex = "\n\module[codeApogee={";
+            $ue = UeTool::getByIDModule($connect, $this->_ID_MOD_);
+            foreach($ue as $value){
+                $latex .= $value->_APOGEE_." ";
+            }
+            $latex .= "},\ntitre={".$this->_LIBELLE_MOD_."},\n";
+            $latex .= "COURS={".$this->_NBH_C_."},\n";
+            $latex .= "TD={".$this->_NBH_TD_."},\n";
+            $latex .= "TP={".$this->_NBH_TP_."},\n";
+            $latex .= "CTD={".$this->_NBH_CTD_."},\n";
+            $latex .= "TOTAL={".(intval($this->_NBH_C_)+intval($this->_NBH_TD_)+intval($this->_NBH_TP_)+intval($this->_NBH_CTD_))."},\n";
+            $latex .= "SEMESTRE={Semestre ".intval($this->_SEMESTRE)."},\n";
+            $latex .= "COEFF={".intval($this->_COEF_)."},\n";
+            $latex .= "ECTS={".intval($this->_ECTS_)."},\n";
+            $latex .= "MethodeEval={".$this->_METHODE_EVAL_."},\n";
+            $latex .= "ModalitesCCSemestreUn={".$this->_MOD_CC_1_."},\n";
+            $latex .= "ModalitesCCSemestreDeux={".$this->_MOD_CC_2."},\n";
+            $latex .= "CalculNFSessionUne={".$this->_CALCUL_NF_1_."},\n";
+            $latex .= "CalculNFSessionDeux={".$this->_CALCUL_NF_2."},\n";
+            $latex .= "NoteEliminatoire={".$this->_NOTE_ELIM_."},\n";
+            //recuperation des id des enseignants responsable de ce module
+            $enseignants = ResponsableTool::getRespByMod($connect, $this->_ID_MOD_);
+            //construction d'un tableau pour pouvoir faire la comparaison alphabetique et ordonner les responsable
+            if(!empty($enseignants)){
+                //si on a un seul enseignant
+                if(count($enseignants) == 1){
+                    $ens = $enseignants[0]->sheetOfEns($connect);
+                    $latex .= "nomPremierResp={".$ens->_NOM_ENS_." ".$ens->_PRENOM_ENS_."}, \n";
+                    $latex .= "emailPremierResp={".$ens->_EMAIL_ENS_."},\n";
+                    $latex .= "nomSecondResp={},\n";
+                    $latex .= "emailSecondResp={},\n";
+                //dans le cas de plusieurs resp. on en prend les deux premier et les compare par ordre alphabetique
+                }elseif(count($enseignants) > 1){
+                    $ens1 = $enseignants[0]->sheetOfEns($connect);
+                    $ens2 = $enseignants[1]->sheetOfEns($connect);
+                    if(strnatcmp($ens1->_NOM_ENS_,$ens2->_NOM_ENS) < 0){
+                        $latex .= "nomPremierResp={".$ens1->_NOM_ENS_." ".$ens1->_PRENOM_ENS_."},\n";
+                        $latex .= "emailPremierResp={".$ens1->_EMAIL_ENS_."},\n";
+                        $latex .= "nomSecondResp={".$ens2->_NOM_ENS_." ".$ens2->_PRENOM_ENS_."},\n";
+                        $latex .= "emailSecondResp={".$ens2->_EMAIL_ENS_."},\n";
+                    }else{
+                        $latex .= "nomPremierResp={".$ens2->_NOM_ENS_." ".$ens2->_PRENOM_ENS_."},\n";
+                        $latex .= "emailPremierResp={".$ens2->_EMAIL_ENS_."},\n";
+                        $latex .= "nomSecondResp={".$ens1->_NOM_ENS_." ".$ens1->_PRENOM_ENS_."},\n";
+                        $latex .= "emailSecondResp={".$ens1->_EMAIL_ENS_."},\n";
+                    }
+                }
+            //si on a pas de resp.
+            }else{
+                $latex .= "nomPremierResp={},\n";
+                $latex .= "emailPremierResp={},\n";
+                $latex .= "nomSecondResp={},\n";
+                $latex .= "emailSecondResp={},\n";
+            }
+
+            $latex .= "langue={".$this->_LANGUE_."},\n";
+            $latex .= "%INTRO ou description courte\n";
+            $latex .= "{".self::cheackFormat($this->_INTRO_)."},\n";
+            $latex .= "%Description Longue\n";
+            $latex .= "{".self::cheackFormat($this->_DESCRIPTION_)."},\n";
+            $latex .= "%Prerequis\n";
+            $latex .= "{".self::cheackFormat($this->_PREREQUIS_)."},\n";
+            $latex .= "%Objectif\n";
+            $latex .= "{".self::cheackFormat($this->_OBJECTIF_)."},\n";
+            $latex .= "%Ressources\n";
+            $latex .= "{".self::cheackFormat($this->_LIEN_RESSOURCES_)."},\n";
+            $latex .= "%Biblio\n";
+            $latex .= "{".self::cheackFormat($this->_BIBLIOGRAPHIE_)."},\n";
+            $latex .= "\n\\vfill\n\n";
+            //ECRITURE DANS FICHIER
+            if(!fwrite($handler, utf8_encode($latex)))
+                throw new Exception ("Module::genereLatex => Erreur Ecriture");
+        }
+
+
+        //permet de mettre le str en format Latex avec des itemize ou enumerate
+        //enumerate : si on a un chiffre et '-' en debut de ligne
+        //itemizer : si on a '*' suivis d'un espace en début de ligne
+        //ObjItm
+        //description : si on a un mot suivis de : en debut de ligne
+        private static function cheackFormat($str){
+            $result = '';
+            $patternEnum = '/\\s*(\\d{1,2}-{1}\\s*[^\\d-]*)/'; //detecte le type enumeration qui est caracterisé par des ligne qui commence par un chiffre suivis de '-'
+            $patternItemize = '/(\\s*)(\\*)(\\s+)(\\w+)/'; //detecte le type itemize qui caracterise par une * suivis d'un espace
+            $patternDescr = '/[\\n\\r^](\\w+)[\\w ]*:{1}\\s*(\\w+)/'; //detecte le type description suivis de crochets contenant un attribut [...] suivis de ':'
+
+            //Enumeration
+            if(preg_match($patternEnum, $str)){
+                $pattern = '/\d{1,2}-{1}/'; //le delimiter est le chiffre suivis de '-'
+                $blocs = preg_split($pattern,$str); //sous-bloc de str contenant les différente partie avant apres chaque énumération
+                if(!empty($blocs)){
+                    $result .= "\begin{enumerate}\n";
+                    $result .= $blocs[0];
+                    for($i = 1 ; $i < count($blocs); $i++)
+                        $result .= "\item".$blocs[$i];
+                    $result .= "\n\\end{enumerate}";
+                }else
+                    throw new Exception ("Module::cheackFormat => erreur parsage enum");
+            //Itemize
+            }elseif(preg_match($patternItemize, $str)){
+                $pattern = '/\\*/';
+                $blocs = preg_split($pattern, $str);
+                if(!empty($blocs)){
+                    $result .= "\begin{itemize}\n";
+                    $result .= $blocs[0];
+                    if(count($blocs) === 2){
+                        $result .= "\ObjItem".$blocs[1];
+                    }else{
+                        for($i = 1 ; $i < count($blocs) ; $i++)
+                            $result .= "\\item".$blocs[$i];
+                    }
+                    $result .= "\n\\end{itemize}";
+                }else
+                    throw new Exception ("Module::cheackFormat => erreur parsage itemize");
+            //Description
+            }elseif(preg_match($patternDescr, $str)){
+                $pattern = '/[\\n\\r^](.+):{1}\\s*/';
+                //afin de pouvoir recuperer les valeurs qu'on va mettre dans les items de la description entre les crochets (l'entete)
+                //on utilisera la fonction preg_match_all et on va regrouper le bloc qui nous interesse, c'est a dire celui qui est
+                //situé entre le debut d'une ligne ou le retour chariot, et le charactere ':'
+                //puisqu'on specifie un groupe dans le pattern la fonction preg_match retournera deux type de resultats
+                //un pour tous le pattern et l'autre avec juste la portion selectionner a chaque fois dans tous l'ensemble du string !!
+                //la case 1 du tableau correspond au groupe selectionné
+                preg_match_all($pattern, $str, $entetes);
+                if(!empty($entetes[1]) && count($entetes[1]) >= 1){
+                    //on extrait la deuxième case du tableau qui correspond au groupe !
+                    $groupes = $entetes[1];
+                    $result .= "\begin{description}\n";
+                    //on devise le texte par rapport au delimiter(s) qui correspond(ent) au groupe selectionné précédemment (c.f avant)
+                    //ce groupe qui peut etre une phrase et donc contenir des espaces
+                    $blocs = preg_split("/\\w[\\w ]*:{1}/",$str);
+                    $result .= $blocs[0];
+                    for($i = 1 ; $i < count($blocs) ; $i++){
+                        //le tableau de blocs est decale d'une case par rapport au tableau de groupes
+                        $result .= "\itemize[".$groupes[$i-1]."]".$blocs[$i];
+                    }
+                    $result .= "\n\\end{description}";
+                }else
+                    throw new Exception ("Module::cheackFormat => erreur parsage description");
+            }
+
+            if(empty($result))
+                $result .= $str;
+            //on echappe les caractere spéciaux
+            return $result;
+        }
+
+        //permet d'extraire les differents semestres des modules en parametre
+        public static function detectSemestre(array $tableauModule){
+            if(!empty($tableauModule)){
+                $result = array();
+                foreach ($tableauModule as $module){
+                    $leSmstr = $module->_SEMESTRE_;
+                    if(!empty($leSmstr) && is_numeric($leSmstr) && !in_array($leSmstr, $result)){
+                        $result[] = $leSmstr;
+                    }
+                }
+                return $result;
+            }else
+                return NULL;
+        }
 
         //genere une ligne d'un tableau contenant les informations de l'instance
         public function genereLine($connect){
@@ -31,7 +197,13 @@ include_once("ue.php");
             $line .= "<td>".$this->_ECTS_."</td>";
             $line .= "<td>".$this->_COEF_."</td>";
             try {
-                $line .= "<td>".UE::pack_it($connect,$this)."</td>";
+                $line .= "<td>".Ue::pack_it($connect,$this)."</td>";
+            } catch (Exception $e) {
+                $line .= "<td>".AlertTool::genereDanger($e->getMessage())."</td>";
+            }
+
+            try {
+                $line .= "<td>".Programme::pack_it($connect,$this)."</td>";
             } catch (Exception $e) {
                 $line .= "<td>".AlertTool::genereDanger($e->getMessage())."</td>";
             }
@@ -57,6 +229,7 @@ include_once("ue.php");
                 $table .= "<th>ECTS</th>";
                 $table .= "<th>Coef</th>";
                 $table .= "<th>U.E</th>";
+                $table .= "<th>Promo</th>";
                 $table .= "</tr>";
             //-------------------------------
                 //generation des lignes du tableau
@@ -75,7 +248,7 @@ include_once("ue.php");
                 else
                     $finPage = $nbrModules;
                 //chargement des lignes de la page
-                for ($i = $debutPage; $i < $finPage ; $i++) { 
+                for ($i = $debutPage ; $i < $finPage ; $i++) { 
                     $table .= $tableauModule[$i]->genereLine($connect);
                 }
             //quand le tableau est vide on genere un warning
@@ -98,33 +271,30 @@ include_once("ue.php");
 
         //le contenu du pop qui sera généré au clique sur une ligne <tr> du tableau de Module
         //on affichera les responsable de cette instance de module
-        private function generePop($connect){
+        public function generePop($connect){
+            //on recupere la page
+            if(isset($_GET['pm']))
+                $thePage = intval($_GET['pm']);
+            else
+                $thePage = 1;
             $pop = "<div class='container-fluid popRespMod'>";
             if(!empty($connect)){
                 //recuperation des responsables de cette instance de module
                 //on recupere un tableau contenant les objets de type RespModule (cf. responsable.php)
                 //l'objet RespModule contient l'id du module, l'id du responsable qui est un enseignant (cf. enseignant.php)
                 try{
-                    $lesResp = ResponsableTool::getRespByMod($connect, $this->_ID_MOD_);
+                    $lesResponsables = ResponsableTool::getRespByMod($connect, $this->_ID_MOD_);
                     //parcour des différents responsable
-                    if(!empty($lesResp)){
-                        foreach ($lesResp as $leResp){
+                    if(!empty($lesResponsables)){
+                        foreach ($lesResponsables as $leResp){
                             //récupération des information  sur le responsable
                             $enseignant = $leResp->sheetOfEns($connect);
-                            if(!empty($enseignant)){
-                                $pop .= "<span class='row'><a href='moduleManager.php?pop=formUpdRespMod".$this->_ID_MOD_."&ens=".$leResp->_ID_ENS_."'>".$enseignant->_NOM_ENS_." ".$enseignant->_PRENOM_ENS_."</a></span>";
-                            }
+                            $pop .= "<span class='row'><a href='moduleManager.php?pm=".$thePage."&pop=formUpdRespMod".$this->_ID_MOD_."&ens=".$leResp->_ID_ENS_."'>".$enseignant->_NOM_ENS_." ".$enseignant->_PRENOM_ENS_."</a></span>";
                         }
-                        //bouton d'ajout de responsable
-                        $pop .= "<span class='row'><a class='btn btn-mini' href='moduleManager.php?pop=formAddRespMod".$this->_ID_MOD_."'><i class='icon-plus'></i></a></span>";
-                    //si on a aucun responsable on fournit un message plus le bouton
                     }
-                    else{
-                        $message = "<span class='row'>Aucun Responsable trouvé</span>";
-                        $message .= "<span class='row'><a class='btn btn-mini' href='moduleManager.php?pop=formAddRespMod".$this->_ID_MOD_."'><i class='icon-plus'></i></a></span>";
-                        $pop .= AlertTool::genereInfo("FUCK YOU");
-                    }
-                }catch (Exception $e) {
+                    //bouton d'ajout de responsable
+                    $pop .= "<span class='row'><a class='btn btn-mini' href='moduleManager.php?pm=".$thePage."&pop=formAddRespMod".$this->_ID_MOD_."'><i class='icon-plus'></i></a></span>";
+                } catch (Exception $e) {
                     $pop .= AlertTool::genereDanger($e->getMessage());
                 }
             }else
@@ -138,7 +308,7 @@ include_once("ue.php");
         public function genereFormUpdResp($connect){
             $form = "<div id='formUpdRespMod".$this->_ID_MOD_."' class='modal hide fade in' style='display: none;'>";
             $form .= "<div class='modal-header'>";
-            $form .= "<a href='moduleManager.php' class='close' data-dismiss='modal'>x</a> <h3>Modification Responsable Module</h3>";
+            $form .= "<a href='' class='close' data-dismiss='modal'>x</a> <h3>Modification Responsable Module</h3>";
             $form .= "</div>";
             //Libelle de la filiere avec un input cache contenant l'id de la filiere
             $form .= "<div class='modal-body'>";
@@ -174,7 +344,7 @@ include_once("ue.php");
             $form .= "<div class='control-group modal-footer'>";
             $form .= "<input type='submit' class='btn btn-primary' name='formUpdRespSubmit' value='Envoyer'/>";
             $form .= "<input type='submit' class='btn btn-danger' name='formDeleteRespSubmit' value='Supprimer'/>";
-            $form .= "<span><a href='moduleManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            $form .= "<span><a href='' data-dismiss='modal' class='btn'>Annuler</a></span>";
             $form .= "</div> </form>";
             $form .= "</div>";
             return $form;
@@ -184,7 +354,7 @@ include_once("ue.php");
         public function genereFormAddResp($connect){
             $form = "<div id='formAddRespMod".$this->_ID_MOD_."' class='modal hide fade in' style='display: none;'>";
             $form .= "<div class='modal-header'>";
-            $form .= "<a href='moduleManager.php' class='close' data-dismiss='modal'>x</a> <h3>Ajout Responsable Module</h3>";
+            $form .= "<a href='' class='close' data-dismiss='modal'>x</a> <h3>Ajout Responsable Module</h3>";
             $form .= "</div>";
             //Libelle de la filiere avec un input cache contenant l'id de la filiere
             $form .= "<div class='modal-body'>";
@@ -218,7 +388,7 @@ include_once("ue.php");
             $form .= "</div>";
             $form .= "<div class='control-group modal-footer'>";
             $form .= "<input type='submit' class='btn btn-primary' name='formAddRespSubmit' value='Envoyer'/>";
-            $form .= "<span><a href='moduleManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            $form .= "<span><a href='' data-dismiss='modal' class='btn'>Annuler</a></span>";
             $form .= "</div> </form>";
             $form .= "</div>";
             return $form;
@@ -228,7 +398,7 @@ include_once("ue.php");
         public function genereFormModif($connect){
             $form = "<div id='myModal".$this->_ID_MOD_."' class='modal hide fade in' style='display: none;'>";
             $form .= "<div class='modal-header'>";
-            $form .= "<a href='moduleManager.php' class='close' data-dismiss='modal'>x</a> <h3>Modification Module</h3>";
+            $form .= "<a href='' class='close' data-dismiss='modal'>x</a> <h3>Modification Module</h3>";
             $form .= "</div>";
             $form .= "<div class='modal-body'>";
             $form .= "<form id='form-myModal".$this->_ID_MOD_."' method='post' action='moduleManager.php'  class='form-horizontal'>";
@@ -324,7 +494,7 @@ include_once("ue.php");
             $languages = explode('/', $this->_LANGUE_);
             //on supprime le caractère _ s'il existe
             foreach ($languages as $key => $value) {
-                $languages[key] = strtr($value, "_", "");
+                $languages[$key] = strtr($value, "_", "");
             }
             //on selectionne les langues deja selectionné
             $bool = FALSE;
@@ -339,6 +509,12 @@ include_once("ue.php");
                 $bool = False; //réinitialise
             }
             $form .= "</select>";
+            $form .= "</div> </div>";
+            //INTRO
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='introModule'>Introduction</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<textarea name='introModule' id='introModule' >".$this->_INTRO_."</textarea>";
             $form .= "</div> </div>";
             //Objectif
             $form .= "<div class='control-group'>";
@@ -426,7 +602,7 @@ include_once("ue.php");
             $form .= "<div class='control-group modal-footer'>";
             $form .= "<input type='submit' class='btn btn-primary ' name='formUpdSubmit' value='Envoyer'/>";
             $form .= "<input type='submit' class='btn btn-danger' name='formDeleteSubmit' value='Supprimer'/>";
-            $form .= "<span><a href='moduleManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            $form .= "<span><a href='' data-dismiss='modal' class='btn'>Annuler</a></span>";
             $form .= "</div> </form>";
             $form .= "</div>";
             return $form;
@@ -436,7 +612,7 @@ include_once("ue.php");
         public static function genereFormAdd($connect){
             $form = "<div id='formAddModule' class='modal hide fade in' style='display: none;'>";
             $form .= "<div class='modal-header'>";
-            $form .= "<a href='moduleManager.php' class='close' data-dismiss='modal'>x</a> <h3>Ajouter un Module</h3>";
+            $form .= "<a href='' class='close' data-dismiss='modal'>x</a> <h3>Ajouter un Module</h3>";
             $form .= "</div>";
             $form .= "<div class='modal-body'>";
             $form .= "<form method='post' action='moduleManager.php'  class='form-horizontal'>";
@@ -444,7 +620,7 @@ include_once("ue.php");
             $form .= "<div class='control-group'>";
             $form .= "<label class='control-label' for='matiereAssoc'>Matière</label>";
             $form .= "<div class='controls'>";
-            $form .= "<select name='matiereAssoc' id='matiereAssoc' required>";
+            $form .= "<select name='matiereAssocAdd' id='matiereAssoc' required>";
             if(!empty($connect)){
                 try {
                     $allModule = MatiereTool::getAll($connect);
@@ -467,7 +643,7 @@ include_once("ue.php");
             $form .= "<div class='control-group'>";
             $form .= "<label class='control-label' for='libelleModule'>Libelle Module</label>";
             $form .= "<div class='controls'>";
-            $form .= "<input type='text' name='libelleAddModule' id='libelleModule' placeholder='Champ Obligatoire ...' required size='50'/>";
+            $form .= "<input type='text' name='libelleModuleAdd' id='libelleModule' placeholder='Champ Obligatoire ...' required size='50'/>";
             $form .= "</div> </div>";
             //Semestre
             $form .= "<div class='control-group'>";
@@ -509,7 +685,7 @@ include_once("ue.php");
             $form .= "<div class='controls'>";
             $form .= "<input type='text' pattern='\\d*' name='ectsAdd' id='ects' required />";
             $form .= "</div> </div>";
-            //COEF
+            //COEFF
             $form .= "<div class='control-group'>";
             $form .= "<label class='control-label' for='coef'>Coefficient</label>";
             $form .= "<div class='controls'>";
@@ -519,23 +695,29 @@ include_once("ue.php");
             $form .= "<div class='control-group'>";
             $form .= "<label class='control-label' for='langueModule'>Langue</label>";
             $form .= "<div class='controls'>";
-            $form .= "<select multiple='multiple' name='langueAddModule[]' required>";
+            $form .= "<select multiple='multiple' name='langueModuleAdd[]' required>";
             foreach (self::$lesLangues as $value) {
                 $form .= "<option value='".$value."'>".$value."</option>";
             }
             $form .= "</select>";
             $form .= "</div> </div>";
+            //INTRO
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='introModule'>Introduction</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<textarea name='introModuleAdd' id='introModule' ></textarea>";
+            $form .= "</div> </div>";
             //Objectif
             $form .= "<div class='control-group'>";
             $form .= "<label class='control-label' for='objectifModule'>Objectif</label>";
             $form .= "<div class='controls'>";
-            $form .= "<textarea name='objectifAddModule' id='objectifModule' ></textarea>";
+            $form .= "<textarea name='objectifModuleAdd' id='objectifModule' ></textarea>";
             $form .= "</div> </div>";
             //Description
             $form .= "<div class='control-group'>";
             $form .= "<label class='control-label' for='descrModule'>Description</label>";
             $form .= "<div class='controls'>";
-            $form .= "<textarea name='descrAddModule' id='descrModule'></textarea>";
+            $form .= "<textarea name='descrModuleAdd' id='descrModule'></textarea>";
             $form .= "</div> </div>";
             //Methode evaluation
             $form .= "<div class='control-group'>";
@@ -571,31 +753,31 @@ include_once("ue.php");
             $form .= "<div class='control-group'>";
             $form .= "<label class='control-label' for='prerequisModule'>Prérequis</label>";
             $form .= "<div class='controls'>";
-            $form .= "<textarea name='prerequisModule' id='prerequisModule'></textarea>";
+            $form .= "<textarea name='prerequisModuleAdd' id='prerequisModule'></textarea>";
             $form .= "</div> </div>";
             //RESSOURCES
             $form .= "<div class='control-group'>";
             $form .= "<label class='control-label' for='ressourceModule'>Ressources</label>";
             $form .= "<div class='controls'>";
-            $form .= "<textarea name='ressourcesAddModule' id='ressourcesModule'></textarea>";
+            $form .= "<textarea name='ressourcesModuleAdd' id='ressourcesModule'></textarea>";
             $form .= "</div> </div>";
             //Biblio
             $form .= "<div class='control-group'>";
             $form .= "<label class='control-label' for='biblioModule'>Bibliographie</label>";
             $form .= "<div class='controls'>";
-            $form .= "<textarea name='biblioAddModule' id='biblioModule' ></textarea>";
+            $form .= "<textarea name='biblioModuleAdd' id='biblioModule' ></textarea>";
             $form .= "</div> </div>";
             //Note Eliminatoire
             $form .= "<div class='control-group'>";
             $form .= "<label class='control-label' for='noteElimModule'>Note éliminatoire</label>";
             $form .= "<div class='controls'>";
-            $form .= "<input type='text' pattern='\\d*' name='noteElimAddModule' id='noteElimModule' required />";
+            $form .= "<input type='text' pattern='\\d*' name='noteElimModuleAdd' id='noteElimModule' required />";
             $form .= "</div> </div>";
             //OBLIGATOIRE
             $form .= "<div class='control-group'>";
             $form .= "<label class='control-label' for='prerequisModule'>Obligatoire</label>";
             $form .= "<div class='controls'>";
-            $form .= "<select name='obligAddModule' required>";
+            $form .= "<select name='obligModuleAdd' required>";
             $form .= "<option value='1'>Oui</option>";
             $form .= "<option value='0'>Non</option>";
             $form .= "</select>";    
@@ -604,15 +786,46 @@ include_once("ue.php");
             $form .= "</div>";
             $form .= "<div class='control-group modal-footer'>";
             $form .= "<input type='submit' class='btn btn-primary ' name='formAddSubmit' value='Envoyer'/>";
-            $form .= "<span><a href='moduleManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            $form .= "<span><a href='' data-dismiss='modal' class='btn'>Annuler</a></span>";
             $form .= "</div> </form>";
             $form .= "</div>";
             return $form;
         }
 
-		//genere un div avec les informations principal du module this 
-		public function getDiv (){
-			return '<div class="box span4 '.$this->_CODE_MAT_.'"> <h4 class="box-title">'.$this->_LIBELLE_MOD_.'</h2> <div class="box-text">"'.$this->_DESCRIPTION_.'</div> </div>';
+		//genere un div avec les informations principal du module this
+        //le div contient les informations de ces différentes proprieté : matiere, promotion, semestre ...
+        //ceci nous permet de filtrer et d'afficher grace a l'isotope
+		public function getIsotopeContent (PDO $connect){
+            //recuperation de toutes les promotions en relation avec ce module
+            try{
+                $programmes = ProgrammeTool::getByIDMod($connect, $this->_ID_MOD_);
+                //ajout de l'etiquette de la matiere
+                $boxe =  '<div class="well well-small box span4 matiereFilter'.$this->_CODE_MAT_;
+                //ajout des différentes étiquettes de promotions disponible
+                foreach($programmes as $leProg){
+                    $boxe .= ' promoFilter'.$leProg->_ID_PROMO_;
+                }
+                //ajout de l'étiquette de semestre
+                if(is_numeric($this->_SEMESTRE_))
+                    $boxe .= ' semestre'.$this->_SEMESTRE_;
+                //on ferme le chevron de la balise div
+                $boxe .= '">';
+                //Le titre du box affiché
+                if(!empty($this->_LIBELLE_MOD_))
+                    $boxe .= '<h4 class="box-title">'.$this->_LIBELLE_MOD_.'</h4>';
+                else
+                    $boxe .= '<h4 class="box-title">Aucun Libelle</h4>';
+                //Le corp du box qui sera affiché
+                if(!empty($this->_DESCRIPTION_))
+                    $boxe .= '<div class="box-text">'.$this->_DESCRIPTION_.'</div>';
+                else
+                    $boxe .= '<div class="box-text"> Aucune Description Disponible </div>';
+
+                $boxe .= '</div>';
+                return $boxe;
+            }catch(Exception $e){
+                throw new Exception ("Module::getIsotopeContent => ".$e->getMessage());
+            }
 		}
 	}
 
@@ -671,7 +884,7 @@ include_once("ue.php");
 		//on recupere les modules par semestre et par promotion
 		public static function getBySemestre($connect, $_semestre, $_id_promo) {
 			$requete = "SELECT * FROM livret_module WHERE _SEMESTRE_ = ? NATURAL JOIN (SELECT _ID_MOD_ FROM livret_parcours WHERE _ID_PROMO_ = ?)";
-			if(!empty($connect) && is_numeric($_semeestre) && is_numeric($_id_promo)){
+			if(!empty($connect) && is_numeric($_semestre) && is_numeric($_id_promo)){
 				$stmt = $connect->prepare($requete);
 				$stmt->bindValue(1, $_semestre, PDO::PARAM_INT);
 				$stmt->bindValue(2, $_id_promo, PDO::PARAM_INT);
@@ -731,7 +944,7 @@ include_once("ue.php");
 		
 		
 		//un module s'il n'existe pas déjà dans la base sachant que les clé primaire sont l'id de la matiere et leur ects 
-		public static function insertModule($connect, $_code_matiere, $_libelle, $_semestre ,$_nbh_c, $_nbh_td, $_nbh_tp, $_nbh_ctd, $_ects, $_coef, $_langue, $_objectif, $_descript, $_method_eval, $_mod_cc_1, $_mod_cc_2, $_calcule_nf_1, $_calcule_nf_2, $_prerequis, $_ressources, $_biblio, $_note_elim, $_oblig) {
+		public static function insertModule($connect, $_code_matiere, $_libelle, $_semestre ,$_nbh_c, $_nbh_td, $_nbh_tp, $_nbh_ctd, $_ects, $_coef, $_langue, $_intro, $_objectif, $_descript, $_method_eval, $_mod_cc_1, $_mod_cc_2, $_calcule_nf_1, $_calcule_nf_2, $_prerequis, $_ressources, $_biblio, $_note_elim, $_oblig) {
 		
 			$requete = "INSERT IGNORE INTO livret_module (_CODE_MAT_ , _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_,_MOD_CC_1_,_MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 			if(!empty($connect) && is_numeric($_code_matiere) && !empty($_libelle) && is_numeric($_semestre) && is_numeric($_nbh_c) && is_numeric($_nbh_td) && is_numeric($_nbh_tp) && is_numeric($_nbh_ctd) && is_numeric($_ects) && is_numeric($_coef) && is_numeric($_note_elim)){
@@ -750,30 +963,34 @@ include_once("ue.php");
 						$stmt->bindValue(8, $_ects, PDO::PARAM_INT);
 						$stmt->bindValue(9, $_coef, PDO::PARAM_INT);
 						$stmt->bindValue(10, $_langue, PDO::PARAM_STR);
-						$stmt->bindValue(11, $_objectif, PDO::PARAM_STR);
-						$stmt->bindValue(12, $_descript, PDO::PARAM_STR);
-						$stmt->bindValue(13, $_method_eval, PDO::PARAM_STR);
-						$stmt->bindValue(14, $_mod_cc_1, PDO::PARAM_STR);
-						$stmt->bindValue(15, $_mod_cc_2, PDO::PARAM_STR);
-						$stmt->bindValue(16, $_calcule_nf_1, PDO::PARAM_STR);
-						$stmt->bindValue(17, $_calcule_nf_2, PDO::PARAM_STR);
-						$stmt->bindValue(18, $_prerequis, PDO::PARAM_STR);
-						$stmt->bindValue(19, $_ressources, PDO::PARAM_STR);
-						$stmt->bindValue(20, $_biblio, PDO::PARAM_STR);
-						$stmt->bindValue(21, $_note_elim, PDO::PARAM_INT);
-						$stmt->bindValue(22, $_oblig, PDO::PARAM_STR);
-						return $stmt->execute();
+                        $stmt->bindValue(11, $_intro, PDO::PARAM_STR);
+						$stmt->bindValue(12, $_objectif, PDO::PARAM_STR);
+						$stmt->bindValue(13, $_descript, PDO::PARAM_STR);
+						$stmt->bindValue(14, $_method_eval, PDO::PARAM_STR);
+						$stmt->bindValue(15, $_mod_cc_1, PDO::PARAM_STR);
+						$stmt->bindValue(16, $_mod_cc_2, PDO::PARAM_STR);
+						$stmt->bindValue(17, $_calcule_nf_1, PDO::PARAM_STR);
+						$stmt->bindValue(18, $_calcule_nf_2, PDO::PARAM_STR);
+						$stmt->bindValue(19, $_prerequis, PDO::PARAM_STR);
+						$stmt->bindValue(20, $_ressources, PDO::PARAM_STR);
+						$stmt->bindValue(21, $_biblio, PDO::PARAM_STR);
+						$stmt->bindValue(22, $_note_elim, PDO::PARAM_INT);
+						$stmt->bindValue(23, $_oblig, PDO::PARAM_STR);
+						if($stmt->execute())
+                            return TRUE;
+                        else
+                            throw new Exception("ModuleTool::insertModule => impossiblde d'exectuer la requete");
 					}else 
-						throw new exception("ModuleTools::insertModule => Erreur FOREIGN KEY ! ");
+						throw new exception("ModuleTool::insertModule => Erreur FOREIGN KEY ! ");
 				}catch (exception $e) {
-					throw new exception("ModuleTools::insertModule => ".$e->getMessage());
+					throw new exception("ModuleTool::insertModule => ".$e->getMessage());
 				}
 			}else 
-				throw new exception("ModuleTools::insertModule => parametres invalides ! "); 
+				throw new exception("ModuleTool::insertModule => parametres invalides ! ");
 		}
 		
 		//permet de mettre a jour le module
-		public static function updateModule($connect, $_id_mod ,$_code_matiere, $_libelle, $_semestre ,$_nbh_c, $_nbh_td, $_nbh_tp, $_nbh_ctd, $_ects, $_coef, $_langue, $_objectif, $_descript, $_method_eval, $_mod_cc_1, $_mod_cc_2, $_calcule_nf_1, $_calcule_nf_2, $_prerequis, $_ressources, $_biblio, $_note_elim, $_oblig) {
+		public static function updateModule($connect, $_id_mod ,$_code_matiere, $_libelle, $_semestre ,$_nbh_c, $_nbh_td, $_nbh_tp, $_nbh_ctd, $_ects, $_coef, $_langue, $_intro, $_objectif, $_descript, $_method_eval, $_mod_cc_1, $_mod_cc_2, $_calcule_nf_1, $_calcule_nf_2, $_prerequis, $_ressources, $_biblio, $_note_elim, $_oblig) {
 			
 			$requete = "UPDATE livret_module SET _CODE_MAT_ = ? , _LIBELLE_MOD_ = ? , _SEMESTRE_ = ? , _NBH_C = ? , _NBH_TD_ = ? , _NBH_TP_ = ? , _NBH_CTD_ = ? , _ECTS_ =  ? , _COEF_ = ? , _LANGUE_ = ? , _OBJECTIF_ = ? , _DESCRIPTION_ = ? , _METHODE_EVAL_ = ? , _MOD_CC_1_ = ? , _MOD_CC_2_ = ? , _CALCUL_NF_1_ = ? , _CALCUL_NF_2_ = ? , _PREREQUIS_ = ? , _LIEN_RESSOURCE_ = ? , _BIBLIOGRAPHIE_ = ? , _NOTE_ELIM_ = ? , _OBLIGATOIRE_ = ? WHERE _ID_MOD_ = ?";
 			if (!empty($connect) && is_numeric($_id_mod) && is_numeric($_code_matiere) && !empty($_libelle) && is_numeric($_semestre) && is_numeric($_nbh_c) && is_numeric($_nbh_td) && 	is_numeric($_nbh_tp) && is_numeric($_nbh_ctd) && is_numeric($_ects) && is_numeric($_coef) && is_numeric($_note_elim)) {
@@ -790,29 +1007,32 @@ include_once("ue.php");
 				$stmt->bindValue(8, $_ects, PDO::PARAM_INT);
 				$stmt->bindValue(9, $_coef, PDO::PARAM_INT);
 				$stmt->bindValue(10, $_langue, PDO::PARAM_STR);
-				$stmt->bindValue(11, $_objectif, PDO::PARAM_STR);
-				$stmt->bindValue(12, $_descript, PDO::PARAM_STR);
-				$stmt->bindValue(13, $_method_eval, PDO::PARAM_STR);
-				$stmt->bindValue(14, $_mod_cc_1, PDO::PARAM_STR);
-				$stmt->bindValue(15, $_mod_cc_2, PDO::PARAM_STR);
-				$stmt->bindValue(16, $_calcule_nf_1, PDO::PARAM_STR);
-				$stmt->bindValue(17, $_calcule_nf_2, PDO::PARAM_STR);
-				$stmt->bindValue(18, $_prerequis, PDO::PARAM_STR);
-				$stmt->bindValue(19, $_ressources, PDO::PARAM_STR);
-				$stmt->bindValue(20, $_biblio, PDO::PARAM_STR);
-				$stmt->bindValue(21, $_note_elim, PDO::PARAM_INT);
-				$stmt->bindValue(22, $_oblig, PDO::PARAM_STR);
-				$stmt->bindValue(23, $_id_mod, PDO::PARAM_STR);
-				return $stmt->execute();
-				
+                $stmt->bindValue(11, $_intro, PDO::PARAM_STR);
+				$stmt->bindValue(12, $_objectif, PDO::PARAM_STR);
+				$stmt->bindValue(13, $_descript, PDO::PARAM_STR);
+				$stmt->bindValue(14, $_method_eval, PDO::PARAM_STR);
+				$stmt->bindValue(15, $_mod_cc_1, PDO::PARAM_STR);
+				$stmt->bindValue(16, $_mod_cc_2, PDO::PARAM_STR);
+				$stmt->bindValue(17, $_calcule_nf_1, PDO::PARAM_STR);
+				$stmt->bindValue(18, $_calcule_nf_2, PDO::PARAM_STR);
+				$stmt->bindValue(19, $_prerequis, PDO::PARAM_STR);
+				$stmt->bindValue(20, $_ressources, PDO::PARAM_STR);
+				$stmt->bindValue(21, $_biblio, PDO::PARAM_STR);
+				$stmt->bindValue(22, $_note_elim, PDO::PARAM_INT);
+				$stmt->bindValue(23, $_oblig, PDO::PARAM_STR);
+				$stmt->bindValue(24, $_id_mod, PDO::PARAM_STR);
+				if($stmt->execute())
+                    return TRUE;
+				else
+                    throw new Exception ("ModuleTool::updateModule => impossible d'exectuer la requete");
 			}else 
-				throw new exception ("ModuleTools::updateModule => parametres invalide");
+				throw new exception ("ModuleTool::updateModule => parametres invalide");
 			
 		}
 		
 		//permet d'avoir tous les modules
 		public static function getAll($connect) {
-			$requete = "SELECT * FROM livret_module";
+			$requete = "SELECT * FROM livret_module ORDER BY _SEMESTRE_ ASC";
 			if(!empty($connect)){
 				$stmt = $connect->prepare($requete);
 				if($stmt->execute())

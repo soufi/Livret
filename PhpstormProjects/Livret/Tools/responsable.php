@@ -1,5 +1,4 @@
 <?php
-
 include_once("enseignant.php");
 include_once("filiere.php");
 include_once("module.php");
@@ -8,10 +7,70 @@ include_once("module.php");
 /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 	//permet de gérer les responsables de filieres
-	//les attrbiuts de cette classes seront les colonnes de la table livret_responsable_filiere c-a-d : 
+	//les attrbiuts de cette classes seront les colonnes de la table livret_responsable_filiere c-a-d :
 	//l'id de la filiere, l'id de l'enseignant
-
+    //la connexion a la base de donnée se fait avec l'objet PDO passé en parametre a toutes les fonctions
+    //la gestion de celui ci dans le fichier connexion .php
 	class RespFiliere{
+
+        //permet d'avoir le bloc du responsable de Filiere en Format Tex
+        //ecrit dans le fichier en parametre => handler
+        //retourne un boolean pour confirmer ou non l'execution
+        public static function genereLatex($handler, Enseignant $resp){
+
+            if(!empty($resp)){
+                $latex = "\\begin{wrapfigure}{r}{0.35\textwidth}\n";
+                $latex .= "\\vspace{-20pt}\n";
+                $latex .= "\\begin{center}\n";
+                $latex .= "\\begin{tikzpicture}\n";
+                $latex .= "\node [rectangle, draw=couleurFonce, thick, drop shadow, fill=couleurBox, inner sep=10pt, inner ysep=10pt] (box){";
+                $latex .= "\\begin{minipage}{0.35\textwidth}%\n";
+                $latex .= "\\begin{spacing}{1}\n";
+                $latex .= "\\begin{tabular}[t]{@{}m{10mm}@{~~}m{30mm}@{}}\n";
+
+                //recup du nom de fichier
+                if(!empty($resp->_PHOTO_))
+                    $fileName = basename($resp->_PHOTO_);
+                else
+                    $fileName = "";
+                //nom et prenom
+                $latex .= "\\includegraphics[scale=0.6]{img/photos/".$fileName."} & \\normalsize{\textbf{".$resp->_PRENOM_ENS_."}\\newline \textbf{".$resp->_NOM_ENS_."}}\\newline \\footnotesize{} \\newline \\footnotesize{".$resp->_TITRE_."}\\\n";
+                //ajout du mail
+                $latex .= "\\multicolumn{2}{c}{{\\scriptsize \\textit{".$resp->_EMAIL_ENS_."}}} \\\n";
+                //ajout ud numero de phone
+                $latex .= "\\multicolumn{2}{c}{\\includegraphics[scale=0.7]{img/telephone.png}{\\scriptsize ".$resp->_PHONE_."}}\n";
+                $latex .= "\\end{tabular}\n";
+                $latex .= "\\end{spacing}\n";
+                $latex .= "\\end{minipage}\n";
+                $latex .= "};\n";
+                $latex .= "\\node[fancytitle, right=5pt, rounded corners, inner xsep=10pt] at (box.north west) {\\normalsize{Directeur des études}};";
+                $latex .= "\\end{tikzpicture}";
+                $latex .= "\\end{center}\n";
+                $latex .= "\\vspace{-20pt}\n";
+                $latex .= "\\end{wrapfigure}\n";
+                if(!fwrite($handler, addslashes($latex)))
+                    throw new Exception ("RespFiliere::genereLatex => impossiblde d'ecrire sur le fichier");
+                return TRUE;
+            //si le resp est vide
+            }else{
+                return FALSE;
+            }
+        }
+
+        //permet de creer le fichier contenant les informations du responsable
+        //retourne boolean pour confirmer ou non l'execution
+        public function genereFile($connect){
+            try{
+                //recup de la fiche d'information afin
+                $fiche = $this->sheetOfEns($connect);
+                $fileName = "Resp_".$fiche->_PRENOM_ENS_."_".$fiche->_NOM_ENS_.".tex";
+                $theFile = fopen($fileName, 'w');
+                return self::genereLatex($theFile, $fiche);
+            }catch(Exception $e){
+                throw new Exception("RespFiliere::genereFile => ".$e->getMessage());
+            }
+        }
+
 
         //permet d'avoir la fiche de l'enseignant ou les informations a partir de l'id de l'enseignant
         //retourne un Enseignant (cf fichier enseignant.php)
@@ -30,6 +89,8 @@ include_once("module.php");
             }else
                 throw new Exception("RespFiliere::sheetOfEns => parametre invalide");
         }
+
+
 
 		//permet d'avoir l'objet filiere donc ces informations (comme au dessus) a partir de l'id de la filiere
 		//retourne une Filiere (cf filiere.php)

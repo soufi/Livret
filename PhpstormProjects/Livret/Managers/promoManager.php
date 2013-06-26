@@ -17,7 +17,6 @@
 			$preambule = $_POST['preambulePromo'];
 			$epilogue = $_POST['epiloguePromo'];
 			$color1 = hex2rgb($_POST['couleur1Promo']); //transfromation de la couleur de hex en rvb
-
 			$color2 = hex2rgb($_POST['couleur2Promo']);
 			$color3 = hex2rgb($_POST['couleur3Promo']);
 			$cfg = hex2rgb($_POST['cfgPromo']);
@@ -99,52 +98,67 @@
 	?>
 	<body>
 		<div class="container-fluid">
-			<div class="span3">
-				<?php
-					include_once("../Blocks/nav_gestion.html");
-				?>
-				<div class="nav nav-pills">
-					<input type="button" id="addPromo" class="btn btn-inverse" value="Ajouter une Promotion"/>
-					<input type="button" id="addParcour" class="btn btn-inverse" value="Ajouter un Parcour"/>
-				</div>
+            <div class="row-fluid">
+                <div class="span2">
+                    <?php
+                        include_once("../Blocks/nav_gestion.html");
+                    ?>
+                    <ul class="nav nav-tabs bs-docs-sidenav nav-stacked">
+                        <li class="nav-header">Menu Promo & Parcour</li>
+                        <li><a id="addPromo" class="btn">Ajouter une Promo</a></li>
+                        <li><a id="addParcour" class="btn">Ajouter un Parcours</a></li>
+                    </ul>
+                </div>
+                <!--le tableau d'affichage de toutes les promotion-->
+                <div class="span9">
+                    <?php
+                    $taillePage = 10;
+                    //recup de toute les promotion
+                    try{
+                        $allPromo = PromoTool::getAll($bdd->getConnexion());
+                        if(isset($_GET['pm']))
+                            $page = intval($_GET['pm']);
+                        else
+                            $page = 1;
+                        echo (Promo::genereTable($bdd->getConnexion(), $allPromo, $page, $taillePage));
+                    }catch(exception $e){
+                        echo $e->getMessage();
+                    }
 
-			</div>
-			<!--le tableau d'affichage de toutes les promotion-->
-			<div class="span9">
-				<?php
-				//recup de toute les promotion
-					try{
-						$allPromo = PromoTool::getAll($bdd->getConnexion());
-						echo (Promo::genereTable($bdd->getConnexion(), $allPromo));
-					}catch(exception $e){
-						echo $e->getMessage();
-					}
-				
-					// Les formulaires des Promotions deja preparer qui'on affichera que s'il y'a un evenement de clique sur une ligne de la table
-					//formulaire de modification de la promotion
-					//formulaire de modification et d'ajout d'une filiere de la promotion
-					if(!empty($allPromo)){
-						foreach ($allPromo as $laPromo) {
-							echo $laPromo->genereFormModif();
-							//formulaire cache d'update de parcour
-							echo $laPromo->formUpdFiliere($bdd->getConnexion());
-							//formulaire d'ajout de parcour
-							echo $laPromo->formAddFiliere($bdd->getConnexion());
-						}
-					}
 
-					//formulaire cache de creation de Promotion, on l'affichera une fois cliquer sur le bouton ajouter une promotion
-					echo Promo::genereFormAdd();
+                    // Les formulaires des Promotions deja preparer qui'on affichera que s'il y'a un evenement de clique sur une ligne de la table
+                    //formulaire de modification de la promotion
+                    //formulaire de modification et d'ajout d'une filiere de la promotion
+                    if(!empty($allPromo)){
+                        //calcule des frontières de l'intervale
+                        $debutPage = (($page*$taillePage)-$taillePage)+1;
+                        if((count($allPromo)-(($page-1)*$taillePage)) > $taillePage)
+                            $finPage = $debutPage + $taillePage;
+                        else
+                            $finPage = count($allPromo);
 
-					//formulaire cache de creation de parcour, on l'affichera une fois cliquer sur le bouton ajouter un parcour
-					echo Parcour::genereFormAdd($bdd->getConnexion());
+                        for ($i = $debutPage; $i < $finPage ; $i++){
+                            echo $allPromo[$i]->genereFormModif();
+                            //formulaire cache d'update de parcour
+                            echo $allPromo[$i]->formUpdFiliere($bdd->getConnexion());
+                            //formulaire d'ajout de parcour
+                            echo $allPromo[$i]->formAddFiliere($bdd->getConnexion());
+                        }
+                    }
 
-				?>
-			</div>
+                    //formulaire cache de creation de Promotion, on l'affichera une fois cliquer sur le bouton ajouter une promotion
+                    echo Promo::genereFormAdd();
+
+                    //formulaire cache de creation de parcour, on l'affichera une fois cliquer sur le bouton ajouter un parcour
+                    echo Parcour::genereFormAdd($bdd->getConnexion());
+                    ?>
+                </div>
+            </div>
 		</div>
 	</body>
-	
-	<!-- le script permettant d'afficher le formulaire apres clique sur la ligne du tableau -->
+
+    <script type="text/javascript" src="/Livret/CSS/Bootstrap/js/bootstrap.js"></script>
+	<!-- le script permettant d'afficher les formulaires en fonction de l'interaction avec le tableau (click, dblclick) ou les boutons -->
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$(".alert").alert();
@@ -216,5 +230,7 @@
 			}
 		});
 	</script>
-
+    <?php
+    include_once("../Blocks/footer.html");
+    ?>
 </html>

@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livret>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="10" td="" tp="30" ctd="" total="40" semestre="3" coeff="4" ects="4">
+    <titre>Réseaux et infrastructures de production</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Prénom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>Ce cours explore les différentes architectures que l\'on peut mettre en
+oeuvre dans le cadre d\'une informatique Client/Serveur. Il fait l\'inventaire
+de la plupart des problèmes rencontrés et décrit les technologies
+(Applicatives, Systèmes et Réseaux) qui composent les infrastructures et
+qui permettent le déploiement harmonieux et la gestion efficace d\'un
+système d\'information moderne.
+
+Réseaux de communication :
+
+* réseaux locaux : architectures, techniques d\'accès protocoles de réseau, protocoles de transport
+* interconnexion de réseaux hétérogènes
+* administration des réseaux
+* conférences
+ 
+Applications réparties :
+
+* programmation des applications réparties
+* protocoles d\'applications
+* spécification formelle et validation de protocoles
+* allocation de ressource, synchronisation
+* les systèmes transactionnels
+* techniques internet.</descriptionLongue>
+    <textePrerequis>Modules Réseaux du Master 1.</textePrerequis>
+    <objectifs>* Maîtriser l\'installation, le déploiement et la maintenance d\'un SI.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="20" td="10" tp="" ctd="" total="30" semestre="3" coeff="2" ects="2">
+    <titre>Création d\'entreprise</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Prénom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>Présentation complète du cadre économique, juridique, financier et
+commercial des deux modalités de la création d\'entreprise, la création "ex
+nihilo" et la "reprise" d\'une entreprise dans le cadre d\'une transmission.</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Etre capable de réaliser un dossier économique de création d\'une
+entreprise afin de se familiariser avec la présentation dynamique d\'un
+projet à des investisseurs potentiels.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="20" td="20" tp="" ctd="" total="40" semestre="3" coeff="4" ects="4">
+    <titre>Sécurité et protocoles</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Prénom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>petite-DESCRIPTION</descriptionCourte>
+    <descriptionLongue>Ce module introduit et familiarise les étudiants avec des notions de
+sécurité relatives aux communications.
+
+Après un survol historique de la compétition perpétuelle entre
+cryptographie et cryptanalyse, avec comme point clé la seconde guerre
+mondiale et le système Enigma, les standards actuels de chiffrements
+symétriques et asymétriques sont étudiés en profondeur. Les technologies
+actuelles permettent des communications synchrones sur des distances de
+plusieurs centaines ou milliers de kilomètres. De plus ces communications
+peuvent contenir des informations confidentielles et peuvent également
+nécessiter une authentification des personnes en communication
+(communication entre un tiers et un centre de paiement par exemple). Des
+protocoles de sécurité sont développés afin de garantir les propriétés
+mentionnées précédemment.
+
+Ce module présente les mécanismes d\'authentification, de confidentialité
+et d\'intégrité de données et ainsi que quelques protocoles comme
+Kerberos. Enfin, le dernier point traité dans ce module démontre que des
+algorithmes de chiffrement parfaits ne suffisent pas pour garantir la
+sécurité d\'un protocole de communication. Les étudiants sont invités à
+manipuler un outil de simulation et de vérification de protocoles de
+sécurité afin de détecter d\'éventuelles failles logiques de conception.</descriptionLongue>
+    <textePrerequis>Notions de mathématiques discrètes, réseaux.</textePrerequis>
+    <objectifs>* Comprendre en profondeur les mécanismes garantissant la sécurité des
+systèmes et réseaux en termes de confidentialité, d\'authentification et de
+disponibilité.
+  * Modéliser un protocole à partir d\'une spécification textuelle et
+manipuler un outil de simulation et de vérification.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="10" td="20" tp="" ctd="" total="30" semestre="3" coeff="2" ects="2">
+    <titre>Gestion des ressources humaines</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Prénom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>* Introduction à la gestion des ressources humaines
+* La DRH en entreprise
+* Le management des hommes et des équipes
+* Evaluation des postes
+* Le recrutement
+* Réforme de la formation professionnelle.</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Appréhender la gestion des ressources humaines dans le cadre de l\'entreprise.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="15" td="15" tp="10" ctd="" total="40" semestre="4" coeff="3" ects="3">
+    <titre>Fouille de données et de textes</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Christel VRAIN</nompremierresp>
+    <emailpremierresp>Christel.VRAIN@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>1-  Algorithme de fouille de données (approfondissement)
+\begin{itemize} 
+1-  apprentissage statistique et analyse de données
+1-  apprentissage symbolique (induction, reformulation, ...)
+\end{itemize} 
+1-  Extraction de Connaissances à partir de textes.</descriptionLongue>
+    <textePrerequis>UE Extraction de connaissances dans les bases de données.</textePrerequis>
+    <objectifs>* Approfondir certaines techniques présentées dans le module Extraction de Connaissances dans les BD.
+* Élargir la problématique à des types de données complexes comme les données spatiales ou textuelles.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="15" td="15" tp="10" ctd="" total="40" semestre="4" coeff="3" ects="3">
+    <titre>Web Services et interopérabilité</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Frédéric MOAL</nompremierresp>
+    <emailpremierresp>Frederic.MOAL@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>Ce module permet de comprendre les technologies et les architectures
+sous-jacentes mises en oeuvre dans les architectures de type SOA :
+ 
+* Implementation des Services Web (SOAP, WSDL, UDDI...) ;
+* Exemple de mise en oeuvre en Java et .NET ;
+* Interopérabilité entre SI hétérogènes ;
+* Intégration d\'application - Utilisation de bus ESB.</descriptionLongue>
+    <textePrerequis>Maîtrise des architectures distribuées, JEE/.NET</textePrerequis>
+    <objectifs>* Comprendre les architectures orientées services et les technologies sousjacentes.
+  * Concevoir une architecture d\'intégration de SI hétérogènes.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="20" td="" tp="15" ctd="" total="35" semestre="4" coeff="3" ects="3">
+    <titre>Sécurité des Réseaux</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Prénom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>L\'enseignement est assuré par plusieurs intervenants extérieurs qui
+abordent des thèmes comme : les réseaux ATM, le protocole IPv6, les
+réseaux mobiles, la protection des réseaux contre le piratage, les ACL, les
+architectures réseaux sécurisées, les infrastructures à clés publiques, la
+sécurité dans les réseaux de télécommunications, dans les réseaux
+mobiles (GSM, UMTS, ...), les services à cartes (télécarte, carte bancaire,
+télévision à péage, ...), les protocoles IPSEC/IKE, les failles de sécurité,
+l\'analyse de risques, les alertes, les remontées d\'alarmes, la détection
+d\'intrusions, les techniques de piratage, les firewalls.</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* **************</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="30" td="10" tp="" ctd="" total="40" semestre="4" coeff="3" ects="3">
+    <titre>Management des SI</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Prénom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>Plusieurs intervenants professionnels du domaine abordent différentes
+thématiques liées au management du SI dans l\'entreprise :
+
+* Dimensionner et aligner le système d\'information (SI) - système
+d\'information informatisé (SII) au sein des processus - organisation du
+Métier (MOA - AMOA) et Informatique (MOE) avec la stratégie de
+l\'Entreprise en environnement sous contraintes ;
+* Pilotage du SI SII par horizon (stratégique - tactique - opérationnel) et
+contrainte (Valeur - Coût) ;
+* Intégration et évolution du SII au sein du SI - SII existant.
+* La gestion des services de production informatique.
+* Modèles, normes et standards existants (ITIL, ISO 17799 / 27002, ISO
+20000, COBIT, CMMI).
+* TD portant sur les aspects méthodologiques de la mise en production
+d\'une application informatique.</descriptionLongue>
+    <textePrerequis>* Ingénierie des SI.
+* Gestion de projets et qualité.
+* Analyse financière.</textePrerequis>
+    <objectifs>* Identifier les tendances, les évolutions, connaître les méthodes, tableaux
+de bords et indicateurs permettant au décideur de piloter le SI (mesurer
+l\'atteinte des objectifs et analyser les écarts en termes de qualité,
+supervision, sécurité, dimensionnement).
+  * Dimensionner - préparer - suivre - contrôler - optimiser le SI, SII.
+  * Avoir un aperçu des enjeux et des métiers de la production informatique
+et à travers la présentation des principaux processus de gestion du service informatique et
+les grand référentiels et normes reconnus sur le marché, représentant les
+"bonnes pratiques" d\'une DSI nécessaire pour assurer la conformité aux
+multiples exigences actuelles.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="6 mois" semestre="4" coeff="12" ects="12">
+    <titre>Stage professionnel</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Catherine JULIÉ-BONNET</nompremierresp>
+    <emailpremierresp>Catherine.JULIE-BONNET@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>Stage professionnel en entreprise de 6 mois.</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Finaliser son projet professionnel et préparer son recrutement via le stage.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="10" td="" tp="" ctd="" total="" semestre="3" coeff="3" ects="3">
+    <titre>Projet industriel</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Catherine JULIÉ-BONNET</nompremierresp>
+    <emailpremierresp>Catherine.JULIE-BONNET@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>Ce projet met en oeuvre les connaissances acquises au cours du semestre
+par le biais de l\'étude et de la réalisation d\'une application J2EE ou de la
+réalisation d\'un projet d\'architecture applicative répartie dont le sujet est
+défini en collaboration avec un partenaire industriel.</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Maîtriser les aspects fonctionnels et techniques de la mise en oeuvre d\'un
+système d\'information réparti.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="20" td="20" tp="10" ctd="" total="50" semestre="3" coeff="4" ects="4">
+    <titre>Architectures applicatives réparties</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Frédéric MOAL</nompremierresp>
+    <emailpremierresp>Frederic.MOAL@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp>Matthieu EXBRAYAT</nomsecondresp>
+    <emailsecondresp>Matthieu.EXBRAYAT@univ-orleans.fr</emailsecondresp>
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>Ce module se compose de deux parties complémentaires, portant sur les
+aspects théoriques et pratiques des systèmes d\'information répartis:
+Dans l\'optique d\'une approche fondée sur la pratique, le module aborde
+dans un premier temps les outils disponibles, autour du langage Java et de
+la plateforme Java Enterprise Edition (JavaEE) :
+ 
+* Communication répartie par invocation distante (RMI) et messagerie (JMS).
+* Persistance d\'objets (utilisation de différents frameworks, dont hibernate).
+* Concept de bean métier (EJB).
+* Intégration des différents types d\'EJB, interfaçage avec la couche présentation.
+* Bases de l\'administration du serveur d\'applications\\
+Lorsque les aspects pratiques ont été manipulés, l\'étudiant est amené à les
+mettre en perspective et à rationaliser leur mise en oeuvre, par l\'étude des
+aspects "théoriques" suivants :
+   
+  \item Typologie des SI et exemples significatifs
+  \item UML et processus de développement unifié (rappels)
+  \item Patron de conception ("Design Patterns")
+  \item Concept de transaction répartie</descriptionLongue>
+    <textePrerequis>Compétences en bases de données, programmation java, conception d\'applications web (servlets/JSP, modèle MVC2).</textePrerequis>
+    <objectifs>* Fournir à l\'étudiant les outils nécessaires à l\'analyse, la mise en place et
+l\'exploitation de systèmes d\'informations répartis.
+  * Apporter une solide
+formation sur la répartition des données et des traitements dans un
+Système d\'Information (SI), suivant deux axes : outils avancés pour la
+modélisation et la gestion des SI (UML, design patterns, etc.) et SI
+distribués contemporains (architectures multi-tiers, plateformes
+applicatives).</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="20" td="20" tp="10" ctd="" total="50" semestre="3" coeff="4" ects="4">
+    <titre>Extraction de connaissances dans les BD</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Christel VRAIN</nompremierresp>
+    <emailpremierresp>Christel.VRAIN@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>* Les différents types d\'apprentissage et les différentes tâches
+* Classification supervisée : arbre de décision, modèles probabilistes,
+machines à vecteur support, noyaux
+* Evaluation des modèles
+* Classification non supervisée : par partitionnement, hiérarchique,
+conceptuelle
+* Recherche de règles d\'association
+ 
+Savoir-faire:
+ 
+* Utilisation d\'outils : Weka, RapidMiner
+* Définir le problème d\'apprentissage : modèle à acquérir, données
+nécessaires, techniques applicables
+* Appliquer des techniques d\'apprentissage.
+Etudes de cas guidés par des applications.</descriptionLongue>
+    <textePrerequis>UE Intelligence Artificielle - UE Analyse de données.</textePrerequis>
+    <objectifs>* Acquérir les notions de base permettant de résoudre un problème
+d\'Extraction de Connaissances dans les Bases de Données : modélisation de la tâche à effectuer, préparation des données, choix des outils.\\
+Le Data
+Mining est devenu une discipline fondamentale, justifiée par le
+développement de grandes bases de données, la nécessité de constituer
+des mémoires d\'entreprises et le besoin d\'outils intelligents pour exploiter
+les flux d\'information sur le web.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="10" td="" tp="" ctd="" total="10" semestre="4" coeff="3" ects="3">
+    <titre>Projet industriel</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Catherine JULIÉ-BONNET</nompremierresp>
+    <emailpremierresp>Catherine.JULIE-BONNET@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>Ce projet permet de synthétiser toutes les connaissances acquises au
+cours de l\'année par le biais de l\'étude et de la réalisation d\'une
+intégration d\'applications dans un contexte hétérogène. Le sujet de ce
+projet est défini en collaboration avec un partenaire industriel.</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Maîtriser tous les aspects (logiciels, matériels, sécurité, etc) de la mise en oeuvre d\'un système d\'information réparti et hétérogène.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="20" td="10" tp="" ctd="" total="30" semestre="4" coeff="3" ects="3">
+    <titre>Stratégie commerciale autour de l\'Internet</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Prénom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>Pilotage stratégique de l\'entreprise, avec Internet comme outil de pouvoir :
+ 
+* Les différents types d\'environnement concurrentiels.
+* Analyse de l\'entreprise et évaluation de l\'impact d\'Internet.
+* Choisir la bonne stratégie.
+* Web design et audit de sites.</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Maîtriser les aspects stratégiques et marketing pour l\'utilisation d\'Internet.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="20" td="20" tp="10" ctd="" total="50" semestre="3" coeff="4" ects="4">
+    <titre>Gestion de projet et qualité</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Prénom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>* Les étapes d\'un projet
+* Les livrables de la conduite de projet
+* Les rôles et responsabilités des acteurs (client, décideurs, maîtrise d\'ouvrage, maîtrise d\'oeuvre, assurance qualité)
+* Le travail en équipe
+* Méthodes de prévision et d\'estimation des charges et de délais
+* Tests
+* Normalisation ISO / maturité CMM
+* La gestion des risques
+* La gestion des évolutions
+* Le plan de communication
+* Les outils du chef de projet.</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Etudier la conduite de projet et la mise en place d\'un système qualité.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="24" tp="" ctd="" total="24" semestre="3" coeff="3" ects="3">
+    <titre>Anglais professionnel</titre>
+    <methodeeval>Contrôle continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire>7</noteeliminatoire>
+    <nompremierresp>Prénom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>1</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Unité obligatoire.</descriptionCourte>
+    <descriptionLongue>Travailler la langue écrite et orale afin de perfectionner ses capacités à
+communiquer en milieu professionnel. Suivi interactif et personnalisé du
+projet industriel.
+
+Suivi de projet industriel :
+
+* l\'étudiant produit plusieurs devoirs pour lequel il reçoit une correction individuelle.
+* Présentation orale
+* Devoir écrit (compréhension et synthèse)
+* Poursuite du travail sur le CV, la lettre de motivation et l\'entretien.
+
+Supports : Publications les sciences et technologies informatiques, documents
+sonores, centre de ressources multimedia.</descriptionLongue>
+    <textePrerequis>Avoir suivi les modules d\'anglais de Master 1 ou 550 heures de formation
+équivalente.</textePrerequis>
+    <objectifs>* Se rapprocher des compétences demandées au niveau C1; possibilité de
+valider le CLES 3.
+  * L\'étudiant comprend des textes longs dans sa discipline, rend compte
+oralement et par écrit de documents professionnels, s\'exprime dans une
+langue claire et structurée sur des sujets complexes à caractère social et
+académique.</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+</livret>

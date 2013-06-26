@@ -30,10 +30,35 @@
 			}
 		}
 
+        //recup la promo qui correspond a ce parcour
+        public function getPromo($connect){
+            try{
+                $laPromo = PromoTool::getByID($connect, $this->_ID_PROMO_);
+                if(!empty($laPromo))
+                    return $laPromo[0];
+                else
+                    return NULL;
+            }catch(Exception $e){
+                throw new Exception ("Parcour::Promo => ".$e->getMessage());
+            }
+        }
+
+        public function getFiliere($connect){
+            try{
+                $laFiliere = FiliereTool::getByID($connect, $this->_ID_FILIERE_);
+                if(!empty($laFiliere))
+                    return $laFiliere[0];
+                else
+                    return NULL;
+            }catch(Exception $e){
+                throw new Exception("Parcour::getLibelleFiliere => ".$e->getMessage());
+            }
+        }
+		
 		public static function genereFormAdd($connect){
 			$form = "<div id='formAddParcour' class='modal hide fade in' style='display: none;'>";
             $form .= "<div class='modal-header'>";
-            $form .= "<a href='promoManager.php' class='close' data-dismiss='modal'>x</a> <h3>Ajout de parcour </h3>";
+            $form .= "<a href='' class='close' data-dismiss='modal'>x</a> <h3>Ajout de parcour </h3>";
             $form .= "</div>";
             $form .= "<div class='modal-body'>";
             $form .= "<form method='post' action='promoManager.php' class='form-horizontal'>";
@@ -88,11 +113,12 @@
             //Les Boutons
             $form .= "<div class='control-group modal-footer'>";
             $form .= "<input type='submit' class='btn btn-primary ' name='formPopAddSubmit' value='Envoyer'/>";
-            $form .= "<span><a href='promoManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            $form .= "<span><a href='' data-dismiss='modal' class='btn'>Annuler</a></span>";
             $form .= "</div> </form>";
             $form .= "</div>";
             return $form;
 		}
+		
 	}
 
 /*--------------------------------------------------------------------------------------------------------------------------------*/
@@ -112,7 +138,6 @@
 					throw new Exception("ParcoursTool::getByIDFiliere => impossible d'executer la requete");	
 			}else
 				throw new Exception("ParcoursTool::getByIDFiliere => invalide parametre !");
-				
 		}
 
 		//permet d'avoir toutes les Filieres de la promotion demandé
@@ -127,7 +152,6 @@
 					throw new Exception("ParcoursTool::getByIDPromo => impossible d'executer la requete");
 			}else
 				throw new Exception("ParcoursTool::getByIDPromo => invalide parametre !");
-				
 		}
 
 		//renvoi boolean permettant de savoir si le parcour existe deja ou non 

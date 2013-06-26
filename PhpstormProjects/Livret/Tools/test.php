@@ -1,16 +1,25 @@
+<?php
+	include_once("responsable.php");
+	include_once("connexion.php");
+	include_once("module.php");
+?>
 <html debug="true">
 
 	<head>
 		<script type="text/javascript" src="../Scripts/JQuery/jquery-1.9.1.js"></script>
 		<script type="text/javascript">
-			
 
-			
-			
 
 		</script>
 	</head>
 	<body>
+		<?php
+
+
+        $array = preg_match_all("/[\\n\\r^]+(.+):\\s*/","afene a l9àwad\nj'ai achete un gros poisson: kifach daba erera\nnana ana: aelrkjer\n leciel est bleu: wawawawaw a 3ayta dawdiya\n", $tab);
+        print_r($tab);
+
+		?>
 		<form>
 			<p>type in the box below to narrow the list of names.</p>
 			<p>
@@ -47,7 +56,6 @@
 					<option>Zehra Princess</option>
 				</select>
 			</p>
-
 		</form>
 	</body>
 </html>

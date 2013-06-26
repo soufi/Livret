@@ -4,7 +4,7 @@
 		include_once("../Blocks/entete.html");
 		include_once("../Tools/alerts.php");
 
-/*--------------------------  Gestion BDD Composante  ------------------------------*/
+/*--------------------------------------------  Gestion BDD Composante  ------------------------------------------------*/
 
 		//Gestion du Update de Composante
 		if(isset($_POST['formUpdSubmit'])){
@@ -37,47 +37,49 @@
 				echo AlertTool::genereDanger($e->getMessage());
 			}
 		}
-/* ------------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------------------------------------------- */
 	?>
 	<body>
-		<div class="container">
-			<div class="row">
-				<div class="span3">
-					<?php
-						include_once("../Blocks/nav_gestion.html");
-					?>
-					<div class="nav nav-pills">
-						<input type="button" id="addCompo" class="btn btn-inverse" value="Ajouter une Composante"/>
-					</div>
+		<div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span2">
+                    <?php
+                        include_once("../Blocks/nav_gestion.html");
+                    ?>
+                    <ul class="nav nav-tabs bs-docs-sidenav nav-stacked">
+                        <li class="nav-header">Menu Composantes</li>
+                        <li><a id="addCompo" class="btn">Ajouter</a></li>
+                    </ul>
 
-				</div>
-				<!--le tableau d'affichage de toutes les composantes-->
-				<div class="span9">
-					<?php
-					//recup de toute les composantes
-						try{
-							$allCompo = ComposanteTool::getAll($bdd->getConnexion());
-							echo (Compo::genereTable($allCompo));
-						}catch(exception $e){
-							echo AlertTool::genereDanger($e->getMessage());
-						}
-					
-						// Les formulaires des Composantes deja preparer qui'on affichera que s'il y'a un evenement -->
-						//generation des formulaires
-						if(!empty($allCompo)){
-							foreach ($allCompo as $value) {
-								echo $value->genereFormModif();
-							}
-						}
+                </div>
+                <!--le tableau d'affichage de toutes les composantes-->
+                <div class="span9">
+                    <?php
+                    //recup de toute les composantes
+                        try{
+                            $allCompo = ComposanteTool::getAll($bdd->getConnexion());
+                            echo (Compo::genereTable($allCompo));
+                        }catch(exception $e){
+                            echo AlertTool::genereDanger($e->getMessage());
+                        }
 
-						//formulaire cache de creation de composante, on l'affichera une fois cliquer sur le bouton ajouter une compoante
-						echo Compo::genereFormAdd();
-					?>
-				</div>
-			</div>
+                        // Les formulaires des Composantes deja preparer qui'on affichera que s'il y'a un evenement -->
+                        //generation des formulaires
+                        if(!empty($allCompo)){
+                            foreach ($allCompo as $laCompo) {
+                                echo $laCompo->genereFormModif();
+                            }
+                        }
+
+                        //formulaire cache de creation de composante, on l'affichera une fois cliquer sur le bouton ajouter une compoante
+                        echo Compo::genereFormAdd();
+                    ?>
+                </div>
+            </div>
 		</div>
 	</body>
-	
+
+    <script type="text/javascript" src="/Livret/CSS/Bootstrap/js/bootstrap.js"></script>
 	<!-- le script permettant d'afficher le formulaire apres clique sur la ligne du tableau -->
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -97,6 +99,10 @@
 		});
 			
 	</script>
+
+    <?php
+    include_once("../Blocks/footer.html");
+    ?>
 
 </html>
 

@@ -4,16 +4,272 @@
 		"selected_items":
 		[
 			[
-				"trouvé",
-				"trouvée"
+				"les",
+				"lesResp"
+			],
+			[
+				"insert",
+				"insertUE"
+			],
+			[
+				"exist",
+				"existApogee"
+			],
+			[
+				"PARAM",
+				"PARAM_STR"
+			],
+			[
+				"delete",
+				"deleteUE"
+			],
+			[
+				"PARAM_",
+				"PARAM_STR"
+			],
+			[
+				"id",
+				"idForm"
+			],
+			[
+				"submit",
+				"submit"
+			],
+			[
+				"type",
+				"typeForm"
 			],
 			[
 				"genere",
-				"genereWarning"
+				"genereDanger"
+			],
+			[
+				"html",
+				"htmlspecialchars"
+			],
+			[
+				"Ueto",
+				"UeTool"
+			],
+			[
+				"fin",
+				"finPage"
+			],
+			[
+				"debu",
+				"debutPage"
+			],
+			[
+				"taille",
+				"taille"
+			],
+			[
+				"_",
+				"_APOGEE_"
+			],
+			[
+				"module",
+				"moduleManager"
+			],
+			[
+				"libelleModule",
+				"libelleModulePop"
+			],
+			[
+				"_I",
+				"_ID_ENS_"
+			],
+			[
+				"_ID",
+				"_ID_FILIERE_"
+			],
+			[
+				"exec",
+				"executer"
+			],
+			[
+				"inser",
+				"insertRespFil"
+			],
+			[
+				"old",
+				"oldIdEns"
+			],
+			[
+				"exe",
+				"executer"
+			],
+			[
+				"new",
+				"newIdFil"
+			],
+			[
+				"remo",
+				"removeAttr"
+			],
+			[
+				"str",
+				"stregexp"
+			],
+			[
+				"reg",
+				"RegExp"
+			],
+			[
+				"select",
+				"selectID"
+			],
+			[
+				"opt_",
+				"opt_select_qual"
+			],
+			[
+				"nom",
+				"nomForm"
+			],
+			[
+				"is",
+				"isEmptyObject"
+			],
+			[
+				"J",
+				"jQuery"
+			],
+			[
+				"modal",
+				"modal-footer"
+			],
+			[
+				"fili",
+				"filiere"
+			],
+			[
+				"execu",
+				"execute"
+			],
+			[
+				"livret_",
+				"livret_responsable_filiere"
+			],
+			[
+				"Enseignant",
+				"EnseignantTool"
+			],
+			[
+				"Enseig",
+				"EnseignantTool"
+			],
+			[
+				"Ensei",
+				"EnseignantTool"
+			],
+			[
+				"filiere",
+				"filiereManager"
+			],
+			[
+				"_PH",
+				"_PHOTO_"
+			],
+			[
+				"l",
+				"line"
+			],
+			[
+				"Ensi",
+				"EnseignantTool"
+			],
+			[
+				"_PHO",
+				"_PHONE_"
+			],
+			[
+				"EN",
+				"EnseignantTool"
+			],
+			[
+				"getB",
+				"getByEmail"
+			],
+			[
+				"Promo",
+				"PromoTool"
+			],
+			[
+				"Parcour",
+				"ParcourTool"
 			],
 			[
 				"libelle",
-				"libelleOfCode"
+				"libelleFiliereUpd"
+			],
+			[
+				"btn",
+				"btn-mini"
+			],
+			[
+				"pop",
+				"popover"
+			],
+			[
+				"span",
+				"span"
+			],
+			[
+				"getByID",
+				"getByIDPromo"
+			],
+			[
+				"_ID_",
+				"_ID_PROMO_"
+			],
+			[
+				"modal-",
+				"modal-footer"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"control",
+				"control-group"
+			],
+			[
+				"promo",
+				"promoManager"
+			],
+			[
+				"ol",
+				"oldIdPromo"
+			],
+			[
+				"con",
+				"connect"
+			],
+			[
+				"oldID",
+				"oldIdFiliere"
+			],
+			[
+				"getBy",
+				"getByIDPromo"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"nbr",
+				"nbrPage"
+			],
+			[
+				"tableau",
+				"tableauModule"
+			],
+			[
+				"trouvé",
+				"trouvée"
 			],
 			[
 				"cal",
@@ -36,28 +292,12 @@
 				"ects"
 			],
 			[
-				"nbr",
-				"nbrCTD"
-			],
-			[
 				"nb",
 				"nbrC"
 			],
 			[
 				"code",
 				"codeMatiere"
-			],
-			[
-				"id",
-				"idModule"
-			],
-			[
-				"for",
-				"foreach	foreach …"
-			],
-			[
-				"les",
-				"lesLangues"
 			],
 			[
 				"text",
@@ -96,10 +336,6 @@
 				"Libelle"
 			],
 			[
-				"inser",
-				"insertMatiere"
-			],
-			[
 				"liv",
 				"livret_module"
 			],
@@ -108,20 +344,12 @@
 				"_code"
 			],
 			[
-				"delete",
-				"deleteMatiere"
-			],
-			[
 				"Matiere",
 				"MatiereTool"
 			],
 			[
 				"requete",
 				"requete"
-			],
-			[
-				"PARAM",
-				"PARAM_STR"
 			],
 			[
 				"pre",
@@ -152,10 +380,6 @@
 				"color1"
 			],
 			[
-				"PARAM_",
-				"PARAM_INT"
-			],
-			[
 				"_color",
 				"_color3"
 			],
@@ -184,10 +408,6 @@
 				"explode"
 			],
 			[
-				"_ID_",
-				"_ID_COMPO_"
-			],
-			[
 				"Filier",
 				"Filiere"
 			],
@@ -212,16 +432,8 @@
 				"Filière"
 			],
 			[
-				"_",
-				"_ID_COMPO_"
-			],
-			[
 				"try",
 				"try	Wrap in try { … } catch (…) { … }"
-			],
-			[
-				"getB",
-				"getByID"
 			],
 			[
 				"Composante",
@@ -230,10 +442,6 @@
 			[
 				"Compo",
 				"ComposanteTool"
-			],
-			[
-				"exec",
-				"execute"
 			],
 			[
 				"allC",
@@ -260,26 +468,10 @@
 	"buffers":
 	[
 		{
-			"file": "Managers/filiereManager.php",
+			"file": "Tools/responsable.php",
 			"settings":
 			{
-				"buffer_size": 3084,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Managers/matiereManager.php",
-			"settings":
-			{
-				"buffer_size": 3871,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Managers/moduleManager.php",
-			"settings":
-			{
-				"buffer_size": 7134,
+				"buffer_size": 15864,
 				"line_ending": "Unix"
 			}
 		},
@@ -287,15 +479,15 @@
 			"file": "Tools/module.php",
 			"settings":
 			{
-				"buffer_size": 38257,
+				"buffer_size": 58966,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Tools/matiere.php",
+			"file": "/Users/Souf/Documents/workspace/Gestion_Livret/Transformation_XML_Ecriture_Base/Livret/compillatex",
 			"settings":
 			{
-				"buffer_size": 11736,
+				"buffer_size": 682,
 				"line_ending": "Unix"
 			}
 		},
@@ -303,23 +495,71 @@
 			"file": "Tools/filiere.php",
 			"settings":
 			{
-				"buffer_size": 13394,
+				"buffer_size": 23832,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Blocks/nav_gestion.html",
+			"file": "Tools/promotion.php",
 			"settings":
 			{
-				"buffer_size": 798,
+				"buffer_size": 44690,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Blocks/entete.html",
+			"file": "Tools/parcours.php",
 			"settings":
 			{
-				"buffer_size": 1492,
+				"buffer_size": 9874,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Tools/programme.php",
+			"settings":
+			{
+				"buffer_size": 16116,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Tools/ue.php",
+			"settings":
+			{
+				"buffer_size": 10171,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Tools/enseignant.php",
+			"settings":
+			{
+				"buffer_size": 16132,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Managers/promoManager.php",
+			"settings":
+			{
+				"buffer_size": 9601,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Managers/ensManager.php",
+			"settings":
+			{
+				"buffer_size": 5279,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/Souf/Downloads/mpezzi-bootstrap_isotope-ecbc125/index.html",
+			"settings":
+			{
+				"buffer_size": 3246,
 				"line_ending": "Unix"
 			}
 		}
@@ -348,27 +588,42 @@
 	},
 	"file_history":
 	[
-		"/Users/Souf/PhpstormProjects/Livret/Tools/module.php",
-		"/Users/Souf/PhpstormProjects/Livret/Managers/promoManager.php",
-		"/Users/Souf/PhpstormProjects/Livret/Tools/connexion.php",
-		"/Users/Souf/PhpstormProjects/Livret/Tools/composante.php",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/test.php",
+		"/Users/Souf/Documents/Livret/Gestion_Livret/Transformation_XML_Ecriture_Base/transf_requete.xsl",
+		"/Users/Souf/Documents/workspace/Gestion_Livret/Transformation_XML_Ecriture_Base/transf_requete.xsl",
 		"/Users/Souf/PhpstormProjects/Livret/Tools/promotion.php",
-		"/Users/Souf/PhpstormProjects/Livret/Managers/PromoManager.php",
-		"/Users/Souf/PhpstormProjects/Livret/Managers/compoManager.php",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/module.php",
 		"/Users/Souf/PhpstormProjects/Livret/Blocks/nav_gestion.html",
+		"/Users/Souf/PhpstormProjects/Livret/Managers/compoManager.php",
+		"/Users/Souf/PhpstormProjects/Livret/Blocks/entete.html",
 		"/Users/Souf/PhpstormProjects/Livret/Tools/filiere.php",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/composante.php",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/enseignant.php",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/matiere.php",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/parcours.php",
+		"/Users/Souf/PhpstormProjects/Livret/Managers/moduleManager.php",
+		"/Users/Souf/PhpstormProjects/Livret/Managers/filiereManager.php",
+		"/Users/Souf/PhpstormProjects/Livret/Managers/promoManager.php",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/responsable.php",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/ue.php",
+		"/Users/Souf/PhpstormProjects/Livret/Managers/matiereManager.php",
+		"/Users/Souf/PhpstormProjects/Livret/Managers/ensManager.php",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/pagination.php",
+		"/Users/Souf/PhpstormProjects/Livret/Scripts/search.js",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/alerts.php",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/search.js",
+		"/Users/Souf/PhpstormProjects/Livret/Livret.sublime-workspace",
+		"/Users/Souf/PhpstormProjects/Livret/Scripts/JQuery/jquery-1.9.1.js",
+		"/Users/Souf/PhpstormProjects/Livret/CSS/Bootstrap/css/bootstrap-responsive.css",
+		"/Users/Souf/PhpstormProjects/Livret/Tools/connexion.php",
+		"/Users/Souf/PhpstormProjects/Livret/Managers/PromoManager.php",
 		"/Users/Souf/PhpstormProjects/Livret/manage.php",
 		"/Users/Souf/PhpstormProjects/Livret/Tools/color.php",
-		"/Users/Souf/PhpstormProjects/Livret/Tools/alerts.php",
-		"/Users/Souf/PhpstormProjects/Livret/Managers/filiereManager.php",
-		"/Users/Souf/PhpstormProjects/Livret/Blocks/entete.html",
-		"/Users/Souf/PhpstormProjects/Livret/Tools/matiere.php",
 		"/Users/Souf/PhpstormProjects/Livret/showIsotope.php",
 		"/Users/Souf/PhpstormProjects/Livret/CSS/Bootstrap/js/bootstrap.js",
 		"/Users/Souf/PhpstormProjects/Livret/Tools/filterDiv.php",
 		"/Users/Souf/PhpstormProjects/Livret/ndex.php",
 		"/Users/Souf/PhpstormProjects/Livret/Livret.sublime-project",
-		"/Users/Souf/PhpstormProjects/Livret/Tools/ue.php",
 		"/Users/Souf/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/Souf/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/Souf/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap"
@@ -390,6 +645,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"icon",
+			"QUALITE",
+			"narrow",
+			"init",
+			"_CPG_",
+			"_CFG_",
+			"option",
+			"\\\"",
+			"\\\\“",
+			"\\“",
+			"idPromo",
+			"_ID_P",
+			"_ID_PROM",
+			"number",
+			"input",
 			"variable",
 			"$line = $line.",
 			"$form = $form.",
@@ -417,6 +687,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"_COULEUR_BG_",
+			"_COULEUR_FG_",
+			"'",
 			"$line .= ",
 			"$form .= ",
 			"$table .= ",
@@ -436,23 +709,23 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 11,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Managers/filiereManager.php",
+					"file": "Tools/responsable.php",
 					"settings":
 					{
-						"buffer_size": 3084,
+						"buffer_size": 15864,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1946,
-								1946
+								0,
+								0
 							]
 						],
 						"settings":
@@ -461,81 +734,79 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 473.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Managers/matiereManager.php",
+					"file": "Tools/module.php",
 					"settings":
 					{
-						"buffer_size": 3871,
+						"buffer_size": 58966,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2664,
-								2664
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 471.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Managers/moduleManager.php",
+					"file": "/Users/Souf/Documents/workspace/Gestion_Livret/Transformation_XML_Ecriture_Base/Livret/compillatex",
 					"settings":
 					{
-						"buffer_size": 7134,
+						"buffer_size": 682,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6972,
-								6972
+								325,
+								325
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1418.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "Tools/module.php",
+					"file": "Tools/filiere.php",
 					"settings":
 					{
-						"buffer_size": 38257,
+						"buffer_size": 23832,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3062,
-								3062
+								0,
+								0
 							]
 						],
 						"settings":
@@ -545,52 +816,53 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 295.0,
+						"translation.y": 6066.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "Tools/matiere.php",
+					"file": "Tools/promotion.php",
 					"settings":
 					{
-						"buffer_size": 11736,
+						"buffer_size": 44690,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								11340,
-								11340
+								0,
+								0
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2784.0,
+						"translation.y": 4437.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "Tools/filiere.php",
+					"file": "Tools/parcours.php",
 					"settings":
 					{
-						"buffer_size": 13394,
+						"buffer_size": 9874,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6805,
-								6805
+								0,
+								0
 							]
 						],
 						"settings":
@@ -598,30 +870,139 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1609.0,
+						"translation.y": 115.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "Blocks/nav_gestion.html",
+					"file": "Tools/programme.php",
 					"settings":
 					{
-						"buffer_size": 798,
+						"buffer_size": 16116,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								690,
-								690
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3142.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Tools/ue.php",
+					"settings":
+					{
+						"buffer_size": 10171,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1202,
+								1202
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 110.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Tools/enseignant.php",
+					"settings":
+					{
+						"buffer_size": 16132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								891,
+								891
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Managers/promoManager.php",
+					"settings":
+					{
+						"buffer_size": 9601,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4624,
+								4624
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 456.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Managers/ensManager.php",
+					"settings":
+					{
+						"buffer_size": 5279,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1321,
+								1321
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -630,28 +1011,29 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "Blocks/entete.html",
+					"buffer": 11,
+					"file": "/Users/Souf/Downloads/mpezzi-bootstrap_isotope-ecbc125/index.html",
 					"settings":
 					{
-						"buffer_size": 1492,
+						"buffer_size": 3246,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								589,
-								589
+								2706,
+								2652
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 875.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -719,6 +1101,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 189.0,
 	"status_bar_visible": true
 }

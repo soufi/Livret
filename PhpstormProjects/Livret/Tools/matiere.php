@@ -39,7 +39,7 @@ include_once("connexion.php");
         public function genereFormModif(){
             $form = "<div id='myModal".$this->_CODE_MAT_."' class='modal hide fade in' style='display: none;'>";
             $form .= "<div class='modal-header'>";
-            $form .= "<a href='#' class='close' data-dismiss='modal'>x</a> <h3>Modification Composante</h3>";
+            $form .= "<a href='' class='close' data-dismiss='modal'>x</a> <h3>Modification Matière</h3>";
             $form .= "</div>";
             $form .= "<div class='modal-body'>";
             $form .= "<form id='form-myModal".$this->_CODE_MAT_."' method='post' action='matiereManager.php'  class='form-horizontal'>";
@@ -71,7 +71,7 @@ include_once("connexion.php");
         public static function genereFormAdd(){
             $form = "<div id='formAddMatiere' class='modal hide fade in' style='display: none;'>";
             $form .= "<div class='modal-header'>";
-            $form .= "<a href='#' class='close' data-dismiss='modal'>x</a> <h3>Modification Composante</h3>";
+            $form .= "<a href='' class='close' data-dismiss='modal'>x</a> <h3>Ajouter une Matière</h3>";
             $form .= "</div>";
             $form .= "<div class='modal-body'>";
             $form .= "<form method='post' action='matiereManager.php'  class='form-horizontal'>";
@@ -97,10 +97,6 @@ include_once("connexion.php");
             return $form;
         }
 
-		//le button avec les parametres pour isotope afin de filtrer
-		public function giveButton(){
-			return '<li class="dropdown"> <a data-filter=".'.$this->_CODE_MAT_.'" href="#">'.$this->_LIBELLE_MAT_.' </a> </li>';	
-		}
 	}
 
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/

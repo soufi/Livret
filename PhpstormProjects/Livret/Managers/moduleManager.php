@@ -30,6 +30,7 @@
                 else
                     $langues .= $selectedLanguages;
             }
+            $intro = $_POST['introModule'];
             $objectif = $_POST['objectifModule'];
             $description = $_POST['descrModule'];
             $methodEval = $_POST['methodEval'];
@@ -44,12 +45,13 @@
             $oblig = $_POST['obligModule'];
 
             try{
-                ModuleTool::updateModule($bdd->getConnexion(), $idModule, $codeMatiere, $libelle, $semestre, $nbrC, $nbrTD, $nbrTP, $nbrCTD, $ects, $coef, $langues, $objectif, $description, $methodEval, $modCC1, $modCC2, $calculNF1, $calculNF2, $prerequis, $ressources, $biblio, $noteElim, $oblig);
+                ModuleTool::updateModule($bdd->getConnexion(), $idModule, $codeMatiere, $libelle, $semestre, $nbrC, $nbrTD, $nbrTP, $nbrCTD, $ects, $coef, $langues, $intro, $objectif, $description, $methodEval, $modCC1, $modCC2, $calculNF1, $calculNF2, $prerequis, $ressources, $biblio, $noteElim, $oblig);
                 echo AlertTool::genereInfo("Mise à jour de module effectué avec succés !");
             }catch(exception $e){
                 echo AlertTool::genereDanger($e->getMessage());
             }
         }
+
         //Gestion de la suppression de Module
         if (isset($_POST['formDeleteSubmit'])) {
             $idModule = $_POST['idModule'];
@@ -60,39 +62,41 @@
                 echo AlertTool::genereDanger($e->getMessage());
             }
         }
+
         //Gestion de l'ajout de Module
         if (isset($_POST['formAddSubmit'])) {
-            $libelle = $_POST['libelleModule'];
-            $codeMatiere = $_POST['matiereAssoc'];
-            $semestre = $_POST['semestre'];
-            $nbrCour = $_POST['nbrC'];
-            $nbrTD = $_POST['nbrTD'];
-            $nbrTP = $_POST['nbrTP'];
-            $nbrCTD = $_POST['nbrCTD'];
-            $ects = $_POST['ects'];
-            $coef = $_POST['coef'];
+            $libelle = $_POST['libelleModuleAdd'];
+            $codeMatiere = $_POST['matiereAssocAdd'];
+            $semestre = $_POST['semestreAdd'];
+            $nbrCour = $_POST['nbrCAdd'];
+            $nbrTD = $_POST['nbrTDAdd'];
+            $nbrTP = $_POST['nbrTPAdd'];
+            $nbrCTD = $_POST['nbrCTDAdd'];
+            $ects = $_POST['ectsAdd'];
+            $coef = $_POST['coefAdd'];
             $langues = ""; //les langue seront séparer par "/"
             $iterateur = 0; //pour ne pas ajouter le "/" tout a la fin
             //recuperation du module sachant qu'on peut chosir plusieurs
-            foreach ($_POST['langueModule[]'] as $selectedLanguages) {
+            foreach ($_POST['langueModuleAdd[]'] as $selectedLanguages) {
                 $iterateur++;
-                if($iterateur != count($_POST['langueModule[]']))
+                if($iterateur != count($_POST['langueModuleAdd[]']))
                     $langues .= $selectedLanguages."/";
                 else
                     $langues .= $selectedLanguages;
             }
-            $objectif = $_POST['objectifModule'];
-            $description = $_POST['descrModule'];
-            $methodEval = $_POST['methodEval'];
-            $modCC1 = $_POST['modCC1'];
-            $modCC2 = $_POST['modCC2'];
-            $calculNF1 = $_POST['calculNF1'];
-            $calculNF2 = $_POST['calculNF2'];
-            $prerequis = $_POST['prerequisModule'];
-            $ressources = $_POST['ressourcesModule'];
-            $biblio = $_POST['biblioModule'];
-            $noteElim = $_POST['noteElimModule'];
-            $oblig = $_POST['obligModule'];
+            $intro = $_POST['introModuleAdd'];
+            $objectif = $_POST['objectifModuleAdd'];
+            $description = $_POST['descrModuleAdd'];
+            $methodEval = $_POST['methodEvalAdd'];
+            $modCC1 = $_POST['modCC1Add'];
+            $modCC2 = $_POST['modCC2Add'];
+            $calculNF1 = $_POST['calculNF1Add'];
+            $calculNF2 = $_POST['calculNF2Add'];
+            $prerequis = $_POST['prerequisModuleAdd'];
+            $ressources = $_POST['ressourcesModuleAdd'];
+            $biblio = $_POST['biblioModuleAdd'];
+            $noteElim = $_POST['noteElimModuleAdd'];
+            $oblig = $_POST['obligModuleAdd'];
             try{
                 ModuleTool::insertModule($bdd->getConnexion(), $codeMatiere, $libelle, $semestre, $nbrC, $nbrTD, $nbrTP, $nbrCTD, $ects, $coef, $langues, $objectif, $description, $methodEval, $modCC1, $modCC2, $calculNF1, $calculNF2, $prerequis, $ressources, $biblio, $noteElim, $oblig);
                 echo AlertTool::genereInfo("Ajout de module effectué avec succés !"); //message de confirmation
@@ -101,7 +105,7 @@
             }
         }
 /*--------------------------------------------------------------------  Gestion BDD Responsable  -------------------------------------------------------------------------*/
-        //mise a jour du responsable de module
+        //mise a jour du responsable du module
     if(isset($_POST['formUpdRespSubmit'])){
         $idModule = $_POST['idModulePop'];
         $oldIdEns = $_POST['oldIdEnsPop'];
@@ -114,7 +118,7 @@
         }
     }
 
-    //ajout de responsable de filiere
+    //ajout de responsable du module
     if(isset($_POST['formAddRespSubmit'])){
         $idModule = $_POST['idModulePop'];
         $idEns = $_POST['idEnsPop'];
@@ -126,7 +130,7 @@
         }
     }
 
-    //suppression de responsable de filiere
+    //suppression de responsable du module
     if(isset($_POST['formDeleteRespSubmit'])){
         $idModule = $_POST['idModulePop'];
         $oldIdEns = $_POST['oldIdEnsPop'];
@@ -138,6 +142,7 @@
         }
     }
 /*--------------------------------------------------------------------  Gestion BDD U.E  -------------------------------------------------------------------------*/
+
     //Gestion de modification d'unité d'enseignement du module
     if(isset($_POST['formUpdUESubmit'])){
         $idModule = $_POST['idModForUE'];
@@ -172,66 +177,109 @@
             echo AlertTool::genereDanger($e->getMessage());
         }
     }
+/*--------------------------------------------------------------------  Gestion BDD Promotion (Programme)  -------------------------------------------------------------------------*/
+    //Gestion de mise a jour de promotion
+    if(isset($_POST['formUpdProgSubmit'])){
+        $idMod = $_POST['idModForProg'];
+        $oldIdPromo = $_POST['oldIdPromo'];
+        $idPromo = $_POST['idPromoProg'];
+        try{
+            ProgrammeTool::updateProgramme($bdd->getConnexion(),$idMod, $oldIdPromo, $idMod, $idPromo);
+            echo AlertTool::genereInfo("Mis à jour de U.E de Module effectué avec succés !");
+        } catch(Exception $e){
+            echo AlertTool::genereDanger($e->getMessage());
+        }
+    }
+
+    if(isset($_POST['formDeleteProgSubmit'])){
+        $idMod = $_POST['idModForProg'];
+        $oldIdPromo = $_POST['oldIdPromo'];
+        try{
+            ProgrammeTool::deleteProgramme($bdd->getConnexion(), $idMod, $oldIdPromo);
+            echo AlertTool::genereInfo("Suppression de U.E de Module effectué avec succés !");
+        }catch (Exception $e){
+            echo AlertTool::genereDanger($e->getMessage());
+        }
+    }
+
+    if(isset($_POST['formAddProgSubmit'])){
+        $idMod = $_POST['idModForProg'];
+        $idPromo = $_POST['idPromoProg'];
+        try{
+            ProgrammeTool::insertProgramme($bdd->getConnexion(), $idMod, $idPromo);
+            echo AlertTool::genereInfo("Ajout de U.E de Module effectué avec succés !");
+        }catch (Exception $e){
+            echo AlertTool::genereDanger($e->getMessage());
+        }
+    }
+
 /* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
     ?>
     <body>
         <div class="container-fluid">
-            <div class="span3">
-                <?php
-                    include_once("../Blocks/nav_gestion.html");
-                ?>
-                <div class="nav nav-pills">
-                    <input type="button" id="addModule" class="btn btn-inverse" value="Ajouter un Module"/>
+            <div class="row-fluid">
+                <div class="span2">
+                    <?php
+                        include_once("../Blocks/nav_gestion.html");
+                    ?>
+                    <ul class="nav nav-tabs bs-docs-sidenav nav-stacked">
+                        <li class="nav-header">Menu Modules</li>
+                        <li><a id="addModule" class="btn">Ajouter</a></li>
+                    </ul>
                 </div>
+                <!--le tableau d'affichage de tous les modules avec Pagination -->
+                <div class="span10">
+                    <?php
 
-            </div>
-            <!--le tableau d'affichage de tous les modules-->
-            <div class="span10">
-                <?php
-
-                    $taillePage = 15;
-                //recup de tous les modules
-                    try{
-                        //recuperation de tous les modules
-                        $allModules = ModuleTool::getAll($bdd->getConnexion());
-                        if(isset($_GET['pm']))
-                            $page = intval($_GET['pm']);
-                        else
-                            $page = 1;
-                        //affichage du tableau de gestion de module
-                        echo Module::genereTable($bdd->getConnexion(), $allModules, $page, $taillePage);
-                    }catch(Exception $e){
-                        echo AlertTool::genereDanger($e->getMessage());
-                    }
-                    
-                    $debutPage = (($page*$taillePage)-$taillePage)+1;
-                    if((count($allModules)-(($page-1)*$taillePage)) > $taillePage)
-                        $finPage = $debutPage + $taillePage;
-                    else
-                        $finPage = count($allModules);
-                    // Les formulaires des Modules deja preparer qui'on affichera que s'il y'a un evenement -->
-                    //generation des formulaires pour chaque instance de module
-                    if(!empty($allModules)){
-                        for ($i = $debutPage; $i < $finPage ; $i++) {
-                            echo $allModules[$i]->genereFormModif($bdd->getConnexion());
-                            //formulaire d'update de responsable
-                            echo $allModules[$i]->genereFormUpdResp($bdd->getConnexion());
-                            //formualire d'ajout de responsable
-                            echo $allModules[$i]->genereFormAddResp($bdd->getConnexion());
-                            //formulaire de modif de UE
-                            echo Ue::genereFormUpdUEForMod($allModules[$i]);
-                            //formulaire d'ajout de UE 
-                            echo Ue::genereFormAddUEForMod($allModules[$i]);
+                        $taillePage = 10;
+                    //recup de tous les modules
+                        try{
+                            //recuperation de tous les modules
+                            $allModules = ModuleTool::getAll($bdd->getConnexion());
+                            if(isset($_GET['pm']))
+                                $page = intval($_GET['pm']);
+                            else
+                                $page = 1;
+                            //affichage du tableau de gestion de module
+                            echo Module::genereTable($bdd->getConnexion(), $allModules, $page, $taillePage);
+                        }catch(Exception $e){
+                            echo AlertTool::genereDanger($e->getMessage());
                         }
-                    }
 
-                    //formulaire cache de creation de matiere, on l'affichera une fois cliquer sur le bouton ajouter une matiere
-                    echo Module::genereFormAdd($bdd->getConnexion());
-                ?>
+                        $debutPage = (($page*$taillePage)-$taillePage)+1;
+                        if((count($allModules)-(($page-1)*$taillePage)) > $taillePage)
+                            $finPage = $debutPage + $taillePage;
+                        else
+                            $finPage = count($allModules);
+                        // Les formulaires des Modules deja preparer qui'on affichera que s'il y'a un evenement -->
+                        //generation des formulaires pour chaque instance de module
+                        if(!empty($allModules)){
+                            for ($i = $debutPage; $i < $finPage ; $i++) {
+                                echo $allModules[$i]->genereFormModif($bdd->getConnexion());
+                                //formulaire d'update de responsable
+                                echo $allModules[$i]->genereFormUpdResp($bdd->getConnexion());
+                                //formualire d'ajout de responsable
+                                echo $allModules[$i]->genereFormAddResp($bdd->getConnexion());
+                                //formulaire de modif de UE
+                                echo Ue::genereFormUpdUEForMod($allModules[$i]);
+                                //formulaire d'ajout de UE
+                                echo Ue::genereFormAddUEForMod($allModules[$i]);
+                                //formulaire de modif de Promotion (programme)
+                                echo Programme::genereFormUpdProgForMod($bdd->getConnexion(), $allModules[$i]);
+                                //formulaire d'ajout de promotion (programme)
+                                echo Programme::genereFormAddProgForMod($bdd->getConnexion(), $allModules[$i]);
+                            }
+                        }
+
+                        //formulaire cache de creation de matiere, on l'affichera une fois cliquer sur le bouton ajouter une matiere
+                        echo Module::genereFormAdd($bdd->getConnexion());
+                    ?>
+                </div>
             </div>
         </div>
     </body>
-    
+
+    <script type="text/javascript" src="/Livret/CSS/Bootstrap/js/bootstrap.js"></script>
     <!-- le script permettant d'afficher le formulaire apres clique sur la ligne du tableau -->
     <script type="text/javascript">
         $(document).ready(function(){
@@ -302,7 +350,7 @@
             //le code apogee qui sera ajouter dans le formulaire de modification sera passe en methode GET 
             if (!jQuery.isEmptyObject($.getUrlVar("ueform"))){
                 var typeForm = $.getUrlVar("ueform");
-                if(typeForm == "add" && !jQuery.isEmptyObject($.getUrlVar("mod")) && jQuery.isEmptyObject($.getUrlVar("apogee"))){
+                if(typeForm == "add" && !jQuery.isEmptyObject($.getUrlVar("mod"))){
                     var module = $.getUrlVar("mod");
                     var idForm = "#formAddUE"+module;
                     $(idForm).modal();
@@ -318,7 +366,30 @@
                     } 
                 }
             }
+
+            //Gestion d'affichage des formulaires des Promotions concernant les modules,
+            if (!jQuery.isEmptyObject($.getUrlVar("progform"))){
+                var typeForm = $.getUrlVar("progform");
+                if(typeForm == "add" && !jQuery.isEmptyObject($.getUrlVar("mod"))){
+                    var module = $.getUrlVar("mod");
+                    var idForm = "#formAddProg"+module;
+                    $(idForm).modal();
+                }else{
+                    if(typeForm == "upd" && !jQuery.isEmptyObject("mod") && !jQuery.isEmptyObject($.getUrlVar("promo"))){
+                        var module = $.getUrlVar("mod");
+                        var promo = $.getUrlVar("promo");
+                        var idForm = "#formUpdProg"+module;
+                        var opt_select_promo = "#libellePromoProg option[value="+promo+"]";
+                        $(idForm).find("#oldIdPromo").prop("value", promo);
+                        $(idForm).find("#libellePromoProg option:selected").removeAttr("selected");
+                        $(idForm).find(opt_select_promo).prop("selected", true);
+                        $(idForm).modal();
+                    }
+                }
+            }
         }); 
     </script>
-
+    <?php
+    include_once("../Blocks/footer.html");
+    ?>
 </html>

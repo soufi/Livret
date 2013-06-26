@@ -15,10 +15,17 @@
 			$email = $_POST['emailEns'];
 			$phone = $_POST['phoneEns'];
 			$titre = $_POST['titreEns'];
-			$photo = $_POST['photoEns'];
+            //traitement du fichier ajoute
+			$photo = $_FILES['photoEns'];
+
+            //copy dans le dossier dans le serveur
+            copy($photo["tmp_name"], "../CSS/Pictures/".$photo['name']);
+            $path_serv = "../CSS/Pictures/".$photo['name']; //path du serveur pour la photo
 			try{
-				EnseignantTool::updateEnseignant($bdd->getConnexion(), $id, $nom, $prenom, $email, $phone, $titre, $photo);
-				echo AlertTool::genereSuccess("Mise à jour effectué avec succés !");
+				if(EnseignantTool::updateEnseignant($bdd->getConnexion(), $id, $nom, $prenom, $email, $phone, $titre, $path_serv))
+				    echo AlertTool::genereInfo("Mise à jour effectué avec succés !");
+                else
+                    echo AlertTool::genereInfo("Mise à jour non effectué !");
 			}catch(exception $e){
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -28,7 +35,7 @@
 			$id = $_POST['idEns'];
 			try{
 				EnseignantTool::deleteEnseignant($bdd->getConnexion(), $id);
-				echo AlertTool::genereSuccess("Suppression effectué avec succés !"); //mmessage de confirmation
+				echo AlertTool::genereInfo("Suppression effectué avec succés !"); //mmessage de confirmation
 			}catch(exception $e){
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -40,9 +47,13 @@
 			$email = $_POST['emailEnsAdd'];
 			$phone = $_POST['phoneEnsAdd'];
 			$titre = $_POST['titreEnsAdd'];
-			$photo = $_POST['photoEnsAdd'];
+            //traitement du fichier ajoute
+            $photo = $_FILES['photoEnsAdd'];
+            //copy dans le dossier dans le serveur
+            copy($photo["tmp_name"], "../Pictures/".$photo['name']);
+            $path_serv = "../CSS/Pictures/".$photo['name']; //path du serveur pour la photo
 			try{
-				EnseignantTool::insertEnseignant($bdd->getConnexion(), $nom, $prenom, $email, $phone, $titre, $photo);
+				EnseignantTool::insertEnseignant($bdd->getConnexion(), $nom, $prenom, $email, $phone, $titre, $path_serv);
 				echo AlertTool::genereSuccess("Ajout effectué avec succés !"); //message de confirmation
 			}catch(exception $e){
 				echo AlertTool::genereDanger($e->getMessage());
@@ -52,40 +63,56 @@
 	?>
 	<body>
 		<div class="container-fluid">
-			<div class="span3">
-				<?php
-					include_once("../Blocks/nav_gestion.html");
-				?>
-				<div class="nav nav-pills">
-					<input type="button" id="addEns" class="btn btn-inverse" value="Ajouter un Enseignant"/>
-				</div>
-			</div>
-			<!--le tableau d'affichage de tous les enseignants-->
-			<div class="span9">
-				<?php
-					//recup de tous les enseignants
-					try{
-						$allEns = EnseignantTool::getAll($bdd->getConnexion());
-						echo Enseignant::genereTable($allEns);
-					}catch(Exception $e){
-						echo AlertTool::genereDanger($e->getMessage());
-					}
-				
-					// Les formulaires des Enseignant deja preparer qu'on affichera que s'il y'a un evenement --> clique sur la ligne
-					//generation des formulaires
-					if(!empty($allEns)){
-						foreach ($allEns as $value) {
-							echo $value->genereFormModif();
-						}
-					}
+            <div class="row-fluid">
+                <div class="span2">
+                    <?php
+                        include_once("../Blocks/nav_gestion.html");
+                    ?>
+                    <ul class="nav nav-tabs bs-docs-sidenav nav-stacked">
+                        <li class="nav-header">Menu Enseignants</li>
+                        <li><a id="addEns" class="btn">Ajouter</a></li>
+                    </ul>
+                </div>
+                <!--le tableau d'affichage de tous les enseignants-->
+                <div class="span9">
+                    <?php
+                    $taillePage = 10;//nombre d'enseignants affiché par page
+                    //recup de tous les enseignants
+                    try{
+                        $allEns = EnseignantTool::getAll($bdd->getConnexion());
+                        if(isset($_GET['pm']))
+                            $page = intval($_GET['pm']);
+                        else
+                            $page = 1;
+                        echo Enseignant::genereTable($allEns, $page, $taillePage);
+                    }catch(Exception $e){
+                        echo AlertTool::genereDanger($e->getMessage());
+                    }
 
-					//formulaire cache de creation d'enseignant, on l'affichera une fois cliquer sur le bouton ajouter un enseignant
-					echo Enseignant::genereFormAdd();
-				?>
-			</div>
+                    // Les formulaires des Enseignant deja preparer qu'on affichera que s'il y'a un evenement --> clique sur la ligne
+                    //generation des formulaires en fonction de l'intervale affiché
+                    if(!empty($allEns)){
+                        //calcule des frontières de l'intervale
+                        $debutPage = (($page*$taillePage)-$taillePage)+1;
+                        if((count($allEns)-(($page-1)*$taillePage)) > $taillePage)
+                            $finPage = $debutPage + $taillePage;
+                        else
+                            $finPage = count($allEns);
+
+                        for ($i = $debutPage; $i < $finPage ; $i++) {
+                            echo $allEns[$i]->genereFormModif();
+                        }
+                    }
+
+                    //formulaire cache de creation d'enseignant, on l'affichera une fois cliquer sur le bouton ajouter un enseignant
+                    echo Enseignant::genereFormAdd();
+                    ?>
+                </div>
+            </div>
 		</div>
 	</body>
-	
+
+    <script type="text/javascript" src="/Livret/CSS/Bootstrap/js/bootstrap.js"></script>
 	<!-- le script permettant d'afficher le formulaire apres clique sur la ligne du tableau -->
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -104,5 +131,8 @@
 			
 	</script>
 
+    <?php
+    include_once("../Blocks/footer.html");
+    ?>
 </html>
 

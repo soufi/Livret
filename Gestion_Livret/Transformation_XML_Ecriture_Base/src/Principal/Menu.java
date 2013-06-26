@@ -39,7 +39,7 @@ public class Menu {
 		boolean quitter = false;
 		//recupération du nom de fichier
 		rep = readKeyb();
-		quitter = (rep == null);	
+		quitter = (rep == null);
 		//tant qu'on a encore des dossier que l'utilisateur veut traiter
 		while (!quitter){
 			String doss = rep.getAbsolutePath();
@@ -70,7 +70,7 @@ public class Menu {
 			quitter = (rep == null);
 		}
 		
-		System.out.println("Fin du Traitement. Exit.");
+		System.out.println("\nExit.");
 	}
 	
 	/**
@@ -236,6 +236,11 @@ public class Menu {
 		}
 	}
 	
+	/**
+	 Permet d'améliorer l'écriture des fichiers XML en supprimant les caractères blanc inutiles, encode en UTF-8 l'ensemble du document
+	 @param : chemin du fichier qui sera traité et mis en forme adéquate en XML
+	 @return : modifie directement le fichier en parametre
+	 **/
 	private static void prettyFormat (String path) throws JDOMException, IOException{
 		File fichier = new File (path);
 		if(fichier.exists() && fichier.isFile()){

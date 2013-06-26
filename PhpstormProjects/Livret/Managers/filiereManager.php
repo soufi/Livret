@@ -4,6 +4,7 @@
 		include_once("../Tools/filiere.php");
 		include_once("../Blocks/entete.html");
 		include_once("../Tools/alerts.php");
+        include_once("../Tools/color.php");
 
 /*-------------------------------------------------------------- Gestion de BDD Filiere ---------------------------------------------------------------- */
 		//gestionnaire de mise a jour de filiere
@@ -11,8 +12,11 @@
 			$_libelle = $_POST['libelleFiliere'];
 			$_id = $_POST['idFiliere'];
 			$_idCompo = $_POST['compoAssoc'];
+            $color1 = hex2rgb($_POST['couleur1Fil']); //transfromation de la couleur de hex en rvb
+            $color2 = hex2rgb($_POST['couleur2Fil']);
+            $color3 = hex2rgb($_POST['couleur3Fil']);
 			try {
-				FiliereTool::updateFiliere($bdd->getConnexion(), $_id, $_libelle, $_idCompo);
+				FiliereTool::updateFiliere($bdd->getConnexion(), $_id, $_libelle, $_idCompo, $color1, $color2, $color3);
 				echo AlertTool::genereInfo("Mise à jour effectué avec succés !"); //message de confirmation
 			} catch (Exception $e) {
 				echo AlertTool::genereDanger($e->getMessage());
@@ -34,8 +38,11 @@
 		if(isset($_POST['formAddSubmit'])){
 			$_libelle = $_POST['libelleFiliere'];
 			$_idCompo = $_POST['compoAssoc'];
+            $color1 = hex2rgb($_POST['couleur1Fil']); //transfromation de la couleur de hex en rvb
+            $color2 = hex2rgb($_POST['couleur2Fil']);
+            $color3 = hex2rgb($_POST['couleur3Fil']);
 			try {
-				FiliereTool::insertFiliere($bdd->getConnexion(), $_libelle, $_idCompo);
+				FiliereTool::insertFiliere($bdd->getConnexion(), $_libelle, $_idCompo, $color1, $color2, $color3);
 				echo AlertTool::genereInfo("Ajout effectué avec succés !"); //message de confirmation
 			} catch (Exception $e) {
 				echo AlertTool::genereDanger($e->getMessage());
@@ -85,45 +92,48 @@
 	?>
 	<body>
 		<div class="container-fluid">
-			<div class="span3">
-				<?php
-					include_once("../Blocks/nav_gestion.html");
-				?>
-				<div class="nav nav-pills">
-					<input type="button" id="addFiliere" class="btn btn-inverse" value="Ajouter une Filière"/>
-				</div>
+            <div class="row-fluid">
+                <div class="span2">
+                    <?php
+                        include_once("../Blocks/nav_gestion.html");
+                    ?>
+                    <ul class="nav nav-tabs bs-docs-sidenav nav-stacked">
+                        <li class="nav-header">Menu Filières</li>
+                        <li><a id="addFiliere" class="btn">Ajouter</a></li>
+                    </ul>
+                </div>
+                <!--le tableau d'affichage de toutes les filieres-->
+                <div class="span9">
+                    <?php
+                    //recup de toute les filieres
+                        try{
+                            $allFiliere = FiliereTool::getAll($bdd->getConnexion());
+                            echo Filiere::genereTable($bdd->getConnexion(), $allFiliere);
+                        }catch(exception $e){
+                            echo AlertTools::genereDanger($e->getMessage());
+                        }
 
-			</div>
-			<!--le tableau d'affichage de toutes les filieres-->
-			<div class="span9">
-				<?php
-				//recup de toute les filieres
-					try{
-						$allFiliere = FiliereTool::getAll($bdd->getConnexion());
-						echo Filiere::genereTable($bdd->getConnexion(), $allFiliere);
-					}catch(exception $e){
-						echo AlertTools::genereDanger($e->getMessage());
-					}
-				
-					// Les formulaires des Filieres deja preparer qui'on affichera que s'il y'a un evenement -->
-					//generation des formulaires
-					if(!empty($allFiliere)){
-						foreach ($allFiliere as $laFiliere) {
-							echo $laFiliere->genereFormModif($bdd->getConnexion());
-							//formulaire d'update de responsable
-							echo $laFiliere->genereFormUpdResp($bdd->getConnexion());
-							//formualire d'ajout de responsable
-							echo $laFiliere->genereFormAddResp($bdd->getConnexion());
-						}
-					}
+                        // Les formulaires des Filieres deja preparer qui'on affichera que s'il y'a un evenement -->
+                        //generation des formulaires
+                        if(!empty($allFiliere)){
+                            foreach ($allFiliere as $laFiliere) {
+                                echo $laFiliere->genereFormModif($bdd->getConnexion());
+                                //formulaire d'update de responsable
+                                echo $laFiliere->genereFormUpdResp($bdd->getConnexion());
+                                //formualire d'ajout de responsable
+                                echo $laFiliere->genereFormAddResp($bdd->getConnexion());
+                            }
+                        }
 
-					//formulaire cache de creation de Filiere, on l'affichera une fois cliquer sur le bouton ajouter une filiere
-					echo Filiere::genereFormAdd($bdd->getConnexion());
-				?>
-			</div>
+                        //formulaire cache de creation de Filiere, on l'affichera une fois cliquer sur le bouton ajouter une filiere
+                        echo Filiere::genereFormAdd($bdd->getConnexion());
+                    ?>
+                </div>
+            </div>
 		</div>
 	</body>
-	
+
+    <script type="text/javascript" src="/Livret/CSS/Bootstrap/js/bootstrap.js"></script>
 	<!-- le script permettant d'afficher le formulaire apres clique sur la ligne du tableau -->
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -192,5 +202,7 @@
 			}
 		});
 	</script>
-
+    <?php
+    include_once("../Blocks/footer.html");
+    ?>
 </html>

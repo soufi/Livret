@@ -8,6 +8,7 @@ include_once("alerts.php");
 		//emballe le tableau de UE dans un div, en ajoutant des liens vers la page de module afin que
 		//chaque UE puisse nous donner l'id du form pour modifier l'unité d'enseignement
 		public static function pack_it ($connect, $leModule){
+            $pack = '';
 			try {
 				$arrayUe = UeTool::getByIDModule($connect, $leModule->_ID_MOD_);
 				if(!empty($arrayUe)){
@@ -32,7 +33,7 @@ include_once("alerts.php");
 			if(!empty($leModule)){
 				$form = "<div id='formUpdUE".$leModule->_ID_MOD_."' class='modal hide fade in' style='display: none;'>";
 	            $form .= "<div class='modal-header'>";
-	            $form .= "<a href='moduleManager.php' class='close' data-dismiss='modal'>x</a> <h3>Gestion de UE de ".$leModule->_LIBELLE_MOD_."</h3>";
+	            $form .= "<a class='close' data-dismiss='modal'>x</a> <h3>Gestion de UE de ".$leModule->_LIBELLE_MOD_."</h3>";
 	            $form .= "</div>";
 	            //Libelle de la filiere avec un input cache contenant l'id de la filiere
 	            $form .= "<div class='modal-body'>";
@@ -55,7 +56,7 @@ include_once("alerts.php");
 	            $form .= "<div class='control-group modal-footer'>";
            		$form .= "<input type='submit' class='btn btn-primary' id='btnUpdUE' name='formUpdUESubmit' value='Envoyer'/>";
            		$form .= "<input type='submit' class='btn btn-danger' id='btnDelUE' name='formDeleteUESubmit' value='Supprimer'/>";
-            	$form .= "<span><a href='moduleManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            	$form .= "<span><a data-dismiss='modal' class='btn'>Annuler</a></span>";
             	$form .= "</div> </form>";
             	$form .= "</div>";
             	return $form;
@@ -68,9 +69,9 @@ include_once("alerts.php");
 			if(!empty($leModule)){
 				$form = "<div id='formAddUE".$leModule->_ID_MOD_."' class='modal hide fade in' style='display: none;'>";
 	            $form .= "<div class='modal-header'>";
-	            $form .= "<a href='moduleManager.php' class='close' data-dismiss='modal'>x</a> <h3>Ajout de UE ".$leModule->_ID_MOD_."</h3>";
+	            $form .= "<a href='' class='close' data-dismiss='modal'>x</a> <h3>Ajout de UE ".$leModule->_ID_MOD_."</h3>";
 	            $form .= "</div>";
-	            //Libelle de la filiere avec un input cache contenant l'id de la filiere
+	            //Libelle du Module avec un input cache contenant l'id du module
 	            $form .= "<div class='modal-body'>";
 	            $form .= "<form method='post' action='moduleManager.php'  class='form-horizontal'>";
 	            $form .= "<div class='control-group'>";
@@ -89,7 +90,7 @@ include_once("alerts.php");
 	            $form .= "</div>";
 	            $form .= "<div class='control-group modal-footer'>";
 	       		$form .= "<input type='submit' class='btn btn-primary' id='btnAddUE' name='formAddUESubmit' value='Envoyer'/>";
-	        	$form .= "<span><a href='moduleManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+	        	$form .= "<span><a href='' data-dismiss='modal' class='btn'>Annuler</a></span>";
 	        	$form .= "</div> </form>";
 	        	$form .= "</div>";
 	        	return $form;

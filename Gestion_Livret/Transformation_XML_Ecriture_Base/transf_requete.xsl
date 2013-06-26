@@ -75,7 +75,7 @@
 		<xsl:text>');&#xA;</xsl:text>
 		
 		<!-- ajout des informations complémentaire du module -->
-		<xsl:text>INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_, _MOD_CC_1_, _MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_mod, '</xsl:text>
+		<xsl:text>INSERT IGNORE INTO livret_module (_ID_MOD_ , _CODE_MAT_, _LIBELLE_MOD_, _SEMESTRE_, _NBH_C_, _NBH_TD_, _NBH_TP_, _NBH_CTD_, _ECTS_, _COEF_, _LANGUE_, _INTRO_, _OBJECTIF_, _DESCRIPTION_, _METHODE_EVAL_, _MOD_CC_1_, _MOD_CC_2_,  _CALCUL_NF_1_, _CALCUL_NF_2_, _PREREQUIS_, _LIEN_RESSOURCE_, _BIBLIOGRAPHIE_, _NOTE_ELIM_, _OBLIGATOIRE_) VALUES (@id_mod, '</xsl:text>
 		<xsl:value-of select="@matiere"/>
 		<xsl:text>', '</xsl:text>
 		<xsl:value-of select="./titre"/>
@@ -129,6 +129,8 @@
 			<xsl:value-of select="."/><xsl:text>_</xsl:text>
 		</xsl:for-each>
 		<xsl:text>', '</xsl:text>
+		<xsl:value-of select="./descriptionCourte"/>
+		<xsl:text>', '</xsl:text>
 		<xsl:value-of select="./objectifs"/>
 		<xsl:text>', '</xsl:text>
 		<xsl:value-of select="./descriptionLongue"/>
@@ -155,9 +157,7 @@
 			</xsl:when>
 			<xsl:otherwise> <xsl:value-of select="./noteEliminatoire"/> </xsl:otherwise>
 		</xsl:choose>
-		<xsl:text>', '</xsl:text>
-		<xsl:value-of select="./descriptionCourte"/>
-		<xsl:text>');&#xA;</xsl:text>
+		<xsl:text>', '1');&#xA;</xsl:text>
 		
 		<!-- on recup l'id du mod au cas ou il n'existait pas avant -->
 		<xsl:text>SET @id_mod := (SELECT DISTINCT _ID_MOD_ FROM livret_module WHERE _LIBELLE_MOD_='</xsl:text>
@@ -205,7 +205,7 @@
 				<xsl:text>');&#xA;</xsl:text>
 				
 				<!-- ajout comme responsable -->
-				<xsl:text>INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens1, '1');&#xA;</xsl:text>
+				<xsl:text>INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_) VALUES (@id_mod, @id_ens1);&#xA;</xsl:text>
 			</xsl:otherwise>
 		</xsl:choose>
 		
@@ -242,7 +242,7 @@
 				<xsl:text>');&#xA;</xsl:text>
 				
 				<!-- ajout comme responsable -->
-				<xsl:text>INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_, _QUALITE_) VALUES (@id_mod, @id_ens2, '2');&#xA;</xsl:text>
+				<xsl:text>INSERT IGNORE INTO livret_responsable_module (_ID_MOD_, _ID_ENS_) VALUES (@id_mod, @id_ens2);&#xA;</xsl:text>
 			</xsl:otherwise>
 		</xsl:choose>
 		

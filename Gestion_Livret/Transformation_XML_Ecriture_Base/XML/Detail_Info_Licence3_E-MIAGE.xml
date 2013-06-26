@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<livret>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="6" coeff="3" ects="3">
+    <titre>Syst�mes informatiques - B208</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" coeff="30" ects="30">
+    <titre />
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="5" coeff="3" ects="3">
+    <titre>Analyse num�rique B109</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°4 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="5" coeff="3" ects="3">
+    <titre>Th�orie des graphes et combinatoire B104</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°5 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="6" coeff="3" ects="3">
+    <titre>Automates et langages  B209</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°6 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="6" coeff="9" ects="9">
+    <titre>Professionnalisation  B602</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°7 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="5" coeff="4" ects="4">
+    <titre>Bases de donn�es relationnelles - B210</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°8 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="5" coeff="4" ects="4">
+    <titre>Bases des t�l�communications - B222</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°9 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="6" coeff="3" ects="3">
+    <titre>Gestion de projet  B303</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°10 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="6" coeff="3" ects="3">
+    <titre>Anglais  B504</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°11 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="6" coeff="3" ects="3">
+    <titre>Communication en entreprise  B503</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="5" coeff="3" ects="3">
+    <titre>Projet de conception - B304</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="5" coeff="4" ects="4">
+    <titre>Programmation orient�e objet - B211</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="6" coeff="3" ects="3">
+    <titre>Gestion de production  B407</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°15 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="5" coeff="4" ects="4">
+    <titre>Programmation math�matique et optimisation - B105</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°16 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="5" coeff="4" ects="4">
+    <titre>M�thodes syst�miques d\'analyse et de conception - B302</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°17 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="5" coeff="4" ects="4">
+    <titre>Marketing - B405</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°18 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module matiere="UND" cours="" td="" tp="" ctd="" total="0" semestre="6" coeff="3" ects="3">
+    <titre>Projet de programmation  B213</titre>
+    <methodeeval>Contr�le continue et terminal</methodeeval>
+    <modalitesccsemestreun>CC et CT</modalitesccsemestreun>
+    <modalitesccsemestredeux>CT</modalitesccsemestredeux>
+    <CalculNFSessionUne>$\frac{(CC+2*CT)}{3}$</CalculNFSessionUne>
+    <CalculNFSessionDeux>CT</CalculNFSessionDeux>
+    <noteeliminatoire />
+    <nompremierresp>Pr�nom NOM</nompremierresp>
+    <emailpremierresp>Prenom.NOM@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Fran�ais</langue>
+    </langues>
+    <descriptionCourte>Unit� obligatoire.</descriptionCourte>
+    <descriptionLongue>LONGUE-DESCRIPTION</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Objectif 
+ * Objectif</objectifs>
+    <ressources>Ressources</ressources>
+    <biblio>Biblio</biblio>
+  </module>
+</livret>

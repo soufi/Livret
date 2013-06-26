@@ -93,14 +93,14 @@ public class EcritureFichier {
 	}
 
 	/**
-	 * Ecriture de la balise <module> et de ses attributs
+	 * Ecriture de la balise <module> et ses attributs qui sont le code apogee la matiere, le semestre  
 	 * @param aExtraire
 	 * @return
 	 * @throws Exception 
 	 */
 	public boolean ecrireModule(String aExtraire) throws Exception{
 		
-		if(aExtraire == null || aExtraire.length() == 0) // on fait rien si le String est 
+		if(aExtraire == null || aExtraire.length() == 0) // on fait rien si le String est vide
 			return false;
 		ecrire("<module ");
 		Pattern p = Pattern.compile("codeApogee=\\{(.*)?\\}");
@@ -336,7 +336,7 @@ public class EcritureFichier {
 						spl = portions[i].split("\\\\item");
 						//écrit les lignes avec leurs numerotation
 						for(int j = 1; j < spl.length; j++)
-							result.append(i+"- "+spl[j]);
+							result.append(j+"- "+spl[j]);
 					}else
 						result.append(portions[i]);
 				}
@@ -422,10 +422,4 @@ public class EcritureFichier {
 		envoyer();
 	}
 	
-	
-	//recupération des resultats de différentes parties pour tester les résultats 
-	public static void main (String [] args) throws Exception{
-		String s1 = "\\'avion a décolé ce matin l'arbre est tombé d'un coup j'ai rien compris !";
-		System.out.println(checkFormat(s1));
-	}
 }

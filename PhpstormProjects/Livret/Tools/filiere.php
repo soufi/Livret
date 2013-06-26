@@ -1,13 +1,15 @@
 <?php 
 include_once("composante.php");
 include_once("alerts.php");
+include_once("parcour.php");
 include_once("responsable.php");
+include_once("color.php");
 
 	//les attributs de cette class seront mis automatiquement grace a PDO::FETCH_CLASS
 	class Filiere{
 
 		//Genere une ligne de tableau contenant les information de l'instance
-        public function genereLine($connect){
+        public function genereLine(PDO $connect){
             $line = "<tr rel='popover' data-content=\"";
             $line .= $this->generePop($connect);
             $line .= "\" data-original-title='Responsable(s)'>";
@@ -23,7 +25,7 @@ include_once("responsable.php");
         }
 
         //genere un tableau contenant les informations de l'instance
-        public static function genereTable($connect, $tableauFiliere){
+        public static function genereTable(PDO $connect, $tableauFiliere){
             $table = "<table class='table table-hover'> <div class='well well-small'> <h2>Les Filières</h2></div>";
             if(!empty($tableauFiliere) && !empty($connect)){
                 $table .= "<tr>";
@@ -44,7 +46,7 @@ include_once("responsable.php");
 
         //generation du pop qui sera afficher lors du clique sur une ligne du tableau juste au dessus
         //le pop contiendra les informations sur l'enseignant responsable 
-        private function generePop($connect){
+        private function generePop(PDO $connect){
         	$pop = "<div class='row-fluid popRespFil'>";
         	if(!empty($connect)){
         		//recuperation des responsables de cette instance de filiere
@@ -60,14 +62,10 @@ include_once("responsable.php");
 	        				if(!empty($enseignant))
 	        					$pop .= "<span class='row'><a href='filiereManager.php?pop=formUpdRespFil".$this->_ID_FILIERE_."&ens=".$leResp->_ID_ENS_."'>".$enseignant->_NOM_ENS_." ".$enseignant->_PRENOM_ENS_."</a></span>";
 		        		}
-		        		//bouton d'ajout de responsable
-		        		$pop .= "<span class='row'><a class='btn btn-mini' href='filiereManager.php?pop=formAddRespFil".$this->_ID_FILIERE_."'><i class='icon-plus'></i></a></span>";
 		        	//si on a aucun responsable on fournit un message plus le bouton
-		        	}else{
-		        		$messageAvecAjout = "<span class='row'>Aucun Responsable trouvé</span>";
-	                    $messageAvecAjout .= "<span class='row'> <a href='filiereManager.php?pop=formAddRespFil".$this->_ID_FILIERE_."' class='btn btn-mini'><i class='icon-plus'></i></a></span>";
-	                    $pop .= AlertTool::genereInfo($messageAvecAjout);
 		        	}
+                    //bouton d'ajout de responsable
+                    $pop .= "<span class='row'><a class='btn btn-mini' href='filiereManager.php?pop=formAddRespFil".$this->_ID_FILIERE_."'><i class='icon-plus'></i></a></span>";
 		        }catch (Exception $e) {
 	   				$pop .= AlertTool::genereDanger($e->getMessage());
 	        	}
@@ -78,10 +76,10 @@ include_once("responsable.php");
         }
 
         //genere le formulaire qui permet de mettre a jour les responsable de cette instance de filiere
-        public function genereFormUpdResp($connect){
+        public function genereFormUpdResp(PDO $connect){
         	$form = "<div id='formUpdRespFil".$this->_ID_FILIERE_."' class='modal hide fade in' style='display: none;'>";
         	$form .= "<div class='modal-header'>";
-        	$form .= "<a href='filiereManager.php' class='close' data-dismiss='modal'>x</a> <h3>Modification Responsable Filière</h3>";
+        	$form .= "<a href='' class='close' data-dismiss='modal'>x</a> <h3>Modification Responsable Filière</h3>";
             $form .= "</div>";
             //Libelle de la filiere avec un input cache contenant l'id de la filiere
             $form .= "<div class='modal-body'>";
@@ -117,17 +115,17 @@ include_once("responsable.php");
             $form .= "<div class='control-group modal-footer'>";
             $form .= "<input type='submit' class='btn btn-primary' name='formUpdRespSubmit' value='Envoyer'/>";
             $form .= "<input type='submit' class='btn btn-danger' name='formDeleteRespSubmit' value='Supprimer'/>";
-            $form .= "<span><a href='filiereManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            $form .= "<span><a href='' data-dismiss='modal' class='btn'>Annuler</a></span>";
             $form .= "</div> </form>";
             $form .= "</div>";
             return $form;
         }
 
         //permet de generer un formulaire d'ajout de responsable de cette instance de filiere
-        public function genereFormAddResp($connect){
+        public function genereFormAddResp(PDO $connect){
         	$form = "<div id='formAddRespFil".$this->_ID_FILIERE_."' class='modal hide fade in' style='display: none;'>";
         	$form .= "<div class='modal-header'>";
-        	$form .= "<a href='filiereManager.php' class='close' data-dismiss='modal'>x</a> <h3>Ajout Responsable Filière</h3>";
+        	$form .= "<a href='' class='close' data-dismiss='modal'>x</a> <h3>Ajout Responsable Filière</h3>";
             $form .= "</div>";
             //Libelle de la filiere avec un input cache contenant l'id de la filiere
             $form .= "<div class='modal-body'>";
@@ -161,17 +159,17 @@ include_once("responsable.php");
             $form .= "</div>";
             $form .= "<div class='control-group modal-footer'>";
             $form .= "<input type='submit' class='btn btn-primary' name='formAddRespSubmit' value='Envoyer'/>";
-            $form .= "<span><a href='filiereManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            $form .= "<span><a href='' data-dismiss='modal' class='btn'>Annuler</a></span>";
             $form .= "</div> </form>";
             $form .= "</div>";
             return $form;
         }
 
         //genere un formulaire qui modifie une composante
-        public function genereFormModif($connect){
+        public function genereFormModif(PDO $connect){
             $form = "<div id='myModal".$this->_ID_FILIERE_."' class='modal hide fade in' style='display: none;'>";
             $form .= "<div class='modal-header'>";
-            $form .= "<a href='filiereManager.php' class='close' data-dismiss='modal'>x</a> <h3>Modification Filière</h3>";
+            $form .= "<a href='' class='close' data-dismiss='modal'>x</a> <h3>Modification Filière</h3>";
             $form .= "</div>";
             $form .= "<div class='modal-body'>";
             $form .= "<form id='form-myModal".$this->_ID_FILIERE_."' method='post' action='filiereManager.php'  class='form-horizontal'>";
@@ -199,11 +197,30 @@ include_once("responsable.php");
             if(empty($allCompo)){
             	$form .= (AlertTool::genereWarning("Aucune Composante trouvée !"));
             }
-            $form .= "</div>"; //fin modal-body
+            //COULEUR 1
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='couleur1Fil'>Couleur 1</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='color' name='couleur1Fil' id='couleur1Fil' required value='".rgb2hex($this->_COULEUR1_)."'/>";
+            $form .= "</div> </div>";
+            //COULEUR 2
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='couleur2Fil'>Couleur 2</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='color' name='couleur2Fil' id='couleur2Fil' required value='".rgb2hex($this->_COULEUR2_)."'/>";
+            $form .= "</div> </div>";
+            //COULEUR 3
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='couleur3Fil'>Couleur 3</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='color' name='couleur3Fil' id='couleur3Fil' required value='".rgb2hex($this->_COULEUR3_)."'/>";
+            $form .= "</div> </div>";
+            //fin modal-body
+            $form .= "</div>";
             $form .= "<div class='control-group modal-footer'>";
             $form .= "<input type='submit' class='btn btn-primary' name='formUpdSubmit' value='Envoyer'/>";
             $form .= "<input type='submit' class='btn btn-danger' name='formDeleteSubmit' value='Supprimer'/>";
-            $form .= "<span><a href='filiereManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            $form .= "<span><a href='' data-dismiss='modal' class='btn'>Annuler</a></span>";
             $form .= "</div> </form>";
             $form .= "</div>";
 
@@ -211,10 +228,10 @@ include_once("responsable.php");
         }
 
         //genere un frmulaire pour ajouter une Filiere
-        public static function genereFormAdd($connect){
+        public static function genereFormAdd(PDO $connect){
         	$form = "<div id='formAddFiliere' class='modal hide fade in' style='display: none;'>";
             $form .= "<div class='modal-header'>";
-            $form .= "<a href='filiereManager.php' class='close' data-dismiss='modal'>x</a> <h3>Ajouter Filière</h3>";
+            $form .= "<a href='' class='close' data-dismiss='modal'>x</a> <h3>Ajouter Filière</h3>";
             $form .= "</div>";
             $form .= "<div class='modal-body'>";
             $form .= "<form method='post' action='filiereManager.php'  class='form-horizontal'>";
@@ -238,10 +255,28 @@ include_once("responsable.php");
             if(empty($allCompo)){
             	$form .= (AlertTool::genereWarning("Aucune Composante trouvée !"));
             }
+            //COULEUR 1
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='couleur1Fil'>Couleur 1</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='color' name='couleur1Fil' id='couleur1Fil' required />";
+            $form .= "</div> </div>";
+            //COULEUR 2
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='couleur2Fil'>Couleur 2</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='color' name='couleur2Fil' id='couleur2Fil' required />";
+            $form .= "</div> </div>";
+            //COULEUR 3
+            $form .= "<div class='control-group'>";
+            $form .= "<label class='control-label' for='couleur3Fil'>Couleur 3</label>";
+            $form .= "<div class='controls'>";
+            $form .= "<input type='color' name='couleur3Fil' id='couleur3Fil' required />";
+            $form .= "</div> </div>";
             $form .= "</div>"; //fin modal-body
             $form .= "<div class='control-group modal-footer'>";
             $form .= "<input type='submit' class='btn btn-primary' name='formAddSubmit' value='Envoyer'/>";
-            $form .= "<span><a href='filiereManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            $form .= "<span><a href='' data-dismiss='modal' class='btn'>Annuler</a></span>";
             $form .= "</div> </form>";
             $form .= "</div>";
             return $form;
@@ -257,7 +292,7 @@ include_once("responsable.php");
 	class FiliereTool {
 		
 		//recupere les lignes ou la ligne correspondante a l'id en parametre
-		public static function getByID ($connect, $_id){
+		public static function getByID (PDO $connect, $_id){
 			$requete = "SELECT * FROM livret_filiere WHERE _ID_FILIERE_ = ?";
 			if(is_numeric($_id) && !empty($connect)){
 				$stmt = $connect->prepare($requete);
@@ -271,7 +306,7 @@ include_once("responsable.php");
 		}
 		
 		//retourne les lignes ou la ligne correspondante au libelle en parametre
-		public static function getByLibelle($connect, $_libelle){
+		public static function getByLibelle(PDO $connect, $_libelle){
 			$requete = "SELECT * FROM livret_filiere WHERE _LIBELLE_FILIERE_ = ?";
 			if (is_numeric($_id) && !empty($connect)) {
 				$stmt = $connect->prepare($requete);
@@ -285,7 +320,7 @@ include_once("responsable.php");
 		}
 		
 		//recupere toutes les Filieres
-		public static function getAll($connect) {
+		public static function getAll(PDO $connect) {
 			$requete = "SELECT * FROM livret_filiere";
 			$stmt = $connect->prepare($requete);
 			if($stmt->execute())
@@ -295,8 +330,8 @@ include_once("responsable.php");
 		}
 		
 		//permet d'inserer une Filiere
-		public static function insertFiliere($connect, $_libelle, $_id_compo){
-			$requete = "INSERT INTO livret_filiere (_LIBELLE_FILIERE_ , _ID_COMPO_) VALUES (?, ?)";
+		public static function insertFiliere(PDO $connect, $_libelle, $_id_compo, $_color1, $_color2, $_color3){
+			$requete = "INSERT INTO livret_filiere (_LIBELLE_FILIERE_ , _ID_COMPO_, _COULEUR1_, _COULEUR2_, _COULEUR3_) VALUES (?, ?, ?, ?, ?)";
 			//verification de validite des parametres
 			if (is_numeric($_id_compo) && !empty($_libelle) && !empty($connect)) {
 				//verifier si l'id existe dans la table ou non
@@ -307,7 +342,13 @@ include_once("responsable.php");
 							$stmt = $connect->prepare($requete);
 							$stmt->bindValue(1, $_libelle, PDO::PARAM_STR);
 							$stmt->bindValue(2, $_id_compo, PDO::PARAM_INT);
-							return $stmt->execute();
+                            $stmt->bindValue(3, $_color1, PDO::PARAM_STR);
+                            $stmt->bindValue(4, $_color2, PDO::PARAM_STR);
+                            $stmt->bindValue(5, $_color3, PDO::PARAM_STR);
+							if($stmt->execute())
+                                return TRUE;
+                            else
+                                throw new Exception("Fililiere:insertFiliere => impossible d'exectuer la requete");
 						}else {
 							throw new exception("Filiere::insertFiliere => ID de composante inexistant !");
 						}
@@ -323,7 +364,7 @@ include_once("responsable.php");
 		
 		//verifie si le libelle exist ou non 
 		//retourne vrai dans ce cas, non sinon
-		public static function existLibelle($connect, $_libelle){
+		public static function existLibelle(PDO $connect, $_libelle){
 			$requete = "SELECT COUNT(DISTINCT _ID_FILIERE_) FROM livret_filiere WHERE _LIBELLE_FILIERE_ = ? ";
 			if (!empty($connect) && !empty($_libelle)){
 				$stmt = $connect->prepare($requete);
@@ -337,7 +378,7 @@ include_once("responsable.php");
 				throw new exception("Filiere::existLibelle => parametre invalide !");
 		}
 		//permet de tester si une filiere existe deja dans la base de donnée
-		public static function existElement($connect, $_libelle, $_id_compo) {
+		public static function existElement(PDO $connect, $_libelle, $_id_compo) {
 			$requete = "SELECT COUNT(DISTINCT _ID_FILIERE_) FROM livret_filiere WHERE _LIBELLE_FILIERE_ = ? AND _ID_COMP_ = ?";
 			if (!empty($connect) && !empty($_libelle) && is_numeric($_id_compo)) {
 				$stmt = $connect->prepare($requete);
@@ -353,7 +394,7 @@ include_once("responsable.php");
 		}
 		
 		//retourne vrai si l'id existe dans la table livret_filiere, non sinon
-		public static function existID($connect, $_id){
+		public static function existID(PDO $connect, $_id){
 			$requete = "SELECT COUNT(DISTINCT _ID_FILIERE_) FROM livret_filiere WHERE _ID_FILIERE_ = ?";
 			if (is_numeric($_id) && !empty($connect)) {
 				$stmt = $connect->prepare($requete);
@@ -368,16 +409,23 @@ include_once("responsable.php");
 		}
 		
 		//met a jour une filiere 
-		public static function updateFiliere($connect, $_id, $_newLibelle, $_idCompo){
-			$requete = "UPDATE livret_filiere SET _LIBELLE_FILIERE_ = ? , _ID_COMPO_ = ? WHERE _ID_FILIERE_ = ?";
+		public static function updateFiliere(PDO $connect, $_id, $_newLibelle, $_idCompo, $_color1, $_color2, $_color3){
+			$requete = "UPDATE livret_filiere SET _LIBELLE_FILIERE_ = ? , _ID_COMPO_ = ?, _COULEUR1_ = ? , _COULEUR2_ = ?, _COULEUR3_ = ? WHERE _ID_FILIERE_ = ?";
 			if(is_numeric($_id) && is_numeric($_idCompo) && !empty($_newLibelle) && !empty($connect)){
 				try {
 					if(ComposanteTool::existID($connect, $_idCompo)){
 						$stmt = $connect->prepare($requete);
 						$stmt->bindValue(1, $_newLibelle, PDO::PARAM_STR);
 						$stmt->bindValue(2, $_idCompo, PDO::PARAM_INT);
-						$stmt->bindValue(3, $_id, PDO::PARAM_INT);
-						return $stmt->execute();
+                        $stmt->bindValue(3, $_color1, PDO::PARAM_STR);
+                        $stmt->bindValue(4, $_color2, PDO::PARAM_STR);
+                        $stmt->bindValue(5, $_color3, PDO::PARAM_STR);
+						$stmt->bindValue(6, $_id, PDO::PARAM_INT);
+
+						if($stmt->execute())
+                            return TRUE;
+                        else
+                            throw new Exception("FiliereTool::updateFiliere => impossible d'exectuer la requete");
 					}else
 						return FALSE;
 				} catch (Exception $e) {

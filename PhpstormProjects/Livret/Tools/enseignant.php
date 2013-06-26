@@ -1,5 +1,4 @@
 <?php
-	
 	class Enseignant{
 
 		//Genere une ligne de tableau contenant les information de l'instance
@@ -16,7 +15,7 @@
 
         //genere un tableau contenant les informations de l'instance
         //a partir d'un tableau contenant tous les enseignants
-        public static function genereTable($tableauEns){
+        public static function genereTable($tableauEns, $page, $taillePage){
             $table = "<table class='table table-hover'> <div class='well well-small'> <h2>Les Enseignants</h2></div>";
             if(!empty($tableauEns)){
                 $table .= "<tr>";
@@ -26,26 +25,65 @@
                 $table .= "<th>E-mail</th>";
                 $table .= "<th>Téléphone</th>";
                 $table .= "</tr>";
+                //----------
                 //generation des lignes du tableau
-                foreach ($tableauEns as $value) {
-                    $table .= $value->genereLine();
+                //prise en compte de pagination
+                $nbrEns = count($tableauEns); //le nombre des Enseignants
+                $nbrPage = $nbrEns / $taillePage;
+                //on ajoute une page dans le cas ou le nombre n'est pas divisible par la taille de la page
+                if(($nbrPage % $taillePage) != 0) {  $nbrPage++; }
+                //si le nbr de la page est superieur aux bords
+                if($page > $nbrPage || $page < 1)
+                    $page = $nbrPage;
+                $debutPage = (($page*$taillePage)-$taillePage)+1; //formule pour calculer le début de page
+                //si ce qui reste des modules est sup a la taille de la page on calcule la fin sinon on s'arrete à la fin du tableau
+                if(($nbrEns-(($page-1)*$taillePage)) > $taillePage)
+                    $finPage = $debutPage + $taillePage;
+                else
+                    $finPage = $nbrEns;
+                //chargement des lignes de la page
+                for ($i = $debutPage ; $i < $finPage ; $i++) {
+                    $table .= $tableauEns[$i]->genereLine();
                 }
             //quand le tableau est vide on genere un warning
             }else
                 $table .= AlertTool::genereWarning("Aucun enseignant trouvé !");
             $table .= "</table>";
+            //menu de pagination
+            if(!empty($nbrPage)){
+                $table .= "<div class='pagination  pagination-centered'> <ul>";
+                for ($i=1; $i <= $nbrPage; $i++) {
+                    if($i === $page)
+                        $table .= "<li class='active'><a href='#'>".$i."</a></li>";
+                    else
+                        $table .= "<li><a href='ensManager.php?pm=".$i."'>".$i."</a></li>";
+                }
+                $table .= "</ul> </div>";
+            }
             return $table;
         }
 
         //genere un formulaire qui modifie un enseignant
         public function genereFormModif(){
             $form = "<div id='myModal".$this->_ID_ENS_."' class='modal hide fade in' style='display: none;'>";
+            //Header Modal
             $form .= "<div class='modal-header'>";
-            $form .= "<a href='ensManager.php' class='close' data-dismiss='modal'>x</a> <h3>Modification info enseignant</h3>";
+            $form .= "<a href='' class='close' data-dismiss='modal'>x</a> <h3>Modification d'Enseignant</h3>";
             $form .= "</div>";
+            //fin du Header du Modal
             $form .= "<div class='modal-body'>";
-            $form .= "<form id='form-myModal".$this->_ID_ENS_."' method='post' action='ensManager.php' class='form-horizontal'>";
-            //Nom 
+
+            //photo avatar
+            $form .= "<div class='control-group'>";
+            $form .= "<div style='width:50px ; height:50px ; margin:auto; margin-bottom:30px;'>";
+            if(!empty($this->_PHOTO_) && file_exists($this->_PHOTO_))
+                $form .= "<img src='".$this->_PHOTO_."' class='img-polaroid'/>";
+            else
+                $form .= "<img src='/Livret/CSS/Pictures/avatar.png' class='img-polaroid'>";
+            $form .= "</div></div>";
+
+            $form .= "<form id='form-myModal".$this->_ID_ENS_."' method='post' enctype='multipart/form-data' action='ensManager.php' class='form-horizontal'>";
+            //Nom
             $form .= "<div class='control-group'>";
             $form .= "<label class='control-label' for='nomEns'>Nom</label>";
             $form .= "<div class='controls'>";
@@ -87,7 +125,7 @@
             $form .= "<div class='control-group modal-footer'>";
             $form .= "<input type='submit' class='btn btn-primary' name='formUpdSubmit' value='Envoyer'/>";
             $form .= "<input type='submit' class='btn btn-danger' name='formDeleteSubmit' value='Supprimer'/>";
-            $form .= "<span><a href='ensManager.php' data-dismiss='modal' class='btn'>Annuler</a></span>";
+            $form .= "<span><a href='' data-dismiss='modal' class='btn'>Annuler</a></span>";
             $form .= "</div> </form>";
             $form .= "</div>";
 
@@ -98,10 +136,20 @@
         public static function genereFormAdd(){
         	$form = "<div id='formAddEns' class='modal hide fade in' style='display: none;'>";
             $form .= "<div class='modal-header'>";
-            $form .= "<a href='ensManager.php' class='close' data-dismiss='modal'>x</a> <h3>Ajouter un enseignant</h3>";
+            $form .= "<a href='ensManager.php' class='close' data-dismiss='modal'>x</a>";
+            $form .= " <h3>Ajouter un enseignant</h3>";
             $form .= "</div>";
             $form .= "<div class='modal-body'>";
-            $form .= "<form method='post' action='ensManager.php'  class='form-horizontal'>";
+
+            //Debut du formulaire
+            $form .= "<form method='post' action='ensManager.php' enctype='multipart/form-data' class='form-horizontal'>";
+
+            //photo avatar
+            $form .= "<div class='modal-control'>";
+            $form .= "<div style='width:50px ; height:50px ; margin:auto; margin-bottom:30px;'>";
+            $form .= "<img src='/Livret/CSS/Pictures/avatar.png' class='img-polaroid'>";
+            $form .= "</div></div>";
+
             //Nom 
             $form .= "<div class='control-group'>";
             $form .= "<label class='control-label' for='nomEns'>Nom</label>";
@@ -135,7 +183,7 @@
             $form .= "</div> </div> "; //fin control-group
             //Photo
 			$form .= "<div class='control-group'>";
-            $form .= "<label class='control-label' for='photoEns'>Photo</label>";
+            $form .= "<label class='control-label' for='photoEnsAdd'>Photo</label>";
             $form .= "<div class='controls'>";
             $form .= "<input type='file' name='photoEnsAdd' id='photoEns'/>";
             $form .= "</div> </div> "; //fin control-group
@@ -158,7 +206,7 @@
 
 		//permet de récupérer un enseignant à partir de son id
 		//retourne un tableau d'objet
-		public static function getByID($connect, $idEns){
+		public static function getByID(PDO $connect, $idEns){
 			$requete = "SELECT * FROM livret_enseignant WHERE _ID_ENS_ = ?";
 			if(!empty($connect) && is_numeric($idEns)){
 				$stmt = $connect->prepare($requete);
@@ -173,7 +221,7 @@
 
 		//permet de récupérer un enseignant à partir de son eMail 
 		//retourne un tableau d'objet
-		public static function getByEmail ($connect, $eMail){
+		public static function getByEmail (PDO $connect, $eMail){
 			$requete = "SELECT * FROM livret_enseignant WHERE _EMAIL_ENS_ = ?";
 			if(!empty($connect) && !empty($eMail)){
 				$stmt = $connect->prepare($requete);
@@ -188,7 +236,7 @@
 
 		//permet de savoir si l'id exist ou non dans la table
 		//retourne un boolean
-		public static function existID($connect, $idEns){
+		public static function existID(PDO $connect, $idEns){
 			$requete = "SELECT COUNT(_ID_ENS_) FROM livret_enseignant WHERE _ID_ENS_ = ?";
 			if(!empty($connect) && is_numeric($idEns)){
 				$stmt = $connect->prepare($requete);
@@ -204,7 +252,7 @@
 		}
 
 		//permet de savoir si un email existe dans la table d'enseignant
-		public static function existEmail ($connect, $email){
+		public static function existEmail (PDO $connect, $email){
 			$requete = "SELECT COUNT(_EMAIL_ENS_) FROM livret_enseignant WHERE _EMAIL_ENS_ = ?";
 			if(!empty($connect) && !empty($email)){
 				$stmt = $connect->prepare($requete);
@@ -219,7 +267,7 @@
 		}
 
 		//permet d'inserrer un enseignant dans la base
-		public static function insertEnseignant($connect, $nom, $prenom, $email, $phone, $titre, $photo){
+		public static function insertEnseignant(PDO $connect, $nom, $prenom, $email, $phone, $titre, $photo){
 			$requete = "INSERT IGNORE INTO livret_enseignant (_NOM_ENS_, _PRENOM_ENS_, _EMAIL_ENS_, _PHONE_, _TITRE_, _PHOTO_) VALUES (?,?,?,?,?,?)";
 			if(!empty($connect) && !empty($nom) && !empty($prenom) && !empty($email)){
 				if(! EnseignantTool::existEmail($connect, $email)){
@@ -241,8 +289,8 @@
 		}
 
 		//permet de mettre a jour 
-		public static function updateEnseignant($connect, $id, $nom, $prenom, $email, $phone, $titre, $photo){
-			$requete = "UPDATE livret_enseignant SET _NOM_ENS_ = ? , _PRENOM_ENS_ = ? , _EMAIL_ENS_ = ? , _PHONE_ = ? , _TITRE_ = ? , _PHONE_ = ? WHERE _ID_ENS_ = ?";
+		public static function updateEnseignant(PDO $connect, $id, $nom, $prenom, $email, $phone, $titre, $photo){
+			$requete = "UPDATE livret_enseignant SET _NOM_ENS_ = ? , _PRENOM_ENS_ = ? , _EMAIL_ENS_ = ? , _PHONE_ = ? , _TITRE_ = ? , _PHOTO_ = ? WHERE _ID_ENS_ = ?";
 			if(!empty($connect) && !empty($nom) && !empty($prenom) && !empty($email) && is_numeric($id)){
 				if(EnseignantTool::existID($connect, $id)){
 					$stmt = $connect->prepare($requete);
@@ -264,7 +312,7 @@
 		}
 
 		//permet de supprimer un enseignant
-		public static function deleteEnseignant($connect, $id){
+		public static function deleteEnseignant(PDO $connect, $id){
 			$requete = "DELETE FROM livret_enseignant WHERE _ID_ENS_ = ?";
 			if(!empty($connect) && is_numeric($id)){
 				if(EnseignantTool::existID($connect, $id)){
@@ -281,7 +329,7 @@
 		}
 
 		//permet d'avoir tous les enseignants 
-		public static function getAll($connect){
+		public static function getAll(PDO $connect){
 			$requete = "SELECT * FROM livret_enseignant ORDER BY _NOM_ENS_ ASC";
 			if(!empty($connect)){
 				$stmt = $connect->prepare($requete);

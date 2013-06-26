@@ -279,30 +279,6 @@ TP : Croisements Drosophiles, Polymorphisme de l’amylase</descriptionLongue>
     <biblio>Biblio</biblio>
   </module>
   <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°12 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
-  <module codeApogee1="SOL1BO01" codeApogee2="SSL1BO01" matiere="BO" cours="30" td="3" tp="15" ctd="" ctp="" total="48" semestre="1" coeff="5" ects="5">
-    <titre>Panorama du monde animal et végétal</titre>
-    <methodeeval>Ecrit</methodeeval>
-    <modalitesccsemestreun>RNE : CCI(3) 4h ; RSE : CT 2h</modalitesccsemestreun>
-    <modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
-    <calculnfsessionune>Ecrit 100\%</calculnfsessionune>
-    <calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
-    <noteeliminatoire />
-    <nompremierresp>François Leutier</nompremierresp>
-    <emailpremierresp>francois.lieutier@univ-orleans.fr</emailpremierresp>
-    <nomsecondresp />
-    <emailsecondresp />
-    <nbprerequis>0</nbprerequis>
-    <langues>
-      <langue>Français</langue>
-    </langues>
-    <descriptionCourte>Tronc commun</descriptionCourte>
-    <descriptionLongue>Origine de la vie et grandes étapes de sa complexification .Eubactéries, archées, eucaryotes ; les diverses lignées unicellulaires et pluricellulaires ; les plans d’organisation du monde animal (feuillets embryonnaires, coelome, ..) et caractères généraux des grands embranchements. Plans d’organisation du monde végétal, les étapes de l’acquisition des différents organes des algues aux angiospermes; particularités des mycètes.</descriptionLongue>
-    <textePrerequis />
-    <objectifs>* Sensibiliser l’étudiant à la diversité du monde vivant et lui faire connaître son organisation.</objectifs>
-    <ressources />
-    <biblio>Biblio</biblio>
-  </module>
-  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
   <module codeApogee1="SOL2BO05" codeApogee2="SSL2BO05" matiere="BO" cours="12" td="6" tp="6" ctd="" ctp="" total="24" semestre="2" coeff="3" ects="3">
     <titre>Ecologie générale : environnement et fonctionnement de la biosphère</titre>
     <methodeeval>Ecrit</methodeeval>
@@ -326,7 +302,7 @@ TP : Croisements Drosophiles, Polymorphisme de l’amylase</descriptionLongue>
     <ressources />
     <biblio>Biblio</biblio>
   </module>
-  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°13 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
   <module codeApogee1="SOL2ST02" codeApogee2="SSL2ST02" matiere="PJ" cours="18" td="6" tp="24" ctd="" ctp="" total="48" semestre="2" coeff="6" ects="6">
     <titre>Cours Minéralogie</titre>
     <methodeeval>Ecrit</methodeeval>
@@ -348,6 +324,30 @@ TP : Croisements Drosophiles, Polymorphisme de l’amylase</descriptionLongue>
 *[TD :] La symétrie des mailles élémentaires – Calcul de formules structurales.</descriptionLongue>
     <textePrerequis>Connaissances de base en chimie.</textePrerequis>
     <objectifs>* Connaissances du monde minéral dans sa diversité et ses principes – Apprentissage des méthodes d’identification des minéraux.</objectifs>
+    <ressources />
+    <biblio>Biblio</biblio>
+  </module>
+  <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Module n°14 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+  <module codeApogee1="SOL1BO01" codeApogee2="SSL1BO01" matiere="BO" cours="30" td="3" tp="15" ctd="" ctp="" total="48" semestre="1" coeff="5" ects="5">
+    <titre>Panorama du monde animal et végétal</titre>
+    <methodeeval>Ecrit</methodeeval>
+    <modalitesccsemestreun>RNE : CCI(3) 4h ; RSE : CT 2h</modalitesccsemestreun>
+    <modalitesccsemestredeux>RNE et RSE : CT 2h</modalitesccsemestredeux>
+    <calculnfsessionune>Ecrit 100\%</calculnfsessionune>
+    <calculnfsessiondeux>Ecrit 100\%</calculnfsessiondeux>
+    <noteeliminatoire />
+    <nompremierresp>François Leutier</nompremierresp>
+    <emailpremierresp>francois.leutier@univ-orleans.fr</emailpremierresp>
+    <nomsecondresp />
+    <emailsecondresp />
+    <nbprerequis>0</nbprerequis>
+    <langues>
+      <langue>Français</langue>
+    </langues>
+    <descriptionCourte>Tronc commun</descriptionCourte>
+    <descriptionLongue>Origine de la vie et grandes étapes de sa complexification .Eubactéries, archées, eucaryotes ; les diverses lignées unicellulaires et pluricellulaires ; les plans d’organisation du monde animal (feuillets embryonnaires, coelome, ..) et caractères généraux des grands embranchements. Plans d’organisation du monde végétal, les étapes de l’acquisition des différents organes des algues aux angiospermes; particularités des mycètes.</descriptionLongue>
+    <textePrerequis />
+    <objectifs>* Sensibiliser l’étudiant à la diversité du monde vivant et lui faire connaître son organisation.</objectifs>
     <ressources />
     <biblio>Biblio</biblio>
   </module>

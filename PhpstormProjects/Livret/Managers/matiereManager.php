@@ -43,43 +43,47 @@
     ?>
     <body>
         <div class="container-fluid">
-            <div class="span3">
-                <?php
-                    include_once("../Blocks/nav_gestion.html");
-                ?>
-                <div class="nav nav-pills">
-                    <input type="button" id="addMatiere" class="btn btn-inverse" value="Ajouter une Matière"/>
+            <div class="row-fluid">
+                <div class="span2">
+                    <?php
+                        include_once("../Blocks/nav_gestion.html");
+                    ?>
+                    <ul class="nav nav-tabs bs-docs-sidenav nav-stacked">
+                        <li class="nav-header">Menu Matières</li>
+                        <li><a id="addMatiere" class="btn">Ajouter</a></li>
+                    </ul>
+
                 </div>
-
-            </div>
-            <!--le tableau d'affichage de toutes les matieres-->
-            <div class="span9">
-                <?php
-                //recup de toute les matieres
-                    try{
-                        //recup de toutes les matieres 
-                        $allMatiere = MatiereTool::getAll($bdd->getConnexion());
-                        //tableau de gestion
-                        echo (Matiere::genereTable($allMatiere));
-                    }catch(Exception $e){
-                        echo $e->getMessage();
-                    }
-                
-                    // Les formulaires des Matiere deja preparer qui'on affichera que s'il y'a un evenement -->
-                    //generation des formulaires
-                    if(!empty($allMatiere)){
-                        foreach ($allMatiere as $laMatiere) {
-                            echo $laMatiere->genereFormModif();
+                <!--le tableau d'affichage de toutes les matieres-->
+                <div class="span9">
+                    <?php
+                    //recup de toute les matieres
+                        try{
+                            //recup de toutes les matieres
+                            $allMatiere = MatiereTool::getAll($bdd->getConnexion());
+                            //tableau de gestion
+                            echo (Matiere::genereTable($allMatiere));
+                        }catch(Exception $e){
+                            echo $e->getMessage();
                         }
-                    }
 
-                    //formulaire cache de creation de matiere, on l'affichera une fois cliquer sur le bouton ajouter une matiere
-                    echo Matiere::genereFormAdd();
-                ?>
+                        // Les formulaires des Matiere deja preparer qui'on affichera que s'il y'a un evenement -->
+                        //generation des formulaires
+                        if(!empty($allMatiere)){
+                            foreach ($allMatiere as $laMatiere) {
+                                echo $laMatiere->genereFormModif();
+                            }
+                        }
+
+                        //formulaire cache de creation de matiere, on l'affichera une fois cliquer sur le bouton ajouter une matiere
+                        echo Matiere::genereFormAdd();
+                    ?>
+                </div>
             </div>
         </div>
     </body>
-    
+
+    <script type="text/javascript" src="/Livret/CSS/Bootstrap/js/bootstrap.js"></script>
     <!-- le script permettant d'afficher le formulaire apres clique sur la ligne du tableau -->
     <script type="text/javascript">
         $(document).ready(function(){
@@ -95,5 +99,7 @@
         });
             
     </script>
-
+    <?php
+    include_once("../Blocks/footer.html");
+    ?>
 </html>
