@@ -15,11 +15,11 @@
                 if(!empty($tabP)){
                     $promo = $tabP[0];
                     if($promo->genereTexDtlF($bdd->getConnexion()))
-                        echo AlertTool::genereInfo("Le fichier de détails a été crée avec succé");
+                        echo AlertTool::genereInfo("Le fichier de détails a été créé avec succès");
                     else
                         echo AlertTool::genereWarning("impossible de créer le fichier de Details");
                     if($promo->genereTexTabF($bdd->getConnexion()))
-                        echo AlertTool::genereInfo("le fichier de Maquette de Semestre a été crée avec succé");
+                        echo AlertTool::genereInfo("le fichier de Maquette de Semestre a été créé avec succès");
                     else
                         echo AlertTool::genereWarning("impossible de créer le fichier de maquette de semestre");
                 }else

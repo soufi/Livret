@@ -46,7 +46,7 @@
 
             try{
                 ModuleTool::updateModule($bdd->getConnexion(), $idModule, $codeMatiere, $libelle, $semestre, $nbrC, $nbrTD, $nbrTP, $nbrCTD, $ects, $coef, $langues, $intro, $objectif, $description, $methodEval, $modCC1, $modCC2, $calculNF1, $calculNF2, $prerequis, $ressources, $biblio, $noteElim, $oblig);
-                echo AlertTool::genereInfo("Mise à jour de module effectué avec succés !");
+                echo AlertTool::genereInfo("Mise à jour de module effectué avec succès !");
             }catch(exception $e){
                 echo AlertTool::genereDanger($e->getMessage());
             }
@@ -57,7 +57,7 @@
             $idModule = $_POST['idModule'];
             try{
                 ModuleTool::deleteModule($bdd->getConnexion(), $idModule);
-                echo AlertTool::genereInfo("Suppression de module effectué avec succés !"); //mmessage de confirmation
+                echo AlertTool::genereInfo("Suppression de module effectué avec succès !"); //mmessage de confirmation
             }catch(exception $e){
                 echo AlertTool::genereDanger($e->getMessage());
             }
@@ -99,7 +99,7 @@
             $oblig = $_POST['obligModuleAdd'];
             try{
                 ModuleTool::insertModule($bdd->getConnexion(), $codeMatiere, $libelle, $semestre, $nbrC, $nbrTD, $nbrTP, $nbrCTD, $ects, $coef, $langues, $objectif, $description, $methodEval, $modCC1, $modCC2, $calculNF1, $calculNF2, $prerequis, $ressources, $biblio, $noteElim, $oblig);
-                echo AlertTool::genereInfo("Ajout de module effectué avec succés !"); //message de confirmation
+                echo AlertTool::genereInfo("Ajout de module effectué avec succès !"); //message de confirmation
             }catch(exception $e){
                 echo AlertTool::genereDanger($e->getMessage());
             }
@@ -112,7 +112,7 @@
         $idEns = $_POST['idEnsPop'];
         try{
             ResponsableTool::updRespMod($bdd->getConnexion(), $idModule, $oldIdEns, $idModule, $idEns);
-            echo AlertTool::genereInfo("Mise à jour de responsable effectuée avec succés !");
+            echo AlertTool::genereInfo("Mise à jour de responsable effectuée avec succès !");
         }catch(Exception $e){
             echo AlertTool::genereDanger($e->getMessage());
         }
@@ -124,7 +124,7 @@
         $idEns = $_POST['idEnsPop'];
         try{
             ResponsableTool::insertRespMod($bdd->getConnexion(), $idModule, $idEns);
-            echo AlertTool::genereInfo("Ajout de responsable effectué avec succés !");
+            echo AlertTool::genereInfo("Ajout de responsable effectué avec succès !");
         }catch(Exception $e){
             echo AlertTool::genereDanger($e->getMessage());
         }
@@ -136,7 +136,7 @@
         $oldIdEns = $_POST['oldIdEnsPop'];
         try {
             ResponsableTool::deleteRespMod($bdd->getConnexion(), $idModule, $oldIdEns);
-            echo AlertTool::genereInfo("Suppression de responsable effectué avec succés !");
+            echo AlertTool::genereInfo("Suppression de responsable effectué avec succès !");
         } catch (Exception $e) {
             echo AlertTool::genereDanger($e->getMessage());
         }
@@ -150,7 +150,7 @@
         $apogee = $_POST['apogee'];
         try{
             UeTool::updateUE($bdd->getConnexion(), $oldApogee, $apogee, $idModule);
-            echo AlertTool::genereInfo("Mis à jour de U.E de Module effectué avec succés !");
+            echo AlertTool::genereInfo("Mis à jour de U.E de Module effectué avec succès !");
         }catch(Exception $e){
             echo AlertTool::genereDanger($e->getMessage());
         }
@@ -161,7 +161,7 @@
         $oldApogee = $_POST['oldApogee'];
         try {
             UeTool::deleteUE($bdd->getConnexion(), $oldApogee);
-            echo AlertTool::genereInfo("Suppression de U.E de Module effectué avec succés !");
+            echo AlertTool::genereInfo("Suppression de U.E de Module effectué avec succès !");
         } catch (Exception $e) {
             echo AlertTool::genereDanger($e->getMessage());
         }
@@ -172,7 +172,7 @@
         $apogee = $_POST['apogee'];
         try {
             UeTool::insertUE($bdd->getConnexion(), $apogee, $idModule);
-            echo AlertTool::genereInfo("Ajout de U.E de Module effectué avec succés !");
+            echo AlertTool::genereInfo("Ajout de U.E de Module effectué avec succès !");
         } catch (Exception $e) {
             echo AlertTool::genereDanger($e->getMessage());
         }
@@ -185,7 +185,7 @@
         $idPromo = $_POST['idPromoProg'];
         try{
             ProgrammeTool::updateProgramme($bdd->getConnexion(),$idMod, $oldIdPromo, $idMod, $idPromo);
-            echo AlertTool::genereInfo("Mis à jour de U.E de Module effectué avec succés !");
+            echo AlertTool::genereInfo("Mis à jour de U.E de Module effectué avec succès !");
         } catch(Exception $e){
             echo AlertTool::genereDanger($e->getMessage());
         }
@@ -196,7 +196,7 @@
         $oldIdPromo = $_POST['oldIdPromo'];
         try{
             ProgrammeTool::deleteProgramme($bdd->getConnexion(), $idMod, $oldIdPromo);
-            echo AlertTool::genereInfo("Suppression de U.E de Module effectué avec succés !");
+            echo AlertTool::genereInfo("Suppression de U.E de Module effectué avec succès !");
         }catch (Exception $e){
             echo AlertTool::genereDanger($e->getMessage());
         }
@@ -207,7 +207,7 @@
         $idPromo = $_POST['idPromoProg'];
         try{
             ProgrammeTool::insertProgramme($bdd->getConnexion(), $idMod, $idPromo);
-            echo AlertTool::genereInfo("Ajout de U.E de Module effectué avec succés !");
+            echo AlertTool::genereInfo("Ajout de U.E de Module effectué avec succès !");
         }catch (Exception $e){
             echo AlertTool::genereDanger($e->getMessage());
         }

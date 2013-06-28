@@ -13,7 +13,7 @@
             $oldCode = $_POST['codeMatiereOld'];
             try{
                 MatiereTool::updateMatiere($bdd->getConnexion(), $newCode, $libelle, $oldCode);
-                echo AlertTool::genereSuccess("Mise à jour effectué avec succés !");
+                echo AlertTool::genereSuccess("Mise à jour effectué avec succès !");
             }catch(exception $e){
                 echo AlertTool::genereDanger($e->getMessage());
             }
@@ -23,7 +23,7 @@
             $code = $_POST['codeMatiere'];
             try{
                 MatiereTool::deleteMatiere($bdd->getConnexion(), $code);
-                echo AlertTool::genereSuccess("Suppression effectué avec succés !"); //mmessage de confirmation
+                echo AlertTool::genereSuccess("Suppression effectué avec succès !"); //mmessage de confirmation
             }catch(exception $e){
                 echo AlertTool::genereDanger($e->getMessage());
             }
@@ -34,7 +34,7 @@
             $code = $_POST['codeMatiereAdd'];
             try{
                 MatiereTool::insertMatiere($bdd->getConnexion(), $code ,$libelle);
-                echo AlertTool::genereSuccess("Ajout effectué avec succés !"); //message de confirmation
+                echo AlertTool::genereSuccess("Ajout effectué avec succès !"); //message de confirmation
             }catch(exception $e){
                 echo AlertTool::genereDanger($e->getMessage());
             }

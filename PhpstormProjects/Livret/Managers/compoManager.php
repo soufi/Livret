@@ -12,7 +12,7 @@
 			$id = $_POST['idCompo'];
 			try{
 				ComposanteTool::updateCompo($bdd->getConnexion(), $id, $libelle);
-				echo AlertTool::genereInfo("Mise à jour effectué avec succés !");
+				echo AlertTool::genereInfo("Mise à jour effectué avec succès !");
 			}catch(exception $e){
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -22,7 +22,7 @@
 			$id = $_POST['idCompo'];
 			try{
 				ComposanteTool::deleteCompo($bdd->getConnexion(), $id);
-				echo AlertTool::genereInfo("Suppression effectué avec succés !"); //mmessage de confirmation
+				echo AlertTool::genereInfo("Suppression effectué avec succès !"); //mmessage de confirmation
 			}catch(exception $e){
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -32,7 +32,7 @@
 			$libelle = $_POST['libelleCompoAdd'];
 			try{
 				ComposanteTool::insertCompo($bdd->getConnexion(), $libelle);
-				echo AlertTool::genereInfo("Ajout effectué avec succés !"); //message de confirmation
+				echo AlertTool::genereInfo("Ajout effectué avec succès !"); //message de confirmation
 			}catch(exception $e){
 				echo AlertTool::genereDanger($e->getMessage());
 			}

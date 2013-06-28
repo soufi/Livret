@@ -17,7 +17,7 @@
             $color3 = hex2rgb($_POST['couleur3Fil']);
 			try {
 				FiliereTool::updateFiliere($bdd->getConnexion(), $_id, $_libelle, $_idCompo, $color1, $color2, $color3);
-				echo AlertTool::genereInfo("Mise à jour effectué avec succés !"); //message de confirmation
+				echo AlertTool::genereInfo("Mise à jour effectué avec succès !"); //message de confirmation
 			} catch (Exception $e) {
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -28,7 +28,7 @@
 			$_id = $_POST['idFiliere'];
 			try {
 				FiliereTool::deleteFiliere($bdd->getConnexion(), $_id);
-				echo AlertTool::genereInfo("Suppression effectué avec succés !"); //mmessage de confirmation
+				echo AlertTool::genereInfo("Suppression effectué avec succès !"); //mmessage de confirmation
 			} catch (Exception $e) {
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -43,7 +43,7 @@
             $color3 = hex2rgb($_POST['couleur3Fil']);
 			try {
 				FiliereTool::insertFiliere($bdd->getConnexion(), $_libelle, $_idCompo, $color1, $color2, $color3);
-				echo AlertTool::genereInfo("Ajout effectué avec succés !"); //message de confirmation
+				echo AlertTool::genereInfo("Ajout effectué avec succès !"); //message de confirmation
 			} catch (Exception $e) {
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -58,7 +58,7 @@
 		$idEns = $_POST['idEnsPop'];
 		try{
 			ResponsableTool::updRespFil($bdd->getConnexion(), $idFiliere, $oldIdEns, $idFiliere, $idEns);
-			echo AlertTool::genereInfo("Mise à jour du responsable de filière effectuée avec succés !");
+			echo AlertTool::genereInfo("Mise à jour du responsable de filière effectuée avec succès !");
 		}catch(Exception $e){
 			echo AlertTool::genereDanger($e->getMessage());
 		}
@@ -70,7 +70,7 @@
 		$idEns = $_POST['idEnsPop'];
 		try{
 			ResponsableTool::insertRespFil($bdd->getConnexion(), $idFiliere, $idEns);
-			echo AlertTool::genereInfo("Ajout du responsable effectué avec succés !");
+			echo AlertTool::genereInfo("Ajout du responsable effectué avec succès !");
 		}catch(Exception $e){
 			echo AlertTool::genereDanger($e->getMessage());
 		}
@@ -82,7 +82,7 @@
 		$oldIdEns = $_POST['oldIdEnsPop'];
 		try {
 			ResponsableTool::deleteRespFil($bdd->getConnexion(), $idFiliere, $oldIdEns);
-			echo AlertTool::genereInfo("Suppression du responsable effectué avec succés !");
+			echo AlertTool::genereInfo("Suppression du responsable effectué avec succès !");
 		} catch (Exception $e) {
 			echo AlertTool::genereDanger($e->getMessage());
 		}

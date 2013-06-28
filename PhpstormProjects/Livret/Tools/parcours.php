@@ -127,7 +127,7 @@
 	class ParcoursTool{
 
 		//permet d'avoir toutes les promotions de la filiere en parametre
-		public static function getByIDFiliere($connect, $idFiliere){
+		public static function getByIDFiliere(PDO $connect, $idFiliere){
 			$requete = "SELECT * FROM livret_parcours WHERE _ID_FILIERE_ = ?";
 			if(!empty($connect) && is_numeric($idFiliere)){
 				$stmt = $connect->prepare($requete);
@@ -141,7 +141,7 @@
 		}
 
 		//permet d'avoir toutes les Filieres de la promotion demandé
-		public static function getByIDPromo ($connect, $idPromo){
+		public static function getByIDPromo (PDO $connect, $idPromo){
 			$requete = "SELECT * FROM livret_parcours WHERE _ID_PROMO_ = ?";
 			if(!empty($connect) && is_numeric($idPromo)){
 				$stmt = $connect->prepare($requete);
@@ -155,7 +155,7 @@
 		}
 
 		//renvoi boolean permettant de savoir si le parcour existe deja ou non 
-		public static function existParcour ($connect, $idFiliere , $idPromo){
+		public static function existParcour (PDO $connect, $idFiliere , $idPromo){
 			$requete = "SELECT COUNT(*) FROM livret_parcours WHERE _ID_FILIERE_ = ? AND _ID_PROMO_ = ?";
 			if(!empty($connect) && is_numeric($idFiliere) && is_numeric($idPromo)){
 				$stmt = $connect->prepare($requete);
@@ -171,15 +171,15 @@
 		}
 
 		//permet de mettre a jour un parcour
-		public static function updateParcour($connect, $oldIdFiliere, $oldIdPromo, $newIdFiliere, $newIdPromo){
+		public static function updateParcour(PDO $connect, $oldIdFiliere, $oldIdPromo, $newIdFiliere, $newIdPromo){
 			$requete = "UPDATE livret_parcours SET _ID_FILIERE_ = ? , _ID_PROMO_ = ? WHERE _ID_FILIERE_ = ? AND _ID_PROMO_ = ?";
 			if(!empty($connect) && is_numeric($oldIdFiliere) && is_numeric($oldIdPromo) && is_numeric($newIdFiliere) && is_numeric($newIdPromo)){
 				if(self::existParcour($connect, $oldIdFiliere, $oldIdPromo)){
 					$stmt = $connect->prepare($requete);
-					$stmt->bindParam(1, $oldIdFiliere, PDO::PARAM_INT);
-					$stmt->bindParam(2, $oldIdPromo, PDO::PARAM_INT);
-					$stmt->bindParam(3, $newIdFiliere, PDO::PARAM_INT);
-					$stmt->bindParam(4, $newIdPromo, PDO::PARAM_INT);
+					$stmt->bindParam(1, $newIdFiliere, PDO::PARAM_INT);
+					$stmt->bindParam(2, $newIdPromo, PDO::PARAM_INT);
+					$stmt->bindParam(3, $oldIdFiliere, PDO::PARAM_INT);
+					$stmt->bindParam(4, $oldIdPromo, PDO::PARAM_INT);
 					if($stmt->execute()){
 						return TRUE;
 					}else
@@ -191,7 +191,7 @@
 				
 		}
 		//permet de supprimer un parcour
-		public static function deleteParcour ($connect, $idFiliere, $idPromo){
+		public static function deleteParcour (PDO $connect, $idFiliere, $idPromo){
 			$requete = "DELETE FROM livret_parcours WHERE _ID_FILIERE_ = ? AND _ID_PROMO_ = ?";
 			if(!empty($connect) && is_numeric($idFiliere) && is_numeric($idPromo)){
 				$stmt = $connect->prepare($requete);
@@ -206,7 +206,7 @@
 		}
 
 		//permet d'ajouter un parcour
-		public static function insertParcour ($connect, $idFiliere, $idPromo){
+		public static function insertParcour (PDO $connect, $idFiliere, $idPromo){
 			$requete = "INSERT IGNORE INTO livret_parcours (_ID_FILIERE_ , _ID_PROMO_) VALUES (? , ?)";
 			if(!empty($connect) && is_numeric($idFiliere) && is_numeric($idPromo)){
 				if(FiliereTool::existID($connect, $idFiliere) && PromoTool::existID($connect, $idPromo)){

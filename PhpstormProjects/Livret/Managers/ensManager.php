@@ -23,7 +23,7 @@
             $path_serv = "../CSS/Pictures/".$photo['name']; //path du serveur pour la photo
 			try{
 				if(EnseignantTool::updateEnseignant($bdd->getConnexion(), $id, $nom, $prenom, $email, $phone, $titre, $path_serv))
-				    echo AlertTool::genereInfo("Mise à jour effectué avec succés !");
+				    echo AlertTool::genereInfo("Mise à jour effectué avec succès !");
                 else
                     echo AlertTool::genereInfo("Mise à jour non effectué !");
 			}catch(exception $e){
@@ -35,7 +35,7 @@
 			$id = $_POST['idEns'];
 			try{
 				EnseignantTool::deleteEnseignant($bdd->getConnexion(), $id);
-				echo AlertTool::genereInfo("Suppression effectué avec succés !"); //mmessage de confirmation
+				echo AlertTool::genereInfo("Suppression effectué avec succès !"); //mmessage de confirmation
 			}catch(exception $e){
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -54,7 +54,7 @@
             $path_serv = "../CSS/Pictures/".$photo['name']; //path du serveur pour la photo
 			try{
 				EnseignantTool::insertEnseignant($bdd->getConnexion(), $nom, $prenom, $email, $phone, $titre, $path_serv);
-				echo AlertTool::genereSuccess("Ajout effectué avec succés !"); //message de confirmation
+				echo AlertTool::genereSuccess("Ajout effectué avec succès !"); //message de confirmation
 			}catch(exception $e){
 				echo AlertTool::genereDanger($e->getMessage());
 			}

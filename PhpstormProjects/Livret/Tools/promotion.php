@@ -353,6 +353,12 @@ include_once("composante.php");
         //ce pop sera genere avec Jquery 
         //pour pouvoir générer un popOver de Bootstrap, il faut placer les informations à l'interieur des parenthèses
         private function generePop(PDO $connect){
+        	//recup de page
+        	if(isset($_GET['pm']))
+        		$thePage = intval($_GET['pm']);
+        	else 
+        		$thePage = 1;
+        	
             $pop = "<div class='row-fluid popFiliere'>";
             if(!empty($connect)){
                 //recup des Filieres dont l'instance de la promotion est en relation
@@ -366,12 +372,12 @@ include_once("composante.php");
                         foreach ($lesParcours as $leParcour){
                             //le pop qui sera afficher devra avoir la forme suivante : formUpdFilPro[idPromo]
                             //celle si sera passe en method get avec la variable pop
-                            $pop .= "<span class='row'><a href='promoManager.php?pop=formUpdFilPro".$leParcour->_ID_PROMO_."&fil=".$leParcour->_ID_FILIERE_."' class='btn btn-link'>".$leParcour->getLibelleFiliere($connect)."</a></span>";
+                            $pop .= "<span class='row'><a href='promoManager.php?pm=".$thePage."&pop=formUpdFilPro".$leParcour->_ID_PROMO_."&fil=".$leParcour->_ID_FILIERE_."' class='btn btn-link'>".$leParcour->getLibelleFiliere($connect)."</a></span>";
                         }
                     }
                     //si les parcours sont vides 
                     //on propose d'ajouter une filiere en relation avec la promotion
-                    $pop .= "<span class='row'><a class='btn btn-mini' href='promoManager.php?pop=formAddResp".$this->_ID_FILIERE_."'><i class='icon-plus'></i></a></span>";
+                    $pop .= "<span class='row'><a class='btn btn-mini' href='promoManager.php?pm=".$thePage."&pop=formAddFilPro".$this->_ID_PROMO_."'><i class='icon-plus'></i></a></span>";
                 } catch (Exception $e) {
                     $pop .= AlertTool::genereDanger($e->getMessage);   
                 }    

@@ -24,7 +24,7 @@
 
 			try{
 				PromoTool::updatePromo($bdd->getConnexion(), $id, $libelle, $nbrEleve, $intitule, $preambule, $epilogue, $color1, $color2, $color3, $cfg, $cpg);
-				echo AlertTool::genereSuccess("Mise à jour effectué avec succés !"); //message de confirmation
+				echo AlertTool::genereInfo("Mise à jour effectué avec succès !"); //message de confirmation
 			}catch(exception $e){
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -34,7 +34,7 @@
 			$id = $_POST['idPromo'];
 			try{
 				PromoTool::deletePromo($bdd->getConnexion(), $id);
-				echo AlertTool::genereSuccess("Suppression effectué avec succés !"); //mmessage de confirmation
+				echo AlertTool::genereInfo("Suppression effectué avec succès !"); //mmessage de confirmation
 			}catch(exception $e){
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -53,7 +53,7 @@
 			$cpg = hex2rgb($_POST['cpgAddPromo']);
 			try{
 				PromoTool::insertPromo($bdd->getConnexion(), $libelle, $nbrEleve, $intitule, $preambule, $epilogue, $color1, $color2, $color3, $cfg, $cpg);
-				echo AlertTool::genereSuccess("Ajout effectué avec succés !"); //message de confirmation
+				echo AlertTool::genereInfo("Ajout effectué avec succès !"); //message de confirmation
 			}catch(exception $e){
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -66,7 +66,7 @@
 			$newIdFiliere = $_POST['idFiliere'];
 			try {
 				ParcoursTool::updateParcour($bdd->getConnexion(), $oldIdFiliere, $idPromo, $newIdFiliere, $idPromo);
-				echo AlertTool::genereSuccess("Mise à jour effectuée avec succé !");
+				echo AlertTool::genereInfo("Mise à jour effectuée avec succès !");
 			} catch (Exception $e) {
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -77,7 +77,7 @@
 			$idFiliere = $_POST['idFiliere'];
 			try {
 				ParcoursTool::insertParcour($bdd->getConnexion(), $idFiliere, $idPromo);
-				echo AlertTool::genereSuccess("Ajout effectué avec succé !");
+				echo AlertTool::genereInfo("Ajout effectué avec succès !");
 			} catch (Exception $e) {
 				echo AlertTool::genereDanger($e->getMessage());
 			}
@@ -89,7 +89,7 @@
 			$idFiliere = $_POST['idFiliere'];
 			try {
 				ParcoursTool::deleteParcour($bdd->getConnexion(), $idFiliere, $idPromo);
-				echo AlertTool::genereSuccess("Suppresion effectuée avec succé !");
+				echo AlertTool::genereInfo("Suppresion effectuée avec succès !");
 			} catch (Exception $e) {
 				echo AlertTool::genereDanger($e->getMessage());
 			}
